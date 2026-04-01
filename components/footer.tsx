@@ -79,7 +79,7 @@ export function Footer() {
             <h3 className="text-foreground font-semibold mb-4">Browse</h3>
             <ul className="space-y-2">
               {footerLinks.browse.map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <Link
                     href={link.href}
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -96,7 +96,7 @@ export function Footer() {
             <h3 className="text-foreground font-semibold mb-4">Genres</h3>
             <ul className="space-y-2">
               {footerLinks.genres.map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <Link
                     href={link.href}
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -113,7 +113,7 @@ export function Footer() {
             <h3 className="text-foreground font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
               {footerLinks.support.map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <Link
                     href={link.href}
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"

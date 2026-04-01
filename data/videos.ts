@@ -439,6 +439,262 @@ export const videos: Video[] = [
     genre: ["Action", "Adventure"],
     language: "English",
     quality: "4K"
+  },
+  // Cartoon Shows & Movies
+  {
+    id: "29",
+    title: "Tom and Jerry: The Movie",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1608889825103-eb5ed706fc64?w=400&h=600&fit=crop",
+    description: "The iconic cat and mouse duo embark on their biggest adventure yet in this hilarious animated feature film.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 41m",
+    rating: 7.2,
+    genre: ["Animation", "Comedy", "Family"],
+    language: "English",
+    quality: "HD"
+  },
+  {
+    id: "30",
+    title: "Shinchan: Jungle Adventure",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?w=400&h=600&fit=crop",
+    description: "Shinchan and the Kasukabe Defense Group go on a wild jungle expedition filled with laughs and surprises.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 35m",
+    rating: 8.1,
+    genre: ["Animation", "Comedy", "Family"],
+    language: "Hindi",
+    quality: "HD"
+  },
+  {
+    id: "31",
+    title: "Doraemon: Nobita's Space War",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=400&h=600&fit=crop",
+    description: "Doraemon and Nobita travel to space to save an alien civilization from destruction in this epic adventure.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 48m",
+    rating: 8.4,
+    genre: ["Animation", "Adventure", "Sci-Fi"],
+    language: "Hindi",
+    quality: "HD"
+  },
+  {
+    id: "32",
+    title: "SpongeBob: The Cosmic Shake",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1569701813229-33284b643e3c?w=400&h=600&fit=crop",
+    description: "SpongeBob and Patrick embark on an interdimensional adventure to save Bikini Bottom from cosmic chaos.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 32m",
+    rating: 7.8,
+    genre: ["Animation", "Comedy", "Adventure"],
+    language: "English",
+    quality: "HD"
+  },
+  {
+    id: "33",
+    title: "Chhota Bheem: Himalayan Quest",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1551269901-5c5e14c25df7?w=400&h=600&fit=crop",
+    description: "Bheem and his friends travel to the Himalayas to find a mystical artifact and save their village from danger.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 28m",
+    rating: 7.6,
+    genre: ["Animation", "Adventure", "Action"],
+    language: "Hindi",
+    quality: "HD"
+  },
+  {
+    id: "34",
+    title: "Motu Patlu: Robot World",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=600&fit=crop",
+    description: "Motu and Patlu accidentally travel to a world ruled by robots and must find their way back home.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 22m",
+    rating: 7.3,
+    genre: ["Animation", "Comedy", "Sci-Fi"],
+    language: "Hindi",
+    quality: "HD"
+  },
+  {
+    id: "35",
+    title: "Pokemon: The New Journey",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?w=400&h=600&fit=crop",
+    description: "A new Pokemon trainer sets off on an epic journey across multiple regions to become a Pokemon Master.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 55m",
+    rating: 8.5,
+    genre: ["Animation", "Adventure", "Action"],
+    language: "English",
+    quality: "4K"
+  },
+  {
+    id: "36",
+    title: "Ben 10: Ultimate Alien Movie",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=400&h=600&fit=crop",
+    description: "Ben Tennyson faces his greatest challenge yet as an alien invasion threatens to destroy Earth.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 38m",
+    rating: 8.0,
+    genre: ["Animation", "Action", "Sci-Fi"],
+    language: "English",
+    quality: "HD"
+  },
+  {
+    id: "37",
+    title: "Dragon Ball Super: Universe War",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1601850494422-3cf14624b0b3?w=400&h=600&fit=crop",
+    description: "Goku and the Z Fighters must defend their universe against the most powerful warriors from across all universes.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "2h 5m",
+    rating: 9.0,
+    genre: ["Animation", "Action", "Adventure"],
+    language: "Japanese",
+    quality: "4K"
+  },
+  {
+    id: "38",
+    title: "Oggy and the Cockroaches Movie",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=400&h=600&fit=crop",
+    description: "Oggy chases the mischievous cockroaches across time and space in this hilarious animated adventure.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 25m",
+    rating: 7.4,
+    genre: ["Animation", "Comedy"],
+    language: "English",
+    quality: "HD"
+  },
+  {
+    id: "39",
+    title: "Naruto: The Final Battle",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=400&h=600&fit=crop",
+    description: "Naruto faces his ultimate enemy in an epic battle that will determine the fate of the ninja world.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "2h 15m",
+    rating: 9.2,
+    genre: ["Animation", "Action", "Adventure"],
+    language: "Japanese",
+    quality: "4K"
+  },
+  {
+    id: "40",
+    title: "Paw Patrol: The Mighty Movie",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=400&h=600&fit=crop",
+    description: "The Paw Patrol pups gain superpowers and must use them to save Adventure City from a new villain.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 35m",
+    rating: 7.0,
+    genre: ["Animation", "Adventure", "Family"],
+    language: "English",
+    quality: "HD"
+  },
+  {
+    id: "41",
+    title: "One Piece Film: Red",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1614851099511-773084f6911d?w=400&h=600&fit=crop",
+    description: "Luffy and the Straw Hat Pirates face a powerful new enemy with a mysterious connection to Shanks.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 55m",
+    rating: 8.8,
+    genre: ["Animation", "Action", "Adventure"],
+    language: "Japanese",
+    quality: "4K"
+  },
+  {
+    id: "42",
+    title: "Kiteretsu: Time Machine Adventure",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?w=400&h=600&fit=crop",
+    description: "Kiteretsu and Korosuke travel through time to save history from being altered by a villainous inventor.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 42m",
+    rating: 7.9,
+    genre: ["Animation", "Adventure", "Sci-Fi"],
+    language: "Hindi",
+    quality: "HD"
+  },
+  {
+    id: "43",
+    title: "Ninja Hattori: Ninja Wars",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=400&h=600&fit=crop",
+    description: "Hattori and Kenichi must save Japan from an army of evil ninjas planning to take over the country.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 30m",
+    rating: 7.7,
+    genre: ["Animation", "Action", "Comedy"],
+    language: "Hindi",
+    quality: "HD"
+  },
+  {
+    id: "44",
+    title: "My Hero Academia: Rising",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=400&h=600&fit=crop",
+    description: "Deku and Class 1-A face their most dangerous villain yet in an epic battle to protect innocent lives.",
+    category: "Cartoon",
+    year: 2024,
+    duration: "1h 50m",
+    rating: 8.7,
+    genre: ["Animation", "Action", "Adventure"],
+    language: "Japanese",
+    quality: "4K"
+  },
+  {
+    id: "45",
+    title: "Demon Slayer: Infinity Castle",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=400&h=600&fit=crop",
+    description: "Tanjiro and the Demon Slayer Corps infiltrate the Infinity Castle for the final battle against Muzan.",
+    category: "Cartoon",
+    year: 2025,
+    duration: "2h 10m",
+    rating: 9.3,
+    genre: ["Animation", "Action", "Fantasy"],
+    language: "Japanese",
+    quality: "4K"
   }
 ];
 
@@ -497,4 +753,29 @@ export const getHindiDubbedVideos = (): Video[] => {
     video.language !== 'Hindi' && 
     (video.category === 'Hollywood' || video.category === 'South Indian')
   ).slice(0, 10);
+};
+
+export const getCartoonVideos = (): Video[] => {
+  return videos.filter(video => video.category === 'Cartoon');
+};
+
+export const getAnimeVideos = (): Video[] => {
+  return videos.filter(video => 
+    video.category === 'Cartoon' && 
+    (video.language === 'Japanese' || video.genre.includes('Animation'))
+  ).filter(v => 
+    v.title.includes('Dragon Ball') || 
+    v.title.includes('Naruto') || 
+    v.title.includes('One Piece') || 
+    v.title.includes('My Hero') || 
+    v.title.includes('Demon Slayer') ||
+    v.title.includes('Pokemon')
+  );
+};
+
+export const getKidsCartoons = (): Video[] => {
+  return videos.filter(video => 
+    video.category === 'Cartoon' && 
+    video.genre.includes('Family')
+  );
 };

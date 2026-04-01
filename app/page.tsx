@@ -13,6 +13,9 @@ import {
   getVideosByGenre,
   getUpcomingVideos,
   getHindiDubbedVideos,
+  getCartoonVideos,
+  getAnimeVideos,
+  getKidsCartoons,
 } from "@/data/videos";
 
 export default function HomePage() {
@@ -32,6 +35,9 @@ export default function HomePage() {
   const hindiDubbedVideos = getHindiDubbedVideos();
   const thrillerVideos = getVideosByGenre("Thriller");
   const sciFiVideos = getVideosByGenre("Sci-Fi");
+  const cartoonVideos = getCartoonVideos();
+  const animeVideos = getAnimeVideos();
+  const kidsCartoons = getKidsCartoons();
   const recentlyAdded = [...videos].slice(0, 10);
   const editorsPicks = [...videos].sort(() => Math.random() - 0.5).slice(0, 10);
 
@@ -91,6 +97,27 @@ export default function HomePage() {
           title="Web Series"
           videos={webSeriesVideos}
           id="web-series"
+        />
+
+        {/* Cartoon Shows & Movies */}
+        <SectionSlider
+          title="Cartoon Shows & Movies"
+          videos={cartoonVideos}
+          id="cartoons"
+        />
+
+        {/* Anime */}
+        <SectionSlider
+          title="Anime"
+          videos={animeVideos}
+          id="anime"
+        />
+
+        {/* Kids Cartoons */}
+        <SectionSlider
+          title="Kids Cartoons"
+          videos={kidsCartoons}
+          id="kids"
         />
 
         {/* 11. Action Movies */}
