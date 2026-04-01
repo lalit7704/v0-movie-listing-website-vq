@@ -14,6 +14,7 @@ const navLinks = [
   { href: "/#web-series", label: "Web Series" },
   { href: "/#action", label: "Action" },
   { href: "/#comedy", label: "Comedy" },
+  { href: "/#comedy", label: "cartoon" },
 ];
 
 export function Navbar() {
