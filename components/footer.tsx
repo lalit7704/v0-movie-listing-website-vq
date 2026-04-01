@@ -3,20 +3,18 @@ import { Film, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 
 const footerLinks = {
   browse: [
-    { href: "/#bollywood", label: "Bollywood" },
-    { href: "/#hollywood", label: "Hollywood" },
-    { href: "/#south-indian", label: "South Indian" },
-    { href: "/#web-series", label: "Web Series" },
-    { href: "/#action", label: "Action Movies" },
-    { href: "/#comedy", label: "Comedy Movies" },
+    { href: "/bollywood", label: "Bollywood" },
+    { href: "/hollywood", label: "Hollywood" },
+    { href: "/south-indian", label: "South Indian" },
+    { href: "/web-series", label: "Web Series" },
+    { href: "/cartoons", label: "Cartoons" },
   ],
   genres: [
-    { href: "/#action", label: "Action" },
-    { href: "/#comedy", label: "Comedy" },
-    { href: "/#drama", label: "Drama" },
-    { href: "/#thriller", label: "Thriller" },
-    { href: "/#sci-fi", label: "Sci-Fi" },
-    { href: "/#romance", label: "Romance" },
+    { href: "/action", label: "Action" },
+    { href: "/comedy", label: "Comedy" },
+    { href: "/drama", label: "Drama" },
+    { href: "/thriller", label: "Thriller" },
+    { href: "/sci-fi", label: "Sci-Fi" },
   ],
   support: [
     { href: "#", label: "Help Center" },

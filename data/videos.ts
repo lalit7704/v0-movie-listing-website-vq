@@ -19,8 +19,8 @@ export const videos: Video[] = [
   {
     id: "1",
     title: "The Dark Knight Returns",
-    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
-    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    videoUrl: "https://youtu.be/29nqGdZYsWw",
+    downloadUrl: "https://youtu.be/29nqGdZYsWw",
     poster: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=400&h=600&fit=crop",
     description: "When Gotham's most dangerous criminals are released, an aging Bruce Wayne must don the cape once more to save his city from chaos and destruction.",
     category: "Hollywood",
@@ -734,11 +734,11 @@ export const getVideoById = (id: string): Video | undefined => {
 export const getRecommendedVideos = (currentVideoId: string): Video[] => {
   const currentVideo = getVideoById(currentVideoId);
   if (!currentVideo) return videos.slice(0, 10);
-  
+
   return videos
     .filter(video => video.id !== currentVideoId)
-    .filter(video => 
-      video.category === currentVideo.category || 
+    .filter(video =>
+      video.category === currentVideo.category ||
       video.genre.some(g => currentVideo.genre.includes(g))
     )
     .slice(0, 10);
@@ -749,8 +749,8 @@ export const getUpcomingVideos = (): Video[] => {
 };
 
 export const getHindiDubbedVideos = (): Video[] => {
-  return videos.filter(video => 
-    video.language !== 'Hindi' && 
+  return videos.filter(video =>
+    video.language !== 'Hindi' &&
     (video.category === 'Hollywood' || video.category === 'South Indian')
   ).slice(0, 10);
 };
@@ -760,22 +760,22 @@ export const getCartoonVideos = (): Video[] => {
 };
 
 export const getAnimeVideos = (): Video[] => {
-  return videos.filter(video => 
-    video.category === 'Cartoon' && 
+  return videos.filter(video =>
+    video.category === 'Cartoon' &&
     (video.language === 'Japanese' || video.genre.includes('Animation'))
-  ).filter(v => 
-    v.title.includes('Dragon Ball') || 
-    v.title.includes('Naruto') || 
-    v.title.includes('One Piece') || 
-    v.title.includes('My Hero') || 
+  ).filter(v =>
+    v.title.includes('Dragon Ball') ||
+    v.title.includes('Naruto') ||
+    v.title.includes('One Piece') ||
+    v.title.includes('My Hero') ||
     v.title.includes('Demon Slayer') ||
     v.title.includes('Pokemon')
   );
 };
 
 export const getKidsCartoons = (): Video[] => {
-  return videos.filter(video => 
-    video.category === 'Cartoon' && 
+  return videos.filter(video =>
+    video.category === 'Cartoon' &&
     video.genre.includes('Family')
   );
 };
