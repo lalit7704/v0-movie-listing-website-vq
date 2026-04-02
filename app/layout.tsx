@@ -21,15 +21,15 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: 'https://drive.google.com/file/d/1_AjISitQUhYdS2M3-4Pc0KMEFR_gMrMd/view?usp=drive_link',
+        url: '/icon-light-32x32.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: 'https://drive.google.com/file/d/1_AjISitQUhYdS2M3-4Pc0KMEFR_gMrMd/view?usp=drive_link',
+        url: '/icon-dark-32x32.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: 'https://drive.google.com/file/d/1_AjISitQUhYdS2M3-4Pc0KMEFR_gMrMd/view?usp=drive_link',
+        url: '/icon.svg',
         type: 'image/svg+xml',
       },
     ],
