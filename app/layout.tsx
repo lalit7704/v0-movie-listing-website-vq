@@ -3,12 +3,12 @@ import { Inter, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter"
 });
 
-const geistMono = Geist_Mono({ 
+const geistMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-geist-mono"
 });
@@ -21,15 +21,15 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: 'https://drive.google.com/file/d/1_AjISitQUhYdS2M3-4Pc0KMEFR_gMrMd/view?usp=drive_link',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: 'https://drive.google.com/file/d/1_AjISitQUhYdS2M3-4Pc0KMEFR_gMrMd/view?usp=drive_link',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: 'https://drive.google.com/file/d/1_AjISitQUhYdS2M3-4Pc0KMEFR_gMrMd/view?usp=drive_link',
         type: 'image/svg+xml',
       },
     ],
