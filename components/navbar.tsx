@@ -21,6 +21,7 @@ const moreLinks = [
   { href: "/drama", label: "Drama" },
   { href: "/thriller", label: "Thriller" },
   { href: "/sci-fi", label: "Sci-Fi" },
+  { href: "/Ramayan", label: "Ramayan" },
 ];
 
 export function Navbar() {
@@ -52,7 +53,7 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            
+
             {/* More Dropdown */}
             <div className="relative group">
               <button className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md hover:bg-secondary">
