@@ -11,7 +11,24 @@ interface VideoPlayerProps {
   poster: string;
   title: string;
 }
+const isYouTube = (url: string) =>
+  url.includes("youtube.com") || url.includes("youtu.be");
 
+const getYouTubeEmbedUrl = (url: string) => {
+  try {
+    if (url.includes("youtu.be")) {
+      return `https://www.youtube.com/embed/${url.split("/").pop()?.split("?")[0]}`;
+    }
+
+    if (url.includes("watch?v=")) {
+      return `https://www.youtube.com/embed/${url.split("v=")[1].split("&")[0]}`;
+    }
+
+    return url;
+  } catch {
+    return url;
+  }
+};
 export function VideoPlayer({ videoUrl, poster, title }: VideoPlayerProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -98,17 +115,23 @@ export function VideoPlayer({ videoUrl, poster, title }: VideoPlayerProps) {
       onMouseLeave={() => isPlaying && setShowControls(false)}
     >
       {/* Video Element */}
-      <video
-        ref={videoRef}
-        src={videoUrl}
-        poster={poster}
-        className="w-full h-full object-contain"
-        onTimeUpdate={handleTimeUpdate}
-        onLoadedMetadata={handleLoadedMetadata}
-        onEnded={() => setIsPlaying(false)}
-        onClick={togglePlay}
-        crossOrigin="anonymous"
-      />
+      {isYouTube(videoUrl) ? (
+        <iframe
+          src={getYouTubeEmbedUrl(videoUrl)}
+          className="w-full h-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      ) : (
+        <video
+          ref={videoRef}
+          src={videoUrl}
+          poster={poster}
+          className="w-full h-full object-contain"
+          controls
+        />
+      )}
+
 
       {/* Play Button Overlay (before playing) */}
       {!hasStarted && (
