@@ -117,7 +117,11 @@ export function VideoPlayer({ videoUrl, poster, title }: VideoPlayerProps) {
       {/* Video Element */}
       {isYouTube(videoUrl) ? (
         <iframe
-          src={getYouTubeEmbedUrl(videoUrl)}
+          src={
+            videoUrl.includes("youtu.be")
+              ? `https://www.youtube.com/embed/${videoUrl.split("/").pop()?.split("?")[0]}`
+              : `https://www.youtube.com/embed/${videoUrl.split("v=")[1]?.split("&")[0]}`
+          }
           className="w-full h-full"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
