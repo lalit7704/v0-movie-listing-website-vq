@@ -120,7 +120,7 @@ export function VideoPlayer({ videoUrl, poster, title }: VideoPlayerProps) {
 
       {/* Play Button Overlay (before playing) */}
       {!hasStarted && !videoUrl.includes("youtube") && (
-       
+        
       )}
 
       {/* Controls Overlay */}
