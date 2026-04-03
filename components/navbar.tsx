@@ -22,6 +22,7 @@ const moreLinks = [
   { href: "/thriller", label: "Thriller" },
   { href: "/sci-fi", label: "Sci-Fi" },
   { href: "/ramayan", label: "Ramayan" },
+  { href: "/ramayan", label: "Ramayan" },
 ];
 
 export function Navbar() {
