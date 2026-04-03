@@ -706,7 +706,7 @@ export const videos: Video[] = [
     category: "Web Series",
     year: 1987,
     duration: "1 Season (78 Episodes)",
-    rating: 9.5,
+    rating: 9,
     genre: ["Mythology", "Drama", "Adventure"],
     language: "Hindi",
     quality: "HD"
