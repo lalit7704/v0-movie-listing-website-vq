@@ -12,7 +12,7 @@ export default function SciFiPage() {
 
   return (
     <CollectionPage
-      title="Ramayan (All Episodes)"
+      title="Ramayan"
       description="A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil."
       videos={videos}
       basePath="/Ramayan (All Episodes)"
