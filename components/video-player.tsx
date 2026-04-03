@@ -98,17 +98,25 @@ export function VideoPlayer({ videoUrl, poster, title }: VideoPlayerProps) {
       onMouseLeave={() => isPlaying && setShowControls(false)}
     >
       {/* Video Element */}
-      <video
-        ref={videoRef}
-        src={videoUrl}
-        poster={poster}
-        className="w-full h-full object-contain"
-        onTimeUpdate={handleTimeUpdate}
-        onLoadedMetadata={handleLoadedMetadata}
-        onEnded={() => setIsPlaying(false)}
-        onClick={togglePlay}
-        crossOrigin="anonymous"
-      />
+      {videoUrl.includes("youtube.com") || videoUrl.includes("youtu.be") ? (
+        <iframe
+          src={
+            videoUrl.includes("youtu.be")
+              ? `https://www.youtube.com/embed/${videoUrl.split("/").pop()}`
+              : videoUrl.replace("watch?v=", "embed/")
+          }
+          className="w-full h-full"
+          allowFullScreen
+        />
+      ) : (
+        <video
+          ref={videoRef}
+          src={videoUrl}
+          poster={poster}
+          className="w-full h-full object-contain"
+          controls
+        />
+      )}
 
       {/* Play Button Overlay (before playing) */}
       {!hasStarted && (
