@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil.",
 };
 
-export default function SciFiPage() {
+export default function RamayanPage() {
   const videos = getVideosByGenre("Ramayan");
 
   return (
