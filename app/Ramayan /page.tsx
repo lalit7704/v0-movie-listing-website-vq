@@ -8,11 +8,11 @@ export const metadata: Metadata = {
 };
 
 export default function SciFiPage() {
-  const videos = getVideosByGenre("Sci-Fi");
+  const videos = getVideosByGenre("Ramayan (All Episodes)");
 
   return (
     <CollectionPage
-      title="Sci-Fi Movies"
+      title="Ramayan (All Episodes)"
       description="Futuristic worlds, space adventures, and mind-bending stories"
       videos={videos}
       basePath="/sci-fi"
