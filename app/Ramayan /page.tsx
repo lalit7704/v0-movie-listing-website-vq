@@ -3,7 +3,7 @@ import { CollectionPage } from "@/components/collection-page";
 import { getVideosByGenre } from "@/data/videos";
 
 export const metadata: Metadata = {
-  title: "Ramayan (All Episodes) | Onemovie",
+  title: "Ramayan | Onemovie",
   description: "A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil.",
 };
 
@@ -15,7 +15,7 @@ export default function SciFiPage() {
       title="Ramayan"
       description="A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil."
       videos={videos}
-      basePath="/Ramayan (All Episodes)"
+      basePath="/Ramayan"
     />
   );
 }
