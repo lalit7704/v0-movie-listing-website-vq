@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function SciFiPage() {
-  const videos = getVideosByGenre("Ramayan (All Episodes)");
+  const videos = getVideosByGenre("Ramayan");
 
   return (
     <CollectionPage
