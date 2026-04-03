@@ -4,7 +4,7 @@ import { getVideosByGenre } from "@/data/videos";
 
 export const metadata: Metadata = {
   title: "Ramayan (All Episodes) | Onemovie",
-  description: "Explore futuristic worlds with sci-fi movies, space adventures, and mind-bending stories.",
+  description: "A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil.",
 };
 
 export default function SciFiPage() {
@@ -13,9 +13,9 @@ export default function SciFiPage() {
   return (
     <CollectionPage
       title="Ramayan (All Episodes)"
-      description="Futuristic worlds, space adventures, and mind-bending stories"
+      description="A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil."
       videos={videos}
-      basePath="/sci-fi"
+      basePath="/Ramayan (All Episodes)"
     />
   );
 }
