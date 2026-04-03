@@ -11,7 +11,24 @@ interface VideoPlayerProps {
   poster: string;
   title: string;
 }
+const isYouTube = (url: string) =>
+  url.includes("youtube.com") || url.includes("youtu.be");
 
+const getYouTubeEmbedUrl = (url: string) => {
+  try {
+    if (url.includes("youtu.be")) {
+      return `https://www.youtube.com/embed/${url.split("/").pop()?.split("?")[0]}`;
+    }
+
+    if (url.includes("watch?v=")) {
+      return `https://www.youtube.com/embed/${url.split("v=")[1].split("&")[0]}`;
+    }
+
+    return url;
+  } catch {
+    return url;
+  }
+};
 export function VideoPlayer({ videoUrl, poster, title }: VideoPlayerProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -98,7 +115,7 @@ export function VideoPlayer({ videoUrl, poster, title }: VideoPlayerProps) {
       onMouseLeave={() => isPlaying && setShowControls(false)}
     >
       {/* Video Element */}
-      {videoUrl.includes("youtube.com") || videoUrl.includes("youtu.be") ? (
+      {isYouTube(videoUrl) ? (
         <iframe
           src={
             videoUrl.includes("youtu.be")
@@ -106,6 +123,7 @@ export function VideoPlayer({ videoUrl, poster, title }: VideoPlayerProps) {
               : `https://www.youtube.com/embed/${videoUrl.split("v=")[1]?.split("&")[0]}`
           }
           className="w-full h-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
       ) : (
@@ -118,8 +136,9 @@ export function VideoPlayer({ videoUrl, poster, title }: VideoPlayerProps) {
         />
       )}
 
+
       {/* Play Button Overlay (before playing) */}
-      {!hasStarted && !videoUrl.includes("youtube") && (
+      {!hasStarted && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/40">
           <Image
             src={poster}

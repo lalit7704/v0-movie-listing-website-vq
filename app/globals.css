@@ -119,6 +119,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -141,5 +142,13 @@ html {
 
 /* Video player styles */
 video::-webkit-media-controls-panel {
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+}
+
+.absolute.inset-0.flex.items-center.justify-center.bg-black\/40 {
+  display: none;
+}
+
+.absolute.inset-0.bg-gradient-to-t.from-black\/80.via-transparent.to-black\/30.transition-opacity.duration-300.opacity-0 {
+  display: none;
 }
