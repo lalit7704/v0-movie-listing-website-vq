@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function RamayanPage() {
-  const videos = getVideosByGenre("ramayan");
+  const videos = getVideosByGenre("Ramayan");
 
   return (
     <CollectionPage
