@@ -355,7 +355,7 @@ export const videos: Video[] = [
     title: "Money Heist: India",
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
-    poster: "https://images.unsplash.com/photo-1611945003072-9e84fe7e41f4?w=400&h=600&fit=crop",
+    poster: "https://cdn.sweetescape.com/images/blogs/article-covers/619/231694be-5d00-4531-9022-99cd091a365b-1920.jpg",
     description: "A mastermind criminal plans the biggest heist in Indian history, targeting the Reserve Bank with a team of specialists.",
     category: "Web Series",
     year: 2024,
