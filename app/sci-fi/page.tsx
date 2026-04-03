@@ -15,7 +15,7 @@ export default function SciFiPage() {
       title="Sci-Fi Movies"
       description="Futuristic worlds, space adventures, and mind-bending stories"
       videos={videos}
-      basePath="/sci-fi"
+      basePath="/ramayan"
     />
   );
 }
