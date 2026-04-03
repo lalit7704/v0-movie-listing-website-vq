@@ -701,7 +701,7 @@ export const videos: Video[] = [
     title: "Ramayan (All Episodes)",
     videoUrl: "https://youtu.be/RG3Hqth0Eus",
     downloadUrl: "https://youtu.be/RG3Hqth0Eus",
-    poster: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=400&h=600&fit=crop",
+    poster: "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
     description: "Ramayan is an epic Indian mythological television series based on the ancient Sanskrit epic Ramayana. It follows the journey of Lord Rama, Sita, and Lakshman, showcasing devotion, duty, and the victory of good over evil.",
     category: "Web Series",
     year: 1987,
