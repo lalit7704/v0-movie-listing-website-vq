@@ -15,7 +15,8 @@ export default function SciFiPage() {
       title="Ramayan"
       description="A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil."
       videos={videos}
-      basePath="/Ramayan"
+      basePath="/ramayan"
+      availableLanguages={["Hindi"]}
     />
   );
 }
