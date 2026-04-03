@@ -102,8 +102,8 @@ export function VideoPlayer({ videoUrl, poster, title }: VideoPlayerProps) {
         <iframe
           src={
             videoUrl.includes("youtu.be")
-              ? `https://www.youtube.com/embed/${videoUrl.split("/").pop()}`
-              : videoUrl.replace("watch?v=", "embed/")
+              ? `https://www.youtube.com/embed/${videoUrl.split("/").pop()?.split("?")[0]}`
+              : `https://www.youtube.com/embed/${videoUrl.split("v=")[1]?.split("&")[0]}`
           }
           className="w-full h-full"
           allowFullScreen
@@ -119,7 +119,7 @@ export function VideoPlayer({ videoUrl, poster, title }: VideoPlayerProps) {
       )}
 
       {/* Play Button Overlay (before playing) */}
-      {!hasStarted && (
+      {!hasStarted && !videoUrl.includes("youtube") && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/40">
           <Image
             src={poster}
