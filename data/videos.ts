@@ -699,8 +699,8 @@ export const videos: Video[] = [
   {
     id: "46",
     title: "Ramayan (All Episodes)",
-    videoUrl: "https://www.youtube.com/embed/RG3Hqth0Eus",
-    downloadUrl: "https://youtu.be/RG3Hqth0Eus",
+    videoUrl: "https://cdn.shopify.com/videos/c/o/v/68aedfe147464169a23e275b822e1826.mp4",
+    downloadUrl: "https://cdn.shopify.com/videos/c/o/v/68aedfe147464169a23e275b822e1826.mp4",
     poster: "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
     description: "Ramayan is an epic Indian mythological television series based on the ancient Sanskrit epic Ramayana. It follows the journey of Lord Rama, Sita, and Lakshman, showcasing devotion, duty, and the victory of good over evil.",
     category: "Web Series",
@@ -794,3 +794,5 @@ export const getKidsCartoons = (): Video[] => {
     video.genre.includes('Family')
   );
 };
+
+
