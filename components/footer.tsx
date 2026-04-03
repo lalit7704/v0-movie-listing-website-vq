@@ -129,9 +129,7 @@ export function Footer() {
           <p className="text-sm text-muted-foreground text-center sm:text-left">
             &copy; {new Date().getFullYear()} Onemovie. All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground text-center sm:text-right">
-            Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.
-          </p>
+
         </div>
       </div>
     </footer>
