@@ -695,6 +695,21 @@ export const videos: Video[] = [
     genre: ["Animation", "Action", "Fantasy"],
     language: "Japanese",
     quality: "4K"
+  },
+  {
+    id: "46",
+    title: "Ramayan (All Episodes)",
+    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    poster: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=400&h=600&fit=crop",
+    description: "Ramayan is an epic Indian mythological television series based on the ancient Sanskrit epic Ramayana. It follows the journey of Lord Rama, Sita, and Lakshman, showcasing devotion, duty, and the victory of good over evil.",
+    category: "Web Series",
+    year: 1987,
+    duration: "1 Season (78 Episodes)"",
+    rating: 9.5,
+    genre: ["Mythology", "Drama", "Adventure"],
+    language: "Hindi",
+    quality: "HD"
   }
 ];
 
