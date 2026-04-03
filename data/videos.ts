@@ -705,7 +705,7 @@ export const videos: Video[] = [
     description: "Ramayan is an epic Indian mythological television series based on the ancient Sanskrit epic Ramayana. It follows the journey of Lord Rama, Sita, and Lakshman, showcasing devotion, duty, and the victory of good over evil.",
     category: "Web Series",
     year: 1987,
-    duration: "1 Season (78 Episodes)"",
+    duration: "1 Season (78 Episodes)",
     rating: 9.5,
     genre: ["Mythology", "Drama", "Adventure"],
     language: "Hindi",
