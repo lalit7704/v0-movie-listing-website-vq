@@ -120,22 +120,22 @@ export function VideoPlayer({ videoUrl, poster, title }: VideoPlayerProps) {
 
       {/* Play Button Overlay (before playing) */}
       {!hasStarted && !videoUrl.includes("youtube") && (
-        // <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-        //   <Image
-        //     src={poster}
-        //     alt={title}
-        //     fill
-        //     className="object-cover"
-        //     sizes="100vw"
-        //   />
-        //   <div className="absolute inset-0 bg-black/50" />
-        //   <button
-        //     onClick={togglePlay}
-        //     className="relative z-10 w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary flex items-center justify-center hover:scale-110 transition-transform shadow-2xl"
-        //   >
-        //     <Play className="w-8 h-8 md:w-10 md:h-10 text-primary-foreground ml-1" fill="currentColor" />
-        //   </button>
-        // </div>
+        <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+          <Image
+            src={poster}
+            alt={title}
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-black/50" />
+          <button
+            onClick={togglePlay}
+            className="relative z-10 w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary flex items-center justify-center hover:scale-110 transition-transform shadow-2xl"
+          >
+            <Play className="w-8 h-8 md:w-10 md:h-10 text-primary-foreground ml-1" fill="currentColor" />
+          </button>
+        </div>
       )}
 
       {/* Controls Overlay */}
