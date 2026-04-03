@@ -127,7 +127,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground text-center sm:text-left">
-            &copy; {new Date().getFullYear()} Onemovie. All rights reserved.
+            &copy; {new Date().getFullYear()} Onemovie | All rights reserved.
           </p>
 
         </div>
