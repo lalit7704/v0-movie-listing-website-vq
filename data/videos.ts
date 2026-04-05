@@ -698,11 +698,12 @@ export const videos: Video[] = [
   },
   {
     id: "46",
-    title: "Ramayan (All Episodes)",
+    title: "Ramayan EP 1 - श्री राम भगवान्‌ का जन्म और बाललीला का आनंद | HQ WIDE SCREEN | English Subtitles",
     videoUrl: "https://youtu.be/RG3Hqth0Eus",
     downloadUrl: "https://youtu.be/RG3Hqth0Eus",
     poster: "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
-    description: "Ramayan is an epic Indian mythological television series based on the ancient Sanskrit epic Ramayana. It follows the journey of Lord Rama, Sita, and Lakshman, showcasing devotion, duty, and the victory of good over evil.",
+    description: "बजरंग बाण | पाठ करै बजरंग बाण की हनुमत रक्षा करै प्राण की | जय श्री हनुमान | तिलक प्रस्तुति 🙏    • संकटमोचन नाम तिहारो - श्री हनुमान अष्टक | ...  
+श्री हनुमानाष्टक आदित्य गढ़वी के भावयुक्त स्वर में। संकटमोचन हनुमानाष्टक की संरचना गोस्वामी तुलसीदास ने की थी.माना जाता है कि संकटमोचन हनुमानाष्टक का पाठ करने से व्यक्ति अपनी हर बाधा और पीड़ा से मुक्त हो जाता है और उसके सभी संकट दूर हो जाते हैं। ",
     category: "ramayan",
     year: 1987,
     duration: "1 Season (78 Episodes)",
