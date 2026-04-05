@@ -1,20 +1,19 @@
 import { Metadata } from "next";
 import { CollectionPage } from "@/components/collection-page";
-import { getVideosByGenre } from "@/data/videos";
+import { getVideosByCategory } from "@/data/videos";
 
 export const metadata: Metadata = {
   title: "Ramayan | Onemovie",
-  description: "A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil.",
-  genre: "ramayan",
+  description: "Watch epic tales from the Ramayan. Stream the best mythological movies and series.",
 };
 
 export default function RamayanPage() {
-  const videos = getVideosByGenre("ramayan");
+  const videos = getVideosByCategory("Ramayan");
 
   return (
     <CollectionPage
-      title="Ramayan"
-      description="A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil."
+      title="Ramayan Special"
+      description="Experience the divine epic of Lord Rama"
       videos={videos}
       basePath="/ramayan"
       availableLanguages={["Hindi"]}
