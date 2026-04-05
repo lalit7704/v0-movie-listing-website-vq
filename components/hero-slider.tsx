@@ -25,7 +25,7 @@ export function HeroSlider({ videos }: HeroSliderProps) {
 
   useEffect(() => {
     if (!isAutoPlaying) return;
-    const interval = setInterval(nextSlide, 6000);
+    const interval = setInterval(nextSlide, 3000);
     return () => clearInterval(interval);
   }, [isAutoPlaying, nextSlide]);
 
@@ -138,11 +138,10 @@ export function HeroSlider({ videos }: HeroSliderProps) {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`h-1.5 rounded-full transition-all duration-300 ${
-              index === currentIndex
-                ? "w-8 bg-primary"
-                : "w-1.5 bg-muted-foreground/50 hover:bg-muted-foreground"
-            }`}
+            className={`h-1.5 rounded-full transition-all duration-300 ${index === currentIndex
+              ? "w-8 bg-primary"
+              : "w-1.5 bg-muted-foreground/50 hover:bg-muted-foreground"
+              }`}
           />
         ))}
       </div>
