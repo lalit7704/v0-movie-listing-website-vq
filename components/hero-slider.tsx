@@ -187,8 +187,8 @@ export function HeroSlider({ videos }: HeroSliderProps) {
               setCurrentIndex(index + 1);
             }}
             className={`h-1.5 rounded-full transition-all duration-300 ${index === actualIndex
-                ? "w-8 bg-primary"
-                : "w-1.5 bg-muted-foreground/50 hover:bg-muted-foreground"
+              ? "w-8 bg-primary"
+              : "w-1.5 bg-muted-foreground/50 hover:bg-muted-foreground"
               }`}
           />
         ))}
