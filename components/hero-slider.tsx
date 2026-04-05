@@ -15,7 +15,8 @@ export function HeroSlider({ videos }: HeroSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
-  const [touchEndX, setTouchEndX] = useState<number | null>(null);
+  const [swipeOffset, setSwipeOffset] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % videos.length);
@@ -35,28 +36,32 @@ export function HeroSlider({ videos }: HeroSliderProps) {
 
   const handleTouchStart = (e: React.TouchEvent) => {
     setTouchStartX(e.targetTouches[0].clientX);
+    setIsDragging(true);
   };
 
   const handleTouchMove = (e: React.TouchEvent) => {
-    setTouchEndX(e.targetTouches[0].clientX);
+    if (touchStartX === null) return;
+    const currentX = e.targetTouches[0].clientX;
+    const diff = currentX - touchStartX;
+    setSwipeOffset(diff);
   };
 
   const handleTouchEnd = () => {
-    if (!touchStartX || !touchEndX) return;
-    const distance = touchStartX - touchEndX;
+    setIsDragging(false);
+    if (touchStartX === null) return;
     const minSwipeDistance = 50; // Minimum distance to register as a swipe
 
-    if (distance > minSwipeDistance) {
+    if (swipeOffset < -minSwipeDistance) {
       nextSlide(); // Swipe left
-    } else if (distance < -minSwipeDistance) {
+    } else if (swipeOffset > minSwipeDistance) {
       prevSlide(); // Swipe right
     }
 
     setTouchStartX(null);
-    setTouchEndX(null);
+    setSwipeOffset(0);
   };
 
-  if (!currentVideo) return null;
+  if (videos.length === 0) return null;
 
   return (
     <div
@@ -67,75 +72,87 @@ export function HeroSlider({ videos }: HeroSliderProps) {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src={currentVideo.poster}
-          alt={currentVideo.title}
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-        {/* Gradient Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-      </div>
-
-      {/* Content */}
-      <div className="relative h-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
-        <div className="max-w-2xl space-y-4 md:space-y-6 animate-in fade-in slide-in-from-left-4 duration-500">
-          {/* Quality & Rating Badges */}
-          <div className="flex items-center gap-3">
-            <span className="px-3 py-1 text-sm font-semibold bg-primary text-primary-foreground rounded">
-              {currentVideo.quality}
-            </span>
-            <div className="flex items-center gap-1 px-3 py-1 bg-secondary rounded">
-              <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-              <span className="text-sm font-medium text-foreground">
-                {currentVideo.rating}
-              </span>
+      <div
+        className="flex w-full h-full touch-pan-y"
+        style={{
+          transform: `translateX(calc(-${currentIndex * 100}% + ${swipeOffset}px))`,
+          transition: isDragging ? 'none' : 'transform 0.5s ease-out'
+        }}
+      >
+        {videos.map((video, index) => (
+          <div key={video.id} className="relative w-full h-full flex-shrink-0">
+            {/* Background Image */}
+            <div className="absolute inset-0">
+              <Image
+                src={video.poster}
+                alt={video.title}
+                fill
+                className="object-cover"
+                priority={index === 0}
+                sizes="100vw"
+              />
+              {/* Gradient Overlays */}
+              <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
             </div>
-            <span className="text-sm text-muted-foreground">
-              {currentVideo.year}
-            </span>
+
+            {/* Content */}
+            <div className="relative h-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+              <div className={`max-w-2xl space-y-4 md:space-y-6 transition-all duration-700 delay-100 ${index === currentIndex ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                {/* Quality & Rating Badges */}
+                <div className="flex items-center gap-3">
+                  <span className="px-3 py-1 text-sm font-semibold bg-primary text-primary-foreground rounded">
+                    {video.quality}
+                  </span>
+                  <div className="flex items-center gap-1 px-3 py-1 bg-secondary rounded">
+                    <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                    <span className="text-sm font-medium text-foreground">
+                      {video.rating}
+                    </span>
+                  </div>
+                  <span className="text-sm text-muted-foreground">
+                    {video.year}
+                  </span>
+                </div>
+
+                {/* Title */}
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+                  {video.title}
+                </h1>
+
+                {/* Meta Info */}
+                <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+                  <span>{video.duration}</span>
+                  <span>•</span>
+                  <span>{video.language}</span>
+                  <span>•</span>
+                  <span>{video.genre.join(", ")}</span>
+                </div>
+
+                {/* Description */}
+                <p className="text-base md:text-lg text-muted-foreground line-clamp-3 max-w-xl text-pretty">
+                  {video.description}
+                </p>
+
+                {/* Action Buttons */}
+                <div className="flex flex-wrap items-center gap-3 pt-2">
+                  <Link href={`/video/${video.id}`}>
+                    <Button size="lg" className="gap-2 text-base">
+                      <Play className="w-5 h-5" fill="currentColor" />
+                      Watch Now
+                    </Button>
+                  </Link>
+                  <Link href={`/video/${video.id}`}>
+                    <Button size="lg" variant="outline" className="gap-2 text-base">
+                      <Info className="w-5 h-5" />
+                      More Info
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
-
-          {/* Title */}
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-            {currentVideo.title}
-          </h1>
-
-          {/* Meta Info */}
-          <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
-            <span>{currentVideo.duration}</span>
-            <span>•</span>
-            <span>{currentVideo.language}</span>
-            <span>•</span>
-            <span>{currentVideo.genre.join(", ")}</span>
-          </div>
-
-          {/* Description */}
-          <p className="text-base md:text-lg text-muted-foreground line-clamp-3 max-w-xl text-pretty">
-            {currentVideo.description}
-          </p>
-
-          {/* Action Buttons */}
-          <div className="flex flex-wrap items-center gap-3 pt-2">
-            <Link href={`/video/${currentVideo.id}`}>
-              <Button size="lg" className="gap-2 text-base">
-                <Play className="w-5 h-5" fill="currentColor" />
-                Watch Now
-              </Button>
-            </Link>
-            <Link href={`/video/${currentVideo.id}`}>
-              <Button size="lg" variant="outline" className="gap-2 text-base">
-                <Info className="w-5 h-5" />
-                More Info
-              </Button>
-            </Link>
-          </div>
-        </div>
+        ))}
       </div>
 
       {/* Navigation Arrows */}
