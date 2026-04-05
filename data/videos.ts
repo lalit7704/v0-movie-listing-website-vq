@@ -357,7 +357,7 @@ export const videos: Video[] = [
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://cdn.sweetescape.com/images/blogs/article-covers/619/231694be-5d00-4531-9022-99cd091a365b-1920.jpg",
     description: "A mastermind criminal plans the biggest heist in Indian history, targeting the Reserve Bank with a team of specialists.",
-    category: "Ramayan",
+    category: "Cartoon",
     year: 2024,
     duration: "12 Episodes",
     rating: 8.2,
