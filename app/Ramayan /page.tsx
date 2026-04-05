@@ -15,7 +15,7 @@ export default function RamayanPage() {
       title="Ramayan"
       description="A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil."
       videos={videos}
-      basePath="/ramayan"
+      basePath="/Ramayan"
       availableLanguages={["Hindi"]}
     />
   );
