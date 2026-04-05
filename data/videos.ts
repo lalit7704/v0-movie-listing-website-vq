@@ -613,7 +613,7 @@ export const videos: Video[] = [
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=400&h=600&fit=crop",
     description: "The Paw Patrol pups gain superpowers and must use them to save Adventure City from a new villain.",
-    category: "Cartoon",
+    category: "ramayan",
     year: 2024,
     duration: "1h 35m",
     rating: 7.0,
