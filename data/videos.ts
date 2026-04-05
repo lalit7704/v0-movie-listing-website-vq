@@ -697,19 +697,34 @@ export const videos: Video[] = [
     quality: "4K"
   },
   {
-    id: "46",
-    title: "Ramayan EP 1 - श्री राम भगवान्‌ का जन्म और बाललीला का आनंद | HQ WIDE SCREEN | English Subtitles",
-    videoUrl: "https://youtu.be/RG3Hqth0Eus",
-    downloadUrl: "https://youtu.be/RG3Hqth0Eus",
-    poster: "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
-    description: "बजरंग बाण | पाठ करै बजरंग बाण की हनुमत रक्षा करै प्राण की | जय श्री हनुमान | तिलक प्रस्तुति 🙏    • संकटमोचन नाम तिहारो - श्री हनुमान अष्टक | ...  श्री हनुमानाष्टक आदित्य गढ़वी के भावयुक्त स्वर में। संकटमोचन हनुमानाष्टक की संरचना गोस्वामी तुलसीदास ने की थी.माना जाता है कि संकटमोचन हनुमानाष्टक का पाठ करने से व्यक्ति अपनी हर बाधा और पीड़ा से मुक्त हो जाता है और उसके सभी संकट दूर हो जाते हैं। ",
-    category: "ramayan",
-    year: 1987,
-    duration: "1 Season ( Episodes 1)",
-    rating: 9,
-    genre: ["Mythology", "Drama", "Adventure"],
-    language: "Hindi",
-    quality: "HD"
+    "id": "46",
+    "title": "Ramayan EP 1 - श्री राम भगवान्‌ का जन्म और बाललीला | Ram Janam Special Episode",
+    "videoUrl": "https://youtu.be/RG3Hqth0Eus",
+    "downloadUrl": "https://youtu.be/RG3Hqth0Eus",
+    "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
+    "description": "Ramayan Episode 1 में भगवान श्री राम के दिव्य जन्म (Ram Janam) और उनकी बाल लीलाओं का अद्भुत वर्णन किया गया है। अयोध्या के राजा दशरथ और उनकी रानियों के जीवन में खुशी तब आती है जब भगवान विष्णु श्री राम के रूप में अवतार लेते हैं। इस एपिसोड में राम जी के बचपन की प्यारी झलकियाँ, भक्ति, धर्म और आदर्श जीवन के संदेश को दर्शाया गया है। Ramayan का यह पहला एपिसोड एक पवित्र और प्रेरणादायक शुरुआत है, जिसे हर भक्त और दर्शक जरूर देखना चाहिए।",
+    "category": "ramayan",
+    "year": 1987,
+    "duration": "Episode 1 (Full Episode)",
+    "rating": 9,
+    "genre": ["Mythology", "Drama", "Spiritual", "Adventure"],
+    "language": "Hindi",
+    "quality": "HD"
+  },
+  {
+    "id": "47",
+    "title": "Ramayan EP 2 - दशरथ अपने चारों पुत्रों को आश्रम भेजा | Ram Lakshman Bharat Shatrughna Gurukul Yatra",
+    "videoUrl": "https://youtu.be/UdLXlTC-bFY",
+    "downloadUrl": "https://youtu.be/UdLXlTC-bFY",
+    "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
+    "description": "Ramayan Episode 2 में राजा दशरथ अपने चारों पुत्रों श्री राम, लक्ष्मण, भरत और शत्रुघ्न को शिक्षा प्राप्त करने के लिए गुरुकुल (आश्रम) भेजते हैं। इस एपिसोड में गुरु वशिष्ठ के आश्रम का वातावरण, शिक्षा, अनुशासन और संस्कारों का महत्व दर्शाया गया है। राम और उनके भाइयों के बीच प्रेम, समर्पण और आदर्श जीवन के मूल्यों की झलक देखने को मिलती है। यह एपिसोड धर्म, शिक्षा और भारतीय परंपराओं की गहराई को दर्शाता है।",
+    "category": "ramayan",
+    "year": 1987,
+    "duration": "Episode 2 (Full Episode)",
+    "rating": 9,
+    "genre": ["Mythology", "Drama", "Spiritual", "Adventure"],
+    "language": "Hindi",
+    "quality": "HD"
   }
 ];
 
