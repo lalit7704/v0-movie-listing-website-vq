@@ -707,7 +707,7 @@ export const videos: Video[] = [
     "year": 1987,
     "duration": "Episode 1 (Full Episode)",
     "rating": 9,
-    "genre": ["Mythology", "Drama", "Spiritual", "Adventure"],
+    "genre": ["Drama", "Spiritual", "Adventure"],
     "language": "Hindi",
     "quality": "HD"
   },
@@ -722,7 +722,7 @@ export const videos: Video[] = [
     "year": 1987,
     "duration": "Episode 2 (Full Episode)",
     "rating": 9,
-    "genre": ["Mythology", "Drama", "Spiritual", "Adventure"],
+    "genre": ["Drama", "Spiritual", "Adventure"],
     "language": "Hindi",
     "quality": "HD"
   },

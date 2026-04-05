@@ -5,6 +5,7 @@ import { getVideosByGenre } from "@/data/videos";
 export const metadata: Metadata = {
   title: "Ramayan | Onemovie",
   description: "A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil.",
+  genre: "ramayan",
 };
 
 export default function RamayanPage() {
