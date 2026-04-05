@@ -111,7 +111,7 @@ export function HeroSlider({ videos }: HeroSliderProps) {
       </div>
 
       {/* Navigation Arrows */}
-      <div className="absolute left-4 top-1/2 -translate-y-1/2 hidden md:block">
+      <div className="absolute left-4 top-1/2 -translate-y-1/2  md:block">
         <Button
           variant="ghost"
           size="icon"
@@ -121,7 +121,7 @@ export function HeroSlider({ videos }: HeroSliderProps) {
           <ChevronLeft className="w-6 h-6" />
         </Button>
       </div>
-      <div className="absolute right-4 top-1/2 -translate-y-1/2 hidden md:block">
+      <div className="absolute right-4 top-1/2 -translate-y-1/2  md:block">
         <Button
           variant="ghost"
           size="icon"
@@ -138,11 +138,10 @@ export function HeroSlider({ videos }: HeroSliderProps) {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`h-1.5 rounded-full transition-all duration-300 ${
-              index === currentIndex
+            className={`h-1.5 rounded-full transition-all duration-300 ${index === currentIndex
                 ? "w-8 bg-primary"
                 : "w-1.5 bg-muted-foreground/50 hover:bg-muted-foreground"
-            }`}
+              }`}
           />
         ))}
       </div>
