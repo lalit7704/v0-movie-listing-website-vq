@@ -707,7 +707,7 @@ export const videos: Video[] = [
     "year": 1987,
     "duration": "Episode 1 (Full Episode)",
     "rating": 9,
-    "genre": ["Action"],
+    "genre": ["Animation", "Action", "Fantasy"],
     "language": "Hindi",
     "quality": "HD"
   },
