@@ -14,6 +14,8 @@ interface HeroSliderProps {
 export function HeroSlider({ videos }: HeroSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [touchEndX, setTouchEndX] = useState<number | null>(null);
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % videos.length);
@@ -31,6 +33,29 @@ export function HeroSlider({ videos }: HeroSliderProps) {
 
   const currentVideo = videos[currentIndex];
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEndX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStartX || !touchEndX) return;
+    const distance = touchStartX - touchEndX;
+    const minSwipeDistance = 50; // Minimum distance to register as a swipe
+
+    if (distance > minSwipeDistance) {
+      nextSlide(); // Swipe left
+    } else if (distance < -minSwipeDistance) {
+      prevSlide(); // Swipe right
+    }
+
+    setTouchStartX(null);
+    setTouchEndX(null);
+  };
+
   if (!currentVideo) return null;
 
   return (
@@ -38,6 +63,9 @@ export function HeroSlider({ videos }: HeroSliderProps) {
       className="relative h-[70vh] md:h-[85vh] w-full overflow-hidden"
       onMouseEnter={() => setIsAutoPlaying(false)}
       onMouseLeave={() => setIsAutoPlaying(true)}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
     >
       {/* Background Image */}
       <div className="absolute inset-0">
@@ -111,7 +139,7 @@ export function HeroSlider({ videos }: HeroSliderProps) {
       </div>
 
       {/* Navigation Arrows */}
-      <div className="absolute left-4 top-1/2 -translate-y-1/2  md:block">
+      <div className="absolute left-4 top-1/2 -translate-y-1/2 hidden md:block">
         <Button
           variant="ghost"
           size="icon"
@@ -121,7 +149,7 @@ export function HeroSlider({ videos }: HeroSliderProps) {
           <ChevronLeft className="w-6 h-6" />
         </Button>
       </div>
-      <div className="absolute right-4 top-1/2 -translate-y-1/2  md:block">
+      <div className="absolute right-4 top-1/2 -translate-y-1/2 hidden md:block">
         <Button
           variant="ghost"
           size="icon"
@@ -139,8 +167,8 @@ export function HeroSlider({ videos }: HeroSliderProps) {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`h-1.5 rounded-full transition-all duration-300 ${index === currentIndex
-              ? "w-8 bg-primary"
-              : "w-1.5 bg-muted-foreground/50 hover:bg-muted-foreground"
+                ? "w-8 bg-primary"
+                : "w-1.5 bg-muted-foreground/50 hover:bg-muted-foreground"
               }`}
           />
         ))}
