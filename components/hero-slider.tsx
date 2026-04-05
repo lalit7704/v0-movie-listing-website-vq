@@ -182,8 +182,11 @@ export function HeroSlider({ videos }: HeroSliderProps) {
         {videos.map((_, index) => (
           <button
             key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`h-1.5 rounded-full transition-all duration-300 ${index === currentIndex
+            onClick={() => {
+              setIsTransitioning(true);
+              setCurrentIndex(index + 1);
+            }}
+            className={`h-1.5 rounded-full transition-all duration-300 ${index === actualIndex
                 ? "w-8 bg-primary"
                 : "w-1.5 bg-muted-foreground/50 hover:bg-muted-foreground"
               }`}
