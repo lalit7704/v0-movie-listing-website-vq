@@ -1,10 +1,12 @@
 export interface Video {
   id: string;
   title: string;
+  slug: string;
   videoUrl: string;
   downloadUrl: string;
   poster: string;
   description: string;
+  seoDescription?: string;
   category: string;
   year: number;
   duration: string;
@@ -13,12 +15,29 @@ export interface Video {
   language: string;
   quality: string;
   featured?: boolean;
+  director?: string;
+  cast?: string[];
+  keywords?: string[];
+}
+
+/**
+ * Helper function to generate SEO-friendly slug from title
+ */
+function generateSlug(title: string): string {
+  return title
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
 
 export const videos: Video[] = [
   {
     id: "1",
     title: "The Dark Knight Returns",
+    slug: generateSlug("The Dark Knight Returns"),
     videoUrl: "https://youtu.be/29nqGdZYsWw",
     downloadUrl: "https://youtu.be/29nqGdZYsWw",
     poster: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=400&h=600&fit=crop",
@@ -35,6 +54,7 @@ export const videos: Video[] = [
   {
     id: "2",
     title: "Pathaan: The Spy",
+    slug: generateSlug("Pathaan: The Spy"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=600&fit=crop",
@@ -51,6 +71,7 @@ export const videos: Video[] = [
   {
     id: "3",
     title: "RRR: Rise Roar Revolt",
+    slug: generateSlug("RRR: Rise Roar Revolt"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=400&h=600&fit=crop",
@@ -67,6 +88,7 @@ export const videos: Video[] = [
   {
     id: "4",
     title: "Inception: The Dream",
+    slug: generateSlug("Inception: The Dream"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=400&h=600&fit=crop",
@@ -83,6 +105,7 @@ export const videos: Video[] = [
   {
     id: "5",
     title: "Pushpa 2: The Rule",
+    slug: generateSlug("Pushpa 2: The Rule"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1533928298208-27ff66555d8d?w=400&h=600&fit=crop",
@@ -98,6 +121,7 @@ export const videos: Video[] = [
   {
     id: "6",
     title: "The Comedy Night",
+    slug: generateSlug("The Comedy Night"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&h=600&fit=crop",
@@ -113,6 +137,7 @@ export const videos: Video[] = [
   {
     id: "7",
     title: "Jawan: The Guardian",
+    slug: generateSlug("Jawan: The Guardian"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=600&fit=crop",
@@ -128,6 +153,7 @@ export const videos: Video[] = [
   {
     id: "8",
     title: "Avengers: Secret Wars",
+    slug: generateSlug("Avengers: Secret Wars"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1635805737707-575885ab0820?w=400&h=600&fit=crop",
@@ -143,6 +169,7 @@ export const videos: Video[] = [
   {
     id: "9",
     title: "KGF Chapter 3",
+    slug: generateSlug("KGF Chapter 3"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=600&fit=crop",
@@ -158,6 +185,7 @@ export const videos: Video[] = [
   {
     id: "10",
     title: "The Last Laugh",
+    slug: generateSlug("The Last Laugh"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=600&fit=crop",
@@ -173,6 +201,7 @@ export const videos: Video[] = [
   {
     id: "11",
     title: "Dunki: The Migration",
+    slug: generateSlug("Dunki: The Migration"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1542204165-65bf26472b9b?w=400&h=600&fit=crop",
@@ -713,7 +742,7 @@ export const videos: Video[] = [
   },
   {
     "id": "47",
-    "title": "Ramayan EP 2 - दशरथ अपने चारों पुत्रों को आश्रम भेजा | Ram Lakshman Bharat Shatrughna Gurukul Yatra",
+    "title": "Ramayan EP 2 - दशरथ अ��ने चारों पुत्रों को आश्रम भेजा | Ram Lakshman Bharat Shatrughna Gurukul Yatra",
     "videoUrl": "https://youtu.be/UdLXlTC-bFY",
     "downloadUrl": "https://youtu.be/UdLXlTC-bFY",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -858,4 +887,18 @@ export const getKidsCartoons = (): Video[] => {
 
 export const getRamayanVideos = (): Video[] => {
   return videos.filter(video => video.category === 'Ramayan');
+};
+
+/**
+ * Get video by slug for SEO-optimized routing
+ */
+export const getVideoBySlug = (slug: string): Video | undefined => {
+  return videos.find(video => video.slug === slug);
+};
+
+/**
+ * Get all video slugs for static generation
+ */
+export const getAllVideoSlugs = (): string[] => {
+  return videos.map(video => video.slug);
 };

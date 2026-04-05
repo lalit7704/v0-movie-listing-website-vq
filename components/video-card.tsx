@@ -5,22 +5,27 @@ import Link from "next/link";
 import { Play, Star, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Video } from "@/data/videos";
+import { generateSlug } from "@/lib/seo-utils";
 
 interface VideoCardProps {
   video: Video;
 }
 
 export function VideoCard({ video }: VideoCardProps) {
+  const slug = video.slug || generateSlug(video.title);
+  const videoUrl = `/movie/${slug}`;
+
   return (
     <div className="group relative flex-shrink-0 w-[160px] sm:w-[180px] md:w-[200px]">
-      <Link href={`/video/${video.id}`}>
+      <Link href={videoUrl}>
         <div className="relative aspect-[2/3] rounded-lg overflow-hidden bg-muted">
           <Image
             src={video.poster}
-            alt={video.title}
+            alt={`${video.title} - ${video.category} movie streaming online`}
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-110"
             sizes="(max-width: 640px) 160px, (max-width: 768px) 180px, 200px"
+            loading="lazy"
           />
           
           {/* Overlay */}
@@ -70,8 +75,8 @@ export function VideoCard({ video }: VideoCardProps) {
 
       {/* Watch Now Button - visible on hover */}
       <div className="absolute -bottom-2 left-0 right-0 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-300">
-        <Link href={`/video/${video.id}`} className="block">
-          <Button size="sm" className="w-full text-xs h-8">
+        <Link href={videoUrl} className="block">
+          <Button size="sm" className="w-full text-xs h-8" aria-label={`Watch ${video.title}`}>
             <Play className="w-3 h-3 mr-1" />
             Watch Now
           </Button>

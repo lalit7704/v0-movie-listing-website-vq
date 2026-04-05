@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from 'next'
+import Script from "next/script"
 import { Inter, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import Script from 'next/script'
 import './globals.css'
+import { generateOrganizationSchema, generateWebsiteSchema } from '@/lib/structured-data'
 
 const inter = Inter({
   subsets: ["latin"],
@@ -41,9 +42,30 @@ export const metadata: Metadata = {
     description: 'Your ultimate destination for streaming movies and web series online.',
     type: 'website',
     siteName: 'Onemovie',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Onemovie - Watch Movies & Web Series Online Free',
+    description: 'Stream Bollywood, Hollywood, and South Indian movies online for free.',
   },
   other: {
     "google-adsense-account": "ca-pub-5319727568049071"
+  },
+  metadataBase: new URL('https://onemovie.app'),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: 'https://onemovie.app',
   },
 }
 
@@ -59,8 +81,32 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const organizationSchema = generateOrganizationSchema();
+  const websiteSchema = generateWebsiteSchema();
+
   return (
     <html lang="en" className="dark">
+      <head>
+        {/* Preconnect to external resources for performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* JSON-LD Structured Data */}
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+      </head>
       <body className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
         <Analytics />
