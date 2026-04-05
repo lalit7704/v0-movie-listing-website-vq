@@ -703,7 +703,7 @@ export const videos: Video[] = [
     "downloadUrl": "https://youtu.be/RG3Hqth0Eus",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
     "description": "Ramayan Episode 1 में भगवान श्री राम के दिव्य जन्म (Ram Janam) और उनकी बाल लीलाओं का अद्भुत वर्णन किया गया है। अयोध्या के राजा दशरथ और उनकी रानियों के जीवन में खुशी तब आती है जब भगवान विष्णु श्री राम के रूप में अवतार लेते हैं। इस एपिसोड में राम जी के बचपन की प्यारी झलकियाँ, भक्ति, धर्म और आदर्श जीवन के संदेश को दर्शाया गया है। Ramayan का यह पहला एपिसोड एक पवित्र और प्रेरणादायक शुरुआत है, जिसे हर भक्त और दर्शक जरूर देखना चाहिए।",
-    "category": "ramayan",
+    "category": "Web Series",
     "year": 1987,
     "duration": "Episode 1 (Full Episode)",
     "rating": 9,
