@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import Script from 'next/script'
 import './globals.css'
 
 const inter = Inter({
@@ -41,6 +42,9 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Onemovie',
   },
+  other: {
+    "google-adsense-account": "ca-pub-5319727568049071"
+  },
 }
 
 export const viewport: Viewport = {
@@ -60,6 +64,14 @@ export default function RootLayout({
       <body className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
         <Analytics />
+
+        {/* Google AdSense Script */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319727568049071"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
