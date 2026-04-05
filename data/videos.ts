@@ -342,7 +342,7 @@ export const videos: Video[] = [
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf?w=400&h=600&fit=crop",
     description: "The final season chronicles the British Royal Family through the modern era and its contemporary challenges.",
-    category: "ramayan",
+    category: "Cartoon",
     year: 2024,
     duration: "10 Episodes",
     rating: 8.5,
