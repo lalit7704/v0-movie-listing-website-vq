@@ -856,3 +856,6 @@ export const getKidsCartoons = (): Video[] => {
 };
 
 
+export const getRamayanVideos = (): Video[] => {
+  return videos.filter(video => video.category === 'Ramayan');
+};
