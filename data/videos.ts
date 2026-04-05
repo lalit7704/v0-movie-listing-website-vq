@@ -718,7 +718,7 @@ export const videos: Video[] = [
     "downloadUrl": "https://youtu.be/UdLXlTC-bFY",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
     "description": "Ramayan Episode 2 में राजा दशरथ अपने चारों पुत्रों श्री राम, लक्ष्मण, भरत और शत्रुघ्न को शिक्षा प्राप्त करने के लिए गुरुकुल (आश्रम) भेजते हैं। इस एपिसोड में गुरु वशिष्ठ के आश्रम का वातावरण, शिक्षा, अनुशासन और संस्कारों का महत्व दर्शाया गया है। राम और उनके भाइयों के बीच प्रेम, समर्पण और आदर्श जीवन के मूल्यों की झलक देखने को मिलती है। यह एपिसोड धर्म, शिक्षा और भारतीय परंपराओं की गहराई को दर्शाता है।",
-    "category": "Web Series",
+    "category": "ramayan",
     "year": 1987,
     "duration": "Episode 2 (Full Episode)",
     "rating": 9,
