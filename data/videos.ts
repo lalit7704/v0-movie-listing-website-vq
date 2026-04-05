@@ -725,6 +725,21 @@ export const videos: Video[] = [
     "genre": ["Mythology", "Drama", "Spiritual", "Adventure"],
     "language": "Hindi",
     "quality": "HD"
+  },
+  {
+    "id": "48",
+    "title": "Ramayan EP 3 - अनुशासन में रहकर शिक्षा ग्रहण की | Gurukul Life & Values of Shri Ram",
+    "videoUrl": "https://youtu.be/your-video-link",
+    "downloadUrl": "https://youtu.be/your-video-link",
+    "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
+    "description": "Ramayan Episode 3 में श्री राम, लक्ष्मण, भरत और शत्रुघ्न गुरुकुल में रहकर अनुशासन, ज्ञान और जीवन के महत्वपूर्ण मूल्यों की शिक्षा ग्रहण करते हैं। गुरु वशिष्ठ के मार्गदर्शन में वे धर्म, कर्तव्य और आदर्श जीवन जीने के सिद्धांत सीखते हैं। इस एपिसोड में गुरुकुल जीवन की सादगी, नियम और संस्कारों का सुंदर चित्रण किया गया है, जो जीवन को सही दिशा देने की प्रेरणा देता है।",
+    "category": "ramayan",
+    "year": 1987,
+    "duration": "Episode 3 (Full Episode)",
+    "rating": 9,
+    "genre": ["Mythology", "Drama", "Spiritual", "Adventure"],
+    "language": "Hindi",
+    "quality": "HD"
   }
 ];
 
