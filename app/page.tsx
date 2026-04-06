@@ -27,6 +27,7 @@ export default function HomePage() {
   const bollywoodVideos = getVideosByCategory("Bollywood");
   const hollywoodVideos = getVideosByCategory("Hollywood");
   const ramayanVideos = getVideosByCategory("Ramayan");
+  const mahabharatVideos = getVideosByCategory("Mahabharat");
   const southIndianVideos = getVideosByCategory("South Indian");
   const webSeriesVideos = getVideosByCategory("Web Series");
   const actionVideos = getVideosByGenre("Action");
@@ -86,7 +87,12 @@ export default function HomePage() {
           videos={ramayanVideos}
           id="ramayan"
         />
-
+        {/* 7. Mahabharat */}
+        <SectionSlider
+          title="Mahabharat "
+          videos={mahabharatVideos}
+          id="mahabharat"
+        />
         {/* 8. South Indian Movies */}
         <SectionSlider
           title="South Indian Movies"
