@@ -26,6 +26,7 @@ export default function HomePage() {
   const topRatedVideos = getTopRatedVideos();
   const bollywoodVideos = getVideosByCategory("Bollywood");
   const hollywoodVideos = getVideosByCategory("Hollywood");
+  const hollywoodVideos = getVideosByCategory("Ramayan");
   const southIndianVideos = getVideosByCategory("South Indian");
   const webSeriesVideos = getVideosByCategory("Web Series");
   const actionVideos = getVideosByGenre("Action");
@@ -77,6 +78,13 @@ export default function HomePage() {
           title="Hollywood Movies"
           videos={hollywoodVideos}
           id="hollywood"
+        />
+
+        {/* 7. Ramayan */}
+        <SectionSlider
+          title="Ramayan "
+          videos={ramayanVideos}
+          id="ramayan"
         />
 
         {/* 8. South Indian Movies */}
