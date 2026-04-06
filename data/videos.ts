@@ -217,6 +217,7 @@ export const videos: Video[] = [
   {
     id: "12",
     title: "Dune: Messiah",
+    slug: generateSlug("Dune: Messiah"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1534809027769-b00d750a6bac?w=400&h=600&fit=crop",
@@ -232,6 +233,7 @@ export const videos: Video[] = [
   {
     id: "13",
     title: "Salaar: Ceasefire",
+    slug: generateSlug("Salaar: Ceasefire"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1460881680093-7c8e5e1b5e04?w=400&h=600&fit=crop",
@@ -247,6 +249,7 @@ export const videos: Video[] = [
   {
     id: "14",
     title: "The Matrix Resurrection",
+    slug: generateSlug("The Matrix Resurrection"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=400&h=600&fit=crop",
@@ -262,6 +265,7 @@ export const videos: Video[] = [
   {
     id: "15",
     title: "Fighter: The Airforce",
+    slug: generateSlug("Fighter: The Airforce"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
