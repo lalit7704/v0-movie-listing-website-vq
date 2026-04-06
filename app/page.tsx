@@ -163,13 +163,6 @@ export default function HomePage() {
           id="sci-fi"
         />
 
-        {/* 14. Thriller Movies */}
-        <SectionSlider
-          title="Thriller Movies"
-          videos={thrillerVideos}
-          id="thriller"
-        />
-
         {/* 16. Editor's Picks */}
         <SectionSlider title="Editor's Picks" videos={editorsPicks} />
 
