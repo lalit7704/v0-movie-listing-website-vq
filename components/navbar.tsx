@@ -36,12 +36,11 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 gap-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group flex-shrink-0">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center group-hover:scale-105 transition-transform">
-              <Film className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-bold text-foreground hidden sm:inline">
-              One<span className="text-primary">movie</span>
-            </span>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0649/9945/6854/files/one-movie-logo.png?v=1775500619"
+              alt="OneMovie Logo"
+              className="h-10 w-auto group-hover:scale-105 transition-transform"
+            />
           </Link>
 
           {/* Desktop Navigation */}
