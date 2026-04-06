@@ -7,15 +7,15 @@ export const metadata: Metadata = {
   description: "A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil.",
 };
 
-export default function RamayanPage() {
-  const videos = getVideosByGenre("ramayan");
+export default function mahabharatPage() {
+  const videos = getVideosByGenre("mahabharat");
 
   return (
     <CollectionPage
-      title="Ramayan"
+      title="Mahabharat"
       description="A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil."
       videos={videos}
-      basePath="/ramayan"
+      basePath="/mahabharat"
       availableLanguages={["Hindi"]}
     />
   );
