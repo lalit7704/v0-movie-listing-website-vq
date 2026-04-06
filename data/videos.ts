@@ -36,7 +36,7 @@ function generateSlug(title: string): string {
 export const videos: Video[] = [
   {
     id: "1",
-    title: "Furiosa: A Mad Max Saga (2024) Hindi Dubbed",
+    title: "Furiosa: A Mad Max Saga (2024)",
     slug: generateSlug("Furiosa: A Mad Max Saga"),
     videoUrl: "https://youtu.be/XJMuhwVlca4",
     downloadUrl: "https://yomovies.pet/furiosa-a-mad-max-saga-2024-hindi-dubbed-Watch-online-full-movie/",
