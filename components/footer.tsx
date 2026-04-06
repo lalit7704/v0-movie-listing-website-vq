@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Film, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 
 const footerLinks = {
   browse: [
@@ -34,12 +34,11 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <Film className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold text-foreground">
-                One<span className="text-primary">movie</span>
-              </span>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0649/9945/6854/files/one-movie-logo.png?v=1775500619"
+                alt="OneMovie Logo"
+                className="h-10 w-auto"
+              />
             </Link>
             <p className="text-muted-foreground text-sm max-w-sm mb-6">
               Your ultimate destination for streaming movies and web series. Watch the latest Bollywood, Hollywood, and South Indian movies in HD quality.
@@ -129,7 +128,9 @@ export function Footer() {
           <p className="text-sm text-muted-foreground text-center sm:text-left">
             &copy; {new Date().getFullYear()} Onemovie. All rights reserved.
           </p>
-
+          <p className="text-xs text-muted-foreground text-center sm:text-right">
+            Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.
+          </p>
         </div>
       </div>
     </footer>
