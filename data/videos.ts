@@ -36,18 +36,18 @@ function generateSlug(title: string): string {
 export const videos: Video[] = [
   {
     id: "1",
-    title: "The Dark Knight Returns",
-    slug: generateSlug("The Dark Knight Returns"),
-    videoUrl: "https://youtu.be/29nqGdZYsWw",
-    downloadUrl: "https://youtu.be/29nqGdZYsWw",
-    poster: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=400&h=600&fit=crop",
-    description: "When Gotham's most dangerous criminals are released, an aging Bruce Wayne must don the cape once more to save his city from chaos and destruction.",
+    title: "Furiosa: A Mad Max Saga (2024) Hindi Dubbed",
+    slug: generateSlug("Furiosa: A Mad Max Saga"),
+    videoUrl: "https://speedostream1.com/2xmyklaj8l2t.html",
+    downloadUrl: "https://speedostream1.com/2xmyklaj8l2t.html",
+    poster: "https://image.tmdb.org/t/p/w780/q8IEFmEGGSGmAWfwRs23XDwdFN4.jpg",
+    description: "As the world fell, young Furiosa is snatched from the Green Place of Many Mothers and falls into the hands of a great Biker Horde led by the Warlord Dementus. Sweeping through the Wasteland they come across the Citadel presided over by The Immortan Joe. While the two Tyrants war for dominance, Furiosa must survive many trials as she puts together the means to find her way home.",
     category: "Hollywood",
     year: 2024,
-    duration: "2h 35m",
-    rating: 8.9,
-    genre: ["Action", "Drama", "Thriller"],
-    language: "English",
+    duration: "2h 28m",
+    rating: 7.5,
+    genre: ["Action", "Adventure"],
+    language: "Hindi",
     quality: "HD",
     featured: true
   },
@@ -217,6 +217,7 @@ export const videos: Video[] = [
   {
     id: "12",
     title: "Dune: Messiah",
+    slug: generateSlug("Dune: Messiah"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1534809027769-b00d750a6bac?w=400&h=600&fit=crop",
@@ -232,6 +233,7 @@ export const videos: Video[] = [
   {
     id: "13",
     title: "Salaar: Ceasefire",
+    slug: generateSlug("Salaar: Ceasefire"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1460881680093-7c8e5e1b5e04?w=400&h=600&fit=crop",
@@ -247,6 +249,7 @@ export const videos: Video[] = [
   {
     id: "14",
     title: "The Matrix Resurrection",
+    slug: generateSlug("The Matrix Resurrection"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=400&h=600&fit=crop",
@@ -262,6 +265,7 @@ export const videos: Video[] = [
   {
     id: "15",
     title: "Fighter: The Airforce",
+    slug: generateSlug("Fighter: The Airforce"),
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
     poster: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=600&fit=crop",
