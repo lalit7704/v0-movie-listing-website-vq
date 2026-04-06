@@ -26,7 +26,7 @@ export default function HomePage() {
   const topRatedVideos = getTopRatedVideos();
   const bollywoodVideos = getVideosByCategory("Bollywood");
   const hollywoodVideos = getVideosByCategory("Hollywood");
-  const hollywoodVideos = getVideosByCategory("Ramayan");
+  const ramayanVideos = getVideosByCategory("Ramayan");
   const southIndianVideos = getVideosByCategory("South Indian");
   const webSeriesVideos = getVideosByCategory("Web Series");
   const actionVideos = getVideosByGenre("Action");
