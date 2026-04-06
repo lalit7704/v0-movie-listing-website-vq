@@ -93,7 +93,7 @@ export const videos: Video[] = [
     downloadUrl: "https://youtu.be/XW1RkKiRnsg",
     poster: "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Bhooth_Bangla_poster.png?v=1775497649",
     description: "Bhooth Bangla is an upcoming Indian Hindi-language fantasy horror comedy film directed by Priyadarshan and produced by Akshay Kumar",
-    category: "Hollywood",
+    category: "Bollywood",
     year: 2026,
     duration: "2h 53m",
     rating: 9.1,
