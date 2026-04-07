@@ -39,7 +39,7 @@ export const videos: Video[] = [
     title: "Furiosa: A Mad Max Saga (2024)",
     slug: generateSlug("Furiosa: A Mad Max Saga"),
     videoUrl: "https://youtu.be/XJMuhwVlca4",
-    downloadUrl: "https://yomovies.pet/furiosa-a-mad-max-saga-2024-hindi-dubbed-Watch-online-full-movie/",
+    downloadUrl: "https://t.me/HINDIHDNEWMOVIES12/292",
     poster: "https://image.tmdb.org/t/p/w780/q8IEFmEGGSGmAWfwRs23XDwdFN4.jpg",
     description: "As the world fell, young Furiosa is snatched from the Green Place of Many Mothers and falls into the hands of a great Biker Horde led by the Warlord Dementus. Sweeping through the Wasteland they come across the Citadel presided over by The Immortan Joe. While the two Tyrants war for dominance, Furiosa must survive many trials as she puts together the means to find her way home.",
     category: "Hollywood",
