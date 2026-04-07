@@ -68,32 +68,58 @@ export async function POST(request: NextRequest): Promise<NextResponse<UploadRes
 
     // Create a Telegram-like download link (mock implementation)
     // In production, you would integrate with actual Telegram Bot API
-    const encodedTitle = encodeURIComponent(title.trim());
-    const encodedUrl = encodeURIComponent(videoUrl);
-    
-    // Generate a mock Telegram-style link
-    // This could be replaced with actual Telegram Bot API integration
-    const telegramLink = `https://t.me/share/url?url=${encodedUrl}&text=Watch%20${encodedTitle}%20-%%20Download%20Now`;
+    // ✅ TELEGRAM BOT API USE KARO
+    const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+    const CHANNEL = "@onemoviedownloa";
 
-    // Return success response with Telegram link
-    return NextResponse.json(
-      {
-        success: true,
-        telegramLink,
-      },
-      { status: 200 }
-    );
+    const response = await fetch(`https://api.telegram.org/bot${8564702752: AAHXTvwUjMnFSiFgXN0u3tdwf_0ecZadDzg}/sendVideo`, {
+  method: "POST",
+    headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    chat_id: CHANNEL,
+    video: videoUrl,
+    caption: title
+  })
+});
+
+const data = await response.json();
+
+// ❗ Error check
+if (!data.ok) {
+  return NextResponse.json(
+    {
+      success: false,
+      error: "Telegram upload failed",
+    },
+    { status: 500 }
+  );
+}
+
+// ✅ Message ID se link banao
+const messageId = data.result.message_id;
+const telegramLink = `https://t.me/onemoviedownloa/${messageId}`;
+
+// Return success response with Telegram link
+return NextResponse.json(
+  {
+    success: true,
+    telegramLink,
+  },
+  { status: 200 }
+);
   } catch (error) {
-    console.error("[API Upload Error]:", error);
+  console.error("[API Upload Error]:", error);
 
-    return NextResponse.json(
-      {
-        success: false,
-        error: error instanceof Error ? error.message : "Internal server error",
-      },
-      { status: 500 }
-    );
-  }
+  return NextResponse.json(
+    {
+      success: false,
+      error: error instanceof Error ? error.message : "Internal server error",
+    },
+    { status: 500 }
+  );
+}
 }
 
 /**
