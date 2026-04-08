@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
     }
 
     // 🔥 TOKEN (isko .env me rakhna better hai)
-    const TOKEN = "YOUR_BOT_TOKEN";
+    const TOKEN = "8564702752:AAGQWoG0-2cDc49AzhvFb-lQvl5KlEK9Iq0";
     const CHANNEL = "@onemoviedownloa";
 
     const response = await fetch(
