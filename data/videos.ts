@@ -1131,3 +1131,4 @@ export const getVideoBySlug = (slug: string): Video | undefined => {
 export const getAllVideoSlugs = (): string[] => {
   return videos.map(video => video.slug);
 };
+
