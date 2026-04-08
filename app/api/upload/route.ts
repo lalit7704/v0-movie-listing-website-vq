@@ -65,72 +65,75 @@ export async function POST(request: NextRequest): Promise<NextResponse<UploadRes
         { status: 400 }
       );
     }
+    import { NextRequest, NextResponse } from "next/server";
 
-    // Create a Telegram-like download link (mock implementation)
-    // In production, you would integrate with actual Telegram Bot API
-    // ✅ TELEGRAM BOT API USE KARO
-    const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-    const CHANNEL = "@onemoviedownloa";
+    export async function POST(request) {
+      try {
+        const body = await request.json();
+        const { title, videoUrl } = body;
 
-    const response = await fetch(`https://api.telegram.org/bot${TOKEN}/sendVideo`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        chat_id: CHANNEL,
-        video: videoUrl,
-        caption: title
-      })
-    });
+        if (!title || !videoUrl) {
+          return NextResponse.json(
+            { success: false, error: "Title and Video URL required" },
+            { status: 400 }
+          );
+        }
 
-    const data = await response.json();
+        // 🔥 YAHAN TOKEN PASTE KARO (NEW TOKEN)
+        const TOKEN = "8564702752:AAFIiAFgxRWFIsK_YfHqK6qXUDXiw9PHDrE";
+        const CHANNEL = "@onemoviedownloa";
 
-    // ❗ Error check
-    if (!data.ok) {
+        const response = await fetch(
+          `https://api.telegram.org/bot${TOKEN}/sendVideo`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              chat_id: CHANNEL,
+              video: videoUrl,
+              caption: title,
+            }),
+          }
+        );
+
+        const data = await response.json();
+
+        if (!data.ok) {
+          return NextResponse.json(
+            {
+              success: false,
+              error: data.description || "Telegram upload failed",
+            },
+            { status: 500 }
+          );
+        }
+
+        const messageId = data.result.message_id;
+        const telegramLink = `https://t.me/onemoviedownloa/${messageId}`;
+
+        return NextResponse.json({
+          success: true,
+          telegramLink,
+        });
+
+      } catch (error) {
+        return NextResponse.json(
+          { success: false, error: "Server error" },
+          { status: 500 }
+        );
+      }
+    }
+    /**
+     * Handle other HTTP methods
+     */
+    export async function GET(): Promise<NextResponse> {
       return NextResponse.json(
         {
           success: false,
-          error: "Telegram upload failed",
+          error: "Method GET not allowed. Use POST to upload movies.",
         },
-        { status: 500 }
+        { status: 405 }
       );
     }
-
-    // ✅ Message ID se link banao
-    const messageId = data.result.message_id;
-    const telegramLink = `https://t.me/onemoviedownloa/${messageId}`;
-
-    // Return success response with Telegram link
-    return NextResponse.json(
-      {
-        success: true,
-        telegramLink,
-      },
-      { status: 200 }
-    );
-  } catch (error) {
-    console.error("[API Upload Error]:", error);
-
-    return NextResponse.json(
-      {
-        success: false,
-        error: error instanceof Error ? error.message : "Internal server error",
-      },
-      { status: 500 }
-    );
-  }
-}
-
-/**
- * Handle other HTTP methods
- */
-export async function GET(): Promise<NextResponse> {
-  return NextResponse.json(
-    {
-      success: false,
-      error: "Method GET not allowed. Use POST to upload movies.",
-    },
-    { status: 405 }
-  );
-}
