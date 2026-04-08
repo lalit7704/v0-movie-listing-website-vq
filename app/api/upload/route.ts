@@ -69,7 +69,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<UploadRes
     // Create a Telegram-like download link (mock implementation)
     // In production, you would integrate with actual Telegram Bot API
     // ✅ TELEGRAM BOT API USE KARO
-    const TOKEN = process.env.8564702752: AAFIiAFgxRWFIsK_YfHqK6qXUDXiw9PHDrE;
+    const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
     const CHANNEL = "@onemoviedownloa";
 
     const response = await fetch(`https://api.telegram.org/bot${TOKEN}/sendVideo`, {

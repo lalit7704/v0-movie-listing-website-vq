@@ -22,7 +22,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: VideoPageProps) {
   const { id } = await params;
   const video = getVideoById(id);
-  
+
   if (!video) {
     return {
       title: "Video Not Found - Onemovie",
@@ -172,7 +172,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
             {/* Sidebar - Poster and Quick Info */}
             <div className="space-y-6">
               {/* Poster */}
-              <div className="relative aspect-[2/3] rounded-xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-xl overflow-hidden shadow-2xl">
                 <Image
                   src={video.poster}
                   alt={video.title}
