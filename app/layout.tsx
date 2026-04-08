@@ -90,7 +90,7 @@ export default function RootLayout({
         {/* Preconnect to external resources for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+        <meta name="google-adsense-account" content="ca-pub-5319727568049071"></meta>
         {/* JSON-LD Structured Data */}
         <Script
           id="organization-schema"
