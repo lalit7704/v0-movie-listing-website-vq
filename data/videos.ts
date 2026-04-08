@@ -1131,3 +1131,20 @@ export const getVideoBySlug = (slug: string): Video | undefined => {
 export const getAllVideoSlugs = (): string[] => {
   return videos.map(video => video.slug);
 };
+
+
+async function uploadMovie() {
+  const res = await fetch("/api/upload", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      title: "Test Movie",
+      videoUrl: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+    }),
+  });
+
+  const data = await res.json();
+  console.log(data);
+}
