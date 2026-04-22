@@ -1042,7 +1042,7 @@ export const videos: Video[] = [
     duration: "2h 35m",
     rating: 7.8,
     genre: ["Drama", "Comedy", "Romance", "Coming-of-Age"],
-    language: "Tamil",
+    language: "Hindi",
     quality: "HD"
   }
 ];
