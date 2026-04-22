@@ -1041,7 +1041,7 @@ export const videos: Video[] = [
     year: 2025,
     duration: "2h 35m",
     rating: 7.8,
-    genre: ["Drama", "Comedy", "Romance", "Coming-of-Age"],
+    genre: ["Drama", "Comedy", "Romance"],
     language: "Hindi",
     quality: "HD"
   }
