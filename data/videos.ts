@@ -1032,7 +1032,8 @@ export const videos: Video[] = [
   {
     id: "48",
     title: "Dragon",
-    videoUrl: "https://youtu.be/qIBZlbJ7NUE",
+    slug: generateSlug("Dragon"),
+    videoUrl: "https://t.me/onemoviedownloa/4",
     downloadUrl: "YOUR_DOWNLOAD_LINK",
     poster: "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/download.png?v=1776877280",
     description: "After a devastating breakup, a troubled student drops out of college and enters the dangerous world of financial fraud, chasing money and power while getting trapped in deception.",
