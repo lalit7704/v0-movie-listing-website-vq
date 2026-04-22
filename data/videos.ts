@@ -1028,6 +1028,21 @@ export const videos: Video[] = [
     "genre": ["Adventure", "Drama", "Family", "Fantasy"],
     "language": "Hindi",
     "quality": "HD"
+  },
+  {
+    id: "48",
+    title: "Dragon",
+    videoUrl: "YOUR_VIDEO_LINK",
+    downloadUrl: "YOUR_DOWNLOAD_LINK",
+    poster: "https://upload.wikimedia.org/wikipedia/en/0/08/Dragon_2025_film_poster.jpg",
+    description: "After a devastating breakup, a troubled student drops out of college and enters the dangerous world of financial fraud, chasing money and power while getting trapped in deception.",
+    category: "Movie",
+    year: 2025,
+    duration: "2h 35m",
+    rating: 7.8,
+    genre: ["Drama", "Comedy", "Romance", "Coming-of-Age"],
+    language: "Tamil",
+    quality: "HD"
   }
 ];
 
