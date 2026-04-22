@@ -55,7 +55,7 @@ export const videos: Video[] = [
     id: "2",
     title: "Dhurandhar: The Revenge",
     slug: generateSlug("Dhurandhar: The Revenge"),
-    videoUrl: "https://youtu.be/CN0lNff-zm0",
+    videoUrl: "https://youtu.be/NHk7scrb_9I",
     downloadUrl: "https://teams.microsoft.com/l/message/48:notes/1776878568229?context=%7B%22contextType%22%3A%22chat%22%2C%22oid%22%3A%228%3Aorgid%3A03370cb9-5305-452e-82a2-4001c7947cd9%22%7D",
     poster: "https://m.media-amazon.com/images/M/MV5BNDhjNThiMjQtNTc0ZS00MjAxLTgyODItNDFkZjI5YjU0MDJhXkEyXkFqcGc@._V1_FMjpg_UY631_.jpg",
     description: "As rival gangs, corrupt officials and a ruthless Major Iqbal close in, Hamza’s mission for his country spirals into a bloody personal war where the line between patriot and monster disappears in the streets of Lyari.",
