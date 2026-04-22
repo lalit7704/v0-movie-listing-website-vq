@@ -1030,7 +1030,7 @@ export const videos: Video[] = [
     "quality": "HD"
   },
   {
-    id: "48",
+    id: "66",
     title: "Dragon",
     slug: generateSlug("Dragon"),
     videoUrl: "https://t.me/onemoviedownloa/4",
@@ -1041,8 +1041,8 @@ export const videos: Video[] = [
     year: 2025,
     duration: "2h 35m",
     rating: 7.8,
-    genre: ["Drama", "Comedy", "Romance", "Coming-of-Age"],
-    language: "Tamil",
+    genre: ["Drama", "Comedy", "Romance"],
+    language: "Hindi",
     quality: "HD"
   }
 ];
