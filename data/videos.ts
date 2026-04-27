@@ -1099,7 +1099,7 @@ export const videos: Video[] = [
     "title": "Iron Man 2 (2010) - Tony Stark vs Whiplash | Full Movie HD",
     "videoUrl": "https://your-video-link",
     "downloadUrl": "https://your-download-link",
-    "poster": "https://m.media-amazon.com/images/I/71xV8wPzYPL._SL1024_.jpg",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/download_1.png?v=1777317514",
     "description": "Iron Man 2 (2010) में Tony Stark अपनी पहचान Iron Man के रूप में दुनिया के सामने लाने के बाद नई चुनौतियों का सामना करता है। सरकार उसके सूट की तकनीक को हासिल करना चाहती है, जबकि एक नया दुश्मन Whiplash उसे खत्म करने की योजना बनाता है। इस फिल्म में जबरदस्त एक्शन, एडवांस टेक्नोलॉजी और Marvel Universe के विस्तार की झलक देखने को मिलती है, जहाँ दोस्ती, जिम्मेदारी और शक्ति का सही उपयोग मुख्य विषय हैं।",
     "category": "hollywood",
     "year": 2010,
