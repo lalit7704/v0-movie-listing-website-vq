@@ -1050,9 +1050,9 @@ export const videos: Video[] = [
     "id": "67",
     "title": "Iron Man (2008) - Tony Stark Becomes Iron Man | Full Movie HD",
     "slug": generateSlug("Iron Man (2008) - Tony Stark Becomes Iron Man | Full Movie HD"),
-    "videoUrl": "https://your-video-link",
-    "downloadUrl": "https://your-download-link",
-    "poster": "https://m.media-amazon.com/images/I/81Dei9A0lSL._SL1500_.jpg",
+    "videoUrl": "https://youtu.be/_xu02V1kM1w",
+    "downloadUrl": "https://t.me/onemoviedownloa/20",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/download_1.png?v=1777317514",
     "description": "Iron Man (2008) एक Action और Sci-Fi फिल्म है जिसमें Tony Stark, एक अरबपति जीनियस और हथियार निर्माता, आतंकवादियों द्वारा अपहरण के बाद अपनी जिंदगी बदल देता है। कैद में रहते हुए वह एक हाई-टेक सूट बनाता है और खुद को Iron Man के रूप में बदलकर दुनिया को बचाने का फैसला करता है। यह फिल्म Marvel Cinematic Universe की शुरुआत करती है और इसमें टेक्नोलॉजी, एक्शन और सुपरहीरो की शानदार कहानी देखने को मिलती है।",
     "category": "hollywood",
     "year": 2008,
@@ -1093,6 +1093,21 @@ export const videos: Video[] = [
     genre: ["Crime", "Drama", "Thriller"],
     language: "Hindi",
     quality: "HD"
+  },
+  {
+    "id": "70",
+    "title": "Iron Man 2 (2010) - Tony Stark vs Whiplash | Full Movie HD",
+    "videoUrl": "https://your-video-link",
+    "downloadUrl": "https://t.me/onemoviedownloa/20",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/download_1.png?v=1777317514",
+    "description": "Iron Man 2 (2010) में Tony Stark अपनी पहचान Iron Man के रूप में दुनिया के सामने लाने के बाद नई चुनौतियों का सामना करता है। सरकार उसके सूट की तकनीक को हासिल करना चाहती है, जबकि एक नया दुश्मन Whiplash उसे खत्म करने की योजना बनाता है। इस फिल्म में जबरदस्त एक्शन, एडवांस टेक्नोलॉजी और Marvel Universe के विस्तार की झलक देखने को मिलती है, जहाँ दोस्ती, जिम्मेदारी और शक्ति का सही उपयोग मुख्य विषय हैं।",
+    "category": "hollywood",
+    "year": 2010,
+    "duration": "2h 4m",
+    "rating": 7,
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "language": "English",
+    "quality": "HD"
   }
 
 ];
