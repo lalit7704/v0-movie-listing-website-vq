@@ -1081,8 +1081,8 @@ export const videos: Video[] = [
   {
     "id": "104",
     "title": "Paatal Lok Season 1 - Crime Thriller Web Series | Full Episodes HD",
-    "videoUrl": "https://your-video-link",
-    "downloadUrl": "https://your-download-link",
+    "videoUrl": "https://youtu.be/cNwWMW4mxO8",
+    "downloadUrl": "https://t.me/onemoviedownloa/37",
     "poster": "https://m.media-amazon.com/images/M/MV5BMmEzNjYwY2UtYzY2MC00Njc5LWFmYjktNzMzZWRkY2E4ZWE4XkEyXkFqcGc@._V1_.jpg",
     "description": "Paatal Lok Season 1 एक gripping crime thriller web series है, जिसमें एक पुलिस इंस्पेक्टर को एक हाई-प्रोफाइल केस की जांच सौंपी जाती है। जैसे-जैसे जांच आगे बढ़ती है, वह समाज के तीन स्तरों — स्वर्ग लोक, धरती लोक और पाताल लोक — के बीच छिपे गहरे रहस्यों और अपराधों को उजागर करता है। यह सीरीज सस्पेंस, थ्रिल और डार्क रियलिटी से भरपूर है, जो दर्शकों को अंत तक बांधे रखती है।",
     "category": "webseries",
