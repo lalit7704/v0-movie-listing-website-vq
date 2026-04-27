@@ -1047,7 +1047,7 @@ export const videos: Video[] = [
     quality: "HD"
   },
   {
-    "id": "101",
+    "id": "67",
     "title": "Iron Man (2008) - Tony Stark Becomes Iron Man | Full Movie HD",
     "slug": generateSlug("Iron Man (2008) - Tony Stark Becomes Iron Man | Full Movie HD"),
     "videoUrl": "https://your-video-link",
@@ -1061,7 +1061,22 @@ export const videos: Video[] = [
     "genre": ["Action", "Adventure", "Sci-Fi"],
     "language": "English",
     "quality": "HD"
-  }
+  },
+  {
+  id: "68",
+  title: "Masti 4 (Mastiii 4) (2025) - Comedy Movie | Full Movie HD",
+  videoUrl: "https://your-video-link",
+  downloadUrl: "https://your-download-link",
+  "poster: "https://via.placeholder.com/300x450?text=Masti+4",
+  "description": "Masti 4 (2025) एक upcoming कॉमेडी फिल्म के रूप में चर्चाओं में है, जो Masti फिल्म सीरीज की अगली कड़ी मानी जा रही है। इस फिल्म में दोस्ती, मस्ती और मजेदार घटनाओं का सिलसिला देखने को मिल सकता है। हालांकि, इस प्रोजेक्ट की आधिकारिक घोषणा या रिलीज़ डेट अभी तक सामने नहीं आई है। यह एंट्री केवल जानकारी और मनोरंजन के उद्देश्य से दी गई है।",
+  "category": "bollywood",
+  "year": 2025,
+  "duration": "TBA",
+  "rating": 0,
+  "genre": ["Comedy"],
+  "language": "Hindi",
+  "quality": "HD"
+}
 
 ];
 
