@@ -1141,6 +1141,22 @@ export const videos: Video[] = [
     "genre": ["Action", "Adventure", "Sci-Fi"],
     "language": "English",
     "quality": "HD"
+  },
+  {
+    "id": "73",
+    "title": "Avengers: Infinity War (2018) - Avengers vs Thanos | Full Movie HD",
+    "slug": generateSlug("Avengers: Infinity War (2018) - Avengers vs Thanos | Full Movie HD"),
+    "videoUrl": "https://youtu.be/6ZfuNTqbHE8",
+    "downloadUrl": "https://t.me/onemoviedownloa/16",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/download_7.png?v=1777318696",
+    "description": "Avengers: Infinity War (2018) में Marvel के सभी सुपरहीरो एक साथ मिलकर शक्तिशाली विलेन Thanos का सामना करते हैं, जो सभी Infinity Stones को इकट्ठा कर ब्रह्मांड पर नियंत्रण करना चाहता है। यह फिल्म जबरदस्त एक्शन, इमोशन और बड़े स्तर की लड़ाइयों से भरपूर है, जहाँ Avengers को अपनी सबसे बड़ी चुनौती का सामना करना पड़ता है। कहानी में बलिदान, टीमवर्क और अस्तित्व की लड़ाई को शानदार तरीके से दिखाया गया है।",
+    "category": "hollywood",
+    "year": 2018,
+    "duration": "2h 29m",
+    "rating": 8,
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "language": "English",
+    "quality": "HD"
   }
 
 ];
