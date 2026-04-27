@@ -1161,6 +1161,7 @@ export const videos: Video[] = [
   {
     "id": "74",
     "title": "Mad Max: Fury Road (2015) - Post Apocalyptic Action Thriller | Full Movie HD",
+    "slug": generateSlug("Mad Max: Fury Road (2015) - Post Apocalyptic Action Thriller | Full Movie HD"),
     "videoUrl": "https://youtu.be/hEJnMQG9ev8",
     "downloadUrl": "https://t.me/onemoviedownloa/34",
     "poster": "https://m.media-amazon.com/images/I/81z+z9G2y1L._SL1500_.jpg",
@@ -1171,6 +1172,22 @@ export const videos: Video[] = [
     "rating": 8,
     "genre": ["Action", "Adventure", "Sci-Fi"],
     "language": "English",
+    "quality": "HD"
+  },
+  {
+    "id": "75",
+    "title": "Jolly LLB 3 (2025) -  Drama Movie | Akshay Kumar & Arshad Warsi",
+    "slug": generateSlug("Jolly LLB 3 (2025) -  Drama Movie | Akshay Kumar & Arshad Warsi"),
+    "videoUrl": "https://youtu.be/eSgJ8PfSUSk",
+    "downloadUrl": "https://t.me/onemoviedownloa/32",
+    "poster": "https://via.placeholder.com/300x450?text=Jolly+LLB+3",
+    "description": "Jolly LLB 3 (2025) एक upcoming courtroom drama फिल्म है, जिसमें Akshay Kumar और Arshad Warsi एक साथ नजर आ सकते हैं। यह फिल्म Jolly LLB सीरीज की अगली कड़ी होगी, जिसमें न्याय व्यवस्था, कानून और समाज से जुड़े महत्वपूर्ण मुद्दों को मनोरंजक और व्यंग्यात्मक अंदाज में दिखाया जाएगा। हालांकि फिल्म की कहानी और रिलीज डेट की पूरी जानकारी अभी सामने नहीं आई है।",
+    "category": "bollywood",
+    "year": 2025,
+    "duration": "TBA",
+    "rating": 0,
+    "genre": ["Drama", "Comedy"],
+    "language": "Hindi",
     "quality": "HD"
   }
 
