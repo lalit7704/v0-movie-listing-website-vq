@@ -1017,6 +1017,7 @@ export const videos: Video[] = [
   {
     "id": "65",
     "title": "Ramayan EP 20 - श्रवण कुमार प्रसंग | दशरथ मरण | HQ Widescreen | English Subtitles",
+    slug: generateSlug("Ramayan EP 20 - श्रवण कुमार प्रसंग | दशरथ मरण | HQ Widescreen | English Subtitles"),
     "videoUrl": "https://youtu.be/QEWKgoGyeys?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/QEWKgoGyeys?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -1044,7 +1045,40 @@ export const videos: Video[] = [
     genre: ["Drama", "Comedy", "Romance"],
     language: "Hindi",
     quality: "HD"
+  },
+  {
+    "id": "67",
+    "title": "Iron Man (2008) - Tony Stark Becomes Iron Man | Full Movie HD",
+    "slug": generateSlug("Iron Man (2008) - Tony Stark Becomes Iron Man | Full Movie HD"),
+    "videoUrl": "https://your-video-link",
+    "downloadUrl": "https://your-download-link",
+    "poster": "https://m.media-amazon.com/images/I/81Dei9A0lSL._SL1500_.jpg",
+    "description": "Iron Man (2008) एक Action और Sci-Fi फिल्म है जिसमें Tony Stark, एक अरबपति जीनियस और हथियार निर्माता, आतंकवादियों द्वारा अपहरण के बाद अपनी जिंदगी बदल देता है। कैद में रहते हुए वह एक हाई-टेक सूट बनाता है और खुद को Iron Man के रूप में बदलकर दुनिया को बचाने का फैसला करता है। यह फिल्म Marvel Cinematic Universe की शुरुआत करती है और इसमें टेक्नोलॉजी, एक्शन और सुपरहीरो की शानदार कहानी देखने को मिलती है।",
+    "category": "hollywood",
+    "year": 2008,
+    "duration": "2h 6m",
+    "rating": 8,
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "language": "English",
+    "quality": "HD"
+  },
+  {
+    id: "68",
+    title: "Masti 4 (Mastiii 4) (2025) - Comedy Movie | Full Movie HD",
+    slug: generateSlug("Masti 4 (Mastiii 4) (2025) - Comedy Movie | Full Movie HD"),
+    videoUrl: "https://youtu.be/m43HC9T9YM8",
+    downloadUrl: "https://your-download-link",
+    poster: "https://via.placeholder.com/300x450?text=Masti+4",
+    description: "Masti 4 (2025) एक upcoming कॉमेडी फिल्म के रूप में चर्चाओं में है, जो Masti फिल्म सीरीज की अगली कड़ी मानी जा रही है। इस फिल्म में दोस्ती, मस्ती और मजेदार घटनाओं का सिलसिला देखने को मिल सकता है। हालांकि, इस प्रोजेक्ट की आधिकारिक घोषणा या रिलीज़ डेट अभी तक सामने नहीं आई है। यह एंट्री केवल जानकारी और मनोरंजन के उद्देश्य से दी गई है।",
+    category: "bollywood",
+    year: 2025,
+    duration: "TBA",
+    rating: 0,
+    genre: ["Comedy"],
+    language: "Hindi",
+    quality: "HD"
   }
+
 ];
 
 // Helper functions to filter videos by category
