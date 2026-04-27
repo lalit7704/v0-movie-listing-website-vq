@@ -1205,6 +1205,22 @@ export const videos: Video[] = [
     "genre": ["Drama", "Comedy"],
     "language": "Hindi",
     "quality": "HD"
+  },
+  {
+    "id": "112",
+    "title": "Ramaiya Vastavaiya (2013) - Romantic Drama Movie | Full Movie HD",
+    "slug": generateSlug("Jolly LLB 3 (2025) -  Drama Movie | Akshay Kumar & Arshad Warsi"),
+    "videoUrl": "https://your-video-link",
+    "downloadUrl": "https://your-download-link",
+    "poster": "https://m.media-amazon.com/images/I/81bRk8mQWGL._SL1500_.jpg",
+    "description": "Ramaiya Vastavaiya (2013) एक खूबसूरत romantic drama फिल्म है जिसमें एक अमीर लड़का एक गांव की सादगी भरी लड़की से प्यार कर बैठता है। अपने प्यार को पाने के लिए उसे गांव में रहकर कड़ी मेहनत और जीवन की सच्चाईयों का सामना करना पड़ता है। फिल्म में प्रेम, संघर्ष और पारिवारिक मूल्यों को भावनात्मक तरीके से दिखाया गया है, जो दर्शकों को एक दिल छू लेने वाली कहानी का अनुभव कराती है।",
+    "category": "bollywood",
+    "year": 2013,
+    "duration": "2h 28m",
+    "rating": 6,
+    "genre": ["Romance", "Drama"],
+    "language": "Hindi",
+    "quality": "HD"
   }
 
 ];
