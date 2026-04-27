@@ -1097,6 +1097,7 @@ export const videos: Video[] = [
   {
     "id": "70",
     "title": "Iron Man 2 (2010) - Tony Stark vs Whiplash | Full Movie HD",
+    slug: generateSlug("Iron Man 2 (2010) - Tony Stark vs Whiplash | Full Movie HD"),
     "videoUrl": "https://youtu.be/DjfJJ9Cnmzs",
     "downloadUrl": "https://t.me/onemoviedownloa/18",
     "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/download_2.png?v=1777317530",
