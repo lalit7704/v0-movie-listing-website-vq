@@ -1065,6 +1065,7 @@ export const videos: Video[] = [
   {
     "id": "103",
     "title": "Masti 4 (Mastiii 4) (2025) - Comedy Movie | Full Movie HD",
+    "slug": generateSlug("Iron Man (2008) - Tony Stark Becomes Iron Man | Full Movie HD"),
     "videoUrl": "https://your-video-link",
     "downloadUrl": "https://your-download-link",
     "poster": "https://via.placeholder.com/300x450?text=Masti+4",
