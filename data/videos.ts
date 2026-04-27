@@ -1189,6 +1189,21 @@ export const videos: Video[] = [
     "genre": ["Drama", "Comedy"],
     "language": "Hindi",
     "quality": "HD"
+  },
+  {
+    "id": "76",
+    "title": "Jolly LLB 2 (2017) - Courtroom Drama | Akshay Kumar | Full Movie HD",
+    "videoUrl": "https://your-video-link",
+    "downloadUrl": "https://your-download-link",
+    "poster": "https://m.media-amazon.com/images/I/81s6DUyQCZL._SL1500_.jpg",
+    "description": "Jolly LLB 2 (2017) एक दमदार courtroom drama फिल्म है जिसमें Akshay Kumar एक वकील जगदीश मिश्रा (जॉली) का किरदार निभाते हैं, जो एक बड़े केस में न्याय दिलाने के लिए सिस्टम से लड़ता है। फिल्म में भ्रष्टाचार, न्याय व्यवस्था और सच्चाई की लड़ाई को मनोरंजक और प्रभावशाली तरीके से दिखाया गया है। यह फिल्म इमोशन, कॉमेडी और सामाजिक संदेश का बेहतरीन मिश्रण है।",
+    "category": "bollywood",
+    "year": 2017,
+    "duration": "2h 20m",
+    "rating": 7,
+    "genre": ["Drama", "Comedy"],
+    "language": "Hindi",
+    "quality": "HD"
   }
 
 ];
