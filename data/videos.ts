@@ -1125,6 +1125,22 @@ export const videos: Video[] = [
     "genre": ["Action", "Adventure", "Sci-Fi"],
     "language": "English",
     "quality": "HD"
+  },
+  {
+    "id": "72",
+    "title": "Avengers: Age of Ultron (2015) - Avengers vs Ultron | Full Movie HD",
+    "slug": generateSlug("Iron Man 3 (2013) - Tony Stark vs Mandarin | Full Movie HD"),
+    "videoUrl": "https://your-video-link",
+    "downloadUrl": "https://your-download-link",
+    "poster": "https://m.media-amazon.com/images/I/81lQ7KX4fFL._SL1500_.jpg",
+    "description": "Avengers: Age of Ultron (2015) में Tony Stark और Bruce Banner एक कृत्रिम बुद्धिमत्ता Ultron का निर्माण करते हैं, जो बाद में मानवता के लिए सबसे बड़ा खतरा बन जाता है। Avengers टीम को Ultron को रोकने के लिए एकजुट होकर लड़ना पड़ता है। इस फिल्म में जबरदस्त एक्शन, एडवांस टेक्नोलॉजी और टीमवर्क की शानदार झलक देखने को मिलती है। साथ ही इसमें नए सुपरहीरो जैसे Scarlet Witch और Vision की एंट्री भी दिखाई गई है।",
+    "category": "hollywood",
+    "year": 2015,
+    "duration": "2h 21m",
+    "rating": 7,
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "language": "English",
+    "quality": "HD"
   }
 
 ];
