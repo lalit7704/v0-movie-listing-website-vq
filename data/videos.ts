@@ -1164,7 +1164,7 @@ export const videos: Video[] = [
     "slug": generateSlug("Mad Max: Fury Road (2015) - Post Apocalyptic Action Thriller | Full Movie HD"),
     "videoUrl": "https://youtu.be/hEJnMQG9ev8",
     "downloadUrl": "https://t.me/onemoviedownloa/34",
-    "poster": "https://m.media-amazon.com/images/I/81z+z9G2y1L._SL1500_.jpg",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/download_9.png?v=1777319286",
     "description": "Mad Max: Fury Road (2015) एक हाई-ऑक्टेन एक्शन फिल्म है जो एक पोस्ट-अपोकैलिप्टिक दुनिया में सेट है, जहाँ पानी और ईंधन के लिए संघर्ष चलता है। Max Rockatansky और Imperator Furiosa एक खतरनाक तानाशाह Immortan Joe से भागते हैं और एक साहसी पीछा शुरू होता है। फिल्म में तेज रफ्तार एक्शन, शानदार विजुअल्स और दमदार कहानी देखने को मिलती है, जो इसे एक आइकॉनिक एक्शन मूवी बनाती है।",
     "category": "hollywood",
     "year": 2015,
