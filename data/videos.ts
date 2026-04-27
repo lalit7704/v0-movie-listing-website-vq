@@ -1209,7 +1209,7 @@ export const videos: Video[] = [
   {
     "id": "112",
     "title": "Ramaiya Vastavaiya (2013) - Romantic Drama Movie | Full Movie HD",
-    "slug": generateSlug("Jolly LLB 3 (2025) -  Drama Movie | Akshay Kumar & Arshad Warsi"),
+    "slug": generateSlug("Ramaiya Vastavaiya (2013) - Romantic Drama Movie | Full Movie HD"),
     "videoUrl": "https://your-video-link",
     "downloadUrl": "https://your-download-link",
     "poster": "https://m.media-amazon.com/images/I/81bRk8mQWGL._SL1500_.jpg",
