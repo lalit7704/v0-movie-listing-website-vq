@@ -1367,7 +1367,7 @@ export const videos: Video[] = [
     "quality": "HD"
   },
   {
-    "id": "123",
+    "id": "87",
     "title": "Chhalaang (2020) - Sports Comedy Drama Movie | Rajkummar Rao | Full Movie HD",
     "slug": "chhalaang-2020-sports-comedy-drama-movie-rajkummar-rao-full-movie-hd",
     "videoUrl": "https://youtu.be/BY-0SbSF2dE",
@@ -1383,7 +1383,7 @@ export const videos: Video[] = [
     "quality": "HD"
   },
   {
-    "id": "124",
+    "id": "88",
     "title": "Bhoot Part One: The Haunted Ship (2020) - Horror Thriller Movie | Vicky Kaushal | Full Movie HD",
     "slug": "bhoot-part-one-the-haunted-ship-2020-horror-thriller-movie-vicky-kaushal-full-movie-hd",
     "videoUrl": "https://your-video-link",
@@ -1399,7 +1399,7 @@ export const videos: Video[] = [
     "quality": "HD"
   },
   {
-    "id": "125",
+    "id": "89",
     "title": "Arjun Patiala (2019) - Comedy Crime Movie | Diljit Dosanjh | Full Movie HD",
     "slug": "arjun-patiala-2019-comedy-crime-movie-diljit-dosanjh-full-movie-hd",
     "videoUrl": "https://your-video-link",
