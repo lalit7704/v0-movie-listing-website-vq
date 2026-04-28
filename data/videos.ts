@@ -1323,7 +1323,7 @@ export const videos: Video[] = [
     "title": "Mardaani 2 (2019) - Crime Thriller Movie | Rani Mukerji | Full Movie HD",
     "slug": "mardaani-2-2019-crime-thriller-movie-rani-mukerji-full-movie-hd",
     "videoUrl": "https://youtu.be/dKeRIOA28Jk",
-    "downloadUrl": "https://your-download-link",
+    "downloadUrl": "https://t.me/HINDIHDNEWMOVIES12/269",
     "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Mardaani_2.png?v=1777398606",
     "description": "Mardaani 2 (2019) एक intense crime thriller फिल्म है जिसमें Rani Mukerji एक सख्त पुलिस अधिकारी Shivani Shivaji Roy का किरदार निभाती हैं। वह एक खतरनाक अपराधी का पीछा करती हैं, जो महिलाओं के खिलाफ गंभीर अपराध करता है। फिल्म में न्याय, साहस और अपराध के खिलाफ लड़ाई को शक्तिशाली तरीके से दिखाया गया है, जो दर्शकों को अंत तक बांधे रखती है।",
     "category": "bollywood",
@@ -1331,6 +1331,22 @@ export const videos: Video[] = [
     "duration": "1h 43m",
     "rating": 7,
     "genre": ["Crime", "Drama", "Thriller"],
+    "language": "Hindi",
+    "quality": "HD"
+  },
+  {
+    "id": "121",
+    "title": "Gully Boy (2019) - Rap & Street Life Drama | Ranveer Singh | Full Movie HD",
+    "slug": "gully-boy-2019-rap-street-life-drama-ranveer-singh-full-movie-hd",
+    "videoUrl": "https://youtu.be/JfbxcD6biOk",
+    "downloadUrl": "https://t.me/HINDIHDNEWMOVIES12/292",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Gully_Boy.jpg?v=1777399141",
+    "description": "Gully Boy (2019) एक inspiring drama फिल्म है जिसमें Ranveer Singh एक साधारण लड़के Murad का किरदार निभाते हैं, जो मुंबई की गलियों से उठकर एक rapper बनने का सपना देखता है। कठिन परिस्थितियों और सामाजिक बाधाओं के बावजूद, वह अपने टैलेंट और मेहनत से अपनी पहचान बनाता है। फिल्म में music, struggle और self-belief का शानदार मिश्रण देखने को मिलता है, जो युवाओं को अपने सपनों का पीछा करने के लिए प्रेरित करता है।",
+    "category": "bollywood",
+    "year": 2019,
+    "duration": "2h 34m",
+    "rating": 8,
+    "genre": ["Drama", "Music"],
     "language": "Hindi",
     "quality": "HD"
   }
