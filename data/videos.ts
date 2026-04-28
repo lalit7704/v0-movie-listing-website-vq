@@ -1264,7 +1264,7 @@ export const videos: Video[] = [
     "description": "Game of Thrones Season 3 में सत्ता के लिए संघर्ष और भी तीव्र हो जाता है। Daenerys Targaryen अपनी सेना मजबूत करती है, जबकि Jon Snow North में नई चुनौतियों का सामना करता है। इस सीजन में राजनीति, विश्वासघात और शक्ति की लड़ाई अपने चरम पर पहुँचती है, जिसमें कुछ चौंकाने वाली घटनाएँ कहानी को नया मोड़ देती हैं। यह सीजन अपने बड़े ट्विस्ट और इमोशनल मोमेंट्स के लिए खास माना जाता है।",
     "category": "Web Series",
     "year": 2013,
-    "duration": "1 Season (10 Episodes)",
+    "duration": "3 Season (10 Episodes)",
     "rating": 9,
     "genre": ["Action", "Adventure", "Drama", "Fantasy"],
     "language": "English",
@@ -1280,7 +1280,7 @@ export const videos: Video[] = [
     "description": "Game of Thrones Season 4 में Westeros में सत्ता की लड़ाई और भी खतरनाक हो जाती है। Tyrion Lannister पर गंभीर आरोप लगते हैं, जबकि Oberyn Martell बदले की भावना के साथ King's Landing पहुँचता है। इस सीजन में राजनीति, बदला और युद्ध के साथ कई बड़े ट्विस्ट देखने को मिलते हैं, जो कहानी को और भी रोमांचक बना देते हैं। यह सीजन अपने इमोशनल और शॉकिंग मोमेंट्स के लिए बेहद लोकप्रिय है।",
     "category": "Web Series",
     "year": 2014,
-    "duration": "1 Season (10 Episodes)",
+    "duration": "4 Season (10 Episodes)",
     "rating": 9,
     "genre": ["Action", "Adventure", "Drama", "Fantasy"],
     "language": "English",
@@ -1300,6 +1300,22 @@ export const videos: Video[] = [
     "rating": 7,
     "genre": ["Action", "Sci-Fi", "Drama"],
     "language": "English",
+    "quality": "HD"
+  },
+  {
+    "id": "83",
+    "title": "Border 2 (2026) - Indian War Drama Movie | Sunny Deol | Full Movie HD",
+    "slug": "border-2-2026-indian-war-drama-movie-sunny-deol-full-movie-hd",
+    "videoUrl": "https://your-video-link",
+    "downloadUrl": "https://t.me/onemoviedownloa/38",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Border_2.png?v=1777397094",
+    "description": "Border 2 (2026) एक भारतीय war drama फिल्म है, जो 1971 के भारत-पाक युद्ध पर आधारित है। इस फिल्म में भारतीय सेना के बहादुर सैनिकों की वीरता, त्याग और देशभक्ति को दर्शाया गया है। Sunny Deol, Varun Dhawan और Diljit Dosanjh जैसे कलाकार इसमें मुख्य भूमिका निभाते हैं। यह फिल्म एक्शन, इमोशन और देशभक्ति से भरपूर है, जो दर्शकों को सैनिकों के साहस और बलिदान की याद दिलाती है।",
+    "category": "bollywood",
+    "year": 2026,
+    "duration": "3h 19m",
+    "rating": 8,
+    "genre": ["Action", "Drama"],
+    "language": "Hindi",
     "quality": "HD"
   }
 
