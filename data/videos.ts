@@ -1038,7 +1038,7 @@ export const videos: Video[] = [
     downloadUrl: "https://t.me/onemoviedownloa/4",
     poster: "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/download.png?v=1776877280",
     description: "After a devastating breakup, a troubled student drops out of college and enters the dangerous world of financial fraud, chasing money and power while getting trapped in deception.",
-    category: "Comedy",
+    category: "South Indian",
     year: 2025,
     duration: "2h 35m",
     rating: 7.8,
