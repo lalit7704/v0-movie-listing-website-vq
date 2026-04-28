@@ -1340,7 +1340,7 @@ export const videos: Video[] = [
     "slug": "gully-boy-2019-rap-street-life-drama-ranveer-singh-full-movie-hd",
     "videoUrl": "https://youtu.be/JfbxcD6biOk",
     "downloadUrl": "https://t.me/HINDIHDNEWMOVIES12/292",
-    "poster": "https://m.media-amazon.com/images/I/71nDPy7T9mL._SL1500_.jpg",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Gully_Boy.jpg?v=1777399141",
     "description": "Gully Boy (2019) एक inspiring drama फिल्म है जिसमें Ranveer Singh एक साधारण लड़के Murad का किरदार निभाते हैं, जो मुंबई की गलियों से उठकर एक rapper बनने का सपना देखता है। कठिन परिस्थितियों और सामाजिक बाधाओं के बावजूद, वह अपने टैलेंट और मेहनत से अपनी पहचान बनाता है। फिल्म में music, struggle और self-belief का शानदार मिश्रण देखने को मिलता है, जो युवाओं को अपने सपनों का पीछा करने के लिए प्रेरित करता है।",
     "category": "bollywood",
     "year": 2019,
