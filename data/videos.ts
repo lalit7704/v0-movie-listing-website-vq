@@ -1324,7 +1324,7 @@ export const videos: Video[] = [
     "slug": "mardaani-2-2019-crime-thriller-movie-rani-mukerji-full-movie-hd",
     "videoUrl": "https://youtu.be/dKeRIOA28Jk",
     "downloadUrl": "https://your-download-link",
-    "poster": "https://m.media-amazon.com/images/I/81WmV6e3WPL._SL1500_.jpg",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Mardaani_2.png?v=1777398606",
     "description": "Mardaani 2 (2019) एक intense crime thriller फिल्म है जिसमें Rani Mukerji एक सख्त पुलिस अधिकारी Shivani Shivaji Roy का किरदार निभाती हैं। वह एक खतरनाक अपराधी का पीछा करती हैं, जो महिलाओं के खिलाफ गंभीर अपराध करता है। फिल्म में न्याय, साहस और अपराध के खिलाफ लड़ाई को शक्तिशाली तरीके से दिखाया गया है, जो दर्शकों को अंत तक बांधे रखती है।",
     "category": "bollywood",
     "year": 2019,
