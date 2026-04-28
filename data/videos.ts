@@ -1193,7 +1193,7 @@ export const videos: Video[] = [
   {
     "id": "76",
     "title": "Jolly LLB 2 (2017) - Courtroom Drama | Akshay Kumar | Full Movie HD",
-    "slug": generateSlug("Jolly LLB 3 (2025) -  Drama Movie | Akshay Kumar & Arshad Warsi"),
+    "slug": generateSlug("Jolly LLB 2 (2017) - Courtroom Drama | Akshay Kumar | Full Movie HD"),
     "videoUrl": "https://youtu.be/q07SQFmL4rM",
     "downloadUrl": "https://t.me/onemoviedownloa/31",
     "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/download_11.png?v=1777319728",
