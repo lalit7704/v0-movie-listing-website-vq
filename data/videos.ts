@@ -1306,7 +1306,7 @@ export const videos: Video[] = [
     "id": "83",
     "title": "Border 2 (2026) - Indian War Drama Movie | Sunny Deol | Full Movie HD",
     "slug": "border-2-2026-indian-war-drama-movie-sunny-deol-full-movie-hd",
-    "videoUrl": "https://your-video-link",
+    "videoUrl": "https://youtu.be/XXWFhs84tkQ",
     "downloadUrl": "https://t.me/onemoviedownloa/38",
     "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Border_2.png?v=1777397094",
     "description": "Border 2 (2026) एक भारतीय war drama फिल्म है, जो 1971 के भारत-पाक युद्ध पर आधारित है। इस फिल्म में भारतीय सेना के बहादुर सैनिकों की वीरता, त्याग और देशभक्ति को दर्शाया गया है। Sunny Deol, Varun Dhawan और Diljit Dosanjh जैसे कलाकार इसमें मुख्य भूमिका निभाते हैं। यह फिल्म एक्शन, इमोशन और देशभक्ति से भरपूर है, जो दर्शकों को सैनिकों के साहस और बलिदान की याद दिलाती है।",
