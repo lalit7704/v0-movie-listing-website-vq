@@ -1269,6 +1269,22 @@ export const videos: Video[] = [
     "genre": ["Action", "Adventure", "Drama", "Fantasy"],
     "language": "English",
     "quality": "HD"
+  },
+  {
+    "id": "116",
+    "title": "Game of Thrones Season 4 - Power, Revenge & War | Full Episodes HD",
+    "slug": "game-of-thrones-season-4-power-revenge-war-full-episodes-hd",
+    "videoUrl": "https://your-video-link",
+    "downloadUrl": "https://t.me/onemoviedownloa/43",
+    "poster": "https://m.media-amazon.com/images/I/91dSMhdIzTL._SL1500_.jpg",
+    "description": "Game of Thrones Season 4 में Westeros में सत्ता की लड़ाई और भी खतरनाक हो जाती है। Tyrion Lannister पर गंभीर आरोप लगते हैं, जबकि Oberyn Martell बदले की भावना के साथ King's Landing पहुँचता है। इस सीजन में राजनीति, बदला और युद्ध के साथ कई बड़े ट्विस्ट देखने को मिलते हैं, जो कहानी को और भी रोमांचक बना देते हैं। यह सीजन अपने इमोशनल और शॉकिंग मोमेंट्स के लिए बेहद लोकप्रिय है।",
+    "category": "webseries",
+    "year": 2014,
+    "duration": "1 Season (10 Episodes)",
+    "rating": 9,
+    "genre": ["Action", "Adventure", "Drama", "Fantasy"],
+    "language": "English",
+    "quality": "HD"
   }
 
 ];
