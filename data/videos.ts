@@ -1237,6 +1237,22 @@ export const videos: Video[] = [
     "genre": ["Action", "Adventure", "Drama", "Fantasy"],
     "language": "English",
     "quality": "HD"
+  },
+  {
+    "id": "114",
+    "title": "Game of Thrones Season 2 - War of the Five Kings | Full Episodes HD",
+    "slug": "game-of-thrones-season-2-war-of-the-five-kings-full-episodes-hd",
+    "videoUrl": "https://your-video-link",
+    "downloadUrl": "https://your-download-link",
+    "poster": "https://m.media-amazon.com/images/I/91dSMhdIzTL._SL1500_.jpg",
+    "description": "Game of Thrones Season 2 में Westeros में War of the Five Kings शुरू होता है, जहाँ अलग-अलग राजा Iron Throne पर कब्जा करने के लिए युद्ध करते हैं। Tyrion Lannister King's Landing की रक्षा करता है, जबकि Daenerys Targaryen अपनी ताकत बढ़ाने के लिए संघर्ष करती है। इस सीजन में राजनीति, युद्ध और शक्ति के लिए संघर्ष और भी गहरा हो जाता है, जो कहानी को और रोमांचक बनाता है।",
+    "category": "webseries",
+    "year": 2012,
+    "duration": "1 Season (10 Episodes)",
+    "rating": 9,
+    "genre": ["Action", "Adventure", "Drama", "Fantasy"],
+    "language": "English",
+    "quality": "HD"
   }
 
 ];
