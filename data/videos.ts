@@ -1260,7 +1260,7 @@ export const videos: Video[] = [
     "slug": "game-of-thrones-season-3-rise-of-power-betrayal-full-episodes-hd",
     "videoUrl": "https://youtu.be/nblUgAMoOvU",
     "downloadUrl": "https://t.me/onemoviedownloa/42",
-    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/download_8d4b8a1a-a1c6-44d7-80ff-c3d4d91be7ff.png?v=1777395992",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Game_of_Thrones_Season_1.png?v=1777396272",
     "description": "Game of Thrones Season 3 में सत्ता के लिए संघर्ष और भी तीव्र हो जाता है। Daenerys Targaryen अपनी सेना मजबूत करती है, जबकि Jon Snow North में नई चुनौतियों का सामना करता है। इस सीजन में राजनीति, विश्वासघात और शक्ति की लड़ाई अपने चरम पर पहुँचती है, जिसमें कुछ चौंकाने वाली घटनाएँ कहानी को नया मोड़ देती हैं। यह सीजन अपने बड़े ट्विस्ट और इमोशनल मोमेंट्स के लिए खास माना जाता है।",
     "category": "Web Series",
     "year": 2013,
