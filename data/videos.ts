@@ -1381,6 +1381,22 @@ export const videos: Video[] = [
     "genre": ["Comedy", "Drama", "Sport"],
     "language": "Hindi",
     "quality": "HD"
+  },
+  {
+    "id": "124",
+    "title": "Bhoot Part One: The Haunted Ship (2020) - Horror Thriller Movie | Vicky Kaushal | Full Movie HD",
+    "slug": "bhoot-part-one-the-haunted-ship-2020-horror-thriller-movie-vicky-kaushal-full-movie-hd",
+    "videoUrl": "https://your-video-link",
+    "downloadUrl": "https://your-download-link",
+    "poster": "https://m.media-amazon.com/images/I/81d1VZ0jKEL._SL1500_.jpg",
+    "description": "Bhoot Part One: The Haunted Ship (2020) एक डरावनी horror thriller फिल्म है जिसमें Vicky Kaushal एक शिप ऑफिसर का किरदार निभाते हैं, जो एक रहस्यमयी और भूतिया जहाज की जांच करता है। जैसे-जैसे वह सच्चाई के करीब पहुंचता है, उसे डरावनी घटनाओं और अलौकिक शक्तियों का सामना करना पड़ता है। फिल्म में सस्पेंस, डर और रहस्य का शानदार मिश्रण देखने को मिलता है, जो दर्शकों को अंत तक बांधे रखता है।",
+    "category": "bollywood",
+    "year": 2020,
+    "duration": "1h 54m",
+    "rating": 6,
+    "genre": ["Horror", "Thriller"],
+    "language": "Hindi",
+    "quality": "HD"
   }
 
 ];
