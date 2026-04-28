@@ -1414,7 +1414,22 @@ export const videos: Video[] = [
     "language": "Hindi",
     "quality": "HD"
   },
-
+  {
+    "id": "90",
+    "title": "Motichoor Chaknachoor (2019) - Romantic Comedy Movie | Nawazuddin Siddiqui | Full Movie HD",
+    "slug": "motichoor-chaknachoor-2019-romantic-comedy-movie-nawazuddin-siddiqui-full-movie-hd",
+    "videoUrl": "https://youtu.be/U6J_Pkqk5Fs",
+    "downloadUrl": "https://t.me/onemoviedownloa/25",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Motichoor_Chaknachoor.png?v=1777400502",
+    "description": "Motichoor Chaknachoor (2019) एक मजेदार romantic comedy फिल्म है जिसमें Nawazuddin Siddiqui एक ऐसे व्यक्ति का किरदार निभाते हैं जो शादी के लिए संघर्ष कर रहा होता है। उसकी मुलाकात एक ऐसी लड़की से होती है जो विदेश जाने का सपना देखती है, और दोनों की शादी के इरादे अलग-अलग कारणों से बनते हैं। फिल्म में हास्य, रिश्तों और सामाजिक अपेक्षाओं का हल्का-फुल्का चित्रण किया गया है, जो दर्शकों को मनोरंजन के साथ-साथ हंसी भी देता है।",
+    "category": "bollywood",
+    "year": 2019,
+    "duration": "2h 30m",
+    "rating": 6,
+    "genre": ["Comedy", "Romance"],
+    "language": "Hindi",
+    "quality": "HD"
+  }
 
 ];
 
