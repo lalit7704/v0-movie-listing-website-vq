@@ -1271,7 +1271,7 @@ export const videos: Video[] = [
     "quality": "HD"
   },
   {
-    "id": "116",
+    "id": "81",
     "title": "Game of Thrones Season 4 - Power, Revenge & War | Full Episodes HD",
     "slug": "game-of-thrones-season-4-power-revenge-war-full-episodes-hd",
     "videoUrl": "https://youtu.be/xZY43QSx3Fk",
@@ -1283,6 +1283,22 @@ export const videos: Video[] = [
     "duration": "1 Season (10 Episodes)",
     "rating": 9,
     "genre": ["Action", "Adventure", "Drama", "Fantasy"],
+    "language": "English",
+    "quality": "HD"
+  },
+  {
+    "id": "82",
+    "title": "Chappie (2015) - AI Robot Learns Humanity | Sci-Fi Action Movie HD",
+    "slug": "chappie-2015-ai-robot-learns-humanity-sci-fi-action-movie-hd",
+    "videoUrl": "https://youtu.be/lyy7y0QOK-0",
+    "downloadUrl": "https://t.me/onemoviedownloa/39",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Chappie_2015.png?v=1777396650",
+    "description": "Chappie (2015) एक futuristic sci-fi फिल्म है जिसमें एक पुलिस robot को artificial intelligence देकर उसे इंसानों की तरह सोचने और महसूस करने की क्षमता दी जाती है। Chappie नाम का यह robot धीरे-धीरे इंसानी भावनाओं और दुनिया को समझना शुरू करता है, लेकिन उसे अपराध और खतरों का भी सामना करना पड़ता है। फिल्म में टेक्नोलॉजी, मानवता और नैतिकता के बीच संघर्ष को दिखाया गया है, जो इसे एक unique और thought-provoking कहानी बनाता है।",
+    "category": "hollywood",
+    "year": 2015,
+    "duration": "2h 0m",
+    "rating": 7,
+    "genre": ["Action", "Sci-Fi", "Drama"],
     "language": "English",
     "quality": "HD"
   }
