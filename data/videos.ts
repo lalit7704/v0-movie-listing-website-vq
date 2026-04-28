@@ -1365,6 +1365,22 @@ export const videos: Video[] = [
     "genre": ["Comedy", "Drama"],
     "language": "Hindi",
     "quality": "HD"
+  },
+  {
+    "id": "123",
+    "title": "Chhalaang (2020) - Sports Comedy Drama Movie | Rajkummar Rao | Full Movie HD",
+    "slug": "chhalaang-2020-sports-comedy-drama-movie-rajkummar-rao-full-movie-hd",
+    "videoUrl": "https://youtu.be/BY-0SbSF2dE",
+    "downloadUrl": "https://t.me/onemoviedownloa/28",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Chhalaang.png?v=1777399759",
+    "description": "Chhalaang (2020) एक हल्की-फुल्की sports comedy drama फिल्म है जिसमें Rajkummar Rao एक PT teacher का किरदार निभाते हैं, जो शुरुआत में अपने काम को गंभीरता से नहीं लेता। लेकिन एक नए शिक्षक के आने के बाद वह खुद को साबित करने और छात्रों को जीत दिलाने के लिए मेहनत करता है। फिल्म में हास्य, प्रेरणा और self-improvement का अच्छा मिश्रण देखने को मिलता है, जो दर्शकों को प्रेरित करता है।",
+    "category": "bollywood",
+    "year": 2020,
+    "duration": "2h 16m",
+    "rating": 7,
+    "genre": ["Comedy", "Drama", "Sport"],
+    "language": "Hindi",
+    "quality": "HD"
   }
 
 ];
