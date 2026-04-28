@@ -1367,7 +1367,7 @@ export const videos: Video[] = [
     "quality": "HD"
   },
   {
-    "id": "123",
+    "id": "87",
     "title": "Chhalaang (2020) - Sports Comedy Drama Movie | Rajkummar Rao | Full Movie HD",
     "slug": "chhalaang-2020-sports-comedy-drama-movie-rajkummar-rao-full-movie-hd",
     "videoUrl": "https://youtu.be/BY-0SbSF2dE",
@@ -1379,6 +1379,38 @@ export const videos: Video[] = [
     "duration": "2h 16m",
     "rating": 7,
     "genre": ["Comedy", "Drama", "Sport"],
+    "language": "Hindi",
+    "quality": "HD"
+  },
+  {
+    "id": "88",
+    "title": "Bhoot Part One: The Haunted Ship (2020) - Horror Thriller Movie | Vicky Kaushal | Full Movie HD",
+    "slug": "bhoot-part-one-the-haunted-ship-2020-horror-thriller-movie-vicky-kaushal-full-movie-hd",
+    "videoUrl": "https://youtu.be/ELcRnZ3kP08",
+    "downloadUrl": "https://t.me/onemoviedownloa/27",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Bhoot_Part_One.png?v=1777400073",
+    "description": "Bhoot Part One: The Haunted Ship (2020) एक डरावनी horror thriller फिल्म है जिसमें Vicky Kaushal एक शिप ऑफिसर का किरदार निभाते हैं, जो एक रहस्यमयी और भूतिया जहाज की जांच करता है। जैसे-जैसे वह सच्चाई के करीब पहुंचता है, उसे डरावनी घटनाओं और अलौकिक शक्तियों का सामना करना पड़ता है। फिल्म में सस्पेंस, डर और रहस्य का शानदार मिश्रण देखने को मिलता है, जो दर्शकों को अंत तक बांधे रखता है।",
+    "category": "bollywood",
+    "year": 2020,
+    "duration": "1h 54m",
+    "rating": 6,
+    "genre": ["Horror", "Thriller"],
+    "language": "Hindi",
+    "quality": "HD"
+  },
+  {
+    "id": "89",
+    "title": "Arjun Patiala (2019) - Comedy Crime Movie | Diljit Dosanjh | Full Movie HD",
+    "slug": "arjun-patiala-2019-comedy-crime-movie-diljit-dosanjh-full-movie-hd",
+    "videoUrl": "https://youtu.be/nR7ETMS7Eo0",
+    "downloadUrl": "https://t.me/onemoviedownloa/26",
+    "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Arjun_Patiala.png?v=1777400261",
+    "description": "Arjun Patiala (2019) एक हल्की-फुल्की comedy crime फिल्म है जिसमें Diljit Dosanjh एक मजाकिया पुलिस अधिकारी का किरदार निभाते हैं। वह अपने अनोखे और मजेदार तरीकों से अपराधियों को पकड़ने की कोशिश करता है, जिससे कई हास्यपूर्ण स्थितियाँ पैदा होती हैं। फिल्म में comedy, crime और entertainment का अच्छा मिश्रण देखने को मिलता है, जो दर्शकों को हंसाने के साथ-साथ मनोरंजन करता है।",
+    "category": "bollywood",
+    "year": 2019,
+    "duration": "1h 47m",
+    "rating": 5,
+    "genre": ["Comedy", "Crime"],
     "language": "Hindi",
     "quality": "HD"
   }
