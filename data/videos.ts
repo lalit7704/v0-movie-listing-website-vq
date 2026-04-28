@@ -1226,7 +1226,7 @@ export const videos: Video[] = [
     "id": "78",
     "title": "Game of Thrones Season 1 - Fantasy Drama Series | Full Episodes HD",
     "slug": "game-of-thrones-season-1-fantasy-drama-series-full-episodes-hd",
-    "videoUrl": "https://your-video-link",
+    "videoUrl": "https://youtu.be/bjqEWgDVPe0",
     "downloadUrl": "https://t.me/onemoviedownloa/40",
     "poster": "https://m.media-amazon.com/images/I/91dSMhdIzTL._SL1500_.jpg",
     "description": "Game of Thrones Season 1 एक epic fantasy drama series है, जो Westeros की दुनिया में सत्ता, राजनीति और युद्ध की कहानी दिखाती है। इसमें अलग-अलग परिवार Iron Throne पर कब्जा करने के लिए संघर्ष करते हैं। कहानी में betrayal, power struggles और रहस्यमयी तत्वों का मिश्रण देखने को मिलता है, जो इसे बेहद रोमांचक बनाता है। यह सीजन पूरी सीरीज की मजबूत नींव रखता है और दर्शकों को एक अलग ही दुनिया में ले जाता है।",
