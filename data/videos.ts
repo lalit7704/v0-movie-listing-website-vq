@@ -1335,7 +1335,7 @@ export const videos: Video[] = [
     "quality": "HD"
   },
   {
-    "id": "121",
+    "id": "85",
     "title": "Gully Boy (2019) - Rap & Street Life Drama | Ranveer Singh | Full Movie HD",
     "slug": "gully-boy-2019-rap-street-life-drama-ranveer-singh-full-movie-hd",
     "videoUrl": "https://youtu.be/JfbxcD6biOk",
@@ -1347,6 +1347,22 @@ export const videos: Video[] = [
     "duration": "2h 34m",
     "rating": 8,
     "genre": ["Drama", "Music"],
+    "language": "Hindi",
+    "quality": "HD"
+  },
+  {
+    "id": "86",
+    "title": "Gulabo Sitabo (2020) - Comedy Drama Movie | Amitabh Bachchan | Ayushmann Khurrana | Full Movie HD",
+    "slug": "gulabo-sitabo-2020-comedy-drama-movie-amitabh-bachchan-ayushmann-khurrana-full-movie-hd",
+    "videoUrl": "https://your-video-link",
+    "downloadUrl": "https://your-download-link",
+    "poster": "https://m.media-amazon.com/images/I/71W1S7l4ZkL._SL1500_.jpg",
+    "description": "Gulabo Sitabo (2020) एक हल्की-फुल्की comedy drama फिल्म है जिसमें एक लालची मकान मालिक और उसके किरायेदार के बीच मजेदार टकराव दिखाया गया है। Amitabh Bachchan और Ayushmann Khurrana की शानदार अदाकारी इस फिल्म को खास बनाती है। कहानी में हास्य, चालाकी और मानवीय स्वभाव की झलक देखने को मिलती है, जो दर्शकों को मनोरंजन के साथ-साथ सोचने पर भी मजबूर करती है।",
+    "category": "bollywood",
+    "year": 2020,
+    "duration": "2h 4m",
+    "rating": 7,
+    "genre": ["Comedy", "Drama"],
     "language": "Hindi",
     "quality": "HD"
   }
