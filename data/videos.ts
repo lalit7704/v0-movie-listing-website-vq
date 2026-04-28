@@ -1397,6 +1397,22 @@ export const videos: Video[] = [
     "genre": ["Horror", "Thriller"],
     "language": "Hindi",
     "quality": "HD"
+  },
+  {
+    "id": "125",
+    "title": "Arjun Patiala (2019) - Comedy Crime Movie | Diljit Dosanjh | Full Movie HD",
+    "slug": "arjun-patiala-2019-comedy-crime-movie-diljit-dosanjh-full-movie-hd",
+    "videoUrl": "https://your-video-link",
+    "downloadUrl": "https://your-download-link",
+    "poster": "https://m.media-amazon.com/images/I/81J2nK0tZRL._SL1500_.jpg",
+    "description": "Arjun Patiala (2019) एक हल्की-फुल्की comedy crime फिल्म है जिसमें Diljit Dosanjh एक मजाकिया पुलिस अधिकारी का किरदार निभाते हैं। वह अपने अनोखे और मजेदार तरीकों से अपराधियों को पकड़ने की कोशिश करता है, जिससे कई हास्यपूर्ण स्थितियाँ पैदा होती हैं। फिल्म में comedy, crime और entertainment का अच्छा मिश्रण देखने को मिलता है, जो दर्शकों को हंसाने के साथ-साथ मनोरंजन करता है।",
+    "category": "bollywood",
+    "year": 2019,
+    "duration": "1h 47m",
+    "rating": 5,
+    "genre": ["Comedy", "Crime"],
+    "language": "Hindi",
+    "quality": "HD"
   }
 
 ];
