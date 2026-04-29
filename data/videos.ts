@@ -100,7 +100,7 @@ export const videos: Video[] = [
     "genre": ["Comedy", "Horror", "Mystery"],
     "language": "Hindi",
     "quality": "HD"
-  },
+  }
   {
     id: "5",
     title: "Pushpa 2: The Rule",
