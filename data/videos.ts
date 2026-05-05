@@ -90,7 +90,7 @@ export const videos: Video[] = [
     title: "Bhooth Bangla",
     slug: generateSlug("Bhooth Bangla"),
     videoUrl: "https://youtu.be/XW1RkKiRnsg",
-    downloadUrl: "https://youtu.be/XW1RkKiRnsg",
+    downloadUrl: "https://t.me/onemoviedownloa/50",
     poster: "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Bhooth_Bangla_poster.png?v=1775497649",
     description: "Bhooth Bangla is an upcoming Indian Hindi-language fantasy horror comedy film directed by Priyadarshan and produced by Akshay Kumar",
     category: "Bollywood",
@@ -102,20 +102,7 @@ export const videos: Video[] = [
     quality: "4K",
     featured: true
   }
-    title: "Dragon Ball Super: Universe War",
-    videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
-    downloadUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
-    poster: "https://images.unsplash.com/photo-1601850494422-3cf14624b0b3?w=400&h=600&fit=crop",
-    description: "Goku and the Z Fighters must defend their universe against the most powerful warriors from across all universes.",
-    category: "Cartoon",
-    year: 2024,
-    duration: "2h 5m",
-    rating: 9.0,
-    genre: ["Animation", "Action", "Adventure"],
-    language: "Japanese",
-    quality: "4K"
-  },
-  {
+  , {
     id: "38",
     title: "Oggy and the Cockroaches Movie",
     videoUrl: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
