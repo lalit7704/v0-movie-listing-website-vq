@@ -19,7 +19,16 @@ export interface Video {
   cast?: string[];
   keywords?: string[];
 }
+import { bollywoodVideos } from "./bollywood";
+import { hollywoodVideos } from "./hollywood";
+import { cartoonVideos } from "./cartoon";
+import { Video } from "./types";
 
+export const allVideos: Video[] = [
+  ...bollywoodVideos,
+  ...hollywoodVideos,
+  ...cartoonVideos
+];
 /**
  * Helper function to generate SEO-friendly slug from title
  */
