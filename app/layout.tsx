@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import Script from "next/script"
 import { Inter, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 import { generateOrganizationSchema, generateWebsiteSchema } from '@/lib/structured-data'
 
@@ -110,6 +111,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
         <Analytics />
+        <SpeedInsights />
 
         {/* Google AdSense Script */}
         <Script
