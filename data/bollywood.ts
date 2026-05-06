@@ -36,6 +36,22 @@ function generateSlug(title: string): string {
 
 export const bollywoodVideos: Video[] = [
   {
+  "id": "1",
+  "title": "Bhooth Bangla (1965) - Horror Comedy Movie | Mehmood | Full Movie HD",
+  "slug": "bhooth-bangla-1965-horror-comedy-movie-mehmood-full-movie-hd",
+  "videoUrl": "https://youtu.be/WgAOa4bvOB4",
+  "downloadUrl": "https://t.me/onemoviedownloa/50",
+  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Bhooth_Bangla.png?v=1777485339",
+  "description": "Bhooth Bangla (1965) एक classic horror comedy फिल्म है जिसमें एक रहस्यमयी बंगले में घटने वाली अजीब और डरावनी घटनाओं को मजेदार अंदाज में दिखाया गया है। Mehmood की शानदार कॉमेडी और फिल्म का सस्पेंस इसे खास बनाता है। कहानी में भूतिया माहौल के साथ हास्य का बेहतरीन मिश्रण देखने को मिलता है, जो दर्शकों को डराने के साथ-साथ हंसाता भी है।",
+  "category": "bollywood",
+  "year": 1965,
+  "duration": "2h 20m",
+  "rating": 7,
+  "genre": ["Comedy", "Horror", "Mystery"],
+  "language": "Hindi",
+  "quality": "HD"
+},
+{
     id: "2",
     title: "Dhurandhar: The Revenge",
     slug: generateSlug("Dhurandhar: The Revenge"),
@@ -52,22 +68,7 @@ export const bollywoodVideos: Video[] = [
     quality: "HD",
     featured: true
   },
-{
-  "id": "1",
-  "title": "Bhooth Bangla (1965) - Horror Comedy Movie | Mehmood | Full Movie HD",
-  "slug": "bhooth-bangla-1965-horror-comedy-movie-mehmood-full-movie-hd",
-  "videoUrl": "https://youtu.be/WgAOa4bvOB4",
-  "downloadUrl": "https://t.me/onemoviedownloa/50",
-  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Bhooth_Bangla.png?v=1777485339",
-  "description": "Bhooth Bangla (1965) एक classic horror comedy फिल्म है जिसमें एक रहस्यमयी बंगले में घटने वाली अजीब और डरावनी घटनाओं को मजेदार अंदाज में दिखाया गया है। Mehmood की शानदार कॉमेडी और फिल्म का सस्पेंस इसे खास बनाता है। कहानी में भूतिया माहौल के साथ हास्य का बेहतरीन मिश्रण देखने को मिलता है, जो दर्शकों को डराने के साथ-साथ हंसाता भी है।",
-  "category": "bollywood",
-  "year": 1965,
-  "duration": "2h 20m",
-  "rating": 7,
-  "genre": ["Comedy", "Horror", "Mystery"],
-  "language": "Hindi",
-  "quality": "HD"
-},
+
 {
   "id": "96",
   "title": "Matka King (2026) - Crime Drama Movie | Full Movie Hindi HD",
