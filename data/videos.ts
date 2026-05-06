@@ -25,8 +25,10 @@ export interface Video {
   keywords?: string[];
 }
 
-/* ----------------  HELPER ---------------- */
+/* ---------------- NORMALIZE ---------------- */
+
 const normalize = (str: string) => str.toLowerCase().trim();
+
 /* ---------------- SLUG HELPER ---------------- */
 
 export function generateSlug(title: string): string {
@@ -39,7 +41,7 @@ export function generateSlug(title: string): string {
     .replace(/^-+|-+$/g, "");
 }
 
-/* ---------------- MAIN VIDEO COLLECTION ---------------- */
+/* ---------------- MAIN DATA ---------------- */
 
 export const videos: Video[] = [
   ...bollywoodVideos,
@@ -50,12 +52,12 @@ export const videos: Video[] = [
 
 export const getVideosByCategory = (category: string): Video[] => {
   return videos.filter(
-    (video) => video.category.toLowerCase() === category.toLowerCase()
+    (v) => normalize(v.category) === normalize(category)
   );
 };
 
 export const getFeaturedVideos = (): Video[] => {
-  return videos.filter((video) => video.featured === true);
+  return videos.filter((v) => v.featured === true);
 };
 
 export const getLatestVideos = (): Video[] => {
@@ -67,7 +69,7 @@ export const getTrendingVideos = (): Video[] => {
 };
 
 export const getPopularVideos = (): Video[] => {
-  return videos.filter((video) => video.rating >= 7.5).slice(0, 10);
+  return videos.filter((v) => v.rating >= 7.5).slice(0, 10);
 };
 
 export const getTopRatedVideos = (): Video[] => {
@@ -75,19 +77,19 @@ export const getTopRatedVideos = (): Video[] => {
 };
 
 export const getVideosByGenre = (genre: string): Video[] => {
-  return videos.filter((video) => video.genre.includes(genre));
+  return videos.filter((v) => v.genre.includes(genre));
 };
 
 export const getVideoById = (id: string): Video | undefined => {
-  return videos.find((video) => video.id === id);
+  return videos.find((v) => v.id === id);
 };
 
 export const getVideoBySlug = (slug: string): Video | undefined => {
-  return videos.find((video) => video.slug === slug);
+  return videos.find((v) => v.slug === slug);
 };
 
 export const getAllVideoSlugs = (): string[] => {
-  return videos.map((video) => video.slug);
+  return videos.map((v) => v.slug);
 };
 
 export const getRecommendedVideos = (currentVideoId: string): Video[] => {
@@ -95,24 +97,48 @@ export const getRecommendedVideos = (currentVideoId: string): Video[] => {
   if (!current) return videos.slice(0, 10);
 
   return videos
-    .filter((video) => video.id !== currentVideoId)
+    .filter((v) => v.id !== currentVideoId)
     .filter(
-      (video) =>
-        video.category === current.category ||
-        video.genre.some((g) => current.genre.includes(g))
+      (v) =>
+        v.category === current.category ||
+        v.genre.some((g) => current.genre.includes(g))
     )
     .slice(0, 10);
 };
 
 export const getUpcomingVideos = (): Video[] => {
-  return videos.filter((video) => video.year >= 2025).slice(0, 10);
+  return videos.filter((v) => v.year >= 2025).slice(0, 10);
 };
 
-const isNonHindi = (v: Video) => v.language.toLowerCase() !== "hindi";
-
-const isForeignCategory = (v: Video) =>
-  ["hollywood", "south indian"].includes(v.category.toLowerCase());
-
 export const getHindiDubbedVideos = (): Video[] => {
-  return videos.filter(v => isNonHindi(v) && isForeignCategory(v)).slice(0, 10);
+  return videos
+    .filter(
+      (v) =>
+        normalize(v.language) !== "hindi" &&
+        (normalize(v.category) === "hollywood" ||
+          normalize(v.category) === "south indian")
+    )
+    .slice(0, 10);
+};
+
+/* ---------------- CARTOON HELPERS (FIXED ERROR) ---------------- */
+
+export const getCartoonVideos = (): Video[] => {
+  return videos.filter((v) => normalize(v.category) === "cartoon");
+};
+
+export const getAnimeVideos = (): Video[] => {
+  return videos.filter(
+    (v) =>
+      v.genre.includes("Animation") ||
+      v.title.toLowerCase().includes("anime")
+  );
+};
+
+export const getKidsCartoons = (): Video[] => {
+  return videos.filter(
+    (v) =>
+      v.genre.includes("Family") ||
+      normalize(v.category) === "cartoon"
+  );
 };
