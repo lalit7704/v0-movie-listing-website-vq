@@ -49,11 +49,11 @@ export const hollywoodVideos: Video[] = [
     rating: 7.5,
     genre: ["Action", "Adventure"],
     language: "Hindi",
-    quality: "HD",
-    featured: true
+    quality: "HD"
+    
   },
   {
-      "id": "82",
+      "id": "3",
       "title": "Chappie (2015) - AI Robot Learns Humanity | Sci-Fi Action Movie HD",
       "slug": "chappie-2015-ai-robot-learns-humanity-sci-fi-action-movie-hd",
       "videoUrl": "https://youtu.be/lyy7y0QOK-0",
@@ -67,6 +67,7 @@ export const hollywoodVideos: Video[] = [
       "genre": ["Action", "Sci-Fi", "Drama"],
       "language": "English",
       "quality": "HD"
+      
     },
     {
     "id": "67",
@@ -163,7 +164,8 @@ export const hollywoodVideos: Video[] = [
     "rating": 8,
     "genre": ["Action", "Adventure", "Sci-Fi"],
     "language": "English",
-    "quality": "HD"
+    "quality": "HD",
+    featured: true
   }
 ];
 

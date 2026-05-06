@@ -49,7 +49,8 @@ export const bollywoodVideos: Video[] = [
   "rating": 9.5,
   "genre": ["Comedy", "Horror", "Mystery"],
   "language": "Hindi",
-  "quality": "HD"
+  "quality": "HD",
+  featured: true
 },
 {
     id: "2",
@@ -83,7 +84,8 @@ export const bollywoodVideos: Video[] = [
   "rating": 0,
   "genre": ["Crime", "Drama"],
   "language": "Hindi",
-  "quality": "HD"
+  "quality": "HD",
+  featured: true
 },
 {
     "id": "92",
