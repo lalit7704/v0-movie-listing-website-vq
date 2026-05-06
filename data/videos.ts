@@ -1,3 +1,11 @@
+import { bollywoodVideos } from "./bollywood";
+import { hollywoodVideos } from "./hollywood";
+
+export const Videos: Video[] = [
+  ...bollywoodVideos,
+  ...hollywoodVideos,
+];
+
 export interface Video {
   id: string;
   title: string;
@@ -19,13 +27,6 @@ export interface Video {
   cast?: string[];
   keywords?: string[];
 }
-import { bollywoodVideos } from "./bollywood";
-import { hollywoodVideos } from "./hollywood";
-
-export const allVideos: Video[] = [
-  ...bollywoodVideos,
-  ...hollywoodVideos,
-];
 /**
  * Helper function to generate SEO-friendly slug from title
  */
@@ -48,7 +49,7 @@ export const videos: Video[] = [
     downloadUrl: "https://t.me/onemoviedownloa/3",
     poster: "https://image.tmdb.org/t/p/w780/q8IEFmEGGSGmAWfwRs23XDwdFN4.jpg",
     description: "As the world fell, young Furiosa is snatched from the Green Place of Many Mothers and falls into the hands of a great Biker Horde led by the Warlord Dementus. Sweeping through the Wasteland they come across the Citadel presided over by The Immortan Joe. While the two Tyrants war for dominance, Furiosa must survive many trials as she puts together the means to find her way home.",
-    category: "Hollywood",
+    category: "hollywood",
     year: 2024,
     duration: "2h 28m",
     rating: 7.5,
