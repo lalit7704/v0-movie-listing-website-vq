@@ -44,9 +44,9 @@ export const bollywoodVideos: Video[] = [
   "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Bhooth_Bangla.png?v=1777485339",
   "description": "Bhooth Bangla (1965) एक classic horror comedy फिल्म है जिसमें एक रहस्यमयी बंगले में घटने वाली अजीब और डरावनी घटनाओं को मजेदार अंदाज में दिखाया गया है। Mehmood की शानदार कॉमेडी और फिल्म का सस्पेंस इसे खास बनाता है। कहानी में भूतिया माहौल के साथ हास्य का बेहतरीन मिश्रण देखने को मिलता है, जो दर्शकों को डराने के साथ-साथ हंसाता भी है।",
   "category": "bollywood",
-  "year": 1965,
+  "year": 2026,
   "duration": "2h 20m",
-  "rating": 7,
+  "rating": 9.5,
   "genre": ["Comedy", "Horror", "Mystery"],
   "language": "Hindi",
   "quality": "HD"
