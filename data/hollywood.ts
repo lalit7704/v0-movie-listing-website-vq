@@ -152,7 +152,7 @@ export const hollywoodVideos: Video[] = [
   },
   {
     "id": "74",
-    "title": "Mad Max: Fury Road (2015) - Post Apocalyptic Action Thriller | Full Movie HD",
+    "title": "Mad Max: Fury Road (2015)",
     "slug": generateSlug("Mad Max: Fury Road (2015) - Post Apocalyptic Action Thriller | Full Movie HD"),
     "videoUrl": "https://youtu.be/hEJnMQG9ev8",
     "downloadUrl": "https://t.me/onemoviedownloa/34",

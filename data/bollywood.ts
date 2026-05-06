@@ -37,7 +37,7 @@ function generateSlug(title: string): string {
 export const bollywoodVideos: Video[] = [
   {
   "id": "1",
-  "title": "Bhooth Bangla (1965) - Horror Comedy Movie | Mehmood | Full Movie HD",
+  "title": "Bhooth Bangla Horror Comedy Movie",
   "slug": "bhooth-bangla-1965-horror-comedy-movie-mehmood-full-movie-hd",
   "videoUrl": "https://youtu.be/WgAOa4bvOB4",
   "downloadUrl": "https://t.me/onemoviedownloa/50",
@@ -72,7 +72,7 @@ export const bollywoodVideos: Video[] = [
 
 {
   "id": "96",
-  "title": "Matka King (2026) - Crime Drama Movie | Full Movie Hindi HD",
+  "title": "Matka King (2026)",
   "slug": "matka-king-2025-crime-drama-movie-full-movie-hindi-hd",
   "videoUrl": "https://youtu.be/xLSdbndJGF0",
   "downloadUrl": "https://t.me/onemoviedownloa/49",
