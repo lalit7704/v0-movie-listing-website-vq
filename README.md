@@ -1,37 +1,55 @@
-# v0-movie-listing-website-vq
+# 🎬 Onemovie
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+A modern movie streaming and discovery platform built with Next.js. Explore movies, web series, and cartoons with a clean UI and smooth performance.
 
-## Built with v0
+---
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## 🚀 Features
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_LsCjitznbjcgLMvRxKVjEoQWeFsU)
+* 🎥 Movies, Web Series & Cartoons sections
+* ⚡ Fast and responsive UI
+* 🖼️ Optimized images & lazy loading
+* 🔥 TMDB API integration
+* 📱 Fully mobile responsive
 
-## Getting Started
+---
 
-First, run the development server:
+## 🛠️ Tech Stack
+
+* Next.js
+* React
+* Tailwind CSS
+* Vercel (Deployment)
+
+---
+
+## 🧑‍💻 Getting Started
+
+Run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to view it in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-## Learn More
+## 🌐 Live Demo
 
-To learn more, take a look at the following resources:
+https://onemovie.in
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+---
 
-<a href="https://v0.app/chat/api/kiro/clone/lalit7704/v0-movie-listing-website-vq" alt="Open in Kiro"><img src="https://pdgvvgmkdvyeydso.public.blob.vercel-storage.com/open%20in%20kiro.svg?sanitize=true" /></a>
-# onemovie
-A modern movie streaming and discovery platform built with React/Next.js. Features categorized content like movies, web series, and cartoons with a smooth UI and optimized performance.
+## 📌 Note
+
+This project is continuously being improved with performance optimizations and new features.
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a star on GitHub!
+
+---
