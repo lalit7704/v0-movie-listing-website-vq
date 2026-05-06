@@ -20,9 +20,8 @@ export interface Video {
   keywords?: string[];
 }
 
-/**
- * Helper function to generate SEO-friendly slug
- */
+/* ---------------- SLUG HELPER ---------------- */
+
 function generateSlug(title: string): string {
   return title
     .toLowerCase()
@@ -32,6 +31,8 @@ function generateSlug(title: string): string {
     .replace(/-+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
+
+/* ---------------- BOLLYWOOD DATA ---------------- */
 
 export const bollywoodVideos: Video[] = [
   {
@@ -313,72 +314,34 @@ export const bollywoodVideos: Video[] = [
 
 export const getVideosByCategory = (category: string): Video[] => {
   return bollywoodVideos.filter(
-    v => v.category.toLowerCase() === category.toLowerCase()
+    (v) => v.category.toLowerCase().trim() === category.toLowerCase().trim()
   );
 };
 
 export const getFeaturedVideos = (): Video[] => {
-  return bollywoodVideos.filter(v => v.featured === true);
+  return bollywoodVideos.filter((v) => v.featured);
 };
 
 export const getLatestVideos = (): Video[] => {
-  return [...bollywoodVideos]
-    .sort((a, b) => b.year - a.year)
-    .slice(0, 10);
+  return [...bollywoodVideos].sort((a, b) => b.year - a.year);
 };
 
 export const getTrendingVideos = (): Video[] => {
-  return [...bollywoodVideos]
-    .sort((a, b) => b.rating - a.rating)
-    .slice(0, 10);
-};
-
-export const getPopularVideos = (): Video[] => {
-  return bollywoodVideos.filter(v => v.rating >= 7.5).slice(0, 10);
+  return [...bollywoodVideos].sort((a, b) => b.rating - a.rating);
 };
 
 export const getTopRatedVideos = (): Video[] => {
-  return [...bollywoodVideos]
-    .sort((a, b) => b.rating - a.rating)
-    .slice(0, 10);
-};
-
-export const getVideosByGenre = (genre: string): Video[] => {
-  return bollywoodVideos.filter(v => v.genre.includes(genre));
+  return [...bollywoodVideos].sort((a, b) => b.rating - a.rating);
 };
 
 export const getVideoById = (id: string): Video | undefined => {
-  return bollywoodVideos.find(v => v.id === id);
+  return bollywoodVideos.find((v) => v.id === id);
 };
 
 export const getVideoBySlug = (slug: string): Video | undefined => {
-  return bollywoodVideos.find(v => v.slug === slug);
+  return bollywoodVideos.find((v) => v.slug === slug);
 };
 
 export const getAllVideoSlugs = (): string[] => {
-  return bollywoodVideos.map(v => v.slug);
-};
-
-export const getRecommendedVideos = (currentVideoId: string): Video[] => {
-  const current = getVideoById(currentVideoId);
-  if (!current) return bollywoodVideos.slice(0, 10);
-
-  return bollywoodVideos
-    .filter(v => v.id !== currentVideoId)
-    .filter(
-      v =>
-        v.category === current.category ||
-        v.genre.some(g => current.genre.includes(g))
-    )
-    .slice(0, 10);
-};
-
-export const getUpcomingVideos = (): Video[] => {
-  return bollywoodVideos.filter(v => v.year >= 2025).slice(0, 10);
-};
-
-export const getHindiDubbedVideos = (): Video[] => {
-  return bollywoodVideos
-    .filter(v => v.language.toLowerCase() !== "hindi")
-    .slice(0, 10);
+  return bollywoodVideos.map((v) => v.slug);
 };
