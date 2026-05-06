@@ -25,6 +25,8 @@ export interface Video {
   keywords?: string[];
 }
 
+/* ----------------  HELPER ---------------- */
+const normalize = (str: string) => str.toLowerCase().trim();
 /* ---------------- SLUG HELPER ---------------- */
 
 export function generateSlug(title: string): string {
@@ -106,13 +108,11 @@ export const getUpcomingVideos = (): Video[] => {
   return videos.filter((video) => video.year >= 2025).slice(0, 10);
 };
 
+const isNonHindi = (v: Video) => v.language.toLowerCase() !== "hindi";
+
+const isForeignCategory = (v: Video) =>
+  ["hollywood", "south indian"].includes(v.category.toLowerCase());
+
 export const getHindiDubbedVideos = (): Video[] => {
-  return videos
-    .filter(
-      (video) =>
-        video.language.toLowerCase() !== "hindi" &&
-        (video.category.toLowerCase() === "hollywood" ||
-          video.category.toLowerCase() === "south indian")
-    )
-    .slice(0, 10);
+  return videos.filter(v => isNonHindi(v) && isForeignCategory(v)).slice(0, 10);
 };
