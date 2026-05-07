@@ -166,7 +166,23 @@ export const hollywoodVideos: Video[] = [
     "language": "English",
     "quality": "HD",
     featured: true
-  }
+  },
+  {
+  "id": "143",
+  "title": "The Mummy (2026) - Lee Cronin Horror Movie | Hindi Dubbed | Full Movie HD",
+  "slug": "the-mummy-2026-lee-cronin-horror-movie-hindi-dubbed-full-movie-hd",
+  "videoUrl": "https://youtu.be/XJ0uv-phsDk",
+  "downloadUrl": "https://t.me/onemoviedownloa/48",
+  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/The_Mummy_2026_Lee_Cronin_Horror_Movie_Hindi_Dubbed.png?v=1778142020",
+  "description": "The Mummy (2026) एक डरावनी supernatural horror फिल्म है, जिसे Lee Cronin ने निर्देशित किया है। फिल्म में एक प्राचीन ममी के जागने के बाद शुरू होने वाली भयावह और रहस्यमयी घटनाओं को दिखाया गया है। जैसे-जैसे अंधेरी शक्तियाँ फैलती हैं, लोगों को अपने अस्तित्व के लिए संघर्ष करना पड़ता है। यह फिल्म suspense, horror और supernatural thrills से भरपूर है, जो दर्शकों को अंत तक रोमांचित और भयभीत रखती है।",
+  "category": "hollywood",
+  "year": 2026,
+  "duration": "2h 14m",
+  "rating": 0,
+  "genre": ["Horror", "Thriller"],
+  "language": "Hindi",
+  "quality": "HD"
+}
 ];
 
 /* ---------------- HELPERS ---------------- */
