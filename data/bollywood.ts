@@ -36,7 +36,7 @@ function generateSlug(title: string): string {
 
 export const bollywoodVideos: Video[] = [
   {
-  "id": "1",
+  "id": "2001",
   "title": "Bhooth Bangla Horror Comedy Movie",
   "slug": "bhooth-bangla-1965-horror-comedy-movie-mehmood-full-movie-hd",
   "videoUrl": "https://youtu.be/WgAOa4bvOB4",
@@ -53,7 +53,7 @@ export const bollywoodVideos: Video[] = [
   featured: true
 },
 {
-    id: "2",
+    id: "2002",
     title: "Dhurandhar: The Revenge",
     slug: generateSlug("Dhurandhar: The Revenge"),
     videoUrl: "https://youtu.be/NHk7scrb_9I",
@@ -71,7 +71,7 @@ export const bollywoodVideos: Video[] = [
   },
 
 {
-  "id": "96",
+  "id": "2003",
   "title": "Matka King (2026)",
   "slug": "matka-king-2025-crime-drama-movie-full-movie-hindi-hd",
   "videoUrl": "https://youtu.be/xLSdbndJGF0",
@@ -88,7 +88,7 @@ export const bollywoodVideos: Video[] = [
   featured: true
 },
 {
-    "id": "92",
+    "id": "2004",
     "title": "Sister Midnight - Mystery Thriller | Full Movie HD",
     "slug": "sister-midnight-mystery-thriller-full-movie-hd",
     "videoUrl": "https://youtu.be/g2hiY3SNplw",
@@ -104,7 +104,7 @@ export const bollywoodVideos: Video[] = [
     "quality": "HD"
   },
    {
-    "id": "91",
+    "id": "2005",
     "title": "120 Bahadur - Action Drama Movie | Full Movie HD",
     "slug": "120-bahadur-action-drama-movie-full-movie-hd",
     "videoUrl": "https://youtu.be/52eEa2nrs4E",
@@ -120,13 +120,13 @@ export const bollywoodVideos: Video[] = [
     "quality": "HD"
   },
     {
-      "id": "83",
+      "id": "2006",
       "title": "Border 2 (2026) - Indian War Drama Movie | Sunny Deol | Full Movie HD",
       "slug": "border-2-2026-indian-war-drama-movie-sunny-deol-full-movie-hd",
       "videoUrl": "https://youtu.be/XXWFhs84tkQ",
       "downloadUrl": "https://t.me/onemoviedownloa/38",
       "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Border_2.png?v=1777397094",
-      "description": "Border 2 (2026) एक भारतीय war drama फिल्म है, जो 1971 के भारत-पाक युद्ध पर आधारित है। इस फिल्म में भारतीय सेना के बहादुर सैनिकों की वीरता, त्याग और देशभक्ति को दर्शाया गया है। Sunny Deol, Varun Dhawan और Diljit Dosanjh जैसे कलाकार इसमें मुख्य भूमिका निभाते हैं। यह फिल्म एक्शन, इमोशन और देशभक्ति से भरपूर है, जो दर्शकों को सैनिकों के साहस और बलिदान की याद दिलाती है।",
+      "description": "Border 2 (2026) एक भारतीय war drama फिल्म है, जो 1971 के भारत-पाक युद्ध पर आधारित है। इस फिल्म में भारतीय सेना के बहादुर सैनिकों की वीरता, त्याग और देशभक्ति को दर्शाया गया है। Sunny Deol, Varun Dhawan और Diljit Dosanjh जैसे कलाकार इसमें मुख्य भूमिका निभाते हैं। यह फिल्म एक्शन, इमोशन और देशभक्ति से भरपूर है, जो दर्शकों को सैनिकों के साहस और বলিদান की যাদ दिलाती है।",
       "category": "bollywood",
       "year": 2026,
       "duration": "3h 19m",
@@ -136,7 +136,7 @@ export const bollywoodVideos: Video[] = [
       "quality": "HD"
     },
     {
-      "id": "84",
+      "id": "2007",
       "title": "Mardaani 2 (2019) - Crime Thriller Movie | Rani Mukerji | Full Movie HD",
       "slug": "mardaani-2-2019-crime-thriller-movie-rani-mukerji-full-movie-hd",
       "videoUrl": "https://youtu.be/dKeRIOA28Jk",
@@ -152,7 +152,7 @@ export const bollywoodVideos: Video[] = [
       "quality": "HD"
     },
     {
-      "id": "85",
+      "id": "2008",
       "title": "Gully Boy (2019) - Rap & Street Life Drama | Ranveer Singh | Full Movie HD",
       "slug": "gully-boy-2019-rap-street-life-drama-ranveer-singh-full-movie-hd",
       "videoUrl": "https://youtu.be/JfbxcD6biOk",
@@ -168,7 +168,7 @@ export const bollywoodVideos: Video[] = [
       "quality": "HD"
     },
     {
-      "id": "86",
+      "id": "2009",
       "title": "Gulabo Sitabo (2020) - Comedy Drama Movie | Amitabh Bachchan | Ayushmann Khurrana | Full Movie HD",
       "slug": "gulabo-sitabo-2020-comedy-drama-movie-amitabh-bachchan-ayushmann-khurrana-full-movie-hd",
       "videoUrl": "https://youtu.be/o0qeQ_yHqtA",
@@ -184,7 +184,7 @@ export const bollywoodVideos: Video[] = [
       "quality": "HD"
     },
     {
-      "id": "87",
+      "id": "2011",
       "title": "Chhalaang (2020) - Sports Comedy Drama Movie | Rajkummar Rao | Full Movie HD",
       "slug": "chhalaang-2020-sports-comedy-drama-movie-rajkummar-rao-full-movie-hd",
       "videoUrl": "https://youtu.be/BY-0SbSF2dE",
@@ -200,7 +200,7 @@ export const bollywoodVideos: Video[] = [
       "quality": "HD"
     },
     {
-      "id": "88",
+      "id": "2012",
       "title": "Bhoot Part One: The Haunted Ship (2020) - Horror Thriller Movie | Vicky Kaushal | Full Movie HD",
       "slug": "bhoot-part-one-the-haunted-ship-2020-horror-thriller-movie-vicky-kaushal-full-movie-hd",
       "videoUrl": "https://youtu.be/ELcRnZ3kP08",
@@ -216,7 +216,7 @@ export const bollywoodVideos: Video[] = [
       "quality": "HD"
     },
     {
-      "id": "89",
+      "id": "2013",
       "title": "Arjun Patiala (2019) - Comedy Crime Movie | Diljit Dosanjh | Full Movie HD",
       "slug": "arjun-patiala-2019-comedy-crime-movie-diljit-dosanjh-full-movie-hd",
       "videoUrl": "https://youtu.be/nR7ETMS7Eo0",
@@ -232,13 +232,13 @@ export const bollywoodVideos: Video[] = [
       "quality": "HD"
     },
     {
-      "id": "90",
+      "id": "2014",
       "title": "Motichoor Chaknachoor (2019) - Romantic Comedy Movie | Nawazuddin Siddiqui | Full Movie HD",
       "slug": "motichoor-chaknachoor-2019-romantic-comedy-movie-nawazuddin-siddiqui-full-movie-hd",
       "videoUrl": "https://youtu.be/U6J_Pkqk5Fs",
       "downloadUrl": "https://t.me/onemoviedownloa/25",
       "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Motichoor_Chaknachoor.png?v=1777400502",
-      "description": "Motichoor Chaknachoor (2019) एक मजेदार romantic comedy फिल्म है जिसमें Nawazuddin Siddiqui एक ऐसे व्यक्ति का किरदार निभाते हैं जो शादी के लिए संघर्ष कर रहा होता है। उसकी मुलाकात एक ऐसी लड़की से होती है जो विदेश जाने का सपना देखती है, और दोनों की शादी के इरादे अलग-अलग कारणों से बनते हैं। फिल्म में हास्य, रिश्तों और सामाजिक अपेक्षाओं का हल्का-फुल्का चित्रण किया गया है, जो दर्शकों को मनोरंजन के साथ-साथ हंसी भी देता है।",
+      "description": "Motichoor Chaknachoor (2019) एक मजेदार romantic comedy फिल्म है जिसमें Nawazuddin Siddiqui एक ऐसे व्यक्ति का किरदार निभाते हैं जो शादी के लिए संघर्ष कर रहा होता है। उसकी मुलाकात एक ऐसी लड़की से होती है जो विदेश जाने का सपना देखती है, और दोनों की शादी के इरादे अलग-अलग कारणों से बनते हैं। फिल्म में हास्य, रिश्तों और सामाजिक अपेक्षाओं का हल्का-फुल्का চিত্রণ কিয়া গয়া হৈ, যা দর্শকদের মনোরঞ্জন এবং হাসি প্রদান করে।",
       "category": "bollywood",
       "year": 2019,
       "duration": "2h 30m",
@@ -248,7 +248,7 @@ export const bollywoodVideos: Video[] = [
       "quality": "HD"
     },
       {
-    "id": "75",
+    "id": "2015",
     "title": "Jolly LLB 3 (2025) -  Drama Movie | Akshay Kumar & Arshad Warsi",
     "slug": generateSlug("Jolly LLB 3 (2025) -  Drama Movie | Akshay Kumar & Arshad Warsi"),
     "videoUrl": "https://youtu.be/eSgJ8PfSUSk",
@@ -264,7 +264,7 @@ export const bollywoodVideos: Video[] = [
     "quality": "HD"
   },
   {
-    "id": "76",
+    "id": "2016",
     "title": "Jolly LLB 2 (2017) - Courtroom Drama | Akshay Kumar | Full Movie HD",
     "slug": generateSlug("Jolly LLB 2 (2017) - Courtroom Drama | Akshay Kumar | Full Movie HD"),
     "videoUrl": "https://youtu.be/VGRScQyQoFg",
@@ -280,13 +280,13 @@ export const bollywoodVideos: Video[] = [
     "quality": "HD"
   },
   {
-    "id": "77",
+    "id": "2017",
     "title": "Ramaiya Vastavaiya (2013) - Romantic Drama Movie | Full Movie HD",
     "slug": generateSlug("Ramaiya Vastavaiya (2013) - Romantic Drama Movie | Full Movie HD"),
     "videoUrl": "https://youtu.be/fVAaYZQ31TE",
     "downloadUrl": "https://t.me/onemoviedownloa/30",
     "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/download_12.png?v=1777319897",
-    "description": "Ramaiya Vastavaiya (2013) एक खूबसूरत romantic drama फिल्म है जिसमें एक अमीर लड़का एक गांव की सादगी भरी लड़की से प्यार कर बैठता है। अपने प्यार को पाने के लिए उसे गांव में रहकर कड़ी मेहनत और जीवन की सच्चाईयों का सामना करना पड़ता है। फिल्म में प्रेम, संघर्ष और पारिवारिक मूल्यों को भावनात्मक तरीके से दिखाया गया है, जो दर्शकों को एक दिल छू लेने वाली कहानी का अनुभव कराती है।",
+    "description": "Ramaiya Vastavaiya (2013) एक खूबसूरत romantic drama फिल्म है जिसमें एक अमीर लड़का एक गांव की सादगी भरी लड़की से प्यार कर बैठता है। अपने प्यार को पाने के लिए उसे गांव में रहकर कड़ी मेहनत और जीवन की सच्चाईयों का सामना करना पड़ता है। फिल्म में प्रेम, संघर्ष और पारिवारिक मूल्यों को भावनात्मक तरीके से दिखाया गया है, जो दर्शकों को एक दिल छू लेने वाली कहानी का অনুভব করাতি হৈ।",
     "category": "bollywood",
     "year": 2013,
     "duration": "2h 28m",
@@ -296,7 +296,7 @@ export const bollywoodVideos: Video[] = [
     "quality": "HD"
   },
   {
-    id: "68",
+    id: "2018",
     title: "Masti 4 (Mastiii 4) (2025) - Comedy Movie | Full Movie HD",
     slug: generateSlug("Masti 4 (Mastiii 4) (2025) - Comedy Movie | Full Movie HD"),
     videoUrl: "https://youtu.be/m43HC9T9YM8",
@@ -312,7 +312,7 @@ export const bollywoodVideos: Video[] = [
     quality: "HD"
   },
   {
-  "id": "2001",
+  "id": "2019",
   "title": "Bhool Bhulaiyaa (2007) - Horror Comedy Movie | Akshay Kumar | Full Movie HD",
   "slug": "bhool-bhulaiyaa-2007-horror-comedy-movie-akshay-kumar-full-movie-hd",
   "videoUrl": "https://youtu.be/ss-7iGf1xE8",
@@ -328,7 +328,7 @@ export const bollywoodVideos: Video[] = [
   "quality": "HD"
 },
 {
-  "id": "136",
+  "id": "2020",
   "title": "Odela 2 (2025) - Supernatural Thriller Movie | Full Movie HD",
   "slug": "odela-2-2025-supernatural-thriller-movie-full-movie-hd",
   "videoUrl": "https://youtu.be/oX7VhSpm8Lc",
@@ -344,7 +344,7 @@ export const bollywoodVideos: Video[] = [
   "quality": "HD"
 },
 {
-  "id": "137",
+  "id": "2021",
   "title": "Odela Railway Station (2022) - Crime Thriller Movie | Full Movie HD",
   "slug": "odela-railway-station-2022-crime-thriller-movie-full-movie-hd",
   "videoUrl": "https://youtu.be/1_Ytts7pcFY",
@@ -360,7 +360,7 @@ export const bollywoodVideos: Video[] = [
   "quality": "HD"
 },
 {
-  "id": "2002",
+  "id": "2022",
   "title": "Toonpur Ka Superrhero (2010) - Action Adventure Comedy Movie | Ajay Devgn | Full Movie HD",
   "slug": "toonpur-ka-superrhero-2010-action-adventure-comedy-movie-ajay-devgn-full-movie-hd",
   "videoUrl": "https://youtu.be/7IYwHJUQqkY",
@@ -376,7 +376,7 @@ export const bollywoodVideos: Video[] = [
   "quality": "HD"
 },
 {
-  "id": "2003",
+  "id": "2023",
   "title": "Raja Shivaji - Historical Action Drama Movie",
   "slug": "raja-shivaji-historical-action-drama-movie-full-movie-hd",
   "videoUrl": "https://youtu.be/Bgy00eaFyhE",
@@ -393,7 +393,7 @@ export const bollywoodVideos: Video[] = [
   "featured": true
 },
 {
-  "id": "2004",
+  "id": "2024",
   "title": "God Tussi Great Ho (2008) - Fantasy Comedy Drama Movie | Salman Khan | Full Movie HD",
   "slug": "god-tussi-great-ho-2008-fantasy-comedy-drama-movie-salman-khan-full-movie-hd",
   "videoUrl": "https://youtu.be/REVa2yT8AQk",
@@ -409,13 +409,13 @@ export const bollywoodVideos: Video[] = [
   "quality": "HD"
 },
 {
-  "id": "146",
+  "id": "2025",
   "title": "Sitaare Zameen Par - Bollywood Drama Movie | Aamir Khan | Full Movie HD",
   "slug": "sitaare-zameen-par-bollywood-drama-movie-aamir-khan-full-movie-hd",
   "videoUrl": "https://youtu.be/YH6k5weqwy8",
   "downloadUrl": "https://t.me/onemoviedownloa/70",
   "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Sitaare_Zameen_Par.png?v=1778394002",
-  "description": "Sitaare Zameen Par एक emotional Bollywood drama फिल्म है, जिसमें इंसानी भावनाओं, सपनों और रिश्तों की गहराई को खूबसूरती से प्रस्तुत किया गया है। फिल्म की कहानी उन लोगों के संघर्ष और आत्मविश्वास पर आधारित है, जो जीवन की कठिन परिस्थितियों के बावजूद अपने सपनों को पूरा करने की कोशिश करते हैं। इसमें परिवार, दोस्ती, प्रेरणा और आत्मविश्वास जैसे विषयों को भावनात्मक अंदाज में दिखाया गया है। Aamir Khan की दमदार मौजूदगी और फिल्म की संवेदनशील कहानी इसे दर्शकों के लिए খাস বনাতی है। যহ ফিল্ম মনোরঞ্জন কে সাথে-সাথে সমাজ কে সকারাত্মক সংদেশ দেনের প্রয়াস করতি एবং दर्शकদের भावुक एবং प্রেরিত दুইটি করতি।",
+  "description": "Sitaare Zameen Par एक emotional Bollywood drama फिल्म है, जिसमें इंसानी भावनाओं, सपनों और रिश्तों की गहराई को खूबसूरती से प्रस्तुत किया गया है। फिल्म की कहानी उन लोगों के संघर्ष और आत्मविश्वास पर आधारित है, जो जीवन की कठिन परिस्थितियों के बावजूद अपने सपनों को पूरा करने की कोशिश करते हैं। इसमें परिवार, दोस्ती, प्रेरणा और आत्मविश्वास जैसे विषयों को भावनात्मक अंदाज में दिखाया गया है। Aamir Khan की दमदार मौजूदगी और ফিল্ম কি সংবেদনশীল কহানী এইটি দর্শকদের জন্য খাস বানাতি হয়। যেহ ফিল্ম মনোরঞ্জন করে সাথে-সাথে সমাজকে সকারাত্মক সংদেশ দেওয়ার প্রয়াস করে এবং দর্শকদের ভাবুক এবং प्रेरিত ദുഇടി കരുതുന്നു।",
   "category": "bollywood",
   "year": 2025,
   "duration": "TBA",
