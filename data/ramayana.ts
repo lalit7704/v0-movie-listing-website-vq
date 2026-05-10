@@ -149,7 +149,7 @@ export const ramayanVideos: Video[] = [
   {
     "id": "6008",
     "title": "Ramayan EP 8 - श्री राम द्वारा धनुषभंग | जयमाला पहनाना",
-    "slug": generateSlug("Ramayan EP 8 - श्री राम द्वारा धनुषभंग | जयमाला पहनाना  "),
+    "slug": generateSlug("Ramayan EP 8 - श्री राम द्वारा धनुषभंग जयमाला पहनाना"),
     "videoUrl": "https://youtu.be/1Szvvq4H-uI?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/1Szvvq4H-uI?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -165,7 +165,7 @@ export const ramayanVideos: Video[] = [
   {
     "id": "6009",
     "title": "Ramayan EP 9 - दशरथजी के पास जनकजी का दूत भेजना ",
-    "slug": generateSlug("Ramayan EP 9 - दशरथजी के पास जनकजी का दूत भेजना "),
+    "slug": generateSlug("Ramayan EP 9 - दशरथजी के पास जनकजी का दूत भेजना"),
     "videoUrl": "https://youtu.be/g9Gg1mT6FLA?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/g9Gg1mT6FLA?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -197,7 +197,7 @@ export const ramayanVideos: Video[] = [
   {
     "id": "6011",
     "title": "Ramayan EP 11 - बारात का अयोध्या लौटना और अयोध्या में आनंद ",
-    "slug": generateSlug("Ramayan EP 11 - बारात का अयोध्या लौटना और अयोध्या में आनंद "),
+    "slug": generateSlug("Ramayan EP 11 - बारात का अयोध्या लौटना और अयोध्या में आनंद"),
     "videoUrl": "https://youtu.be/wrB8x8vRZfY?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/wrB8x8vRZfY?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -213,7 +213,7 @@ export const ramayanVideos: Video[] = [
   {
     "id": "6012",
     "title": "Ramayan EP 12 - भरत-शत्रुघ्न कैकेयी प्रदेश जाते हैं ",
-    "slug": generateSlug("Ramayan EP 12 - भरत-शत्रुघ्न कैकेयी प्रदेश जाते हैं "),
+    "slug": generateSlug("Ramayan EP 12 - भरत-शत्रुघ्न कैकेयी प्रदेश जाते हैं"),
     "videoUrl": "https://youtu.be/g9fiHHF0m3s?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/g9fiHHF0m3s?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -229,7 +229,7 @@ export const ramayanVideos: Video[] = [
   {
     "id": "6013",
     "title": "Ramayan EP 13 - श्री राम के राज्याभिषेक की तैयारी s",
-    "slug": generateSlug("Ramayan EP 13 - श्री राम के राज्याभिषेक की तैयारी "),
+    "slug": generateSlug("Ramayan EP 13 - श्री राम के राज्याभिषेक की तैयारी"),
     "videoUrl": "https://youtu.be/0Pbd4hrqjq8?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/0Pbd4hrqjq8?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -241,12 +241,11 @@ export const ramayanVideos: Video[] = [
     "genre": ["Adventure", "Drama", "Family", "Fantasy"],
     "language": "Hindi",
     "quality": "HD"
-  }
-  , {
+  },
+  {
     "id": "6014",
     "title": "Ramayan EP 14 - कैकेयी का कोप भवन में जाना | HQ Widescreen | English Subtitles",
     "slug": generateSlug("Ramayan EP 14 - कैकेयी का कोप भवन में जाना"),
-
     "videoUrl": "https://youtu.be/SM6IFkuLpl4?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/SM6IFkuLpl4?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -261,7 +260,7 @@ export const ramayanVideos: Video[] = [
   },
   {
     "id": "6015",
-    "title": "Ramayan EP 15 - श्रीराम-कौशल्या संवाद ",
+    "title": "Ramayan EP 15 - श्रीराम-कौशल्या संवाद | HQ Widescreen | English Subtitles",
     "slug": generateSlug("Ramayan EP 15 - श्रीराम-कौशल्या संवाद"),
     "videoUrl": "https://youtu.be/TRqsWkdDgT8?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/TRqsWkdDgT8?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
@@ -277,7 +276,7 @@ export const ramayanVideos: Video[] = [
   },
   {
     "id": "6016",
-    "title": "Ramayan EP 16 - श्रीराम-सीता-लक्ष्मण का वन गमन ",
+    "title": "Ramayan EP 16 - श्रीराम-सीता-लक्ष्मण का वन गमन | HQ Widescreen | English Subtitles",
     "slug": generateSlug("Ramayan EP 16 - श्रीराम-सीता-लक्ष्मण का वन गमन"),
     "videoUrl": "https://youtu.be/ocZozmGgy94?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/ocZozmGgy94?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
@@ -293,7 +292,7 @@ export const ramayanVideos: Video[] = [
   },
   {
     "id": "6017",
-    "title": "Ramayan EP 17 - राम का श्रृंगवेरपुर पहुँचना ",
+    "title": "Ramayan EP 17 - राम का श्रृंगवेरपुर पहुँचना | HQ Widescreen | English Subtitles",
     "slug": generateSlug("Ramayan EP 17 - राम का श्रृंगवेरपुर पहुँचना"),
     "videoUrl": "https://youtu.be/3nYKp-qLxPE?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/3nYKp-qLxPE?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
@@ -309,7 +308,7 @@ export const ramayanVideos: Video[] = [
   },
   {
     "id": "6018",
-    "title": "Ramayan EP 18 - केवट का प्रेम और श्री राम का गंगा पार जाना ",
+    "title": "Ramayan EP 18 - केवट का प्रेम और श्री राम का गंगा पार जाना | HQ Widescreen | English Subtitles",
     "slug": generateSlug("Ramayan EP 18 - केवट का प्रेम और श्री राम का गंगा पार जाना"),
     "videoUrl": "https://youtu.be/fOSwvgpPYK0?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/fOSwvgpPYK0?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
@@ -325,7 +324,7 @@ export const ramayanVideos: Video[] = [
   },
   {
     "id": "6019",
-    "title": "Ramayan EP 19 - श्रीराम-वाल्मीकि संवाद ",
+    "title": "Ramayan EP 19 - श्रीराम-वाल्मीकि संवाद | HQ Widescreen | English Subtitles",
     "slug": generateSlug("Ramayan EP 19 - श्रीराम-वाल्मीकि संवाद"),
     "videoUrl": "https://youtu.be/LnKofsPV7Oc?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/LnKofsPV7Oc?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
@@ -340,8 +339,6 @@ export const ramayanVideos: Video[] = [
     "quality": "HD"
   }
 ];
-
-
 
 /* ---------------- HELPERS ---------------- */
 
@@ -378,3 +375,4 @@ export const getVideoBySlug = (slug: string): Video | undefined => {
 export const getAllVideoSlugs = (): string[] => {
   return ramayanVideos.map((v) => v.slug);
 };
+
