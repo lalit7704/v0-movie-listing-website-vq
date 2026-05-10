@@ -34,7 +34,7 @@ function generateSlug(title: string): string {
 
 /* ---------------- WEB SERIES DATA ---------------- */
 
-export const webseriesVideos: Video[] = [
+export const webSeriesVideos: Video[] = [
   {
     "id": "78",
     "title": "Game of Thrones Season 1 - Fantasy Drama Series | Full Episodes HD",
@@ -136,7 +136,7 @@ export const webseriesVideos: Video[] = [
 /* ---------------- HELPERS ---------------- */
 
 export const getVideosByCategory = (category: string): Video[] => {
-  return webseriesVideos.filter(
+  return webSeriesVideos.filter(
     (v) =>
       v.category.toLowerCase().replace(/\s+/g, "") ===
       category.toLowerCase().replace(/\s+/g, "")
@@ -144,29 +144,29 @@ export const getVideosByCategory = (category: string): Video[] => {
 };
 
 export const getFeaturedVideos = (): Video[] => {
-  return webseriesVideos.filter((v) => v.featured);
+  return webSeriesVideos.filter((v) => v.featured);
 };
 
 export const getLatestVideos = (): Video[] => {
-  return [...webseriesVideos].sort((a, b) => b.year - a.year);
+  return [...webSeriesVideos].sort((a, b) => b.year - a.year);
 };
 
 export const getTrendingVideos = (): Video[] => {
-  return [...webseriesVideos].sort((a, b) => b.rating - a.rating);
+  return [...webSeriesVideos].sort((a, b) => b.rating - a.rating);
 };
 
 export const getTopRatedVideos = (): Video[] => {
-  return [...webseriesVideos].sort((a, b) => b.rating - a.rating);
+  return [...webSeriesVideos].sort((a, b) => b.rating - a.rating);
 };
 
 export const getVideoById = (id: string): Video | undefined => {
-  return webseriesVideos.find((v) => v.id === id);
+  return webSeriesVideos.find((v) => v.id === id);
 };
 
 export const getVideoBySlug = (slug: string): Video | undefined => {
-  return webseriesVideos.find((v) => v.slug === slug);
+  return webSeriesVideos.find((v) => v.slug === slug);
 };
 
 export const getAllVideoSlugs = (): string[] => {
-  return webseriesVideos.map((v) => v.slug);
+  return webSeriesVideos.map((v) => v.slug);
 };
