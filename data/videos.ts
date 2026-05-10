@@ -1,7 +1,7 @@
 import { bollywoodVideos } from "./bollywood";
 import { hollywoodVideos } from "./hollywood";
 import { webSeriesVideos } from "./web-series";
-import { ramayanaVideos } from "./Ramayana";
+import { ramayanaVideos } from "./ramayana";
 import { southindianVideos } from "./south-indian";
 
 /* ---------------- INTERFACE ---------------- */
