@@ -20,8 +20,8 @@ export interface Video {
   keywords?: string[];
 }
 
-/* ---------------- SLUG HELPER ---------------- */
 
+/* ---------------- SLUG HELPER ---------------- */
 function generateSlug(title: string): string {
   return title
     .toLowerCase()
@@ -31,7 +31,6 @@ function generateSlug(title: string): string {
     .replace(/-+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
-
 /* ---------------- HOLLYWOOD DATA ---------------- */
 
 export const webSeriesVideos: Video[] = [
