@@ -389,7 +389,8 @@ export const bollywoodVideos: Video[] = [
   "rating": 0,
   "genre": ["Action", "Drama", "History"],
   "language": "Hindi",
-  "quality": "HD"
+  "quality": "HD",
+  "featured": true
 },
 {
   "id": "2004",
@@ -462,13 +463,29 @@ export const bollywoodVideos: Video[] = [
   "videoUrl": "https://youtu.be/YH6k5weqwy8",
   "downloadUrl": "https://t.me/onemoviedownloa/70",
   "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Sitaare_Zameen_Par.png?v=1778394002",
-  "description": "Sitaare Zameen Par एक emotional Bollywood drama फिल्म है, जिसमें इंसानी भावनाओं, सपनों और रिश्तों की गहराई को खूबसूरती से प्रस्तुत किया गया है। फिल्म की कहानी उन लोगों के संघर्ष और आत्मविश्वास पर आधारित है, जो जीवन की कठिन परिस्थितियों के बावजूद अपने सपनों को पूरा करने की कोशिश करते हैं। इसमें परिवार, दोस्ती, प्रेरणा और आत्मविश्वास जैसे विषयों को भावनात्मक अंदाज में दिखाया गया है। Aamir Khan की दमदार मौजूदगी और फिल्म की संवेदनशील कहानी इसे दर्शकों के लिए খास বনাতی है। যহ ফিল্ম মনোরঞ্জন কে সাথে-সাথে সমাজ কে সকারাত্মক সংদেশ দেনের প্রয়াস করতি এবং দর্শকদের ভাবুক এবং প্রেরিত দুইটি করতি।",
+  "description": "Sitaare Zameen Par एक emotional Bollywood drama फिल्म है, जिसमें इंसानी भावनाओं, सपनों और रिश्तों की गहराई को खूबसूरती से प्रस्तुत किया गया है। फिल्म की कहानी उन लोगों के संघर्ष और आत्मविश्वास पर आधारित है, जो जीवन की कठिन परिस्थितियों के बावजूद अपने सपनों को पूरा करने की कोशिश करते हैं। इसमें परिवार, दोस्ती, प्रेरणा और आत्मविश्वास जैसे विषयों को भावनात्मक अंदाज में दिखाया गया है। Aamir Khan की दमदार मौजूदगी और फिल्म की संवेदनशील कहानी इसे दर्शकों के लिए খাস বনাতی है। যহ ফিল্ম মনোরঞ্জন কে সাথে-সাথে সমাজ কে সকারাত্মক সংদেশ দেনের প্রয়াস করতি एবং दर्शकদের भावुक एবং प্রেরিত दুইটি করতি।",
   "category": "bollywood",
   "year": 2025,
   "duration": "TBA",
   "rating": 0,
   "genre": ["Drama", "Family"],
   "language": "Hindi",
+  "quality": "HD"
+},
+{
+  "id": "147",
+  "title": "Nee Forever - Romantic Drama Movie | Full Movie HD",
+  "slug": "nee-forever-romantic-drama-movie-full-movie-hd",
+  "videoUrl": "https://youtu.be/S3PAyk2mAE4",
+  "downloadUrl": "https://t.me/onemoviedownloa/71",
+  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/download_3_39cb1d9e-5247-41a9-93b1-bbaeef58573a.png?v=1778393814",
+  "description": "Nee Forever एक emotional romantic drama फिल्म है, जो सच्चे प्यार, रिश्तों और जीवन की भावनात्मक यात्रा को दर्शाती है। कहानी दो लोगों के इर्द-गिर्द घूमती है, जो अलग-अलग परिस्थितियों में मिलने के बाद एक-दूसरे के जीवन का महत्वपूर्ण हिस्सा बन जाते हैं। लेकिन समय, गलतफहमियाँ और परिस्थितियाँ उनके रिश्ते की परीक्षा लेती हैं। फिल्म में प्रेम, त्याग, विश्वास और रिश्तों की अहमियत को खूबसूरती से प्रस्तुत किया गया है। শানদার संगीत, ভাবনাত্মক দৃশ্য এবং দিল ছু লেনে বালি কহানি ইসে romantic drama পসন্দ করনে বালি দর্শকদের লিএ খাস বনাতী.h",
+  "category": "south",
+  "year": 2025,
+  "duration": "TBA",
+  "rating": 0,
+  "genre": ["Romance", "Drama"],
+  "language": "Telugu",
   "quality": "HD"
 }
 ];
