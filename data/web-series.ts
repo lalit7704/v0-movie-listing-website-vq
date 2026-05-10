@@ -123,7 +123,7 @@ export const webSeriesVideos: Video[] = [
   "downloadUrl": "https://t.me/onemoviedownloa/61",
   "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Sapne_Vs_Everyone_s1.png?v=1778141459",
   "description": "Sapne Vs Everyone Season 1 एक emotional drama web series है, जो सपनों, संघर्ष और जीवन की कठोर सच्चाइयों को दर्शाती है। कहानी उन लोगों के इर्द-गिर्द घूमती है जो अपने सपनों को पूरा करने के लिए समाज, परिस्थितियों और असफलताओं से लड़ते हैं। इस सीरीज में ambition, emotions और real-life challenges को गहराई से दिखाया गया है, जो दर्शकों को प्रेरित और भावुक दोनों बनाता है।",
-  "category": "webseries",
+  "category": "Web Series",
   "year": 2023,
   "duration": "1 Season (5 Episodes)",
   "rating": 8,

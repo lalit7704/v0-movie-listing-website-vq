@@ -27,7 +27,11 @@ export interface Video {
 
 /* ---------------- NORMALIZE ---------------- */
 
-const normalize = (str: string) => str.toLowerCase().trim();
+const normalize = (str: string) =>
+  str
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, "");
 
 /* ---------------- SLUG HELPER ---------------- */
 
