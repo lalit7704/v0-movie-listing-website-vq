@@ -377,7 +377,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2003",
-  "title": "Raja Shivaji - Historical Action Drama Movie | Full Movie HD",
+  "title": "Raja Shivaji - Historical Action Drama Movie",
   "slug": "raja-shivaji-historical-action-drama-movie-full-movie-hd",
   "videoUrl": "https://youtu.be/Bgy00eaFyhE",
   "downloadUrl": "https://t.me/onemoviedownloa/62",
