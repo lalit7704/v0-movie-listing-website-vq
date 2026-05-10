@@ -53,7 +53,7 @@ export const southindianVideos: Video[] = [
 },
 {
   "id": "5002",
-  "title": "Jana Nayagan - South Indian Action Drama Movie | Full Movie HD",
+  "title": "Jana Nayagan - South Indian Action Drama Movie",
   "slug": "jana-nayagan-south-indian-action-drama-movie-full-movie-hd",
   "videoUrl": "https://youtu.be/isbjM9kXd70",
   "downloadUrl": "https://t.me/onemoviedownloa/68",
