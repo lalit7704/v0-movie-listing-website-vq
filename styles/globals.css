@@ -123,3 +123,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media (min-width: 64rem) {
+    .lg\:text-6xl {
+        font-size: 2.75rem;
+    }
+}
