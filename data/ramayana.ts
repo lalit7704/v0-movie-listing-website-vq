@@ -33,7 +33,7 @@ function generateSlug(title: string): string {
     .replace(/^-+|-+$/g, '');
 }
 
-export const ramayanVideos: Video[] = [
+export const ramayanaVideos: Video[] = [
   {
     "id": "6001",
     "title": "Ramayan EP 1 - श्री राम भगवान्‌ का जन्म और बाललीला | Ram Janam Special Episode",
@@ -343,36 +343,36 @@ export const ramayanVideos: Video[] = [
 /* ---------------- HELPERS ---------------- */
 
 export const getVideosByCategory = (category: string): Video[] => {
-  return ramayanVideos.filter(
+  return ramayanaVideos.filter(
     (v) => v.category.toLowerCase().trim() === category.toLowerCase().trim()
   );
 };
 
 export const getFeaturedVideos = (): Video[] => {
-  return ramayanVideos.filter((v) => v.featured);
+  return ramayanaVideos.filter((v) => v.featured);
 };
 
 export const getLatestVideos = (): Video[] => {
-  return [...ramayanVideos].sort((a, b) => b.year - a.year);
+  return [...ramayanaVideos].sort((a, b) => b.year - a.year);
 };
 
 export const getTrendingVideos = (): Video[] => {
-  return [...ramayanVideos].sort((a, b) => b.rating - a.rating);
+  return [...ramayanaVideos].sort((a, b) => b.rating - a.rating);
 };
 
 export const getTopRatedVideos = (): Video[] => {
-  return [...ramayanVideos].sort((a, b) => b.rating - a.rating);
+  return [...ramayanaVideos].sort((a, b) => b.rating - a.rating);
 };
 
 export const getVideoById = (id: string): Video | undefined => {
-  return ramayanVideos.find((v) => v.id === id);
+  return ramayanaVideos.find((v) => v.id === id);
 };
 
 export const getVideoBySlug = (slug: string): Video | undefined => {
-  return ramayanVideos.find((v) => v.slug === slug);
+  return ramayanaVideos.find((v) => v.slug === slug);
 };
 
 export const getAllVideoSlugs = (): string[] => {
-  return ramayanVideos.map((v) => v.slug);
+  return ramayanaVideos.map((v) => v.slug);
 };
 

@@ -1,7 +1,7 @@
 import { bollywoodVideos } from "./bollywood";
 import { hollywoodVideos } from "./hollywood";
 import { webSeriesVideos } from "./web-series";
-import { ramayanVideos } from "./Ramayana";
+import { ramayanaVideos } from "./Ramayana";
 import { southindianVideos } from "./south-indian";
 
 /* ---------------- INTERFACE ---------------- */
@@ -54,7 +54,7 @@ export const videos: Video[] = [
   ...bollywoodVideos,
   ...hollywoodVideos,
   ...webSeriesVideos,
-  ...ramayanVideos,
+  ...ramayanaVideos,
   ...southindianVideos,
   
 ];
