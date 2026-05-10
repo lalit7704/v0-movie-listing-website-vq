@@ -33,10 +33,11 @@ function generateSlug(title: string): string {
     .replace(/^-+|-+$/g, '');
 }
 
-export const ramayanVideos = [
-{
+export const ramayanVideos: Video[] = [
+  {
     "id": "6001",
     "title": "Ramayan EP 1 - श्री राम भगवान्‌ का जन्म और बाललीला | Ram Janam Special Episode",
+    "slug": generateSlug("Ramayan EP 1 - श्री राम भगवान्‌ का जन्म और बाललीला Ram Janam Special Episode"),
     "videoUrl": "https://youtu.be/RG3Hqth0Eus",
     "downloadUrl": "https://youtu.be/RG3Hqth0Eus",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -51,7 +52,8 @@ export const ramayanVideos = [
   },
   {
     "id": "6002",
-    "title": "Ramayan EP 2 - दशरथ अ��ने चारों पुत्रों को आश्रम भेजा | Ram Lakshman Bharat Shatrughna Gurukul Yatra",
+    "title": "Ramayan EP 2 - दशरथ अपने चारों पुत्रों को आश्रम भेजा | Ram Lakshman Bharat Shatrughna Gurukul Yatra",
+    "slug": generateSlug("Ramayan EP 2 - दशरथ अपने चारों पुत्रों को आश्रम भेजा Ram Lakshman Bharat Shatrughna Gurukul Yatra"),
     "videoUrl": "https://youtu.be/UdLXlTC-bFY",
     "downloadUrl": "https://youtu.be/UdLXlTC-bFY",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -67,10 +69,11 @@ export const ramayanVideos = [
   {
     "id": "6003",
     "title": "Ramayan EP 3 - अनुशासन में रहकर शिक्षा ग्रहण की | Gurukul Life & Values of Shri Ram",
+    "slug": generateSlug("Ramayan EP 3 - अनुशासन में रहकर शिक्षा ग्रहण की Gurukul Life Values of Shri Ram"),
     "videoUrl": "https://youtu.be/kHi1S_W4RQw",
     "downloadUrl": "https://youtu.be/kHi1S_W4RQw",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
-    "description": "Ramayan Episode 3 में श्री राम, लक्ष्मण, भरत और शत्रुघ्न गुरुकुल में रहकर अनुशासन, ज्ञान और जीवन के महत्वपूर्ण मूल्यों की शिक्षा ग्रहण करते हैं। गुरु वशिष्ठ के मार्गदर्शन में वे धर्म, कर्तव्य और आदर्श जीवन जीने के सिद्धांत सीखते हैं। इस एपिसोड में गुरुकुल जीवन की सादगी, নিয়ম ঔর সংস্কারের সুন্দর চিত্রণ করা হয়েছে, যা জীবনকে সঠিক দিকে নিয়ে যাওয়ার প্রেরণা দেয়।",
+    "description": "Ramayan Episode 3 में श्री राम, लक्ष्मण, भरत और शत्रुघ्न गुरुकुल में रहकर अनुशासन, ज्ञान और जीवन के महत्वपूर्ण मूल्यों की शिक्षा ग्रहण करते हैं। गुरु वशिष्ठ के मार्गदर्शन में वे धर्म, कर्तव्य और आदर्श जीवन जीने के सिद्धांत सीखते हैं। इस एपिसोड में गुरुकुल जीवन की सादगी, नियम और संस्कारों का सुंदर चित्रण किया गया है",
     "category": "ramayan",
     "year": 1987,
     "duration": "Episode 3 (Full Episode)",
@@ -82,10 +85,11 @@ export const ramayanVideos = [
   {
     "id": "6004",
     "title": "Ramayan EP 4 - शिक्षा पूर्ण कर अयोध्या लौटे | Shri Ram Returns to Ayodhya After Gurukul",
+    "slug": generateSlug("Ramayan EP 4 - शिक्षा पूर्ण कर अयोध्या लौटे Shri Ram Returns to Ayodhya After Gurukul"),
     "videoUrl": "https://youtu.be/sXgjMisiaiQ",
     "downloadUrl": "https://youtu.be/sXgjMisiaiQ",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
-    "description": "Ramayan Episode 4 में श्री राम, लक्ष्मण, भरत और शत्रुघ्न गुरुकुल में अपनी शिक्षा पूर्ण करने के बाद अयोध्या लौटते हैं। राजा दशरथ और अयोध्यावासी उनके स्वागत में आनंद और उत्साह से भर उठते हैं। इस एपिसोड में शिक्षा के बाद जीवन में कर्तव्य निभाने की शुरुआत, परिवार के प्रति प्रेम और আদর্শ রাজকুমার কে রূপে শ্রী রাম কে গুণগুলি দেখায়া গিয়াছে। এইটি খুশি, সংস্কার এবং নতুন দায়িত্বের সুন্দর ঝলক প্রস্তুত করে।",
+    "description": "Ramayan Episode 4 में श्री राम, लक्ष्मण, भरत और शत्रुघ्न गुरुकुल में अपनी शिक्षा पूर्ण करने के बाद अयोध्या लौटते हैं। राजा दशरथ और अयोध्यावासी उनके स्वागत में आनंद और उत्साह से भर उठते हैं। इस एपिसोड में शिक्षा के बाद जीवन में कर्तव्य निभाने की शुरुआत, परिवार के प्रति प्रेम और आदर्श राजकुमार के रूप में श्री राम के गुणों को दर्शाया गया है।",
     "category": "ramayan",
     "year": 1987,
     "duration": "Episode 4 (Full Episode)",
@@ -97,10 +101,11 @@ export const ramayanVideos = [
   {
     "id": "6005",
     "title": "Ramayan EP 5 - ताड़का वध | विश्वामित्र-यज्ञ की रक्षा | Shri Ram Kills Tadaka",
+    "slug": generateSlug("Ramayan EP 5 - ताड़का वध विश्वामित्र-यज्ञ की रक्षा Shri Ram Kills Tadaka"),
     "videoUrl": "https://youtu.be/oMA6zgnk13c",
     "downloadUrl": "https://youtu.be/oMA6zgnk13c",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
-    "description": "Ramayan Episode 5 में महर्षि विश्वामित्र, श्री राम और लक्ष्मण को अपने यज्ञ की रक्षा के लिए वन में ले जाते हैं। इस दौरान श्री राम राक्षसी ताड़का का वध करते हैं और धर्म की रक्षा करते हैं। যহ এপিসোড শ্রী রাম কে সাহস, বীরতা এবং ধর্মের প্রতি উনাকে নিষ্ঠা দেখায়া গিয়াছে। साथ ही இஸ் எபிசோட் மீது ஗ுரு கார்யம் மற்றும் அதர்மத்தில் ஧ர்மத்தின் விஜயம் என்ற பெரிய சந்தேகம் கொண்டுள்ளது。",
+    "description": "Ramayan Episode 5 में महर्षि विश्वामित्र, श्री राम और लक्ष्मण को अपने यज्ञ की रक्षा के लिए वन में ले जाते हैं। इस दौरान श्री राम राक्षसी ताड़का का वध करते हैं और धर्म की रक्षा करते हैं। यह एपिसोड श्री राम के साहस, वीरता और धर्म के प्रति उनकी निष्ठा को दर्शाता है। साथ ही इसमें गुरु के आदेश का पालन और अधर्म पर धर्म की विजय का महत्वपूर्ण संदेश दिया गया है।",
     "category": "ramayan",
     "year": 1987,
     "duration": "Episode 5 (Full Episode)",
@@ -111,7 +116,8 @@ export const ramayanVideos = [
   },
   {
     "id": "6006",
-    "title": "Ramayan EP 6 - राम-लक्ष्मण सहित विश्वामित्र जनकपुर प्रवेश | HQ Widescreen | English Subtitles",
+    "title": "Ramayan EP 6 - राम-लक्ष्मण सहित विश्वामित्र जनकपुर प्रवेश ",
+    "slug": generateSlug("Ramayan EP 6 - राम-लक्ष्मण सहित विश्वामित्र जनकपुर प्रवेश"),
     "videoUrl": "https://youtu.be/8YXPOOMccD4?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/8YXPOOMccD4?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -126,7 +132,8 @@ export const ramayanVideos = [
   },
   {
     "id": "6007",
-    "title": "Ramayan EP 7 - सीता स्वयंवर | राजाओं से धनुष न उठना | HQ Widescreen | English Subtitles",
+    "title": "Ramayan EP 7 - सीता स्वयंवर | राजाओं से धनुष न उठना ",
+    "slug": generateSlug("Ramayan EP 7 - सीता स्वयंवर राजाओं से धनुष न उठना"),
     "videoUrl": "https://youtu.be/bqRGuT8kxs0?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/bqRGuT8kxs0?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -141,7 +148,8 @@ export const ramayanVideos = [
   },
   {
     "id": "6008",
-    "title": "Ramayan EP 8 - श्री राम द्वारा धनुषभंग | जयमाला पहनाना | HQ Widescreen | English Subtitles",
+    "title": "Ramayan EP 8 - श्री राम द्वारा धनुषभंग | जयमाला पहनाना",
+    "slug": generateSlug("Ramayan EP 8 - श्री राम द्वारा धनुषभंग | जयमाला पहनाना  "),
     "videoUrl": "https://youtu.be/1Szvvq4H-uI?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/1Szvvq4H-uI?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -156,7 +164,8 @@ export const ramayanVideos = [
   },
   {
     "id": "6009",
-    "title": "Ramayan EP 9 - दशरथजी के पास जनकजी का दूत भेजना | HQ Widescreen | English Subtitles",
+    "title": "Ramayan EP 9 - दशरथजी के पास जनकजी का दूत भेजना ",
+    "slug": generateSlug("Ramayan EP 9 - दशरथजी के पास जनकजी का दूत भेजना "),
     "videoUrl": "https://youtu.be/g9Gg1mT6FLA?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/g9Gg1mT6FLA?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -171,7 +180,8 @@ export const ramayanVideos = [
   },
   {
     "id": "6010",
-    "title": "Ramayan EP 10 - श्री सीता-राम विवाह | HQ Widescreen | English Subtitles",
+    "title": "Ramayan EP 10 - श्री सीता-राम विवाह ",
+    "slug": generateSlug("Ramayan EP 10 - श्री सीता-राम विवाह"),
     "videoUrl": "https://youtu.be/_TChAsBRmlA?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/_TChAsBRmlA?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -185,8 +195,9 @@ export const ramayanVideos = [
     "quality": "HD"
   },
   {
-    "id": "6012",
-    "title": "Ramayan EP 11 - बारात का अयोध्या लौटना और अयोध्या में आनंद | HQ Widescreen | English Subtitles",
+    "id": "6011",
+    "title": "Ramayan EP 11 - बारात का अयोध्या लौटना और अयोध्या में आनंद ",
+    "slug": generateSlug("Ramayan EP 11 - बारात का अयोध्या लौटना और अयोध्या में आनंद "),
     "videoUrl": "https://youtu.be/wrB8x8vRZfY?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/wrB8x8vRZfY?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -200,8 +211,9 @@ export const ramayanVideos = [
     "quality": "HD"
   },
   {
-    "id": "6013",
-    "title": "Ramayan EP 12 - भरत-शत्रुघ्न कैकेयी प्रदेश जाते हैं | HQ Widescreen | English Subtitles",
+    "id": "6012",
+    "title": "Ramayan EP 12 - भरत-शत्रुघ्न कैकेयी प्रदेश जाते हैं ",
+    "slug": generateSlug("Ramayan EP 12 - भरत-शत्रुघ्न कैकेयी प्रदेश जाते हैं "),
     "videoUrl": "https://youtu.be/g9fiHHF0m3s?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/g9fiHHF0m3s?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -215,8 +227,9 @@ export const ramayanVideos = [
     "quality": "HD"
   },
   {
-    "id": "6014",
-    "title": "Ramayan EP 13 - श्री राम के राज्याभिषेक की तैयारी | HQ Widescreen | English Subtitles",
+    "id": "6013",
+    "title": "Ramayan EP 13 - श्री राम के राज्याभिषेक की तैयारी s",
+    "slug": generateSlug("Ramayan EP 13 - श्री राम के राज्याभिषेक की तैयारी "),
     "videoUrl": "https://youtu.be/0Pbd4hrqjq8?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/0Pbd4hrqjq8?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -230,8 +243,10 @@ export const ramayanVideos = [
     "quality": "HD"
   }
   , {
-    "id": "6015",
+    "id": "6014",
     "title": "Ramayan EP 14 - कैकेयी का कोप भवन में जाना | HQ Widescreen | English Subtitles",
+    "slug": generateSlug("Ramayan EP 14 - कैकेयी का कोप भवन में जाना"),
+
     "videoUrl": "https://youtu.be/SM6IFkuLpl4?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/SM6IFkuLpl4?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -245,8 +260,9 @@ export const ramayanVideos = [
     "quality": "HD"
   },
   {
-    "id": "6016",
-    "title": "Ramayan EP 15 - श्रीराम-कौशल्या संवाद | HQ Widescreen | English Subtitles",
+    "id": "6015",
+    "title": "Ramayan EP 15 - श्रीराम-कौशल्या संवाद ",
+    "slug": generateSlug("Ramayan EP 15 - श्रीराम-कौशल्या संवाद"),
     "videoUrl": "https://youtu.be/TRqsWkdDgT8?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/TRqsWkdDgT8?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -260,8 +276,9 @@ export const ramayanVideos = [
     "quality": "HD"
   },
   {
-    "id": "6017",
-    "title": "Ramayan EP 16 - श्रीराम-सीता-लक्ष्मण का वन गमन | HQ Widescreen | English Subtitles",
+    "id": "6016",
+    "title": "Ramayan EP 16 - श्रीराम-सीता-लक्ष्मण का वन गमन ",
+    "slug": generateSlug("Ramayan EP 16 - श्रीराम-सीता-लक्ष्मण का वन गमन"),
     "videoUrl": "https://youtu.be/ocZozmGgy94?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/ocZozmGgy94?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -275,8 +292,9 @@ export const ramayanVideos = [
     "quality": "HD"
   },
   {
-    "id": "6018",
-    "title": "Ramayan EP 17 - राम का श्रृंगवेरपुर पहुँचना | HQ Widescreen | English Subtitles",
+    "id": "6017",
+    "title": "Ramayan EP 17 - राम का श्रृंगवेरपुर पहुँचना ",
+    "slug": generateSlug("Ramayan EP 17 - राम का श्रृंगवेरपुर पहुँचना"),
     "videoUrl": "https://youtu.be/3nYKp-qLxPE?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/3nYKp-qLxPE?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -290,8 +308,9 @@ export const ramayanVideos = [
     "quality": "HD"
   },
   {
-    "id": "6019",
-    "title": "Ramayan EP 18 - केवट का प्रेम और श्री राम का गंगा पार जाना | HQ Widescreen | English Subtitles",
+    "id": "6018",
+    "title": "Ramayan EP 18 - केवट का प्रेम और श्री राम का गंगा पार जाना ",
+    "slug": generateSlug("Ramayan EP 18 - केवट का प्रेम और श्री राम का गंगा पार जाना"),
     "videoUrl": "https://youtu.be/fOSwvgpPYK0?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/fOSwvgpPYK0?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -305,8 +324,9 @@ export const ramayanVideos = [
     "quality": "HD"
   },
   {
-    "id": "6020",
-    "title": "Ramayan EP 19 - श्रीराम-वाल्मीकि संवाद | HQ Widescreen | English Subtitles",
+    "id": "6019",
+    "title": "Ramayan EP 19 - श्रीराम-वाल्मीकि संवाद ",
+    "slug": generateSlug("Ramayan EP 19 - श्रीराम-वाल्मीकि संवाद"),
     "videoUrl": "https://youtu.be/LnKofsPV7Oc?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "downloadUrl": "https://youtu.be/LnKofsPV7Oc?list=PLFr_jkwUp0hj606Y_dGpOuPF9WJ2CRe_t",
     "poster": "https://m.media-amazon.com/images/I/815A4kgFnJL._UF1000,1000_QL80_.jpg",
@@ -323,3 +343,38 @@ export const ramayanVideos = [
 
 
 
+/* ---------------- HELPERS ---------------- */
+
+export const getVideosByCategory = (category: string): Video[] => {
+  return ramayanVideos.filter(
+    (v) => v.category.toLowerCase().trim() === category.toLowerCase().trim()
+  );
+};
+
+export const getFeaturedVideos = (): Video[] => {
+  return ramayanVideos.filter((v) => v.featured);
+};
+
+export const getLatestVideos = (): Video[] => {
+  return [...ramayanVideos].sort((a, b) => b.year - a.year);
+};
+
+export const getTrendingVideos = (): Video[] => {
+  return [...ramayanVideos].sort((a, b) => b.rating - a.rating);
+};
+
+export const getTopRatedVideos = (): Video[] => {
+  return [...ramayanVideos].sort((a, b) => b.rating - a.rating);
+};
+
+export const getVideoById = (id: string): Video | undefined => {
+  return ramayanVideos.find((v) => v.id === id);
+};
+
+export const getVideoBySlug = (slug: string): Video | undefined => {
+  return ramayanVideos.find((v) => v.slug === slug);
+};
+
+export const getAllVideoSlugs = (): string[] => {
+  return ramayanVideos.map((v) => v.slug);
+};
