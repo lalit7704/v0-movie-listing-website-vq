@@ -165,7 +165,7 @@ export const hollywoodVideos: Video[] = [
     "genre": ["Action", "Adventure", "Sci-Fi"],
     "language": "English",
     "quality": "HD",
-    featured: true
+    "featured": true
   },
   {
   "id": "143",
