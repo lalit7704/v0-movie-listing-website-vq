@@ -24,6 +24,7 @@ const moreLinks = [
   { href: "/sci-fi", label: "Sci-Fi" },
   { href: "/ramayan", label: "Ramayan" },
   { href: "/mahabharat", label: "Mahabharat" },
+  { href: "/shree-krishna", label: "Shree Krishna" },
 
 ];
 
