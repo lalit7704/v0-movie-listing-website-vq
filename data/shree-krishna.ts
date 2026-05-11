@@ -129,7 +129,7 @@ export const shreekrishnaVideos: Video[] = rawEpisodes.map((item, index) => {
     year: 1993,
     duration: `Episode ${index + 1}`,
     rating: 9.6,
-    genre: ["Mythology", "Drama", "History"],
+    genre: ["Mythology", "Drama", "History", "Shree Krishna"],
     language: "Hindi",
     quality: "HD"
   };

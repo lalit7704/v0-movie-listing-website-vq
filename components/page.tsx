@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "A mythological series based on Shree Krishna, showing the epic life and teachings of Lord Krishna.",
 };
 
-export default function shreeKrishnaPage() {
+export default function ShreeKrishnaPage() {
   const videos = getVideosByCategory("shree krishna");
 
   return (
