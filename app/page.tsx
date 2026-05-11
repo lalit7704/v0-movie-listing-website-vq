@@ -54,10 +54,10 @@ export default function HomePage() {
       {/* Hero Slider */}
       <HeroSlider videos={featuredVideos} />
 
-      {/* Top Ad */}
+      {/* Top Ad
       <div className="px-4 py-4">
         <Adsense />
-      </div>
+      </div> */}
 
       {/* Content Sections */}
       <div className="space-y-2">
@@ -69,9 +69,9 @@ export default function HomePage() {
         <SectionSlider title="Trending Now" videos={trendingVideos} />
 
         {/* Middle Ad */}
-        <div className="px-4 py-4">
+        {/* <div className="px-4 py-4">
           <Adsense />
-        </div>
+        </div> */}
 
         {/* 3. Popular Movies */}
         <SectionSlider title="Popular Movies" videos={popularVideos} />
@@ -111,9 +111,9 @@ export default function HomePage() {
         />
 
         {/* Ad */}
-        <div className="px-4 py-4">
+        {/* <div className="px-4 py-4">
           <Adsense />
-        </div>
+        </div> */}
 
         {/* South Indian Movies */}
         <SectionSlider
@@ -198,9 +198,9 @@ export default function HomePage() {
         />
 
         {/* Bottom Ad */}
-        <div className="px-4 py-4">
+        {/* <div className="px-4 py-4">
           <Adsense />
-        </div>
+        </div> */}
 
         {/* Upcoming Movies */}
         <SectionSlider
