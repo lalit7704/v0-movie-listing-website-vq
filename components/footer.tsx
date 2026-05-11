@@ -22,9 +22,9 @@ const footerLinks = {
     { href: "#", label: "Help Center" },
     { href: "#", label: "Contact Us" },
     { href: "#", label: "FAQ" },
-    { href: "#", label: "Terms of Service" },
-    { href: "#", label: "Privacy Policy" },
-    { href: "#", label: "DMCA" },
+    { href: "/terms-of-service", label: "Terms of Service" },
+    { href: "/privacy-policy", label: "Privacy Policy" },
+    { href: "/dmca", label: "DMCA" },
   ],
 };
 
