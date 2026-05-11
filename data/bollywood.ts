@@ -51,7 +51,7 @@ export const bollywoodVideos: Video[] = [
   "language": "Hindi",
   "quality": "HD",
   "featured": true
-}
+},
 {
     id: "2002",
     title: "Dhurandhar: The Revenge",
