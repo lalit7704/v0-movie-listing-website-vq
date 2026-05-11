@@ -4,6 +4,7 @@ import { webSeriesVideos } from "./web-series";
 import { ramayanaVideos } from "./ramayana";
 import { southindianVideos } from "./south-indian";
 import { mahabharatVideos } from "./mahabharat";
+import { shreekrishnaVideos } from "./shree-krishna";
 
 /* ---------------- INTERFACE ---------------- */
 
@@ -58,6 +59,7 @@ export const videos: Video[] = [
   ...ramayanaVideos,
   ...southindianVideos,
   ...mahabharatVideos,
+  ...shreekrishnaVideos,
 ];
 
 /* ---------------- HELPERS ---------------- */

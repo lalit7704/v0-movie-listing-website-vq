@@ -45,6 +45,7 @@ const defaultGenres = [
   "Thriller",
   "Ramayan",
   "Mahabharat",
+  "Shree Krishna",
   "Mythology",
 ];
 
