@@ -424,7 +424,22 @@ export const bollywoodVideos: Video[] = [
   "language": "Hindi",
   "quality": "HD"
 },
-
+{
+  "id": "2026",
+  "title": "Sitaare Zameen Par - Bollywood Drama Movie | Aamir Khan | Full Movie HD",
+  "slug": "sitaare-zameen-par-bollywood-drama-movie-aamir-khan-full-movie-hd",
+  "videoUrl": "https://youtu.be/YH6k5weqwy8",
+  "downloadUrl": "https://t.me/onemoviedownloa/70",
+  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Sitaare_Zameen_Par.png?v=1778394002",
+  "description": "Sitaare Zameen Par एक emotional Bollywood drama फिल्म है, जिसमें इंसानी भावनाओं, सपनों और रिश्तों की गहराई को खूबसूरती से प्रस्तुत किया गया है। फिल्म की कहानी उन लोगों के संघर्ष और आत्मविश्वास पर आधारित है, जो जीवन की कठिन परिस्थितियों के बावजूद अपने सपनों को पूरा करने की कोशिश करते हैं। इसमें परिवार, दोस्ती, प्रेरणा और आत्मविश्वास जैसे विषयों को भावनात्मक अंदाज में दिखाया गया है। Aamir Khan की दमदार मौजूदगी और ফিল্ম কি সংবেদনশীল কহানী এইটি দর্শকদের জন্য খাস বানাতি হয়। যেহ ফিল্ম মনোরঞ্জন করে সাথে-সাথে সমাজকে সকারাত্মক সংদেশ দেওয়ার প্রয়াস করে এবং দর্শকদের ভাবুক এবং प्रेरিত ദുഇടി കരുതുന്നു।",
+  "category": "bollywood",
+  "year": 2025,
+  "duration": "TBA",
+  "rating": 0,
+  "genre": ["Drama", "Family"],
+  "language": "Hindi",
+  "quality": "HD"
+}
 ];
 
 /* ---------------- HELPERS ---------------- */
