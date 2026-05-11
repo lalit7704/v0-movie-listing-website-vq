@@ -44,6 +44,8 @@ const defaultGenres = [
   "Sci-Fi",
   "Thriller",
   "Ramayan",
+  "Mahabharat",
+  "Mythology",
 ];
 
 const defaultLanguages = [

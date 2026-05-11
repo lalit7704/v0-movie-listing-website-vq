@@ -35,8 +35,7 @@ function generateSlug(title: string): string {
 /* ---------------- WEB SERIES DATA ---------------- */
 
 export const webSeriesVideos: Video[] = [
-  {
-    "id": "6001",
+  {    "id": "8001",
     "title": "Game of Thrones Season 1 - Fantasy Drama Series | Full Episodes HD",
     "slug": generateSlug(
       "Game of Thrones Season 1 - Fantasy Drama Series | Full Episodes HD"
@@ -57,7 +56,7 @@ export const webSeriesVideos: Video[] = [
   },
 
   {
-    "id": "6002",
+    "id": "8002",
     "title": "Game of Thrones Season 2 - War of the Five Kings | Full Episodes HD",
     "slug": generateSlug(
       "Game of Thrones Season 2 - War of the Five Kings | Full Episodes HD"
@@ -78,7 +77,7 @@ export const webSeriesVideos: Video[] = [
   },
 
   {
-    "id": "6003",
+    "id": "8003",
     "title": "Game of Thrones Season 3 - Rise of Power & Betrayal | Full Episodes HD",
     "slug": generateSlug(
       "Game of Thrones Season 3 - Rise of Power & Betrayal | Full Episodes HD"
@@ -99,7 +98,7 @@ export const webSeriesVideos: Video[] = [
   },
 
   {
-    "id": "6004",
+    "id": "8004",
     "title": "Game of Thrones Season 4 - Power, Revenge & War | Full Episodes HD",
     "slug": generateSlug(
       "Game of Thrones Season 4 - Power, Revenge & War | Full Episodes HD"
@@ -120,7 +119,7 @@ export const webSeriesVideos: Video[] = [
   },
 
   {
-    "id": "6005",
+    "id": "8005",
     "title": "Paatal Lok Season 1 - Crime Thriller Web Series | Full Episodes HD",
     "slug": generateSlug(
       "Paatal Lok Season 1 - Crime Thriller Web Series | Full Episodes HD"
@@ -141,7 +140,7 @@ export const webSeriesVideos: Video[] = [
   },
 
   {
-    "id": "6006",
+    "id": "8006",
     "title": "Sapne Vs Everyone Season 1 - Drama Web Series | Full Episodes HD",
     "slug": generateSlug(
       "Sapne Vs Everyone Season 1 - Drama Web Series | Full Episodes HD"

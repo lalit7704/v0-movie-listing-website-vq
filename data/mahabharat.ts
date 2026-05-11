@@ -136,7 +136,7 @@ const rawEpisodes = [
 ];
 
 export const mahabharatVideos: Video[] = rawEpisodes.map((item, index) => ({
-  id: `700${index + 1}`,
+  id: String(7001 + index),
   title: `Mahabharat EP ${index + 1} - ${item.title} | महाभारत एक धर्म युद्ध`,
   slug: generateSlug(`Mahabharat EP ${index + 1} - ${item.title} महाभारत एक धर्म युद्ध`),
   videoUrl: `https://youtu.be/${item.id}`,
