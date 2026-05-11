@@ -57,7 +57,7 @@ export const videos: Video[] = [
   ...webSeriesVideos,
   ...ramayanaVideos,
   ...southindianVideos,
-  
+   ...mahabharatVideos,
 ];
 
 /* ---------------- HELPERS ---------------- */
