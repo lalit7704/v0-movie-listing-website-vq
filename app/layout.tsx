@@ -5,6 +5,7 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { generateOrganizationSchema, generateWebsiteSchema } from '@/lib/structured-data'
 
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter"

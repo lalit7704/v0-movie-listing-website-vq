@@ -1,7 +1,9 @@
 import { Navbar } from "@/components/navbar";
 import { HeroSlider } from "@/components/hero-slider";
+import Adsense from "@/components/Adsense";
 import { SectionSlider } from "@/components/section-slider";
 import { Footer } from "@/components/footer";
+
 import {
   videos,
   getFeaturedVideos,
@@ -41,7 +43,9 @@ export default function HomePage() {
   const animeVideos = getAnimeVideos();
   const kidsCartoons = getKidsCartoons();
   const recentlyAdded = [...videos].slice(0, 10);
-  const editorsPicks = [...videos].sort(() => Math.random() - 0.5).slice(0, 10);
+  const editorsPicks = [...videos]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 10);
 
   return (
     <main className="min-h-screen bg-background">
@@ -50,13 +54,24 @@ export default function HomePage() {
       {/* Hero Slider */}
       <HeroSlider videos={featuredVideos} />
 
-      {/* Content Sections - 18 Sections */}
+      {/* Top Ad */}
+      <div className="px-4 py-4">
+        <Adsense />
+      </div>
+
+      {/* Content Sections */}
       <div className="space-y-2">
+
         {/* 1. Latest Movies */}
         <SectionSlider title="Latest Movies" videos={latestVideos} />
 
         {/* 2. Trending Now */}
         <SectionSlider title="Trending Now" videos={trendingVideos} />
+
+        {/* Middle Ad */}
+        <div className="px-4 py-4">
+          <Adsense />
+        </div>
 
         {/* 3. Popular Movies */}
         <SectionSlider title="Popular Movies" videos={popularVideos} />
@@ -81,32 +96,39 @@ export default function HomePage() {
           id="hollywood"
         />
 
-        {/* 7. Ramayan */}
+        {/* Ramayan */}
         <SectionSlider
-          title="Ramayan "
+          title="Ramayan"
           videos={ramayanVideos}
           id="ramayan"
         />
-        {/* 7. Mahabharat */}
+
+        {/* Mahabharat */}
         <SectionSlider
-          title="Mahabharat "
+          title="Mahabharat"
           videos={mahabharatVideos}
           id="mahabharat"
         />
-        {/* 8. South Indian Movies */}
+
+        {/* Ad */}
+        <div className="px-4 py-4">
+          <Adsense />
+        </div>
+
+        {/* South Indian Movies */}
         <SectionSlider
           title="South Indian Movies"
           videos={southIndianVideos}
           id="south-indian"
         />
 
-        {/* 9. Hindi Dubbed Movies */}
+        {/* Hindi Dubbed Movies */}
         <SectionSlider
           title="Hindi Dubbed Movies"
           videos={hindiDubbedVideos}
         />
 
-        {/* 10. Web Series */}
+        {/* Web Series */}
         <SectionSlider
           title="Web Series"
           videos={webSeriesVideos}
@@ -134,63 +156,68 @@ export default function HomePage() {
           id="kids"
         />
 
-        {/* 11. Action Movies */}
+        {/* Action Movies */}
         <SectionSlider
           title="Action Movies"
           videos={actionVideos}
           id="action"
         />
 
-        {/* 12. Comedy Movies */}
+        {/* Comedy Movies */}
         <SectionSlider
           title="Comedy Movies"
           videos={comedyVideos}
           id="comedy"
         />
 
-        {/* 13. Drama Movies */}
+        {/* Drama Movies */}
         <SectionSlider
           title="Drama Movies"
           videos={dramaVideos}
           id="drama"
         />
 
-        {/* 14. Thriller Movies */}
+        {/* Thriller Movies */}
         <SectionSlider
           title="Thriller Movies"
           videos={thrillerVideos}
           id="thriller"
         />
 
-        {/* 15. Sci-Fi Movies */}
+        {/* Sci-Fi Movies */}
         <SectionSlider
           title="Sci-Fi Movies"
           videos={sciFiVideos}
           id="sci-fi"
         />
 
-        {/* 14. Thriller Movies */}
+        {/* Editor's Picks */}
         <SectionSlider
-          title="Thriller Movies"
-          videos={thrillerVideos}
-          id="thriller"
+          title="Editor's Picks"
+          videos={editorsPicks}
         />
 
-        {/* 16. Editor's Picks */}
-        <SectionSlider title="Editor's Picks" videos={editorsPicks} />
+        {/* Bottom Ad */}
+        <div className="px-4 py-4">
+          <Adsense />
+        </div>
 
-        {/* 17. Upcoming Movies */}
-        <SectionSlider title="Upcoming Movies" videos={upcomingVideos} />
+        {/* Upcoming Movies */}
+        <SectionSlider
+          title="Upcoming Movies"
+          videos={upcomingVideos}
+        />
 
-        {/* 18. Recommended For You */}
+        {/* Recommended */}
         <SectionSlider
           title="Recommended For You"
-          videos={[...videos].sort(() => Math.random() - 0.5).slice(0, 10)}
+          videos={[...videos]
+            .sort(() => Math.random() - 0.5)
+            .slice(0, 10)}
         />
       </div>
 
       <Footer />
     </main>
-
   );
 }
