@@ -95,7 +95,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
                 </div>
 
                 <a
-                  href={`https://t.me/onemoviebylalit_bot?start=${video.slug}`}
+                  href={`https://t.me/onemoviebylalit_bot?start=${video.id}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -201,7 +201,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
                 <h3 className="text-lg font-semibold text-foreground mb-4">Quick Download</h3>
                 <div className="space-y-3">
                  <a
-                    href={`https://t.me/onemoviebylalit_bot?start=${video.slug}`}
+                    href={`https://t.me/onemoviebylalit_bot?start=${video.id}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -211,7 +211,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
                     </Button>
                   </a>
                   <a
-                    href={`https://t.me/onemoviebylalit_bot?start=${video.slug}`}
+                    href={`https://t.me/onemoviebylalit_bot?start=${video.id}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -221,7 +221,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
                     </Button>
                   </a>  
                   <a
-                    href={`https://t.me/onemoviebylalit_bot?start=${video.slug}`}
+                    href={`https://t.me/onemoviebylalit_bot?start=${video.id}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

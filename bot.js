@@ -6,18 +6,9 @@ const bot = new TelegramBot(token, {
   polling: true,
 });
 
-const movies = [
-  {
-    id: "5008",
-    title: "Vaazha Movie",
-    slug: "vaazha-biopic-of-a-billion-boys-2025-youth-comedy-drama-full-movie-hd",
-    downloadUrl: "https://t.me/onemoviedownloa/75",
-    poster:
-      "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Vaazha_-_Biopic_of_a_Billion_Boys.png?v=1778779915",
-    rating: 8,
-    duration: "2h 22m",
-  },
-];
+// Aapki website ka base URL. (Local pe testing ke liye localhost rakhein)
+// Jab website live deploy ho jaye, toh isko "https://onemovie.in" se replace kar dein.
+const WEBSITE_URL = "http://localhost:3000";
 
 // Normal /start
 bot.onText(/\/start$/, (msg) => {
@@ -36,44 +27,50 @@ bot.onText(/\/start (.+)/, async (msg, match) => {
 
   console.log("Received slug:", slug);
 
-  const movie = movies.find(
-    (m) => m.slug === slug
-  );
+  try {
+    // API ko call karke current slug ke basis pe live data nikalna
+    const response = await fetch(`${WEBSITE_URL}/api/movie/${slug}`);
+    const data = await response.json();
 
-  if (!movie) {
-    return bot.sendMessage(chatId, "Movie not found");
-  }
+    if (!data.success || !data.movie) {
+      return bot.sendMessage(chatId, "Movie not found");
+    }
 
-  await bot.sendPhoto(
-    chatId,
-    movie.poster,
-    {
-      caption: `
+    const movie = data.movie;
+
+    await bot.sendPhoto(
+      chatId,
+      movie.poster,
+      {
+        caption: `
 🎬 ${movie.title}
 
 ⭐ Rating: ${movie.rating}
 🕒 Duration: ${movie.duration}
-      `,
-    }
-  );
+        `,
+      }
+    );
 
-  await bot.sendMessage(
-    chatId,
-    "👇 Download Movie",
-    {
-      reply_markup: {
-        inline_keyboard: [
-          [
-            {
-              text: "📥 Download Now",
-              url: movie.downloadUrl,
-            },
+    await bot.sendMessage(
+      chatId,
+      "👇 Download Movie",
+      {
+        reply_markup: {
+          inline_keyboard: [
+            [
+              {
+                text: "📥 Download Now",
+                url: movie.downloadUrl,
+              },
+            ],
           ],
-        ],
-      },
-    }
-  );
-
+        },
+      }
+    );
+  } catch (error) {
+    console.error("Error fetching movie:", error);
+    bot.sendMessage(chatId, "An error occurred while fetching the movie. Please try again.");
+  }
 });
 
 console.log("Bot Running...");
