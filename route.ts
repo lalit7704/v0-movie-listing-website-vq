@@ -4,22 +4,24 @@ import { generateSlug } from "@/lib/seo-utils";
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: Promise<{ slug: string }> }
+  { params }: any // 'any' rakha hai taaki [slug] ya [id] dono folder names pe kaam kare
 ) {
   try {
-    const { slug } = await params;
+    const resolvedParams = await params;
+    const queryParam = resolvedParams.slug || resolvedParams.id;
 
-    // 1. Ab telegram se ID (jaise 2001) aayegi, toh pehle ID se check karein
-    let movie = getVideoById(slug);
-
-    // 2. Agar ID se nahi milti toh slug se try karein
-    if (!movie) {
-      movie = getVideoBySlug(slug);
+    if (!queryParam) {
+      return NextResponse.json({ success: false, error: "Missing parameter" }, { status: 400 });
     }
 
-    // 3. Fallback: search by generated slug from title
-    if (!movie && videos) {
-      movie = videos.find((v) => generateSlug(v.title) === slug);
+    const cleanParam = queryParam.trim();
+
+    // 1. Try finding by ID first
+    let movie = getVideoById(cleanParam);
+
+    // 2. Fallback to search by Slug
+    if (!movie) {
+      movie = getVideoBySlug(cleanParam);
     }
 
     if (!movie) {

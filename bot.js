@@ -23,7 +23,7 @@ bot.onText(/\/start (.+)/, async (msg, match) => {
 
   const chatId = msg.chat.id;
 
-  const slug = match[1];
+  const slug = match[1].trim(); // Extra space hata dega
 
   console.log("Received slug:", slug);
 
@@ -31,6 +31,8 @@ bot.onText(/\/start (.+)/, async (msg, match) => {
     // API ko call karke current slug ke basis pe live data nikalna
     const response = await fetch(`${WEBSITE_URL}/api/movie/${slug}`);
     const data = await response.json();
+
+    console.log("API Response:", data); // Check karne ke liye ki API kya bhej rahi hai
 
     if (!data.success || !data.movie) {
       return bot.sendMessage(chatId, "Movie not found");
