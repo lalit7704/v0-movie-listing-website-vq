@@ -30,6 +30,13 @@ bot.onText(/\/start (.+)/, async (msg, match) => {
   try {
     // API ko call karke current slug ke basis pe live data nikalna
     const response = await fetch(`${WEBSITE_URL}/api/movie/${slug}`);
+
+    // Agar response HTML (error page) aaye, toh usko handle karna
+    const contentType = response.headers.get("content-type");
+    if (!contentType || !contentType.includes("application/json")) {
+      throw new Error(`API Error: Received status ${response.status} from website.`);
+    }
+
     const data = await response.json();
 
     console.log("API Response:", data); // Check karne ke liye ki API kya bhej rahi hai
