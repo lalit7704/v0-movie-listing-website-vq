@@ -98,7 +98,8 @@ export const southindianVideos: Video[] = [
   "rating": 0,
   "genre": ["Drama", "Family"],
   "language": "Telugu",
-  "quality": "HD"
+  "quality": "HD",
+  "featured": true
 },
 {
     "id": "5005",
@@ -148,6 +149,55 @@ export const southindianVideos: Video[] = [
     "language": "Hindi",
     "quality": "HD"
   },
+  {
+  "id": "5008",
+  "title": "Vaazha - Biopic of a Billion Boys (2025) - Youth Comedy Drama | Full Movie HD",
+  "slug": "vaazha-biopic-of-a-billion-boys-2025-youth-comedy-drama-full-movie-hd",
+  "videoUrl": "https://youtu.be/EdsxhVLDLb4",
+  "downloadUrl": "https://t.me/onemoviedownloa/74",
+  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Vaazha_-_Biopic_of_a_Billion_Boys.png?v=1778779915",
+  "description": "Vaazha - Biopic of a Billion Boys (2025) एक entertaining youth comedy drama फिल्म है जो आज की युवा पीढ़ी के सपनों, संघर्षों और जिंदगी के मजेदार पलों को शानदार तरीके से प्रस्तुत करती है। फिल्म की कहानी कुछ ऐसे दोस्तों के इर्द-गिर्द घूमती है जो अपनी जिंदगी को लेकर बड़े सपने देखते हैं, लेकिन पढ़ाई, परिवार और समाज के दबाव के बीच खुद को खोया हुआ महसूस करते हैं। हर दोस्त की अपनी अलग personality, struggle और ambition होती है, लेकिन सभी की जिंदगी में confusion, failure और friendship एक common हिस्सा बन जाते हैं। फिल्म में कॉलेज लाइफ, बेरोजगारी, रिश्तों और middle-class परिवारों की expectations को realistic और humorous अंदाज में दिखाया गया है। कहानी का मुख्य किरदार अपनी जिंदगी में कुछ बड़ा करना चाहता है, लेकिन लगातार असफलताओं और गलत फैसलों की वजह से मुश्किलों में फंसता चला जाता है। इसके बावजूद वह और उसके दोस्त जिंदगी को मजेदार तरीके से जीने की कोशिश करते रहते हैं। फिल्म में कई hilarious moments, emotional scenes और relatable situations देखने को मिलती हैं जो युवाओं को खुद से जुड़ी हुई महसूस होती हैं। Vaazha सिर्फ comedy फिल्म नहीं बल्कि friendship, dreams और self-discovery की कहानी है। जैसे-जैसे कहानी आगे बढ़ती है, दोस्ती की असली अहमियत, परिवार का प्यार और जिंदगी की सच्चाइयाँ सामने आने लगती हैं। फिल्म यह संदेश देती है कि असफलता अंत नहीं होती और हर इंसान अपनी जिंदगी में एक नई शुरुआत कर सकता है। शानदार dialogues, natural performances और realistic storytelling फिल्म को बेहद engaging बनाते हैं। emotional moments और comedy का balance दर्शकों को हंसाने के साथ-साथ सोचने पर भी मजबूर करता है। फिल्म का climax दिल को छू लेने वाला है, जहां सभी किरदार अपनी जिंदगी के महत्वपूर्ण फैसले लेते हैं और अपने सपनों की ओर नया कदम बढ़ाते हैं। अगर आपको youth-based comedy drama, friendship stories और relatable life struggles वाली फिल्में पसंद हैं, तो Vaazha - Biopic of a Billion Boys आपके लिए एक शानदार और heart-touching entertainer साबित होगी।",
+  "category": "South Indian",
+  "year": 2024,
+  "duration": "2h 22m",
+  "rating": 8,
+  "genre": ["Comedy", "Drama", "Youth"],
+  "language": "Hindi",
+  "quality": "HD"
+},
+{
+  "id": "5009",
+  "title": "Mark (2025) - Action Thriller Movie | Full Movie HD",
+  "slug": "mark-2025-action-thriller-movie-full-movie-hd",
+  "videoUrl": "https://youtu.be/ZEiFcHGJYzA",
+  "downloadUrl": "https://t.me/onemoviedownloa/77",
+  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Mark_2025_film.png?v=1778780311",
+  "description": "Mark (2025) एक intense action thriller फिल्म है जो एक ऐसे व्यक्ति की कहानी दिखाती है जिसकी जिंदगी एक खतरनाक साजिश के कारण पूरी तरह बदल जाती है। फिल्म का मुख्य किरदार Mark एक शांत और साधारण इंसान होता है, लेकिन उसके अतीत में छिपे कुछ रहस्य उसे अपराध, हिंसा और बदले की दुनिया में वापस खींच लाते हैं। कहानी की शुरुआत एक mysterious घटना से होती है, जिसके बाद Mark खुद को कई दुश्मनों के निशाने पर पाता है। हर कोई उसे खत्म करना चाहता है, लेकिन कोई नहीं जानता कि उसके अंदर कितना खतरनाक और powerful इंसान छिपा हुआ है। जैसे-जैसे कहानी आगे बढ़ती है, Mark अपने अतीत की सच्चाई और उन लोगों का सामना करता है जिन्होंने उसकी जिंदगी बर्बाद की थी। फिल्म में high-voltage action scenes, thrilling chase sequences और suspense से भरे moments देखने को मिलते हैं जो दर्शकों को अंत तक बांधे रखते हैं। Mark सिर्फ action फिल्म नहीं बल्कि betrayal, survival और redemption की कहानी भी है। मुख्य किरदार अपने परिवार, अपने सम्मान और अपने अस्तित्व को बचाने के लिए हर खतरे का सामना करता है। फिल्म में emotional moments और intense drama भी देखने को मिलता है, जो कहानी को और गहरई देता है। कई shocking twists और dark secrets फिल्म को और ज्यादा gripping बनाते हैं। जैसे-जैसे Mark अपने दुश्मनों के करीब पहुंचता है, उसे पता चलता है कि असली खतरा उसके सबसे करीब मौजूद है। फिल्म का background score, cinematography और powerful dialogues पूरी कहानी को cinematic और engaging बनाते हैं। Mark (2025) एक ऐसी thriller फिल्म है जिसमें action, emotions और mystery का शानदार मिश्रण देखने को मिलता है। फिल्म का climax बेहद explosive और emotional है, जहां अच्छई, बदला और सच्चई की अंतिम लड़ाई দिखाई জाती है। অগর আপকো action thrillers, revenge stories এবং suspense সে ভরা ফিল্মে পছন্দ হয়, তো Mark আপনার জন্য একটি শানদার এবং পুরোপুরি entertaining cinematic experience হিসেবে কাজ করবে।",
+  "category": "South Indian",
+  "year": 2025,
+  "duration": "2h 14m",
+  "rating": 7,
+  "genre": ["Action", "Thriller"],
+  "language": "Hindi",
+  "quality": "HD"
+  
+},
+{
+  "id": "5010",
+  "title": "Leo (2023) - Action Thriller Movie | Full Movie HD",
+  "slug": "leo-2023-action-thriller-movie-full-movie-hd",
+  "videoUrl": "https://youtu.be/Po3jStA673E",
+  "downloadUrl": "https://t.me/onemoviedownloa/78",
+  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Leo.png?v=1778780431",
+  "description": "Leo (2023) एक high-octane action thriller फिल्म है जो रहस्य, हिंसा और अतीत के खतरनाक राज़ों से भरी कहानी को प्रस्तुत करती है। फिल्म की कहानी Parthiban नाम के एक साधारण कैफे मालिक के इर्द-गिर्द घूमती है, जो अपने परिवार के साथ शांत जिंदगी जी रहा होता है। वह अपने छोटे से शहर में एक ईमानदार और मददगार इंसान के रूप में जाना जाता है। लेकिन उसकी जिंदगी अचानक तब बदल जाती है जब कुछ खतरनाक अपराधी उसके पीछे पड़ जाते हैं और दावा करते हैं कि वह असल में “Leo” नाम का एक खूंखार व्यक्ति है। शुरुआत में Parthiban इन आरोपों को गलत साबित करने की कोशिश करता है, लेकिन धीरे-धीरे उसके अतीत से जुड़े रहस्य सामने आने लगते हैं। फिल्म में intense action sequences, brutal fight scenes और suspense से भरपूर moments देखने को मिलते हैं जो दर्शकों को अंत तक बांधे रखते हैं। जैसे-जैसे कहानी आगे बढ़ती है, Parthiban को अपने परिवार की रक्षा करने और अपने अतीत का सामना करने के लिए मजबूर होना पड़ता है। कहानी में crime syndicate, betrayal और revenge को दमदार तरीके से दिखाया गया है। फिल्म में emotional family moments और powerful dialogues भी देखने को मिलते हैं, जो कहानी को और गहराई देते हैं। Leo सिर्फ action फिल्म नहीं बल्कि identity, survival और redemption की कहानी भी है। मुख्य किरदार अपने अतीत से भागने की कोशिश करता है, लेकिन किस्मत उसे बार-बार उसी अंधेरी दुनिया में वापस खींच लाती है। फिल्म की cinematography, background music और stylish presentation इसे visually शानदार बनाते हैं। कई shocking twists और unexpected reveals कहानी को और ज्यादा gripping बना देते हैं। climax में जब Leo का असली रूप सामने आता है, तब फिल्म पूरी तरह intense और explosive बन जाती है। अगर आपको stylish action thrillers, suspense और powerful performances वाली फिल्में पसंद हैं, तो Leo आपके लिए एक शानदार cinematic experience साबित होगी।",
+  "category": "South Indian",
+  "year": 2023,
+  "duration": "2h 44m",
+  "rating": 8,
+  "genre": ["Action", "Thriller"],
+  "language": "Hindi",
+  "quality": "HD",
+}
 ];
 
 /* ---------------- HELPERS ---------------- */
