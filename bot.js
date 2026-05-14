@@ -30,6 +30,24 @@ bot.onText(/\/start$/, (msg) => {
 });
 
 
+bot.onText(/\/start (.+)/, async (msg, match) => {
+
+  console.log(match[1]); // ADD THIS
+
+  const chatId = msg.chat.id;
+
+  const slug = match[1];
+
+  const movie = movies.find(
+    (m) => m.slug === slug
+  );
+
+  if (!movie) {
+    return bot.sendMessage(chatId, "Movie not found");
+  }
+
+});
+
 // 👇 Iske neeche already wala code rahega
 bot.onText(/\/start (.+)/, async (msg, match) => {
 
