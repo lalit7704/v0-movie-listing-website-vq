@@ -25,6 +25,12 @@ bot.onText(/\/start (.+)/, async (msg, match) => {
 
   const slug = match[1].trim(); // Extra space hata dega
 
+  // slug hota hai video.id (website se)
+  // website pe yahi data static arrays se serve hota hai, /api/movie wala endpoint is repo me nahi hai.
+  // isliye Telegram bot ko fallback karna hoga: direct movie page ka url /movie/<slug> dena.
+  // (DownloadUrl ke bajay Telegram inline button movie page open karwaega)
+  const moviePageUrl = `${WEBSITE_URL}/movie/${slug}`;
+
   console.log("Received slug:", slug);
 
   try {
@@ -33,11 +39,30 @@ bot.onText(/\/start (.+)/, async (msg, match) => {
 
     // Agar response HTML (error page) aaye, toh usko handle karna
     const contentType = response.headers.get("content-type");
+
+    // API available na ho (HTML / 404 / non-json) => fallback
     if (!contentType || !contentType.includes("application/json")) {
-      throw new Error(`API Error: Received status ${response.status} from website.`);
+      // fallback: movie page link
+      return bot.sendMessage(
+        chatId,
+        `Movie page: ${moviePageUrl}`,
+        {
+          reply_markup: {
+            inline_keyboard: [
+              [
+                {
+                  text: "📥 Open Download",
+                  url: moviePageUrl,
+                },
+              ],
+            ],
+          },
+        }
+      );
     }
 
     const data = await response.json();
+
 
     console.log("API Response:", data); // Check karne ke liye ki API kya bhej rahi hai
 
