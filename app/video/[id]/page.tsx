@@ -94,7 +94,11 @@ export default async function VideoPage({ params }: VideoPageProps) {
                   </div>
                 </div>
 
-                <a href={video.downloadUrl} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={`https://t.me/onemoviebylalit_bot?start=${video.slug}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button className="gap-2">
                     <Download className="w-4 h-4" />
                     Download
@@ -196,37 +200,34 @@ export default async function VideoPage({ params }: VideoPageProps) {
               <div className="bg-card rounded-xl p-6 border border-border">
                 <h3 className="text-lg font-semibold text-foreground mb-4">Quick Download</h3>
                 <div className="space-y-3">
-                  <a
-                    href={video.downloadUrl}
+                 <a
+                    href={`https://t.me/onemoviebylalit_bot?start=${video.slug}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block"
                   >
-                    <Button variant="outline" className="w-full justify-between">
-                      <span>480p - SD</span>
+                    <Button className="gap-2">
                       <Download className="w-4 h-4" />
+                      Download
                     </Button>
                   </a>
                   <a
-                    href={video.downloadUrl}
+                    href={`https://t.me/onemoviebylalit_bot?start=${video.slug}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block"
                   >
-                    <Button variant="outline" className="w-full justify-between">
-                      <span>720p - HD</span>
+                    <Button className="gap-2">
                       <Download className="w-4 h-4" />
+                      Download
                     </Button>
-                  </a>
+                  </a>  
                   <a
-                    href={video.downloadUrl}
+                    href={`https://t.me/onemoviebylalit_bot?start=${video.slug}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block"
                   >
-                    <Button className="w-full justify-between">
-                      <span>1080p - Full HD</span>
+                    <Button className="gap-2">
                       <Download className="w-4 h-4" />
+                      Download
                     </Button>
                   </a>
                 </div>
