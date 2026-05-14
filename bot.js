@@ -8,7 +8,7 @@ const bot = new TelegramBot(token, {
 
 // Aapki website ka base URL. (Local pe testing ke liye localhost rakhein)
 // Jab website live deploy ho jaye, toh isko "https://onemovie.in" se replace kar dein.
-const WEBSITE_URL = "http://localhost:3000";
+const WEBSITE_URL = "https://onemovie.in";
 
 // Normal /start
 bot.onText(/\/start$/, (msg) => {
