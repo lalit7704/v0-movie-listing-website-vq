@@ -121,7 +121,7 @@ function CollectionContent({
   );
 }
 
-export function CollectionPage(props: CollectionPageProps) {
+export function CollectionPage({ children, ...props }: CollectionPageProps) {
   return (
     <Suspense
       fallback={
@@ -130,7 +130,7 @@ export function CollectionPage(props: CollectionPageProps) {
         </div>
       }
     >
-      <CollectionContent {...props} />
+      <CollectionContent {...props}>{children}</CollectionContent>
     </Suspense>
   );
 }

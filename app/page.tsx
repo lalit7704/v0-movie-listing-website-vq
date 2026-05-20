@@ -3,6 +3,7 @@ import { HeroSlider } from "@/components/hero-slider";
 import Adsense from "@/components/Adsense";
 import { SectionSlider } from "@/components/section-slider";
 import { Footer } from "@/components/footer";
+import { AmazonAd } from "@/components/amazon-ad";
 
 import {
   videos,
@@ -53,6 +54,17 @@ export default function HomePage() {
 
       {/* Hero Slider */}
       <HeroSlider videos={featuredVideos} />
+
+      {/* Amazon Product Ad */}
+      <div className="px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto">
+        <AmazonAd 
+          title="insta360 X3 Action Camera, 1/2 Sensor, 5.7K 360 Capture, Optical Zoom 3X, 72 MP 360 Photo, 4K Single Lens Mode, Black"
+          description="अपनी खुद की एक्शन और सिनेमैटिक वीडियो शूट करें! Insta360 X3 एक्शन कैमरा के साथ 5.7K 360 वीडियो कैप्चर करें और हर पल को एक ब्लॉकबस्टर मूवी जैसा बनाएं।"
+          imageUrl="https://m.media-amazon.com/images/I/610NQUzk2xL._SL1500_.jpg"
+          productUrl="https://amzn.to/4dF3J0U"
+          buttonText="Check Price on Amazon"
+        />
+      </div>
 
       {/* Top Ad
       <div className="px-4 py-4">
