@@ -15,7 +15,7 @@ const footerLinks = {
     { href: "/drama", label: "Drama" },
     { href: "/thriller", label: "Thriller" },
     { href: "/sci-fi", label: "Sci-Fi" },
-    { href: "/police", label: "Police" },
+
   ],
 
   support: [
