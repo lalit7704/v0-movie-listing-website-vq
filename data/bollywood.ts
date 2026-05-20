@@ -500,7 +500,7 @@ export const bollywoodVideos: Video[] = [
   "downloadUrl": "https://t.me/onemoviedownloa/83",
   "poster": "https://m.media-amazon.com/images/M/MV5BMjA1ZGFlNmItZTBhMy00NTEwLTg4NWMtOWZhMDBmOWMzYTA0XkEyXkFqcGc@._V1_FMjpg_UY720_.jpg",
   "description": "Aakhri Sawal is an inspiring spiritual drama that unveils the extraordinary life of a yogi dedicated to truth, inner peace, and self-discovery. The film is a mythological action film set in the spiritual heartlands of South India. It traces the birth of a guardian, the rise of sacred land, and the unseen forces that bind humans to the divine.",
-  "category": "South Indian",
+  "category": "bollywood",
   "year": 2026,
   "duration": "2h 15m",
   "rating": 8.2,
