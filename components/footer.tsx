@@ -19,9 +19,8 @@ const footerLinks = {
   ],
 
   support: [
-    { href: "#", label: "Help Center" },
-    { href: "#", label: "Contact Us" },
-    { href: "#", label: "FAQ" },
+    
+    { href: "/faqs", label: "FAQ" },
     { href: "/terms-of-service", label: "Terms of Service" },
     { href: "/privacy-policy", label: "Privacy Policy" },
     { href: "/dmca", label: "DMCA" },
