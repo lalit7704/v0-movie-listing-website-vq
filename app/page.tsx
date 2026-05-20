@@ -4,6 +4,7 @@ import Adsense from "@/components/Adsense";
 import { SectionSlider } from "@/components/section-slider";
 import { Footer } from "@/components/footer";
 import { AmazonAd } from "@/components/amazon-ad";
+import { AmazonProductGrid } from "@/components/amazon-product-grid";
 
 import {
   videos,
@@ -48,6 +49,37 @@ export default function HomePage() {
     .sort(() => Math.random() - 0.5)
     .slice(0, 10);
 
+  const topGadgets = [
+    {
+      id: "t1",
+      title: "insta360 X3 Action Camera",
+      imageUrl: "https://m.media-amazon.com/images/I/610NQUzk2xL._SL1500_.jpg",
+      productUrl: "https://amzn.to/4dF3J0U",
+      price: "₹34,990"
+    },
+    {
+      id: "t2",
+      title: "REDMI Note 15 Pro 5G",
+      imageUrl: "https://m.media-amazon.com/images/I/81UgjzCNSrL._SL1500_.jpg",
+      productUrl: "https://amzn.in/d/04mtImI5",
+      price: "₹25,999"
+    },
+    {
+      id: "t3",
+      title: "Samsung Galaxy S26 Ultra 5G",
+      imageUrl: "https://m.media-amazon.com/images/I/71VnqxM-+AL._SL1500_.jpg",
+      productUrl: "https://amzn.in/d/0975SFmX",
+      price: "₹1,29,999"
+    },
+    {
+      id: "t4",
+      title: "WZATCO Yuva Horizon Smart Projector",
+      imageUrl: "https://m.media-amazon.com/images/I/71tRj0lYPJL._SL1500_.jpg",
+      productUrl: "https://amzn.in/d/08NHCEfL",
+      price: "₹14,990"
+    }
+  ];
+
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
@@ -55,15 +87,9 @@ export default function HomePage() {
       {/* Hero Slider */}
       <HeroSlider videos={featuredVideos} />
 
-      {/* Amazon Product Ad */}
-      <div className="px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto">
-        <AmazonAd 
-          title="insta360 X3 Action Camera, 1/2 Sensor, 5.7K 360 Capture, Optical Zoom 3X, 72 MP 360 Photo, 4K Single Lens Mode, Black"
-          description="अपनी खुद की एक्शन और सिनेमैटिक वीडियो शूट करें! Insta360 X3 एक्शन कैमरा के साथ 5.7K 360 वीडियो कैप्चर करें और हर पल को एक ब्लॉकबस्टर मूवी जैसा बनाएं।"
-          imageUrl="https://m.media-amazon.com/images/I/610NQUzk2xL._SL1500_.jpg"
-          productUrl="https://amzn.to/4dF3J0U"
-          buttonText="Check Price on Amazon"
-        />
+      {/* Amazon Product Grid */}
+      <div className="px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto mt-8">
+        <AmazonProductGrid title="🔥 Trending Gadgets & Electronics" products={topGadgets} />
       </div>
 
       {/* Top Ad
