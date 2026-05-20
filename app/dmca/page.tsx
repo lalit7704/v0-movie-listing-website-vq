@@ -1,16 +1,22 @@
 import { Metadata } from "next";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "DMCA | Onemovie",
   description:
-    "DMCA policy for Onemovie. Report copyright infringement and takedown requests.",
+    "DMCA Policy for Onemovie. Learn how to report copyright infringement.",
 };
 
-export default function DmcaPage() {
+export default function DMCAPage() {
   return (
-    <div className="min-h-screen bg-background">
-      <main className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-[1100px] mx-auto">
-        <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">DMCA</h1>
+    <div className="min-h-screen bg-background flex flex-col">
+      <Navbar />
+      
+      <main className="flex-1 pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-[1100px] mx-auto w-full">
+        <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          DMCA Policy
+        </h1>
 
         <p className="text-muted-foreground mb-8">
           Last updated: {new Date().toLocaleDateString()}
@@ -18,30 +24,29 @@ export default function DmcaPage() {
 
         <div className="space-y-6 text-foreground/90">
           <section>
-            <h2 className="text-xl font-semibold mb-2">Copyright Claims</h2>
+            <h2 className="text-xl font-semibold mb-2">Copyright Infringement</h2>
             <p className="text-muted-foreground">
-              If you believe that copyrighted material has been posted or
-              linked without authorization, please contact us with the
-              following information:
+              Onemovie respects the intellectual property rights of others. We do not host any media files on our servers. All content is provided by non-affiliated third parties.
             </p>
-            <ul className="list-disc pl-6 mt-2 text-muted-foreground">
-              <li>Your contact information</li>
-              <li>A description of the copyrighted work</li>
-              <li>The URL of the allegedly infringing content</li>
-              <li>A statement of good faith belief</li>
-            </ul>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-2">Takedown Requests</h2>
+            <h2 className="text-xl font-semibold mb-2">Takedown Request</h2>
             <p className="text-muted-foreground">
-              We will review notices and respond in accordance with applicable
-              law.
+              If you believe your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible on this site, please notify us. Provide the URL of the content in question so we can investigate and remove the links.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
+            <p className="text-muted-foreground">
+              Please use our contact form or support email to submit your DMCA takedown notice. We aim to process all valid requests within 48 hours.
             </p>
           </section>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
-
