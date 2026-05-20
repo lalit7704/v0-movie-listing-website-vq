@@ -221,7 +221,7 @@ export const southindianVideos: Video[] = [
   "slug": "karuppu-karuppa-2026-tamil-action-drama",
   "videoUrl": "https://youtu.be/placeholder1",
   "downloadUrl": "https://t.me/onemoviedownloa/80",
-  "poster": "https://m.media-amazon.com/images/M/MV5BN2E1ZWIxYmYtMGZjZC00MzhlLWI3NzgtOTZiMjBiOWIzMGZhXkEyXkFqcGc@._V1_FMjpg_UY720_.jpg",
+  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Karuppu.png?v=1779296222",
   "description": "Karuppu (transl. Black) is a 2026 Indian Tamil-language fantasy action drama film directed by RJ Balaji. In the film, the guardian deity Vettai Karuppu disguises himself as a lawyer to fight corruption in a court system that exploits a young girl awaiting a liver transplant. The film stars Suriya and Trisha Krishnan in the lead roles.",
   "category": "South Indian",
   "year": 2026,
