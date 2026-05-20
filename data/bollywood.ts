@@ -49,8 +49,7 @@ export const bollywoodVideos: Video[] = [
   "rating": 9.5,
   "genre": ["Comedy", "Horror", "Mystery"],
   "language": "Hindi",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
 },
 {
   "id": "2002",
@@ -66,8 +65,8 @@ export const bollywoodVideos: Video[] = [
   "rating": 8.5,
   "genre": ["Action", "Thriller", "Crime"],
   "language": "Hindi",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
+
 },
 
 {
@@ -84,8 +83,8 @@ export const bollywoodVideos: Video[] = [
   "rating": 0,
   "genre": ["Crime", "Drama"],
   "language": "Hindi",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
+  
 },
 {
     "id": "2004",
@@ -389,8 +388,8 @@ export const bollywoodVideos: Video[] = [
   "rating": 0,
   "genre": ["Action", "Drama", "History"],
   "language": "Hindi",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
+  
 },
 {
   "id": "2024",
@@ -455,8 +454,8 @@ export const bollywoodVideos: Video[] = [
   "rating": 7,
   "genre": ["Comedy", "Drama", "Family"],
   "language": "Hindi",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
+  
 },
 {
   "id": "2028",
@@ -473,7 +472,7 @@ export const bollywoodVideos: Video[] = [
   "genre": ["Drama", "Thriller", "Mystery"],
   "language": "Hindi",
   "quality": "HD",
-  "featured": true
+  
 },
 {
   "id": "2029",
@@ -489,8 +488,8 @@ export const bollywoodVideos: Video[] = [
   "rating": 8,
   "genre": ["Mythology", "Fantasy", "Drama"],
   "language": "Hindi",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
+  
 },
 {
   "id": "2030",

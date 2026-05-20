@@ -65,8 +65,8 @@ export const southindianVideos: Video[] = [
   "rating": 0,
   "genre": ["Action", "Drama"],
   "language": "Tamil",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
+  
 },
 {
   "id": "5003",
@@ -212,8 +212,8 @@ export const southindianVideos: Video[] = [
   "rating": 8.3,
   "genre": ["Romance", "Drama", "Musical"],
   "language": "Telugu",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
+
 },
 {
   "id": "5012",
