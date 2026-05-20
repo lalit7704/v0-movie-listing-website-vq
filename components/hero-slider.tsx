@@ -144,7 +144,7 @@ export function HeroSlider({ videos }: HeroSliderProps) {
                 </div>
 
                 {/* Title */}
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight text-balance">
                   {video.title}
                 </h1>
 
