@@ -98,8 +98,8 @@ export const southindianVideos: Video[] = [
   "rating": 0,
   "genre": ["Drama", "Family"],
   "language": "Telugu",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
+
 },
 {
     "id": "5005",
@@ -197,6 +197,23 @@ export const southindianVideos: Video[] = [
   "genre": ["Action", "Thriller"],
   "language": "Hindi",
   "quality": "HD",
+},
+{
+  "id": "5011",
+  "title": "Band Melam (2026) - Telugu Romantic Drama | Full Movie HD",
+  "slug": "band-melam-2026-telugu-romantic-drama-full-movie-hd",
+  "videoUrl": "https://youtu.be/DHu2ZHqBJek",
+  "downloadUrl": "https://t.me/onemoviedownloa/79",
+  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/band_melam.png?v=1779168886",
+  "description": "Band Melam (2026) एक emotional Telugu romantic drama फिल्म है जो प्यार, संगीत और रिश्तों की खूबसूरत कहानी को ग्रामीण पृष्ठभूमि में प्रस्तुत करती है। फिल्म की कहानी गिरी और राजी नाम के दो बचपन के दोस्तों के इर्द-गिर्द घूमती है, जिनका रिश्ता समय के साथ गहरे प्रेम में बदल जाता है। लेकिन गलतफहमियां, पारिवारिक परिस्थितियां और बदलती जिंदगी उन्हें एक-दूसरे से दूर कर देती हैं। जहां राजी अपनी पढ़ाई और भविष्य की ओर बढ़ती है, वहीं गिरी गांव की पारंपरिक band music culture में अपना रास्ता खोजने की कोशिश करता है। फिल्म में गांव की संस्कृति, लोक संगीत और emotional moments को बेहद खूबसूरती से दिखाया गया है। जैसे-जैसे कहानी आगे बढ़ती है, दोनों की जिंदगी अलग-अलग रास्तों पर चलती है, लेकिन किस्मत उन्हें एक बार फिर आमने-सामने ले आती है। फिल्म प्यार, संघर्ष, उम्मीद और reunion की भावनात्मक यात्रा को cinematic अंदाज में प्रस्तुत करती है। soulful music, realistic performances और heartfelt storytelling इस फिल्म को खास बनाते हैं। अगर आपको romantic village dramas और musical love stories पसंद हैं, तो Band Melam आपके लिए एक शानदार cinematic experience साबित होगी।",
+  "category": "South Indian",
+  "year": 2026,
+  "duration": "2h 21m",
+  "rating": 8.3,
+  "genre": ["Romance", "Drama", "Musical"],
+  "language": "Telugu",
+  "quality": "HD",
+  "featured": true
 }
 ];
 
