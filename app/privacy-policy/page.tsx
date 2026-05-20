@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Onemovie",
@@ -8,8 +10,9 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="min-h-screen bg-background">
-      <main className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-[1100px] mx-auto">
+    <div className="min-h-screen bg-background flex flex-col">
+      <Navbar />
+      <main className="flex-1 pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-[1100px] mx-auto w-full">
         <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
           Privacy Policy
         </h1>
@@ -65,7 +68,7 @@ export default function PrivacyPolicyPage() {
           </section>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
-
