@@ -237,9 +237,9 @@ export const southindianVideos: Video[] = [
   "id": "5013",
   "title": "Second Case of Seetharam (2026) - Crime Thriller | Full Movie HD",
   "slug": "second-case-of-seetharam-2026-crime-thriller",
-  "videoUrl": "https://youtu.be/placeholder2",
-  "downloadUrl": "https://t.me/onemoviedownloa/81",
-  "poster": "https://m.media-amazon.com/images/M/MV5BMTEwZDBjYjAtNjExNS00OTZmLThlYTItMjg0NzcxNmM5MmZjXkEyXkFqcGc@._V1_FMjpg_UY720_.jpg",
+  "videoUrl": "https://youtu.be/Pj-3GuOkKM4",
+  "downloadUrl": "https://t.me/onemoviedownloa/89",
+  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Second_Case_of_Seetharam.png?v=1779292259",
   "description": "Inspector Seetharam, hoping to reunite with his estranged sister after years apart, must track down a dangerous serial killer. A gritty crime thriller starring Vijay Raghavendra.",
   "category": "South Indian",
   "year": 2026,
@@ -255,9 +255,9 @@ export const southindianVideos: Video[] = [
   "id": "5014",
   "title": "Kaalidas 2 (2026) - Tamil Crime Thriller | Full Movie HD",
   "slug": "kaalidas-2-2026-tamil-crime-thriller",
-  "videoUrl": "https://youtu.be/placeholder3",
-  "downloadUrl": "https://t.me/onemoviedownloa/82",
-  "poster": "https://m.media-amazon.com/images/M/MV5BNWRjMzcxNWMtZGJmZS00MjE3LWJmNWMtNWY3ZmFmNzcwMmNlXkEyXkFqcGc@._V1_FMjpg_UY720_.jpg",
+  "videoUrl": "https://youtu.be/zH2MZU2fc-w",
+  "downloadUrl": "https://t.me/onemoviedownloa/86",
+  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Kaalidas_2.png?v=1779292137",
   "description": "After battling inner demons in Kaalidas, part 2 turns more complicated as cop Kaalidas faces eerie murders striking across the city. Veiled provocateur Stephen unleashes deadly chaos inside and out—forcing a twisted hunt for crime, punishment, and the hidden truth.",
   "category": "South Indian",
   "year": 2026,
@@ -268,6 +268,23 @@ export const southindianVideos: Video[] = [
   "quality": "HD",
   "director": "Sri Senthil",
   "cast": ["Bharath", "Ajay Karthi", "Sangita Madhavan Nair", "Prakash Raj"]
+}
+,
+{
+  "id": "5015",
+  "title": "Love Insurance Kompany (2026) - Sci-Fi Romantic Comedy | Full Movie HD",
+  "slug": "love-insurance-kompany-2026-sci-fi-romantic-comedy",
+  "videoUrl": "https://youtu.be/wMiCXl8ZybQ",
+  "downloadUrl": "https://t.me/onemoviedownloa/84",
+  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Love_Insurance_Kompany.png?v=1779293008",
+  "description": "Love Insurance Kompany (2026), जिसे 'LIK' के नाम से भी जाना जाता है, एक बहुत ही अनोखी और मजेदार साइंस-फिक्शन रोमांटिक कॉमेडी (Sci-Fi Rom-Com) तमिल फिल्म है। विघ्नेश शिवन द्वारा निर्देशित इस फिल्म में प्रदीप रंगनाथन, एसजे सूर्या और कृति शेट्टी मुख्य भूमिकाओं में हैं। फिल्म की कहानी साल 2040 के भविष्य (Future) पर आधारित है, जहाँ दुनिया पूरी तरह से टेक्नोलॉजी पर निर्भर हो चुकी है और प्यार जैसी भावनाएं भी अब मोबाइल ऐप्स और डेटा से कंट्रोल की जाती हैं। इस दुनिया में 'लव इंश्योरेंस कंपनी' (Love Insurance Kompany) नाम की एक विचित्र कंपनी है जो लोगों के प्यार, ब्रेकअप और रिश्तों का बीमा (Insurance) करती है। एक ऐसा ऐप है जो पहले ही बता देता है कि आपका रिश्ता चलेगा या टूट जाएगा। \n\nफिल्म का मुख्य नायक (प्रदीप) एक ऐसा नौजवान है जो आज भी प्राकृतिक और सच्चे प्यार (Traditional Love) में विश्वास रखता है। लेकिन उसकी किस्मत उसे एक ऐसी लड़की (कृति शेट्टी) से मिलवाती है जो पूरी तरह से इस 'LIK' ऐप और टेक्नोलॉजी पर भरोसा करती है। जब नायक खुद प्यार में पड़ता है, तो सिस्टम और ऐप उसके रिश्ते को 'विफल' (Failure) घोषित कर देते हैं। अपने प्यार को बचाने और यह साबित करने के लिए कि प्यार कोई डेटा या एल्गोरिदम नहीं है जिसे कंट्रोल किया जा सके, नायक इस पूरे सिस्टम और उस कंपनी के अजीबोगरीब सीईओ (एसजे सूर्या) के खिलाफ एक जंग छेड़ देता है। अनिरुद्ध रविचंदर के शानदार म्यूजिक और एक फ्रेश कॉन्सेप्ट के साथ, यह फिल्म प्यार, टेक्नोलॉजी और हास्य का एक बेहतरीन कॉकटेल है।",
+  "category": "South Indian",
+  "year": 2026,
+  "duration": "2h 37m",
+  "rating": 8.0,
+  "genre": ["Comedy", "Romance", "Sci-Fi", "Fantasy"],
+  "language": "Hindi",
+  "quality": "HD"
 }
 ];
 

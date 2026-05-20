@@ -168,7 +168,7 @@ export const hollywoodVideos: Video[] = [
   },
   {
   "id": "143",
-  "title": "The Mummy (2026) - Lee Cronin Horror Movie | Hindi Dubbed | Full Movie HD",
+  "title": "Lee Cronin's The Mummy Horror Movie | Hindi Dubbed | Full Movie HD",
   "slug": "the-mummy-2026-lee-cronin-horror-movie-hindi-dubbed-full-movie-hd",
   "videoUrl": "https://youtu.be/XJ0uv-phsDk",
   "downloadUrl": "https://t.me/onemoviedownloa/88",
@@ -180,6 +180,23 @@ export const hollywoodVideos: Video[] = [
   "rating": 0,
   "genre": ["Horror", "Thriller"],
   "language": "Hindi",
+  "quality": "HD"
+}
+,
+{
+  "id": "145",
+  "title": "Michael (2026) - Biographical Musical Drama | Full Movie HD",
+  "slug": "michael-2026-biographical-musical-drama-full-movie-hd",
+  "videoUrl": "https://youtu.be/placeholder_michael",
+  "downloadUrl": "https://t.me/onemoviedownloa/93",
+  "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Michael_2026.png?v=1779293003",
+  "description": "Michael (2026) एक बहुप्रतीक्षित हॉलीवुड बायोग्राफिकल म्यूजिकल ड्रामा फिल्म है, जो इतिहास के सबसे महान और प्रभावशाली कलाकारों में से एक, 'किंग ऑफ पॉप' माइकल जैक्सन के जीवन और उनकी विरासत (Legacy) की कहानी को बड़े पर्दे पर लाती है। इस फिल्म का निर्देशन एंटोनी फूक्वा (Antoine Fuqua) ने किया है और इसमें माइकल जैक्सन के भतीजे 'जाफर जैक्सन' (Jaafar Jackson) ने स्वयं माइकल का किरदार निभाया है। फिल्म माइकल के शुरुआती जीवन से शुरू होती है, जब वे 1960 के दशक में 'जैक्सन 5' (Jackson 5) बैंड का हिस्सा थे। उनके पिता जोसेफ जैक्सन के कठोर अनुशासन और ट्रेनिंग के साये में पले-बढ़े माइकल का बचपन कैसा था, और कैसे वे दुनिया के सबसे बड़े एंटरटेनर बने, यह इस फिल्म का मुख्य केंद्र है।\n\nयह फिल्म केवल माइकल के मंच (Stage) और उनके प्रसिद्ध गानों की कहानी नहीं है, बल्कि यह उनके जीवन के उस पहलू (Beyond the Music) को भी दर्शाती है जिसे दुनिया ने कभी नहीं देखा। उनकी असीम रचनात्मकता (Creative Ambition), उनका अपने काम के प्रति पागलपन और दुनिया को कुछ अलग देने की उनकी भूख को बहुत ही गहराई से चित्रित किया गया है। फिल्म में उनके आइकॉनिक गानों, उनके मूनवॉक और 1980 के दशक के 'बैड' (Bad) टूर के शानदार दृश्यों को रीक्रिएट किया गया है। 'Michael' एक ऐसी फिल्म है जो एक साधारण से लड़के के पॉप के भगवान बनने तक के सफर को दिखाती है, जिसमें शोहरत के साथ-साथ दर्द, विवाद और असीम संगीत छिपा है।",
+  "category": "hollywood",
+  "year": 2026,
+  "duration": "2h 7m",
+  "rating": 8.5,
+  "genre": ["Drama", "Music", "Biography"],
+  "language": "English",
   "quality": "HD"
 }
   ,
