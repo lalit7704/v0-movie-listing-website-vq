@@ -177,7 +177,7 @@ export const webSeriesVideos: Video[] = [
 {
   "id": "8008",
   "title": "Vimal Khanna Season 1 - Crime Thriller Series | Full Episodes HD",
-  "slug": generateSlug("Vimal Khanna Season 1 - Crime Thriller Series | Full Episodes HD"),
+  "slug": "vimal-khanna-season-1-crime-thriller-series-full-episodes-hd",
   "videoUrl": "https://youtu.be/yv9rOjSBAjc",
   "downloadUrl": "https://t.me/onemoviedownloa/83",
   "poster": "https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Vimal_Khanna_S1.png?v=1778780500",
