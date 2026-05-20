@@ -36,7 +36,7 @@ function generateSlug(title: string): string {
 
 export const hollywoodVideos: Video[] = [
   {
-    id: "4",
+    id: "6001",
     title: "Furiosa: A Mad Max Saga (2024)",
     slug: generateSlug("Furiosa: A Mad Max Saga"),
     videoUrl: "https://youtu.be/XJMuhwVlca4",
@@ -53,7 +53,7 @@ export const hollywoodVideos: Video[] = [
     
   },
   {
-      "id": "3",
+      "id": "6002",
       "title": "Chappie (2015) - AI Robot Learns Humanity | Sci-Fi Action Movie HD",
       "slug": "chappie-2015-ai-robot-learns-humanity-sci-fi-action-movie-hd",
       "videoUrl": "https://youtu.be/lyy7y0QOK-0",
@@ -70,7 +70,7 @@ export const hollywoodVideos: Video[] = [
       
     },
     {
-    "id": "67",
+    "id": "6003",
     "title": "Iron Man (2008) - Tony Stark Becomes Iron Man | Full Movie HD",
     "slug": generateSlug("Iron Man (2008) - Tony Stark Becomes Iron Man | Full Movie HD"),
     "videoUrl": "https://youtu.be/_xu02V1kM1w",
@@ -87,7 +87,7 @@ export const hollywoodVideos: Video[] = [
   },
 
   {
-    "id": "70",
+    "id": "6004",
     "title": "Iron Man 2 (2010) - Tony Stark vs Whiplash | Full Movie HD",
     "slug": generateSlug("Iron Man 2 (2010) - Tony Stark vs Whiplash | Full Movie HD"),
     "videoUrl": "https://youtu.be/DjfJJ9Cnmzs",
@@ -103,7 +103,7 @@ export const hollywoodVideos: Video[] = [
     "quality": "HD"
   },
   {
-    "id": "71",
+    "id": "6005",
     "title": "Iron Man 3 (2013) - Tony Stark vs Mandarin | Full Movie HD",
     "slug": generateSlug("Iron Man 3 (2013) - Tony Stark vs Mandarin | Full Movie HD"),
     "videoUrl": "https://youtu.be/zoWMW2O2rzc",
@@ -119,7 +119,7 @@ export const hollywoodVideos: Video[] = [
     "quality": "HD"
   },
   {
-    "id": "72",
+    "id": "6006",
     "title": "Avengers: Age of Ultron (2015) - Avengers vs Ultron | Full Movie HD",
     "slug": generateSlug("Avengers: Age of Ultron (2015) - Avengers vs Ultron | Full Movie HD"),
     "videoUrl": "https://youtu.be/tmeOjFno6Do",
@@ -135,7 +135,7 @@ export const hollywoodVideos: Video[] = [
     "quality": "HD"
   },
   {
-    "id": "73",
+    "id": "6007",
     "title": "Avengers: Infinity War (2018) - Avengers vs Thanos | Full Movie HD",
     "slug": generateSlug("Avengers: Infinity War (2018) - Avengers vs Thanos | Full Movie HD"),
     "videoUrl": "https://youtu.be/6ZfuNTqbHE8",
@@ -151,7 +151,7 @@ export const hollywoodVideos: Video[] = [
     "quality": "HD"
   },
   {
-    "id": "74",
+    "id": "6008",
     "title": "Mad Max: Fury Road (2015)",
     "slug": generateSlug("Mad Max: Fury Road (2015) - Post Apocalyptic Action Thriller | Full Movie HD"),
     "videoUrl": "https://youtu.be/hEJnMQG9ev8",
@@ -167,7 +167,7 @@ export const hollywoodVideos: Video[] = [
     "quality": "HD"
   },
   {
-  "id": "143",
+  "id": "6009",
   "title": "Lee Cronin's The Mummy Horror Movie | Hindi Dubbed | Full Movie HD",
   "slug": "the-mummy-2026-lee-cronin-horror-movie-hindi-dubbed-full-movie-hd",
   "videoUrl": "https://youtu.be/XJ0uv-phsDk",
@@ -185,7 +185,7 @@ export const hollywoodVideos: Video[] = [
 }
 ,
 {
-  "id": "145",
+  "id": "6010",
   "title": "Michael (2026) - Biographical Musical Drama | Full Movie HD",
   "slug": "michael-2026-biographical-musical-drama-full-movie-hd",
   "videoUrl": "https://youtu.be/placeholder_michael",
@@ -202,7 +202,7 @@ export const hollywoodVideos: Video[] = [
 }
   ,
   {
-    "id": "144",
+    "id": "6011",
     "title": "Captain America: The Winter Soldier (2014) - Marvel Superhero Action | Full Movie HD",
     "slug": generateSlug("Captain America: The Winter Soldier (2014) - Marvel Superhero Action | Full Movie HD"),
     "videoUrl": "https://youtu.be/tbayiPxkUMM",
