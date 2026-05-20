@@ -44,7 +44,7 @@ export function Footer() {
             <p className="text-muted-foreground text-sm max-w-sm mb-6">
               Your ultimate destination for streaming movies and web series. Watch the latest Bollywood, Hollywood, and South Indian movies in HD quality.
             </p>
-            <div className="flex items-center gap-3">
+            {/* <div className="flex items-center gap-3">
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
@@ -69,7 +69,7 @@ export function Footer() {
               >
                 <Youtube className="w-5 h-5" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Browse */}
