@@ -168,7 +168,7 @@ export const hollywoodVideos: Video[] = [
   },
   {
   "id": "6009",
-  "title": "Lee Cronin's The Mummy Horror Movie | Hindi Dubbed | Full Movie HD",
+  "title": "Lee Cronin's The Mummy Horror Movie",
   "slug": "the-mummy-2026-lee-cronin-horror-movie-hindi-dubbed-full-movie-hd",
   "videoUrl": "https://youtu.be/XJ0uv-phsDk",
   "downloadUrl": "https://t.me/onemoviedownloa/88",

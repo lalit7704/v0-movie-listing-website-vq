@@ -235,7 +235,7 @@ export const southindianVideos: Video[] = [
 },
 {
   "id": "5013",
-  "title": "Second Case of Seetharam (2026) - Crime Thriller | Full Movie HD",
+  "title": "Second Case of Seetharam - Crime Thriller",
   "slug": "second-case-of-seetharam-2026-crime-thriller",
   "videoUrl": "https://youtu.be/Pj-3GuOkKM4",
   "downloadUrl": "https://t.me/onemoviedownloa/89",
@@ -357,7 +357,7 @@ export const southindianVideos: Video[] = [
 ,
 {
   "id": "5020",
-  "title": "The Raja Saab (2025) - Horror Comedy Movie | Prabhas | Full Movie HD",
+  "title": "The Raja Saab - Horror Comedy ",
   "slug": "the-raja-saab-2025-horror-comedy-movie-prabhas",
   "videoUrl": "hhttps://youtu.be/wT4HcYAeV5U",
   "downloadUrl": "https://t.me/onemoviedownloa/12",
