@@ -29,9 +29,12 @@ export function AmazonProductGrid({
       )}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
         {products.map((product) => (
-          <div
+          <Link
+            href={product.productUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             key={product.id}
-            className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all group flex flex-col"
+            className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg hover:scale-[1.02] transition-all duration-300 group flex flex-col cursor-pointer"
           >
             <div className="relative aspect-square bg-white p-4 flex items-center justify-center">
               <img
@@ -45,21 +48,15 @@ export function AmazonProductGrid({
               <h3 className="font-semibold text-foreground text-sm sm:text-base line-clamp-2 mb-2 group-hover:text-primary transition-colors">
                 {product.title}
               </h3>
-              {product.price && (
-                <p className="text-primary font-bold text-lg mb-4">{product.price}</p>
-              )}
               <div className="mt-auto">
-                <Link
-                  href={product.productUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-[#FF9900] hover:bg-[#FF9900]/90 text-black text-center text-sm font-bold py-2.5 px-4 rounded-lg transition-colors shadow-sm"
+                <span
+                  className="block w-full bg-[#FF9900] group-hover:bg-[#FF9900]/90 text-black text-center text-sm font-bold py-2.5 px-4 rounded-lg transition-colors shadow-sm group-hover:shadow-md"
                 >
                   {product.buttonText || "Buy on Amazon"}
-                </Link>
+                </span>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
