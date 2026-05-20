@@ -170,8 +170,8 @@ export const webSeriesVideos: Video[] = [
   "rating": 7,
   "genre": ["Crime", "Comedy", "Drama"],
   "language": "Hindi",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
+ 
 },
 {
   "id": "8008",
@@ -187,8 +187,8 @@ export const webSeriesVideos: Video[] = [
   "rating": 8.2,
   "genre": ["Crime", "Thriller", "Drama"],
   "language": "Hindi",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
+  
 }
 ];
 

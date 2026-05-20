@@ -180,7 +180,8 @@ export const hollywoodVideos: Video[] = [
   "rating": 0,
   "genre": ["Horror", "Thriller"],
   "language": "Hindi",
-  "quality": "HD"
+  "quality": "HD",
+  "featured": true
 }
 ,
 {
