@@ -29,12 +29,7 @@ export function AmazonAd({
         />
       </div>
 
-      {/* Product Details */}<Link
-          href={productUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#FF9900] hover:bg-[#FF9900]/90 text-black font-bold py-2.5 px-6 rounded-lg transition-colors w-full sm:w-auto text-center shadow-lg"
-        >
+      {/* Product Details */}
       <div className="flex-1 flex flex-col justify-center text-center sm:text-left">
         <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-2 block">
           ⭐ Recommended For You
@@ -48,10 +43,15 @@ export function AmazonAd({
         {price && <p className="text-xl font-extrabold text-primary mb-4">{price}</p>}
         
         {/* Buy Button */}
-        
+        <Link
+          href={productUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-[#FF9900] hover:bg-[#FF9900]/90 text-black font-bold py-2.5 px-6 rounded-lg transition-colors w-full sm:w-auto text-center shadow-lg"
+        >
           {buttonText}
-        
-      </div></Link>
+        </Link>
+      </div>
     </div>
   );
 }
