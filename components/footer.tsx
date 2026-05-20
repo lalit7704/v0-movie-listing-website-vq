@@ -20,7 +20,7 @@ const footerLinks = {
 
   support: [
     
-    { href: "/faqs", label: "FAQ" },
+    { href: "/faq", label: "FAQ" },
     { href: "/terms-of-service", label: "Terms of Service" },
     { href: "/privacy-policy", label: "Privacy Policy" },
     { href: "/dmca", label: "DMCA" },
