@@ -198,6 +198,7 @@ export const hollywoodVideos: Video[] = [
     "genre": ["Action", "Adventure", "Sci-Fi"],
     "language": "Hindi",
     "quality": "HD"
+   
   }
 ];
 

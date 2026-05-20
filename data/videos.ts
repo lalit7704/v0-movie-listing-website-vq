@@ -127,10 +127,9 @@ export const getUpcomingVideos = (): Video[] => {
 export const getHindiDubbedVideos = (): Video[] => {
   return videos
     .filter(
-      (v) =>
-        normalize(v.language) !== "hindi" &&
+      (v) => normalize(v.language) === "hindi" &&
         (normalize(v.category) === "hollywood" ||
-          normalize(v.category) === "south indian")
+          normalize(v.category) === "southindian")
     )
     .slice(0, 10);
 };
