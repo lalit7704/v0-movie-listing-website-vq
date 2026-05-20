@@ -17,6 +17,7 @@ interface CollectionPageProps {
   showLanguage?: boolean;
   availableGenres?: string[];
   availableLanguages?: string[];
+  children?: React.ReactNode;
 }
 
 function CollectionContent({
@@ -28,6 +29,7 @@ function CollectionContent({
   showLanguage = true,
   availableGenres,
   availableLanguages,
+  children,
 }: CollectionPageProps) {
   const searchParams = useSearchParams();
 
@@ -103,6 +105,9 @@ function CollectionContent({
           availableGenres={availableGenres}
           availableLanguages={availableLanguages}
         />
+
+        {/* Ad or Custom Content */}
+        {children}
 
         {/* Videos Grid */}
         <VideoGrid
