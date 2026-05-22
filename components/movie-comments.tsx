@@ -1,6 +1,5 @@
 "use client";
 
-import { DiscussionEmbed } from 'disqus-react';
 import dynamic from 'next/dynamic';
 
 interface MovieCommentsProps {
@@ -11,9 +10,8 @@ interface MovieCommentsProps {
 const DynamicDiscussionEmbed = dynamic(() => import('disqus-react').then(m => m.DiscussionEmbed), { ssr: false });
 
 export function MovieComments({ slug, title }: MovieCommentsProps) {
-  // Aapka naya Disqus shortname
-  const disqusShortname = "one-movie"; 
-  
+  const disqusShortname = "onemovie-2";
+
   const disqusConfig = {
     url: `https://onemovie.in/movie/${slug}`,
     identifier: slug,

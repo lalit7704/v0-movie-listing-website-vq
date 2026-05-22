@@ -111,34 +111,16 @@ export default function RootLayout({
       <body className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
         <Analytics />
-
-       {/* Google AdSense Script */}
-       
-
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319727568049071"
-            crossOrigin="anonymous"
-          ></script>
-
-          {/* first add */}
-
-          <ins
-            className="adsbygoogle"
-            style={{ display: "block" }}
-            data-ad-client="ca-pub-5319727568049071"
-            data-ad-slot="4270744073"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          ></ins>
-
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                (adsbygoogle = window.adsbygoogle || []).push({});
-              `,
-            }}
-          ></script>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319727568049071"
+          crossOrigin="anonymous"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+          }}
+        />
       </body>
     </html>
   )

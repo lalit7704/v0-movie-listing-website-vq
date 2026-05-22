@@ -13,7 +13,7 @@ export default function Adsense() {
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
     } catch (err) {
-      console.log(err);
+      // AdSense script might not be loaded yet
     }
   }, []);
 
