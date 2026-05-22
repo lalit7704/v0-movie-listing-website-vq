@@ -6,6 +6,7 @@ import { Play, Star, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Video } from "@/data/videos";
 import { generateSlug } from "@/lib/seo-utils";
+import { CommentCount } from "disqus-react";
 
 interface VideoCardProps {
   video: Video;
@@ -59,6 +60,18 @@ export function VideoCard({ video }: VideoCardProps) {
               <span>•</span>
               <span>{video.year}</span>
             </div>
+          <div className="mt-1 flex items-center text-[10px] text-gray-300 font-medium">
+            <CommentCount
+              shortname="one-movie"
+              config={{
+                url: `https://onemovie.in/movie/${slug}`,
+                identifier: slug,
+                title: video.title,
+              }}
+            >
+              0 Comments
+            </CommentCount>
+          </div>
           </div>
         </div>
       </Link>
