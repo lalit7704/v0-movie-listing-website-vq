@@ -6,7 +6,7 @@ interface MovieCommentsProps {
 }
 
 export function MovieComments({ slug, title }: MovieCommentsProps) {
-  const disqusShortname = "onemovie";
+  const disqusShortname = "onemovie-2";
 
   const disqusConfig = {
     url: `https://onemovie.in/movie/${slug}`,
