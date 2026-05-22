@@ -4,7 +4,6 @@ import Adsense from "@/components/Adsense";
 import { SectionSlider } from "@/components/section-slider";
 import { Footer } from "@/components/footer";
 import { AmazonAd } from "@/components/amazon-ad";
-// import { AmazonProductGrid } from "@/components/amazon-product-grid";
 
 import {
   videos,
@@ -49,37 +48,6 @@ export default function HomePage() {
     .sort(() => Math.random() - 0.5)
     .slice(0, 10);
 
-  // const topGadgets = [
-  //   {
-  //     id: "t1",
-  //     title: "insta360 X3 Action Camera",
-  //     imageUrl: "https://m.media-amazon.com/images/I/610NQUzk2xL._SL1500_.jpg",
-  //     productUrl: "https://amzn.to/4dF3J0U",
-  //     price: "₹34,990"
-  //   },
-  //   {
-  //     id: "t2",
-  //     title: "REDMI Note 15 Pro 5G",
-  //     imageUrl: "https://m.media-amazon.com/images/I/81UgjzCNSrL._SL1500_.jpg",
-  //     productUrl: "https://amzn.in/d/04mtImI5",
-  //     price: "₹25,999"
-  //   },
-  //   {
-  //     id: "t3",
-  //     title: "Samsung Galaxy S26 Ultra 5G",
-  //     imageUrl: "https://m.media-amazon.com/images/I/71VnqxM-+AL._SL1500_.jpg",
-  //     productUrl: "https://amzn.in/d/0975SFmX",
-    
-  //   },
-  //   {
-  //     id: "t4",
-  //     title: "WZATCO Yuva Horizon Smart Projector",
-  //     imageUrl: "https://m.media-amazon.com/images/I/71tRj0lYPJL._SL1500_.jpg",
-  //     productUrl: "https://amzn.in/d/08NHCEfL",
-    
-  //   }
-  // ];
-
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
@@ -87,10 +55,8 @@ export default function HomePage() {
       {/* Hero Slider */}
       <HeroSlider videos={featuredVideos} />
 
-      {/* Amazon Product Grid */}
       {/* FlixFox App Banner */}
       <div className="px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto mt-8">
-        {/* <AmazonProductGrid title="🔥 Trending Gadgets & Electronics" products={topGadgets} /> */}
         <a 
           href="https://filmm.me/3dRs94d1" 
           target="_blank" 
@@ -106,10 +72,10 @@ export default function HomePage() {
         </a>
       </div>
 
-      {/* Top Ad
-      <div className="px-4 py-4">
+      {/* Top Ad */}
+      <div className="px-4 py-4 max-w-[1400px] mx-auto mt-4">
         <Adsense />
-      </div> */}
+      </div>
 
       {/* Content Sections */}
       <div className="space-y-2">
@@ -120,10 +86,6 @@ export default function HomePage() {
         {/* 2. Trending Now */}
         <SectionSlider title="Trending Now" videos={trendingVideos} />
 
-        {/* Middle Ad */}
-        {/* <div className="px-4 py-4">
-          <Adsense />
-        </div> */}
         <div className="px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto">
         <AmazonAd 
           title="REDMI Note 15 Pro 5G – 200MP OIS Camera, Dimensity 7400-Ultra, 17.3cm CrystalRes AMOLED Display, 6580mAh Battery & 45W Fast Charging (Silver Ash, 8GB+128GB)"
@@ -143,6 +105,12 @@ export default function HomePage() {
           productUrl="https://amzn.in/d/0975SFmX"
           buttonText="Check Price on Amazon"
         />
+
+        {/* Middle Ad */}
+        <div className="px-4 py-4 max-w-[1400px] mx-auto">
+          <Adsense />
+        </div>
+
         {/* 4. Recently Added */}
         <SectionSlider title="Recently Added" videos={recentlyAdded} />
 
@@ -200,11 +168,6 @@ export default function HomePage() {
           videos={mahabharatVideos}
           id="mahabharat"
         />
-
-        {/* Ad */}
-        {/* <div className="px-4 py-4">
-          <Adsense />
-        </div> */}
 
         {/* South Indian Movies */}
         <SectionSlider
@@ -299,11 +262,6 @@ export default function HomePage() {
           title="Editor's Picks"
           videos={editorsPicks}
         />
-
-        {/* Bottom Ad */}
-        {/* <div className="px-4 py-4">
-          <Adsense />
-        </div> */}
 
         {/* Upcoming Movies */}
         <SectionSlider
