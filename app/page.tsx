@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/navbar";
 import { HeroSlider } from "@/components/hero-slider";
-import Adsense from "@/components/Adsense";
 import { SectionSlider } from "@/components/section-slider";
 import { Footer } from "@/components/footer";
 import { AmazonAd } from "@/components/amazon-ad";
@@ -70,11 +69,6 @@ export default function HomePage() {
             loading="lazy"
           />
         </a>
-      </div>
-
-      {/* Top Ad */}
-      <div className="px-4 py-4 max-w-[1400px] mx-auto mt-4">
-        <Adsense />
       </div>
 
       {/* Content Sections */}
