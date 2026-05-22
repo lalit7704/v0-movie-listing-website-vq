@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import { HeroSlider } from "@/components/hero-slider";
+import Adsense from "@/components/Adsense";
 import { SectionSlider } from "@/components/section-slider";
 import { Footer } from "@/components/footer";
 import { AmazonAd } from "@/components/amazon-ad";
@@ -99,12 +100,6 @@ export default function HomePage() {
           productUrl="https://amzn.in/d/0975SFmX"
           buttonText="Check Price on Amazon"
         />
-
-        {/* Middle Ad */}
-        <div className="px-4 py-4 max-w-[1400px] mx-auto">
-          <Adsense />
-        </div>
-
         {/* 4. Recently Added */}
         <SectionSlider title="Recently Added" videos={recentlyAdded} />
 
