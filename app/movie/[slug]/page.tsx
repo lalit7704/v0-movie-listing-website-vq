@@ -18,6 +18,7 @@ import {
   generateMetaDescription,
 } from "@/lib/seo-utils";
 import { generateMoviePageJsonLd } from "@/lib/structured-data";
+import { MovieComments } from "@/components/movie-comments";
 
 interface MoviePageProps {
   params: Promise<{ slug: string }>;
@@ -230,6 +231,9 @@ export default async function MoviePage({ params }: MoviePageProps) {
                 </div>
 
                 {/* Movie Details */}
+
+                <MovieComments slug={slug} title={video.title} />
+
                 <div className="bg-card rounded-xl p-6 border border-border">
                   <h2 className="text-lg font-semibold text-foreground mb-4">Movie Details</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
