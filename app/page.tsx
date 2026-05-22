@@ -4,7 +4,7 @@ import Adsense from "@/components/Adsense";
 import { SectionSlider } from "@/components/section-slider";
 import { Footer } from "@/components/footer";
 import { AmazonAd } from "@/components/amazon-ad";
-import { AmazonProductGrid } from "@/components/amazon-product-grid";
+// import { AmazonProductGrid } from "@/components/amazon-product-grid";
 
 import {
   videos,
@@ -49,36 +49,36 @@ export default function HomePage() {
     .sort(() => Math.random() - 0.5)
     .slice(0, 10);
 
-  const topGadgets = [
-    {
-      id: "t1",
-      title: "insta360 X3 Action Camera",
-      imageUrl: "https://m.media-amazon.com/images/I/610NQUzk2xL._SL1500_.jpg",
-      productUrl: "https://amzn.to/4dF3J0U",
-      price: "₹34,990"
-    },
-    {
-      id: "t2",
-      title: "REDMI Note 15 Pro 5G",
-      imageUrl: "https://m.media-amazon.com/images/I/81UgjzCNSrL._SL1500_.jpg",
-      productUrl: "https://amzn.in/d/04mtImI5",
-      price: "₹25,999"
-    },
-    {
-      id: "t3",
-      title: "Samsung Galaxy S26 Ultra 5G",
-      imageUrl: "https://m.media-amazon.com/images/I/71VnqxM-+AL._SL1500_.jpg",
-      productUrl: "https://amzn.in/d/0975SFmX",
-      price: "₹1,29,999"
-    },
-    {
-      id: "t4",
-      title: "WZATCO Yuva Horizon Smart Projector",
-      imageUrl: "https://m.media-amazon.com/images/I/71tRj0lYPJL._SL1500_.jpg",
-      productUrl: "https://amzn.in/d/08NHCEfL",
-      price: "₹14,990"
-    }
-  ];
+  // const topGadgets = [
+  //   {
+  //     id: "t1",
+  //     title: "insta360 X3 Action Camera",
+  //     imageUrl: "https://m.media-amazon.com/images/I/610NQUzk2xL._SL1500_.jpg",
+  //     productUrl: "https://amzn.to/4dF3J0U",
+  //     price: "₹34,990"
+  //   },
+  //   {
+  //     id: "t2",
+  //     title: "REDMI Note 15 Pro 5G",
+  //     imageUrl: "https://m.media-amazon.com/images/I/81UgjzCNSrL._SL1500_.jpg",
+  //     productUrl: "https://amzn.in/d/04mtImI5",
+  //     price: "₹25,999"
+  //   },
+  //   {
+  //     id: "t3",
+  //     title: "Samsung Galaxy S26 Ultra 5G",
+  //     imageUrl: "https://m.media-amazon.com/images/I/71VnqxM-+AL._SL1500_.jpg",
+  //     productUrl: "https://amzn.in/d/0975SFmX",
+    
+  //   },
+  //   {
+  //     id: "t4",
+  //     title: "WZATCO Yuva Horizon Smart Projector",
+  //     imageUrl: "https://m.media-amazon.com/images/I/71tRj0lYPJL._SL1500_.jpg",
+  //     productUrl: "https://amzn.in/d/08NHCEfL",
+    
+  //   }
+  // ];
 
   return (
     <main className="min-h-screen bg-background">
@@ -88,8 +88,22 @@ export default function HomePage() {
       <HeroSlider videos={featuredVideos} />
 
       {/* Amazon Product Grid */}
+      {/* FlixFox App Banner */}
       <div className="px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto mt-8">
-        <AmazonProductGrid title="🔥 Trending Gadgets & Electronics" products={topGadgets} />
+        {/* <AmazonProductGrid title="🔥 Trending Gadgets & Electronics" products={topGadgets} /> */}
+        <a 
+          href="https://filmm.me/3dRs94d1" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="block w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-[1.01] transition-all duration-300"
+        >
+          <img 
+            src="https://cdn.shopify.com/s/files/1/0649/9945/6854/files/ChatGPT_Image_May_22_2026_09_33_19_PM.png?v=1779465917" 
+            alt="Download FlixFox App" 
+            className="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </a>
       </div>
 
       {/* Top Ad
