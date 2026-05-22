@@ -4,6 +4,7 @@ import Adsense from "@/components/Adsense";
 import { SectionSlider } from "@/components/section-slider";
 import { Footer } from "@/components/footer";
 import { AmazonAd } from "@/components/amazon-ad";
+import { AmazonProductGrid } from "@/components/amazon-product-grid";
 
 import {
   videos,
@@ -48,6 +49,24 @@ export default function HomePage() {
     .sort(() => Math.random() - 0.5)
     .slice(0, 10);
 
+  // 24 Products Data for Desktop 
+  const amazonProducts = Array.from({ length: 24 }).map((_, i) => {
+    const products = [
+      { title: "insta360 X3 Action Camera", img: "https://m.media-amazon.com/images/I/610NQUzk2xL._SL1500_.jpg", url: "https://amzn.to/4dF3J0U" },
+      { title: "REDMI Note 15 Pro 5G", img: "https://m.media-amazon.com/images/I/81UgjzCNSrL._SL1500_.jpg", url: "https://amzn.in/d/04mtImI5" },
+      { title: "Samsung Galaxy S26 Ultra 5G", img: "https://m.media-amazon.com/images/I/71VnqxM-+AL._SL1500_.jpg", url: "https://amzn.in/d/0975SFmX" },
+      { title: "WZATCO Yuva Horizon Smart Projector", img: "https://m.media-amazon.com/images/I/71tRj0lYPJL._SL1500_.jpg", url: "https://amzn.in/d/08NHCEfL" }
+    ];
+    const p = products[i % 4];
+    return {
+      id: `amzn-${i}`,
+      title: p.title,
+      imageUrl: p.img,
+      productUrl: p.url,
+      buttonText: "Buy",
+    };
+  });
+
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
@@ -77,6 +96,11 @@ export default function HomePage() {
 
         {/* 1. Latest Movies */}
         <SectionSlider title="Latest Movies" videos={latestVideos} />
+
+        {/* Amazon Product Grid (24 items Desktop / 4 items Mobile) */}
+        <div className="px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto mt-2 mb-6">
+          <AmazonProductGrid title="🔥 Trending Gadgets & Electronics" products={amazonProducts} />
+        </div>
 
         {/* 2. Trending Now */}
         <SectionSlider title="Trending Now" videos={trendingVideos} />

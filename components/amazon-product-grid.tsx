@@ -27,16 +27,16 @@ export function AmazonProductGrid({
           {title}
         </h2>
       )}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
-        {products.map((product) => (
+      <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-2 sm:gap-4">
+        {products.map((product, index) => (
           <Link
             href={product.productUrl}
             target="_blank"
             rel="noopener noreferrer"
             key={product.id}
-            className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg hover:scale-[1.02] transition-all duration-300 group flex flex-col cursor-pointer"
+            className={`bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:scale-[1.02] transition-all duration-300 group flex-col cursor-pointer ${index >= 4 ? "hidden md:flex" : "flex"}`}
           >
-            <div className="relative aspect-square bg-white p-4 flex items-center justify-center">
+            <div className="relative aspect-square bg-white p-2 flex items-center justify-center">
               <img
                 src={product.imageUrl}
                 alt={product.title}
@@ -44,13 +44,13 @@ export function AmazonProductGrid({
                 loading="lazy"
               />
             </div>
-            <div className="p-4 flex flex-col flex-1 text-center sm:text-left">
-              <h3 className="font-semibold text-foreground text-sm sm:text-base line-clamp-2 mb-2 group-hover:text-primary transition-colors">
+            <div className="p-2 flex flex-col flex-1 text-center">
+              <h3 className="font-semibold text-foreground text-[10px] sm:text-xs leading-tight line-clamp-2 mb-2 group-hover:text-primary transition-colors">
                 {product.title}
               </h3>
               <div className="mt-auto">
                 <span
-                  className="block w-full bg-[#FF9900] group-hover:bg-[#FF9900]/90 text-black text-center text-sm font-bold py-2.5 px-4 rounded-lg transition-colors shadow-sm group-hover:shadow-md"
+                  className="block w-full bg-[#FF9900] group-hover:bg-[#FF9900]/90 text-black text-center text-[10px] font-bold py-1 px-1 rounded transition-colors shadow-sm group-hover:shadow-md"
                 >
                   {product.buttonText || "Buy on Amazon"}
                 </span>
