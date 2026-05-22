@@ -18,8 +18,12 @@ export function VideoCard({ video }: VideoCardProps) {
 
   return (
     <div className="group relative flex-shrink-0 w-[160px] sm:w-[180px] md:w-[200px]">
-      <Link href={videoUrl}>
-        <div className="relative aspect-[2/3] rounded-lg overflow-hidden bg-muted">
+      <div className="relative aspect-[2/3] rounded-lg overflow-hidden bg-muted">
+        {/* Full-card link moved outside to prevent nested anchor tags */}
+        <Link href={videoUrl} className="absolute inset-0 z-10">
+          <span className="sr-only">Watch {video.title}</span>
+        </Link>
+
           <Image
             src={video.poster}
             alt={`${video.title} - ${video.category} movie streaming online`}
@@ -53,16 +57,16 @@ export function VideoCard({ video }: VideoCardProps) {
           </div>
 
           {/* Bottom Info */}
-          <div className="absolute bottom-0 left-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute bottom-0 left-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 pointer-events-none">
             <div className="flex items-center gap-2 text-xs text-gray-300">
               <Clock className="w-3 h-3" />
               <span>{video.duration}</span>
               <span>•</span>
               <span>{video.year}</span>
             </div>
-          <div className="mt-1 flex items-center text-[10px] text-gray-300 font-medium">
+          <div className="mt-1 flex items-center text-[10px] text-gray-300 font-medium pointer-events-auto">
             <CommentCount
-              shortname="one-movie"
+              shortname="onemovie-2"
               config={{
                 url: `https://onemovie.in/movie/${slug}`,
                 identifier: slug,
@@ -74,7 +78,6 @@ export function VideoCard({ video }: VideoCardProps) {
           </div>
           </div>
         </div>
-      </Link>
 
       {/* Title */}
       <div className="mt-2 space-y-1">
