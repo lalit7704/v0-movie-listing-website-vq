@@ -98,7 +98,7 @@ export default function HomePage() {
           className="block w-full rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-[1.01] transition-all duration-300"
         >
           <img 
-            src="https://cdn.shopify.com/s/files/1/0649/9945/6854/files/ChatGPT_Image_May_22_2026_09_33_19_PM.png?v=1779465917" 
+            src="https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Gemini_Generated_Image_b2z1axb2z1axb2z1_1.png?v=1779466927" 
             alt="Download FlixFox App" 
             className="w-full h-auto object-cover"
             loading="lazy"
