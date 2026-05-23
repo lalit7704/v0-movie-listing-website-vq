@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Play, Star, Clock } from "lucide-react";
@@ -13,8 +14,13 @@ interface VideoCardProps {
 }
 
 export function VideoCard({ video }: VideoCardProps) {
+  const [isMounted, setIsMounted] = useState(false);
   const slug = video.slug || generateSlug(video.title);
   const videoUrl = `/movie/${slug}`;
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <div className="group relative flex-shrink-0 w-[160px] sm:w-[180px] md:w-[200px]">
@@ -65,6 +71,7 @@ export function VideoCard({ video }: VideoCardProps) {
               <span>{video.year}</span>
             </div>
           <div className="mt-1 flex items-center text-[10px] text-gray-300 font-medium pointer-events-auto">
+          {isMounted && (
             <CommentCount
               shortname="onemovie-2"
               config={{
@@ -75,6 +82,7 @@ export function VideoCard({ video }: VideoCardProps) {
             >
               0 Comments
             </CommentCount>
+          )}
           </div>
           </div>
         </div>
