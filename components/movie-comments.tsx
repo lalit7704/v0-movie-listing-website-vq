@@ -22,10 +22,10 @@ export function MovieComments({ slug, title }: MovieCommentsProps) {
   }, []);
 
   return (
-    <div className="mt-10 bg-card p-4 sm:p-6 rounded-xl border border-border w-full mx-auto" style={{colorScheme: 'dark'}}>
-      <h3 className="text-xl font-bold text-foreground mb-4">Leave a Comment</h3>
+    <div className="mt-10 p-4 sm:p-6 rounded-xl border w-full mx-auto" style={{ backgroundColor: "rgb(15, 15, 15)", borderColor: "rgb(38, 38, 38)", colorScheme: 'dark' }}>
+      <h3 className="text-xl font-bold mb-4" style={{ color: "rgb(255, 255, 255)" }}>Leave a Comment</h3>
       {isMounted && (
-        <div style={{ backgroundColor: "rgb(20, 20, 20)" }} className="rounded-lg">
+        <div style={{ backgroundColor: "rgb(15, 15, 15)", color: "rgb(255, 255, 255)" }} className="rounded-lg">
           <DiscussionEmbed
             shortname={disqusShortname}
             config={disqusConfig}

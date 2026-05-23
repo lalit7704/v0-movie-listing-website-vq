@@ -70,7 +70,7 @@ export function VideoCard({ video }: VideoCardProps) {
               <span>•</span>
               <span>{video.year}</span>
             </div>
-          <div className="mt-1 flex items-center text-[10px] text-gray-300 font-medium pointer-events-auto">
+          <div className="mt-1 flex items-center text-[10px] font-medium pointer-events-auto" style={{ color: "rgb(209, 213, 219)" }}>
           {isMounted && (
             <CommentCount
               shortname="onemovie-2"
