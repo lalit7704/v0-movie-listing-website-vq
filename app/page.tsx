@@ -24,7 +24,7 @@ export default function HomePage() {
         {/* Flixfox Section */}
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 mt-8">
           <a 
-            href="#" 
+            href="https://filmm.me/3dRs94d1" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="block w-full rounded-xl overflow-hidden border border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md"
