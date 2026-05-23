@@ -27,14 +27,13 @@ export default function HomePage() {
             href="#" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex flex-col items-center justify-center w-full bg-card border border-border hover:border-primary rounded-xl p-4 sm:p-6 transition-all duration-300 group shadow-sm hover:shadow-md"
+            className="block w-full rounded-xl overflow-hidden border border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md"
           >
-            <h2 className="text-xl sm:text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
-              🎬 Visit Flixfox
-            </h2>
-            <p className="text-sm text-muted-foreground mt-2 text-center">
-              Explore more premium movies and web series
-            </p>
+            <img 
+              src="https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Gemini_Generated_Image_b2z1axb2z1axb2z1_1.png?v=1779466927" 
+              alt="Flixfox Banner" 
+              className="w-full h-auto max-h-[150px] sm:max-h-[200px] md:max-h-[250px] object-cover object-center"
+            />
           </a>
         </div>
 
