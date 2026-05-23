@@ -32,7 +32,7 @@ export default function HomePage() {
             <img 
               src="https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Gemini_Generated_Image_b2z1axb2z1axb2z1_1.png?v=1779466927" 
               alt="Flixfox Banner" 
-              className="w-full h-auto max-h-[150px] sm:max-h-[200px] md:max-h-[250px] object-cover object-center"
+              className="w-full h-[400px] md:h-[400px] object-cover object-center"
             />
           </a>
         </div>
