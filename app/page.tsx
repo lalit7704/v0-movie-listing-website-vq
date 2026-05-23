@@ -1,24 +1,39 @@
-import { Metadata } from "next";
-import { CollectionPage } from "@/components/collection-page";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { HeroSlider } from "@/components/hero-slider";
+import { SectionSlider } from "@/components/section-slider";
 import { videos } from "@/data/videos";
+import Adsense from "@/components/Adsense";
 
-export const metadata: Metadata = {
-  title: "Shree Krishna | Onemovie",
-  description: "Watch Shree Krishna episodes and movies online in HD quality.",
-};
-
-export default function ShreeKrishnaPage() {
-  const shreeKrishnaVideos = videos.filter(
-    (v) =>
-      v.genre.includes("Shree Krishna") || v.category === "Shree Krishna"
-  );
+export default function HomePage() {
+  // Get different categories for sliders
+  const heroVideos = videos.slice(0, 5);
+  const trendingVideos = videos.slice(0, 12);
+  const newReleases = [...videos].sort((a, b) => b.year - a.year).slice(0, 12);
+  const bollywoodVideos = videos.filter(v => v.category === "Bollywood" || v.genre.includes("Bollywood")).slice(0, 12);
+  const hollywoodVideos = videos.filter(v => v.category === "Hollywood" || v.genre.includes("Hollywood")).slice(0, 12);
 
   return (
-    <CollectionPage
-      title="Shree Krishna"
-      description="Watch Shree Krishna episodes online in HD quality."
-      videos={shreeKrishnaVideos}
-      basePath="/shree-krishna"
-    />
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      
+      <main className="pb-12">
+        {/* Hero Section */}
+        <HeroSlider videos={heroVideos} />
+
+        {/* Main Content Sections */}
+        <div className="pt-8 space-y-4">
+          <SectionSlider title="Trending Now" videos={trendingVideos} />
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 my-6">
+            <Adsense />
+          </div>
+          <SectionSlider title="New Releases" videos={newReleases} />
+          <SectionSlider title="Bollywood Hits" videos={bollywoodVideos} />
+          <SectionSlider title="Hollywood Blockbusters" videos={hollywoodVideos} />
+        </div>
+      </main>
+
+      <Footer />
+    </div>
   );
 }
