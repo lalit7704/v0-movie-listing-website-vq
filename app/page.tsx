@@ -21,6 +21,23 @@ export default function HomePage() {
         {/* Hero Section */}
         <HeroSlider videos={heroVideos} />
 
+        {/* Flixfox Section */}
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+          <a 
+            href="#" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex flex-col items-center justify-center w-full bg-card border border-border hover:border-primary rounded-xl p-4 sm:p-6 transition-all duration-300 group shadow-sm hover:shadow-md"
+          >
+            <h2 className="text-xl sm:text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
+              🎬 Visit Flixfox
+            </h2>
+            <p className="text-sm text-muted-foreground mt-2 text-center">
+              Explore more premium movies and web series
+            </p>
+          </a>
+        </div>
+
         {/* Main Content Sections */}
         <div className="pt-8 space-y-4">
           <SectionSlider title="Trending Now" videos={trendingVideos} />
