@@ -21,28 +21,9 @@ export default function HomePage() {
         {/* Hero Section */}
         <HeroSlider videos={heroVideos} />
 
-        {/* Flixfox Section */}
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-          <a 
-            href="https://filmm.me/3dRs94d1" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="block w-full rounded-xl overflow-hidden border border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md"
-          >
-            <img 
-              src="https://cdn.shopify.com/s/files/1/0649/9945/6854/files/Gemini_Generated_Image_b2z1axb2z1axb2z1_1.png?v=1779466927" 
-              alt="Flixfox Banner" 
-              className="w-full h-[400px] md:h-[400px] object-cover object-center"
-            />
-          </a>
-        </div>
-
         {/* Main Content Sections */}
         <div className="pt-8 space-y-4">
           <SectionSlider title="Trending Now" videos={trendingVideos} />
-          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 my-6">
-            <Adsense />
-          </div>
           <SectionSlider title="New Releases" videos={newReleases} />
           <SectionSlider title="Bollywood Hits" videos={bollywoodVideos} />
           <SectionSlider title="Hollywood Blockbusters" videos={hollywoodVideos} />
