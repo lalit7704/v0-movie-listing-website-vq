@@ -30,25 +30,7 @@ export default function HomePage() {
         {/* Hero Section */}
         <HeroSlider videos={heroVideos} />
 
-        {/* Category Navigation */}
-        <nav
-          aria-label="Movie categories"
-          className="border-y border-border bg-background"
-        >
-          <div className="max-w-[1400px] mx-auto overflow-x-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex min-w-max items-center gap-8 py-4">
-              {categoryLinks.map((category) => (
-                <Link
-                  key={category.href}
-                  href={category.href}
-                  className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  {category.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </nav>
+      
 
         {/* Main Content Sections */}
         <div className="pt-8 space-y-4">
