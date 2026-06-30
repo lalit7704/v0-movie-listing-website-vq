@@ -555,7 +555,7 @@ export const bollywoodVideos: Video[] = [
   "genre": ["Action", "Comedy", "Family", "Sci-Fi"],
   "language": "Hindi",
   "quality": "HD"
-}
+},
 {
   "id": "2039",
   "title": "Main Vaapas Aaunga",
