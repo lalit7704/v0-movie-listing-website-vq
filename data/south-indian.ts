@@ -1,3 +1,5 @@
+import { dummySouthIndianVideos } from "./latest-dummy-releases";
+
 export interface Video {
   id: string;
   title: string;
@@ -35,7 +37,8 @@ function generateSlug(title: string): string {
 /* ---------------- SOUTH INDIAN DATA ---------------- */
 
 export const southindianVideos: Video[] = [
-{
+  ...dummySouthIndianVideos,
+ {
   "id": "5001",
   "title": "Robinhood - South Indian Action Drama Movie | Full Movie HD",
   "slug": "robinhood-south-indian-action-drama-movie-full-movie-hd",

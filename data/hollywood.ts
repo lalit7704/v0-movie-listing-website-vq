@@ -1,3 +1,5 @@
+import { dummyHollywoodVideos } from "./latest-dummy-releases";
+
 export interface Video {
   id: string;
   title: string;
@@ -35,6 +37,7 @@ function generateSlug(title: string): string {
 /* ---------------- HOLLYWOOD DATA ---------------- */
 
 export const hollywoodVideos: Video[] = [
+  ...dummyHollywoodVideos,
   {
     id: "6001",
     title: "Furiosa: A Mad Max Saga (2024)",
