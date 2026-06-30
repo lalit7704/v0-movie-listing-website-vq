@@ -1,5 +1,3 @@
-import { dummyHollywoodVideos } from "./latest-dummy-releases";
-
 export interface Video {
   id: string;
   title: string;
@@ -37,7 +35,70 @@ function generateSlug(title: string): string {
 /* ---------------- HOLLYWOOD DATA ---------------- */
 
 export const hollywoodVideos: Video[] = [
-  ...dummyHollywoodVideos,
+  {
+    id: "9006",
+    title: "The Yeti (2026) Hindi Dubbed",
+    slug: "the-yeti-2026-hindi-dubbed",
+    videoUrl: "https://example.com/video-coming-soon",
+    downloadUrl: "https://example.com/download-coming-soon",
+    poster: "/placeholder.jpg",
+    description: "The Yeti is a survival-horror adventure set in a remote frozen landscape. When an expedition encounters evidence of a legendary creature, its members must battle extreme weather, fear and an enemy they cannot fully understand.",
+    category: "Hollywood",
+    year: 2026,
+    duration: "1h 29m",
+    rating: 7.1,
+    genre: ["Adventure", "Horror", "Thriller"],
+    language: "Hindi",
+    quality: "HD"
+  },
+  {
+    id: "9008",
+    title: "Supergirl (2026) Hindi Dubbed",
+    slug: "supergirl-2026-hindi-dubbed",
+    videoUrl: "https://example.com/video-coming-soon",
+    downloadUrl: "https://example.com/download-coming-soon",
+    poster: "/placeholder.jpg",
+    description: "Supergirl is a superhero adventure centred on a powerful young Kryptonian searching for purpose beyond her famous family legacy. Her journey across dangerous worlds brings new allies, formidable enemies and difficult questions about justice.",
+    category: "Hollywood",
+    year: 2026,
+    duration: "1h 41m",
+    rating: 7.3,
+    genre: ["Action", "Adventure", "Sci-Fi"],
+    language: "Hindi",
+    quality: "HD"
+  },
+  {
+    id: "9013",
+    title: "The Sheep Detectives (2026) Hindi Dubbed",
+    slug: "the-sheep-detectives-2026-hindi-dubbed",
+    videoUrl: "https://example.com/video-coming-soon",
+    downloadUrl: "https://example.com/download-coming-soon",
+    poster: "/placeholder.jpg",
+    description: "The Sheep Detectives is a comic mystery in which an unusually observant flock attempts to solve a puzzling crime. Their unconventional investigation turns countryside life into a playful detective adventure filled with clues and surprises.",
+    category: "Hollywood",
+    year: 2026,
+    duration: "1h 55m",
+    rating: 7.6,
+    genre: ["Comedy", "Family", "Mystery"],
+    language: "Hindi",
+    quality: "HD"
+  },
+  {
+    id: "9015",
+    title: "Masters of the Universe (2026) Hindi Dubbed",
+    slug: "masters-of-the-universe-2026-hindi-dubbed",
+    videoUrl: "https://example.com/video-coming-soon",
+    downloadUrl: "https://example.com/download-coming-soon",
+    poster: "/placeholder.jpg",
+    description: "Masters of the Universe is a fantasy action adventure about a heroic warrior returning to defend Eternia from a ruthless enemy. Ancient power, advanced technology and legendary characters collide in a battle for the future of the realm.",
+    category: "Hollywood",
+    year: 2026,
+    duration: "2h 20m",
+    rating: 7.4,
+    genre: ["Action", "Adventure", "Fantasy"],
+    language: "Hindi",
+    quality: "HD"
+  },
   {
     id: "6001",
     title: "Furiosa: A Mad Max Saga (2024)",

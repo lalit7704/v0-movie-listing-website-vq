@@ -1,5 +1,3 @@
-import { dummyBollywoodVideos } from "./latest-dummy-releases";
-
 export interface Video {
   id: string;
   title: string;
@@ -37,7 +35,54 @@ function generateSlug(title: string): string {
 /* ---------------- BOLLYWOOD DATA ---------------- */
 
 export const bollywoodVideos: Video[] = [
- ...dummyBollywoodVideos,
+ {
+  id: "9002",
+  title: "Welcome to the Jungle (2026)",
+  slug: "welcome-to-the-jungle-2026",
+  videoUrl: "https://example.com/video-coming-soon",
+  downloadUrl: "https://example.com/download-coming-soon",
+  poster: "/placeholder.jpg",
+  description: "Welcome to the Jungle is a Hindi action-comedy built around a chaotic mission and a large ensemble of eccentric characters. Their adventure becomes a fast-moving mix of confusion, danger and comic rivalry, with colourful locations and energetic family entertainment.",
+  category: "Bollywood",
+  year: 2026,
+  duration: "2h 29m",
+  rating: 7.5,
+  genre: ["Action", "Adventure", "Comedy"],
+  language: "Hindi",
+  quality: "HD"
+ },
+ {
+  id: "9009",
+  title: "Carry On Jatta 4 (2026) Punjabi",
+  slug: "carry-on-jatta-4-2026-punjabi",
+  videoUrl: "https://example.com/video-coming-soon",
+  downloadUrl: "https://example.com/download-coming-soon",
+  poster: "/placeholder.jpg",
+  description: "Carry On Jatta 4 continues the Punjabi comedy franchise with another chain of misunderstandings, hidden identities and family chaos. A simple plan becomes an uncontrollable mess as every character tries to protect a different secret.",
+  category: "Bollywood",
+  year: 2026,
+  duration: "TBA",
+  rating: 7.2,
+  genre: ["Comedy", "Drama", "Family"],
+  language: "Punjabi",
+  quality: "HD"
+ },
+ {
+  id: "9014",
+  title: "Cocktail 2 (2026)",
+  slug: "cocktail-2-2026",
+  videoUrl: "https://example.com/video-coming-soon",
+  downloadUrl: "https://example.com/download-coming-soon",
+  poster: "/placeholder.jpg",
+  description: "Cocktail 2 is a modern relationship drama about friendship, attraction and the emotional confusion created when boundaries begin to change. Set against a stylish urban backdrop, it explores love, independence and difficult choices.",
+  category: "Bollywood",
+  year: 2026,
+  duration: "2h 22m",
+  rating: 6.8,
+  genre: ["Comedy", "Drama", "Romance"],
+  language: "Hindi",
+  quality: "HD"
+ },
  {
   "id": "2001",
   "title": "Bhooth Bangla Horror Comedy Movie",

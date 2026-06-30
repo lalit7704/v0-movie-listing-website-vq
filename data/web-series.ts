@@ -1,5 +1,3 @@
-import { dummyWebSeriesVideos } from "./latest-dummy-releases";
-
 export interface Video {
   id: string;
   title: string;
@@ -37,7 +35,54 @@ function generateSlug(title: string): string {
 /* ---------------- WEB SERIES DATA ---------------- */
 
 export const webSeriesVideos: Video[] = [
-  ...dummyWebSeriesVideos,
+  {
+    id: "9003",
+    title: "House of the Dragon (2026) Season 3 Episode 2 Hindi Dubbed",
+    slug: "house-of-the-dragon-season-3-episode-2-hindi-dubbed",
+    videoUrl: "https://example.com/video-coming-soon",
+    downloadUrl: "https://example.com/download-coming-soon",
+    poster: "/placeholder.jpg",
+    description: "House of the Dragon continues the Targaryen civil war as rival factions fight for the Iron Throne. Season 3 Episode 2 deepens the political divisions while dragons, armies and old loyalties push the realm closer to destruction.",
+    category: "Web Series",
+    year: 2026,
+    duration: "1h",
+    rating: 8.3,
+    genre: ["Action", "Drama", "Fantasy"],
+    language: "Hindi",
+    quality: "HD"
+  },
+  {
+    id: "9005",
+    title: "From (2026) Season 4 Episode 10 Hindi Dubbed",
+    slug: "from-2026-season-4-episode-10-hindi-dubbed",
+    videoUrl: "https://example.com/video-coming-soon",
+    downloadUrl: "https://example.com/download-coming-soon",
+    poster: "/placeholder.jpg",
+    description: "From follows the trapped residents of a mysterious town that refuses to let anyone leave. In Season 4 Episode 10, survival depends on uncovering the forces behind the town while terrifying creatures close in after dark.",
+    category: "Web Series",
+    year: 2026,
+    duration: "55m",
+    rating: 7.8,
+    genre: ["Drama", "Horror", "Mystery"],
+    language: "Hindi",
+    quality: "HD"
+  },
+  {
+    id: "9007",
+    title: "24: India (2026) Season 2 Episode 17",
+    slug: "24-india-2026-season-2-episode-17",
+    videoUrl: "https://example.com/video-coming-soon",
+    downloadUrl: "https://example.com/download-coming-soon",
+    poster: "/placeholder.jpg",
+    description: "24: India unfolds in real time as an anti-terrorism officer races to prevent a national crisis. Season 2 Episode 17 raises the pressure with shifting alliances, urgent intelligence and a threat that leaves no room for error.",
+    category: "Web Series",
+    year: 2026,
+    duration: "45m",
+    rating: 7.4,
+    genre: ["Action", "Crime", "Thriller"],
+    language: "Hindi",
+    quality: "HD"
+  },
   {    "id": "8001",
     "title": "Game of Thrones Season 1 - Fantasy Drama Series | Full Episodes HD",
     "slug": generateSlug(

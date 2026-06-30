@@ -1,5 +1,3 @@
-import { dummySouthIndianVideos } from "./latest-dummy-releases";
-
 export interface Video {
   id: string;
   title: string;
@@ -37,7 +35,86 @@ function generateSlug(title: string): string {
 /* ---------------- SOUTH INDIAN DATA ---------------- */
 
 export const southindianVideos: Video[] = [
-  ...dummySouthIndianVideos,
+ {
+  id: "9001",
+  title: "KD: The Devil (2026) Hindi Dubbed",
+  slug: "kd-the-devil-2026-hindi-dubbed",
+  videoUrl: "https://example.com/video-coming-soon",
+  downloadUrl: "https://example.com/download-coming-soon",
+  poster: "/placeholder.jpg",
+  description: "KD: The Devil is a period action drama set in the turbulent underworld of 1970s Bengaluru. The story follows a fearless young man whose choices pull him into a dangerous conflict involving power, loyalty and revenge.",
+  category: "South Indian",
+  year: 2026,
+  duration: "TBA",
+  rating: 7.5,
+  genre: ["Action", "Crime", "Drama"],
+  language: "Hindi",
+  quality: "HD"
+ },
+ {
+  id: "9004",
+  title: "Navya Chakra Psycon World (2026)",
+  slug: "navya-chakra-psycon-world-2026",
+  videoUrl: "https://example.com/video-coming-soon",
+  downloadUrl: "https://example.com/download-coming-soon",
+  poster: "/placeholder.jpg",
+  description: "Navya Chakra Psycon World is a mystery-driven science-fiction thriller in which reality and the human mind begin to overlap. A hidden experiment draws its characters into a dangerous world of secrets, altered memories and unexpected enemies.",
+  category: "South Indian",
+  year: 2026,
+  duration: "1h 40m",
+  rating: 7.2,
+  genre: ["Mystery", "Sci-Fi", "Thriller"],
+  language: "Hindi",
+  quality: "HD"
+ },
+ {
+  id: "9010",
+  title: "Ini Utharam (2022) Hindi Dubbed",
+  slug: "ini-utharam-2022-hindi-dubbed",
+  videoUrl: "https://example.com/video-coming-soon",
+  downloadUrl: "https://example.com/download-coming-soon",
+  poster: "/placeholder.jpg",
+  description: "Ini Utharam is a Malayalam crime thriller about a woman who walks into a police station and confesses to a murder. Her statement leads investigators toward a remote location where every discovery raises a new question.",
+  category: "South Indian",
+  year: 2022,
+  duration: "2h 6m",
+  rating: 6.4,
+  genre: ["Crime", "Drama", "Thriller"],
+  language: "Hindi",
+  quality: "HD"
+ },
+ {
+  id: "9011",
+  title: "Blast (2026) Hindi Dubbed",
+  slug: "blast-2026-hindi-dubbed",
+  videoUrl: "https://example.com/video-coming-soon",
+  downloadUrl: "https://example.com/download-coming-soon",
+  poster: "/placeholder.jpg",
+  description: "Blast is an action thriller driven by a devastating incident that exposes a much larger conspiracy. A determined protagonist follows a trail of betrayal and corruption while powerful enemies attempt to erase the truth.",
+  category: "South Indian",
+  year: 2026,
+  duration: "2h 22m",
+  rating: 7.8,
+  genre: ["Action", "Drama", "Thriller"],
+  language: "Hindi",
+  quality: "HD"
+ },
+ {
+  id: "9012",
+  title: "Junior (2025) Hindi Dubbed",
+  slug: "junior-2025-hindi-dubbed",
+  videoUrl: "https://example.com/video-coming-soon",
+  downloadUrl: "https://example.com/download-coming-soon",
+  poster: "/placeholder.jpg",
+  description: "Junior is a youthful action-drama about ambition, family expectations and the choices that define adulthood. When the central character is pushed into a conflict larger than himself, courage and loyalty become his strongest weapons.",
+  category: "South Indian",
+  year: 2025,
+  duration: "2h 32m",
+  rating: 6.7,
+  genre: ["Action", "Drama", "Romance"],
+  language: "Hindi",
+  quality: "HD"
+ },
  {
   "id": "5001",
   "title": "Robinhood - South Indian Action Drama Movie | Full Movie HD",
