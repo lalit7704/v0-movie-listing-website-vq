@@ -93,6 +93,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="google-adsense-account" content="ca-pub-5319727568049071"></meta>
         {/* JSON-LD Structured Data */}
+        <link rel="manifest" href="/manifest.json" />
+<meta name="theme-color" content="#000000" />
         <Script
           id="organization-schema"
           type="application/ld+json"
@@ -112,6 +114,17 @@ export default function RootLayout({
         {children}
         <Analytics />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319727568049071" crossOrigin="anonymous"></script>
+      <script
+  dangerouslySetInnerHTML={{
+    __html: `
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    `,
+  }}
+/>
       </body>
     </html>
   )
