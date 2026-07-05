@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, Film } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SearchBar } from "@/components/search-bar";
 
@@ -72,6 +72,15 @@ export function Navbar() {
                     {link.label}
                   </Link>
                 ))}
+                <div className="mx-3 my-2 border-t border-border" />
+                <a
+                  href="/OneMovie.apk"
+                  download="OneMovie.apk"
+                  className="mx-2 flex items-center gap-2 rounded-md bg-primary px-3 py-2 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+                >
+                  <Download className="h-4 w-4" aria-hidden="true" />
+                  Download App
+                </a>
               </div>
             </div>
           </div>
@@ -153,6 +162,15 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
+              <a
+                href="/OneMovie.apk"
+                download="OneMovie.apk"
+                onClick={() => setIsMenuOpen(false)}
+                className="mt-2 flex items-center justify-center gap-2 rounded-md bg-primary px-3 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+              >
+                <Download className="h-5 w-5" aria-hidden="true" />
+                Download App
+              </a>
             </div>
           </div>
         )}
