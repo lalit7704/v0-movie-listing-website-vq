@@ -783,7 +783,8 @@ export const bollywoodVideos: Video[] = [
   "genre": ["Action", "Thriller"],
   "language": "Hindi",
   "quality": "HD",
-  "cast": ["Alia Bhatt"]
+  "cast": ["Alia Bhatt"],
+  "featured": "true"
 }
 ,
 {

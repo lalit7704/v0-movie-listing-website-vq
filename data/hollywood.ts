@@ -244,8 +244,8 @@ export const hollywoodVideos: Video[] = [
   "rating": 0,
   "genre": ["Horror", "Thriller"],
   "language": "Hindi",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
+ 
 }
 ,
 {

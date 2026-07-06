@@ -3,7 +3,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { HeroSlider } from "@/components/hero-slider";
 import { SectionSlider } from "@/components/section-slider";
-import { videos } from "@/data/videos";
+import { videos, getFeaturedVideos } from "@/data/videos";
 import Adsense from "@/components/Adsense";
 
 const categoryLinks = [
@@ -16,7 +16,7 @@ const categoryLinks = [
 
 export default function HomePage() {
   // Get different categories for sliders
-  const heroVideos = videos.slice(0, 5);
+  const heroVideos = getFeaturedVideos();
   const trendingVideos = videos.slice(0, 12);
   const newReleases = [...videos].sort((a, b) => b.year - a.year).slice(0, 12);
   const bollywoodVideos = videos.filter(v => v.category === "Bollywood" || v.genre.includes("Bollywood")).slice(0, 12);
