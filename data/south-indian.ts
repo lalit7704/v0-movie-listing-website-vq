@@ -421,6 +421,23 @@ export const southindianVideos: Video[] = [
   "language": "Malayalam",
   "quality": "HD"
 }
+,
+{
+  "id": "5024",
+  "title": "Drushya Adrushya (2022) - Thriller Movie",
+  "slug": generateSlug("Drushya Adrushya (2022) - Thriller Movie"),
+  "videoUrl": "https://youtu.be/placeholder_drushya",
+  "downloadUrl": "https://t.me/onemoviedownloa/165",
+  "poster": "https://m.media-amazon.com/images/M/MV5BYzIyODg0YjgtMzM2NS00YjBlLTg5YjYtM2I3MGIzNDc1OWM1XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+  "description": "Drushya Adrushya (2022) एक मराठी थ्रिलर फिल्म है, जो 2010 की स्पेनिश फिल्म 'Los ojos de Julia' (जूलिया की आंखें) का रीमेक है। कहानी दो जुड़वां बहनों, सायली और सानिका की है। सायली, जो धीरे-धीरे अपनी आंखों की रोशनी खो रही है, रहस्यमयी परिस्थितियों में आत्महत्या कर लेती है। उसकी बहन सानिका को यकीन है कि यह आत्महत्या नहीं, बल्कि हत्या है। सच का पता लगाने के लिए सानिका अपनी जान जोखिम में डाल देती है। जांच के दौरान उसे पता चलता है कि एक रहस्यमयी और 'अदृश्य' (Adrushya) व्यक्ति सायली का पीछा कर रहा था। जैसे-जैसे सानिका सच्चाई के करीब पहुंचती है, उसे भी अपनी आंखों की रोशनी खोने का खतरा महसूस होने लगता है। यह फिल्म सस्पेंस और रहस्य से भरी है, जो दर्शकों को अंत तक बांधे रखती है।",
+  "category": "South Indian",
+  "year": 2022,
+  "duration": "2h 21m",
+  "rating": 6.5,
+  "genre": ["Thriller", "Mystery"],
+  "language": "Marathi",
+  "quality": "HD"
+}
 ];
 
 /* ---------------- HELPERS ---------------- */
