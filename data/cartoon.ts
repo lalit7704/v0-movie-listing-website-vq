@@ -155,4 +155,21 @@ export const cartoonVideos: Video[] = [
     language: "English",
     quality: "HD"
   }
+,
+  {
+    "id": "9010",
+    "title": "Toy Story 5 (2026) - Animated Family Adventure",
+    "slug": generateSlug("Toy Story 5 (2026) - Animated Family Adventure"),
+    "videoUrl": "https://youtu.be/c51ND9Hdbw0",
+    "downloadUrl": "https://t.me/onemoviedownloa/193",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTI1YTBiNmEtYWUxZi00YzFkLWIzNjMtMmZjMmY2NzM0ZWMzXkEyXkFqcGc@._V1_FMjpg_UX1086_.jpg",
+    "description": "Toy Story 5 (2026) पिक्सर की सबसे प्रिय और प्रतिष्ठित एनिमेटेड फ्रेंचाइजी की एक और दिल छू लेने वाली और मजेदार वापसी है। इस बार, वुडी, बज़ लाइटइयर और उनके सभी खिलौने दोस्त एक नई और आधुनिक चुनौती का सामना कर रहे हैं। उनके बच्चे अब बड़े हो रहे हैं और उनका ध्यान पारंपरिक खिलौनों से हटकर वीडियो गेम्स, टैबलेट्स और स्मार्ट डिवाइसेस की ओर जा रहा है। जब घर में 'लिलीप্যাড' (Lilypad) नाम का एक नया, हाई-टेक और आकर्षक स्मार्ट टैबलेट आता है, तो पुराने खिलौनों को यह डर सताने लगता है कि कहीं वे हमेशा के लिए भुला न दिए जाएं। अपनी प्रासंगिकता (relevance) बनाए रखने और अपने बच्चे के प्यार को वापस पाने के लिए, वुडी और बज़ एक साहसिक योजना बनाते हैं। वे डिजिटल दुनिया में प्रवेश करने और यह साबित करने का फैसला करते हैं कि असली मज़ा स्क्रीन पर नहीं, बल्कि कल्पना और दोस्ती में है। 'Toy Story 5' एक बार फिर से दोस्ती, वफादारी और बदलते समय के साथ खुद को ढालने की एक खूबसूरत कहानी है।",
+    "category": "Cartoon",
+    "year": 2026,
+    "duration": "1h 42m",
+    "rating": 9.3,
+    "genre": ["Animation", "Adventure", "Comedy", "Family"],
+    "language": "English",
+    "quality": "HD"
+  }
 ];
