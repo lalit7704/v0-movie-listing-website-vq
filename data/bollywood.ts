@@ -785,6 +785,23 @@ export const bollywoodVideos: Video[] = [
   "quality": "HD",
   "cast": ["Alia Bhatt"]
 }
+,
+{
+  "id": "2050",
+  "title": "Baby Do Die Do (2026) - Bollywood Horror Comedy",
+  "slug": generateSlug("Baby Do Die Do (2026) - Bollywood Horror Comedy"),
+  "videoUrl": "https://youtu.be/2rQCZKoaEhc",
+  "downloadUrl": "https://t.me/onemoviedownloa/208",
+  "poster": "https://m.media-amazon.com/images/M/MV5BNjQwMDg0NzctMTA4Zi00YzJhLTlmYTQtYmQ2MDI3YTM5NTg0XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+  "description": "Baby Do Die Do (2026) एक अनोखी और गुदगुदाने वाली बॉलीवुड हॉरर-कॉमेडी फिल्म है। कहानी एक युवा जोड़े के इर्द-गिर्द घूमती है जो अपने पहले बच्चे की उम्मीद कर रहे हैं। वे एक नई और पुरानी हवेली में शिफ्ट होते हैं, लेकिन जल्द ही उन्हें पता चलता है कि उस घर में एक बच्चे के भूत का साया है। यह भूत कोई डरावना भूत नहीं, बल्कि एक शरारती और मजाकिया बच्चा है जो उन्हें लगातार परेशान करता है और उनकी जिंदगी में हास्यपूर्ण मुसीबतें खड़ी करता है। फिल्म का शीर्षक 'बेबी डू, डाई डू' बच्चे की तुतलाती आवाज और उसके भूत होने पर एक मजेदार खेल है। यह फिल्म डर और हंसी का एक बेहतरीन कॉकटेल है, जो यह दिखाती है कि कभी-कभी सबसे प्यारे भूत भी सबसे बड़ी सिरदर्दी बन सकते हैं।",
+  "category": "Bollywood",
+  "year": 2026,
+  "duration": "2h 15m",
+  "rating": 7.5,
+  "genre": ["Comedy", "Horror"],
+  "language": "Hindi",
+  "quality": "HD"
+}
 ];
 
 /* ---------------- HELPERS ---------------- */
