@@ -345,9 +345,8 @@ export const hollywoodVideos: Video[] = [
     "genre": ["Action", "Comedy", "Crime"],
     "language": "English",
     "quality": "HD"
-  }
-,
-{
+  },
+  {
     "id": "6017",
     "title": "Little Brother (2025) - Action Thriller",
     "slug": generateSlug("Little Brother (2025) - Action Thriller"),
@@ -427,8 +426,7 @@ export const hollywoodVideos: Video[] = [
     "language": "English",
     "quality": "HD"
   },
-,
-{
+  {
     "id": "6024",
     "title": "The Death of Robin Hood (2026) - Dark Fantasy Movie",
     "slug": generateSlug("The Death of Robin Hood (2026) - Dark Fantasy Movie"),
