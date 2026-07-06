@@ -412,22 +412,6 @@ export const hollywoodVideos: Video[] = [
     "quality": "HD"
   },
   {
-    "id": "6021",
-    "title": "Alpha (2018) - Prehistoric Adventure",
-    "slug": generateSlug("Alpha (2018) - Prehistoric Adventure"),
-    "videoUrl": "https://youtu.be/uIxnTi4id_i",
-    "downloadUrl": "https://t.me/onemoviedownloa/172",
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTk0MDUyMzA2OF5BMl5BanBnXkFtZTgwMjY0MjYxNjM@._V1_FMjpg_UX1000_.jpg",
-    "description": "Alpha (2018) एक विजुअली शानदार और भावनात्मक प्रागैतिहासिक (Prehistoric) एडवेंचर फिल्म है, जो 20,000 साल पहले अंतिम हिमयुग (Ice Age) के दौरान सेट है। कहानी केडा नाम के एक युवा लड़के की है, जो अपने कबीले के साथ अपनी पहली बाइसन (bison) की शिकार यात्रा पर निकलता है। एक भयानक दुर्घटना में, केडा एक चट्टान से गिर जाता है और उसके कबीले वाले उसे मरा हुआ मानकर वहीं छोड़ जाते हैं। अकेला और घायल, केडा को उस कठोर और जानलेवा जंगल में जीवित रहने के लिए संघर्ष करना पड़ता है। इस दौरान, उस पर भेड़ियों का एक झुंड हमला करता है और वह एक भेड़िये को घायल कर देता है। लेकिन उसे मारने के बजाय, केडा उस पर दया करता है और उसकी देखभाल करता है। धीरे-धीरे, इंसान और भेड़िये के बीच एक अटूट और अविश्वसनीय दोस्ती का रिश्ता बन जाता है। यह फिल्म इंसान और कुत्ते के बीच की दोस्ती की पहली कहानी को बहुत ही खूबसूरती से दर्शाती है।",
-    "category": "Hollywood",
-    "year": 2018,
-    "duration": "1h 36m",
-    "rating": 6.6,
-    "genre": ["Adventure", "Drama", "Family"],
-    "language": "Fictional",
-    "quality": "HD"
-  },
-  {
     "id": "6022",
     "title": "Citizen Vigilante (2026) - Action Thriller",
     "slug": generateSlug("Citizen Vigilante (2026) - Action Thriller"),
@@ -443,22 +427,6 @@ export const hollywoodVideos: Video[] = [
     "language": "English",
     "quality": "HD"
   },
-  {
-    "id": "6023",
-    "title": "Toaster (2026) - Black Comedy Thriller",
-    "slug": generateSlug("Toaster (2026) - Black Comedy Thriller"),
-    "videoUrl": "https://youtu.be/placeholder_toaster",
-    "downloadUrl": "https://t.me/onemoviedownloa/164",
-    "poster": "https://m.media-amazon.com/images/M/MV5BNjU0Y2E1YjctM2I5MS00ZGI3LTg4NzQtZGNkMDIzZGE3YmYxXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
-    "description": "Toaster (2026) एक डार्क और ट्विस्ट से भरी ब्लैक-कॉमेडी थ्रिलर है। कहानी रामाकांत नाम के एक बेहद कंजूस आदमी की है, जो एक शादी में तोहफे के तौर पर एक महंगा टोस्टर देता है। लेकिन जब शादी सिर्फ एक दिन में टूट जाती है, तो रामाकांत उस टोस्टर को वापस पाने के लिए जुनूनी हो जाता है। टोस्टर को वापस पाने की उसकी यह छोटी सी कोशिश उसे अनजाने में हत्या, ब्लैकमेल और अपराध की एक ऐसी खतरनाक दुनिया में धकेल देती है जिसकी उसने कभी कल्पना भी नहीं की थी। जल्द ही उसे पता चलता है कि उस साधारण से दिखने वाले टोस्टर के अंदर एक बहुत बड़ा और खतरनाक राज छिपा है, जिसके पीछे पुलिस और अपराधी दोनों पड़े हैं। यह फिल्म दिखाती है कि कैसे एक छोटी सी कंजूसी किसी की जिंदगी में एक बड़ा भूचाल ला सकती है।",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "2h 5m",
-    "rating": 7.2,
-    "genre": ["Comedy", "Thriller", "Mystery"],
-    "language": "Hindi",
-    "quality": "HD"
-  }
 ,
 {
     "id": "6024",
