@@ -459,6 +459,39 @@ export const hollywoodVideos: Video[] = [
     "language": "Hindi",
     "quality": "HD"
   }
+,
+{
+    "id": "6024",
+    "title": "The Death of Robin Hood (2026) - Dark Fantasy Movie",
+    "slug": generateSlug("The Death of Robin Hood (2026) - Dark Fantasy Movie"),
+    "videoUrl": "https://youtu.be/placeholder_robinhood",
+    "downloadUrl": "https://t.me/onemoviedownloa/197",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTg5NzYxNjAtNTY5OC00ZGYzLWEzZjQtM2RiNGM4YjMyNGY3XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+    "description": "The Death of Robin Hood (2026) रॉबिन हुड की क्लासिक कहानी का एक बेहद ही डार्क, ग्रिट्टी और मनोवैज्ञानिक री-इमेजिनिंग है। यह फिल्म उस रॉबिन हुड को नहीं दिखाती जो अमीरों से लूटकर गरीबों में बांटता है, बल्कि यह एक ऐसे टूटे हुए और बूढ़े हो चुके योद्धा की कहानी है जो अपने अतीत के पापों और हिंसक जीवन से जूझ रहा है। रॉबिन हुड (ह्यू जैकमैन) अब एक अकेला और घायल व्यक्ति है, जो अपने गिरोह के बिखर जाने के बाद एकांत में जी रहा है। एक लड़ाई में बुरी तरह घायल होने के बाद, वह एक रहस्यमयी महिला (जोडी कॉमर) की देखरेख में आता है, जो उसे ठीक करने की कोशिश करती है। लेकिन जैसे-जैसे रॉबिन हुड ठीक होता है, उसे अपने अतीत के खूनी साये और उसके द्वारा की गई हत्याएं परेशान करने लगती हैं। यह फिल्म एक एक्शन-एडवेंचर से ज्यादा एक कैरेक्टर-ड्रिवन ड्रामा है, जो यह सवाल पूछती है कि क्या एक हिंसक अतीत वाला व्यक्ति कभी शांति पा सकता है।",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "2h 10m",
+    "rating": 8.2,
+    "genre": ["Action", "Drama", "Fantasy"],
+    "language": "English",
+    "quality": "HD"
+  },
+  {
+    "id": "6025",
+    "title": "The Last Breath (2024) - Survival Thriller Movie",
+    "slug": generateSlug("The Last Breath (2024) - Survival Thriller Movie"),
+    "videoUrl": "https://youtu.be/placeholder_lastbreath",
+    "downloadUrl": "https://t.me/onemoviedownloa/198",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmI0N2YxNjAtNTY5OC00ZGYzLWEzZjQtM2RiNGM4YjMyNGY3XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+    "description": "The Last Breath (2024) एक बेहद ही तनावपूर्ण और क्लॉस्ट्रोफोबिक सर्वाइवल-थ्रिलर फिल्म है, जो दर्शकों को समुद्र की अंधेरी गहराइयों में ले जाती है। कहानी पांच दोस्तों के एक ग्रुप की है जो एक पुराने जहाज के मलबे (Shipwreck) का पता लगाने के लिए स्कूबा डाइविंग पर जाते हैं। लेकिन उनका यह एडवेंचर एक भयानक दुःस्वप्न में बदल जाता है जब एक भूस्खलन के कारण जहाज का मलबा उन पर गिर जाता है और वे समुद्र की सतह से 250 फीट नीचे फंस जाते हैं। उनके पास ऑक्सीजन सीमित है, और मदद का कोई रास्ता नहीं है। लेकिन असली खतरा ऑक्सीजन की कमी नहीं, बल्कि उस मलबे के आसपास घूम रही एक विशाल और भूखी 'ग्रेट व्हाइट शार्क' (Great White Shark) है। अब उन्हें न केवल समय के खिलाफ, बल्कि समुद्र के सबसे खतरनाक शिकारी के खिलाफ भी अपनी जिंदगी की जंग लड़नी है। यह फिल्म डर, हताशा और जीवित रहने की इंसानी इच्छा का एक रोंगटे खड़े कर देने वाला अनुभव है।",
+    "category": "Hollywood",
+    "year": 2024,
+    "duration": "1h 26m",
+    "rating": 4.5,
+    "genre": ["Horror", "Thriller"],
+    "language": "English",
+    "quality": "HD"
+  }
 ];
 
 /* ---------------- HELPERS ---------------- */

@@ -121,4 +121,38 @@ export const cartoonVideos: Video[] = [
     language: "Hindi",
     quality: "HD"
   }
+  ,
+  {
+    id: "9007",
+    title: "Minions & Monsters (2021) - Animated Short Film",
+    slug: generateSlug("Minions & Monsters (2021) - Animated Short Film"),
+    "videoUrl": "https://youtu.be/placeholder_minionsmonsters",
+    "downloadUrl": "https://t.me/onemoviedownloa/200",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWQ0MWVjYTItMTY2Ny00YjA3LTg5NDctM2E3MGIxMDk3N2I4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "description": "Minions & Monsters (2021) एक मजेदार और छोटी एनिमेटेड फिल्म है, जो 'मिनियंस' फ्रेंचाइजी का हिस्सा है। इस शॉर्ट फिल्म में, एक नया और अनुभवहीन मिनियन एक फैंटेसी रोल-प्लेइंग गेम (जैसे डंजन्स एंड ड्रैगन्स) में शामिल होता है। जब वह गलती से एक जादुई क्रिस्टल को छू लेता है, तो वह और उसके साथी मिनियंस सचमुच उस गेम की दुनिया में पहुंच जाते हैं और खतरनाक मॉन्स्टर्स (राक्षसों) में बदल जाते हैं। अब उन्हें यह पता लगाना है कि वे अपनी इस नई और अजीब शक्ति का उपयोग कैसे करें और वापस अपनी असली दुनिया में कैसे लौटें। यह फिल्म मिनियंस की क्लासिक शरारतों और कॉमेडी से भरपूर है।",
+    category: "Cartoon",
+    year: 2021,
+    duration: "4m",
+    rating: 6.5,
+    genre: ["Animation", "Comedy", "Short", "Family"],
+    language: "English",
+    quality: "HD"
+  }
+,
+  {
+    id: "9009",
+    title: "The Super Mario Bros. Movie 2 (2026)",
+    slug: generateSlug("The Super Mario Bros. Movie 2 (2026)"),
+    videoUrl: "https://youtu.be/GuCejewteF8",
+    downloadUrl: "https://t.me/onemoviedownloa/201",
+    poster: "https://m.media-amazon.com/images/M/MV5BNGFiMTU5N2ItY2I5Mi00MjYxLWIzYjYtZDIzYmY3ZDBiNTEyXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+    description: "The Super Mario Bros. Movie 2 (2026) इल्युमिनेशन और निन्टेंडो की ब्लॉकबस्टर एनिमेटेड फिल्म की बहुप्रतीक्षित अगली कड़ी है। पहली फिल्म के अंत में ब्रुकलिन में योशी के अंडे के दिखने के बाद, यह फिल्म मारियो और लुइगी को एक नए और रोमांचक एडवेंचर पर ले जाती है। इस बार, मशरूम किंगडम को एक और भी बड़े खतरे का सामना करना पड़ता है, और हमारे हीरो को अपने नए दोस्त योशी के साथ मिलकर इस मुसीबत से लड़ना होगा। फिल्म में और भी अधिक पावर-अप्स, नए वर्ल्ड्स और क्लासिक मारियो गेम्स के कई पसंदीदा किरदारों के आने की उम्मीद है। यह फिल्म एक्शन, कॉमेडी और पूरे परिवार के लिए एक मजेदार अनुभव होने का वादा करती है।",
+    category: "Cartoon",
+    year: 2026,
+    duration: "1h 35m",
+    rating: 8.5,
+    genre: ["Animation", "Adventure", "Comedy", "Family"],
+    language: "English",
+    quality: "HD"
+  }
 ];
