@@ -620,7 +620,8 @@ export const bollywoodVideos: Video[] = [
   "rating": 0,
   "genre": ["Drama", "Thriller"],
   "language": "Hindi",
-  "quality": "HD"
+  "quality": "HD",
+  "featured": true
 },
 {
   "id": "2040",
@@ -748,7 +749,8 @@ export const bollywoodVideos: Video[] = [
   "rating": 0,
   "genre": ["Drama", "Thriller"],
   "language": "Hindi",
-  "quality": "HD"
+  "quality": "HD",
+  "featured": true
 }
 ,
 {
@@ -766,6 +768,7 @@ export const bollywoodVideos: Video[] = [
   "genre": ["Comedy", "Thriller", "Mystery"],
   "language": "Hindi",
   "quality": "HD"
+  
 }
 ,
 {
@@ -784,7 +787,7 @@ export const bollywoodVideos: Video[] = [
   "language": "Hindi",
   "quality": "HD",
   "cast": ["Alia Bhatt"],
-  "featured": "true"
+  "featured": true
 }
 ,
 {
