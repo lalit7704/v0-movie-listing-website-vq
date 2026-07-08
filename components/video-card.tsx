@@ -1,26 +1,19 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Play, Star, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Video } from "@/data/videos";
 import { generateSlug } from "@/lib/seo-utils";
-import { CommentCount } from "disqus-react";
 
 interface VideoCardProps {
   video: Video;
 }
 
 export function VideoCard({ video }: VideoCardProps) {
-  const [isMounted, setIsMounted] = useState(false);
   const slug = video.slug || generateSlug(video.title);
   const videoUrl = `/movie/${slug}`;
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   return (
     <div className="group relative flex-shrink-0 w-[160px] sm:w-[180px] md:w-[200px]">
@@ -37,6 +30,7 @@ export function VideoCard({ video }: VideoCardProps) {
             className="object-cover transition-transform duration-300 group-hover:scale-110"
             sizes="(max-width: 640px) 160px, (max-width: 768px) 180px, 200px"
             loading="lazy"
+            quality={65}
           />
           
           {/* Overlay */}
@@ -71,18 +65,7 @@ export function VideoCard({ video }: VideoCardProps) {
               <span>{video.year}</span>
             </div>
           <div className="mt-1 flex items-center text-[10px] font-medium pointer-events-auto" style={{ color: "rgb(209, 213, 219)" }}>
-          {isMounted && (
-            <CommentCount
-              shortname="onemovie-2"
-              config={{
-                url: `https://onemovie.in/movie/${slug}`,
-                identifier: slug,
-                title: video.title,
-              }}
-            >
-              0 Comments
-            </CommentCount>
-          )}
+            <span>{video.language}</span>
           </div>
           </div>
         </div>
