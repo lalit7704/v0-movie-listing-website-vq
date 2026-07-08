@@ -64,7 +64,9 @@ export async function generateMetadata({ params }: MoviePageProps): Promise<Meta
       "streaming",
       "free movies",
     ].join(", "),
-    canonical: canonicalUrl,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     authors: video.director ? [{ name: video.director }] : undefined,
     openGraph: {
       title: video.title,

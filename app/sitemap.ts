@@ -3,7 +3,7 @@ import { videos } from '@/data/videos';
 import { generateSlug } from '@/lib/seo-utils';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://onemovie.app';
+const baseUrl = 'https://www.onemovie.in';
 
   // Homepage
   const pages: MetadataRoute.Sitemap = [
@@ -105,7 +105,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Movie/Video pages
   const moviePages = videos.map((video) => ({
     url: `${baseUrl}/movie/${generateSlug(video.title)}`,
-    lastModified: new Date(video.year, 0, 1), // Use year as lastModified
+    lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.9,
   }));
