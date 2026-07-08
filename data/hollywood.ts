@@ -441,6 +441,24 @@ export const hollywoodVideos: Video[] = [
     "genre": ["Horror", "Thriller"],
     "language": "English",
     "quality": "HD"
+  },
+  {
+    "id": "6026",
+    "title": "Backrooms (2026) - Found Footage Horror",
+    "slug": generateSlug("Backrooms (2026) - Found Footage Horror"),
+    "videoUrl": "https://youtu.be/0HjdiohVOik",
+    "downloadUrl": "https://t.me/onemoviedownloa/217",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzQyYjZmMjctMzIyZi00MDI0LWJhNGQtMzQ3MTFlNDgwNGM5XkEyXkFqcGc@._V1_FMjpg_UY3000_.jpg",
+    "description": "Backrooms (2026) एक बहुप्रतीक्षित हॉरर फिल्म है जो इंटरनेट की प्रसिद्ध 'क्रीपिपास्ता' (Creepypasta) और केन पार्सन्स की वायरल यूट्यूब वेब सीरीज पर आधारित है। फिल्म का निर्माण A24 और जेम्स वान की एटॉमिक मॉन्स्टर जैसी बड़ी कंपनियों द्वारा किया गया है। कहानी एक ऐसे व्यक्ति की है जो गलती से 'बैकरूम' नामक एक अंतहीन और भयानक वैकल्पिक आयाम में फंस जाता है। यह जगह पीले वॉलपेपर, नम कालीनों और भिनभिनाती फ्लोरोसेंट लाइटों का एक अंतहीन चक्रव्यूह है। इस खाली और भयानक जगह में वह अकेला नहीं है; कुछ अज्ञात और खतरनाक 'इकाइयां' (entities) उसका पीछा कर रही हैं। यह फिल्म एक फाउंड-फुटेज (Found Footage) शैली में प्रस्तुत की गई है, जो दर्शकों को डर और क्लॉस्ट्रोफोबिया का एक बहुत ही यथार्थवादी और रोंगटे खड़े कर देने वाला अनुभव देती है। [1, 12, 14, 16]",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 50m",
+    "rating": 7.7,
+    "genre": ["Horror", "Mystery", "Thriller"],
+    "language": "English",
+    "quality": "HD",
+    "director": "Kane Parsons",
+    "cast": ["Chiwetel Ejiofor", "Renate Reinsve", "Mark Duplass"]
   }
 ];
 

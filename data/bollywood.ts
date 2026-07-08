@@ -806,6 +806,41 @@ export const bollywoodVideos: Video[] = [
   "language": "Hindi",
   "quality": "HD"
 }
+,
+{
+  "id": "2051",
+  "title": "Kesari Chapter 2 (2025) - Historical Courtroom Drama",
+  "slug": generateSlug("Kesari Chapter 2 (2025) - Historical Courtroom Drama"),
+  "videoUrl": "https://youtu.be/r-7g08INMSI",
+  "downloadUrl": "https://t.me/onemoviedownloa/220",
+  "poster": "https://m.media-amazon.com/images/M/MV5BOTJiYTA4NDItMWNiYy00YmE3LTg4ZGItNjVlOGZlZGY4MjExXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+  "description": "Kesari Chapter 2 (2025) 2019 की सफल फिल्म 'केसरी' की एक आध्यात्मिक अगली कड़ी है। यह फिल्म एक ऐतिहासिक कोर्टरूम ड्रामा है जो भारतीय वकील और राजनेता सी. शंकरन नायर के जीवन पर आधारित है, जिन्होंने 1919 के जलियांवाला बाग हत्याकांड की सच्चाई को उजागर करने के लिए ब्रिटिश राज के खिलाफ एक ऐतिहासिक कानूनी लड़ाई लड़ी थी। फिल्म में अक्षय कुमार सी. शंकरन नायर की मुख्य भूमिका में हैं, और उनके साथ आर. माधवन और अनन्या पांडे भी महत्वपूर्ण किरदारों में हैं। यह फिल्म एक व्यक्ति के साहस और अन्याय के खिलाफ उसकी लड़ाई की एक प्रेरणादायक कहानी है। [10, 32, 34, 36, 37, 42]",
+  "category": "Bollywood",
+  "year": 2025,
+  "duration": "2h 15m",
+  "rating": 8.0,
+  "genre": ["Drama", "History"],
+  "language": "Hindi",
+  "quality": "HD",
+  "cast": ["Akshay Kumar", "R. Madhavan", "Ananya Panday"]
+},
+{
+  "id": "2052",
+  "title": "Punjab '95 (2026) - Biographical Drama | Diljit Dosanjh",
+  "slug": generateSlug("Punjab '95 (2026) - Biographical Drama | Diljit Dosanjh"),
+  "videoUrl": "https://youtu.be/eO-Dr_TF1Co",
+  "downloadUrl": "https://t.me/onemoviedownloa/218",
+  "poster": "https://m.media-amazon.com/images/M/MV5BOTk1YTdiMDItZjAzOS00Njc0LTk3YTUtYjdiMWMyNDFhM2QzXkEyXkFqcGc@._V1_FMjpg_UX1187_.jpg",
+  "description": "Punjab '95 (2026) एक अत्यंत साहसी, मार्मिक और राजनीतिक रूप से महत्वपूर्ण बायोपिक-ड्रामा फिल्म है, जो मानवाधिकार कार्यकर्ता (Human Rights Activist) जसवंत सिंह खालरा के वास्तविक जीवन और उनके अदम्य संघर्ष पर आधारित है। फिल्म में दिलजीत दोसांझ ने जसवंत सिंह खालरा की मुख्य भूमिका निभाई है। यह फिल्म 1980 और 1990 के दशक के उस काले दौर की कहानी है, जब पंजाब आतंकवाद और उग्रवाद की आग में जल रहा था। इस दौरान, जसवंत सिंह खालरा, जो अमृतसर में एक बैंक कर्मचारी थे, एक भयानक सच्चाई का पता लगाते हैं। उन्हें पता चलता है कि पंजाब पुलिस आतंकवाद को खत्म करने के नाम पर हजारों निर्दोष सिख युवकों को गैर-न्यायिक रूप से मार रही है और उनकी लाशों को 'अज्ञात' (unidentified) बताकर चुपचाप श्मशानों में जला रही है। खालरा अपनी जान जोखिम में डालकर सबूत इकट्ठा करना शुरू करते हैं और 25,000 से अधिक ऐसे अवैध दाह-संस्कारों और गायब हुए लोगों का एक रिकॉर्ड तैयार करते हैं। वे इस भयानक नरसंहार को दुनिया के सामने लाने के लिए भारत से लेकर कनाडा तक की अदालतों और मानवाधिकार संगठनों के दरवाजे खटखटाते हैं। यह फिल्म एक साधारण इंसान की उस असाधारण लड़ाई को दर्शाती है, जो एक भ्रष्ट और क्रूर सिस्टम के खिलाफ सच और न्याय के लिए खड़ा होता है। 'Punjab '95' सिर्फ एक फिल्म नहीं, बल्कि इतिहास के उस भूले हुए पन्ने को एक श्रद्धांजलि है, जिसे सत्ता ने हमेशा दबाने की कोशिश की है। [3, 7, 8]",
+  "category": "Bollywood",
+  "year": 2026,
+  "duration": "2h 10m",
+  "rating": 7.5,
+  "genre": ["Drama", "Biography", "Crime", "Thriller"],
+  "language": "Punjabi",
+  "quality": "HD",
+  "cast": ["Diljit Dosanjh", "Arjun Rampal", "Suvinder Vicky"]
+}
 ];
 
 /* ---------------- HELPERS ---------------- */

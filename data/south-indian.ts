@@ -438,6 +438,73 @@ export const southindianVideos: Video[] = [
   "language": "Marathi",
   "quality": "HD"
 }
+,
+{
+  "id": "5025",
+  "title": "Aavesham (2024) - Action Comedy",
+  "slug": generateSlug("Aavesham (2024) - Action Comedy"),
+  "videoUrl": "https://youtu.be/UttccYQXpTM",
+  "downloadUrl": "https://t.me/onemoviedownloa/219",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMDhjODljMzktMmM4Zi00ODFkLWFkM2EtOTM3MTdmYTMyMTVkXkEyXkFqcGc@._V1_FMjpg_UX1200_.jpg",
+  "description": "Aavesham (2024) एक मलयालम एक्शन-कॉमेडी फिल्म है, जिसमें फहाद फासिल मुख्य भूमिका में हैं। कहानी तीन इंजीनियरिंग छात्रों की है जो बैंगलोर में अपने कॉलेज के सीनियर्स द्वारा बुरी तरह पीटे जाते हैं। बदला लेने के लिए, वे एक स्थानीय गैंगस्टर 'रंगा' (फहाद फासिल) से दोस्ती कर लेते हैं। रंगा एक रंगीन और अजीबोगरीब गैंगस्टर है जो उनकी मदद करने के लिए तैयार हो जाता है। इसके बाद जो घटनाएं होती हैं, वे कॉमेडी और एक्शन का एक जबरदस्त कॉकटेल हैं। फिल्म फहाद फासिल के शानदार अभिनय और मजेदार कहानी के लिए जानी जाती है। [2, 3, 4, 5, 6, 8]",
+  "category": "South Indian",
+  "year": 2024,
+  "duration": "2h 38m",
+  "rating": 7.5,
+  "genre": ["Action", "Comedy"],
+  "language": "Malayalam",
+  "quality": "HD",
+  "cast": ["Fahadh Faasil", "Hipzster", "Mithun Jai Sankar"]
+},
+{
+  "id": "5026",
+  "title": "Karakkam (2026) - Horror Comedy",
+  "slug": generateSlug("Karakkam (2026) - Horror Comedy"),
+  "videoUrl": "https://youtu.be/mWQLl_WgaAI",
+  "downloadUrl": "https://t.me/onemoviedownloa/216",
+  "poster": "https://m.media-amazon.com/images/M/MV5BNzZjODY4N2ItMmY4MS00MzdlLTlhNDItMTJhYjZlNzE2NmJlXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+  "description": "Karakkam (2026) एक मलयालम हॉरर-कॉमेडी फिल्म है। कहानी नए साल की पूर्व संध्या पर शुरू होती है, जब दो लापरवाह युवक एक चर्च के कब्रिस्तान से पांच पीतल के क्रॉस उखाड़ लेते हैं। उनकी यह हरकत अनजाने में कुछ अलौकिक और हास्यपूर्ण घटनाओं को जन्म देती है, जो उनके और उनके आसपास के लोगों के जीवन में उथल-पुथल मचा देती है। यह फिल्म डर और हंसी का एक अनूठा मिश्रण पेश करती है। [17, 20, 21, 22, 23, 24, 25, 26, 27, 28]",
+  "category": "South Indian",
+  "year": 2026,
+  "duration": "1h 44m",
+  "rating": 7.7,
+  "genre": ["Comedy", "Horror"],
+  "language": "Malayalam",
+  "quality": "HD"
+},
+{
+  "id": "5027",
+  "title": "Mollywood Times (2026) - Comedy Drama",
+  "slug": generateSlug("Mollywood Times (2026) - Comedy Drama"),
+  "videoUrl": "https://youtu.be/dFT7VPhM6qE",
+  "downloadUrl": "https://t.me/onemoviedownloa/222",
+  "poster": "https://m.media-amazon.com/images/M/MV5BZmU1ZDQ1MjUtYTcwZi00YWE0LWEwMWItYjY3YmEwNmI2MGRkXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+  "description": "Mollywood Times (2026) एक आने वाली मलयालम कॉमेडी-ड्रामा फिल्म है। यह फिल्म विनीत माधवन नाम के एक किशोर की कहानी है, जो एक फिल्म निर्माता बनने की महत्वाकांक्षा रखता है। यह फिल्म सिनेमा को ही एक नए और यथार्थवादी नजरिए से देखती है, जो युवा दर्शकों के साथ दृढ़ता से जुड़ती है। [11, 31, 35]",
+  "category": "South Indian",
+  "year": 2026,
+  "duration": "2h 46m",
+  "rating": 7.0,
+  "genre": ["Comedy", "Drama"],
+  "language": "Malayalam",
+  "quality": "HD"
+},
+{
+  "id": "5028",
+  "title": "Ananthan Kaadu (2026) - Drama",
+  "slug": generateSlug("Ananthan Kaadu (2026) - Drama"),
+  "videoUrl": "https://youtu.be/t7sjizadpLs",
+  "downloadUrl": "https://t.me/onemoviedownloa/223",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMzc5ZDNlZjgtN2Y2Yi00YjI1LTkxMDktYmRiNGE0Y2I2OWJlXkEyXkFqcGc@._V1_FMjpg_UY5475_.jpg",
+  "description": "Ananthan Kaadu (2026) एक द्विभाषी (तमिल और मलयालम) ड्रामा फिल्म है, जिसे मुरली गोपी ने लिखा है। राजनीतिक उथल-पुथल और बढ़ते संघर्ष के समय में, यह फिल्म अधिकार, अवज्ञा और सहनशक्ति की एक मनोरंजक कहानी प्रस्तुत करती है, जहाँ हर निर्णय भाग्य को गहराई से प्रभावित करता है। [15, 19, 43, 47, 50]",
+  "category": "South Indian",
+  "year": 2026,
+  "duration": "2h 10m",
+  "rating": 7.8,
+  "genre": ["Drama"],
+  "language": "Malayalam",
+  "quality": "HD",
+  "cast": ["Murali Gopy", "Nikhila Vimal"]
+}
 ];
 
 /* ---------------- HELPERS ---------------- */

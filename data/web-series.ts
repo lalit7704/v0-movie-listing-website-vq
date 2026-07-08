@@ -373,6 +373,24 @@ export const webSeriesVideos: Video[] = [
   "language": "Hindi",
   "quality": "HD"
 }
+,
+{
+  "id": "8020",
+  "title": "Pritam and Pedro (Season 1)",
+  "slug": generateSlug("Pritam and Pedro Season 1"),
+  "videoUrl": "https://youtu.be/uCjkRVV0-qU",
+  "downloadUrl": "https://t.me/onemoviedownloa/221",
+  "poster": "https://m.media-amazon.com/images/M/MV5BNGMwOWM5NjEtYWQ4ZC00YWVkLTg5ZTctMWI2ZjNlODZjYWVlXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+  "description": "Pritam and Pedro (2026) एक थ्रिलर-कॉमेडी वेब सीरीज़ है, जिसे राजकुमार हिरानी ने बनाया है। यह सीरीज़ दो बिल्कुल अलग किरदारों की कहानी है: प्रीतम, जो डेटा और लॉजिक पर विश्वास करता है, और पेड्रो, एक पुराने स्कूल का पुलिस वाला जो 'डंडे' पर विश्वास करता है। जब एक हाई-प्रोफाइल किडनैपिंग केस उन्हें एक साथ काम करने के लिए मजबूर करता है, तो उनके तरीकों का टकराव हंसी और अराजकता को जन्म देता है। यह सीरीज़ एक मनोरंजक और रहस्यमयी कहानी का वादा करती है। [13, 29, 40, 41]",
+  "category": "Web Series",
+  "year": 2026,
+  "duration": "Season 1",
+  "rating": 8.0,
+  "genre": ["Thriller", "Comedy", "Mystery", "Drama"],
+  "language": "Hindi",
+  "quality": "HD",
+  "cast": ["Vir Hirani", "Arshad Warsi", "Vikrant Massey"]
+}
 ];
 
 /* ---------------- HELPERS ---------------- */
