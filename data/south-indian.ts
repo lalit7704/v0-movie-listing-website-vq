@@ -249,8 +249,7 @@ export const southindianVideos: Video[] = [
   "language": "Hindi",
   "quality": "HD",
   "director": "Devi Prasad Shetty",
-  "cast": ["Vijay Raghavendra", "Gopal Krishna Deshpande", "Usha Bhandari"],
-  "featured": true
+  "cast": ["Vijay Raghavendra", "Gopal Krishna Deshpande", "Usha Bhandari"]
 },
 {
   "id": "5014",
@@ -302,8 +301,7 @@ export const southindianVideos: Video[] = [
   "rating": 8.0,
   "genre": ["Action", "Drama"],
   "language": "Punjabi",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
 },
 {
   "id": "5017",
@@ -369,8 +367,7 @@ export const southindianVideos: Video[] = [
   "rating": 8.5,
   "genre": ["Comedy", "Horror", "Action"],
   "language": "Hindi",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
 }
 ,
 {

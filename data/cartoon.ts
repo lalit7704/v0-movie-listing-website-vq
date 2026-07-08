@@ -51,7 +51,6 @@ export const cartoonVideos: Video[] = [
     genre: ["Animation", "Kids & Family", "Action", "Adventure", "Comedy"],
     language: "Hindi",
     quality: "HD",
-    featured: true,
     director: "Aaron Horvath, Michael Jelenic",
     cast: ["Chris Pratt", "Anya Taylor-Joy", "Charlie Day", "Jack Black", "Brie Larson"],
     keywords: ["mario", "super mario", "galaxy", "nintendo", "illumination", "animated movie", "cartoon"]
