@@ -825,21 +825,38 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2052",
-  "title": "Satluj (2026) - Biographical Drama | Diljit Dosanjh",
-  "slug": generateSlug("Satluj (2026) - Biographical Drama | Diljit Dosanjh"),
+  "title": "Satluj (2026) (Satluj) (2026) - Biographical Drama | Diljit Dosanjh",
+  "slug": generateSlug("Satluj (2026) (Satluj) (2026) - Biographical Drama | Diljit Dosanjh"),
   "videoUrl": "https://youtu.be/eO-Dr_TF1Co",
   "downloadUrl": "https://t.me/onemoviedownloa/218",
   "poster": "https://m.media-amazon.com/images/M/MV5BOTk1YTdiMDItZjAzOS00Njc0LTk3YTUtYjdiMWMyNDFhM2QzXkEyXkFqcGc@._V1_FMjpg_UX1187_.jpg",
-  "description": "Satluj (2026) एक अत्यंत साहसी, मार्मिक और राजनीतिक रूप से महत्वपूर्ण बायोपिक-ड्रामा फिल्म है, जो मानवाधिकार कार्यकर्ता (Human Rights Activist) जसवंत सिंह खालरा के वास्तविक जीवन और उनके अदम्य संघर्ष पर आधारित है। फिल्म में दिलजीत दोसांझ ने जसवंत सिंह खालरा की मुख्य भूमिका निभाई है। यह फिल्म 1980 और 1990 के दशक के उस काले दौर की कहानी है, जब पंजाब आतंकवाद और উग्रवাদ की আग में জल রहा থा। ইস দৌরান, জসবাঁত সিং খালরা, জো অমৃতসরে এক ব্যাঙ্ক কর্মচারী ছিলেন, একটি ভয়ানক সত্যের পরীক্ষা করেন। তাঁদের পরিচিতিরা হয়েছেন, 'অজ্ঞাত' (unidentified)বলেছেন।খালরাঅপনির্বিশ্বস্তভয়ানকনির্বিশ্বস্তভয়ানকনির্বিশ্বস্তভয়ানকনির্বিশ্বস্তভয়ানকনির্বিশ্বস্তভয়ানকনির্বিশ্বস্তভয়ানকনির্বিশ്വস্
+  "description": "Satluj (2026), जिसे असल में 'Satluj (2026)' के नाम से जाना जाता है, एक अत्यंत साहसी, मार्मिक और राजनीतिक रूप से महत्वपूर्ण बायोपिक-ड्रामा फिल्म है, जो मानवाधिकार कार्यकर्ता (Human Rights Activist) जसवंत सिंह खालरा के वास्तविक जीवन और उनके अदम्य संघर्ष पर आधारित है। फिल्म में दिलजीत दोसांझ ने जसवंत सिंह खालरा की मुख्य भूमिका निभाई है। यह फिल्म 1980 और 1990 के दशक के उस काले दौर की कहानी है, जब पंजाब आतंकवाद और उग्रवाद की आग में जल रहा था। इस दौरान, जसवंत सिंह खालरा, जो अमृतसर में एक बैंक कर्मचारी थे, एक भयानक सच्चाई का पता लगाते हैं। उन्हें पता चलता है कि पंजाब पुलिस आतंकवाद को खत्म करने के नाम पर हजारों निर्दोष सिख युवकों को गैर-न्यायिक रूप से मार रही है और उनकी लाशों को 'अज्ञात' (unidentified) बताकर चुपचाप श्मशानों में जला रही है। खालरा अपनी जान जोखिम में डालकर सबूत इकट्ठा करना शुरू करते हैं और 25,000 से अधिक ऐसे अवैध दाह-संस्कारों और गायब हुए लोगों का एक रिकॉर्ड तैयार करते हैं। वे इस भयानक नरसंहार को दुनिया के सामने लाने के लिए भारत से लेकर कनाडा तक की अदालतों और मानवाधिकार संगठनों के दरवाजे खटखटाते हैं। यह फिल्म एक साधारण इंसान की उस असाधारण लड़ाई को दर्शाती है, जो एक भ्रष्ट और क्रूर सिस्टम के खिलाफ सच और न्याय के लिए खड़ा होता है। 'Punjab '95' सिर्फ एक फिल्म नहीं, बल्कि इतिहास के उस भूले हुए पन्ने को एक श्रद्धांजलि है, जिसे सत्ता ने हमेशा दबाने की कोशिश की है।",
   "category": "Bollywood",
   "year": 2026,
   "duration": "2h 10m",
   "rating": 7.5,
-  "genre": ["Drama", "Biography", "Crime", "Thriller"],
+  "genre": ["Drama", "Biography", "Crime"],
   "language": "Punjabi",
   "quality": "HD",
   "cast": ["Diljit Dosanjh", "Arjun Rampal", "Suvinder Vicky"],
    "featured": true
+}
+,
+{
+  "id": "2053",
+  "title": "Chand Mera Dil (2026) - Romantic Comedy",
+  "slug": generateSlug("Chand Mera Dil (2026) - Romantic Comedy"),
+  "videoUrl": "https://youtu.be/placeholder_chand",
+  "downloadUrl": "https://t.me/onemoviedownloa/225",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTg5NzYxNjAtNTY5OC00ZGYzLWEzZjQtM2RiNGM4YjMyNGY3XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+  "description": "Chand Mera Dil (2026) एक हल्की-फुल्की और दिल को छू लेने वाली रोमांटिक-कॉमेडी है। कहानी आकाश नाम के एक शर्मीले खगोलशास्त्री (Astronomer) की है, जो सितारों और आकाशगंगाओं के बारे में घंटों बात कर सकता है, लेकिन अपने प्यार का इज़हार करने में उसके पसीने छूट जाते हैं। उसे चांदनी नाम की एक बिंदास और कलात्मक लड़की से प्यार हो जाता है। आकाश, जो हमेशा दूरबीन से चाँद को देखता था, अब अपनी 'चाँद' को पाने के लिए ज़मीन पर उतरता है। यह फिल्म हंसी, गलतफहमियों और प्यार के खट्टे-मीठे पलों से भरी एक खूबसूरत यात्रा है।",
+  "category": "Bollywood",
+  "year": 2026,
+  "duration": "2h 10m",
+  "rating": 7.2,
+  "genre": ["Comedy", "Romance", "Drama"],
+  "language": "Hindi",
+  "quality": "HD"
 }
 ];
 

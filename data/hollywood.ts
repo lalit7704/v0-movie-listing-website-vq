@@ -460,6 +460,55 @@ export const hollywoodVideos: Video[] = [
     "director": "Kane Parsons",
     "cast": ["Chiwetel Ejiofor", "Renate Reinsve", "Mark Duplass"]
   }
+,
+  {
+    "id": "6027",
+    "title": "Kafir: The Spirit Gate (2026) Hindi Dubbed",
+    "slug": generateSlug("Kafir The Spirit Gate (2026) Hindi Dubbed"),
+    "videoUrl": "https://youtu.be/placeholder_kafir",
+    "downloadUrl": "https://t.me/onemoviedownloa/226",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGJhYjExY2UtYjPdy00Y2NhLTliNTAtNTExYTM5YjZmY2QzXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+    "description": "Kafir: The Spirit Gate (2026) एक रोंगटे खड़े कर देने वाली सुपरनैचुरल हॉरर फिल्म है। कहानी पैरानॉर्मल जांचकर्ताओं के एक समूह की है जो तुर्की के एक दूरदराज के, शापित गांव की यात्रा करते हैं। कहा जाता है कि वहां एक 'काफिर' (गैर-विश्वासी) आत्मा का वास है। वे एक निषिद्ध 'स्पिरिट गेट' खोलते हैं, जिससे सदियों से कैद एक राक्षसी इकाई आजाद हो जाती है। अब, उन्हें एक ऐसी शक्ति के खिलाफ अपने अस्तित्व की लड़ाई लड़नी है जो डर और अविश्वास पर पलती है।",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 45m",
+    "rating": 6.8,
+    "genre": ["Horror", "Thriller", "Supernatural"],
+    "language": "Hindi",
+    "quality": "HD"
+  },
+  {
+    "id": "6028",
+    "title": "Razor (2026) Hindi Dubbed",
+    "slug": generateSlug("Razor (2026) Hindi Dubbed"),
+    "videoUrl": "https://youtu.be/placeholder_razor",
+    "downloadUrl": "https://t.me/onemoviedownloa/227",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTg5NzYxNjAtNTY5OC00ZGYzLWEzZjQtM2RiNGM4YjMyNGY3XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+    "description": "Razor (2026) एक हाई-ऑक्टेन एक्शन-थ्रिलर है। कहानी 'रेजर' के नाम से जाने जाने वाले एक पूर्व हत्यारे (Assassin) की है, जो अब एक शांत जीवन जी रहा है। लेकिन जब एक शक्तिशाली सिंडिकेट उसकी बेटी का अपहरण कर लेता है, तो उसे अपनी पुरानी और घातक दुनिया में वापस लौटना पड़ता है। अपने रेजर-शार्प कौशल के साथ, वह अपने रास्ते में आने वाले हर दुश्मन को काट डालता है। यह फिल्म नॉन-स्टॉप एक्शन, क्रूर लड़ाई और एक पिता के बदले की एक रोमांचक कहानी है।",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 55m",
+    "rating": 7.5,
+    "genre": ["Action", "Thriller"],
+    "language": "Hindi",
+    "quality": "HD"
+  },
+  {
+    "id": "6029",
+    "title": "Summer House / Yaz Evi (2026) Hindi Dubbed",
+    "slug": generateSlug("Summer House Yaz Evi (2026) Hindi Dubbed"),
+    "videoUrl": "https://youtu.be/placeholder_yazevi",
+    "downloadUrl": "https://t.me/onemoviedownloa/228",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGJhYjExY2UtYjPdy00Y2NhLTliNTAtNTExYTM5YjZmY2QzXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+    "description": "Summer House (Yaz Evi) (2026) एक खूबसूरत तुर्की रोमांटिक-ड्रामा है। कहानी एक युवा लेखिका की है जो अपनी रचनात्मकता को फिर से जगाने के लिए एजियन तट पर एक शांत 'समर हाउस' में जाती है। वहां उसकी मुलाकात एक रहस्यमयी स्थानीय व्यक्ति से होती है, जिसका अतीत उस घर से जुड़ा होता है। जैसे-जैसे वे एक-दूसरे के करीब आते हैं, वे छिपे हुए पारिवारिक रहस्यों, खोए हुए प्यार और दूसरी मौका देने की ताकत की खोज करते हैं। यह फिल्म शानदार दृश्यों, भावुक संगीत और एक दिल को छू लेने वाली प्रेम कहानी से भरपूर है।",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "2h 5m",
+    "rating": 7.9,
+    "genre": ["Drama", "Romance"],
+    "language": "Hindi",
+    "quality": "HD"
+  }
 ];
 
 /* ---------------- HELPERS ---------------- */
