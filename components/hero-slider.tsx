@@ -1,5 +1,9 @@
+"use client";
+
+import { useCallback, useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { Info, Play, Star } from "lucide-react";
+import { ChevronLeft, ChevronRight, Info, Play, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Video } from "@/data/videos";
 
@@ -8,24 +12,72 @@ interface HeroSliderProps {
 }
 
 export function HeroSlider({ videos }: HeroSliderProps) {
-  const activeVideo = videos[0];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
 
-  if (!activeVideo) return null;
+  const nextSlide = useCallback(() => {
+    if (videos.length < 2) return;
+    setCurrentIndex((prev) => (prev + 1) % videos.length);
+  }, [videos.length]);
 
-  const encodedPoster = encodeURIComponent(activeVideo.poster);
-  const backgroundImage = [
-    `linear-gradient(to right, hsl(var(--background)) 0%, hsl(var(--background) / 0.8) 45%, transparent 100%)`,
-    `linear-gradient(to top, hsl(var(--background)) 0%, hsl(var(--background) / 0.4) 45%, transparent 100%)`,
-    `image-set(url("/_next/image?url=${encodedPoster}&w=828&q=65") 1x, url("/_next/image?url=${encodedPoster}&w=1536&q=65") 2x)`,
-  ].join(", ");
+  const prevSlide = useCallback(() => {
+    if (videos.length < 2) return;
+    setCurrentIndex((prev) => (prev - 1 + videos.length) % videos.length);
+  }, [videos.length]);
+
+  useEffect(() => {
+    if (!isAutoPlaying || videos.length < 2) return;
+
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
+  }, [isAutoPlaying, nextSlide, videos.length]);
+
+  if (videos.length === 0) return null;
+
+  const activeVideo = videos[currentIndex];
+
+  const handleTouchStart = (event: React.TouchEvent) => {
+    setTouchStartX(event.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = (event: React.TouchEvent) => {
+    if (touchStartX === null) return;
+
+    const swipeOffset = event.changedTouches[0].clientX - touchStartX;
+    const minSwipeDistance = 50;
+
+    if (swipeOffset < -minSwipeDistance) {
+      nextSlide();
+    } else if (swipeOffset > minSwipeDistance) {
+      prevSlide();
+    }
+
+    setTouchStartX(null);
+  };
 
   return (
-    <section className="relative h-[58vh] min-h-[460px] md:h-[82vh] w-full overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        aria-hidden="true"
-        style={{ backgroundImage }}
-      />
+    <section
+      className="relative h-[70vh] md:h-[85vh] w-full overflow-hidden"
+      onMouseEnter={() => setIsAutoPlaying(false)}
+      onMouseLeave={() => setIsAutoPlaying(true)}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
+      <div className="absolute inset-0">
+        <Image
+          key={activeVideo.id}
+          src={activeVideo.poster}
+          alt={activeVideo.title}
+          fill
+          className="object-cover transition-opacity duration-500"
+          priority={currentIndex === 0}
+          sizes="100vw"
+          quality={65}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+      </div>
 
       <div className="relative h-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
         <div className="max-w-2xl space-y-4 md:space-y-6">
@@ -76,6 +128,49 @@ export function HeroSlider({ videos }: HeroSliderProps) {
           </div>
         </div>
       </div>
+
+      {videos.length > 1 && (
+        <>
+          <div className="absolute left-4 top-1/2 -translate-y-1/2 hidden md:block">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="h-12 w-12 rounded-full bg-background/30 hover:bg-background/50 backdrop-blur-sm"
+              onClick={prevSlide}
+              aria-label="Previous featured movie"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </Button>
+          </div>
+          <div className="absolute right-4 top-1/2 -translate-y-1/2 hidden md:block">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="h-12 w-12 rounded-full bg-background/30 hover:bg-background/50 backdrop-blur-sm"
+              onClick={nextSlide}
+              aria-label="Next featured movie"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </Button>
+          </div>
+
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-2">
+            {videos.map((_, index) => (
+              <button
+                key={index}
+                type="button"
+                aria-label={`Show featured movie ${index + 1}`}
+                onClick={() => setCurrentIndex(index)}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  index === currentIndex
+                    ? "w-8 bg-primary"
+                    : "w-1.5 bg-muted-foreground/50 hover:bg-muted-foreground"
+                }`}
+              />
+            ))}
+          </div>
+        </>
+      )}
     </section>
   );
 }
