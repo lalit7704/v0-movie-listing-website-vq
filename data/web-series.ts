@@ -389,7 +389,8 @@ export const webSeriesVideos: Video[] = [
   "genre": ["Thriller", "Comedy", "Mystery", "Drama"],
   "language": "Hindi",
   "quality": "HD",
-  "cast": ["Vir Hirani", "Arshad Warsi", "Vikrant Massey"]
+  "cast": ["Vir Hirani", "Arshad Warsi", "Vikrant Massey"],
+   "featured": true
 }
 ];
 

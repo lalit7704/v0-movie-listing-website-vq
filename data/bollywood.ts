@@ -839,7 +839,8 @@ export const bollywoodVideos: Video[] = [
   "genre": ["Drama", "Biography", "Crime", "Thriller"],
   "language": "Punjabi",
   "quality": "HD",
-  "cast": ["Diljit Dosanjh", "Arjun Rampal", "Suvinder Vicky"]
+  "cast": ["Diljit Dosanjh", "Arjun Rampal", "Suvinder Vicky"],
+   "featured": true
 }
 ];
 
