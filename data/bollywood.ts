@@ -826,20 +826,21 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2052",
-  "title": "Satluj De Kandhe (1964) - Punjabi Classic",
-  "slug": generateSlug("Satluj De Kandhe (1964) - Punjabi Classic"),
-  "videoUrl": "https://youtu.be/placeholder_satluj",
-  "downloadUrl": "https://t.me/onemoviedownloa/216",
-  "poster": "https://i.ytimg.com/vi/33-v-3b-8_o/hqdefault.jpg",
-  "description": "Satluj De Kandhe (1964) एक क्लासिक पंजाबी रोमांटिक फिल्म है, जिसका निर्देशन एम.एम. बिल्लू मेहरा ने किया था। इस फिल्म में महान अभिनेता बलराज साहनी और निशी मुख्य भूमिकाओं में थे। यह फिल्म उस समय की एक बड़ी हिट थी और इसे सर्वश्रेष्ठ पंजाबी फीचर फिल्म का राष्ट्रीय फिल्म पुरस्कार भी मिला था। फिल्म की कहानी सतलुज नदी के किनारे पनपती एक प्रेम कहानी के इर्द-गिर्द घूमती है, जिसमें सामाजिक और पारिवारिक मूल्यों का टकराव दिखाया गया है। [18, 30, 33, 44]",
+  "title": "Satluj (2026) - Biographical Drama",
+  "slug": generateSlug("Satluj (2026) - Biographical Drama"),
+  "videoUrl": "https://youtu.be/7_t_IuS-gYI",
+  "downloadUrl": "https://t.me/onemoviedownloa/229",
+  "poster": "https://m.media-amazon.com/images/M/MV5BNGY1YjMyMjEtY2U4MS00ZGYzLWI0MDktYTY5NmI3OTlkMTc1XkEyXkFqcGc@._V1_FMjpg_UX1013_.jpg",
+  "description": "Satluj (2026), जिसे पहले 'पंजाब '95' के नाम से जाना जाता था, एक शक्तिशाली और साहसी बायोपिक-ड्रामा फिल्म है, जो पंजाब के एक मानवाधिकार कार्यकर्ता जसवंत सिंह खालरा के जीवन पर आधारित है। फिल्म में दिलजीत दोसांझ ने जसवंत सिंह खालरा की मुख्य भूमिका निभाई है। कहानी 1990 के दशक के पंजाब की है, जब खालरा ने हजारों अज्ञात और लावारिस लाशों के दाह संस्कार के मामलों की जांच शुरू की थी। उनकी जांच ने पुलिस द्वारा किए गए अवैध अपहरण, हत्याओं और गुप्त दाह संस्कारों के एक बहुत बड़े और भयानक नेटवर्क का पर्दाफाश किया। सच को सामने लाने की इस लड़ाई में उन्हें धमकियों, दबाव और अंततः 1995 में उनके अपहरण और हत्या का सामना करना पड़ा। यह फिल्म एक ऐसे नायक की कहानी है जिसने न्याय के लिए अपनी जान कुर्बान कर दी। [1, 2]",
   "category": "Bollywood",
-  "year": 1964,
-  "duration": "2h 10m",
-  "rating": 7.5,
-  "genre": ["Drama", "Romance"],
+  "year": 2026,
+  "duration": "2h 5m",
+  "rating": 8.5,
+  "genre": ["Biography", "Drama"],
   "language": "Punjabi",
   "quality": "HD",
-  "cast": ["Balraj Sahni", "Nishi"]
+  "cast": ["Diljit Dosanjh", "Arjun Rampal", "Suvinder Vicky"],
+   "featured": true
 }
 ,
 {
