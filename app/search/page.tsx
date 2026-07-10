@@ -19,10 +19,10 @@ function SearchContent() {
   const sort = searchParams.get("sort") || "latest";
 
   // Search videos
-  let searchResults: Video[] = [];
+  let searchResults: Video[] = videos; // Start with all videos
 
   if (query.trim()) {
-    searchResults = videos.filter(
+    searchResults = searchResults.filter(
       (video) =>
         video.title.toLowerCase().includes(query.toLowerCase()) ||
         video.category.toLowerCase().includes(query.toLowerCase()) ||
