@@ -392,36 +392,52 @@ export const webSeriesVideos: Video[] = [
   "cast": ["Vir Hirani", "Arshad Warsi", "Vikrant Massey"],
    "featured": true
 }
-,
-{
+,{
   "id": "8021",
-  "title": "Thukra Ke Mera Pyaar (2026) Season 2",
-  "slug": generateSlug("Thukra Ke Mera Pyaar (2026) Season 2"),
-  "videoUrl": "https://youtu.be/placeholder_thukra",
-  "downloadUrl": "https://t.me/onemoviedownloa/229",
-  "poster": "https://m.media-amazon.com/images/M/MV5BMTg5NzYxNjAtNTY5OC00ZGYzLWEzZjQtM2RiNGM4YjMyNGY3XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
-  "description": "Thukra Ke Mera Pyaar (2026) सीजन 1 की नाटकीय घटनाओं के बाद की कहानी है। कबीर अब एक सफल और क्रूर व्यवसायी है। उसके पास वह सब कुछ है जो वह कभी चाहता था - पैसा, शक्ति और सफलता। लेकिन उसके अतीत का भूत, उसका पहला प्यार मीरा, उसके जीवन में फिर से प्रवेश करता है, और उसकी दुनिया को उलट-पुलट कर देता है। यह सीजन इस बात की पड़ताल करता है कि क्या कबीर बदला या माफी में से किसी एक को चुनेगा। यह दिल टूटने, बदला लेने और छुटकारे की एक मनोरंजक कहानी है।",
-  "category": "Web Series",
-  "year": 2026,
-  "duration": "Season 2",
-  "rating": 8.1,
-  "genre": ["Drama", "Romance", "Thriller"],
-  "language": "Hindi",
-  "quality": "HD"
-},
-{
-  "id": "8022",
   "title": "Super Subbu (2026) Season 1 Hindi Dubbed",
   "slug": generateSlug("Super Subbu (2026) Season 1 Hindi Dubbed"),
-  "videoUrl": "https://youtu.be/placeholder_subbu",
-  "downloadUrl": "https://t.me/onemoviedownloa/230",
-  "poster": "https://m.media-amazon.com/images/M/MV5BMTg5NzYxNjAtNTY5OC00ZGYzLWEzZjQtM2RiNGM4YjMyNGY3XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+  "videoUrl": "https://youtu.be/pQ1rZBoLHKY",
+  "downloadUrl": "https://t.me/onemoviedownloa/228",
+  "poster": "https://m.media-amazon.com/images/M/MV5BNGRhZWQ4YmYtZmZkMC00OTEzLThhNmItNTJjM2U0MGYyYzgyXkEyXkFqcGc@._V1_FMjpg_UX960_.jpg",
   "description": "Super Subbu (2026) एक मजेदार और एक्शन से भरपूर सुपरहीरो-कॉमेडी वेब सीरीज है। सुब्बू, एक साधारण और डरपोक ऑफिस कर्मचारी, एक दिन गलती से एक रहस्यमयी उल्कापिंड के संपर्क में आ जाता है, जिससे उसे सुपरपावर मिल जाती है। अब उसे अपनी बोरिंग नौकरी और शहर को अजीबोगरीब खलनायकों से बचाने के बीच संतुलन बनाना है। यह सीरीज हंसी, रोमांच और एक साधारण आदमी के असाधारण बनने की एक दिल छू लेने वाली कहानी है।",
   "category": "Web Series",
   "year": 2026,
   "duration": "Season 1",
   "rating": 7.8,
   "genre": ["Action", "Comedy", "Sci-Fi", "Family"],
+  "language": "Hindi",
+  "quality": "HD"
+}
+,
+{
+  "id": "8022",
+  "title": "Raakh (Season 1) - Crime Thriller Series",
+  "slug": generateSlug("Raakh Season 1 - Crime Thriller Series"),
+  "videoUrl": "https://youtu.be/RdB_TgwLPqs",
+  "downloadUrl": "https://t.me/onemoviedownloa/224",
+  "poster": "https://m.media-amazon.com/images/M/MV5BZjhkMTFkM2ItNTgxOC00YjI5LTllYjUtYzc2YTBjYWM5YTdiXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+  "description": "Raakh (Season 1) एक पाकिस्तानी क्राइम-थ्रिलर वेब सीरीज है, जो अपराध, राजनीति और न्याय की एक अंधेरी और जटिल कहानी को उजागर करती है। कहानी एक ऐसे शहर की है जो एक शक्तिशाली और क्रूर अपराध सिंडिकेट के चंगुल में है। जब एक ईमानदार पुलिस अधिकारी और एक निडर पत्रकार इस सिंडिकेट के खिलाफ सबूत इकट्ठा करना शुरू करते हैं, तो उन्हें पता चलता है कि भ्रष्टाचार की जड़ें सिस्टम में बहुत गहरी हैं। यह सीरीज सस्पेंस, एक्शन और अप्रत्याशित ट्विस्ट से भरी है, जो दर्शकों को अंत तक बांधे रखती है।",
+  "category": "Web Series",
+  "year": 2024,
+  "duration": "Season 1",
+  "rating": 8.1,
+  "genre": ["Crime", "Thriller", "Drama"],
+  "language": "Urdu",
+  "quality": "HD"
+},
+{
+  "id": "8023",
+  "title": "Ab Hoga Hisab (Season 2) - Erotic Thriller",
+  "slug": generateSlug("Ab Hoga Hisab Season 2 - Erotic Thriller"),
+  "videoUrl": "https://youtu.be/iBUdP1aZulo",
+  "downloadUrl": "https://t.me/onemoviedownloa/225",
+  "poster": "https://m.media-amazon.com/images/M/MV5BM2JkNDFhNzQtODhhNC00ZTU5LTg0ODQtMTE3ZDNhNjg2NGUxXkEyXkFqcGc@._V1_FMjpg_UY4800_.jpg",
+  "description": "Ab Hoga Hisab (Season 2) एक इरोटिक-थ्रिलर वेब सीरीज है जो रिश्तों, धोखे और बदले की एक उलझी हुई कहानी को आगे बढ़ाती है। पहले सीजन के क्लिफहैंगर के बाद, यह सीजन और भी गहरे रहस्यों, खतरनाक इरादों और अप्रत्याशित मोड़ों से भरा है। कहानी के पात्र अपने स्वार्थ और जुनून के लिए एक-दूसरे के खिलाफ एक खतरनाक खेल खेलते हैं, जहाँ हर कोई अपना 'हिसाब' बराबर करना चाहता है। यह सीरीज सस्पेंस और बोल्ड दृश्यों का एक मनोरंजक मिश्रण है।",
+  "category": "Web Series",
+  "year": 2024,
+  "duration": "Season 2",
+  "rating": 6.5,
+  "genre": ["Drama", "Thriller", "Erotic"],
   "language": "Hindi",
   "quality": "HD"
 }

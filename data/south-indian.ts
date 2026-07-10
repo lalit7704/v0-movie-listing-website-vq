@@ -502,6 +502,23 @@ export const southindianVideos: Video[] = [
   "quality": "HD",
   "cast": ["Murali Gopy", "Nikhila Vimal"]
 }
+,
+{
+  "id": "5029",
+  "title": "Written & Directed by God (2024) Hindi Dubbed",
+  "slug": generateSlug("Written & Directed by God (2024) Hindi Dubbed"),
+  "videoUrl": "https://youtu.be/jSt7Wy3ndjE",
+  "downloadUrl": "https://t.me/onemoviedownloa/226",
+  "poster": "https://m.media-amazon.com/images/M/MV5BNDIyMDQ2OGYtOWM4Mi00MTg0LWFjZjEtNmIzMTEyYTk5YTFiXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+  "description": "Written & Directed by God (2024) एक अनोखी और दिल को छू लेने वाली तेलुगु फैंटेसी-ड्रामा फिल्म है। कहानी एक ऐसे व्यक्ति की है जिसकी एक दुर्घटना में असामयिक मृत्यु हो जाती है। जब वह स्वर्ग पहुंचता है, तो वह अपनी मौत के लिए भगवान को दोषी ठहराता है। भगवान उसे जीवन का असली मतलब समझाने के लिए 49 दिनों के लिए पृथ्वी पर वापस भेजते हैं, लेकिन एक महिला के शरीर में। इस नए रूप में, उसे जीवन, रिश्तों और प्रेम को एक बिल्कुल नए नजरिए से अनुभव करने का मौका मिलता है। यह फिल्म हंसाने के साथ-साथ एक गहरा दार्शनिक संदेश भी देती है।",
+  "category": "South Indian",
+  "year": 2024,
+  "duration": "2h 15m",
+  "rating": 7.8,
+  "genre": ["Drama", "Fantasy", "Comedy"],
+  "language": "Hindi",
+  "quality": "HD"
+}
 ];
 
 /* ---------------- HELPERS ---------------- */
