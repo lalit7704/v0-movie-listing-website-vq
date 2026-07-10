@@ -441,6 +441,23 @@ export const webSeriesVideos: Video[] = [
   "language": "Hindi",
   "quality": "HD"
 }
+,
+{
+  "id": "8024",
+  "title": "Ab Hoga Hisab (Season 1) - Erotic Thriller",
+  "slug": generateSlug("Ab Hoga Hisab Season 1 - Erotic Thriller"),
+  "videoUrl": "https://youtu.be/placeholder_hisab_s1",
+  "downloadUrl": "https://t.me/onemoviedownloa/237",
+  "poster": "https://m.media-amazon.com/images/M/MV5BOGEwMGE1YzgtOTYxOC00YjA3LTg5NDctM2E3MGIxMDk3N2I4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  "description": "Ab Hoga Hisab (Season 1) एक इरोटिक-थ्रिलर वेब सीरीज है जो रिश्तों, धोखे और बदले की एक उलझी हुई कहानी को प्रस्तुत करती है। कहानी कुछ ऐसे किरदारों के इर्द-गिर्द घूमती है जो अपने स्वार्थ, जुनून और लालच के लिए एक-दूसरे को धोखा देते हैं। जब एक रिश्ता टूटता है, तो बदले की आग भड़क उठती है और हर कोई अपना 'हिसाब' बराबर करने के लिए किसी भी हद तक जाने को तैयार हो जाता है। यह सीजन सस्पेंस, बोल्ड दृश्यों और अप्रत्याशित मोड़ों से भरा है, जो दर्शकों को अंत तक बांधे रखता है।",
+  "category": "Web Series",
+  "year": 2023,
+  "duration": "Season 1",
+  "rating": 6.8,
+  "genre": ["Drama", "Thriller", "Erotic"],
+  "language": "Hindi",
+  "quality": "HD"
+}
 ];
 
 /* ---------------- HELPERS ---------------- */
