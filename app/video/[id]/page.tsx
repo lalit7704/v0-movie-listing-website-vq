@@ -8,6 +8,7 @@ import { SectionSlider } from "@/components/section-slider";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { getVideoById, getRecommendedVideos, videos } from "@/data/videos";
+import { resolveDownloadUrl } from "@/lib/telegram";
 
 interface VideoPageProps {
   params: Promise<{ id: string }>;
@@ -44,6 +45,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
   }
 
   const recommendedVideos = getRecommendedVideos(id);
+  const downloadUrl = resolveDownloadUrl(video.downloadUrl);
 
   return (
     <main className="min-h-screen bg-background">
@@ -95,7 +97,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
                 </div>
 
                 <a
-                  href={video.downloadUrl}
+                  href={downloadUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -201,7 +203,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
                 <h3 className="text-lg font-semibold text-foreground mb-4">Quick Download</h3>
                 <div className="space-y-3">
                  <a
-                    href={video.downloadUrl}
+                    href={downloadUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -211,7 +213,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
                     </Button>
                   </a>
                   <a
-                    href={video.downloadUrl}
+                    href={downloadUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -221,7 +223,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
                     </Button>
                   </a>  
                   <a
-                    href={video.downloadUrl}
+                    href={downloadUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

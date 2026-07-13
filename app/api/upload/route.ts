@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { TELEGRAM_CHANNEL_INVITE_URL } from "@/lib/telegram";
 
 export async function POST(request: NextRequest) {
   try {
@@ -50,12 +51,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const messageId = data.result.message_id;
-    const telegramLink = `https://t.me/onemoviedownloa/${messageId}`;
-
     return NextResponse.json({
       success: true,
-      telegramLink,
+      telegramLink: TELEGRAM_CHANNEL_INVITE_URL,
     });
 
   } catch (error) {

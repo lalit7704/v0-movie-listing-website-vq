@@ -18,6 +18,7 @@ import {
   generateMetaDescription,
 } from "@/lib/seo-utils";
 import { generateMoviePageJsonLd } from "@/lib/structured-data";
+import { resolveDownloadUrl } from "@/lib/telegram";
 import { MovieComments } from "@/components/movie-comments";
 
 interface MoviePageProps {
@@ -108,6 +109,7 @@ export default async function MoviePage({ params }: MoviePageProps) {
   }
 
   const recommendedVideos = getRelatedMovies(video.id, 12);
+  const downloadUrl = resolveDownloadUrl(video.downloadUrl);
   const breadcrumbs = generateBreadcrumbs(video.title, video.category, slug);
   const jsonLdScripts = generateMoviePageJsonLd(
     video.title,
@@ -201,7 +203,7 @@ export default async function MoviePage({ params }: MoviePageProps) {
                   </div>
 
                   <a
-                    href={video.downloadUrl}
+                    href={downloadUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -307,7 +309,7 @@ export default async function MoviePage({ params }: MoviePageProps) {
                   <h3 className="text-lg font-semibold text-foreground mb-4">Quick Download</h3>
                   <div className="space-y-3">
                     <a
-                    href={video.downloadUrl}
+                    href={downloadUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -317,7 +319,7 @@ export default async function MoviePage({ params }: MoviePageProps) {
                       </Button>
                     </a>
                     <a
-                    href={video.downloadUrl}
+                    href={downloadUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -327,7 +329,7 @@ export default async function MoviePage({ params }: MoviePageProps) {
                       </Button>
                     </a>
                     <a
-                    href={video.downloadUrl}
+                    href={downloadUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
