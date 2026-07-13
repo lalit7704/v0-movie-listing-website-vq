@@ -5,6 +5,6 @@ export function resolveDownloadUrl(downloadUrl: string) {
   const match = downloadUrl.match(CHANNEL_POST_PATTERN);
 
   return match
-    ? `https://t.me/${TELEGRAM_BOT_USERNAME}?start=m_${match[1]}`
+    ? `tg://resolve?domain=${TELEGRAM_BOT_USERNAME}&start=m_${match[1]}`
     : downloadUrl;
 }
