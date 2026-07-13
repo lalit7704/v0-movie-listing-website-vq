@@ -12,6 +12,7 @@ import { resolveDownloadUrl } from "@/lib/download-url";
 import { TrackedDownloadLink } from "@/components/tracked-download-link";
 import { ShareActions } from "@/components/share-actions";
 import { MovieSupportActions } from "@/components/movie-support-actions";
+import { WishlistButton } from "@/components/wishlist-button";
 
 interface VideoPageProps {
   params: Promise<{ id: string }>;
@@ -103,16 +104,19 @@ export default async function VideoPage({ params }: VideoPageProps) {
                   </div>
                 </div>
 
-                <TrackedDownloadLink
-                  href={downloadUrl}
-                  movieId={video.id}
-                  source="primary"
-                >
-                  <Button className="gap-2">
-                    <Download className="w-4 h-4" />
-                    Download
-                  </Button>
-                </TrackedDownloadLink>
+                <div className="flex flex-wrap items-center gap-2">
+                  <WishlistButton videoId={video.id} showLabel />
+                  <TrackedDownloadLink
+                    href={downloadUrl}
+                    movieId={video.id}
+                    source="primary"
+                  >
+                    <Button className="gap-2">
+                      <Download className="w-4 h-4" />
+                      Download
+                    </Button>
+                  </TrackedDownloadLink>
+                </div>
               </div>
 
               {/* Quality Badge */}

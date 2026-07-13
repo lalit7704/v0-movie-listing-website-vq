@@ -6,6 +6,7 @@ import { Play, Star, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Video } from "@/data/videos";
 import { generateSlug } from "@/lib/seo-utils";
+import { WishlistButton } from "@/components/wishlist-button";
 
 interface VideoCardProps {
   video: Video;
@@ -50,6 +51,11 @@ export function VideoCard({ video }: VideoCardProps) {
               <span className="text-foreground font-medium">{video.rating}</span>
             </div>
           )}
+
+          <WishlistButton
+            videoId={video.id}
+            className="absolute right-2 top-10 z-30 size-8"
+          />
 
           {/* Play Button */}
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">

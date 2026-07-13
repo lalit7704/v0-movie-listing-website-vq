@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Download, Menu, X } from "lucide-react";
+import { Download, Heart, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SearchBar } from "@/components/search-bar";
 
@@ -90,8 +90,19 @@ export function Navbar() {
             <SearchBar />
           </div>
 
+          <Button asChild variant="ghost" size="icon" className="hidden md:inline-flex">
+            <Link href="/wishlist" aria-label="Open Wishlist" title="Wishlist">
+              <Heart className="h-5 w-5" />
+            </Link>
+          </Button>
+
           {/* Mobile Controls */}
           <div className="flex items-center gap-2 md:hidden">
+            <Button asChild variant="ghost" size="icon">
+              <Link href="/wishlist" aria-label="Open Wishlist" title="Wishlist">
+                <Heart className="h-5 w-5" />
+              </Link>
+            </Button>
             <Button
               variant="ghost"
               size="icon"
@@ -162,6 +173,14 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
+              <Link
+                href="/wishlist"
+                onClick={() => setIsMenuOpen(false)}
+                className="flex items-center gap-2 rounded-md px-3 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+              >
+                <Heart className="h-4 w-4" aria-hidden="true" />
+                My Wishlist
+              </Link>
               <a
                 href="/OneMovie.apk"
                 download="OneMovie.apk"
