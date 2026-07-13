@@ -44,10 +44,12 @@ export function VideoCard({ video }: VideoCardProps) {
           </div>
           
           {/* Rating Badge */}
-          <div className="absolute top-2 right-2 flex items-center gap-1 px-2 py-0.5 bg-black/70 rounded text-xs">
-            <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" />
-            <span className="text-foreground font-medium">{video.rating}</span>
-          </div>
+          {video.rating > 0 && (
+            <div className="absolute top-2 right-2 flex items-center gap-1 px-2 py-0.5 bg-black/70 rounded text-xs">
+              <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" />
+              <span className="text-foreground font-medium">{video.rating}</span>
+            </div>
+          )}
 
           {/* Play Button */}
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">

@@ -23,7 +23,7 @@ export function generateSlug(title: string): string {
  * @param baseUrl - The base URL of the site
  * @returns The canonical URL
  */
-export function generateCanonicalUrl(slug: string, baseUrl: string = 'https://onemovie.app'): string {
+export function generateCanonicalUrl(slug: string, baseUrl: string = 'https://www.onemovie.in'): string {
   return `${baseUrl}/movie/${slug}`;
 }
 
@@ -112,19 +112,19 @@ export function generateBreadcrumbSchema(
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://onemovie.app',
+        item: 'https://www.onemovie.in',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: category,
-        item: `https://onemovie.app/${category.toLowerCase()}`,
+        item: `https://www.onemovie.in/${category.toLowerCase()}`,
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: movieTitle,
-        item: `https://onemovie.app/movie/${movieSlug}`,
+        item: `https://www.onemovie.in/movie/${movieSlug}`,
       },
     ],
   };

@@ -106,8 +106,8 @@ export function generateOrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Onemovie',
-    url: 'https://onemovie.app',
-    logo: 'https://onemovie.app/logo.png',
+    url: 'https://www.onemovie.in',
+    logo: 'https://www.onemovie.in/icons/icon-512.png',
     sameAs: [
       'https://www.facebook.com/onemovie',
       'https://www.twitter.com/onemovie',
@@ -116,7 +116,7 @@ export function generateOrganizationSchema() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Support',
-      email: 'support@onemovie.app',
+      email: 'support@onemovie.in',
     },
   };
 }
@@ -129,12 +129,12 @@ export function generateWebsiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Onemovie',
-    url: 'https://onemovie.app',
+    url: 'https://www.onemovie.in',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://onemovie.app/search?q={search_term_string}',
+        urlTemplate: 'https://www.onemovie.in/search?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },

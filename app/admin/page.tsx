@@ -15,6 +15,7 @@ interface UploadResponse {
 }
 
 export default function AdminPanel() {
+  const [accessToken, setAccessToken] = useState("");
   const [title, setTitle] = useState("");
   const [videoUrl, setVideoUrl] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -30,6 +31,7 @@ export default function AdminPanel() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "x-admin-token": accessToken,
         },
         body: JSON.stringify({ title, videoUrl }),
       });
@@ -68,6 +70,22 @@ export default function AdminPanel() {
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="space-y-2">
+                <Label htmlFor="accessToken" className="text-slate-200">
+                  Admin Access Key
+                </Label>
+                <Input
+                  id="accessToken"
+                  type="password"
+                  autoComplete="current-password"
+                  value={accessToken}
+                  onChange={(e) => setAccessToken(e.target.value)}
+                  required
+                  disabled={isLoading}
+                  className="border-slate-600 bg-slate-700/50 text-white"
+                />
+              </div>
+
               {/* Movie Title Input */}
               <div className="space-y-2">
                 <Label htmlFor="title" className="text-slate-200">
@@ -104,7 +122,7 @@ export default function AdminPanel() {
               {/* Upload Button */}
               <Button
                 type="submit"
-                disabled={isLoading || !title.trim() || !videoUrl.trim()}
+                disabled={isLoading || !accessToken || !title.trim() || !videoUrl.trim()}
                 className="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold h-10"
               >
                 {isLoading && <Loader2 className="w-4 h-4 mr-2 animate-spin" />}

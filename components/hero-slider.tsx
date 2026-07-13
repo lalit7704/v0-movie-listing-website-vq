@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight, Info, Play, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Video } from "@/data/videos";
+import { generateSlug } from "@/lib/seo-utils";
 
 interface HeroSliderProps {
   videos: Video[];
@@ -58,7 +59,7 @@ export function HeroSlider({ videos }: HeroSliderProps) {
 
   return (
     <section
-      className="relative h-[70vh] md:h-[85vh] w-full overflow-hidden"
+      className="relative h-[72svh] min-h-[560px] max-h-[760px] md:h-[85vh] md:max-h-none w-full overflow-hidden"
       onMouseEnter={() => setIsAutoPlaying(false)}
       onMouseLeave={() => setIsAutoPlaying(true)}
       onTouchStart={handleTouchStart}
@@ -80,47 +81,49 @@ export function HeroSlider({ videos }: HeroSliderProps) {
       </div>
 
       <div className="relative h-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
-        <div className="max-w-2xl space-y-4 md:space-y-6">
+        <div className="w-full min-w-0 max-w-2xl space-y-4 md:space-y-6">
           <div className="flex items-center gap-3">
             <span className="px-3 py-1 text-sm font-semibold bg-primary text-primary-foreground rounded">
               {activeVideo.quality}
             </span>
-            <div className="flex items-center gap-1 px-3 py-1 bg-secondary rounded">
-              <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-              <span className="text-sm font-medium text-foreground">
-                {activeVideo.rating}
-              </span>
-            </div>
+            {activeVideo.rating > 0 && (
+              <div className="flex items-center gap-1 px-3 py-1 bg-secondary rounded">
+                <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                <span className="text-sm font-medium text-foreground">
+                  {activeVideo.rating}
+                </span>
+              </div>
+            )}
             <span className="text-sm text-muted-foreground">
               {activeVideo.year}
             </span>
           </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight text-balance">
+          <h1 className="max-w-full break-words text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight line-clamp-2">
             {activeVideo.title}
           </h1>
 
-          <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+          <div className="flex max-w-full flex-wrap items-center gap-3 text-sm text-muted-foreground">
             <span>{activeVideo.duration}</span>
             <span>&bull;</span>
             <span>{activeVideo.language}</span>
             <span>&bull;</span>
-            <span>{activeVideo.genre.join(", ")}</span>
+            <span className="line-clamp-1">{activeVideo.genre.join(", ")}</span>
           </div>
 
-          <p className="text-base md:text-lg text-muted-foreground line-clamp-3 max-w-xl text-pretty">
+          <p className="max-w-xl break-words text-sm sm:text-base md:text-lg text-muted-foreground line-clamp-2 sm:line-clamp-3">
             {activeVideo.description}
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <Link href={`/video/${activeVideo.id}`}>
-              <Button size="lg" className="gap-2 text-base">
+            <Link href={`/movie/${activeVideo.slug || generateSlug(activeVideo.title)}`}>
+              <Button size="lg" className="gap-2 text-sm sm:text-base">
                 <Play className="w-5 h-5" fill="currentColor" />
                 Watch Now
               </Button>
             </Link>
-            <Link href={`/video/${activeVideo.id}`}>
-              <Button size="lg" variant="outline" className="gap-2 text-base">
+            <Link href={`/movie/${activeVideo.slug || generateSlug(activeVideo.title)}`}>
+              <Button size="lg" variant="outline" className="gap-2 text-sm sm:text-base">
                 <Info className="w-5 h-5" />
                 More Info
               </Button>

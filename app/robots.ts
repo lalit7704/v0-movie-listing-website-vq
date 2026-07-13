@@ -20,7 +20,7 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 2,
       },
     ],
-    sitemap: 'https://onemovie.app/sitemap.xml',
-    host: 'https://onemovie.app',
+    sitemap: 'https://www.onemovie.in/sitemap.xml',
+    host: 'https://www.onemovie.in',
   };
 }

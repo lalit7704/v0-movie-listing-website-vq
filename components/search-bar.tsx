@@ -7,6 +7,7 @@ import { Search, X, Film, Clock, TrendingUp } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { videos, type Video } from "@/data/videos";
+import { generateSlug } from "@/lib/seo-utils";
 
 interface SearchBarProps {
   className?: string;
@@ -71,7 +72,8 @@ export function SearchBar({ className, onClose, autoFocus }: SearchBarProps) {
     } else if (e.key === "Enter") {
       e.preventDefault();
       if (selectedIndex >= 0 && suggestions[selectedIndex]) {
-        router.push(`/video/${suggestions[selectedIndex].id}`);
+        const selected = suggestions[selectedIndex];
+        router.push(`/movie/${selected.slug || generateSlug(selected.title)}`);
         setIsOpen(false);
         setQuery("");
         onClose?.();
@@ -139,7 +141,7 @@ export function SearchBar({ className, onClose, autoFocus }: SearchBarProps) {
               {suggestions.map((video, index) => (
                 <Link
                   key={video.id}
-                  href={`/video/${video.id}`}
+                  href={`/movie/${video.slug || generateSlug(video.title)}`}
                   onClick={() => {
                     setIsOpen(false);
                     setQuery("");

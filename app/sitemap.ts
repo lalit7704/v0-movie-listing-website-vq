@@ -51,7 +51,7 @@ const baseUrl = 'https://www.onemovie.in';
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/cartoon`,
+      url: `${baseUrl}/cartoons`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
@@ -75,10 +75,28 @@ const baseUrl = 'https://www.onemovie.in';
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/police`,
+      url: `${baseUrl}/ramayan`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/mahabharat`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/shree-krishna`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/faq`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.4,
     },
     {
       url: `${baseUrl}/privacy-policy`,

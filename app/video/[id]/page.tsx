@@ -10,6 +10,8 @@ import { Button } from "@/components/ui/button";
 import { getVideoById, getRecommendedVideos, videos } from "@/data/videos";
 import { resolveDownloadUrl } from "@/lib/download-url";
 import { TrackedDownloadLink } from "@/components/tracked-download-link";
+import { ShareActions } from "@/components/share-actions";
+import { MovieSupportActions } from "@/components/movie-support-actions";
 
 interface VideoPageProps {
   params: Promise<{ id: string }>;
@@ -63,9 +65,9 @@ export default async function VideoPage({ params }: VideoPageProps) {
             </Button>
           </Link>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid min-w-0 grid-cols-1 gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
             {/* Video Player and Details */}
-            <div className="lg:col-span-2 space-y-6">
+            <div className="min-w-0 space-y-6">
               {/* Video Player */}
               <VideoPlayer
                 videoUrl={video.videoUrl}
@@ -76,15 +78,19 @@ export default async function VideoPage({ params }: VideoPageProps) {
               {/* Title and Actions */}
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
                 <div>
-                  <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                  <h1 className="break-words text-2xl md:text-3xl font-bold text-foreground mb-2">
                     {video.title}
                   </h1>
                   <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
-                    <div className="flex items-center gap-1">
-                      <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-                      <span className="text-foreground font-medium">{video.rating}</span>
-                    </div>
-                    <span>•</span>
+                    {video.rating > 0 && (
+                      <>
+                        <div className="flex items-center gap-1">
+                          <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                          <span className="text-foreground font-medium">{video.rating}</span>
+                        </div>
+                        <span>&bull;</span>
+                      </>
+                    )}
                     <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
                       <span>{video.duration}</span>
@@ -127,7 +133,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
               {/* Description */}
               <div className="bg-card rounded-xl p-6 border border-border">
                 <h2 className="text-lg font-semibold text-foreground mb-3">Description</h2>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="break-words text-muted-foreground leading-relaxed">
                   {video.description}
                 </p>
               </div>
@@ -177,9 +183,9 @@ export default async function VideoPage({ params }: VideoPageProps) {
             </div>
 
             {/* Sidebar - Poster and Quick Info */}
-            <div className="space-y-6">
+            <div className="min-w-0 space-y-6">
               {/* Poster */}
-              <div className="relative rounded-xl overflow-hidden shadow-2xl">
+              <div className="relative aspect-[2/3] rounded-xl overflow-hidden shadow-2xl">
                 <Image
                   src={video.poster}
                   alt={video.title}
@@ -193,63 +199,38 @@ export default async function VideoPage({ params }: VideoPageProps) {
                     {video.quality}
                   </span>
                 </div>
-                <div className="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 bg-black/70 rounded">
-                  <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-                  <span className="text-foreground font-medium">{video.rating}</span>
-                </div>
+                {video.rating > 0 && (
+                  <div className="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 bg-black/70 rounded">
+                    <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                    <span className="text-foreground font-medium">{video.rating}</span>
+                  </div>
+                )}
               </div>
 
               {/* Quick Download */}
               <div className="bg-card rounded-xl p-6 border border-border">
                 <h3 className="text-lg font-semibold text-foreground mb-4">Quick Download</h3>
-                <div className="space-y-3">
-                 <TrackedDownloadLink
-                    href={downloadUrl}
-                    movieId={video.id}
-                    source="quick-1"
-                  >
-                    <Button className="gap-2">
-                      <Download className="w-4 h-4" />
-                      Download
-                    </Button>
-                  </TrackedDownloadLink>
-                  <TrackedDownloadLink
-                    href={downloadUrl}
-                    movieId={video.id}
-                    source="quick-2"
-                  >
-                    <Button className="gap-2">
-                      <Download className="w-4 h-4" />
-                      Download
-                    </Button>
-                  </TrackedDownloadLink>  
-                  <TrackedDownloadLink
-                    href={downloadUrl}
-                    movieId={video.id}
-                    source="quick-3"
-                  >
-                    <Button className="gap-2">
-                      <Download className="w-4 h-4" />
-                      Download
-                    </Button>
-                  </TrackedDownloadLink>
-                </div>
+                <TrackedDownloadLink
+                  href={downloadUrl}
+                  movieId={video.id}
+                  source="quick-download"
+                >
+                  <Button className="w-full justify-between">
+                    <span>Download Movie</span>
+                    <Download className="w-4 h-4" />
+                  </Button>
+                </TrackedDownloadLink>
+              </div>
+
+              <div className="bg-card rounded-xl p-6 border border-border">
+                <h3 className="text-lg font-semibold text-foreground mb-4">Need Help?</h3>
+                <MovieSupportActions movieId={video.id} />
               </div>
 
               {/* Share */}
               <div className="bg-card rounded-xl p-6 border border-border">
                 <h3 className="text-lg font-semibold text-foreground mb-4">Share This Movie</h3>
-                <div className="flex items-center gap-2">
-                  <Button variant="outline" size="sm" className="flex-1">
-                    Facebook
-                  </Button>
-                  <Button variant="outline" size="sm" className="flex-1">
-                    Twitter
-                  </Button>
-                  <Button variant="outline" size="sm" className="flex-1">
-                    WhatsApp
-                  </Button>
-                </div>
+                <ShareActions title={video.title} />
               </div>
             </div>
           </div>

@@ -3,20 +3,38 @@ const crypto = require("node:crypto");
 const fs = require("node:fs");
 const path = require("node:path");
 
-const token =
-  process.env.TELEGRAM_BOT_TOKEN ||
-  "8786488490:AAFm-5zyvCnu2LCmOvfoHWw_Nn2OsDXKMYI";
+try {
+  process.loadEnvFile(path.join(__dirname, ".env.local"));
+} catch (error) {
+  if (error.code !== "ENOENT") {
+    throw error;
+  }
+}
+
+const token = process.env.TELEGRAM_BOT_TOKEN;
+
+if (!token) {
+  throw new Error("TELEGRAM_BOT_TOKEN is required");
+}
 const STORAGE_CHANNEL_ID = -1003845134502;
 const MEMBERSHIP_CHANNEL_ID = -1003845134502;
 const CHANNEL_JOIN_URL = "https://t.me/onemoviedownloa";
 const OWNER_USER_ID = 990444100;
 const STATS_FILE = path.join(__dirname, "bot-stats.json");
+const SUPPORT_COOLDOWN_MS = 60 * 1000;
+const supportCooldowns = new Map();
 
 const bot = new TelegramBot(token, { polling: true });
 
 function emptyStats() {
   return {
-    totals: { starts: 0, requests: 0, deliveries: 0 },
+    totals: {
+      starts: 0,
+      requests: 0,
+      deliveries: 0,
+      contentRequests: 0,
+      reports: 0,
+    },
     users: {},
     days: {},
   };
@@ -50,6 +68,8 @@ function recordEvent(userId, event) {
       starts: 0,
       requests: 0,
       deliveries: 0,
+      contentRequests: 0,
+      reports: 0,
       users: {},
     };
     stats.days[today][event] = (stats.days[today][event] || 0) + 1;
@@ -68,6 +88,8 @@ function statsMessage() {
     starts: 0,
     requests: 0,
     deliveries: 0,
+    contentRequests: 0,
+    reports: 0,
     users: {},
   };
 
@@ -78,13 +100,34 @@ function statsMessage() {
     `Total bot starts: ${stats.totals.starts}`,
     `Total movie requests: ${stats.totals.requests}`,
     `Successful deliveries: ${stats.totals.deliveries}`,
+    `Movie title requests: ${stats.totals.contentRequests || 0}`,
+    `Broken link reports: ${stats.totals.reports || 0}`,
     "",
     `Today (${today})`,
     `Unique users: ${Object.keys(daily.users).length}`,
     `Bot starts: ${daily.starts}`,
     `Movie requests: ${daily.requests}`,
     `Successful deliveries: ${daily.deliveries}`,
+    `Movie title requests: ${daily.contentRequests || 0}`,
+    `Broken link reports: ${daily.reports || 0}`,
   ].join("\n");
+}
+
+function userLabel(user) {
+  return user.username ? `@${user.username}` : `${user.first_name || "User"} (${user.id})`;
+}
+
+function canSubmitSupportRequest(userId, type) {
+  const key = `${type}:${userId}`;
+  const now = Date.now();
+  const lastSubmittedAt = supportCooldowns.get(key) || 0;
+
+  if (now - lastSubmittedAt < SUPPORT_COOLDOWN_MS) {
+    return false;
+  }
+
+  supportCooldowns.set(key, now);
+  return true;
 }
 
 function hasChannelAccess(member) {
@@ -129,6 +172,41 @@ bot.onText(/^\/start m_(\d+)$/, async (msg, match) => {
 bot.onText(/^\/start$/, (msg) => {
   recordEvent(msg.from.id, "starts");
   bot.sendMessage(msg.chat.id, "Welcome to OneMovie Bot. Open a movie from the website.");
+});
+
+bot.onText(/^\/start request$/, (msg) => {
+  bot.sendMessage(
+    msg.chat.id,
+    "Send the movie name in this format:\n/request Movie Name",
+  );
+});
+
+bot.onText(/^\/request\s+(.{2,100})$/i, async (msg, match) => {
+  if (!canSubmitSupportRequest(msg.from.id, "request")) {
+    return bot.sendMessage(msg.chat.id, "Please wait one minute before sending another request.");
+  }
+
+  const movieName = match[1].trim();
+  await bot.sendMessage(
+    OWNER_USER_ID,
+    `New movie request\nMovie: ${movieName}\nFrom: ${userLabel(msg.from)}`,
+  );
+  recordEvent(msg.from.id, "contentRequests");
+  return bot.sendMessage(msg.chat.id, `Request received: ${movieName}`);
+});
+
+bot.onText(/^\/start report_([A-Za-z0-9_-]+)$/, async (msg, match) => {
+  if (!canSubmitSupportRequest(msg.from.id, "report")) {
+    return bot.sendMessage(msg.chat.id, "Please wait one minute before sending another report.");
+  }
+
+  const movieId = match[1];
+  await bot.sendMessage(
+    OWNER_USER_ID,
+    `Broken link report\nMovie ID: ${movieId}\nFrom: ${userLabel(msg.from)}`,
+  );
+  recordEvent(msg.from.id, "reports");
+  return bot.sendMessage(msg.chat.id, "Thanks. The broken link report has been sent.");
 });
 
 bot.onText(/^\/stats$/, (msg) => {

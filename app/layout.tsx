@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   other: {
     "google-adsense-account": "ca-pub-5319727568049071"
   },
-  metadataBase: new URL('https://onemovie.app'),
+  metadataBase: new URL('https://www.onemovie.in'),
   robots: {
     index: true,
     follow: true,
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://onemovie.app',
+    canonical: 'https://www.onemovie.in',
   },
 }
 

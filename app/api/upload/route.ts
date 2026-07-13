@@ -2,6 +2,16 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
   try {
+    const adminToken = process.env.ADMIN_UPLOAD_TOKEN;
+    const providedToken = request.headers.get("x-admin-token");
+
+    if (!adminToken || providedToken !== adminToken) {
+      return NextResponse.json(
+        { success: false, error: "Unauthorized" },
+        { status: 401 }
+      );
+    }
+
     const body = await request.json();
     const { title, videoUrl } = body;
 
@@ -23,8 +33,15 @@ export async function POST(request: NextRequest) {
     }
 
     // 🔥 TOKEN (isko .env me rakhna better hai)
-    const TOKEN = "8564702752:AAGQWoG0-2cDc49AzhvFb-lQvl5KlEK9Iq0";
-    const CHANNEL = "@onemoviedownloa";
+    const TOKEN = process.env.TELEGRAM_UPLOAD_BOT_TOKEN;
+    const CHANNEL = process.env.TELEGRAM_CHANNEL_ID;
+
+    if (!TOKEN || !CHANNEL) {
+      return NextResponse.json(
+        { success: false, error: "Upload service is not configured" },
+        { status: 503 }
+      );
+    }
 
     const response = await fetch(
       `https://api.telegram.org/bot${TOKEN}/sendVideo`,
