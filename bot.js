@@ -1,112 +1,67 @@
 const TelegramBot = require("node-telegram-bot-api");
 
-const token = "8786488490:AAFm-5zyvCnu2LCmOvfoHWw_Nn2OsDXKMYI";
+const token =
+  process.env.TELEGRAM_BOT_TOKEN ||
+  "8786488490:AAFm-5zyvCnu2LCmOvfoHWw_Nn2OsDXKMYI";
+const STORAGE_CHANNEL_ID = -1003845134502;
+const MEMBERSHIP_CHANNEL_ID = -1003845134502;
+const CHANNEL_JOIN_URL = "https://t.me/onemoviedownloa";
 
-const bot = new TelegramBot(token, {
-  polling: true,
-});
+const bot = new TelegramBot(token, { polling: true });
 
-// Aapki website ka base URL. (Local pe testing ke liye localhost rakhein)
-// Jab website live deploy ho jaye, toh isko "https://onemovie.in" se replace kar dein.
-const WEBSITE_URL = "https://onemovie.in";
-
-// Normal /start
-bot.onText(/\/start$/, (msg) => {
-  bot.sendMessage(
-    msg.chat.id,
-    "Welcome to OneMovie Bot 🎬\nPlease open movie from website."
+function hasChannelAccess(member) {
+  return (
+    member.status === "creator" ||
+    member.status === "administrator" ||
+    member.status === "member" ||
+    (member.status === "restricted" && member.is_member)
   );
-});
+}
 
-// Website se aane wala slug
-bot.onText(/\/start (.+)/, async (msg, match) => {
-
-  const chatId = msg.chat.id;
-
-  const slug = match[1].trim(); // Extra space hata dega
-
-  // slug hota hai video.id (website se)
-  // website pe yahi data static arrays se serve hota hai, /api/movie wala endpoint is repo me nahi hai.
-  // isliye Telegram bot ko fallback karna hoga.
-  // 1) movie page url
-  const moviePageUrl = `${WEBSITE_URL}/movie/${slug}`;
-
-
-  console.log("Received slug:", slug);
-
+async function showMovieAccess(chatId, userId, messageId) {
   try {
-    // API ko call karke current slug ke basis pe live data nikalna
-    const response = await fetch(`${WEBSITE_URL}/api/movie/${slug}`);
+    const member = await bot.getChatMember(MEMBERSHIP_CHANNEL_ID, userId);
 
-    // Agar response HTML (error page) aaye, toh usko handle karna
-    const contentType = response.headers.get("content-type");
-
-    // API available na ho (HTML / 404 / non-json) => fallback
-    if (!contentType || !contentType.includes("application/json")) {
-      // fallback: API missing/404 => inline button direct movie page
-      return bot.sendMessage(
-        chatId,
-        "Movie page (API not available):",
-        {
-          reply_markup: {
-            inline_keyboard: [
-              [
-                {
-                  text: "📥 Download Now",
-                  url: moviePageUrl,
-                },
-              ],
-            ],
-          },
-        }
-      );
+    if (hasChannelAccess(member)) {
+      await bot.sendMessage(chatId, "Channel membership verified. Sending your movie...");
+      return bot.copyMessage(chatId, STORAGE_CHANNEL_ID, Number(messageId));
     }
 
-
-    const data = await response.json();
-
-
-    console.log("API Response:", data); // Check karne ke liye ki API kya bhej rahi hai
-
-    if (!data.success || !data.movie) {
-      return bot.sendMessage(chatId, "Movie not found");
-    }
-
-    const movie = data.movie;
-
-    await bot.sendPhoto(
-      chatId,
-      movie.poster,
-      {
-        caption: `
-🎬 ${movie.title}
-
-⭐ Rating: ${movie.rating}
-🕒 Duration: ${movie.duration}
-        `,
-      }
-    );
-
-    await bot.sendMessage(
-      chatId,
-      "👇 Download Movie",
-      {
-        reply_markup: {
-          inline_keyboard: [
-            [
-              {
-                text: "📥 Download Now",
-                url: movie.downloadUrl,
-              },
-            ],
-          ],
-        },
-      }
-    );
+    return bot.sendMessage(chatId, "Please join the channel to access this movie.", {
+      reply_markup: {
+        inline_keyboard: [
+          [{ text: "Join Channel", url: CHANNEL_JOIN_URL }],
+          [{ text: "Check Again", callback_data: `check_m_${messageId}` }],
+        ],
+      },
+    });
   } catch (error) {
-    console.error("Error fetching movie:", error);
-    bot.sendMessage(chatId, "An error occurred while fetching the movie. Please try again.");
+    console.error("Membership check failed:", error.message);
+    return bot.sendMessage(chatId, "Could not verify membership. Please try again.");
   }
+}
+
+bot.onText(/^\/start m_(\d+)$/, async (msg, match) => {
+  await showMovieAccess(msg.chat.id, msg.from.id, match[1]);
 });
 
-console.log("Bot Running...");
+bot.onText(/^\/start$/, (msg) => {
+  bot.sendMessage(msg.chat.id, "Welcome to OneMovie Bot. Open a movie from the website.");
+});
+
+bot.on("callback_query", async (query) => {
+  const match = query.data && query.data.match(/^check_m_(\d+)$/);
+
+  if (!match || !query.message) {
+    return;
+  }
+
+  await bot.answerCallbackQuery(query.id, { text: "Checking membership..." });
+  await showMovieAccess(query.message.chat.id, query.from.id, match[1]);
+});
+
+bot.on("polling_error", (error) => {
+  console.error("Telegram polling error:", error.message);
+});
+
+console.log("OneMovie membership bot is running.");
