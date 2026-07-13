@@ -9,6 +9,7 @@ import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { getVideoById, getRecommendedVideos, videos } from "@/data/videos";
 import { resolveDownloadUrl } from "@/lib/download-url";
+import { TrackedDownloadLink } from "@/components/tracked-download-link";
 
 interface VideoPageProps {
   params: Promise<{ id: string }>;
@@ -96,16 +97,16 @@ export default async function VideoPage({ params }: VideoPageProps) {
                   </div>
                 </div>
 
-                <a
+                <TrackedDownloadLink
                   href={downloadUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  movieId={video.id}
+                  source="primary"
                 >
                   <Button className="gap-2">
                     <Download className="w-4 h-4" />
                     Download
                   </Button>
-                </a>
+                </TrackedDownloadLink>
               </div>
 
               {/* Quality Badge */}
@@ -202,36 +203,36 @@ export default async function VideoPage({ params }: VideoPageProps) {
               <div className="bg-card rounded-xl p-6 border border-border">
                 <h3 className="text-lg font-semibold text-foreground mb-4">Quick Download</h3>
                 <div className="space-y-3">
-                 <a
+                 <TrackedDownloadLink
                     href={downloadUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    movieId={video.id}
+                    source="quick-1"
                   >
                     <Button className="gap-2">
                       <Download className="w-4 h-4" />
                       Download
                     </Button>
-                  </a>
-                  <a
+                  </TrackedDownloadLink>
+                  <TrackedDownloadLink
                     href={downloadUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    movieId={video.id}
+                    source="quick-2"
                   >
                     <Button className="gap-2">
                       <Download className="w-4 h-4" />
                       Download
                     </Button>
-                  </a>  
-                  <a
+                  </TrackedDownloadLink>  
+                  <TrackedDownloadLink
                     href={downloadUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    movieId={video.id}
+                    source="quick-3"
                   >
                     <Button className="gap-2">
                       <Download className="w-4 h-4" />
                       Download
                     </Button>
-                  </a>
+                  </TrackedDownloadLink>
                 </div>
               </div>
 

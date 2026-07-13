@@ -20,6 +20,7 @@ import {
 import { generateMoviePageJsonLd } from "@/lib/structured-data";
 import { resolveDownloadUrl } from "@/lib/download-url";
 import { MovieComments } from "@/components/movie-comments";
+import { TrackedDownloadLink } from "@/components/tracked-download-link";
 
 interface MoviePageProps {
   params: Promise<{ slug: string }>;
@@ -202,16 +203,16 @@ export default async function MoviePage({ params }: MoviePageProps) {
                     </div>
                   </div>
 
-                  <a
+                  <TrackedDownloadLink
                     href={downloadUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    movieId={video.id}
+                    source="primary"
                   >
                     <Button className="gap-2">
                       <Download className="w-4 h-4" />
                       Download
                     </Button>
-                  </a>
+                  </TrackedDownloadLink>
                 </div>
 
                 {/* Quality Badge */}
@@ -308,36 +309,36 @@ export default async function MoviePage({ params }: MoviePageProps) {
                 <div className="bg-card rounded-xl p-6 border border-border">
                   <h3 className="text-lg font-semibold text-foreground mb-4">Quick Download</h3>
                   <div className="space-y-3">
-                    <a
-                    href={downloadUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                    <TrackedDownloadLink
+                      href={downloadUrl}
+                      movieId={video.id}
+                      source="quick-480p"
+                    >
                       <Button variant="outline" className="w-full justify-between">
                         <span>480p - SD</span>
                         <Download className="w-4 h-4" />
                       </Button>
-                    </a>
-                    <a
-                    href={downloadUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                    </TrackedDownloadLink>
+                    <TrackedDownloadLink
+                      href={downloadUrl}
+                      movieId={video.id}
+                      source="quick-720p"
+                    >
                       <Button variant="outline" className="w-full justify-between">
                         <span>720p - HD</span>
                         <Download className="w-4 h-4" />
                       </Button>
-                    </a>
-                    <a
-                    href={downloadUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                    </TrackedDownloadLink>
+                    <TrackedDownloadLink
+                      href={downloadUrl}
+                      movieId={video.id}
+                      source="quick-1080p"
+                    >
                       <Button className="w-full justify-between">
                         <span>1080p - Full HD</span>
                         <Download className="w-4 h-4" />
                       </Button>
-                    </a>
+                    </TrackedDownloadLink>
                   </div>
                 </div>
 
