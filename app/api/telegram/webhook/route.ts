@@ -3,7 +3,6 @@ import { NextResponse, type NextRequest } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import {
   TELEGRAM_CHANNEL_ID,
-  TELEGRAM_CHANNEL_JOIN_URL,
   TELEGRAM_OWNER_USER_ID,
   callTelegram,
   isValidWebhookSecret,
@@ -27,17 +26,6 @@ interface TelegramMessage {
 interface TelegramUpdate {
   update_id: number;
   message?: TelegramMessage;
-  callback_query?: {
-    id: string;
-    from: TelegramUser;
-    data?: string;
-    message?: TelegramMessage;
-  };
-}
-
-interface ChatMember {
-  status: string;
-  is_member?: boolean;
 }
 
 function getStatsClient() {
@@ -87,42 +75,17 @@ async function sendMessage(chatId: number, text: string, replyMarkup?: object) {
   });
 }
 
-function hasChannelAccess(member: ChatMember) {
-  return (
-    member.status === "creator" ||
-    member.status === "administrator" ||
-    member.status === "member" ||
-    (member.status === "restricted" && member.is_member)
-  );
-}
-
-async function showMovieAccess(chatId: number, userId: number, messageId: string) {
+async function deliverMovie(chatId: number, userId: number, messageId: string) {
   try {
-    const member = await callTelegram<ChatMember>("getChatMember", {
-      chat_id: TELEGRAM_CHANNEL_ID,
-      user_id: userId,
+    await callTelegram("copyMessage", {
+      chat_id: chatId,
+      from_chat_id: TELEGRAM_CHANNEL_ID,
+      message_id: Number(messageId),
     });
-
-    if (hasChannelAccess(member)) {
-      await sendMessage(chatId, "Channel membership verified. Sending your movie...");
-      await callTelegram("copyMessage", {
-        chat_id: chatId,
-        from_chat_id: TELEGRAM_CHANNEL_ID,
-        message_id: Number(messageId),
-      });
-      await recordEvent(userId, "delivery", { messageId });
-      return;
-    }
-
-    await sendMessage(chatId, "Please join the channel to access this movie.", {
-      inline_keyboard: [
-        [{ text: "Join Channel", url: TELEGRAM_CHANNEL_JOIN_URL }],
-        [{ text: "Check Again", callback_data: `check_m_${messageId}` }],
-      ],
-    });
+    await recordEvent(userId, "delivery", { messageId });
   } catch (error) {
-    console.error("Telegram membership check failed", error);
-    await sendMessage(chatId, "Could not verify membership. Please try again.");
+    console.error("Telegram movie delivery failed", error);
+    await sendMessage(chatId, "Movie could not be sent. Please try again later.");
   }
 }
 
@@ -170,7 +133,7 @@ async function handleMessage(message: TelegramMessage) {
   const movieMatch = text.match(/^\/start(?:@\w+)?\s+m_(\d+)$/i);
   if (movieMatch) {
     await recordEvent(user.id, "movie_request", { messageId: movieMatch[1] });
-    await showMovieAccess(chatId, user.id, movieMatch[1]);
+    await deliverMovie(chatId, user.id, movieMatch[1]);
     return;
   }
 
@@ -191,6 +154,11 @@ async function handleMessage(message: TelegramMessage) {
 
   if (/^\/start(?:@\w+)?\s+request$/i.test(text)) {
     await sendMessage(chatId, "Send the movie name in this format:\n/request Movie Name");
+    return;
+  }
+
+  if (/^\/start(?:@\w+)?\s+unavailable$/i.test(text)) {
+    await sendMessage(chatId, "This movie is not available for download yet.");
     return;
   }
 
@@ -221,18 +189,6 @@ async function handleMessage(message: TelegramMessage) {
   }
 }
 
-async function handleCallback(update: TelegramUpdate) {
-  const query = update.callback_query;
-  const match = query?.data?.match(/^check_m_(\d+)$/);
-  if (!query || !match || !query.message) return;
-
-  await callTelegram("answerCallbackQuery", {
-    callback_query_id: query.id,
-    text: "Checking membership...",
-  });
-  await showMovieAccess(query.message.chat.id, query.from.id, match[1]);
-}
-
 export async function POST(request: NextRequest) {
   if (!isValidWebhookSecret(request.headers.get("x-telegram-bot-api-secret-token"))) {
     return NextResponse.json({ ok: false }, { status: 401 });
@@ -240,8 +196,7 @@ export async function POST(request: NextRequest) {
 
   try {
     const update = (await request.json()) as TelegramUpdate;
-    if (update.callback_query) await handleCallback(update);
-    else if (update.message) await handleMessage(update.message);
+    if (update.message) await handleMessage(update.message);
     return NextResponse.json({ ok: true });
   } catch (error) {
     console.error("Telegram webhook failed", error);

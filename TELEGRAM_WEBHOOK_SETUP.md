@@ -11,7 +11,6 @@ Add these in **Vercel Project > Settings > Environment Variables** for Productio
 ADMIN_UPLOAD_TOKEN=your-long-admin-key
 TELEGRAM_BOT_TOKEN=your-botfather-token
 TELEGRAM_CHANNEL_ID=-1003845134502
-TELEGRAM_CHANNEL_JOIN_URL=https://t.me/onemoviedownloa
 TELEGRAM_OWNER_USER_ID=990444100
 ```
 

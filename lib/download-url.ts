@@ -10,5 +10,5 @@ export function resolveDownloadUrl(downloadUrl: string) {
 
   return match
     ? getBotDeepLink(`m_${match[1]}`)
-    : downloadUrl;
+    : getBotDeepLink("unavailable");
 }

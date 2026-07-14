@@ -1,8 +1,6 @@
 import { createHash, timingSafeEqual } from "node:crypto";
 
 export const TELEGRAM_CHANNEL_ID = process.env.TELEGRAM_CHANNEL_ID || "-1003845134502";
-export const TELEGRAM_CHANNEL_JOIN_URL =
-  process.env.TELEGRAM_CHANNEL_JOIN_URL || "https://t.me/onemoviedownloa";
 export const TELEGRAM_OWNER_USER_ID = Number(process.env.TELEGRAM_OWNER_USER_ID || "990444100");
 
 export function getTelegramToken() {

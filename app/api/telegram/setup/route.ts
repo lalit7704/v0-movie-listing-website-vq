@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
     await callTelegram("setWebhook", {
       url: url.toString(),
       secret_token: secretToken,
-      allowed_updates: ["message", "callback_query"],
+      allowed_updates: ["message"],
       drop_pending_updates: false,
     });
     const info = await callTelegram<Record<string, unknown>>("getWebhookInfo");

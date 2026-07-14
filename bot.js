@@ -17,8 +17,6 @@ if (!token) {
   throw new Error("TELEGRAM_BOT_TOKEN is required");
 }
 const STORAGE_CHANNEL_ID = -1003845134502;
-const MEMBERSHIP_CHANNEL_ID = -1003845134502;
-const CHANNEL_JOIN_URL = "https://t.me/onemoviedownloa";
 const OWNER_USER_ID = 990444100;
 const STATS_FILE = path.join(__dirname, "bot-stats.json");
 const SUPPORT_COOLDOWN_MS = 60 * 1000;
@@ -130,43 +128,20 @@ function canSubmitSupportRequest(userId, type) {
   return true;
 }
 
-function hasChannelAccess(member) {
-  return (
-    member.status === "creator" ||
-    member.status === "administrator" ||
-    member.status === "member" ||
-    (member.status === "restricted" && member.is_member)
-  );
-}
-
-async function showMovieAccess(chatId, userId, messageId) {
+async function deliverMovie(chatId, userId, messageId) {
   try {
-    const member = await bot.getChatMember(MEMBERSHIP_CHANNEL_ID, userId);
-
-    if (hasChannelAccess(member)) {
-      await bot.sendMessage(chatId, "Channel membership verified. Sending your movie...");
-      const result = await bot.copyMessage(chatId, STORAGE_CHANNEL_ID, Number(messageId));
-      recordEvent(userId, "deliveries");
-      return result;
-    }
-
-    return bot.sendMessage(chatId, "Please join the channel to access this movie.", {
-      reply_markup: {
-        inline_keyboard: [
-          [{ text: "Join Channel", url: CHANNEL_JOIN_URL }],
-          [{ text: "Check Again", callback_data: `check_m_${messageId}` }],
-        ],
-      },
-    });
+    const result = await bot.copyMessage(chatId, STORAGE_CHANNEL_ID, Number(messageId));
+    recordEvent(userId, "deliveries");
+    return result;
   } catch (error) {
-    console.error("Membership check failed:", error.message);
-    return bot.sendMessage(chatId, "Could not verify membership. Please try again.");
+    console.error("Movie delivery failed:", error.message);
+    return bot.sendMessage(chatId, "Movie could not be sent. Please try again later.");
   }
 }
 
 bot.onText(/^\/start m_(\d+)$/, async (msg, match) => {
   recordEvent(msg.from.id, "requests");
-  await showMovieAccess(msg.chat.id, msg.from.id, match[1]);
+  await deliverMovie(msg.chat.id, msg.from.id, match[1]);
 });
 
 bot.onText(/^\/start$/, (msg) => {
@@ -179,6 +154,10 @@ bot.onText(/^\/start request$/, (msg) => {
     msg.chat.id,
     "Send the movie name in this format:\n/request Movie Name",
   );
+});
+
+bot.onText(/^\/start unavailable$/, (msg) => {
+  bot.sendMessage(msg.chat.id, "This movie is not available for download yet.");
 });
 
 bot.onText(/^\/request\s+(.{2,100})$/i, async (msg, match) => {
@@ -217,19 +196,8 @@ bot.onText(/^\/stats$/, (msg) => {
   bot.sendMessage(msg.chat.id, statsMessage());
 });
 
-bot.on("callback_query", async (query) => {
-  const match = query.data && query.data.match(/^check_m_(\d+)$/);
-
-  if (!match || !query.message) {
-    return;
-  }
-
-  await bot.answerCallbackQuery(query.id, { text: "Checking membership..." });
-  await showMovieAccess(query.message.chat.id, query.from.id, match[1]);
-});
-
 bot.on("polling_error", (error) => {
   console.error("Telegram polling error:", error.message);
 });
 
-console.log("OneMovie membership bot is running.");
+console.log("OneMovie delivery bot is running.");
