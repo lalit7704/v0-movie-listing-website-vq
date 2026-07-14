@@ -13,10 +13,9 @@ export function getTelegramWebhookSecret() {
   if (process.env.TELEGRAM_WEBHOOK_SECRET) return process.env.TELEGRAM_WEBHOOK_SECRET;
 
   const token = getTelegramToken();
-  const adminToken = process.env.ADMIN_UPLOAD_TOKEN || "";
-  if (!token || !adminToken) return "";
+  if (!token) return "";
 
-  return createHash("sha256").update(`${token}:${adminToken}`).digest("hex");
+  return createHash("sha256").update(`onemovie-webhook:${token}`).digest("hex");
 }
 
 export function isValidWebhookSecret(receivedSecret: string | null) {
