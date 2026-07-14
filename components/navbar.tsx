@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Download, Heart, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SearchBar } from "@/components/search-bar";
+import { AuthMenu } from "@/components/auth-menu";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -96,6 +97,10 @@ export function Navbar() {
             </Link>
           </Button>
 
+          <div className="hidden md:block">
+            <AuthMenu />
+          </div>
+
           {/* Mobile Controls */}
           <div className="flex items-center gap-2 md:hidden">
             <Button asChild variant="ghost" size="icon">
@@ -103,6 +108,8 @@ export function Navbar() {
                 <Heart className="h-5 w-5" />
               </Link>
             </Button>
+
+            <AuthMenu />
             <Button
               variant="ghost"
               size="icon"

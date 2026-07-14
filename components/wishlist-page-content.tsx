@@ -8,9 +8,11 @@ import { VideoGrid } from "@/components/video-grid";
 import { Button } from "@/components/ui/button";
 import { videos } from "@/data/videos";
 import { useWishlist } from "@/hooks/use-wishlist";
+import { useAuth } from "@/components/auth-provider";
 
 export function WishlistPageContent() {
   const { wishlistIds, isLoaded } = useWishlist();
+  const { user, isConfigured } = useAuth();
   const wishlistVideos = videos.filter((video) => wishlistIds.includes(video.id));
 
   return (
@@ -27,6 +29,17 @@ export function WishlistPageContent() {
             </p>
           </div>
         </div>
+
+        {isConfigured && !user && (
+          <div className="mb-6 flex flex-col justify-between gap-3 border-y border-border py-4 sm:flex-row sm:items-center">
+            <p className="text-sm text-muted-foreground">
+              Login to sync this wishlist across your phone and computer.
+            </p>
+            <Button asChild variant="outline" size="sm">
+              <Link href="/login">Login to Sync</Link>
+            </Button>
+          </div>
+        )}
 
         {!isLoaded ? (
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">

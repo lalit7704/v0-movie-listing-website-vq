@@ -40,6 +40,27 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
+            <h2 className="text-xl font-semibold mb-2">Optional User Accounts</h2>
+            <p className="text-muted-foreground">
+              If you choose to login with Google, we receive basic account details
+              such as your name, email address, and profile image. We store your
+              wishlist, watch progress, movie requests, notification preferences,
+              and related account activity so these features can work across your
+              devices. You can continue browsing without creating an account.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-semibold mb-2">Data Storage and Control</h2>
+            <p className="text-muted-foreground">
+              Account data is stored with our authentication and database provider.
+              Access controls restrict signed-in users to their own records. Guest
+              wishlist and watch progress may remain in your browser storage until
+              you clear it or login and sync it to your account.
+            </p>
+          </section>
+
+          <section>
             <h2 className="text-xl font-semibold mb-2">Cookies & Analytics</h2>
             <p className="text-muted-foreground">
               We may use cookies and similar technologies to improve user

@@ -5,6 +5,7 @@ import { HeroSlider } from "@/components/hero-slider";
 import { SectionSlider } from "@/components/section-slider";
 import { videos, getFeaturedVideos } from "@/data/videos";
 import Adsense from "@/components/Adsense";
+import { PersonalizedHomeSections } from "@/components/personalized-home-sections";
 
 const categoryLinks = [
   { href: "/bollywood", label: "Bollywood" },
@@ -34,6 +35,7 @@ export default function HomePage() {
 
         {/* Main Content Sections */}
         <div className="pt-8 space-y-4">
+          <PersonalizedHomeSections />
           <SectionSlider title="Trending Now" videos={trendingVideos} />
           <SectionSlider title="New Releases" videos={newReleases} />
           <SectionSlider title="Bollywood Hits" videos={bollywoodVideos} />

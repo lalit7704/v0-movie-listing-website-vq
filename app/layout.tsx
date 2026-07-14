@@ -4,6 +4,7 @@ import { Inter, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { generateOrganizationSchema, generateWebsiteSchema } from '@/lib/structured-data'
+import { Providers } from '@/components/providers'
 
 
 const inter = Inter({
@@ -111,7 +112,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}>
-        {children}
+        <Providers>{children}</Providers>
         <Analytics />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319727568049071" crossOrigin="anonymous"></script>
       <script

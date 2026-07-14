@@ -71,6 +71,7 @@ export default async function VideoPage({ params }: VideoPageProps) {
             <div className="min-w-0 space-y-6">
               {/* Video Player */}
               <VideoPlayer
+                videoId={video.id}
                 videoUrl={video.videoUrl}
                 poster={video.poster}
                 title={video.title}
