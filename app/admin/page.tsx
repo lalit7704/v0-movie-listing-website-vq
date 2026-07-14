@@ -5,12 +5,18 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { AlertCircle, CheckCircle, Loader2, Download, Link2 } from "lucide-react";
+import { AlertCircle, Bot, CheckCircle, Loader2, Download, Link2 } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
 interface UploadResponse {
   success: boolean;
   telegramLink?: string;
+  error?: string;
+}
+
+interface WebhookResponse {
+  success: boolean;
+  webhookUrl?: string;
   error?: string;
 }
 
@@ -20,6 +26,8 @@ export default function AdminPanel() {
   const [videoUrl, setVideoUrl] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [response, setResponse] = useState<UploadResponse | null>(null);
+  const [webhookResponse, setWebhookResponse] = useState<WebhookResponse | null>(null);
+  const [isConfiguringWebhook, setIsConfiguringWebhook] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -50,6 +58,29 @@ export default function AdminPanel() {
       });
     } finally {
       setIsLoading(false);
+    }
+  };
+
+  const configureWebhook = async () => {
+    setIsConfiguringWebhook(true);
+    setWebhookResponse(null);
+    try {
+      const res = await fetch("/api/telegram/setup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-admin-token": accessToken,
+        },
+        body: JSON.stringify({}),
+      });
+      setWebhookResponse((await res.json()) as WebhookResponse);
+    } catch (error) {
+      setWebhookResponse({
+        success: false,
+        error: error instanceof Error ? error.message : "Webhook setup failed",
+      });
+    } finally {
+      setIsConfiguringWebhook(false);
     }
   };
 
@@ -175,6 +206,51 @@ export default function AdminPanel() {
                 <AlertCircle className="h-4 w-4 text-red-500" />
                 <AlertDescription className="text-red-300 ml-2">
                   {response.error || "An error occurred during upload"}
+                </AlertDescription>
+              </Alert>
+            )}
+          </CardContent>
+        </Card>
+
+        <Card className="mt-6 border-slate-700 bg-slate-800/50 backdrop-blur">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2 text-white text-lg">
+              <Bot className="h-5 w-5 text-orange-500" aria-hidden="true" />
+              Telegram Bot Hosting
+            </CardTitle>
+            <CardDescription>
+              Connect Telegram to this live site so the bot works without your computer.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <Button
+              type="button"
+              variant="outline"
+              className="w-full"
+              disabled={!accessToken || isConfiguringWebhook}
+              onClick={() => void configureWebhook()}
+            >
+              {isConfiguringWebhook ? (
+                <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+              ) : (
+                <Bot className="h-4 w-4" aria-hidden="true" />
+              )}
+              {isConfiguringWebhook ? "Connecting..." : "Enable 24/7 Bot Webhook"}
+            </Button>
+
+            {webhookResponse?.success && (
+              <Alert className="border-green-800/50 bg-green-950/30">
+                <CheckCircle className="h-4 w-4 text-green-500" />
+                <AlertDescription className="ml-2 text-green-300">
+                  Bot webhook connected to {webhookResponse.webhookUrl}
+                </AlertDescription>
+              </Alert>
+            )}
+            {webhookResponse?.success === false && (
+              <Alert className="border-red-800/50 bg-red-950/30">
+                <AlertCircle className="h-4 w-4 text-red-500" />
+                <AlertDescription className="ml-2 text-red-300">
+                  {webhookResponse.error || "Webhook setup failed"}
                 </AlertDescription>
               </Alert>
             )}
