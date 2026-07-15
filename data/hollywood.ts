@@ -526,6 +526,62 @@ export const hollywoodVideos: Video[] = [
     "quality": "HD",
     "cast": ["Uhm Junghwa", "Song Seungheon"]
   }
+,
+{
+  "id": "6031",
+  "title": "Evil Dead Burn (2026) Hindi Dubbed",
+  "slug": generateSlug("Evil Dead Burn (2026) Hindi Dubbed"),
+  "videoUrl": "https://youtu.be/fqBZtUuew_c",
+  "downloadUrl": "https://t.me/onemoviedownloa/243",
+  "poster": "https://m.media-amazon.com/images/M/MV5BZTljMTZjZTItZjMzZi00NDBhLWFmMzAtOGNiNTlhY2MxMzg5XkEyXkFqcGc@._V1_FMjpg_UY4096_.jpg",
+  "description": "Evil Dead Burn (2026) 'ईविल डेड' फ्रेंचाइजी की छठी और एक भयानक सुपरनैचुरल हॉरर फिल्म है। कहानी एक ऐसे परिवार के इर्द-गिर्द घूमती है जो एक एकांत घर में इकट्ठा होता है। लेकिन उनका यह पुनर्मिलन एक दुःस्वप्न में बदल जाता है जब परिवार के सदस्य धीरे-धीरे 'डेडाइट्स' (राक्षसी आत्माओं) में बदलने लगते हैं। यह फिल्म क्रूरता और डर का एक नया स्तर पेश करने का वादा करती है। [1, 10, 11, 15, 19, 41, 47, 52]",
+  "category": "Hollywood",
+  "year": 2026,
+  "duration": "1h 49m",
+  "rating": 7.0,
+  "genre": ["Horror", "Supernatural"],
+  "language": "Hindi",
+  "quality": "HD",
+  "cast": ["Souheila Yacoub", "Tandi Wright", "Hunter Doohan"]
+},
+{
+  "id": "6032",
+  "title": "Wuthering Heights (2026) Hindi Dubbed",
+  "slug": generateSlug("Wuthering Heights (2026) Hindi Dubbed"),
+  "videoUrl": "https://youtu.be/3fLCdIYShEQ",
+  "downloadUrl": "https://t.me/onemoviedownloa/250",
+  "poster": "https://m.media-amazon.com/images/M/MV5BNjNkNmNhOWUtZTFmOC00YmQ4LWEzYWQtZjdlMGU0MGRkN2YzXkEyXkFqcGc@._V1_FMjpg_UY2963_.jpg",
+  "description": "Wuthering Heights (2026) एमिली ब्रोंटे के क्लासिक उपन्यास पर आधारित एक रोमांटिक पीरियड ड्रामा है, जिसका निर्देशन एमराल्ड फेनेल ने किया है। फिल्म में मार्गोट रॉबी और जैकब एलोर्डी मुख्य भूमिका में हैं। यह कैथरीन अर्नशॉ और हीथक्लिफ के बीच के तीव्र, भावुक और विनाशकारी रिश्ते की कहानी है, जो यॉर्कशायर के मूरों की पृष्ठभूमि पर आधारित है। [2, 4, 5, 6, 12, 26, 28]",
+  "category": "Hollywood",
+  "year": 2026,
+  "duration": "2h 16m",
+  "rating": 7.5,
+  "genre": ["Drama", "Romance"],
+  "language": "Hindi",
+  "quality": "HD",
+  "cast": ["Margot Robbie", "Jacob Elordi", "Hong Chau"]
+},
+{
+  "id": "6033",
+  "title": "Boulevard (2026) - Spanish Romantic Drama",
+  "slug": generateSlug("Boulevard 2026 - Spanish Romantic Drama"),
+  "videoUrl": "https://youtu.be/rZ6xn57p4J0",
+  "downloadUrl": "https://t.me/onemoviedownloa/244",
+  "poster": "https://www.sonypictures.es/statics/large_BOULEVARD_Keyart_4_5_RGB_CAPAS_5a6d57a439.jpg",
+  "description": "Boulevard (2026) एक स्पैनिश टीन रोमांटिक-ड्रामा फिल्म है। अपनी माँ के साथ एक नए शहर में आई हैस्ली वाइगल की मुलाकात रहस्यमयी और दुखद अतीत से जूझ रहे ल्यूक हाउलैंड से होती है। दोनों अपने निजी संघर्षों, दर्द और अधूरे सपनों के बीच एक छिपी हुई जगह को अपना ‘boulevard’ बनाते हैं—जहाँ वे बिना किसी दिखावे के खुद को समझ सकें और प्यार को एक मौका दे सकें। लेकिन ल्यूक के अतीत और आत्म-विनाशकारी स्वभाव के कारण हैस्ली को तय करना पड़ता है कि क्या किसी ऐसे इंसान को बचाया जा सकता है जो खुद बचना नहीं चाहता। Sonia Méndez द्वारा निर्देशित यह फिल्म Flor M. Salvador के लोकप्रिय उपन्यास पर आधारित है।",
+  "seoDescription": "Boulevard (2026) Spanish romantic drama की कहानी, official trailer, cast, rating और Prime Video streaming details देखें।",
+  "category": "Hollywood",
+  "year": 2026,
+  "duration": "1h 52m",
+  "rating": 4.9,
+  "genre": ["Drama", "Romance", "Teen Drama", "Teen Romance"],
+  "language": "Spanish",
+  "quality": "HD",
+  "featured": true,
+  "director": "Sonia Méndez",
+  "cast": ["Eve Ryan", "Mikel Niso", "Biel Antón", "Esther Acebo", "Luis Zahera"],
+  "keywords": ["Boulevard 2026", "Boulevard Spanish movie", "Flor M Salvador", "Eve Ryan", "Mikel Niso", "Prime Video romance"]
+}
 ];
 
 /* ---------------- HELPERS ---------------- */

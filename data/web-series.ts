@@ -492,6 +492,45 @@ export const webSeriesVideos: Video[] = [
   "language": "Hindi",
   "quality": "HD"
 }
+,
+{
+  "id": "8027",
+  "title": "Mukhbir – The Story of a Spy (Season 1)",
+  "slug": generateSlug("Mukhbir The Story of a Spy Season 1"),
+  "videoUrl": "https://youtu.be/DHz6kJOdf90",
+  "downloadUrl": "https://t.me/onemoviedownloa/246",
+  "poster": "https://m.media-amazon.com/images/M/MV5BYWNhMDkwZTYtZjAxOC00ODMxLWE1NWQtYTcwNjM5Njc2NzllXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+  "description": "Mukhbir – The Story of a Spy (2022) एक भारतीय स्पाई-थ्रिलर वेब सीरीज है। चीन-भारत युद्ध के बाद, एक प्रशिक्षित भारतीय जासूस को एक महत्वपूर्ण खुफिया जानकारी इकट्ठा करने और भारत के खिलाफ पाकिस्तान के हमले को रोकने के लिए पाकिस्तान भेजा जाता है। यह सीरीज एक गुमनाम नायक की कहानी है जिसने देश को कई आक्रामक हमलों से बचाया। [7, 8, 37, 38, 39, 40]",
+  "category": "Web Series",
+  "year": 2022,
+  "duration": "Season 1",
+  "rating": 8.2,
+  "genre": ["Thriller", "War", "Suspense", "Period Drama"],
+  "language": "Hindi",
+  "quality": "HD",
+  "cast": ["Zain Khan Durrani", "Prakash Raj", "Adil Hussain"]
+},
+{
+  "id": "8028",
+  "title": "S Line (Season 1) - Korean Fantasy Thriller Series",
+  "slug": generateSlug("S Line Season 1 - Korean Fantasy Thriller Series"),
+  "videoUrl": "https://youtu.be/SKg4dviRqzY",
+  "downloadUrl": "https://t.me/onemoviedownloa/242",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMWZkNzlmNDctNzc3Mi00ZTA5LWE5ZDAtZDkxNGFhZjY1MDc5XkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg",
+  "description": "S Line (2025) एक दक्षिण कोरियाई डार्क फैंटेसी, मिस्ट्री और क्राइम-थ्रिलर सीरीज़ है। कहानी एक ऐसी रहस्यमयी दुनिया दिखाती है जहाँ लोगों के पिछले शारीरिक संबंध चमकती लाल ‘S Lines’ के रूप में उनके सिर के ऊपर दिखाई देने लगते हैं। जन्म से इन लाइनों को देख सकने वाली छात्रा शिन ह्योन-ह्योप, जासूस हान जी-वूक और रहस्यमयी शिक्षिका ली ग्यू-जिन इस घटना से जुड़े अपराधों, छिपे रिश्तों और खतरनाक सच का सामना करते हैं। विशेष चश्मे सामने आने के बाद यह शक्ति दूसरे लोगों तक भी पहुँच जाती है और समाज के दबे हुए राज खुलने लगते हैं। Wavve की यह छह एपिसोड वाली सीरीज़ इसी नाम के Naver webtoon पर आधारित है।",
+  "seoDescription": "S Line Season 1 (2025) Korean fantasy thriller series की कहानी, trailer, cast, rating और streaming details देखें।",
+  "category": "Web Series",
+  "year": 2025,
+  "duration": "Season 1 • 6 Episodes",
+  "rating": 6.2,
+  "genre": ["Drama", "Fantasy", "Mystery", "Sci-Fi", "Thriller"],
+  "language": "Korean",
+  "quality": "HD",
+  "featured": true,
+  "director": "Ahn Joo-young",
+  "cast": ["Lee Soo-hyuk", "Lee Da-hee", "Arin", "Lee Eun-saem", "Kim Dong-young"],
+  "keywords": ["S Line", "S Line Korean drama", "S Line Season 1", "Wavve series", "Korean thriller"]
+}
 ];
 
 /* ---------------- HELPERS ---------------- */

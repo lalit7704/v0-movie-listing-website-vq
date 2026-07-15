@@ -169,6 +169,24 @@ export const cartoonVideos: Video[] = [
     "rating": 9.3,
     "genre": ["Animation", "Adventure", "Comedy", "Family"],
     "language": "English",
-    "quality": "HD"
+    "quality": "HD",
+    "cast": ["Tom Hanks", "Tim Allen"]
+  },
+  {
+    "id": "9011",
+    "title": "Moana (2016) - Animated Adventure",
+    "slug": generateSlug("Moana (2016) - Animated Adventure"),
+    "videoUrl": "https://youtu.be/EEz5xbzYPKI",
+    "downloadUrl": "https://t.me/onemoviedownloa/247",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "description": "Moana (2016) डिज्नी की एक एनिमेटेड म्यूजिकल एडवेंचर फिल्म है। कहानी मोआना नाम की एक साहसी किशोरी की है, जिसे उसके लोगों को बचाने के लिए एक साहसी मिशन पर समुद्र द्वारा चुना जाता है। अपनी यात्रा के दौरान, मोआना शक्तिशाली डेमीगॉड माउई से मिलती है, जो एक मास्टर वे फाइंडर बनने की उसकी तलाश में उसका मार्गदर्शन करता है। वे एक साथ खुले समुद्र में एक एक्शन से भरपूर यात्रा पर निकलते हैं। [9, 13, 17, 21, 22, 24, 27, 29, 43, 47, 55, 57]",
+    "category": "Cartoon",
+    "year": 2016,
+    "duration": "1h 47m",
+    "rating": 7.6,
+    "genre": ["Animation", "Adventure", "Comedy", "Family", "Fantasy", "Musical"],
+    "language": "English",
+    "quality": "HD",
+    "cast": ["Auliʻi Cravalho", "Dwayne Johnson", "Rachel House"]
   }
 ];

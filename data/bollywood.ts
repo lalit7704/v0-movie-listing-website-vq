@@ -981,6 +981,41 @@ export const bollywoodVideos: Video[] = [
   "quality": "HD",
   "cast": ["Sohum Shah", "Jyoti Malshe", "Anita Date-Kelkar"]
 }
+,
+{
+  "id": "2061",
+  "title": "Ikka (2026) - Action Drama",
+  "slug": generateSlug("Ikka (2026) - Action Drama"),
+  "videoUrl": "https://youtu.be/unf8x_aZg9Y",
+  "downloadUrl": "https://t.me/onemoviedownloa/248",
+  "poster": "https://m.media-amazon.com/images/M/MV5BOWE0ZTYxYTEtZDY5Ni00NDhkLWEyNjItMDc1NzE1MGJjMzhlXkEyXkFqcGc@._V1_FMjpg_UX968_.jpg",
+  "description": "Ikka (2026) एक बहुप्रतीक्षित एक्शन-ड्रामा फिल्म है, जो 2014 की सफल तमिल फिल्म 'कथ्थी' का हिंदी रीमेक है। फिल्म में अक्षय कुमार दोहरी भूमिका में हैं। कहानी एक ऐसे व्यक्ति के इर्द-गिर्द घूमती है जो कॉर्पोरेट कंपनियों द्वारा किसानों की जमीन हड़पने और उनके शोषण के खिलाफ लड़ता है। यह फिल्म एक्शन, ड्रामा और एक मजबूत सामाजिक संदेश का मिश्रण है। [32, 62]",
+  "category": "Bollywood",
+  "year": 2026,
+  "duration": "2h 45m",
+  "rating": 7.8,
+  "genre": ["Action", "Drama"],
+  "language": "Hindi",
+  "quality": "HD",
+  "cast": ["Akshay Kumar"]
+},
+{
+  "id": "2062",
+  "title": "Dhamaal 4 (2026) - Comedy",
+  "slug": generateSlug("Dhamaal 4 (2026) - Comedy"),
+  "videoUrl": "https://youtu.be/IG-eByZdz6Y",
+  "downloadUrl": "https://t.me/onemoviedownloa/249",
+  "poster": "https://m.media-amazon.com/images/M/MV5BNTI2YTA2YzktMGUwOS00Njk3LWE0M2MtNDE4YTljNDdjNjNlXkEyXkFqcGc@._V1_FMjpg_UY1973_.jpg",
+  "description": "Dhamaal 4 (2026) लोकप्रिय 'धमाल' फ्रेंचाइजी की चौथी कड़ी है, जो एक बार फिर हंसी और पागलपन का एक नया तूफान लाने का वादा करती है। इस बार भी, परिचित पात्रों का समूह एक नए खजाने या लॉटरी के पीछे भागता है, जिससे अराजकता, भ्रम और हास्यपूर्ण स्थितियों की एक श्रृंखला शुरू हो जाती है। यह फिल्म एक फुल-ऑन मसाला एंटरटेनर होने की उम्मीद है। [30, 52, 55, 57]",
+  "category": "Bollywood",
+  "year": 2026,
+  "duration": "2h 25m",
+  "rating": 7.0,
+  "genre": ["Comedy"],
+  "language": "Hindi",
+  "quality": "HD",
+  "featured": true
+}
 ];
 
 /* ---------------- HELPERS ---------------- */

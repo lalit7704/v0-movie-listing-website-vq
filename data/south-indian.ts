@@ -537,6 +537,40 @@ export const southindianVideos: Video[] = [
   "quality": "HD",
   "cast": ["Kamal Haasan", "Ramesh Aravind", "Kalpana", "Kovai Sarala"]
 }
+,
+{
+  "id": "5031",
+  "title": "Sing Geetham (2026) - Musical Fantasy",
+  "slug": generateSlug("Sing Geetham (2026) - Musical Fantasy"),
+  "videoUrl": "https://youtu.be/7xz5uL0Bk2E",
+  "downloadUrl": "https://t.me/onemoviedownloa/245",
+  "poster": "https://m.media-amazon.com/images/M/MV5BZTc4ZWQ1MDMtYmIxZC00Y2Y0LTg0MGMtNDI1YWE2M2ZkZDVjXkEyXkFqcGc@._V1_FMjpg_UX900_.jpg",
+  "description": "Sing Geetham (2026) एक तेलुगु म्यूजिकल-फैंटेसी फिल्म है, जिसका निर्देशन दिग्गज फिल्म निर्माता सिंगीतम श्रीनिवास राव ने किया है। कहानी एक दूरस्थ और रहस्यमयी गांव की है, जहाँ प्रताप एक बेहतर भविष्य की तलाश में आता है। यह फिल्म एक नई कथा शैली, मनोरंजन और संगीत का एक अनूठा मिश्रण प्रस्तुत करती है। [33, 45, 49, 51, 54, 64]",
+  "category": "South Indian",
+  "year": 2026,
+  "duration": "2h 17m",
+  "rating": 8.8,
+  "genre": ["Fantasy", "Musical", "Supernatural"],
+  "language": "Telugu",
+  "quality": "HD"
+},
+{
+  "id": "5032",
+  "title": "Veera Dheera Sooran: Part 2 (2025) - Action Thriller",
+  "slug": generateSlug("Veera Dheera Sooran Part 2 (2025) - Action Thriller"),
+  "videoUrl": "https://youtu.be/rnoNaAb7gv4",
+  "downloadUrl": "https://t.me/onemoviedownloa/251",
+  "poster": "https://m.media-amazon.com/images/M/MV5BZmI2OGE0ZmQtOWVlZS00OWIxLWI3NzUtOTliM2M0MjQzMGVkXkEyXkFqcGc@._V1_FMjpg_UX828_.jpg",
+  "description": "Veera Dheera Sooran: Part 2 (2025) एक तमिल नियो-नोयर एक्शन-थ्रिलर फिल्म है, जिसमें विक्रम मुख्य भूमिका में हैं। कहानी काली नाम के एक प्रोविजन स्टोर के मालिक के इर्द-गिर्द घूमती है, जो एक शांतिपूर्ण जीवन जी रहा है। लेकिन जब उसका अतीत उसे पकड़ता है, तो उसकी दुनिया उलट-पुलट हो जाती है और उसे अपने अस्तित्व के लिए लड़ना पड़ता है। [3, 14, 16, 18, 20, 23, 25, 36, 42]",
+  "category": "South Indian",
+  "year": 2025,
+  "duration": "2h 42m",
+  "rating": 8.0,
+  "genre": ["Action", "Thriller"],
+  "language": "Tamil",
+  "quality": "HD",
+  "cast": ["Vikram", "SJ Suryah", "Suraj Venjaramoodu"]
+}
 ];
 
 /* ---------------- HELPERS ---------------- */
