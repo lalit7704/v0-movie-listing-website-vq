@@ -620,8 +620,8 @@ export const bollywoodVideos: Video[] = [
   "rating": 0,
   "genre": ["Drama", "Thriller"],
   "language": "Hindi",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
+  
 },
 {
   "id": "2040",
@@ -749,8 +749,8 @@ export const bollywoodVideos: Video[] = [
   "rating": 0,
   "genre": ["Drama", "Thriller"],
   "language": "Hindi",
-  "quality": "HD",
-  "featured": true
+  "quality": "HD"
+
 }
 ,
 {
