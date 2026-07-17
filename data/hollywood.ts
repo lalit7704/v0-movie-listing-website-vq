@@ -587,7 +587,7 @@ export const hollywoodVideos: Video[] = [
   "title": "Golden Kamuy: Assault on Abashiri Prison (2026)",
   "slug": generateSlug("Golden Kamuy Assault on Abashiri Prison 2026"),
   "videoUrl": "https://youtu.be/ILB5ltiuDd4",
-  "downloadUrl": "https://www.netflix.com/search?q=Golden%20Kamuy",
+  "downloadUrl": "https://t.me/onemoviedownloa/269",
   "poster": "https://m.media-amazon.com/images/M/MV5BMTMzMTkzMGMtN2U1OS00YzMxLWIwMzUtOTBiMzMwODI3NDZmXkEyXkFqcGc@._V1_.jpg",
   "description": "Golden Kamuy: Assault on Abashiri Prison (2026) एक जापानी ऐतिहासिक एक्शन-अडवेंचर फिल्म है। सुगिमोतो और असिर्पा ऐनू सोने तथा नोपेरा-बो की असली पहचान का रहस्य सुलझाने के लिए खतरनाक अबाशिरी जेल की ओर बढ़ते हैं, जहाँ तीन विरोधी गुटों की निर्णायक टक्कर होती है।",
   "seoDescription": "Golden Kamuy: Assault on Abashiri Prison (2026) की कहानी, trailer, cast और Netflix streaming details देखें।",

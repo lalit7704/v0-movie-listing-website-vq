@@ -917,7 +917,7 @@ export const bollywoodVideos: Video[] = [
   "slug": generateSlug("Dil Bechara (2020) - Romantic Drama"),
   "videoUrl": "https://youtu.be/GODAlxW5Pes",
   "downloadUrl": "https://t.me/onemoviedownloa/140",
-  "poster": "https://m.media-amazon.com/images/M/MV5BNjVmZTViMzUtODZkMC00OTQyLTliZWMtMWFiZjJjYTI5Y2Q5XkEyXkFqcGc@._V1_FMjpg_UX1200_.jpg",
+  "poster": "https://m.media-amazon.com/images/M/MV5BN2U2ZWY0MjktM2RmNy00ZTc3LTg0MGMtZGJiNjAxYTkxOTZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   "description": "Dil Bechara (2020) एक बेहद ही भावुक और दिल को छू लेने वाली रोमांटिक-ड्रामा फिल्म है, जो जॉन ग्रीन के प्रसिद्ध उपन्यास 'द फॉल्ट इन आवर स्टार्स' पर आधारित है। यह फिल्म दिवंगत अभिनेता सुशांत सिंह राजपूत की आखिरी फिल्म होने के कारण और भी खास है। कहानी दो कैंसर रोगियों—किजी बासु (संजना सांघी) और मैनी (सुशांत सिंह राजपूत)—के इर्द-गिर्द घूमती है। किजी, जो थायराइड कैंसर से पीड़ित है, अपनी जिंदगी से निराश हो चुकी है। लेकिन उसकी दुनिया तब बदल जाती है जब उसकी मुलाकात मैनी से होती है, जो ऑस्टियोसारकोमा से पीड़ित होने के बावजूद जिंदगी को पूरी जिंदादिली से जीता है। मैनी किजी को हंसाना, सपने देखना और हर पल को जीना सिखाता है। यह फिल्म प्यार, दोस्ती, जिंदगी और मौत पर एक खूबसूरत और रुला देने वाली कहानी है।",
   "category": "Bollywood",
   "year": 2020,
@@ -1018,7 +1018,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2063", "title": "Mardini (2026) Marathi Thriller", "slug": generateSlug("Mardini 2026 Marathi Thriller"),
-  "videoUrl": "https://youtu.be/Dvjo11elPRM", "downloadUrl": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Mardini%202026",
+  "videoUrl": "https://youtu.be/Dvjo11elPRM", "downloadUrl": "https://t.me/onemoviedownloa/265",
   "poster": "https://m.media-amazon.com/images/M/MV5BZWI0Yzk5MTItMzllYy00ZWRlLWI4ZmEtNTEwYzg1MWI3MjFlXkEyXkFqcGc@._V1_.jpg",
   "description": "Mardini (2026) एक मराठी ड्रामा-थ्रिलर है जिसमें महिला-केंद्रित अपराध जाँच कई छिपे सच और सामाजिक दबावों को सामने लाती है। एक कठिन मामले के बीच साहस, न्याय और अस्तित्व की लड़ाई कहानी का केंद्र बनती है।",
   "category": "Bollywood", "year": 2026, "duration": "2h 8m", "rating": 9.1, "genre": ["Drama", "Thriller"],
@@ -1026,7 +1026,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2064", "title": "Hera Pheri (2000) Hindi Comedy", "slug": generateSlug("Hera Pheri 2000 Hindi Comedy"),
-  "videoUrl": "https://youtu.be/m1zMmVwWr-M", "downloadUrl": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Hera%20Pheri",
+  "videoUrl": "https://youtu.be/m1zMmVwWr-M", "downloadUrl": "https://t.me/onemoviedownloa/261",
   "poster": "https://m.media-amazon.com/images/M/MV5BNDZmMGEwMjQtNjFlNi00ZGIxLTlkZjItNmU3Mzg4Y2E0ZjUzXkEyXkFqcGc@._V1_.jpg",
   "description": "Hera Pheri (2000) हिंदी सिनेमा की लोकप्रिय कॉमेडी है। आर्थिक तंगी से जूझ रहे राजू, श्याम और बाबूराव को गलती से आए फिरौती के फोन में अमीर बनने का मौका दिखाई देता है, लेकिन उनकी योजना मजेदार मुसीबतों में बदल जाती है।",
   "category": "Bollywood", "year": 2000, "duration": "2h 36m", "rating": 8.2, "genre": ["Action", "Comedy", "Crime", "Slapstick"],
@@ -1034,7 +1034,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2065", "title": "Phir Hera Pheri (2006) Hindi Comedy", "slug": generateSlug("Phir Hera Pheri 2006 Hindi Comedy"),
-  "videoUrl": "https://youtu.be/Im_lCAsA27Q", "downloadUrl": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Phir%20Hera%20Pheri",
+  "videoUrl": "https://youtu.be/Im_lCAsA27Q", "downloadUrl": "https://t.me/onemoviedownloa/260",
   "poster": "https://m.media-amazon.com/images/M/MV5BMTNkZTExMWYtMGZjMy00NGUwLWJmMWEtOThjYmZjY2Q0N2M5XkEyXkFqcGc@._V1_.jpg",
   "description": "Phir Hera Pheri (2006) में राजू, श्याम और बाबूराव एक धोखाधड़ी वाली निवेश योजना में अपनी दौलत गँवा देते हैं। कर्ज चुकाने की उनकी कोशिश गैंगस्टरों, गलतफहमियों और बेहिसाब हास्य से भरी भाग-दौड़ बन जाती है।",
   "category": "Bollywood", "year": 2006, "duration": "2h 33m", "rating": 7.4, "genre": ["Comedy", "Crime", "Heist", "Slapstick"],
@@ -1042,7 +1042,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2066", "title": "Main Tera Hero (2014) Hindi Movie", "slug": generateSlug("Main Tera Hero 2014 Hindi Movie"),
-  "videoUrl": "https://youtu.be/zmREXcBo_fs", "downloadUrl": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Main%20Tera%20Hero",
+  "videoUrl": "https://youtu.be/zmREXcBo_fs", "downloadUrl": "https://t.me/onemoviedownloa/259",
   "poster": "https://m.media-amazon.com/images/M/MV5BODQ4MzQ3YzAtZTBhMS00Mzg3LWFhMDAtOTMzNGYxMjUzNmZiXkEyXkFqcGc@._V1_.jpg",
   "description": "Main Tera Hero (2014) एक मसाला रोमांटिक कॉमेडी है। शरारती सीनू कॉलेज में सुनैना से प्यार करता है, मगर एकतरफा प्रेम, अपहरण और दूसरी प्रेमिका की एंट्री उसके जीवन को हास्यास्पद उलझनों में डाल देती है।",
   "category": "Bollywood", "year": 2014, "duration": "2h 8m", "rating": 5.2, "genre": ["Action", "Comedy", "Romance"],
@@ -1050,7 +1050,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2067", "title": "Baaghi 3 (2020) Hindi Action Movie", "slug": generateSlug("Baaghi 3 2020 Hindi Action Movie"),
-  "videoUrl": "https://youtu.be/jQzDujMzfoU", "downloadUrl": "https://www.hotstar.com/in/search?q=Baaghi%203",
+  "videoUrl": "https://youtu.be/jQzDujMzfoU", "downloadUrl": "https://t.me/onemoviedownloa/258",
   "poster": "https://m.media-amazon.com/images/M/MV5BNjY1OWY0NTctOGMwZC00YWIzLWE1NzQtYzM3MzM3YTg1ZTY2XkEyXkFqcGc@._V1_.jpg",
   "description": "Baaghi 3 (2020) में रॉनी अपने भाई विक्रम को बचाने के लिए सीरिया पहुँचता है। आतंकवादी संगठन के खिलाफ उसकी अकेली लड़ाई बड़े पैमाने के एक्शन और पारिवारिक भावनाओं से भरा मिशन बन जाती है।",
   "category": "Bollywood", "year": 2020, "duration": "2h 23m", "rating": 2.3, "genre": ["Action", "Adventure", "Thriller"],
@@ -1058,7 +1058,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2068", "title": "Baaghi (2016) Hindi Action Movie", "slug": generateSlug("Baaghi 2016 Hindi Action Movie"),
-  "videoUrl": "https://youtu.be/FV-3avN3Oxc", "downloadUrl": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Baaghi%202016",
+  "videoUrl": "https://youtu.be/FV-3avN3Oxc", "downloadUrl": "https://t.me/onemoviedownloa/253",
   "poster": "https://m.media-amazon.com/images/M/MV5BMzczODY2ZmMtYjU4MS00MzFjLTk2YTAtYTMyMmFlNTk3OTIyXkEyXkFqcGc@._V1_.jpg",
   "description": "Baaghi (2016) में बागी रॉनी एक मार्शल आर्ट अकादमी में अनुशासन सीखता है और सिया से प्यार करता है। जब सिया का अपहरण होता है, रॉनी उसे बचाने के लिए घातक लड़ाकों से भिड़ता है।",
   "category": "Bollywood", "year": 2016, "duration": "2h 13m", "rating": 5.4, "genre": ["Action", "Drama", "Martial Arts", "Romance", "Thriller"],
@@ -1066,15 +1066,15 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2069", "title": "Total Dhamaal (2019) Hindi Comedy", "slug": generateSlug("Total Dhamaal 2019 Hindi Comedy"),
-  "videoUrl": "https://youtu.be/fo9EhcwQXcM", "downloadUrl": "https://www.hotstar.com/in/search?q=Total%20Dhamaal",
+  "videoUrl": "https://youtu.be/fo9EhcwQXcM", "downloadUrl": "https://t.me/onemoviedownloa/256",
   "poster": "https://m.media-amazon.com/images/M/MV5BNjhkY2ViNTYtYjc3MC00OWU3LWFhYWMtMjU5ZDhjZTNkYTc3XkEyXkFqcGc@._V1_.jpg",
-  "description": "Total Dhamaal (2019) में कई लालची लोग छिपे खजाने तक पहले पहुँचने की दौड़ में निकलते हैं। रास्ते की दुर्घटनाएँ, जंगली जानवर और एक-दूसरे को मात देने की कोशिशें इस सफर को अराजक कॉमेडी बना देती हैं।",
+  "description": "Total Dhamaal (2019) में कई लालची लोग छिपे खजाने तक पहले पहुँचने की दौड़ में निकलते हैं। रास्ते की दुर्घटनाएँ, जंगली जानवर और एक-दूसरे को मात देने की कोशिशें इस सफर को অরাজক कॉमेडी বনা দেতি हুন।"
   "category": "Bollywood", "year": 2019, "duration": "2h 10m", "rating": 4.3, "genre": ["Action", "Adventure", "Comedy"],
   "language": "Hindi", "quality": "HD", "director": "Indra Kumar", "cast": ["Ajay Devgn", "Anil Kapoor", "Madhuri Dixit", "Arshad Warsi"]
 },
 {
   "id": "2070", "title": "Dhadak (2018) Hindi Romantic Drama", "slug": generateSlug("Dhadak 2018 Hindi Romantic Drama"),
-  "videoUrl": "https://youtu.be/TIE92mUvSsw", "downloadUrl": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Dhadak",
+  "videoUrl": "https://youtu.be/TIE92mUvSsw", "downloadUrl": "https://t.me/onemoviedownloa/255",
   "poster": "https://m.media-amazon.com/images/M/MV5BNzdlMGJhNWEtZmI3Zi00NmM4LTllZTYtYjcyMDI0MzhiYzhhXkEyXkFqcGc@._V1_.jpg",
   "description": "Dhadak (2018) जाति और सामाजिक प्रतिष्ठा के विरोध के बीच मधुकर और पार्थवी की प्रेम कहानी है। परिवार से भागकर नई जिंदगी शुरू करने वाला यह जोड़ा अपने अतीत और समाज की हिंसा से बचने की कोशिश करता है।",
   "category": "Bollywood", "year": 2018, "duration": "2h 18m", "rating": 4.8, "genre": ["Drama", "Romance", "Tragic Romance"],
@@ -1082,7 +1082,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2071", "title": "Nawabzaade (2018) Hindi Movie", "slug": generateSlug("Nawabzaade 2018 Hindi Movie"),
-  "videoUrl": "https://youtu.be/7G77hHNBO8w", "downloadUrl": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Nawabzaade",
+  "videoUrl": "https://youtu.be/7G77hHNBO8w", "downloadUrl": "https://t.me/onemoviedownloa/254",
   "poster": "https://m.media-amazon.com/images/M/MV5BMTUzNDM2Njc0N15BMl5BanBnXkFtZTgwNDg3MTE5NTM@._V1_.jpg",
   "description": "Nawabzaade (2018) तीन दोस्तों की कॉमेडी-रोमांस कहानी है जो एक ही लड़की से प्यार कर बैठते हैं। दोस्ती, गलतफहमियाँ और दिल जीतने की प्रतिस्पर्धा उनके जीवन में मजेदार अराजकता ले आती है।",
   "category": "Bollywood", "year": 2018, "duration": "1h 52m", "rating": 4.2, "genre": ["Comedy", "Romance"],
@@ -1090,7 +1090,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2072", "title": "Baaghi 2 (2018) Hindi Action Movie", "slug": generateSlug("Baaghi 2 2018 Hindi Action Movie"),
-  "videoUrl": "https://youtu.be/-4jEGBLSI1g", "downloadUrl": "https://www.hotstar.com/in/search?q=Baaghi%202",
+  "videoUrl": "https://youtu.be/-4jEGBLSI1g", "downloadUrl": "https://t.me/onemoviedownloa/253",
   "poster": "https://m.media-amazon.com/images/M/MV5BZGMyNmVhMzctNWNjMS00OGMxLTkwODUtMDM5YWNmYzFmMWI5XkEyXkFqcGc@._V1_.jpg",
   "description": "Baaghi 2 (2018) में सेना अधिकारी रॉनी अपनी पूर्व प्रेमिका की लापता बेटी को खोजने निकलता है। जाँच उसे ड्रग माफिया, भ्रष्ट अधिकारियों और एक गहरी साजिश के बीच ले जाती है।",
   "category": "Bollywood", "year": 2018, "duration": "2h 17m", "rating": 4.7, "genre": ["Action", "Crime", "Drama", "Mystery", "Thriller"],
