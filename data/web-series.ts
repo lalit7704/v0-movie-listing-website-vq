@@ -526,7 +526,6 @@ export const webSeriesVideos: Video[] = [
   "genre": ["Drama", "Fantasy", "Mystery", "Sci-Fi", "Thriller"],
   "language": "Korean",
   "quality": "HD",
-  "featured": true,
   "director": "Ahn Joo-young",
   "cast": ["Lee Soo-hyuk", "Lee Da-hee", "Arin", "Lee Eun-saem", "Kim Dong-young"],
   "keywords": ["S Line", "S Line Korean drama", "S Line Season 1", "Wavve series", "Korean thriller"]
@@ -564,7 +563,6 @@ export const webSeriesVideos: Video[] = [
   "genre": ["Crime", "Drama", "Mystery", "Sci-Fi", "Thriller"],
   "language": "Japanese",
   "quality": "HD",
-  "featured": true,
   "cast": ["Shun Oguri", "Uta Uchida"]
 }
 ];

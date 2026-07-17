@@ -1030,7 +1030,7 @@ export const bollywoodVideos: Video[] = [
   "poster": "https://m.media-amazon.com/images/M/MV5BNDZmMGEwMjQtNjFlNi00ZGIxLTlkZjItNmU3Mzg4Y2E0ZjUzXkEyXkFqcGc@._V1_.jpg",
   "description": "Hera Pheri (2000) हिंदी सिनेमा की लोकप्रिय कॉमेडी है। आर्थिक तंगी से जूझ रहे राजू, श्याम और बाबूराव को गलती से आए फिरौती के फोन में अमीर बनने का मौका दिखाई देता है, लेकिन उनकी योजना मजेदार मुसीबतों में बदल जाती है।",
   "category": "Bollywood", "year": 2000, "duration": "2h 36m", "rating": 8.2, "genre": ["Action", "Comedy", "Crime", "Slapstick"],
-  "language": "Hindi", "quality": "HD", "featured": true, "director": "Priyadarshan", "cast": ["Akshay Kumar", "Suniel Shetty", "Paresh Rawal", "Tabu"]
+  "language": "Hindi", "quality": "HD", "director": "Priyadarshan", "cast": ["Akshay Kumar", "Suniel Shetty", "Paresh Rawal", "Tabu"]
 },
 {
   "id": "2065", "title": "Phir Hera Pheri (2006) Hindi Comedy", "slug": generateSlug("Phir Hera Pheri 2006 Hindi Comedy"),
@@ -1038,7 +1038,7 @@ export const bollywoodVideos: Video[] = [
   "poster": "https://m.media-amazon.com/images/M/MV5BMTNkZTExMWYtMGZjMy00NGUwLWJmMWEtOThjYmZjY2Q0N2M5XkEyXkFqcGc@._V1_.jpg",
   "description": "Phir Hera Pheri (2006) में राजू, श्याम और बाबूराव एक धोखाधड़ी वाली निवेश योजना में अपनी दौलत गँवा देते हैं। कर्ज चुकाने की उनकी कोशिश गैंगस्टरों, गलतफहमियों और बेहिसाब हास्य से भरी भाग-दौड़ बन जाती है।",
   "category": "Bollywood", "year": 2006, "duration": "2h 33m", "rating": 7.4, "genre": ["Comedy", "Crime", "Heist", "Slapstick"],
-  "language": "Hindi", "quality": "HD", "featured": true, "director": "Neeraj Vora", "cast": ["Akshay Kumar", "Suniel Shetty", "Paresh Rawal", "Bipasha Basu"]
+  "language": "Hindi", "quality": "HD", "director": "Neeraj Vora", "cast": ["Akshay Kumar", "Suniel Shetty", "Paresh Rawal", "Bipasha Basu"]
 },
 {
   "id": "2066", "title": "Main Tera Hero (2014) Hindi Movie", "slug": generateSlug("Main Tera Hero 2014 Hindi Movie"),
