@@ -581,6 +581,27 @@ export const hollywoodVideos: Video[] = [
   "director": "Sonia Méndez",
   "cast": ["Eve Ryan", "Mikel Niso", "Biel Antón", "Esther Acebo", "Luis Zahera"],
   "keywords": ["Boulevard 2026", "Boulevard Spanish movie", "Flor M Salvador", "Eve Ryan", "Mikel Niso", "Prime Video romance"]
+},
+{
+  "id": "6100",
+  "title": "Golden Kamuy: Assault on Abashiri Prison (2026)",
+  "slug": generateSlug("Golden Kamuy Assault on Abashiri Prison 2026"),
+  "videoUrl": "https://youtu.be/ILB5ltiuDd4",
+  "downloadUrl": "https://www.netflix.com/search?q=Golden%20Kamuy",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTMzMTkzMGMtN2U1OS00YzMxLWIwMzUtOTBiMzMwODI3NDZmXkEyXkFqcGc@._V1_.jpg",
+  "description": "Golden Kamuy: Assault on Abashiri Prison (2026) एक जापानी ऐतिहासिक एक्शन-अडवेंचर फिल्म है। सुगिमोतो और असिर्पा ऐनू सोने तथा नोपेरा-बो की असली पहचान का रहस्य सुलझाने के लिए खतरनाक अबाशिरी जेल की ओर बढ़ते हैं, जहाँ तीन विरोधी गुटों की निर्णायक टक्कर होती है।",
+  "seoDescription": "Golden Kamuy: Assault on Abashiri Prison (2026) की कहानी, trailer, cast और Netflix streaming details देखें।",
+  "category": "Hollywood",
+  "year": 2026,
+  "duration": "2h 2m",
+  "rating": 7.6,
+  "genre": ["Action", "Adventure", "Drama", "History", "Samurai"],
+  "language": "Japanese",
+  "quality": "HD",
+  "featured": true,
+  "director": "Kenji Katagiri",
+  "cast": ["Kento Yamazaki", "Anna Yamada", "Gordon Maeda"],
+  "keywords": ["Golden Kamuy", "Abashiri Prison", "Japanese action", "Netflix"]
 }
 ];
 

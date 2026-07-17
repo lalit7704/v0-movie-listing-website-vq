@@ -570,6 +570,41 @@ export const southindianVideos: Video[] = [
   "language": "Tamil",
   "quality": "HD",
   "cast": ["Vikram", "SJ Suryah", "Suraj Venjaramoodu"]
+},
+{
+  "id": "5033", "title": "Dose (2026) Malayalam Thriller", "slug": generateSlug("Dose 2026 Malayalam Thriller"),
+  "videoUrl": "https://youtu.be/_ZlWpPcMlig", "downloadUrl": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Dose%202026",
+  "poster": "https://m.media-amazon.com/images/M/MV5BY2YwMzdmNzctNmVlNi00NTNlLTlkZjYtM2VhNzY3ZGM1NGFmXkEyXkFqcGc@._V1_.jpg",
+  "description": "Dose (2026) एक मलयालम मेडिकल मिस्ट्री-थ्रिलर है। अस्पताल में हुई संदिग्ध मौत की जाँच करते हुए एक डॉक्टर छिपे राज और झूठ की परतें खोलता है; एक परेशान अन्वेषक के साथ उसकी सच की तलाश जानलेवा संघर्ष बन जाती है।",
+  "category": "South Indian", "year": 2026, "duration": "2h 21m", "rating": 4.6,
+  "genre": ["Drama", "Mystery", "Psychological Thriller", "Thriller"], "language": "Malayalam", "quality": "HD",
+  "director": "Abhilash R Nair", "cast": ["Siju Wilson", "Jagadish", "Ashwin Kkumar", "Drishya Raghunath"]
+},
+{
+  "id": "5034", "title": "Nagabandham - The Secret Treasure (2026)", "slug": generateSlug("Nagabandham The Secret Treasure 2026"),
+  "videoUrl": "https://youtu.be/YodlcWzg-V0", "downloadUrl": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Nagabandham",
+  "poster": "https://m.media-amazon.com/images/M/MV5BYjUzNTY0ZjItMDFiNC00NGQxLTkyZTAtMzdiM2Y1NzNkZmFiXkEyXkFqcGc@._V1_.jpg",
+  "description": "Nagabandham - The Secret Treasure (2026) एक तेलुगु पौराणिक फैंटेसी एडवेंचर है। प्राचीन मंदिरों, नाग रहस्यों और एक छिपे खजाने की खोज एक युवा योद्धा को आध्यात्मिक शक्तियों तथा खतरनाक शत्रुओं के सामने ला खड़ा करती है।",
+  "category": "South Indian", "year": 2026, "duration": "3h 5m", "rating": 8.4,
+  "genre": ["Action", "Adventure", "Drama", "Fantasy", "Period Drama"], "language": "Telugu", "quality": "HD", "featured": true,
+  "director": "Abhishek Nama", "cast": ["Virat Karrna", "Nabha Natesh", "Iswarya Menon", "Jagapathi Babu"]
+},
+{
+  "id": "5035", "title": "Gatta Kusthi 2 (2026) Tamil Movie", "slug": generateSlug("Gatta Kusthi 2 2026 Tamil Movie"),
+  "videoUrl": "https://youtu.be/KhXXqdQT0gw", "downloadUrl": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Gatta%20Kusthi%202",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMGFhZDkxYjYtZGViYy00MTgyLTliNWQtOWFlZmNmZmI4MWZkXkEyXkFqcGc@._V1_.jpg",
+  "description": "Gatta Kusthi 2 (2026) तमिल स्पोर्ट्स कॉमेडी-ड्रामा है, जो कुश्ती, विवाह और बराबरी की कहानी को आगे बढ़ाती है। कीर्ति और वीरा को नए पारिवारिक टकरावों तथा अखाड़े की चुनौतियों का सामना करना पड़ता है।",
+  "category": "South Indian", "year": 2026, "duration": "2h 34m", "rating": 8.4,
+  "genre": ["Comedy", "Drama", "Sports"], "language": "Tamil", "quality": "HD", "cast": ["Aishwarya Lekshmi", "Vishnu Vishal"]
+},
+{
+  "id": "5036", "title": "Parimala and Co (2026) Tamil Movie", "slug": generateSlug("Parimala and Co 2026 Tamil Movie"),
+  "videoUrl": "https://youtu.be/x9qiUBtFgH4", "downloadUrl": "https://www.zee5.com/search?q=Parimala%20and%20Co",
+  "poster": "https://m.media-amazon.com/images/M/MV5BNGJmODQ0ODYtOWQ3Zi00M2VhLWIwNzYtYzRmMGI0NmE5ZWEwXkEyXkFqcGc@._V1_.jpg",
+  "description": "Parimala and Co (2026) एक तमिल डार्क कॉमेडी क्राइम-थ्रिलर है। हत्या के बाद एक परिवार सबूत छिपाते हुए सामान्य जीवन बनाए रखने की कोशिश करता है, लेकिन लगातार बढ़ती उलझनें और शक उनकी योजना को बेकाबू बना देते हैं।",
+  "category": "South Indian", "year": 2026, "duration": "2h 26m", "rating": 5.9,
+  "genre": ["Comedy", "Crime", "Dark Comedy", "Mystery", "Thriller"], "language": "Tamil", "quality": "HD",
+  "director": "Pandiraaj", "cast": ["Yogi Babu", "Harshad", "Jayaram", "Urvashi"]
 }
 ];
 

@@ -530,6 +530,42 @@ export const webSeriesVideos: Video[] = [
   "director": "Ahn Joo-young",
   "cast": ["Lee Soo-hyuk", "Lee Da-hee", "Arin", "Lee Eun-saem", "Kim Dong-young"],
   "keywords": ["S Line", "S Line Korean drama", "S Line Season 1", "Wavve series", "Korean thriller"]
+},
+{
+  "id": "8029",
+  "title": "Raktanchal (Season 1) - Crime Drama Series",
+  "slug": generateSlug("Raktanchal Season 1 Crime Drama Series"),
+  "videoUrl": "https://youtu.be/D1J2zKsOL2o",
+  "downloadUrl": "https://www.mxplayer.in/search?query=Raktanchal",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMTNjMTRlYzMtNTlmNC00ODNmLWJkY2YtN2U0OTkzN2Y1NzUyXkEyXkFqcGc@._V1_.jpg",
+  "description": "Raktanchal (2020) पूर्वांचल की अपराध और राजनीति से भरी दुनिया पर आधारित हिंदी क्राइम-ड्रामा सीरीज़ है। विजय सिंह और वसीम खान की दुश्मनी सत्ता, ठेकों और बदले की खूनी लड़ाई में बदल जाती है।",
+  "category": "Web Series",
+  "year": 2020,
+  "duration": "Season 1 • 9 Episodes",
+  "rating": 6.8,
+  "genre": ["Action", "Crime", "Drama", "Thriller"],
+  "language": "Hindi",
+  "quality": "HD",
+  "director": "Ritam Srivastav",
+  "cast": ["Nikitin Dheer", "Kranti Prakash Jha", "Soundarya Sharma"]
+},
+{
+  "id": "8030",
+  "title": "Human Vapor (Season 1) - Netflix Series",
+  "slug": generateSlug("Human Vapor Season 1 Netflix Series"),
+  "videoUrl": "https://youtu.be/7xe6dRKVAb8",
+  "downloadUrl": "https://www.netflix.com/search?q=Human%20Vapor",
+  "poster": "https://m.media-amazon.com/images/M/MV5BYWE3YWE2NTMtZTRhZS00Nzg3LWI2NWMtMjAwMWJhZDk2MWU5XkEyXkFqcGc@._V1_.jpg",
+  "description": "Human Vapor (2026) जापानी साइंस-फिक्शन क्राइम थ्रिलर सीरीज़ है, जिसमें एक व्यक्ति रहस्यमयी तरीके से गैस में बदलने की शक्ति हासिल करता है और पुलिस, मीडिया तथा एक असंभव अपराध की जाँच आपस में जुड़ जाती है।",
+  "category": "Web Series",
+  "year": 2026,
+  "duration": "Season 1 • 8 Episodes",
+  "rating": 6.6,
+  "genre": ["Crime", "Drama", "Mystery", "Sci-Fi", "Thriller"],
+  "language": "Japanese",
+  "quality": "HD",
+  "featured": true,
+  "cast": ["Shun Oguri", "Uta Uchida"]
 }
 ];
 
