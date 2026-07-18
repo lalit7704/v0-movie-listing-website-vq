@@ -1,3 +1,5 @@
+import { tmdbBollywoodVideos } from "./tmdb-generated";
+
 export interface Video {
   id: string;
   title: string;
@@ -35,6 +37,7 @@ function generateSlug(title: string): string {
 /* ---------------- BOLLYWOOD DATA ---------------- */
 
 export const bollywoodVideos: Video[] = [
+  ...tmdbBollywoodVideos,
 
  {
   "id": "2001",

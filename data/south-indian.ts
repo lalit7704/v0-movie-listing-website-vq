@@ -1,3 +1,5 @@
+import { tmdbSouthIndianVideos } from "./tmdb-generated";
+
 export interface Video {
   id: string;
   title: string;
@@ -35,6 +37,7 @@ function generateSlug(title: string): string {
 /* ---------------- SOUTH INDIAN DATA ---------------- */
 
 export const southindianVideos: Video[] = [
+  ...tmdbSouthIndianVideos,
 {
   "id": "5001",
   "title": "Robinhood - South Indian Action Drama Movie | Full Movie HD",

@@ -1,3 +1,5 @@
+import { tmdbWebSeriesVideos } from "./tmdb-generated";
+
 export interface Video {
   id: string;
   title: string;
@@ -35,6 +37,7 @@ function generateSlug(title: string): string {
 /* ---------------- WEB SERIES DATA ---------------- */
 
 export const webSeriesVideos: Video[] = [
+  ...tmdbWebSeriesVideos,
   {    "id": "8001",
     "title": "Game of Thrones Season 1 - Fantasy Drama Series | Full Episodes HD",
     "slug": generateSlug(

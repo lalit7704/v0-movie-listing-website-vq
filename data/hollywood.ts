@@ -1,3 +1,5 @@
+import { tmdbHollywoodVideos } from "./tmdb-generated";
+
 export interface Video {
   id: string;
   title: string;
@@ -35,6 +37,7 @@ function generateSlug(title: string): string {
 /* ---------------- HOLLYWOOD DATA ---------------- */
 
 export const hollywoodVideos: Video[] = [
+  ...tmdbHollywoodVideos,
   {
     id: "9006",
     title: "The Yeti (2026) Hindi Dubbed",

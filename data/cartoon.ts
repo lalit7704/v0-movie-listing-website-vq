@@ -1,3 +1,5 @@
+import { tmdbCartoonVideos } from "./tmdb-generated";
+
 export interface Video {
   id: string;
   title: string;
@@ -35,6 +37,7 @@ function generateSlug(title: string): string {
 /* ---------------- CARTOON DATA ---------------- */
 
 export const cartoonVideos: Video[] = [
+  ...tmdbCartoonVideos,
   {
     id: "9001",
     title: "The Super Mario Galaxy Movie (2026)",
