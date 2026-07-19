@@ -1,5 +1,10 @@
 {
   "recentlyAdded": [
+    "tmdb-movie-1710120",
+    "tmdb-movie-1576581",
+    "tmdb-movie-1080959",
+    "tmdb-movie-1731480",
+    "tmdb-movie-1733512",
     "tmdb-movie-1720745",
     "tmdb-movie-1248230",
     "tmdb-movie-1732121",
@@ -24,14 +29,45 @@
     "tmdb-tv-325785",
     "tmdb-tv-289139",
     "tmdb-tv-298610",
-    "tmdb-movie-1723974",
-    "tmdb-tv-312266",
-    "tmdb-tv-286345",
-    "tmdb-tv-326119",
-    "tmdb-tv-297826",
-    "tmdb-tv-296286"
+    "tmdb-movie-1723974"
   ],
   "hollywood": [
+    {
+      "id": "tmdb-movie-1080959",
+      "title": "Alien Storm (2026)",
+      "slug": "alien-storm-2026",
+      "videoUrl": "https://youtu.be/g9t5ResAVSg",
+      "downloadUrl": "https://www.themoviedb.org/movie/1080959",
+      "poster": "https://image.tmdb.org/t/p/w780/qXHqQm3K4XspsgqGUbsk0dUcZwo.jpg",
+      "description": "A father, businessman and secret doomsday prepper escorts people to the safety of his bunker – actually an underground house – when a massive and potentially deadly fog descends and cuts the power at his home.",
+      "seoDescription": "Alien Storm (2026) trailer, cast, genres, rating and release information.",
+      "category": "Hollywood",
+      "year": 2026,
+      "duration": "N/A",
+      "rating": 0,
+      "genre": [
+        "Science Fiction",
+        "Horror"
+      ],
+      "language": "English",
+      "quality": "HD",
+      "featured": false,
+      "director": "Adam Werth",
+      "cast": [
+        "Kevin Sorbo",
+        "Tom Arnold",
+        "Dawna Lee Heising",
+        "Mike Ferguson",
+        "Laura Mason",
+        "Robert Standley"
+      ],
+      "keywords": [
+        "Alien Storm",
+        "Alien Storm 2026",
+        "Hollywood",
+        "official trailer"
+      ]
+    },
     {
       "id": "tmdb-movie-1732121",
       "title": "Decomposition (Look At Me) Hyperfixation (2026)",
@@ -65,6 +101,43 @@
       "keywords": [
         "Decomposition (Look At Me) Hyperfixation",
         "Decomposition (Look At Me) Hyperfixation 2026",
+        "Hollywood",
+        "official trailer"
+      ]
+    },
+    {
+      "id": "tmdb-movie-1710120",
+      "title": "Depths of Fear (2026)",
+      "slug": "depths-of-fear-2026",
+      "videoUrl": "https://youtu.be/ap_OxOBKHbg",
+      "downloadUrl": "https://www.themoviedb.org/movie/1710120",
+      "poster": "https://image.tmdb.org/t/p/w780/vEEYVekmatxFotitjIpvYIBp8Sb.jpg",
+      "description": "A team of divers enters one of the deepest holes in the ocean, but they discover more than they expected: something has made that deep hole its home and now they will have to fight for survival.",
+      "seoDescription": "Depths of Fear (2026) trailer, cast, genres, rating and release information.",
+      "category": "Hollywood",
+      "year": 2026,
+      "duration": "1h 18m",
+      "rating": 0,
+      "genre": [
+        "Horror",
+        "Action",
+        "Adventure"
+      ],
+      "language": "English",
+      "quality": "HD",
+      "featured": false,
+      "director": "Rui Constantino",
+      "cast": [
+        "Rui Constantino",
+        "Paulo Constantino",
+        "Miguel D. Dias",
+        "Caleb Angel",
+        "Kyle Steve",
+        "James Styg"
+      ],
+      "keywords": [
+        "Depths of Fear",
+        "Depths of Fear 2026",
         "Hollywood",
         "official trailer"
       ]
@@ -138,6 +211,40 @@
       "keywords": [
         "Sharksquatch",
         "Sharksquatch 2026",
+        "Hollywood",
+        "official trailer"
+      ]
+    },
+    {
+      "id": "tmdb-movie-1576581",
+      "title": "Someone's Daughter (2026)",
+      "slug": "someone-s-daughter-2026",
+      "videoUrl": "https://youtu.be/5GwIyb7vwyY",
+      "downloadUrl": "https://www.themoviedb.org/movie/1576581",
+      "poster": "https://image.tmdb.org/t/p/w780/sTw8tSnlepeZteXwU2GqIoohZVB.jpg",
+      "description": "A criminal defence lawyer, Sam, (Pascale Bussières, Ma Vie en cinémascope, When Night is Falling), finds herself kidnapped and abandoned on a remote island along with former client Paul (François Arnaud, Heated Rivalry, Fucktoys, The Borgias), who she previously cleared of sexual assault charges. As they make their way through the unrelenting Canadian wilderness, Paul’s behaviour forces Sam to question the man she once defended. As doubt gives way to fear, she finds herself facing a choice no lawyer should ever have to make.",
+      "seoDescription": "Someone's Daughter (2026) trailer, cast, genres, rating and release information.",
+      "category": "Hollywood",
+      "year": 2026,
+      "duration": "1h 36m",
+      "rating": 0,
+      "genre": [
+        "Drama",
+        "Thriller"
+      ],
+      "language": "English",
+      "quality": "HD",
+      "featured": false,
+      "director": "Wiebke von Carolsfeld",
+      "cast": [
+        "Pascale Bussières",
+        "François Arnaud",
+        "Peter Outerbridge",
+        "Michael Greyeyes"
+      ],
+      "keywords": [
+        "Someone's Daughter",
+        "Someone's Daughter 2026",
         "Hollywood",
         "official trailer"
       ]
@@ -380,6 +487,43 @@
       "keywords": [
         "Shit Story",
         "Shit Story 2026",
+        "Bollywood",
+        "official trailer"
+      ]
+    },
+    {
+      "id": "tmdb-movie-1731480",
+      "title": "Simulacra (2026)",
+      "slug": "simulacra-2026",
+      "videoUrl": "https://youtu.be/yehWTTOwbts",
+      "downloadUrl": "https://www.themoviedb.org/movie/1731480",
+      "poster": "https://image.tmdb.org/t/p/w780/3Zzx03YzJVd1YYniTBUHFQUK660.jpg",
+      "description": "Nayan desperately attempts to help Nivi, who has been completely wiped blank, remember the profound past they once shared together.",
+      "seoDescription": "Simulacra (2026) trailer, cast, genres, rating and release information.",
+      "category": "Bollywood",
+      "year": 2026,
+      "duration": "2h 1m",
+      "rating": 0,
+      "genre": [
+        "Science Fiction",
+        "Drama",
+        "Romance"
+      ],
+      "language": "Hindi",
+      "quality": "HD",
+      "featured": false,
+      "director": "Pankaj Sawant",
+      "cast": [
+        "Akshara Haasan",
+        "Satyajeet Dubey",
+        "Rajdeep Choudhury",
+        "Anisa Butt",
+        "Bhavini Sheth",
+        "Gandhar Babre"
+      ],
+      "keywords": [
+        "Simulacra",
+        "Simulacra 2026",
         "Bollywood",
         "official trailer"
       ]
@@ -743,6 +887,41 @@
       "keywords": [
         "Unsaid",
         "Unsaid 2026",
+        "South Indian",
+        "official trailer"
+      ]
+    },
+    {
+      "id": "tmdb-movie-1733512",
+      "title": "Vadala (2026)",
+      "slug": "vadala-2026",
+      "videoUrl": "https://youtu.be/j6B9rD0XhsY",
+      "downloadUrl": "https://www.themoviedb.org/movie/1733512",
+      "poster": "https://image.tmdb.org/t/p/w780/b4B5nlR1mD5T8YJJvVg7l2XR7tS.jpg",
+      "description": "A seemingly perfect couple's life takes an unsettling turn when an unexpected presence enters their world. What begins as admiration slowly spirals into emotional chaos, blurring the lines between love, attachment, and obsession.",
+      "seoDescription": "Vadala (2026) trailer, cast, genres, rating and release information.",
+      "category": "South Indian",
+      "year": 2026,
+      "duration": "1h 44m",
+      "rating": 0,
+      "genre": [
+        "Drama",
+        "Thriller"
+      ],
+      "language": "Telugu",
+      "quality": "HD",
+      "featured": false,
+      "director": "Vamsi Krishna Akella",
+      "cast": [
+        "Jagapati Babu",
+        "Laya",
+        "Hrithika Srinivas",
+        "Srinivas Avasarala",
+        "Ravi Varma"
+      ],
+      "keywords": [
+        "Vadala",
+        "Vadala 2026",
         "South Indian",
         "official trailer"
       ]

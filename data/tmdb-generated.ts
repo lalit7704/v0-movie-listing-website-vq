@@ -6,6 +6,42 @@ import type { Video } from "./videos";
 
 export const tmdbHollywoodVideos: Video[] = [
   {
+    "id": "tmdb-movie-1080959",
+    "title": "Alien Storm (2026)",
+    "slug": "alien-storm-2026",
+    "videoUrl": "https://youtu.be/g9t5ResAVSg",
+    "downloadUrl": "https://www.themoviedb.org/movie/1080959",
+    "poster": "https://image.tmdb.org/t/p/w780/qXHqQm3K4XspsgqGUbsk0dUcZwo.jpg",
+    "description": "A father, businessman and secret doomsday prepper escorts people to the safety of his bunker – actually an underground house – when a massive and potentially deadly fog descends and cuts the power at his home.",
+    "seoDescription": "Alien Storm (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Science Fiction",
+      "Horror"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Adam Werth",
+    "cast": [
+      "Kevin Sorbo",
+      "Tom Arnold",
+      "Dawna Lee Heising",
+      "Mike Ferguson",
+      "Laura Mason",
+      "Robert Standley"
+    ],
+    "keywords": [
+      "Alien Storm",
+      "Alien Storm 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1732121",
     "title": "Decomposition (Look At Me) Hyperfixation (2026)",
     "slug": "decomposition-look-at-me-hyperfixation-2026",
@@ -38,6 +74,43 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "Decomposition (Look At Me) Hyperfixation",
       "Decomposition (Look At Me) Hyperfixation 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1710120",
+    "title": "Depths of Fear (2026)",
+    "slug": "depths-of-fear-2026",
+    "videoUrl": "https://youtu.be/ap_OxOBKHbg",
+    "downloadUrl": "https://www.themoviedb.org/movie/1710120",
+    "poster": "https://image.tmdb.org/t/p/w780/vEEYVekmatxFotitjIpvYIBp8Sb.jpg",
+    "description": "A team of divers enters one of the deepest holes in the ocean, but they discover more than they expected: something has made that deep hole its home and now they will have to fight for survival.",
+    "seoDescription": "Depths of Fear (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 18m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Action",
+      "Adventure"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Rui Constantino",
+    "cast": [
+      "Rui Constantino",
+      "Paulo Constantino",
+      "Miguel D. Dias",
+      "Caleb Angel",
+      "Kyle Steve",
+      "James Styg"
+    ],
+    "keywords": [
+      "Depths of Fear",
+      "Depths of Fear 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -111,6 +184,40 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "Sharksquatch",
       "Sharksquatch 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1576581",
+    "title": "Someone's Daughter (2026)",
+    "slug": "someone-s-daughter-2026",
+    "videoUrl": "https://youtu.be/5GwIyb7vwyY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1576581",
+    "poster": "https://image.tmdb.org/t/p/w780/sTw8tSnlepeZteXwU2GqIoohZVB.jpg",
+    "description": "A criminal defence lawyer, Sam, (Pascale Bussières, Ma Vie en cinémascope, When Night is Falling), finds herself kidnapped and abandoned on a remote island along with former client Paul (François Arnaud, Heated Rivalry, Fucktoys, The Borgias), who she previously cleared of sexual assault charges. As they make their way through the unrelenting Canadian wilderness, Paul’s behaviour forces Sam to question the man she once defended. As doubt gives way to fear, she finds herself facing a choice no lawyer should ever have to make.",
+    "seoDescription": "Someone's Daughter (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 36m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Wiebke von Carolsfeld",
+    "cast": [
+      "Pascale Bussières",
+      "François Arnaud",
+      "Peter Outerbridge",
+      "Michael Greyeyes"
+    ],
+    "keywords": [
+      "Someone's Daughter",
+      "Someone's Daughter 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -354,6 +461,43 @@ export const tmdbBollywoodVideos: Video[] = [
     "keywords": [
       "Shit Story",
       "Shit Story 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1731480",
+    "title": "Simulacra (2026)",
+    "slug": "simulacra-2026",
+    "videoUrl": "https://youtu.be/yehWTTOwbts",
+    "downloadUrl": "https://www.themoviedb.org/movie/1731480",
+    "poster": "https://image.tmdb.org/t/p/w780/3Zzx03YzJVd1YYniTBUHFQUK660.jpg",
+    "description": "Nayan desperately attempts to help Nivi, who has been completely wiped blank, remember the profound past they once shared together.",
+    "seoDescription": "Simulacra (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "2h 1m",
+    "rating": 0,
+    "genre": [
+      "Science Fiction",
+      "Drama",
+      "Romance"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Pankaj Sawant",
+    "cast": [
+      "Akshara Haasan",
+      "Satyajeet Dubey",
+      "Rajdeep Choudhury",
+      "Anisa Butt",
+      "Bhavini Sheth",
+      "Gandhar Babre"
+    ],
+    "keywords": [
+      "Simulacra",
+      "Simulacra 2026",
       "Bollywood",
       "official trailer"
     ]
@@ -718,6 +862,41 @@ export const tmdbSouthIndianVideos: Video[] = [
     "keywords": [
       "Unsaid",
       "Unsaid 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1733512",
+    "title": "Vadala (2026)",
+    "slug": "vadala-2026",
+    "videoUrl": "https://youtu.be/j6B9rD0XhsY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1733512",
+    "poster": "https://image.tmdb.org/t/p/w780/b4B5nlR1mD5T8YJJvVg7l2XR7tS.jpg",
+    "description": "A seemingly perfect couple's life takes an unsettling turn when an unexpected presence enters their world. What begins as admiration slowly spirals into emotional chaos, blurring the lines between love, attachment, and obsession.",
+    "seoDescription": "Vadala (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "1h 44m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "director": "Vamsi Krishna Akella",
+    "cast": [
+      "Jagapati Babu",
+      "Laya",
+      "Hrithika Srinivas",
+      "Srinivas Avasarala",
+      "Ravi Varma"
+    ],
+    "keywords": [
+      "Vadala",
+      "Vadala 2026",
       "South Indian",
       "official trailer"
     ]
@@ -1104,6 +1283,185 @@ export const tmdbCartoonVideos: Video[] = [
 
 export const tmdbRecentlyAddedVideos: Video[] = [
   {
+    "id": "tmdb-movie-1710120",
+    "title": "Depths of Fear (2026)",
+    "slug": "depths-of-fear-2026",
+    "videoUrl": "https://youtu.be/ap_OxOBKHbg",
+    "downloadUrl": "https://www.themoviedb.org/movie/1710120",
+    "poster": "https://image.tmdb.org/t/p/w780/vEEYVekmatxFotitjIpvYIBp8Sb.jpg",
+    "description": "A team of divers enters one of the deepest holes in the ocean, but they discover more than they expected: something has made that deep hole its home and now they will have to fight for survival.",
+    "seoDescription": "Depths of Fear (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 18m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Action",
+      "Adventure"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Rui Constantino",
+    "cast": [
+      "Rui Constantino",
+      "Paulo Constantino",
+      "Miguel D. Dias",
+      "Caleb Angel",
+      "Kyle Steve",
+      "James Styg"
+    ],
+    "keywords": [
+      "Depths of Fear",
+      "Depths of Fear 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1576581",
+    "title": "Someone's Daughter (2026)",
+    "slug": "someone-s-daughter-2026",
+    "videoUrl": "https://youtu.be/5GwIyb7vwyY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1576581",
+    "poster": "https://image.tmdb.org/t/p/w780/sTw8tSnlepeZteXwU2GqIoohZVB.jpg",
+    "description": "A criminal defence lawyer, Sam, (Pascale Bussières, Ma Vie en cinémascope, When Night is Falling), finds herself kidnapped and abandoned on a remote island along with former client Paul (François Arnaud, Heated Rivalry, Fucktoys, The Borgias), who she previously cleared of sexual assault charges. As they make their way through the unrelenting Canadian wilderness, Paul’s behaviour forces Sam to question the man she once defended. As doubt gives way to fear, she finds herself facing a choice no lawyer should ever have to make.",
+    "seoDescription": "Someone's Daughter (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 36m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Wiebke von Carolsfeld",
+    "cast": [
+      "Pascale Bussières",
+      "François Arnaud",
+      "Peter Outerbridge",
+      "Michael Greyeyes"
+    ],
+    "keywords": [
+      "Someone's Daughter",
+      "Someone's Daughter 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1080959",
+    "title": "Alien Storm (2026)",
+    "slug": "alien-storm-2026",
+    "videoUrl": "https://youtu.be/g9t5ResAVSg",
+    "downloadUrl": "https://www.themoviedb.org/movie/1080959",
+    "poster": "https://image.tmdb.org/t/p/w780/qXHqQm3K4XspsgqGUbsk0dUcZwo.jpg",
+    "description": "A father, businessman and secret doomsday prepper escorts people to the safety of his bunker – actually an underground house – when a massive and potentially deadly fog descends and cuts the power at his home.",
+    "seoDescription": "Alien Storm (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Science Fiction",
+      "Horror"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Adam Werth",
+    "cast": [
+      "Kevin Sorbo",
+      "Tom Arnold",
+      "Dawna Lee Heising",
+      "Mike Ferguson",
+      "Laura Mason",
+      "Robert Standley"
+    ],
+    "keywords": [
+      "Alien Storm",
+      "Alien Storm 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1731480",
+    "title": "Simulacra (2026)",
+    "slug": "simulacra-2026",
+    "videoUrl": "https://youtu.be/yehWTTOwbts",
+    "downloadUrl": "https://www.themoviedb.org/movie/1731480",
+    "poster": "https://image.tmdb.org/t/p/w780/3Zzx03YzJVd1YYniTBUHFQUK660.jpg",
+    "description": "Nayan desperately attempts to help Nivi, who has been completely wiped blank, remember the profound past they once shared together.",
+    "seoDescription": "Simulacra (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "2h 1m",
+    "rating": 0,
+    "genre": [
+      "Science Fiction",
+      "Drama",
+      "Romance"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Pankaj Sawant",
+    "cast": [
+      "Akshara Haasan",
+      "Satyajeet Dubey",
+      "Rajdeep Choudhury",
+      "Anisa Butt",
+      "Bhavini Sheth",
+      "Gandhar Babre"
+    ],
+    "keywords": [
+      "Simulacra",
+      "Simulacra 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1733512",
+    "title": "Vadala (2026)",
+    "slug": "vadala-2026",
+    "videoUrl": "https://youtu.be/j6B9rD0XhsY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1733512",
+    "poster": "https://image.tmdb.org/t/p/w780/b4B5nlR1mD5T8YJJvVg7l2XR7tS.jpg",
+    "description": "A seemingly perfect couple's life takes an unsettling turn when an unexpected presence enters their world. What begins as admiration slowly spirals into emotional chaos, blurring the lines between love, attachment, and obsession.",
+    "seoDescription": "Vadala (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "1h 44m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "director": "Vamsi Krishna Akella",
+    "cast": [
+      "Jagapati Babu",
+      "Laya",
+      "Hrithika Srinivas",
+      "Srinivas Avasarala",
+      "Ravi Varma"
+    ],
+    "keywords": [
+      "Vadala",
+      "Vadala 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1720745",
     "title": "Men Behind Bars (2026)",
     "slug": "men-behind-bars-2026",
@@ -1974,179 +2332,6 @@ export const tmdbRecentlyAddedVideos: Video[] = [
     "keywords": [
       "CRASHCAT",
       "CRASHCAT 2026",
-      "Cartoon",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-312266",
-    "title": "Hanaori-san Still Wants to Fight in the Next Life (2026)",
-    "slug": "hanaori-san-still-wants-to-fight-in-the-next-life-2026",
-    "videoUrl": "https://youtu.be/UXgbofdm2vQ",
-    "downloadUrl": "https://www.themoviedb.org/tv/312266",
-    "poster": "https://image.tmdb.org/t/p/w780/mMckrgWZRxOMY6aUWzTUTddLOc9.jpg",
-    "description": "Once the Demon King, now a shut-in NEET—Ryusei Narukami's second life is anything but peaceful! When Meteor Hanaori, the Hero who once defeated him, suddenly returns as a normal high school girl, his world is thrown into chaos. Determined to change, Ryusei reenters society as a teacher and ends up teaching at her school! Their explosive reunion reignites the past—and sparks an unexpected love!",
-    "seoDescription": "Hanaori-san Still Wants to Fight in the Next Life (2026) trailer, cast, genres, rating and release information.",
-    "category": "Cartoon",
-    "year": 2026,
-    "duration": "Season 1 • 12 Episodes",
-    "rating": 6,
-    "genre": [
-      "Animation",
-      "Comedy",
-      "Sci-Fi & Fantasy"
-    ],
-    "language": "Japanese",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Akira Sekine",
-      "Jun Fukuyama",
-      "Seena Hoshiki",
-      "Hitomi Ueda",
-      "Sora Tokui",
-      "Nene Hieda"
-    ],
-    "keywords": [
-      "Hanaori-san Still Wants to Fight in the Next Life",
-      "Hanaori-san Still Wants to Fight in the Next Life 2026",
-      "Cartoon",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-286345",
-    "title": "Though I Am an Inept Villainess (2026)",
-    "slug": "though-i-am-an-inept-villainess-2026",
-    "videoUrl": "https://youtu.be/0sKnTH9xlK8",
-    "downloadUrl": "https://www.themoviedb.org/tv/286345",
-    "poster": "https://image.tmdb.org/t/p/w780/yZHCMXL2xYS988rYxR1D8YrTzeD.jpg",
-    "description": "Just as His Highness’s favored butterfly Reirin is beloved by the prince, jealous “court sewer rat” Keigetsu uses magic to swap their bodies—and their destinies. With a looming execution, Reirin embraces her new, healthy body, while Keigetsu learns Reirin’s life isn’t what it seems as she’s pulled into an inner-court conspiracy.",
-    "seoDescription": "Though I Am an Inept Villainess (2026) trailer, cast, genres, rating and release information.",
-    "category": "Cartoon",
-    "year": 2026,
-    "duration": "Season 1 • 11 Episodes",
-    "rating": 7.5,
-    "genre": [
-      "Animation",
-      "Drama",
-      "Sci-Fi & Fantasy"
-    ],
-    "language": "Japanese",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Manaka Iwami",
-      "Natsumi Kawaida",
-      "Makoto Furukawa",
-      "Yuuichirou Umehara",
-      "Hana Hishikawa",
-      "Farahnaz Nikray"
-    ],
-    "keywords": [
-      "Though I Am an Inept Villainess",
-      "Though I Am an Inept Villainess 2026",
-      "Cartoon",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-326119",
-    "title": "Thunder 3 (2026)",
-    "slug": "thunder-3-2026",
-    "videoUrl": "https://youtu.be/wsb07srXk_M",
-    "downloadUrl": "https://www.themoviedb.org/tv/326119",
-    "poster": "https://image.tmdb.org/t/p/w780/8KMSzmV2A95FfLhTjlfSVwSg76n.jpg",
-    "description": "Unremarkably ordinary middle schoolers, Pyontaro, Hiroshi and Tsubame, wander into an extraordinary adventure when Pyontaro's little sister goes missing.",
-    "seoDescription": "Thunder 3 (2026) trailer, cast, genres, rating and release information.",
-    "category": "Cartoon",
-    "year": 2026,
-    "duration": "Season 1 • 12 Episodes",
-    "rating": 8.5,
-    "genre": [
-      "Animation",
-      "Sci-Fi & Fantasy"
-    ],
-    "language": "Japanese",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Sayumi Suzushiro",
-      "Natsumi Kawaida",
-      "Eri Akiyama"
-    ],
-    "keywords": [
-      "Thunder 3",
-      "Thunder 3 2026",
-      "Cartoon",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-297826",
-    "title": "Tomb Raider King (2026)",
-    "slug": "tomb-raider-king-2026",
-    "videoUrl": "https://youtu.be/vwQY5heVraU",
-    "downloadUrl": "https://www.themoviedb.org/tv/297826",
-    "poster": "https://image.tmdb.org/t/p/w780/xDW6cor12UD0b2IqboQWnrIn0UO.jpg",
-    "description": "Chaos ensues overnight when mysterious tombs suddenly surface, filled with divine relics granting overwhelming power, triggering a global power struggle to claim them for dominion. Among the havoc, a raider, Jooheon Suh, is betrayed and left for dead until a second chance brings him back years before the relics. Fueled by fury and future knowledge, he sets out to raid each tomb before they arise.",
-    "seoDescription": "Tomb Raider King (2026) trailer, cast, genres, rating and release information.",
-    "category": "Cartoon",
-    "year": 2026,
-    "duration": "Season 1 • 12 Episodes",
-    "rating": 9,
-    "genre": [
-      "Animation",
-      "Action & Adventure",
-      "Sci-Fi & Fantasy"
-    ],
-    "language": "Korean",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Hwang Chang-yung",
-      "Lee Yu-ri",
-      "Min Eung-sik",
-      "Shim Kyu-hyuck"
-    ],
-    "keywords": [
-      "Tomb Raider King",
-      "Tomb Raider King 2026",
-      "Cartoon",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-296286",
-    "title": "Smoking Behind the Supermarket with You (2026)",
-    "slug": "smoking-behind-the-supermarket-with-you-2026",
-    "videoUrl": "https://youtu.be/kynbQYIVK7I",
-    "downloadUrl": "https://www.themoviedb.org/tv/296286",
-    "poster": "https://image.tmdb.org/t/p/w780/n8ZvVflzDKN3vXe85F1KdC5CFf9.jpg",
-    "description": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”",
-    "seoDescription": "Smoking Behind the Supermarket with You (2026) trailer, cast, genres, rating and release information.",
-    "category": "Cartoon",
-    "year": 2026,
-    "duration": "Season 1 • 12 Episodes",
-    "rating": 9,
-    "genre": [
-      "Animation",
-      "Comedy"
-    ],
-    "language": "Japanese",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Takuya Sato",
-      "Seena Hoshiki",
-      "Toa Yukinari",
-      "Megumi Toyoguchi",
-      "Rikuya Yasuda",
-      "Yoko Hikasa"
-    ],
-    "keywords": [
-      "Smoking Behind the Supermarket with You",
-      "Smoking Behind the Supermarket with You 2026",
       "Cartoon",
       "official trailer"
     ]
