@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Onemovie - Watch Movies & Web Series Online Free',
-  description: 'Onemovie is your ultimate destination for streaming Bollywood, Hollywood, and South Indian movies online. Watch the latest movies and web series in HD quality for free.',
-  keywords: 'movies, streaming, Bollywood, Hollywood, South Indian, web series, watch online, free movies, HD movies',
+  title: 'Onemovie - Discover Movies & Web Series',
+  description: 'Browse information about Bollywood, Hollywood, South Indian movies, web series and cartoons by category, language and genre.',
+  keywords: 'movies, movie discovery, Bollywood, Hollywood, South Indian cinema, web series, cartoons, film catalogue',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -40,16 +40,16 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png',
   },
   openGraph: {
-    title: 'Onemovie - Watch Movies & Web Series Online Free',
-    description: 'Your ultimate destination for streaming movies and web series online.',
+    title: 'Onemovie - Discover Movies & Web Series',
+    description: 'Browse movies and web series by cinema category, language and genre.',
     type: 'website',
     siteName: 'Onemovie',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Onemovie - Watch Movies & Web Series Online Free',
-    description: 'Stream Bollywood, Hollywood, and South Indian movies online for free.',
+    title: 'Onemovie - Discover Movies & Web Series',
+    description: 'Browse Bollywood, Hollywood and South Indian movie information.',
   },
   other: {
     "google-adsense-account": "ca-pub-5319727568049071"

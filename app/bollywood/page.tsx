@@ -5,7 +5,7 @@ import { AmazonProductGrid } from "@/components/amazon-product-grid";
 
 export const metadata: Metadata = {
   title: "Bollywood Movies | Onemovie",
-  description: "Watch the latest Bollywood movies, Hindi films, and Indian cinema. Stream blockbuster hits and classic favorites.",
+  description: "Browse Bollywood and Hindi film information, including recent releases and classic titles.",
 };
 
 export default function BollywoodPage() {

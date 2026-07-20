@@ -4,7 +4,7 @@ import { getVideosByGenre } from "@/data/videos";
 
 export const metadata: Metadata = {
   title: "Action Movies | Onemovie",
-  description: "Watch explosive action movies, thrilling fight sequences, and adrenaline-pumping entertainment.",
+  description: "Browse action movie information, from stunt-driven blockbusters to crime and adventure titles.",
 };
 
 export default function ActionPage() {

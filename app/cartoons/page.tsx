@@ -4,7 +4,7 @@ import { getCartoonVideos } from "@/data/videos";
 
 export const metadata: Metadata = {
   title: "Cartoon Shows & Movies | Onemovie",
-  description: "Watch your favorite cartoon shows and animated movies. Stream popular cartoons like Shinchan, Doraemon, Dragon Ball, and more.",
+  description: "Browse information about cartoon shows, animated films and anime across popular genres.",
 };
 
 export default function CartoonsPage() {

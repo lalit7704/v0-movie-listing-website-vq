@@ -47,7 +47,7 @@ export function generateMetaDescription(description: string, maxLength: number =
  * @returns SEO-optimized title
  */
 export function generateSEOTitle(title: string, category: string, maxLength: number = 60): string {
-  const baseTitle = `${title} - Watch on Onemovie`;
+  const baseTitle = `${title} - Movie Details | Onemovie`;
   if (baseTitle.length <= maxLength) return baseTitle;
   return `${title.substring(0, maxLength - 20)} - Onemovie`;
 }
@@ -92,7 +92,7 @@ export function generateTwitterCardMeta(
  * Extracts keywords from a genre array and title
  */
 export function extractKeywords(title: string, genres: string[], category: string): string[] {
-  const keywords: string[] = [title, ...genres, category, 'watch online', 'streaming'];
+  const keywords: string[] = [title, ...genres, category, 'movie information', 'film catalogue'];
   return [...new Set(keywords)].slice(0, 10);
 }
 
