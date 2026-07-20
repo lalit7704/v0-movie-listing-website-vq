@@ -3,8 +3,9 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
-import { Star, Clock, Calendar, Globe, Film, ChevronLeft } from "lucide-react";
+import { Download, Star, Clock, Calendar, Globe, Film, ChevronLeft } from "lucide-react";
 import { Navbar } from "@/components/navbar";
+import { VideoPlayer } from "@/components/video-player";
 import { SectionSlider } from "@/components/section-slider";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
@@ -17,8 +18,11 @@ import {
   generateMetaDescription,
 } from "@/lib/seo-utils";
 import { generateMoviePageJsonLd } from "@/lib/structured-data";
+import { resolveDownloadUrl } from "@/lib/download-url";
 import { MovieComments } from "@/components/movie-comments";
+import { TrackedDownloadLink } from "@/components/tracked-download-link";
 import { ShareActions } from "@/components/share-actions";
+import { MovieSupportActions } from "@/components/movie-support-actions";
 import { WishlistButton } from "@/components/wishlist-button";
 
 interface MoviePageProps {
@@ -61,8 +65,9 @@ export async function generateMetadata({ params }: MoviePageProps): Promise<Meta
       video.title,
       ...video.genre,
       video.category,
-      "movie information",
-      "film catalogue",
+      "watch online",
+      "streaming",
+      "free movies",
     ].join(", "),
     alternates: {
       canonical: canonicalUrl,
@@ -108,6 +113,7 @@ export default async function MoviePage({ params }: MoviePageProps) {
   }
 
   const recommendedVideos = getRelatedMovies(video.id, 12);
+  const downloadUrl = resolveDownloadUrl(video.downloadUrl);
   const breadcrumbs = generateBreadcrumbs(video.title, video.category, slug);
   const jsonLdScripts = generateMoviePageJsonLd(
     video.title,
@@ -169,6 +175,14 @@ export default async function MoviePage({ params }: MoviePageProps) {
             <div className="grid min-w-0 grid-cols-1 gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
               {/* Video Player and Details */}
               <div className="min-w-0 space-y-6">
+                {/* Video Player */}
+                <VideoPlayer
+                  videoId={video.id}
+                  videoUrl={video.videoUrl}
+                  poster={video.poster}
+                  title={video.title}
+                />
+
                 {/* Title and Actions */}
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
                   <div>
@@ -199,6 +213,16 @@ export default async function MoviePage({ params }: MoviePageProps) {
 
                   <div className="flex flex-wrap items-center gap-2">
                     <WishlistButton videoId={video.id} showLabel />
+                    <TrackedDownloadLink
+                      href={downloadUrl}
+                      movieId={video.id}
+                      source="primary"
+                    >
+                      <Button className="gap-2">
+                        <Download className="w-4 h-4" />
+                        Download
+                      </Button>
+                    </TrackedDownloadLink>
                   </div>
                 </div>
 
@@ -292,6 +316,26 @@ export default async function MoviePage({ params }: MoviePageProps) {
                       <span className="text-foreground font-medium">{video.rating}</span>
                     </div>
                   )}
+                </div>
+
+                {/* Quick Download */}
+                <div className="bg-card rounded-xl p-6 border border-border">
+                  <h3 className="text-lg font-semibold text-foreground mb-4">Quick Download</h3>
+                  <TrackedDownloadLink
+                    href={downloadUrl}
+                    movieId={video.id}
+                    source="quick-download"
+                  >
+                    <Button className="w-full justify-between">
+                      <span>Download Movie</span>
+                      <Download className="w-4 h-4" />
+                    </Button>
+                  </TrackedDownloadLink>
+                </div>
+
+                <div className="bg-card rounded-xl p-6 border border-border">
+                  <h3 className="text-lg font-semibold text-foreground mb-4">Need Help?</h3>
+                  <MovieSupportActions movieId={video.id} />
                 </div>
 
                 {/* Share */}

@@ -19,7 +19,7 @@ const footerLinks = {
   ],
 
   support: [
-    { href: "/about", label: "About Onemovie" },
+    
     { href: "/faq", label: "FAQ" },
     { href: "/terms-of-service", label: "Terms of Service" },
     { href: "/privacy-policy", label: "Privacy Policy" },
@@ -42,7 +42,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-muted-foreground text-sm max-w-sm mb-6">
-              Browse movie and series information across Bollywood, Hollywood, South Indian cinema, web series and cartoons.
+              Your ultimate destination for streaming movies and web series. Watch the latest Bollywood, Hollywood, and South Indian movies in HD quality.
             </p>
             {/* <div className="flex items-center gap-3">
               <a

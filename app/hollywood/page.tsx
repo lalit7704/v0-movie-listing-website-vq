@@ -5,7 +5,7 @@ import { AmazonAd } from "@/components/amazon-ad";
 
 export const metadata: Metadata = {
   title: "Hollywood Movies | Onemovie",
-  description: "Browse Hollywood movie information across action, drama, science fiction and other genres.",
+  description: "Watch the latest Hollywood blockbusters, action movies, sci-fi thrillers, and more. Stream the best of American cinema.",
 };
 
 export default function HollywoodPage() {

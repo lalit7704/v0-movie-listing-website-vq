@@ -119,7 +119,7 @@ export function HeroSlider({ videos }: HeroSliderProps) {
             <Link href={`/movie/${activeVideo.slug || generateSlug(activeVideo.title)}`}>
               <Button size="lg" className="gap-2 text-sm sm:text-base">
                 <Play className="w-5 h-5" fill="currentColor" />
-                View Details
+                Watch Now
               </Button>
             </Link>
             <Link href={`/movie/${activeVideo.slug || generateSlug(activeVideo.title)}`}>

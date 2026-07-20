@@ -4,7 +4,7 @@ import { getVideosByCategory } from "@/data/videos";
 
 export const metadata: Metadata = {
   title: "Web Series | Onemovie",
-  description: "Browse web-series information across crime, thriller, drama, action and other genres.",
+  description: "Binge-watch the best web series, original shows, and episodic content. Stream crime thrillers, dramas, and more.",
 };
 
 export default function WebSeriesPage() {

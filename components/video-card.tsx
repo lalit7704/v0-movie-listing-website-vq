@@ -21,12 +21,12 @@ export function VideoCard({ video }: VideoCardProps) {
       <div className="relative aspect-[2/3] rounded-lg overflow-hidden bg-muted">
         {/* Full-card link moved outside to prevent nested anchor tags */}
         <Link href={videoUrl} className="absolute inset-0 z-10">
-          <span className="sr-only">View details for {video.title}</span>
+          <span className="sr-only">Watch {video.title}</span>
         </Link>
 
           <Image
             src={video.poster}
-            alt={`${video.title} - ${video.category} movie poster`}
+            alt={`${video.title} - ${video.category} movie streaming online`}
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-110"
             sizes="(max-width: 640px) 160px, (max-width: 768px) 180px, 200px"
@@ -88,12 +88,12 @@ export function VideoCard({ video }: VideoCardProps) {
         </p>
       </div>
 
-      {/* Details button - visible on hover */}
+      {/* Watch Now Button - visible on hover */}
       <div className="absolute -bottom-2 left-0 right-0 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-300">
         <Link href={videoUrl} className="block">
-          <Button size="sm" className="w-full text-xs h-8" aria-label={`View details for ${video.title}`}>
+          <Button size="sm" className="w-full text-xs h-8" aria-label={`Watch ${video.title}`}>
             <Play className="w-3 h-3 mr-1" />
-            View Details
+            Watch Now
           </Button>
         </Link>
       </div>
