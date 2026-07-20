@@ -6,6 +6,34 @@ import type { Video } from "./videos";
 
 export const tmdbHollywoodVideos: Video[] = [
   {
+    "id": "tmdb-movie-1723460",
+    "title": "A Toxic Love Story (2026)",
+    "slug": "a-toxic-love-story-2026",
+    "videoUrl": "https://youtu.be/9k9SYlMy9qs",
+    "downloadUrl": "https://www.themoviedb.org/movie/1723460",
+    "poster": "https://image.tmdb.org/t/p/w780/bKrqQGLlIM8qjCjWhHTg6AhrlsY.jpg",
+    "description": "A string of threatening emails escalates into a revenge plot involving a newly married US marshal and his ex-girlfriend.",
+    "seoDescription": "A Toxic Love Story (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 29m",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Alexandra Lacey",
+    "cast": [],
+    "keywords": [
+      "A Toxic Love Story",
+      "A Toxic Love Story 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1080959",
     "title": "Alien Storm (2026)",
     "slug": "alien-storm-2026",
@@ -116,6 +144,43 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1127861",
+    "title": "I, Object (2026)",
+    "slug": "i-object-2026",
+    "videoUrl": "https://youtu.be/u5ENTPq8xf0",
+    "downloadUrl": "https://www.themoviedb.org/movie/1127861",
+    "poster": "https://image.tmdb.org/t/p/w780/cEnUUeiiMnhrciM7aMKVP5mCyz2.jpg",
+    "description": "10-year-old Tom, grieving the loss of his father and unable to relate to the people in his life, takes refuge in the everyday objects around him. Pop can lids, suitcases and untold numbers of everyday objects reveal their true faces and speak to him, helping him on his healing journey.",
+    "seoDescription": "I, Object (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 32m",
+    "rating": 0,
+    "genre": [
+      "Family",
+      "Fantasy",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Andrew Niccol",
+    "cast": [
+      "Bentley Storteboom",
+      "Karl Urban",
+      "Anna Faris",
+      "Ethan Hawke",
+      "Jemaine Clement",
+      "Skywalker Hughes"
+    ],
+    "keywords": [
+      "I, Object",
+      "I, Object 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1720745",
     "title": "Men Behind Bars (2026)",
     "slug": "men-behind-bars-2026",
@@ -147,6 +212,73 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "Men Behind Bars",
       "Men Behind Bars 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1728954",
+    "title": "My Grandfather Charles Manson (2026)",
+    "slug": "my-grandfather-charles-manson-2026",
+    "videoUrl": "https://youtu.be/fiLFIKW7LQI",
+    "downloadUrl": "https://www.themoviedb.org/movie/1728954",
+    "poster": "https://image.tmdb.org/t/p/w780/mIIcUNjuMvF3TLqb5JPSPKwYPcA.jpg",
+    "description": "Sophia was always the good girl growing up and her father's rock, but her quest to identify her unknown grandfather results in a shocking discovery: He is Charles Manson, history's most notorious criminal; and he bears striking physical similarities to her beloved father. Sophia's discovery propels her into an underworld of Manson family members and unreliable narrators as she traces her grandfather's life. Along the way, her genetics unlock never-before-released records and audio recordings that illuminate Manson's pathology in startling ways. But the more Sophia uncovers, the more her relationship with her father is strained. For Sophia, there's no turning back. What has she inherited, and how will she reckon with her family legacy?",
+    "seoDescription": "My Grandfather Charles Manson (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Sophia Maddox, Alexandra Orton",
+    "cast": [
+      "Sophia Maddox"
+    ],
+    "keywords": [
+      "My Grandfather Charles Manson",
+      "My Grandfather Charles Manson 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1232569",
+    "title": "Pinocchio: Unstrung (2026)",
+    "slug": "pinocchio-unstrung-2026",
+    "videoUrl": "https://youtu.be/Xt3zQ8v2pzk",
+    "downloadUrl": "https://www.themoviedb.org/movie/1232569",
+    "poster": "https://image.tmdb.org/t/p/w780/sqhfUrPEeAlFf684FsVa8v1GYCD.jpg",
+    "description": "Influenced by a sinister Cricket and created by Geppetto, Pinocchio launches a violent crusade to carve himself into a real boy like his brother James, one piece at a time.",
+    "seoDescription": "Pinocchio: Unstrung (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 22m",
+    "rating": 7.5,
+    "genre": [
+      "Horror",
+      "Fantasy",
+      "Mystery"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Rhys Frake-Waterfield",
+    "cast": [
+      "Jude Evan Lloyd",
+      "Robert Englund",
+      "Cameron Bell",
+      "Jessica Balmer",
+      "Richard Brake",
+      "Jack Art Gray"
+    ],
+    "keywords": [
+      "Pinocchio: Unstrung",
+      "Pinocchio: Unstrung 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -796,6 +928,44 @@ export const tmdbSouthIndianVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1734011",
+    "title": "Raja The Raja (2026)",
+    "slug": "raja-the-raja-2026",
+    "videoUrl": "https://youtu.be/j2dysxWnT2Y",
+    "downloadUrl": "https://www.themoviedb.org/movie/1734011",
+    "poster": "https://image.tmdb.org/t/p/w780/nCQrLnrmQsZgGA1t8V8DfT7C39B.jpg",
+    "description": "An aspiring fashion designer fights to prove himself against his father's wishes. Just as love enters his life, a mysterious disappearance sets him on an unforgettable journey into a hidden world where his true destiny awaits.",
+    "seoDescription": "Raja The Raja (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "2h 15m",
+    "rating": 0,
+    "genre": [
+      "Comedy",
+      "Romance",
+      "Drama",
+      "Fantasy"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "director": "Annil Boyiidapu",
+    "cast": [
+      "Rithvik Kondakindi",
+      "Vishakha Dhiman",
+      "Naresh",
+      "Sai Kumar",
+      "Vishnu Oi",
+      "Rohini Reddy"
+    ],
+    "keywords": [
+      "Raja The Raja",
+      "Raja The Raja 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1654365",
     "title": "Sweet Rogue Killer (2026)",
     "slug": "sweet-rogue-killer-2026",
@@ -1282,6 +1452,176 @@ export const tmdbCartoonVideos: Video[] = [
 ];
 
 export const tmdbRecentlyAddedVideos: Video[] = [
+  {
+    "id": "tmdb-movie-1728954",
+    "title": "My Grandfather Charles Manson (2026)",
+    "slug": "my-grandfather-charles-manson-2026",
+    "videoUrl": "https://youtu.be/fiLFIKW7LQI",
+    "downloadUrl": "https://www.themoviedb.org/movie/1728954",
+    "poster": "https://image.tmdb.org/t/p/w780/mIIcUNjuMvF3TLqb5JPSPKwYPcA.jpg",
+    "description": "Sophia was always the good girl growing up and her father's rock, but her quest to identify her unknown grandfather results in a shocking discovery: He is Charles Manson, history's most notorious criminal; and he bears striking physical similarities to her beloved father. Sophia's discovery propels her into an underworld of Manson family members and unreliable narrators as she traces her grandfather's life. Along the way, her genetics unlock never-before-released records and audio recordings that illuminate Manson's pathology in startling ways. But the more Sophia uncovers, the more her relationship with her father is strained. For Sophia, there's no turning back. What has she inherited, and how will she reckon with her family legacy?",
+    "seoDescription": "My Grandfather Charles Manson (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Sophia Maddox, Alexandra Orton",
+    "cast": [
+      "Sophia Maddox"
+    ],
+    "keywords": [
+      "My Grandfather Charles Manson",
+      "My Grandfather Charles Manson 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1723460",
+    "title": "A Toxic Love Story (2026)",
+    "slug": "a-toxic-love-story-2026",
+    "videoUrl": "https://youtu.be/9k9SYlMy9qs",
+    "downloadUrl": "https://www.themoviedb.org/movie/1723460",
+    "poster": "https://image.tmdb.org/t/p/w780/bKrqQGLlIM8qjCjWhHTg6AhrlsY.jpg",
+    "description": "A string of threatening emails escalates into a revenge plot involving a newly married US marshal and his ex-girlfriend.",
+    "seoDescription": "A Toxic Love Story (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 29m",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Alexandra Lacey",
+    "cast": [],
+    "keywords": [
+      "A Toxic Love Story",
+      "A Toxic Love Story 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1232569",
+    "title": "Pinocchio: Unstrung (2026)",
+    "slug": "pinocchio-unstrung-2026",
+    "videoUrl": "https://youtu.be/Xt3zQ8v2pzk",
+    "downloadUrl": "https://www.themoviedb.org/movie/1232569",
+    "poster": "https://image.tmdb.org/t/p/w780/sqhfUrPEeAlFf684FsVa8v1GYCD.jpg",
+    "description": "Influenced by a sinister Cricket and created by Geppetto, Pinocchio launches a violent crusade to carve himself into a real boy like his brother James, one piece at a time.",
+    "seoDescription": "Pinocchio: Unstrung (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 22m",
+    "rating": 7.5,
+    "genre": [
+      "Horror",
+      "Fantasy",
+      "Mystery"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Rhys Frake-Waterfield",
+    "cast": [
+      "Jude Evan Lloyd",
+      "Robert Englund",
+      "Cameron Bell",
+      "Jessica Balmer",
+      "Richard Brake",
+      "Jack Art Gray"
+    ],
+    "keywords": [
+      "Pinocchio: Unstrung",
+      "Pinocchio: Unstrung 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1127861",
+    "title": "I, Object (2026)",
+    "slug": "i-object-2026",
+    "videoUrl": "https://youtu.be/u5ENTPq8xf0",
+    "downloadUrl": "https://www.themoviedb.org/movie/1127861",
+    "poster": "https://image.tmdb.org/t/p/w780/cEnUUeiiMnhrciM7aMKVP5mCyz2.jpg",
+    "description": "10-year-old Tom, grieving the loss of his father and unable to relate to the people in his life, takes refuge in the everyday objects around him. Pop can lids, suitcases and untold numbers of everyday objects reveal their true faces and speak to him, helping him on his healing journey.",
+    "seoDescription": "I, Object (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 32m",
+    "rating": 0,
+    "genre": [
+      "Family",
+      "Fantasy",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Andrew Niccol",
+    "cast": [
+      "Bentley Storteboom",
+      "Karl Urban",
+      "Anna Faris",
+      "Ethan Hawke",
+      "Jemaine Clement",
+      "Skywalker Hughes"
+    ],
+    "keywords": [
+      "I, Object",
+      "I, Object 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1734011",
+    "title": "Raja The Raja (2026)",
+    "slug": "raja-the-raja-2026",
+    "videoUrl": "https://youtu.be/j2dysxWnT2Y",
+    "downloadUrl": "https://www.themoviedb.org/movie/1734011",
+    "poster": "https://image.tmdb.org/t/p/w780/nCQrLnrmQsZgGA1t8V8DfT7C39B.jpg",
+    "description": "An aspiring fashion designer fights to prove himself against his father's wishes. Just as love enters his life, a mysterious disappearance sets him on an unforgettable journey into a hidden world where his true destiny awaits.",
+    "seoDescription": "Raja The Raja (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "2h 15m",
+    "rating": 0,
+    "genre": [
+      "Comedy",
+      "Romance",
+      "Drama",
+      "Fantasy"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "director": "Annil Boyiidapu",
+    "cast": [
+      "Rithvik Kondakindi",
+      "Vishakha Dhiman",
+      "Naresh",
+      "Sai Kumar",
+      "Vishnu Oi",
+      "Rohini Reddy"
+    ],
+    "keywords": [
+      "Raja The Raja",
+      "Raja The Raja 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
   {
     "id": "tmdb-movie-1710120",
     "title": "Depths of Fear (2026)",
@@ -2169,170 +2509,6 @@ export const tmdbRecentlyAddedVideos: Video[] = [
       "Oru Vadakkan Velicham - A Northern Light",
       "Oru Vadakkan Velicham - A Northern Light 2026",
       "South Indian",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-328721",
-    "title": "Captain Isfandyar Shaheed (2026)",
-    "slug": "captain-isfandyar-shaheed-2026",
-    "videoUrl": "https://youtu.be/OJM02WkCGDo",
-    "downloadUrl": "https://www.themoviedb.org/tv/328721",
-    "poster": "https://image.tmdb.org/t/p/w780/pI9q51hIs2tCT20RnqfhPubCWmw.jpg",
-    "description": "The nation always comes first. For Captain Isfandyar, patriotism was more than just a word. It was a way of life. He faced every challenge with courage, every threat with determination, and every sacrifice with pride. His journey serves as a powerful reminder of what it truly means to serve the nation.",
-    "seoDescription": "Captain Isfandyar Shaheed (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 1 Episodes",
-    "rating": 0,
-    "genre": [
-      "Action & Adventure",
-      "Drama",
-      "War & Politics"
-    ],
-    "language": "Urdu",
-    "quality": "HD",
-    "featured": false,
-    "cast": [],
-    "keywords": [
-      "Captain Isfandyar Shaheed",
-      "Captain Isfandyar Shaheed 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-325785",
-    "title": "Treasure & Dirt (2026)",
-    "slug": "treasure-dirt-2026",
-    "videoUrl": "https://youtu.be/hU_jsnFsFnc",
-    "downloadUrl": "https://www.themoviedb.org/tv/325785",
-    "poster": "https://image.tmdb.org/t/p/w780/v8hb74CKH7R2fUNXqpRiME2UZBQ.jpg",
-    "description": "When a headless torso is found deep inside an opal mine, Ivan Lucic and Nell Buchanan are seconded to the desolate outback mining town of Nullah where law and order is optional.",
-    "seoDescription": "Treasure & Dirt (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 6 Episodes",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Crime"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Michael Dorman",
-      "Liv Hewson"
-    ],
-    "keywords": [
-      "Treasure & Dirt",
-      "Treasure & Dirt 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-289139",
-    "title": "Overdo (2026)",
-    "slug": "overdo-2026",
-    "videoUrl": "https://youtu.be/5E0TonOHnY0",
-    "downloadUrl": "https://www.themoviedb.org/tv/289139",
-    "poster": "https://image.tmdb.org/t/p/w780/hg9fl45RQVR2yZ63DUWqy0hCZ1G.jpg",
-    "description": "In Republican Shanghai, Murong Qingyi, a warlord’s son swapped at birth, endures years of torment. His life changes when Ren Susu saves him, but tragedy strikes her family because of it.Years later, love sparks between them, but Ren Susu fakes her death to save another, leaving Qingyi heartbroken.Three years on, she returns as his future sister-in-law. Love, hate, betrayal, and old wounds resurface. As war looms, the two must defy fate together, but can love survive a nation’s fall?",
-    "seoDescription": "Overdo (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 33 Episodes",
-    "rating": 0,
-    "genre": [
-      "Drama"
-    ],
-    "language": "Chinese",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Zhang Linghe",
-      "Wang Churan",
-      "Fu Xinbo",
-      "Xu Zhenxuan",
-      "He Qiu",
-      "Wang Zisu"
-    ],
-    "keywords": [
-      "Overdo",
-      "Overdo 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-298610",
-    "title": "Spooky in Love (2026)",
-    "slug": "spooky-in-love-2026",
-    "videoUrl": "https://youtu.be/gFvycajlifg",
-    "downloadUrl": "https://www.themoviedb.org/tv/298610",
-    "poster": "https://image.tmdb.org/t/p/w780/acVOH8Pr5LEZ7WKZCbzwNuHVr9x.jpg",
-    "description": "When a ghost-seeing heir and an ace prosecutor learn that a single touch makes them a strangely effective duo, they team up to crack unsolved murders.",
-    "seoDescription": "Spooky in Love (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 12 Episodes",
-    "rating": 0,
-    "genre": [
-      "Comedy",
-      "Sci-Fi & Fantasy",
-      "Drama"
-    ],
-    "language": "Korean",
-    "quality": "HD",
-    "featured": false,
-    "director": "Hwang In-ho",
-    "cast": [
-      "Park Eun-bin",
-      "Yang Se-jong",
-      "Ong Seong-wu",
-      "Jo Hye-joo",
-      "Kim Do-wan",
-      "Ye Su-jeong"
-    ],
-    "keywords": [
-      "Spooky in Love",
-      "Spooky in Love 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1723974",
-    "title": "CRASHCAT (2026)",
-    "slug": "crashcat-2026",
-    "videoUrl": "https://youtu.be/sanRiGfx7rM",
-    "downloadUrl": "https://www.themoviedb.org/movie/1723974",
-    "poster": "https://image.tmdb.org/t/p/w780/6HAb2hdxovNIB5VXCjoZudcg52t.jpg",
-    "description": "During her final exam, hot-headed space cadet Crashcat must rein in her fiery temper—or risk losing more than just her diploma.",
-    "seoDescription": "CRASHCAT (2026) trailer, cast, genres, rating and release information.",
-    "category": "Cartoon",
-    "year": 2026,
-    "duration": "6m",
-    "rating": 0,
-    "genre": [
-      "Animation",
-      "Science Fiction",
-      "Family",
-      "Comedy"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Sophia Lin",
-      "Wolfie The Cat"
-    ],
-    "keywords": [
-      "CRASHCAT",
-      "CRASHCAT 2026",
-      "Cartoon",
       "official trailer"
     ]
   }
