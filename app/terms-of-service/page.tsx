@@ -3,7 +3,6 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/terms-of-service" },
   title: "Terms of Service | Onemovie",
   description:
     "Read the Terms of Service for Onemovie. Learn about the rules and guidelines for using our platform.",

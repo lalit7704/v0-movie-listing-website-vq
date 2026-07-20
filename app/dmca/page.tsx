@@ -3,7 +3,6 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/dmca" },
   title: "DMCA | Onemovie",
   description:
     "DMCA Policy for Onemovie. Learn how to report copyright infringement.",

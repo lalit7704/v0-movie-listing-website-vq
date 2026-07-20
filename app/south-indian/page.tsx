@@ -5,7 +5,6 @@ import { getVideosByCategory } from "@/data/videos";
 export const metadata: Metadata = {
   title: "South Indian Movies | Onemovie",
   description: "Browse Telugu, Tamil, Kannada and Malayalam movie information in the South Indian cinema catalogue.",
-  alternates: { canonical: "/south-indian" },
 };
 
 export default function SouthIndianPage() {

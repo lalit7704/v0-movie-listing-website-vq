@@ -3,7 +3,6 @@ import { CollectionPage } from "@/components/collection-page";
 import { getVideosByGenre } from "@/data/videos";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/drama" },
   title: "Drama Movies | Onemovie",
   description: "Emotional drama movies, powerful storytelling, and award-winning performances.",
 };

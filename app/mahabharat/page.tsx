@@ -3,7 +3,6 @@ import { CollectionPage } from "@/components/collection-page";
 import { getVideosByCategory } from "@/data/videos";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/mahabharat" },
   title: "Mahabharat | Onemovie",
   description: "A mythological series based on Mahabharat, showing the epic saga of the Kauravas and Pandavas.",
 };

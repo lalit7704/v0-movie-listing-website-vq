@@ -20,8 +20,6 @@ const footerLinks = {
 
   support: [
     { href: "/about", label: "About Onemovie" },
-    { href: "/editorial-policy", label: "Editorial Policy" },
-    { href: "/contact", label: "Contact" },
     { href: "/faq", label: "FAQ" },
     { href: "/terms-of-service", label: "Terms of Service" },
     { href: "/privacy-policy", label: "Privacy Policy" },
