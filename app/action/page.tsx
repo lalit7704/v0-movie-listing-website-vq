@@ -5,6 +5,7 @@ import { getVideosByGenre } from "@/data/videos";
 export const metadata: Metadata = {
   title: "Action Movies | Onemovie",
   description: "Browse action movie information, from stunt-driven blockbusters to crime and adventure titles.",
+  alternates: { canonical: "/action" },
 };
 
 export default function ActionPage() {

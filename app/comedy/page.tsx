@@ -3,6 +3,7 @@ import { CollectionPage } from "@/components/collection-page";
 import { getVideosByGenre } from "@/data/videos";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/comedy" },
   title: "Comedy Movies | Onemovie",
   description: "Laugh out loud with the funniest comedy movies, stand-up specials, and hilarious entertainment.",
 };

@@ -3,6 +3,7 @@ import { CollectionPage } from "@/components/collection-page";
 import { getVideosByGenre } from "@/data/videos";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/sci-fi" },
   title: "Sci-Fi Movies | Onemovie",
   description: "Explore futuristic worlds with sci-fi movies, space adventures, and mind-bending stories.",
 };

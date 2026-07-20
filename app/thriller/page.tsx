@@ -3,6 +3,7 @@ import { CollectionPage } from "@/components/collection-page";
 import { getVideosByGenre } from "@/data/videos";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/thriller" },
   title: "Thriller Movies | Onemovie",
   description: "Edge-of-your-seat thriller movies, suspenseful dramas, and gripping mysteries.",
 };

@@ -6,6 +6,7 @@ import { AmazonAd } from "@/components/amazon-ad";
 export const metadata: Metadata = {
   title: "Hollywood Movies | Onemovie",
   description: "Browse Hollywood movie information across action, drama, science fiction and other genres.",
+  alternates: { canonical: "/hollywood" },
 };
 
 export default function HollywoodPage() {

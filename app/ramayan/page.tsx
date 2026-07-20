@@ -3,6 +3,7 @@ import { CollectionPage } from "@/components/collection-page";
 import { getVideosByCategory } from "@/data/videos";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/ramayan" },
   title: "Ramayan | Onemovie",
   description:
     "A mythological series based on Ramayana, showing Lord Rama’s journey and victory of good over evil.",

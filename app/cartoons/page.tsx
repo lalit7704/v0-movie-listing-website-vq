@@ -5,6 +5,7 @@ import { getCartoonVideos } from "@/data/videos";
 export const metadata: Metadata = {
   title: "Cartoon Shows & Movies | Onemovie",
   description: "Browse information about cartoon shows, animated films and anime across popular genres.",
+  alternates: { canonical: "/cartoons" },
 };
 
 export default function CartoonsPage() {

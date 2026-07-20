@@ -105,6 +105,18 @@ const baseUrl = 'https://www.onemovie.in';
       priority: 0.5,
     },
     {
+      url: `${baseUrl}/editorial-policy`,
+      lastModified: new Date('2026-07-20'),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date('2026-07-20'),
+      changeFrequency: 'yearly',
+      priority: 0.4,
+    },
+    {
       url: `${baseUrl}/privacy-policy`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
