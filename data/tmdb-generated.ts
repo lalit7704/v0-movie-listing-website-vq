@@ -108,6 +108,44 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1725909",
+    "title": "Asesino Perfecto (2026)",
+    "slug": "asesino-perfecto-2026",
+    "videoUrl": "https://youtu.be/yh__5DS_pZ8",
+    "downloadUrl": "https://www.themoviedb.org/movie/1725909",
+    "poster": "https://image.tmdb.org/t/p/w780/3cYidNGENPU8Izh0V7ikkEt0Egw.jpg",
+    "description": "A peaceful town is gripped by fear when a series of mysterious murders leaves investigators with no witnesses, no evidence, and no clear suspect. As each new victim is discovered, Captain Rocio Cortes and Detective Soto race to stop a killer who always seems one step ahead. Their investigation uncovers hidden secrets, broken family ties, and painful events from the past that connect several lives in unexpected ways. As suspicion shifts from one person to another, two brothers, Leo and Elias, find themselves at the center of a mystery that will test their loyalty and force them to confront the truth. With fear spreading throughout the community and trust quickly fading, the search for justice becomes a dangerous race against time in this suspenseful Mexican crime thriller filled with mystery, psychological tension, and unexpected twists.",
+    "seoDescription": "Asesino Perfecto (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 54m",
+    "rating": 0,
+    "genre": [
+      "Thriller",
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Daniel Alvarez",
+    "cast": [
+      "Luis Huizar",
+      "Vianey Huizar",
+      "Tony Cabadas",
+      "Yvette Delgado",
+      "Reynaldo Gutierrez",
+      "Magdalena Valencia"
+    ],
+    "keywords": [
+      "Asesino Perfecto",
+      "Asesino Perfecto 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1732121",
     "title": "Decomposition (Look At Me) Hyperfixation (2026)",
     "slug": "decomposition-look-at-me-hyperfixation-2026",
@@ -177,6 +215,40 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "Depths of Fear",
       "Depths of Fear 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1732097",
+    "title": "Euphoria: A Look Back (2026)",
+    "slug": "euphoria-a-look-back-2026",
+    "videoUrl": "https://youtu.be/H0V8fgGlqIU",
+    "downloadUrl": "https://www.themoviedb.org/movie/1732097",
+    "poster": "https://image.tmdb.org/t/p/w780/1us6iYG7P600BgSdwjb6mFYCP97.jpg",
+    "description": "The cast and crew of HBO's Euphoria take an exclusive look back at the critically acclaimed series' origins, evolution, and influences.",
+    "seoDescription": "Euphoria: A Look Back (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Zendaya",
+      "Hunter Schafer",
+      "Jacob Elordi",
+      "Alexa Demie",
+      "Maude Apatow",
+      "Angus Cloud"
+    ],
+    "keywords": [
+      "Euphoria: A Look Back",
+      "Euphoria: A Look Back 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -292,6 +364,78 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1714183",
+    "title": "Justice (2026)",
+    "slug": "justice-2026",
+    "videoUrl": "https://youtu.be/H8rnJqmj8AQ",
+    "downloadUrl": "https://www.themoviedb.org/movie/1714183",
+    "poster": "https://image.tmdb.org/t/p/w780/5QDNRaXRvfh0MN3bMhRvEJfQPfz.jpg",
+    "description": "The online child safety taskforce, \"Predator Puncherz\", document their latest and most infamous sting operation.",
+    "seoDescription": "Justice (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "13m",
+    "rating": 0,
+    "genre": [
+      "Thriller",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Bobby Nair",
+    "cast": [
+      "Bobby Nair",
+      "Jacob Eldreth",
+      "Jenna Turchin",
+      "Jay Carroll",
+      "Jack Garman",
+      "Nathaniel Hofer"
+    ],
+    "keywords": [
+      "Justice",
+      "Justice 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1691931",
+    "title": "LAKESVILLE MOVIE (2026)",
+    "slug": "lakesville-movie-2026",
+    "videoUrl": "https://youtu.be/4ShJnOgVlBY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1691931",
+    "poster": "https://image.tmdb.org/t/p/w780/mo8ofxno7kZZZTjHA8g4T6uMXP7.jpg",
+    "description": "Ruby and Silver travel to Liverpool to discover an old friend has been released from prison to assist them in uncovering a new murder plot.",
+    "seoDescription": "LAKESVILLE MOVIE (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 15m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Thriller"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "William \"Roxie\" Haylor",
+    "cast": [
+      "William \"Roxie\" Haylor",
+      "William \"Roxie\" Haylor",
+      "William \"Roxie\" Haylor",
+      "William \"Roxie\" Haylor",
+      "Leah Chance",
+      "Frankie Stein"
+    ],
+    "keywords": [
+      "LAKESVILLE MOVIE",
+      "LAKESVILLE MOVIE 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1720745",
     "title": "Men Behind Bars (2026)",
     "slug": "men-behind-bars-2026",
@@ -353,6 +497,41 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "My Grandfather Charles Manson",
       "My Grandfather Charles Manson 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1725871",
+    "title": "Outback Dale (2026)",
+    "slug": "outback-dale-2026",
+    "videoUrl": "https://youtu.be/9aUoc-ShAto",
+    "downloadUrl": "https://www.themoviedb.org/movie/1725871",
+    "poster": "https://image.tmdb.org/t/p/w780/dXsJP4OgDDgJpVs4POjDcdhgRmH.jpg",
+    "description": "After a social media meltdown, a middle aged man embarks on a wild journey to restore his reputation.",
+    "seoDescription": "Outback Dale (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 40m",
+    "rating": 0,
+    "genre": [
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Brad Newland",
+    "cast": [
+      "Brad Newland",
+      "Michelle Griffiths",
+      "Joshua Acason",
+      "Anna Stazia Rasmussen",
+      "Fee Menzies",
+      "Hero Swag"
+    ],
+    "keywords": [
+      "Outback Dale",
+      "Outback Dale 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -426,6 +605,35 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "Pinocchio: Unstrung",
       "Pinocchio: Unstrung 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1702494",
+    "title": "Rising Embers (2026)",
+    "slug": "rising-embers-2026",
+    "videoUrl": "https://youtu.be/6H4nTBt1Lx4",
+    "downloadUrl": "https://www.themoviedb.org/movie/1702494",
+    "poster": "https://image.tmdb.org/t/p/w780/sSFkNrwZE4vG8rbY3pCy53EUdXu.jpg",
+    "description": "Two thousand years. One truth. Carried by ordinary people who refused to let their faith be silenced.",
+    "seoDescription": "Rising Embers (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "2h 30m",
+    "rating": 0,
+    "genre": [
+      "History",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Abin Alex",
+    "cast": [],
+    "keywords": [
+      "Rising Embers",
+      "Rising Embers 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -680,6 +888,40 @@ export const tmdbHollywoodVideos: Video[] = [
 
 export const tmdbBollywoodVideos: Video[] = [
   {
+    "id": "tmdb-movie-1720201",
+    "title": "Dulhaniya Le Aaeegi (2026)",
+    "slug": "dulhaniya-le-aaeegi-2026",
+    "videoUrl": "https://youtu.be/Tw1je1iQs4s",
+    "downloadUrl": "https://www.themoviedb.org/movie/1720201",
+    "poster": "https://image.tmdb.org/t/p/w780/kQBgp1eYyQVs4nKtd8lrLva2JcQ.jpg",
+    "description": "Dulhaniya Le Aaeegi is a newly released bollywood title.",
+    "seoDescription": "Dulhaniya Le Aaeegi (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Comedy"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Akashaditya Lama",
+    "cast": [
+      "Khushali Kumar",
+      "Mahesh Manjrekar",
+      "Piyush Mishra",
+      "Omkar Kapoor",
+      "Snehill Dixit Mehra"
+    ],
+    "keywords": [
+      "Dulhaniya Le Aaeegi",
+      "Dulhaniya Le Aaeegi 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1733214",
     "title": "HIRAETH (2026)",
     "slug": "hiraeth-2026",
@@ -744,6 +986,43 @@ export const tmdbBollywoodVideos: Video[] = [
     "keywords": [
       "Ikka",
       "Ikka 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1021634",
+    "title": "Max, Min and Meowzaki (2026)",
+    "slug": "max-min-and-meowzaki-2026",
+    "videoUrl": "https://youtu.be/yr3yFBHQXyY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1021634",
+    "poster": "https://image.tmdb.org/t/p/w780/7ru6YpK7U4QH8cO3OKMKo5ZXgXj.jpg",
+    "description": "Max and Min are about to break up. They argue endlessly about dividing their possessions, including their cat, Meowzaki, whom they have named after their favorite artist Miyazaki Hayao. Max’s father Ramesh, who lost his wife and has since been suffering from insomnia, meets charming therapist Dhaara. Max’s grandfather Sridhar, secretly enjoys drinking with his new friend Jennifer at the nursing home.",
+    "seoDescription": "Max, Min and Meowzaki (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "2h 18m",
+    "rating": 0,
+    "genre": [
+      "Family",
+      "Romance",
+      "Comedy"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Narasimhamurthy Padmakumar",
+    "cast": [
+      "Adil Hussain",
+      "Mandira Bedi",
+      "Nassar",
+      "Nafisa Ali",
+      "Medha Shankr",
+      "Vidhatri Bandi"
+    ],
+    "keywords": [
+      "Max, Min and Meowzaki",
+      "Max, Min and Meowzaki 2026",
       "Bollywood",
       "official trailer"
     ]
@@ -916,10 +1195,77 @@ export const tmdbBollywoodVideos: Video[] = [
       "Bollywood",
       "official trailer"
     ]
+  },
+  {
+    "id": "tmdb-movie-1713420",
+    "title": "Uttar Da Puttar (2026)",
+    "slug": "uttar-da-puttar-2026",
+    "videoUrl": "https://youtu.be/UmRKqialNf4",
+    "downloadUrl": "https://www.themoviedb.org/movie/1713420",
+    "poster": "https://image.tmdb.org/t/p/w780/ss9hQZuBW6uwkyJaW8DQgV4ku0T.jpg",
+    "description": "Uttar Da Puttar is a newly released bollywood title.",
+    "seoDescription": "Uttar Da Puttar (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Comedy"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Ravinder Siwatch",
+    "cast": [
+      "Annu Kapoor",
+      "Rukhsar Rehman",
+      "Brijendra Kala",
+      "Pavan Malhotra",
+      "Ishtiyak Khan",
+      "Jeeveshu Ahluwalia"
+    ],
+    "keywords": [
+      "Uttar Da Puttar",
+      "Uttar Da Puttar 2026",
+      "Bollywood",
+      "official trailer"
+    ]
   }
 ];
 
 export const tmdbSouthIndianVideos: Video[] = [
+  {
+    "id": "tmdb-movie-1443136",
+    "title": "Chennai Love Story (2026)",
+    "slug": "chennai-love-story-2026",
+    "videoUrl": "https://youtu.be/nYYjR9diizE",
+    "downloadUrl": "https://www.themoviedb.org/movie/1443136",
+    "poster": "https://image.tmdb.org/t/p/w780/9BjK1Mh8fofyHNYZNMJ8oLhBXDw.jpg",
+    "description": "Two young people navigate their first experience of love, dealing with its powerful emotions and obstacles while discovering the delicate nature of newfound romance.",
+    "seoDescription": "Chennai Love Story (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "3h 4m",
+    "rating": 0,
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "director": "Ravi Namburii",
+    "cast": [
+      "Kiran Abbavaram",
+      "Sri Gouri Priya Reddy"
+    ],
+    "keywords": [
+      "Chennai Love Story",
+      "Chennai Love Story 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
   {
     "id": "tmdb-movie-1432631",
     "title": "Idhayam Murali (2026)",
@@ -953,6 +1299,39 @@ export const tmdbSouthIndianVideos: Video[] = [
     "keywords": [
       "Idhayam Murali",
       "Idhayam Murali 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1215812",
+    "title": "Karavali (2026)",
+    "slug": "karavali-2026",
+    "videoUrl": "https://youtu.be/TGYTlowY0zM",
+    "downloadUrl": "https://www.themoviedb.org/movie/1215812",
+    "poster": "https://image.tmdb.org/t/p/w780/buxVz5LZQY1QLfFIIZnfe6t2F4I.jpg",
+    "description": "Karavali is a film that explores the struggles between man and nature, set against the raw, untamed beauty of coastal Karnataka. The story revolves around the world of Kambala, a traditional annual buffalo race, showcasing the unique culture and challenges of the region.",
+    "seoDescription": "Karavali (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [],
+    "language": "Kannada",
+    "quality": "HD",
+    "featured": false,
+    "director": "Gurudatha Ganiga",
+    "cast": [
+      "Prajwal Devaraj",
+      "Raj B Shetty",
+      "Sampada Hulivana",
+      "Ramesh Indira",
+      "Mithra",
+      "Sushmitha Bhat"
+    ],
+    "keywords": [
+      "Karavali",
+      "Karavali 2026",
       "South Indian",
       "official trailer"
     ]
@@ -1358,6 +1737,42 @@ export const tmdbSouthIndianVideos: Video[] = [
 
 export const tmdbWebSeriesVideos: Video[] = [
   {
+    "id": "tmdb-tv-328402",
+    "title": "Adarsh Baal Vidyalaya (2026)",
+    "slug": "adarsh-baal-vidyalaya-2026",
+    "videoUrl": "https://youtu.be/9QDfABKdqe0",
+    "downloadUrl": "https://www.themoviedb.org/tv/328402",
+    "poster": "https://image.tmdb.org/t/p/w780/1XbcSqURUvhgu2nnoQRZ7cXmTsJ.jpg",
+    "description": "A relaxed principal tries to reform a failing public school, triggering a messy transformation as misfit teachers work to repair the system one lesson at a time.",
+    "seoDescription": "Adarsh Baal Vidyalaya (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 7 Episodes",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Biswapati Sarkar, Sameer Saxena",
+    "cast": [
+      "Archana Puran Singh",
+      "Naveen Kasturia",
+      "Abhimanyu Singh",
+      "Deven Bhojani",
+      "Aryan Prajapati",
+      "Kay Kay Menon"
+    ],
+    "keywords": [
+      "Adarsh Baal Vidyalaya",
+      "Adarsh Baal Vidyalaya 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-tv-328721",
     "title": "Captain Isfandyar Shaheed (2026)",
     "slug": "captain-isfandyar-shaheed-2026",
@@ -1382,6 +1797,38 @@ export const tmdbWebSeriesVideos: Video[] = [
     "keywords": [
       "Captain Isfandyar Shaheed",
       "Captain Isfandyar Shaheed 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-299268",
+    "title": "Drag Race Down Under vs The World (2026)",
+    "slug": "drag-race-down-under-vs-the-world-2026",
+    "videoUrl": "https://youtu.be/c5Uv9XpOHuc",
+    "downloadUrl": "https://www.themoviedb.org/tv/299268",
+    "poster": "https://image.tmdb.org/t/p/w780/5Ksj7YkYtHm1T5eA9jMLR4oHW9j.jpg",
+    "description": "Fan-favourites from Drag Race Down Under go head-to-head with sickening queens from around the world — all vying for the ultimate crown. Get ready for new looks, louder drama, and legendary lip-syncs as the battle for global drag dominance begins.",
+    "seoDescription": "Drag Race Down Under vs The World (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 8 Episodes",
+    "rating": 0,
+    "genre": [
+      "Reality"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "RuPaul, Fenton Bailey, Randy Barbato",
+    "cast": [
+      "Michelle Visage",
+      "Rhys Nicholson",
+      "Lazy Susan"
+    ],
+    "keywords": [
+      "Drag Race Down Under vs The World",
+      "Drag Race Down Under vs The World 2026",
       "Web Series",
       "official trailer"
     ]
@@ -1527,6 +1974,42 @@ export const tmdbWebSeriesVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-tv-326930",
+    "title": "Summer of 1985 (2026)",
+    "slug": "summer-of-1985-2026",
+    "videoUrl": "https://youtu.be/exEGpLNpZW0",
+    "downloadUrl": "https://www.themoviedb.org/tv/326930",
+    "poster": "https://image.tmdb.org/t/p/w780/z3cigGLSWvBJuuF8uWlEYyITvmk.jpg",
+    "description": "In the summer of 1985, a young boy is found mysteriously drowned in the waters off Särsö. During a forbidden excursion to the legendary island of Svärtan, Johannes and his friends make a discovery that changes them forever.",
+    "seoDescription": "Summer of 1985 (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 6 Episodes",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Mystery"
+    ],
+    "language": "Swedish",
+    "quality": "HD",
+    "featured": false,
+    "director": "Amy Deasismont, Melina Maraki, John Ajvide Lindqvist",
+    "cast": [
+      "Rolf Lassgård",
+      "Linus Rogsgård",
+      "Josefin Neldén",
+      "Nelly Anderbro",
+      "Emelie Garbers",
+      "Julia Marko-Nord"
+    ],
+    "keywords": [
+      "Summer of 1985",
+      "Summer of 1985 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-tv-325785",
     "title": "Treasure & Dirt (2026)",
     "slug": "treasure-dirt-2026",
@@ -1560,6 +2043,43 @@ export const tmdbWebSeriesVideos: Video[] = [
 ];
 
 export const tmdbCartoonVideos: Video[] = [
+  {
+    "id": "tmdb-tv-208208",
+    "title": "Breaking Bear (2026)",
+    "slug": "breaking-bear-2026",
+    "videoUrl": "https://youtu.be/aIr0coo0Hts",
+    "downloadUrl": "https://www.themoviedb.org/tv/208208",
+    "poster": "https://image.tmdb.org/t/p/w780/8sWLmm1l8uKL9ItlkEMLxwXjWaj.jpg",
+    "description": "The escapades of three bear siblings who decide they have to start selling drugs in order to raise money and save their home after gas companies start fracking next to their cave. The bears soon enlist other forest animals in a scheme that will pit them against oil companies, The Russian Mafia, local Hell’s Angels and polar bears who hate anything that isn’t white.",
+    "seoDescription": "Breaking Bear (2026) trailer, cast, genres, rating and release information.",
+    "category": "Cartoon",
+    "year": 2026,
+    "duration": "Season 1 • 8 Episodes",
+    "rating": 0,
+    "genre": [
+      "Comedy",
+      "Animation",
+      "Crime"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Julien Nitzberg, Tom DeLonge",
+    "cast": [
+      "Brendan Fraser",
+      "Sarah Michelle Gellar",
+      "Annie Murphy",
+      "Elizabeth Hurley",
+      "Josh Gad",
+      "Chris Diamantopoulos"
+    ],
+    "keywords": [
+      "Breaking Bear",
+      "Breaking Bear 2026",
+      "Cartoon",
+      "official trailer"
+    ]
+  },
   {
     "id": "tmdb-movie-1723974",
     "title": "CRASHCAT (2026)",
@@ -1804,6 +2324,526 @@ export const tmdbCartoonVideos: Video[] = [
 ];
 
 export const tmdbRecentlyAddedVideos: Video[] = [
+  {
+    "id": "tmdb-movie-1732097",
+    "title": "Euphoria: A Look Back (2026)",
+    "slug": "euphoria-a-look-back-2026",
+    "videoUrl": "https://youtu.be/H0V8fgGlqIU",
+    "downloadUrl": "https://www.themoviedb.org/movie/1732097",
+    "poster": "https://image.tmdb.org/t/p/w780/1us6iYG7P600BgSdwjb6mFYCP97.jpg",
+    "description": "The cast and crew of HBO's Euphoria take an exclusive look back at the critically acclaimed series' origins, evolution, and influences.",
+    "seoDescription": "Euphoria: A Look Back (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Zendaya",
+      "Hunter Schafer",
+      "Jacob Elordi",
+      "Alexa Demie",
+      "Maude Apatow",
+      "Angus Cloud"
+    ],
+    "keywords": [
+      "Euphoria: A Look Back",
+      "Euphoria: A Look Back 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1725909",
+    "title": "Asesino Perfecto (2026)",
+    "slug": "asesino-perfecto-2026",
+    "videoUrl": "https://youtu.be/yh__5DS_pZ8",
+    "downloadUrl": "https://www.themoviedb.org/movie/1725909",
+    "poster": "https://image.tmdb.org/t/p/w780/3cYidNGENPU8Izh0V7ikkEt0Egw.jpg",
+    "description": "A peaceful town is gripped by fear when a series of mysterious murders leaves investigators with no witnesses, no evidence, and no clear suspect. As each new victim is discovered, Captain Rocio Cortes and Detective Soto race to stop a killer who always seems one step ahead. Their investigation uncovers hidden secrets, broken family ties, and painful events from the past that connect several lives in unexpected ways. As suspicion shifts from one person to another, two brothers, Leo and Elias, find themselves at the center of a mystery that will test their loyalty and force them to confront the truth. With fear spreading throughout the community and trust quickly fading, the search for justice becomes a dangerous race against time in this suspenseful Mexican crime thriller filled with mystery, psychological tension, and unexpected twists.",
+    "seoDescription": "Asesino Perfecto (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 54m",
+    "rating": 0,
+    "genre": [
+      "Thriller",
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Daniel Alvarez",
+    "cast": [
+      "Luis Huizar",
+      "Vianey Huizar",
+      "Tony Cabadas",
+      "Yvette Delgado",
+      "Reynaldo Gutierrez",
+      "Magdalena Valencia"
+    ],
+    "keywords": [
+      "Asesino Perfecto",
+      "Asesino Perfecto 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1725871",
+    "title": "Outback Dale (2026)",
+    "slug": "outback-dale-2026",
+    "videoUrl": "https://youtu.be/9aUoc-ShAto",
+    "downloadUrl": "https://www.themoviedb.org/movie/1725871",
+    "poster": "https://image.tmdb.org/t/p/w780/dXsJP4OgDDgJpVs4POjDcdhgRmH.jpg",
+    "description": "After a social media meltdown, a middle aged man embarks on a wild journey to restore his reputation.",
+    "seoDescription": "Outback Dale (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 40m",
+    "rating": 0,
+    "genre": [
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Brad Newland",
+    "cast": [
+      "Brad Newland",
+      "Michelle Griffiths",
+      "Joshua Acason",
+      "Anna Stazia Rasmussen",
+      "Fee Menzies",
+      "Hero Swag"
+    ],
+    "keywords": [
+      "Outback Dale",
+      "Outback Dale 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1714183",
+    "title": "Justice (2026)",
+    "slug": "justice-2026",
+    "videoUrl": "https://youtu.be/H8rnJqmj8AQ",
+    "downloadUrl": "https://www.themoviedb.org/movie/1714183",
+    "poster": "https://image.tmdb.org/t/p/w780/5QDNRaXRvfh0MN3bMhRvEJfQPfz.jpg",
+    "description": "The online child safety taskforce, \"Predator Puncherz\", document their latest and most infamous sting operation.",
+    "seoDescription": "Justice (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "13m",
+    "rating": 0,
+    "genre": [
+      "Thriller",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Bobby Nair",
+    "cast": [
+      "Bobby Nair",
+      "Jacob Eldreth",
+      "Jenna Turchin",
+      "Jay Carroll",
+      "Jack Garman",
+      "Nathaniel Hofer"
+    ],
+    "keywords": [
+      "Justice",
+      "Justice 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1702494",
+    "title": "Rising Embers (2026)",
+    "slug": "rising-embers-2026",
+    "videoUrl": "https://youtu.be/6H4nTBt1Lx4",
+    "downloadUrl": "https://www.themoviedb.org/movie/1702494",
+    "poster": "https://image.tmdb.org/t/p/w780/sSFkNrwZE4vG8rbY3pCy53EUdXu.jpg",
+    "description": "Two thousand years. One truth. Carried by ordinary people who refused to let their faith be silenced.",
+    "seoDescription": "Rising Embers (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "2h 30m",
+    "rating": 0,
+    "genre": [
+      "History",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Abin Alex",
+    "cast": [],
+    "keywords": [
+      "Rising Embers",
+      "Rising Embers 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1691931",
+    "title": "LAKESVILLE MOVIE (2026)",
+    "slug": "lakesville-movie-2026",
+    "videoUrl": "https://youtu.be/4ShJnOgVlBY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1691931",
+    "poster": "https://image.tmdb.org/t/p/w780/mo8ofxno7kZZZTjHA8g4T6uMXP7.jpg",
+    "description": "Ruby and Silver travel to Liverpool to discover an old friend has been released from prison to assist them in uncovering a new murder plot.",
+    "seoDescription": "LAKESVILLE MOVIE (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 15m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Thriller"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "William \"Roxie\" Haylor",
+    "cast": [
+      "William \"Roxie\" Haylor",
+      "William \"Roxie\" Haylor",
+      "William \"Roxie\" Haylor",
+      "William \"Roxie\" Haylor",
+      "Leah Chance",
+      "Frankie Stein"
+    ],
+    "keywords": [
+      "LAKESVILLE MOVIE",
+      "LAKESVILLE MOVIE 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1720201",
+    "title": "Dulhaniya Le Aaeegi (2026)",
+    "slug": "dulhaniya-le-aaeegi-2026",
+    "videoUrl": "https://youtu.be/Tw1je1iQs4s",
+    "downloadUrl": "https://www.themoviedb.org/movie/1720201",
+    "poster": "https://image.tmdb.org/t/p/w780/kQBgp1eYyQVs4nKtd8lrLva2JcQ.jpg",
+    "description": "Dulhaniya Le Aaeegi is a newly released bollywood title.",
+    "seoDescription": "Dulhaniya Le Aaeegi (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Comedy"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Akashaditya Lama",
+    "cast": [
+      "Khushali Kumar",
+      "Mahesh Manjrekar",
+      "Piyush Mishra",
+      "Omkar Kapoor",
+      "Snehill Dixit Mehra"
+    ],
+    "keywords": [
+      "Dulhaniya Le Aaeegi",
+      "Dulhaniya Le Aaeegi 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1713420",
+    "title": "Uttar Da Puttar (2026)",
+    "slug": "uttar-da-puttar-2026",
+    "videoUrl": "https://youtu.be/UmRKqialNf4",
+    "downloadUrl": "https://www.themoviedb.org/movie/1713420",
+    "poster": "https://image.tmdb.org/t/p/w780/ss9hQZuBW6uwkyJaW8DQgV4ku0T.jpg",
+    "description": "Uttar Da Puttar is a newly released bollywood title.",
+    "seoDescription": "Uttar Da Puttar (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Comedy"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Ravinder Siwatch",
+    "cast": [
+      "Annu Kapoor",
+      "Rukhsar Rehman",
+      "Brijendra Kala",
+      "Pavan Malhotra",
+      "Ishtiyak Khan",
+      "Jeeveshu Ahluwalia"
+    ],
+    "keywords": [
+      "Uttar Da Puttar",
+      "Uttar Da Puttar 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1021634",
+    "title": "Max, Min and Meowzaki (2026)",
+    "slug": "max-min-and-meowzaki-2026",
+    "videoUrl": "https://youtu.be/yr3yFBHQXyY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1021634",
+    "poster": "https://image.tmdb.org/t/p/w780/7ru6YpK7U4QH8cO3OKMKo5ZXgXj.jpg",
+    "description": "Max and Min are about to break up. They argue endlessly about dividing their possessions, including their cat, Meowzaki, whom they have named after their favorite artist Miyazaki Hayao. Max’s father Ramesh, who lost his wife and has since been suffering from insomnia, meets charming therapist Dhaara. Max’s grandfather Sridhar, secretly enjoys drinking with his new friend Jennifer at the nursing home.",
+    "seoDescription": "Max, Min and Meowzaki (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "2h 18m",
+    "rating": 0,
+    "genre": [
+      "Family",
+      "Romance",
+      "Comedy"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Narasimhamurthy Padmakumar",
+    "cast": [
+      "Adil Hussain",
+      "Mandira Bedi",
+      "Nassar",
+      "Nafisa Ali",
+      "Medha Shankr",
+      "Vidhatri Bandi"
+    ],
+    "keywords": [
+      "Max, Min and Meowzaki",
+      "Max, Min and Meowzaki 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1443136",
+    "title": "Chennai Love Story (2026)",
+    "slug": "chennai-love-story-2026",
+    "videoUrl": "https://youtu.be/nYYjR9diizE",
+    "downloadUrl": "https://www.themoviedb.org/movie/1443136",
+    "poster": "https://image.tmdb.org/t/p/w780/9BjK1Mh8fofyHNYZNMJ8oLhBXDw.jpg",
+    "description": "Two young people navigate their first experience of love, dealing with its powerful emotions and obstacles while discovering the delicate nature of newfound romance.",
+    "seoDescription": "Chennai Love Story (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "3h 4m",
+    "rating": 0,
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "director": "Ravi Namburii",
+    "cast": [
+      "Kiran Abbavaram",
+      "Sri Gouri Priya Reddy"
+    ],
+    "keywords": [
+      "Chennai Love Story",
+      "Chennai Love Story 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1215812",
+    "title": "Karavali (2026)",
+    "slug": "karavali-2026",
+    "videoUrl": "https://youtu.be/TGYTlowY0zM",
+    "downloadUrl": "https://www.themoviedb.org/movie/1215812",
+    "poster": "https://image.tmdb.org/t/p/w780/buxVz5LZQY1QLfFIIZnfe6t2F4I.jpg",
+    "description": "Karavali is a film that explores the struggles between man and nature, set against the raw, untamed beauty of coastal Karnataka. The story revolves around the world of Kambala, a traditional annual buffalo race, showcasing the unique culture and challenges of the region.",
+    "seoDescription": "Karavali (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [],
+    "language": "Kannada",
+    "quality": "HD",
+    "featured": false,
+    "director": "Gurudatha Ganiga",
+    "cast": [
+      "Prajwal Devaraj",
+      "Raj B Shetty",
+      "Sampada Hulivana",
+      "Ramesh Indira",
+      "Mithra",
+      "Sushmitha Bhat"
+    ],
+    "keywords": [
+      "Karavali",
+      "Karavali 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-328402",
+    "title": "Adarsh Baal Vidyalaya (2026)",
+    "slug": "adarsh-baal-vidyalaya-2026",
+    "videoUrl": "https://youtu.be/9QDfABKdqe0",
+    "downloadUrl": "https://www.themoviedb.org/tv/328402",
+    "poster": "https://image.tmdb.org/t/p/w780/1XbcSqURUvhgu2nnoQRZ7cXmTsJ.jpg",
+    "description": "A relaxed principal tries to reform a failing public school, triggering a messy transformation as misfit teachers work to repair the system one lesson at a time.",
+    "seoDescription": "Adarsh Baal Vidyalaya (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 7 Episodes",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Biswapati Sarkar, Sameer Saxena",
+    "cast": [
+      "Archana Puran Singh",
+      "Naveen Kasturia",
+      "Abhimanyu Singh",
+      "Deven Bhojani",
+      "Aryan Prajapati",
+      "Kay Kay Menon"
+    ],
+    "keywords": [
+      "Adarsh Baal Vidyalaya",
+      "Adarsh Baal Vidyalaya 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-326930",
+    "title": "Summer of 1985 (2026)",
+    "slug": "summer-of-1985-2026",
+    "videoUrl": "https://youtu.be/exEGpLNpZW0",
+    "downloadUrl": "https://www.themoviedb.org/tv/326930",
+    "poster": "https://image.tmdb.org/t/p/w780/z3cigGLSWvBJuuF8uWlEYyITvmk.jpg",
+    "description": "In the summer of 1985, a young boy is found mysteriously drowned in the waters off Särsö. During a forbidden excursion to the legendary island of Svärtan, Johannes and his friends make a discovery that changes them forever.",
+    "seoDescription": "Summer of 1985 (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 6 Episodes",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Mystery"
+    ],
+    "language": "Swedish",
+    "quality": "HD",
+    "featured": false,
+    "director": "Amy Deasismont, Melina Maraki, John Ajvide Lindqvist",
+    "cast": [
+      "Rolf Lassgård",
+      "Linus Rogsgård",
+      "Josefin Neldén",
+      "Nelly Anderbro",
+      "Emelie Garbers",
+      "Julia Marko-Nord"
+    ],
+    "keywords": [
+      "Summer of 1985",
+      "Summer of 1985 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-299268",
+    "title": "Drag Race Down Under vs The World (2026)",
+    "slug": "drag-race-down-under-vs-the-world-2026",
+    "videoUrl": "https://youtu.be/c5Uv9XpOHuc",
+    "downloadUrl": "https://www.themoviedb.org/tv/299268",
+    "poster": "https://image.tmdb.org/t/p/w780/5Ksj7YkYtHm1T5eA9jMLR4oHW9j.jpg",
+    "description": "Fan-favourites from Drag Race Down Under go head-to-head with sickening queens from around the world — all vying for the ultimate crown. Get ready for new looks, louder drama, and legendary lip-syncs as the battle for global drag dominance begins.",
+    "seoDescription": "Drag Race Down Under vs The World (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 8 Episodes",
+    "rating": 0,
+    "genre": [
+      "Reality"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "RuPaul, Fenton Bailey, Randy Barbato",
+    "cast": [
+      "Michelle Visage",
+      "Rhys Nicholson",
+      "Lazy Susan"
+    ],
+    "keywords": [
+      "Drag Race Down Under vs The World",
+      "Drag Race Down Under vs The World 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-208208",
+    "title": "Breaking Bear (2026)",
+    "slug": "breaking-bear-2026",
+    "videoUrl": "https://youtu.be/aIr0coo0Hts",
+    "downloadUrl": "https://www.themoviedb.org/tv/208208",
+    "poster": "https://image.tmdb.org/t/p/w780/8sWLmm1l8uKL9ItlkEMLxwXjWaj.jpg",
+    "description": "The escapades of three bear siblings who decide they have to start selling drugs in order to raise money and save their home after gas companies start fracking next to their cave. The bears soon enlist other forest animals in a scheme that will pit them against oil companies, The Russian Mafia, local Hell’s Angels and polar bears who hate anything that isn’t white.",
+    "seoDescription": "Breaking Bear (2026) trailer, cast, genres, rating and release information.",
+    "category": "Cartoon",
+    "year": 2026,
+    "duration": "Season 1 • 8 Episodes",
+    "rating": 0,
+    "genre": [
+      "Comedy",
+      "Animation",
+      "Crime"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Julien Nitzberg, Tom DeLonge",
+    "cast": [
+      "Brendan Fraser",
+      "Sarah Michelle Gellar",
+      "Annie Murphy",
+      "Elizabeth Hurley",
+      "Josh Gad",
+      "Chris Diamantopoulos"
+    ],
+    "keywords": [
+      "Breaking Bear",
+      "Breaking Bear 2026",
+      "Cartoon",
+      "official trailer"
+    ]
+  },
   {
     "id": "tmdb-movie-1717526",
     "title": "Free Wifi (2026)",
@@ -2323,535 +3363,6 @@ export const tmdbRecentlyAddedVideos: Video[] = [
       "Raja The Raja",
       "Raja The Raja 2026",
       "South Indian",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1710120",
-    "title": "Depths of Fear (2026)",
-    "slug": "depths-of-fear-2026",
-    "videoUrl": "https://youtu.be/ap_OxOBKHbg",
-    "downloadUrl": "https://www.themoviedb.org/movie/1710120",
-    "poster": "https://image.tmdb.org/t/p/w780/vEEYVekmatxFotitjIpvYIBp8Sb.jpg",
-    "description": "A team of divers enters one of the deepest holes in the ocean, but they discover more than they expected: something has made that deep hole its home and now they will have to fight for survival.",
-    "seoDescription": "Depths of Fear (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 18m",
-    "rating": 0,
-    "genre": [
-      "Horror",
-      "Action",
-      "Adventure"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Rui Constantino",
-    "cast": [
-      "Rui Constantino",
-      "Paulo Constantino",
-      "Miguel D. Dias",
-      "Caleb Angel",
-      "Kyle Steve",
-      "James Styg"
-    ],
-    "keywords": [
-      "Depths of Fear",
-      "Depths of Fear 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1576581",
-    "title": "Someone's Daughter (2026)",
-    "slug": "someone-s-daughter-2026",
-    "videoUrl": "https://youtu.be/5GwIyb7vwyY",
-    "downloadUrl": "https://www.themoviedb.org/movie/1576581",
-    "poster": "https://image.tmdb.org/t/p/w780/sTw8tSnlepeZteXwU2GqIoohZVB.jpg",
-    "description": "A criminal defence lawyer, Sam, (Pascale Bussières, Ma Vie en cinémascope, When Night is Falling), finds herself kidnapped and abandoned on a remote island along with former client Paul (François Arnaud, Heated Rivalry, Fucktoys, The Borgias), who she previously cleared of sexual assault charges. As they make their way through the unrelenting Canadian wilderness, Paul’s behaviour forces Sam to question the man she once defended. As doubt gives way to fear, she finds herself facing a choice no lawyer should ever have to make.",
-    "seoDescription": "Someone's Daughter (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 36m",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Thriller"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Wiebke von Carolsfeld",
-    "cast": [
-      "Pascale Bussières",
-      "François Arnaud",
-      "Peter Outerbridge",
-      "Michael Greyeyes"
-    ],
-    "keywords": [
-      "Someone's Daughter",
-      "Someone's Daughter 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1080959",
-    "title": "Alien Storm (2026)",
-    "slug": "alien-storm-2026",
-    "videoUrl": "https://youtu.be/g9t5ResAVSg",
-    "downloadUrl": "https://www.themoviedb.org/movie/1080959",
-    "poster": "https://image.tmdb.org/t/p/w780/qXHqQm3K4XspsgqGUbsk0dUcZwo.jpg",
-    "description": "A father, businessman and secret doomsday prepper escorts people to the safety of his bunker – actually an underground house – when a massive and potentially deadly fog descends and cuts the power at his home.",
-    "seoDescription": "Alien Storm (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "N/A",
-    "rating": 0,
-    "genre": [
-      "Science Fiction",
-      "Horror"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Adam Werth",
-    "cast": [
-      "Kevin Sorbo",
-      "Tom Arnold",
-      "Dawna Lee Heising",
-      "Mike Ferguson",
-      "Laura Mason",
-      "Robert Standley"
-    ],
-    "keywords": [
-      "Alien Storm",
-      "Alien Storm 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1731480",
-    "title": "Simulacra (2026)",
-    "slug": "simulacra-2026",
-    "videoUrl": "https://youtu.be/yehWTTOwbts",
-    "downloadUrl": "https://www.themoviedb.org/movie/1731480",
-    "poster": "https://image.tmdb.org/t/p/w780/3Zzx03YzJVd1YYniTBUHFQUK660.jpg",
-    "description": "Nayan desperately attempts to help Nivi, who has been completely wiped blank, remember the profound past they once shared together.",
-    "seoDescription": "Simulacra (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "2h 1m",
-    "rating": 0,
-    "genre": [
-      "Science Fiction",
-      "Drama",
-      "Romance"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Pankaj Sawant",
-    "cast": [
-      "Akshara Haasan",
-      "Satyajeet Dubey",
-      "Rajdeep Choudhury",
-      "Anisa Butt",
-      "Bhavini Sheth",
-      "Gandhar Babre"
-    ],
-    "keywords": [
-      "Simulacra",
-      "Simulacra 2026",
-      "Bollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1733512",
-    "title": "Vadala (2026)",
-    "slug": "vadala-2026",
-    "videoUrl": "https://youtu.be/j6B9rD0XhsY",
-    "downloadUrl": "https://www.themoviedb.org/movie/1733512",
-    "poster": "https://image.tmdb.org/t/p/w780/b4B5nlR1mD5T8YJJvVg7l2XR7tS.jpg",
-    "description": "A seemingly perfect couple's life takes an unsettling turn when an unexpected presence enters their world. What begins as admiration slowly spirals into emotional chaos, blurring the lines between love, attachment, and obsession.",
-    "seoDescription": "Vadala (2026) trailer, cast, genres, rating and release information.",
-    "category": "South Indian",
-    "year": 2026,
-    "duration": "1h 44m",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Thriller"
-    ],
-    "language": "Telugu",
-    "quality": "HD",
-    "featured": false,
-    "director": "Vamsi Krishna Akella",
-    "cast": [
-      "Jagapati Babu",
-      "Laya",
-      "Hrithika Srinivas",
-      "Srinivas Avasarala",
-      "Ravi Varma"
-    ],
-    "keywords": [
-      "Vadala",
-      "Vadala 2026",
-      "South Indian",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1720745",
-    "title": "Men Behind Bars (2026)",
-    "slug": "men-behind-bars-2026",
-    "videoUrl": "https://youtu.be/ccRJeheBR4w",
-    "downloadUrl": "https://www.themoviedb.org/movie/1720745",
-    "poster": "https://image.tmdb.org/t/p/w780/jtKvuRQpYOHXdoP5oCnbyNbjkaC.jpg",
-    "description": "Inmate Rex is transferred to a new prison after allegations of abuse against the prison service. Waiting down in the solitary confinement unit is the governor's human weapon, Darrell, now in his daddy era—what will Rex do to survive?",
-    "seoDescription": "Men Behind Bars (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 16m",
-    "rating": 0,
-    "genre": [
-      "Crime",
-      "Drama"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Wade Radford, Jason Impey",
-    "cast": [
-      "Wade Radford",
-      "Honey Bane",
-      "Ellis J. Wells",
-      "Kyle Jordan",
-      "Brandan Power",
-      "Martin W. Payne"
-    ],
-    "keywords": [
-      "Men Behind Bars",
-      "Men Behind Bars 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1248230",
-    "title": "Splash City (2026)",
-    "slug": "splash-city-2026",
-    "videoUrl": "https://youtu.be/Vrze2vx3avI",
-    "downloadUrl": "https://www.themoviedb.org/movie/1248230",
-    "poster": "https://image.tmdb.org/t/p/w780/pOdwaXV1w3vvTn1s7FTvqBQIDp.jpg",
-    "description": "Two brothers on diverging paths struggle to survive amidst the pressures of their community.",
-    "seoDescription": "Splash City (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 40m",
-    "rating": 0,
-    "genre": [
-      "Crime",
-      "Thriller"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Alex Ferrufino",
-    "cast": [
-      "T.J. Atoms",
-      "Reed Shannon",
-      "Christopher Ammanuel",
-      "Zach Sowers",
-      "Destiny Hernandez",
-      "Vivian Lamolli"
-    ],
-    "keywords": [
-      "Splash City",
-      "Splash City 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1732121",
-    "title": "Decomposition (Look At Me) Hyperfixation (2026)",
-    "slug": "decomposition-look-at-me-hyperfixation-2026",
-    "videoUrl": "https://youtu.be/YFeQ43wSwM8",
-    "downloadUrl": "https://www.themoviedb.org/movie/1732121",
-    "poster": "https://image.tmdb.org/t/p/w780/6Z08W7eT65Ho0W861RE66cUMWZZ.jpg",
-    "description": "An anxious and paranoid photographer, terrified of their own craft, goes on a daytrip with a supportive friend to escape their thoughts. Yet everything goes horribly wrong when nighttime falls and she is whisked away by his horrific visons...",
-    "seoDescription": "Decomposition (Look At Me) Hyperfixation (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "13m",
-    "rating": 0,
-    "genre": [
-      "Horror",
-      "Drama",
-      "Fantasy"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Sammy Paramore",
-    "cast": [
-      "Moises Ortiz",
-      "Samantha Flores",
-      "Eli Rifkin",
-      "Tehya Terry",
-      "Taylor North",
-      "Carlos Melena"
-    ],
-    "keywords": [
-      "Decomposition (Look At Me) Hyperfixation",
-      "Decomposition (Look At Me) Hyperfixation 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1730096",
-    "title": "The Eater (2026)",
-    "slug": "the-eater-2026",
-    "videoUrl": "https://youtu.be/NBWA5cz6guk",
-    "downloadUrl": "https://www.themoviedb.org/movie/1730096",
-    "poster": "https://image.tmdb.org/t/p/w780/cBpbL4Eo9RXM44RWF1OApgAR88B.jpg",
-    "description": "Douglas' profoundly normal life is thrown into chaos when something starts rearranging his furniture.",
-    "seoDescription": "The Eater (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "19m",
-    "rating": 0,
-    "genre": [
-      "Comedy",
-      "Horror"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Cameron Fetter, Caleb Pitts",
-    "cast": [
-      "Patrick Doran",
-      "Cameron Fetter",
-      "Caleb Pitts",
-      "Joe Gleason",
-      "Brian Fiddyment",
-      "Lauren Servideo"
-    ],
-    "keywords": [
-      "The Eater",
-      "The Eater 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1687247",
-    "title": "Sharksquatch (2026)",
-    "slug": "sharksquatch-2026",
-    "videoUrl": "https://youtu.be/dzF4NYjYYZo",
-    "downloadUrl": "https://www.themoviedb.org/movie/1687247",
-    "poster": "https://image.tmdb.org/t/p/w780/mwMZct8VQGb8DWzdQsPvlexPmQl.jpg",
-    "description": "A half-shark, half-Sasquatch monster terrorizes Los Angeles.",
-    "seoDescription": "Sharksquatch (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 2m",
-    "rating": 0,
-    "genre": [
-      "Adventure",
-      "Comedy",
-      "Horror"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Robert Boles",
-    "cast": [
-      "Douglas James Burgdorff",
-      "Galen Howard",
-      "John Karyus",
-      "John McCoy",
-      "Brissa Monique",
-      "Clint Beaver"
-    ],
-    "keywords": [
-      "Sharksquatch",
-      "Sharksquatch 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1724719",
-    "title": "Rahun Main Tere Rubaru (2026)",
-    "slug": "rahun-main-tere-rubaru-2026",
-    "videoUrl": "https://youtu.be/4UpQ3w9-zgQ",
-    "downloadUrl": "https://www.themoviedb.org/movie/1724719",
-    "poster": "https://image.tmdb.org/t/p/w780/9GOfySHMA7WCYDXwtaQ3rzn22LT.jpg",
-    "description": "A vlogger’s dream getaway turns into a deadly fight for survival when he is framed for murder and races against time to save his kidnapped girlfriend.",
-    "seoDescription": "Rahun Main Tere Rubaru (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "N/A",
-    "rating": 0,
-    "genre": [
-      "Romance"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Inder Das",
-    "cast": [
-      "Aarya Kumar",
-      "Neetha Shetty",
-      "Sandeep Bose",
-      "Nilofar Gesawat",
-      "Peehu Biswas",
-      "Lokesh Kumar Aggarwal"
-    ],
-    "keywords": [
-      "Rahun Main Tere Rubaru",
-      "Rahun Main Tere Rubaru 2026",
-      "Bollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1728731",
-    "title": "Munawar Faruqui: Dhandho (2026)",
-    "slug": "munawar-faruqui-dhandho-2026",
-    "videoUrl": "https://youtu.be/wk62YFS3gqc",
-    "downloadUrl": "https://www.themoviedb.org/movie/1728731",
-    "poster": "https://image.tmdb.org/t/p/w780/4Gds0hTRVfzbmWFJBnIj16qqerj.jpg",
-    "description": "In this special, Munawar Faruqui shares his side of the story about being jailed.",
-    "seoDescription": "Munawar Faruqui: Dhandho (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "1h 48m",
-    "rating": 0,
-    "genre": [
-      "Comedy"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Arbaaz Nasser",
-    "cast": [
-      "Munawar Faruqui"
-    ],
-    "keywords": [
-      "Munawar Faruqui: Dhandho",
-      "Munawar Faruqui: Dhandho 2026",
-      "Bollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1731375",
-    "title": "Shit Story (2026)",
-    "slug": "shit-story-2026",
-    "videoUrl": "https://youtu.be/epCO1uOkhyc",
-    "downloadUrl": "https://www.themoviedb.org/movie/1731375",
-    "poster": "https://image.tmdb.org/t/p/w780/8ZCw4CejMhxKfAiwrCY5qm0Os9.jpg",
-    "description": "Sid Silver spirals from existential dread to the best way to battle mosquitoes, questions a breakup cliché that makes no sense, revisits the Telegram ban through a corporate analogy, and reflects on the demise of a man on his way to work, only to inevitably end up in a story involving literal shit.",
-    "seoDescription": "Shit Story (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "13m",
-    "rating": 0,
-    "genre": [
-      "Comedy"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Sid Silver",
-    "cast": [
-      "Sid Silver"
-    ],
-    "keywords": [
-      "Shit Story",
-      "Shit Story 2026",
-      "Bollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1484913",
-    "title": "Ikka (2026)",
-    "slug": "ikka-2026",
-    "videoUrl": "https://youtu.be/LEargi83ofQ",
-    "downloadUrl": "https://www.themoviedb.org/movie/1484913",
-    "poster": "https://image.tmdb.org/t/p/w780/fp5EAKE8nTx402n1fWz55QsuYY9.jpg",
-    "description": "With a loved one's life at stake, a celebrated lawyer must defend a man he suspects is guilty — battling his conscience every step of the way.",
-    "seoDescription": "Ikka (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "2h 21m",
-    "rating": 5.3,
-    "genre": [
-      "Drama",
-      "Thriller"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Siddharth P. Malhotra",
-    "cast": [
-      "Sunny Deol",
-      "Akshaye Khanna",
-      "Tillotama Shome",
-      "Dia Mirza",
-      "Sanjeeda Sheikh",
-      "Jyoti Mukherji"
-    ],
-    "keywords": [
-      "Ikka",
-      "Ikka 2026",
-      "Bollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1728951",
-    "title": "Mukhbir: The Story of a Spy - The Movie (2026)",
-    "slug": "mukhbir-the-story-of-a-spy-the-movie-2026",
-    "videoUrl": "https://youtu.be/Ust_xF_DntU",
-    "downloadUrl": "https://www.themoviedb.org/movie/1728951",
-    "poster": "https://image.tmdb.org/t/p/w780/xFLk1LmfnZdWxjAb35KU32l5Ikj.jpg",
-    "description": "An Indian spy embarks on a perilous mission in Pakistan to save India. Will he succeed?",
-    "seoDescription": "Mukhbir: The Story of a Spy - The Movie (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "2h 30m",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Mystery",
-      "Thriller"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Shivam Nair, Jayprad Desai",
-    "cast": [
-      "Prakash Raj",
-      "Zain Khan Durrani",
-      "Harsh Chhaya",
-      "Dilip Shankar",
-      "Satyadeep Misra",
-      "Adil Hussain"
-    ],
-    "keywords": [
-      "Mukhbir: The Story of a Spy - The Movie",
-      "Mukhbir: The Story of a Spy - The Movie 2026",
-      "Bollywood",
       "official trailer"
     ]
   }
