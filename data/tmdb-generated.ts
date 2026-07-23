@@ -146,6 +146,78 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1720375",
+    "title": "Breakfast (2026)",
+    "slug": "breakfast-2026",
+    "videoUrl": "https://youtu.be/XLDS2p78hd4",
+    "downloadUrl": "https://www.themoviedb.org/movie/1720375",
+    "poster": "https://image.tmdb.org/t/p/w780/hURanHX1kFHR2dYJlcafnufxgSO.jpg",
+    "description": "On the cusp of a big announcement, a frazzled mom prepares a glorious breakfast for her family. But, when they run for the door before even sampling her buffet, Mom takes matters into her own hands - holding them hostage until every scrap of food is gone.",
+    "seoDescription": "Breakfast (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "11m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Comedy",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Tanner Richard Craft",
+    "cast": [
+      "Carrie L. Collins",
+      "Sydney Russell",
+      "Thomas James Kessinger",
+      "Mikayla Barringer"
+    ],
+    "keywords": [
+      "Breakfast",
+      "Breakfast 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1731449",
+    "title": "Captain Canada (2026)",
+    "slug": "captain-canada-2026",
+    "videoUrl": "https://youtu.be/1dYodm1fE5M",
+    "downloadUrl": "https://www.themoviedb.org/movie/1731449",
+    "poster": "https://image.tmdb.org/t/p/w780/abxgsNz9zFfiqa8fzbZVsx5Suqc.jpg",
+    "description": "Captain Canada must face his greatest threat yet to protect the country he loves.",
+    "seoDescription": "Captain Canada (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "15m",
+    "rating": 0,
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Chad Grow, Christian Larsen",
+    "cast": [
+      "Christian Larsen",
+      "Chad Grow",
+      "Maddox Linn",
+      "Elijah Barillas",
+      "Maddox Linn",
+      "Nathan Weaver"
+    ],
+    "keywords": [
+      "Captain Canada",
+      "Captain Canada 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1732121",
     "title": "Decomposition (Look At Me) Hyperfixation (2026)",
     "slug": "decomposition-look-at-me-hyperfixation-2026",
@@ -364,6 +436,39 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1732191",
+    "title": "Interstice (2026)",
+    "slug": "interstice-2026",
+    "videoUrl": "https://youtu.be/gvPfIQxAEzw",
+    "downloadUrl": "https://www.themoviedb.org/movie/1732191",
+    "poster": "https://image.tmdb.org/t/p/w780/7Xm0a1hq8SwJvHLq8uLH6y55PkD.jpg",
+    "description": "The narrative follows a lonely, broken young man whose ordinary reality collides with his surreal subconscious after he meets a young woman. As he journeys deeper into his dreams, he is forced to confront the uncomforting realities of modern love.",
+    "seoDescription": "Interstice (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "8m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Romance",
+      "Horror"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Andrew William Jacobsen",
+    "cast": [
+      "Benjamin Young",
+      "Reese Pucciano"
+    ],
+    "keywords": [
+      "Interstice",
+      "Interstice 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1714183",
     "title": "Justice (2026)",
     "slug": "justice-2026",
@@ -431,6 +536,37 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "LAKESVILLE MOVIE",
       "LAKESVILLE MOVIE 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1720632",
+    "title": "Light Through The Dust (2026)",
+    "slug": "light-through-the-dust-2026",
+    "videoUrl": "https://youtu.be/xYGXxDfbXE4",
+    "downloadUrl": "https://www.themoviedb.org/movie/1720632",
+    "poster": "https://image.tmdb.org/t/p/w780/aHcAbAd24DwFzu52uk2Sy7W47LV.jpg",
+    "description": "When the 2011 Christchurch earthquake struck, tattoo apprentice Bonnie Singh was inside Southern Ink, the studio where she had finally begun chasing her dream. The tattoo studio collapsed and Bonnie, trapped in the rubble, suffered a broken back, a shattered neck, and a brain injury that would affect her for life.  With the help of fellow tattooist Jak Law, Bonnie is determined to push through physical and neurological limitations to master the craft of tattooing that once seemed out of reach. A story of resilience, reinvention, and the invisible scars we carry, this is not just a film about tattoos but instead is about what it means to rebuild a life and the importance of having a dream when everything has fallen away.",
+    "seoDescription": "Light Through The Dust (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 20m",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Amber Beaton",
+    "cast": [
+      "Laylita \"Bonnie\" Singh",
+      "Jak Law"
+    ],
+    "keywords": [
+      "Light Through The Dust",
+      "Light Through The Dust 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -847,6 +983,41 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "The Eater",
       "The Eater 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1734033",
+    "title": "The Journey of a Star (2026)",
+    "slug": "the-journey-of-a-star-2026",
+    "videoUrl": "https://youtu.be/eQYluUzA4ts",
+    "downloadUrl": "https://www.themoviedb.org/movie/1734033",
+    "poster": "https://image.tmdb.org/t/p/w780/476xrd5mc1ONfvUEeuLHx7IyXfY.jpg",
+    "description": "Andy, a young adult, is housed by his mother and friends in a small town. After a traumatic experience with his church, he is forced to undergo one of the hardest years of his life, and uncover his own individuality while unbeknownst to him, he is being followed by a mysterious figure known only as The Phantom.",
+    "seoDescription": "The Journey of a Star (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Nicholas Martinez",
+    "cast": [
+      "Brandon Garcia",
+      "Khara Emmitte",
+      "Diva Sharma",
+      "Jacob Repak",
+      "Matthew Martinez",
+      "Charley Vaughn"
+    ],
+    "keywords": [
+      "The Journey of a Star",
+      "The Journey of a Star 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -1628,6 +1799,39 @@ export const tmdbSouthIndianVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1677340",
+    "title": "Secret of Kalinga (2026)",
+    "slug": "secret-of-kalinga-2026",
+    "videoUrl": "https://youtu.be/WwrXZQLok8A",
+    "downloadUrl": "https://www.themoviedb.org/movie/1677340",
+    "poster": "https://image.tmdb.org/t/p/w780/fIDU3LSWigWq9ges3Dw5KvGn3Av.jpg",
+    "description": "Secret of Kalinga is a newly released south indian title.",
+    "seoDescription": "Secret of Kalinga (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [],
+    "language": "Malayalam",
+    "quality": "HD",
+    "featured": false,
+    "director": "Saneesh Unnikrishnan",
+    "cast": [
+      "Dhyan Sreenivasan",
+      "Riyaz Khan",
+      "Althaf Salim",
+      "Nithin Parameswar",
+      "Malavika Menon",
+      "Mareena Michael"
+    ],
+    "keywords": [
+      "Secret of Kalinga",
+      "Secret of Kalinga 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1654365",
     "title": "Sweet Rogue Killer (2026)",
     "slug": "sweet-rogue-killer-2026",
@@ -1829,6 +2033,35 @@ export const tmdbWebSeriesVideos: Video[] = [
     "keywords": [
       "Drag Race Down Under vs The World",
       "Drag Race Down Under vs The World 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-329015",
+    "title": "FISSURE (2026)",
+    "slug": "fissure-2026",
+    "videoUrl": "https://youtu.be/dD1qAP-tXT8",
+    "downloadUrl": "https://www.themoviedb.org/tv/329015",
+    "poster": "https://image.tmdb.org/t/p/w780/hBmMxM1Jejuc1ZKarEjNe8depw3.jpg",
+    "description": "A digital horror series exploring a sequence of anomalies and unexplainable transmissions.",
+    "seoDescription": "FISSURE (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 1 Episodes",
+    "rating": 0,
+    "genre": [
+      "Sci-Fi & Fantasy",
+      "Mystery"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "R. Brannock",
+    "cast": [],
+    "keywords": [
+      "FISSURE",
+      "FISSURE 2026",
       "Web Series",
       "official trailer"
     ]
@@ -2324,6 +2557,239 @@ export const tmdbCartoonVideos: Video[] = [
 ];
 
 export const tmdbRecentlyAddedVideos: Video[] = [
+  {
+    "id": "tmdb-movie-1734033",
+    "title": "The Journey of a Star (2026)",
+    "slug": "the-journey-of-a-star-2026",
+    "videoUrl": "https://youtu.be/eQYluUzA4ts",
+    "downloadUrl": "https://www.themoviedb.org/movie/1734033",
+    "poster": "https://image.tmdb.org/t/p/w780/476xrd5mc1ONfvUEeuLHx7IyXfY.jpg",
+    "description": "Andy, a young adult, is housed by his mother and friends in a small town. After a traumatic experience with his church, he is forced to undergo one of the hardest years of his life, and uncover his own individuality while unbeknownst to him, he is being followed by a mysterious figure known only as The Phantom.",
+    "seoDescription": "The Journey of a Star (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Nicholas Martinez",
+    "cast": [
+      "Brandon Garcia",
+      "Khara Emmitte",
+      "Diva Sharma",
+      "Jacob Repak",
+      "Matthew Martinez",
+      "Charley Vaughn"
+    ],
+    "keywords": [
+      "The Journey of a Star",
+      "The Journey of a Star 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1732191",
+    "title": "Interstice (2026)",
+    "slug": "interstice-2026",
+    "videoUrl": "https://youtu.be/gvPfIQxAEzw",
+    "downloadUrl": "https://www.themoviedb.org/movie/1732191",
+    "poster": "https://image.tmdb.org/t/p/w780/7Xm0a1hq8SwJvHLq8uLH6y55PkD.jpg",
+    "description": "The narrative follows a lonely, broken young man whose ordinary reality collides with his surreal subconscious after he meets a young woman. As he journeys deeper into his dreams, he is forced to confront the uncomforting realities of modern love.",
+    "seoDescription": "Interstice (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "8m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Romance",
+      "Horror"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Andrew William Jacobsen",
+    "cast": [
+      "Benjamin Young",
+      "Reese Pucciano"
+    ],
+    "keywords": [
+      "Interstice",
+      "Interstice 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1731449",
+    "title": "Captain Canada (2026)",
+    "slug": "captain-canada-2026",
+    "videoUrl": "https://youtu.be/1dYodm1fE5M",
+    "downloadUrl": "https://www.themoviedb.org/movie/1731449",
+    "poster": "https://image.tmdb.org/t/p/w780/abxgsNz9zFfiqa8fzbZVsx5Suqc.jpg",
+    "description": "Captain Canada must face his greatest threat yet to protect the country he loves.",
+    "seoDescription": "Captain Canada (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "15m",
+    "rating": 0,
+    "genre": [
+      "Action",
+      "Science Fiction",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Chad Grow, Christian Larsen",
+    "cast": [
+      "Christian Larsen",
+      "Chad Grow",
+      "Maddox Linn",
+      "Elijah Barillas",
+      "Maddox Linn",
+      "Nathan Weaver"
+    ],
+    "keywords": [
+      "Captain Canada",
+      "Captain Canada 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1720632",
+    "title": "Light Through The Dust (2026)",
+    "slug": "light-through-the-dust-2026",
+    "videoUrl": "https://youtu.be/xYGXxDfbXE4",
+    "downloadUrl": "https://www.themoviedb.org/movie/1720632",
+    "poster": "https://image.tmdb.org/t/p/w780/aHcAbAd24DwFzu52uk2Sy7W47LV.jpg",
+    "description": "When the 2011 Christchurch earthquake struck, tattoo apprentice Bonnie Singh was inside Southern Ink, the studio where she had finally begun chasing her dream. The tattoo studio collapsed and Bonnie, trapped in the rubble, suffered a broken back, a shattered neck, and a brain injury that would affect her for life.  With the help of fellow tattooist Jak Law, Bonnie is determined to push through physical and neurological limitations to master the craft of tattooing that once seemed out of reach. A story of resilience, reinvention, and the invisible scars we carry, this is not just a film about tattoos but instead is about what it means to rebuild a life and the importance of having a dream when everything has fallen away.",
+    "seoDescription": "Light Through The Dust (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 20m",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Amber Beaton",
+    "cast": [
+      "Laylita \"Bonnie\" Singh",
+      "Jak Law"
+    ],
+    "keywords": [
+      "Light Through The Dust",
+      "Light Through The Dust 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1720375",
+    "title": "Breakfast (2026)",
+    "slug": "breakfast-2026",
+    "videoUrl": "https://youtu.be/XLDS2p78hd4",
+    "downloadUrl": "https://www.themoviedb.org/movie/1720375",
+    "poster": "https://image.tmdb.org/t/p/w780/hURanHX1kFHR2dYJlcafnufxgSO.jpg",
+    "description": "On the cusp of a big announcement, a frazzled mom prepares a glorious breakfast for her family. But, when they run for the door before even sampling her buffet, Mom takes matters into her own hands - holding them hostage until every scrap of food is gone.",
+    "seoDescription": "Breakfast (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "11m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Comedy",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Tanner Richard Craft",
+    "cast": [
+      "Carrie L. Collins",
+      "Sydney Russell",
+      "Thomas James Kessinger",
+      "Mikayla Barringer"
+    ],
+    "keywords": [
+      "Breakfast",
+      "Breakfast 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1677340",
+    "title": "Secret of Kalinga (2026)",
+    "slug": "secret-of-kalinga-2026",
+    "videoUrl": "https://youtu.be/WwrXZQLok8A",
+    "downloadUrl": "https://www.themoviedb.org/movie/1677340",
+    "poster": "https://image.tmdb.org/t/p/w780/fIDU3LSWigWq9ges3Dw5KvGn3Av.jpg",
+    "description": "Secret of Kalinga is a newly released south indian title.",
+    "seoDescription": "Secret of Kalinga (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [],
+    "language": "Malayalam",
+    "quality": "HD",
+    "featured": false,
+    "director": "Saneesh Unnikrishnan",
+    "cast": [
+      "Dhyan Sreenivasan",
+      "Riyaz Khan",
+      "Althaf Salim",
+      "Nithin Parameswar",
+      "Malavika Menon",
+      "Mareena Michael"
+    ],
+    "keywords": [
+      "Secret of Kalinga",
+      "Secret of Kalinga 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-329015",
+    "title": "FISSURE (2026)",
+    "slug": "fissure-2026",
+    "videoUrl": "https://youtu.be/dD1qAP-tXT8",
+    "downloadUrl": "https://www.themoviedb.org/tv/329015",
+    "poster": "https://image.tmdb.org/t/p/w780/hBmMxM1Jejuc1ZKarEjNe8depw3.jpg",
+    "description": "A digital horror series exploring a sequence of anomalies and unexplainable transmissions.",
+    "seoDescription": "FISSURE (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 1 Episodes",
+    "rating": 0,
+    "genre": [
+      "Sci-Fi & Fantasy",
+      "Mystery"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "R. Brannock",
+    "cast": [],
+    "keywords": [
+      "FISSURE",
+      "FISSURE 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
   {
     "id": "tmdb-movie-1732097",
     "title": "Euphoria: A Look Back (2026)",
@@ -3124,245 +3590,6 @@ export const tmdbRecentlyAddedVideos: Video[] = [
       "HIRAETH",
       "HIRAETH 2026",
       "Bollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-287620",
-    "title": "Stuart Fails to Save the Universe (2026)",
-    "slug": "stuart-fails-to-save-the-universe-2026",
-    "videoUrl": "https://youtu.be/_blrWb1yZiY",
-    "downloadUrl": "https://www.themoviedb.org/tv/287620",
-    "poster": "https://image.tmdb.org/t/p/w780/iQbTbwmLX5Nh1nlH21YUJPWt3Zo.jpg",
-    "description": "Comic book store owner Stuart Bloom is tasked with restoring reality after he breaks a device built by Sheldon and Leonard, accidentally bringing about a multiverse Armageddon. Stuart is aided in this quest by his girlfriend Denise, geologist friend Bert, and quantum physicist/all-around pain in the ass Barry Kripke.",
-    "seoDescription": "Stuart Fails to Save the Universe (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 10 Episodes",
-    "rating": 8,
-    "genre": [
-      "Comedy",
-      "Sci-Fi & Fantasy"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Kevin Sussman",
-      "Lauren Lapkus",
-      "Brian Posehn",
-      "John Ross Bowie"
-    ],
-    "keywords": [
-      "Stuart Fails to Save the Universe",
-      "Stuart Fails to Save the Universe 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-277640",
-    "title": "Pompeii: Out of Time with Tom Hiddleston (2026)",
-    "slug": "pompeii-out-of-time-with-tom-hiddleston-2026",
-    "videoUrl": "https://youtu.be/7k52aJRs3gA",
-    "downloadUrl": "https://www.themoviedb.org/tv/277640",
-    "poster": "https://image.tmdb.org/t/p/w780/qnOYQ6uqxj5HEuXtVf1vSZicok.jpg",
-    "description": "A historical exploration about the eruption of Vesuvius in 79 A.D. and the preserved Roman city it left behind.",
-    "seoDescription": "Pompeii: Out of Time with Tom Hiddleston (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 3 Episodes",
-    "rating": 0,
-    "genre": [
-      "Documentary",
-      "Drama"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Tom Barbor-Might, Jessica Ruston, Mark Ravenhill, Kevin R. Wright",
-    "cast": [
-      "Tom Hiddleston",
-      "Lubna Azabal",
-      "Barry Aird",
-      "Frankie Treadaway",
-      "Buket Komur",
-      "Robert Bowman"
-    ],
-    "keywords": [
-      "Pompeii: Out of Time with Tom Hiddleston",
-      "Pompeii: Out of Time with Tom Hiddleston 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1728954",
-    "title": "My Grandfather Charles Manson (2026)",
-    "slug": "my-grandfather-charles-manson-2026",
-    "videoUrl": "https://youtu.be/fiLFIKW7LQI",
-    "downloadUrl": "https://www.themoviedb.org/movie/1728954",
-    "poster": "https://image.tmdb.org/t/p/w780/mIIcUNjuMvF3TLqb5JPSPKwYPcA.jpg",
-    "description": "Sophia was always the good girl growing up and her father's rock, but her quest to identify her unknown grandfather results in a shocking discovery: He is Charles Manson, history's most notorious criminal; and he bears striking physical similarities to her beloved father. Sophia's discovery propels her into an underworld of Manson family members and unreliable narrators as she traces her grandfather's life. Along the way, her genetics unlock never-before-released records and audio recordings that illuminate Manson's pathology in startling ways. But the more Sophia uncovers, the more her relationship with her father is strained. For Sophia, there's no turning back. What has she inherited, and how will she reckon with her family legacy?",
-    "seoDescription": "My Grandfather Charles Manson (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "N/A",
-    "rating": 0,
-    "genre": [
-      "Documentary"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Sophia Maddox, Alexandra Orton",
-    "cast": [
-      "Sophia Maddox"
-    ],
-    "keywords": [
-      "My Grandfather Charles Manson",
-      "My Grandfather Charles Manson 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1723460",
-    "title": "A Toxic Love Story (2026)",
-    "slug": "a-toxic-love-story-2026",
-    "videoUrl": "https://youtu.be/9k9SYlMy9qs",
-    "downloadUrl": "https://www.themoviedb.org/movie/1723460",
-    "poster": "https://image.tmdb.org/t/p/w780/bKrqQGLlIM8qjCjWhHTg6AhrlsY.jpg",
-    "description": "A string of threatening emails escalates into a revenge plot involving a newly married US marshal and his ex-girlfriend.",
-    "seoDescription": "A Toxic Love Story (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 29m",
-    "rating": 0,
-    "genre": [
-      "Documentary"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Alexandra Lacey",
-    "cast": [],
-    "keywords": [
-      "A Toxic Love Story",
-      "A Toxic Love Story 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1232569",
-    "title": "Pinocchio: Unstrung (2026)",
-    "slug": "pinocchio-unstrung-2026",
-    "videoUrl": "https://youtu.be/Xt3zQ8v2pzk",
-    "downloadUrl": "https://www.themoviedb.org/movie/1232569",
-    "poster": "https://image.tmdb.org/t/p/w780/sqhfUrPEeAlFf684FsVa8v1GYCD.jpg",
-    "description": "Influenced by a sinister Cricket and created by Geppetto, Pinocchio launches a violent crusade to carve himself into a real boy like his brother James, one piece at a time.",
-    "seoDescription": "Pinocchio: Unstrung (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 22m",
-    "rating": 7.5,
-    "genre": [
-      "Horror",
-      "Fantasy",
-      "Mystery"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Rhys Frake-Waterfield",
-    "cast": [
-      "Jude Evan Lloyd",
-      "Robert Englund",
-      "Cameron Bell",
-      "Jessica Balmer",
-      "Richard Brake",
-      "Jack Art Gray"
-    ],
-    "keywords": [
-      "Pinocchio: Unstrung",
-      "Pinocchio: Unstrung 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1127861",
-    "title": "I, Object (2026)",
-    "slug": "i-object-2026",
-    "videoUrl": "https://youtu.be/u5ENTPq8xf0",
-    "downloadUrl": "https://www.themoviedb.org/movie/1127861",
-    "poster": "https://image.tmdb.org/t/p/w780/cEnUUeiiMnhrciM7aMKVP5mCyz2.jpg",
-    "description": "10-year-old Tom, grieving the loss of his father and unable to relate to the people in his life, takes refuge in the everyday objects around him. Pop can lids, suitcases and untold numbers of everyday objects reveal their true faces and speak to him, helping him on his healing journey.",
-    "seoDescription": "I, Object (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 32m",
-    "rating": 0,
-    "genre": [
-      "Family",
-      "Fantasy",
-      "Drama"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Andrew Niccol",
-    "cast": [
-      "Bentley Storteboom",
-      "Karl Urban",
-      "Anna Faris",
-      "Ethan Hawke",
-      "Jemaine Clement",
-      "Skywalker Hughes"
-    ],
-    "keywords": [
-      "I, Object",
-      "I, Object 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1734011",
-    "title": "Raja The Raja (2026)",
-    "slug": "raja-the-raja-2026",
-    "videoUrl": "https://youtu.be/j2dysxWnT2Y",
-    "downloadUrl": "https://www.themoviedb.org/movie/1734011",
-    "poster": "https://image.tmdb.org/t/p/w780/nCQrLnrmQsZgGA1t8V8DfT7C39B.jpg",
-    "description": "An aspiring fashion designer fights to prove himself against his father's wishes. Just as love enters his life, a mysterious disappearance sets him on an unforgettable journey into a hidden world where his true destiny awaits.",
-    "seoDescription": "Raja The Raja (2026) trailer, cast, genres, rating and release information.",
-    "category": "South Indian",
-    "year": 2026,
-    "duration": "2h 15m",
-    "rating": 0,
-    "genre": [
-      "Comedy",
-      "Romance",
-      "Drama",
-      "Fantasy"
-    ],
-    "language": "Telugu",
-    "quality": "HD",
-    "featured": false,
-    "director": "Annil Boyiidapu",
-    "cast": [
-      "Rithvik Kondakindi",
-      "Vishakha Dhiman",
-      "Naresh",
-      "Sai Kumar",
-      "Vishnu Oi",
-      "Rohini Reddy"
-    ],
-    "keywords": [
-      "Raja The Raja",
-      "Raja The Raja 2026",
-      "South Indian",
       "official trailer"
     ]
   }
