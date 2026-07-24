@@ -436,6 +436,40 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1725554",
+    "title": "I'm in Love with a Stripper (2026)",
+    "slug": "i-m-in-love-with-a-stripper-2026",
+    "videoUrl": "https://youtu.be/i502QcCtV_E",
+    "downloadUrl": "https://www.themoviedb.org/movie/1725554",
+    "poster": "https://image.tmdb.org/t/p/w780/iECJgxCbXr9wIhfqP4FTZO05F9m.jpg",
+    "description": "Alone on Christmas Eve, Michael makes a last-ditch effort to win back his ex-girlfriend. Although repelled by his sudden reappearance, the promise of $1000 buys ten minutes of Honey’s time as she reluctantly sits through his declaration of love. Michael’s dreams of a heartfelt reunion are shattered when he is promptly rejected by a stripper who refuses to participate in his fantasy, challenging toxic romantic comedy tropes normalized through contemporary media. Based on her semi-autobiographical stage play, Never Walk Alone, Julie Phan offers a desensationalized interpretation of sex work through an intimate representation of the person underneath the projection.",
+    "seoDescription": "I'm in Love with a Stripper (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "14m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Julie Phan",
+    "cast": [
+      "Justin Eddy",
+      "Julie Phan",
+      "Anthony Parise",
+      "Sierra Haynes"
+    ],
+    "keywords": [
+      "I'm in Love with a Stripper",
+      "I'm in Love with a Stripper 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1732191",
     "title": "Interstice (2026)",
     "slug": "interstice-2026",
@@ -741,6 +775,41 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "Pinocchio: Unstrung",
       "Pinocchio: Unstrung 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1682494",
+    "title": "Replika (2026)",
+    "slug": "replika-2026",
+    "videoUrl": "https://youtu.be/FSyJifAtFjk",
+    "downloadUrl": "https://www.themoviedb.org/movie/1682494",
+    "poster": "https://image.tmdb.org/t/p/w780/1YxNj41c73ilKfUllbId7mbtJK5.jpg",
+    "description": "After surviving a horrific car crash and losing his arm, an unstable family man develops a bizarre fascination for augmenting his body with bionic prosthetics.",
+    "seoDescription": "Replika (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "11m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Samuel Arocas",
+    "cast": [
+      "Martin Barry",
+      "Rosalind Parker",
+      "Elizabeth Hill",
+      "Zoe Duffy"
+    ],
+    "keywords": [
+      "Replika",
+      "Replika 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -1368,6 +1437,42 @@ export const tmdbBollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1682974",
+    "title": "The India Story (2026)",
+    "slug": "the-india-story-2026",
+    "videoUrl": "https://youtu.be/Pci6yErjwt0",
+    "downloadUrl": "https://www.themoviedb.org/movie/1682974",
+    "poster": "https://image.tmdb.org/t/p/w780/xb3hSeItlYp56KBZVBcwg3TJsBs.jpg",
+    "description": "A community confronts the devastating impact of pesticide contamination as industrial negligence threatens public health. The fight for accountability exposes systemic failures in regulatory oversight and corporate responsibility.",
+    "seoDescription": "The India Story (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Chettan D K",
+    "cast": [
+      "Kajal Aggarwal",
+      "Shreyas Talpade",
+      "Murali Sharma",
+      "Manish Wadhwa",
+      "Sham Mashalkar",
+      "Kamlesh Sawant"
+    ],
+    "keywords": [
+      "The India Story",
+      "The India Story 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1713420",
     "title": "Uttar Da Puttar (2026)",
     "slug": "uttar-da-puttar-2026",
@@ -1475,6 +1580,41 @@ export const tmdbSouthIndianVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1640189",
+    "title": "Itlu Kanmani (2026)",
+    "slug": "itlu-kanmani-2026",
+    "videoUrl": "https://youtu.be/4Qsyr-m8MH8",
+    "downloadUrl": "https://www.themoviedb.org/movie/1640189",
+    "poster": "https://image.tmdb.org/t/p/w780/2ZjZyi4TMGnqOSqtHz2ozwIHpyq.jpg",
+    "description": "Itlu Kanmani follows Rohith, a young man who once dreamed of becoming a filmmaker but leaves everything behind to take care of his ailing father. After his father’s sudden death, Rohith discovers something unexpected that changes the way he sees his father  and his own life.  Haunted by unanswered questions and fragments of the past, Rohith begins a journey to understand a story that was never told to him. As hidden memories slowly unfold, he realizes that some dreams never truly disappear they only wait for the right person to continue them.  With the support of Chaitra, a compassionate doctor who becomes his emotional anchor, Rohith must decide whether to keep running from his past or face a truth that could change his future forever.  Itlu Kanmani is an emotional story about love, sacrifice, and a mystery hidden inside a father’s silent life.",
+    "seoDescription": "Itlu Kanmani (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "50m",
+    "rating": 0,
+    "genre": [
+      "Family",
+      "Drama",
+      "Music",
+      "Romance"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "director": "Ramachandran Vishwanathan",
+    "cast": [
+      "Paruchuri Venu",
+      "E. RaviShankar Reddy",
+      "Rashmitha Rao Kommaragiri"
+    ],
+    "keywords": [
+      "Itlu Kanmani",
+      "Itlu Kanmani 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1215812",
     "title": "Karavali (2026)",
     "slug": "karavali-2026",
@@ -1540,6 +1680,42 @@ export const tmdbSouthIndianVideos: Video[] = [
     "keywords": [
       "Kriyamana",
       "Kriyamana 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1620357",
+    "title": "Lakshmikanthan Kolai Vazhakku (2026)",
+    "slug": "lakshmikanthan-kolai-vazhakku-2026",
+    "videoUrl": "https://youtu.be/j4oGkaV3JVI",
+    "downloadUrl": "https://www.themoviedb.org/movie/1620357",
+    "poster": "https://image.tmdb.org/t/p/w780/pGS1KRODHNYzR35slcgJp9NzMiP.jpg",
+    "description": "A young man convicted of murder awaits execution, while a conflicted judge, an aging hangman, and a morally torn jailer confront the weight of justice, guilt, and humanity in the final hours before dawn.",
+    "seoDescription": "Lakshmikanthan Kolai Vazhakku (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "1h 47m",
+    "rating": 0,
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "language": "Tamil",
+    "quality": "HD",
+    "featured": false,
+    "director": "Dayal Padmanabhan",
+    "cast": [
+      "Vetri",
+      "Brigida Saga",
+      "Rangaraj Pandey",
+      "Subramaniam Siva",
+      "Saravanan",
+      "Lollu Sabha Maaran"
+    ],
+    "keywords": [
+      "Lakshmikanthan Kolai Vazhakku",
+      "Lakshmikanthan Kolai Vazhakku 2026",
       "South Indian",
       "official trailer"
     ]
@@ -2067,6 +2243,38 @@ export const tmdbWebSeriesVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-tv-319938",
+    "title": "KakuseiHunter Omegahorn (2026)",
+    "slug": "kakuseihunter-omegahorn-2026",
+    "videoUrl": "https://youtu.be/bWNZ84d2b_o",
+    "downloadUrl": "https://www.themoviedb.org/tv/319938",
+    "poster": "https://image.tmdb.org/t/p/w780/AwAmCvdNBUuu0TriEmBb3ud6K1q.jpg",
+    "description": "In ancient times, gigantic creatures called \"Mega Horn\" ruled the Earth, but they were sealed away in items called \"Egorgear\" and disappeared. In modern times, humans have emerged using megaphone-like items called \"Kakuseiki\" to draw out the power of the Mega Horn sealed in the Egorgear. They've come to be known as \"Hunters\".\n\nShout the Flame, an explorer well-versed in ancient scripts one day discovers a Kakuseiki and an Egorgear on an altar of an ancient ruin. Confused by the \"Omegahorn\", which is different from the standard version, he sets the Egorgear in place and a giant horned beast named Enkaku appears! Seeing the qualities of a \"king\" in Shout's Ego, Enkaku demands to call himself \"Captain Omegahorn\" and fight alongside him, leading to a battle against a diverse cast of hunters wherever they go.",
+    "seoDescription": "KakuseiHunter Omegahorn (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 1 Episodes",
+    "rating": 10,
+    "genre": [],
+    "language": "Japanese",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Sho Narahara",
+      "Masato Kunigami",
+      "Nanaha Itose",
+      "Maika Miura",
+      "Kenshiro Kato",
+      "Shogo Tazuru"
+    ],
+    "keywords": [
+      "KakuseiHunter Omegahorn",
+      "KakuseiHunter Omegahorn 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-tv-289139",
     "title": "Overdo (2026)",
     "slug": "overdo-2026",
@@ -2383,6 +2591,39 @@ export const tmdbCartoonVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-tv-296756",
+    "title": "President Curtis (2026)",
+    "slug": "president-curtis-2026",
+    "videoUrl": "https://youtu.be/KuSbjxrKvUc",
+    "downloadUrl": "https://www.themoviedb.org/tv/296756",
+    "poster": "https://image.tmdb.org/t/p/w780/lc9riW73Oee2pBxi1UrDPgyQjEr.jpg",
+    "description": "Follow the Commander-in-Chief and his eccentric staff as they tackle the kind of crises that Rick Sanchez could never be bothered with - from interdimensional diplomacy to paranormal investigations and unexplained phenomena.",
+    "seoDescription": "President Curtis (2026) trailer, cast, genres, rating and release information.",
+    "category": "Cartoon",
+    "year": 2026,
+    "duration": "Season 1 • 10 Episodes",
+    "rating": 0,
+    "genre": [
+      "Animation",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Dan Harmon, James Siciliano",
+    "cast": [
+      "Keith David",
+      "Stephanie Beatriz",
+      "Jim Rash"
+    ],
+    "keywords": [
+      "President Curtis",
+      "President Curtis 2026",
+      "Cartoon",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-tv-296286",
     "title": "Smoking Behind the Supermarket with You (2026)",
     "slug": "smoking-behind-the-supermarket-with-you-2026",
@@ -2557,6 +2798,247 @@ export const tmdbCartoonVideos: Video[] = [
 ];
 
 export const tmdbRecentlyAddedVideos: Video[] = [
+  {
+    "id": "tmdb-movie-1725554",
+    "title": "I'm in Love with a Stripper (2026)",
+    "slug": "i-m-in-love-with-a-stripper-2026",
+    "videoUrl": "https://youtu.be/i502QcCtV_E",
+    "downloadUrl": "https://www.themoviedb.org/movie/1725554",
+    "poster": "https://image.tmdb.org/t/p/w780/iECJgxCbXr9wIhfqP4FTZO05F9m.jpg",
+    "description": "Alone on Christmas Eve, Michael makes a last-ditch effort to win back his ex-girlfriend. Although repelled by his sudden reappearance, the promise of $1000 buys ten minutes of Honey’s time as she reluctantly sits through his declaration of love. Michael’s dreams of a heartfelt reunion are shattered when he is promptly rejected by a stripper who refuses to participate in his fantasy, challenging toxic romantic comedy tropes normalized through contemporary media. Based on her semi-autobiographical stage play, Never Walk Alone, Julie Phan offers a desensationalized interpretation of sex work through an intimate representation of the person underneath the projection.",
+    "seoDescription": "I'm in Love with a Stripper (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "14m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Julie Phan",
+    "cast": [
+      "Justin Eddy",
+      "Julie Phan",
+      "Anthony Parise",
+      "Sierra Haynes"
+    ],
+    "keywords": [
+      "I'm in Love with a Stripper",
+      "I'm in Love with a Stripper 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1682494",
+    "title": "Replika (2026)",
+    "slug": "replika-2026",
+    "videoUrl": "https://youtu.be/FSyJifAtFjk",
+    "downloadUrl": "https://www.themoviedb.org/movie/1682494",
+    "poster": "https://image.tmdb.org/t/p/w780/1YxNj41c73ilKfUllbId7mbtJK5.jpg",
+    "description": "After surviving a horrific car crash and losing his arm, an unstable family man develops a bizarre fascination for augmenting his body with bionic prosthetics.",
+    "seoDescription": "Replika (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "11m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Samuel Arocas",
+    "cast": [
+      "Martin Barry",
+      "Rosalind Parker",
+      "Elizabeth Hill",
+      "Zoe Duffy"
+    ],
+    "keywords": [
+      "Replika",
+      "Replika 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1682974",
+    "title": "The India Story (2026)",
+    "slug": "the-india-story-2026",
+    "videoUrl": "https://youtu.be/Pci6yErjwt0",
+    "downloadUrl": "https://www.themoviedb.org/movie/1682974",
+    "poster": "https://image.tmdb.org/t/p/w780/xb3hSeItlYp56KBZVBcwg3TJsBs.jpg",
+    "description": "A community confronts the devastating impact of pesticide contamination as industrial negligence threatens public health. The fight for accountability exposes systemic failures in regulatory oversight and corporate responsibility.",
+    "seoDescription": "The India Story (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Thriller"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Chettan D K",
+    "cast": [
+      "Kajal Aggarwal",
+      "Shreyas Talpade",
+      "Murali Sharma",
+      "Manish Wadhwa",
+      "Sham Mashalkar",
+      "Kamlesh Sawant"
+    ],
+    "keywords": [
+      "The India Story",
+      "The India Story 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1620357",
+    "title": "Lakshmikanthan Kolai Vazhakku (2026)",
+    "slug": "lakshmikanthan-kolai-vazhakku-2026",
+    "videoUrl": "https://youtu.be/j4oGkaV3JVI",
+    "downloadUrl": "https://www.themoviedb.org/movie/1620357",
+    "poster": "https://image.tmdb.org/t/p/w780/pGS1KRODHNYzR35slcgJp9NzMiP.jpg",
+    "description": "A young man convicted of murder awaits execution, while a conflicted judge, an aging hangman, and a morally torn jailer confront the weight of justice, guilt, and humanity in the final hours before dawn.",
+    "seoDescription": "Lakshmikanthan Kolai Vazhakku (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "1h 47m",
+    "rating": 0,
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "language": "Tamil",
+    "quality": "HD",
+    "featured": false,
+    "director": "Dayal Padmanabhan",
+    "cast": [
+      "Vetri",
+      "Brigida Saga",
+      "Rangaraj Pandey",
+      "Subramaniam Siva",
+      "Saravanan",
+      "Lollu Sabha Maaran"
+    ],
+    "keywords": [
+      "Lakshmikanthan Kolai Vazhakku",
+      "Lakshmikanthan Kolai Vazhakku 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1640189",
+    "title": "Itlu Kanmani (2026)",
+    "slug": "itlu-kanmani-2026",
+    "videoUrl": "https://youtu.be/4Qsyr-m8MH8",
+    "downloadUrl": "https://www.themoviedb.org/movie/1640189",
+    "poster": "https://image.tmdb.org/t/p/w780/2ZjZyi4TMGnqOSqtHz2ozwIHpyq.jpg",
+    "description": "Itlu Kanmani follows Rohith, a young man who once dreamed of becoming a filmmaker but leaves everything behind to take care of his ailing father. After his father’s sudden death, Rohith discovers something unexpected that changes the way he sees his father  and his own life.  Haunted by unanswered questions and fragments of the past, Rohith begins a journey to understand a story that was never told to him. As hidden memories slowly unfold, he realizes that some dreams never truly disappear they only wait for the right person to continue them.  With the support of Chaitra, a compassionate doctor who becomes his emotional anchor, Rohith must decide whether to keep running from his past or face a truth that could change his future forever.  Itlu Kanmani is an emotional story about love, sacrifice, and a mystery hidden inside a father’s silent life.",
+    "seoDescription": "Itlu Kanmani (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "50m",
+    "rating": 0,
+    "genre": [
+      "Family",
+      "Drama",
+      "Music",
+      "Romance"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "director": "Ramachandran Vishwanathan",
+    "cast": [
+      "Paruchuri Venu",
+      "E. RaviShankar Reddy",
+      "Rashmitha Rao Kommaragiri"
+    ],
+    "keywords": [
+      "Itlu Kanmani",
+      "Itlu Kanmani 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-319938",
+    "title": "KakuseiHunter Omegahorn (2026)",
+    "slug": "kakuseihunter-omegahorn-2026",
+    "videoUrl": "https://youtu.be/bWNZ84d2b_o",
+    "downloadUrl": "https://www.themoviedb.org/tv/319938",
+    "poster": "https://image.tmdb.org/t/p/w780/AwAmCvdNBUuu0TriEmBb3ud6K1q.jpg",
+    "description": "In ancient times, gigantic creatures called \"Mega Horn\" ruled the Earth, but they were sealed away in items called \"Egorgear\" and disappeared. In modern times, humans have emerged using megaphone-like items called \"Kakuseiki\" to draw out the power of the Mega Horn sealed in the Egorgear. They've come to be known as \"Hunters\".\n\nShout the Flame, an explorer well-versed in ancient scripts one day discovers a Kakuseiki and an Egorgear on an altar of an ancient ruin. Confused by the \"Omegahorn\", which is different from the standard version, he sets the Egorgear in place and a giant horned beast named Enkaku appears! Seeing the qualities of a \"king\" in Shout's Ego, Enkaku demands to call himself \"Captain Omegahorn\" and fight alongside him, leading to a battle against a diverse cast of hunters wherever they go.",
+    "seoDescription": "KakuseiHunter Omegahorn (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 1 Episodes",
+    "rating": 10,
+    "genre": [],
+    "language": "Japanese",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Sho Narahara",
+      "Masato Kunigami",
+      "Nanaha Itose",
+      "Maika Miura",
+      "Kenshiro Kato",
+      "Shogo Tazuru"
+    ],
+    "keywords": [
+      "KakuseiHunter Omegahorn",
+      "KakuseiHunter Omegahorn 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-296756",
+    "title": "President Curtis (2026)",
+    "slug": "president-curtis-2026",
+    "videoUrl": "https://youtu.be/KuSbjxrKvUc",
+    "downloadUrl": "https://www.themoviedb.org/tv/296756",
+    "poster": "https://image.tmdb.org/t/p/w780/lc9riW73Oee2pBxi1UrDPgyQjEr.jpg",
+    "description": "Follow the Commander-in-Chief and his eccentric staff as they tackle the kind of crises that Rick Sanchez could never be bothered with - from interdimensional diplomacy to paranormal investigations and unexplained phenomena.",
+    "seoDescription": "President Curtis (2026) trailer, cast, genres, rating and release information.",
+    "category": "Cartoon",
+    "year": 2026,
+    "duration": "Season 1 • 10 Episodes",
+    "rating": 0,
+    "genre": [
+      "Animation",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Dan Harmon, James Siciliano",
+    "cast": [
+      "Keith David",
+      "Stephanie Beatriz",
+      "Jim Rash"
+    ],
+    "keywords": [
+      "President Curtis",
+      "President Curtis 2026",
+      "Cartoon",
+      "official trailer"
+    ]
+  },
   {
     "id": "tmdb-movie-1734033",
     "title": "The Journey of a Star (2026)",
@@ -3343,253 +3825,6 @@ export const tmdbRecentlyAddedVideos: Video[] = [
       "Free Wifi",
       "Free Wifi 2026",
       "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1712586",
-    "title": "Sia: Nostalgic for the Present (2026)",
-    "slug": "sia-nostalgic-for-the-present-2026",
-    "videoUrl": "https://youtu.be/T6ZStfsJQF0",
-    "downloadUrl": "https://www.themoviedb.org/movie/1712586",
-    "poster": "https://image.tmdb.org/t/p/w780/tJrqV5b12HbpNNDrA7Trc5mErGJ.jpg",
-    "description": "A bold experience that challenges the genre that trades pop poetry for pure art. Impressive voices, impressive choreography and iconic performances, captured cinematically and sounded by an unparalleled catalog of hits.",
-    "seoDescription": "Sia: Nostalgic for the Present (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 15m",
-    "rating": 0,
-    "genre": [
-      "Music"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Daniel Askill, Sia",
-    "cast": [
-      "Sia",
-      "Maddie Ziegler",
-      "Nick Lanzisera",
-      "Stephanie Mincone",
-      "Wyatt Rocker",
-      "Paul Dano"
-    ],
-    "keywords": [
-      "Sia: Nostalgic for the Present",
-      "Sia: Nostalgic for the Present 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1703118",
-    "title": "A Malevolent World (2026)",
-    "slug": "a-malevolent-world-2026",
-    "videoUrl": "https://youtu.be/IEjpCxetkWw",
-    "downloadUrl": "https://www.themoviedb.org/movie/1703118",
-    "poster": "https://image.tmdb.org/t/p/w780/Ab2DwVjvefBWo0VONZfiVyui0hN.jpg",
-    "description": "A full improv feature film that explores the awful realism of a zombie apocalypse in Northern England.",
-    "seoDescription": "A Malevolent World (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 10m",
-    "rating": 0,
-    "genre": [
-      "Horror",
-      "Action",
-      "Adventure",
-      "Thriller"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Daniel McQuade",
-    "cast": [
-      "Balder Nieto",
-      "Len Daniels",
-      "Rebecca Rogan",
-      "Ryan Watson",
-      "Melissa Jackson",
-      "Darren Robert Langthorne"
-    ],
-    "keywords": [
-      "A Malevolent World",
-      "A Malevolent World 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1469342",
-    "title": "Her Private Hell (2026)",
-    "slug": "her-private-hell-2026",
-    "videoUrl": "https://youtu.be/C7E-0t1TfzM",
-    "downloadUrl": "https://www.themoviedb.org/movie/1469342",
-    "poster": "https://image.tmdb.org/t/p/w780/kiFacg75KVjy0AM3S4QmbPas8zL.jpg",
-    "description": "When a mysterious mist engulfs a futuristic metropolis, unleashing a deadly and elusive entity, a troubled young woman searches for her father. Her quest collides with an American GI on a harrowing odyssey to rescue his daughter from Hell.",
-    "seoDescription": "Her Private Hell (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 50m",
-    "rating": 7,
-    "genre": [
-      "Horror",
-      "Science Fiction",
-      "Thriller"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Nicolas Winding Refn",
-    "cast": [
-      "Sophie Thatcher",
-      "Charles Melton",
-      "Havana Rose Liu",
-      "Dougray Scott",
-      "Kristine Froseth",
-      "Shioli Kutsuna"
-    ],
-    "keywords": [
-      "Her Private Hell",
-      "Her Private Hell 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1428766",
-    "title": "Penny Lane Is Dead (2026)",
-    "slug": "penny-lane-is-dead-2026",
-    "videoUrl": "https://youtu.be/Pb1BPtBTIwQ",
-    "downloadUrl": "https://www.themoviedb.org/movie/1428766",
-    "poster": "https://image.tmdb.org/t/p/w780/ipAyHghFvnelEVHRMsUnsRXUwO4.jpg",
-    "description": "Set in 1986, during a scorching Aussie summer, three best friends' celebration at a beach house turns into a blood-soaked fight for survival when a prank goes horribly wrong.",
-    "seoDescription": "Penny Lane Is Dead (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 30m",
-    "rating": 0,
-    "genre": [
-      "Horror",
-      "Thriller"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Mia Kate Russell",
-    "cast": [
-      "Sophia Wright-Mendelsohn",
-      "Tahlee Fereday",
-      "Alexandra Jensen",
-      "Bailey Spalding",
-      "Steve Le Marquand",
-      "Fletcher Humphrys"
-    ],
-    "keywords": [
-      "Penny Lane Is Dead",
-      "Penny Lane Is Dead 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1361774",
-    "title": "The Dink (2026)",
-    "slug": "the-dink-2026",
-    "videoUrl": "https://youtu.be/YyVNFzx5Pl8",
-    "downloadUrl": "https://www.themoviedb.org/movie/1361774",
-    "poster": "https://image.tmdb.org/t/p/w780/8dq7vaUkXPqwqKxBFW4qJNBWeop.jpg",
-    "description": "Desperate to save a struggling country club and earn his father's respect, a washed-up tennis pro is compelled to break a sacred vow and do the unthinkable: play pickleball.",
-    "seoDescription": "The Dink (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 42m",
-    "rating": 0,
-    "genre": [
-      "Comedy"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Josh Greenbaum",
-    "cast": [
-      "Jake Johnson",
-      "Mary Steenburgen",
-      "Ed Harris",
-      "Andy Roddick",
-      "Aaron Chen",
-      "Ben Stiller"
-    ],
-    "keywords": [
-      "The Dink",
-      "The Dink 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1227800",
-    "title": "To my sisters (2026)",
-    "slug": "to-my-sisters-2026",
-    "videoUrl": "https://youtu.be/-vEjj1z3lxc",
-    "downloadUrl": "https://www.themoviedb.org/movie/1227800",
-    "poster": "https://image.tmdb.org/t/p/w780/tmnkgoZ0fzmuA9pOw3On7iSl5lS.jpg",
-    "description": "Four women are on an existential journey in Morocco, connecting with local women from all walks of life bonding in sisterhood, and share their common quest for empowerment.",
-    "seoDescription": "To my sisters (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "40m",
-    "rating": 0,
-    "genre": [
-      "Documentary"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Esosa Cheryl Obobaifo",
-    "cast": [
-      "Esosa Cheryl Obobaifo",
-      "Özlem Altinpinar",
-      "Mirace Ercan",
-      "Naima N’Ait-Si-Lahcen"
-    ],
-    "keywords": [
-      "To my sisters",
-      "To my sisters 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1733214",
-    "title": "HIRAETH (2026)",
-    "slug": "hiraeth-2026",
-    "videoUrl": "https://youtu.be/WiPdDhySdtY",
-    "downloadUrl": "https://www.themoviedb.org/movie/1733214",
-    "poster": "https://image.tmdb.org/t/p/w780/tOWZ2KeUU0CmV91mmrYSIeWsEUa.jpg",
-    "description": "Dev and Ananya can’t love each other anymore, so they decide to erase the memory of their relationship. But before that, they must relive its worst moments.",
-    "seoDescription": "HIRAETH (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "38m",
-    "rating": 10,
-    "genre": [
-      "Drama"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Tanmay Vuyyuru",
-    "cast": [
-      "Harshit U Tewari",
-      "Chhavi Malhotra",
-      "Asmit Mukherjee",
-      "Sai Ashish Vure"
-    ],
-    "keywords": [
-      "HIRAETH",
-      "HIRAETH 2026",
-      "Bollywood",
       "official trailer"
     ]
   }
