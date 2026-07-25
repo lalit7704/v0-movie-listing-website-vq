@@ -362,6 +362,40 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1710392",
+    "title": "Gun Pilots (2026)",
+    "slug": "gun-pilots-2026",
+    "videoUrl": "https://youtu.be/RxhM4Sf1rjk",
+    "downloadUrl": "https://www.themoviedb.org/movie/1710392",
+    "poster": "https://image.tmdb.org/t/p/w780/eTHguP3uR8ZZ1IriDGXneGV967s.jpg",
+    "description": "Gun Pilots takes a compelling insider’s view into the rigorous world of U.S. Army Apache flight training. It follows student aviators as they confront the formidable challenge of mastering the AH-64 Apache—the most lethal attack helicopter ever built!",
+    "seoDescription": "Gun Pilots (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "48m",
+    "rating": 0,
+    "genre": [
+      "Documentary",
+      "War"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Kenn Christenson",
+    "cast": [
+      "Clinton Cody",
+      "Brian Haas",
+      "Drew Barcley",
+      "Chaney Lieberman"
+    ],
+    "keywords": [
+      "Gun Pilots",
+      "Gun Pilots 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1469342",
     "title": "Her Private Hell (2026)",
     "slug": "her-private-hell-2026",
@@ -1437,6 +1471,44 @@ export const tmdbBollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1384512",
+    "title": "Tera Yaar Hoon Main (2026)",
+    "slug": "tera-yaar-hoon-main-2026",
+    "videoUrl": "https://youtu.be/VEzeNwKBqMo",
+    "downloadUrl": "https://www.themoviedb.org/movie/1384512",
+    "poster": "https://image.tmdb.org/t/p/w780/cFLVe7dfz7m3AT3egd97As3oC0Y.jpg",
+    "description": "Sanju moves from Nagpur to Mumbai for work and stays with his late mother's friend Viswanath. He falls for Viswanath's daughter Anu, but her marriage is arranged with another man, leaving Viswanath caught between friendship and fatherhood.",
+    "seoDescription": "Tera Yaar Hoon Main (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "2h 24m",
+    "rating": 0,
+    "genre": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Milap Zaveri",
+    "cast": [
+      "Aman Kumar",
+      "Aakansha Sharma",
+      "Paresh Rawal",
+      "Neha Khan",
+      "Johny Lever",
+      "Supriya Pilgaonkar"
+    ],
+    "keywords": [
+      "Tera Yaar Hoon Main",
+      "Tera Yaar Hoon Main 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1682974",
     "title": "The India Story (2026)",
     "slug": "the-india-story-2026",
@@ -2243,6 +2315,40 @@ export const tmdbWebSeriesVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-tv-287238",
+    "title": "Furious (2026)",
+    "slug": "furious-2026",
+    "videoUrl": "https://youtu.be/UBSqPDxmNZs",
+    "downloadUrl": "https://www.themoviedb.org/tv/287238",
+    "poster": "https://image.tmdb.org/t/p/w780/qcTNUGkxpaFycXkItD3Jpn0Mcox.jpg",
+    "description": "FBI agent Alice Black is on the hunt for a mysterious and calculating female serial killer. Both walk their own paths toward justice, and as their lives start to intertwine, the line between right and wrong begins to blur.",
+    "seoDescription": "Furious (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 8 Episodes",
+    "rating": 1,
+    "genre": [
+      "Drama",
+      "Crime"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Elizabeth Meriwether",
+    "cast": [
+      "Emmy Rossum",
+      "Lola Petticrew",
+      "Scoot McNairy",
+      "Quincy Tyler Bernstine"
+    ],
+    "keywords": [
+      "Furious",
+      "Furious 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-tv-319938",
     "title": "KakuseiHunter Omegahorn (2026)",
     "slug": "kakuseihunter-omegahorn-2026",
@@ -2270,6 +2376,35 @@ export const tmdbWebSeriesVideos: Video[] = [
     "keywords": [
       "KakuseiHunter Omegahorn",
       "KakuseiHunter Omegahorn 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-303652",
+    "title": "Modern Marvels: WWII (2026)",
+    "slug": "modern-marvels-wwii-2026",
+    "videoUrl": "https://youtu.be/HVF2surYK1o",
+    "downloadUrl": "https://www.themoviedb.org/tv/303652",
+    "poster": "https://image.tmdb.org/t/p/w780/ktzrFqTYS7rb8EK1MyWo01h2Yt9.jpg",
+    "description": "Explore the greatest machines, most impactful weapons, and groundbreaking innovations of WWII, shining a light on the engineering and technological advances that shaped the course of the conflict and continue to influence our world today.",
+    "seoDescription": "Modern Marvels: WWII (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 3 Episodes",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Moose Warywoda"
+    ],
+    "keywords": [
+      "Modern Marvels: WWII",
+      "Modern Marvels: WWII 2026",
       "Web Series",
       "official trailer"
     ]
@@ -2340,6 +2475,41 @@ export const tmdbWebSeriesVideos: Video[] = [
     "keywords": [
       "Pompeii: Out of Time with Tom Hiddleston",
       "Pompeii: Out of Time with Tom Hiddleston 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-305830",
+    "title": "Someone, Someday (2026)",
+    "slug": "someone-someday-2026",
+    "videoUrl": "https://youtu.be/1kWMebyp2-8",
+    "downloadUrl": "https://www.themoviedb.org/tv/305830",
+    "poster": "https://image.tmdb.org/t/p/w780/a0w1k9cTa3273nhwrFaUhy6YkLR.jpg",
+    "description": "When the CEO of a dating app unknowingly befriends someone out for revenge, old wounds resurface—threatening her company, family, friendships, love life, and even her dream of finding “someone, someday.”",
+    "seoDescription": "Someone, Someday (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 1 Episodes",
+    "rating": 0,
+    "genre": [
+      "Mystery",
+      "Drama"
+    ],
+    "language": "Filipino",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Kathryn Bernardo",
+      "James Reid",
+      "Maja Salvador",
+      "Dimples Romana",
+      "Rowell Santiago",
+      "Rita Avila"
+    ],
+    "keywords": [
+      "Someone, Someday",
+      "Someone, Someday 2026",
       "Web Series",
       "official trailer"
     ]
@@ -2798,6 +2968,176 @@ export const tmdbCartoonVideos: Video[] = [
 ];
 
 export const tmdbRecentlyAddedVideos: Video[] = [
+  {
+    "id": "tmdb-movie-1710392",
+    "title": "Gun Pilots (2026)",
+    "slug": "gun-pilots-2026",
+    "videoUrl": "https://youtu.be/RxhM4Sf1rjk",
+    "downloadUrl": "https://www.themoviedb.org/movie/1710392",
+    "poster": "https://image.tmdb.org/t/p/w780/eTHguP3uR8ZZ1IriDGXneGV967s.jpg",
+    "description": "Gun Pilots takes a compelling insider’s view into the rigorous world of U.S. Army Apache flight training. It follows student aviators as they confront the formidable challenge of mastering the AH-64 Apache—the most lethal attack helicopter ever built!",
+    "seoDescription": "Gun Pilots (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "48m",
+    "rating": 0,
+    "genre": [
+      "Documentary",
+      "War"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Kenn Christenson",
+    "cast": [
+      "Clinton Cody",
+      "Brian Haas",
+      "Drew Barcley",
+      "Chaney Lieberman"
+    ],
+    "keywords": [
+      "Gun Pilots",
+      "Gun Pilots 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1384512",
+    "title": "Tera Yaar Hoon Main (2026)",
+    "slug": "tera-yaar-hoon-main-2026",
+    "videoUrl": "https://youtu.be/VEzeNwKBqMo",
+    "downloadUrl": "https://www.themoviedb.org/movie/1384512",
+    "poster": "https://image.tmdb.org/t/p/w780/cFLVe7dfz7m3AT3egd97As3oC0Y.jpg",
+    "description": "Sanju moves from Nagpur to Mumbai for work and stays with his late mother's friend Viswanath. He falls for Viswanath's daughter Anu, but her marriage is arranged with another man, leaving Viswanath caught between friendship and fatherhood.",
+    "seoDescription": "Tera Yaar Hoon Main (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "2h 24m",
+    "rating": 0,
+    "genre": [
+      "Action",
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Milap Zaveri",
+    "cast": [
+      "Aman Kumar",
+      "Aakansha Sharma",
+      "Paresh Rawal",
+      "Neha Khan",
+      "Johny Lever",
+      "Supriya Pilgaonkar"
+    ],
+    "keywords": [
+      "Tera Yaar Hoon Main",
+      "Tera Yaar Hoon Main 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-305830",
+    "title": "Someone, Someday (2026)",
+    "slug": "someone-someday-2026",
+    "videoUrl": "https://youtu.be/1kWMebyp2-8",
+    "downloadUrl": "https://www.themoviedb.org/tv/305830",
+    "poster": "https://image.tmdb.org/t/p/w780/a0w1k9cTa3273nhwrFaUhy6YkLR.jpg",
+    "description": "When the CEO of a dating app unknowingly befriends someone out for revenge, old wounds resurface—threatening her company, family, friendships, love life, and even her dream of finding “someone, someday.”",
+    "seoDescription": "Someone, Someday (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 1 Episodes",
+    "rating": 0,
+    "genre": [
+      "Mystery",
+      "Drama"
+    ],
+    "language": "Filipino",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Kathryn Bernardo",
+      "James Reid",
+      "Maja Salvador",
+      "Dimples Romana",
+      "Rowell Santiago",
+      "Rita Avila"
+    ],
+    "keywords": [
+      "Someone, Someday",
+      "Someone, Someday 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-303652",
+    "title": "Modern Marvels: WWII (2026)",
+    "slug": "modern-marvels-wwii-2026",
+    "videoUrl": "https://youtu.be/HVF2surYK1o",
+    "downloadUrl": "https://www.themoviedb.org/tv/303652",
+    "poster": "https://image.tmdb.org/t/p/w780/ktzrFqTYS7rb8EK1MyWo01h2Yt9.jpg",
+    "description": "Explore the greatest machines, most impactful weapons, and groundbreaking innovations of WWII, shining a light on the engineering and technological advances that shaped the course of the conflict and continue to influence our world today.",
+    "seoDescription": "Modern Marvels: WWII (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 3 Episodes",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Moose Warywoda"
+    ],
+    "keywords": [
+      "Modern Marvels: WWII",
+      "Modern Marvels: WWII 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-287238",
+    "title": "Furious (2026)",
+    "slug": "furious-2026",
+    "videoUrl": "https://youtu.be/UBSqPDxmNZs",
+    "downloadUrl": "https://www.themoviedb.org/tv/287238",
+    "poster": "https://image.tmdb.org/t/p/w780/qcTNUGkxpaFycXkItD3Jpn0Mcox.jpg",
+    "description": "FBI agent Alice Black is on the hunt for a mysterious and calculating female serial killer. Both walk their own paths toward justice, and as their lives start to intertwine, the line between right and wrong begins to blur.",
+    "seoDescription": "Furious (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 8 Episodes",
+    "rating": 1,
+    "genre": [
+      "Drama",
+      "Crime"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Elizabeth Meriwether",
+    "cast": [
+      "Emmy Rossum",
+      "Lola Petticrew",
+      "Scoot McNairy",
+      "Quincy Tyler Bernstine"
+    ],
+    "keywords": [
+      "Furious",
+      "Furious 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
   {
     "id": "tmdb-movie-1725554",
     "title": "I'm in Love with a Stripper (2026)",
@@ -3648,183 +3988,6 @@ export const tmdbRecentlyAddedVideos: Video[] = [
       "Karavali",
       "Karavali 2026",
       "South Indian",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-328402",
-    "title": "Adarsh Baal Vidyalaya (2026)",
-    "slug": "adarsh-baal-vidyalaya-2026",
-    "videoUrl": "https://youtu.be/9QDfABKdqe0",
-    "downloadUrl": "https://www.themoviedb.org/tv/328402",
-    "poster": "https://image.tmdb.org/t/p/w780/1XbcSqURUvhgu2nnoQRZ7cXmTsJ.jpg",
-    "description": "A relaxed principal tries to reform a failing public school, triggering a messy transformation as misfit teachers work to repair the system one lesson at a time.",
-    "seoDescription": "Adarsh Baal Vidyalaya (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 7 Episodes",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Comedy"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Biswapati Sarkar, Sameer Saxena",
-    "cast": [
-      "Archana Puran Singh",
-      "Naveen Kasturia",
-      "Abhimanyu Singh",
-      "Deven Bhojani",
-      "Aryan Prajapati",
-      "Kay Kay Menon"
-    ],
-    "keywords": [
-      "Adarsh Baal Vidyalaya",
-      "Adarsh Baal Vidyalaya 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-326930",
-    "title": "Summer of 1985 (2026)",
-    "slug": "summer-of-1985-2026",
-    "videoUrl": "https://youtu.be/exEGpLNpZW0",
-    "downloadUrl": "https://www.themoviedb.org/tv/326930",
-    "poster": "https://image.tmdb.org/t/p/w780/z3cigGLSWvBJuuF8uWlEYyITvmk.jpg",
-    "description": "In the summer of 1985, a young boy is found mysteriously drowned in the waters off Särsö. During a forbidden excursion to the legendary island of Svärtan, Johannes and his friends make a discovery that changes them forever.",
-    "seoDescription": "Summer of 1985 (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 6 Episodes",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Mystery"
-    ],
-    "language": "Swedish",
-    "quality": "HD",
-    "featured": false,
-    "director": "Amy Deasismont, Melina Maraki, John Ajvide Lindqvist",
-    "cast": [
-      "Rolf Lassgård",
-      "Linus Rogsgård",
-      "Josefin Neldén",
-      "Nelly Anderbro",
-      "Emelie Garbers",
-      "Julia Marko-Nord"
-    ],
-    "keywords": [
-      "Summer of 1985",
-      "Summer of 1985 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-299268",
-    "title": "Drag Race Down Under vs The World (2026)",
-    "slug": "drag-race-down-under-vs-the-world-2026",
-    "videoUrl": "https://youtu.be/c5Uv9XpOHuc",
-    "downloadUrl": "https://www.themoviedb.org/tv/299268",
-    "poster": "https://image.tmdb.org/t/p/w780/5Ksj7YkYtHm1T5eA9jMLR4oHW9j.jpg",
-    "description": "Fan-favourites from Drag Race Down Under go head-to-head with sickening queens from around the world — all vying for the ultimate crown. Get ready for new looks, louder drama, and legendary lip-syncs as the battle for global drag dominance begins.",
-    "seoDescription": "Drag Race Down Under vs The World (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 8 Episodes",
-    "rating": 0,
-    "genre": [
-      "Reality"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "RuPaul, Fenton Bailey, Randy Barbato",
-    "cast": [
-      "Michelle Visage",
-      "Rhys Nicholson",
-      "Lazy Susan"
-    ],
-    "keywords": [
-      "Drag Race Down Under vs The World",
-      "Drag Race Down Under vs The World 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-208208",
-    "title": "Breaking Bear (2026)",
-    "slug": "breaking-bear-2026",
-    "videoUrl": "https://youtu.be/aIr0coo0Hts",
-    "downloadUrl": "https://www.themoviedb.org/tv/208208",
-    "poster": "https://image.tmdb.org/t/p/w780/8sWLmm1l8uKL9ItlkEMLxwXjWaj.jpg",
-    "description": "The escapades of three bear siblings who decide they have to start selling drugs in order to raise money and save their home after gas companies start fracking next to their cave. The bears soon enlist other forest animals in a scheme that will pit them against oil companies, The Russian Mafia, local Hell’s Angels and polar bears who hate anything that isn’t white.",
-    "seoDescription": "Breaking Bear (2026) trailer, cast, genres, rating and release information.",
-    "category": "Cartoon",
-    "year": 2026,
-    "duration": "Season 1 • 8 Episodes",
-    "rating": 0,
-    "genre": [
-      "Comedy",
-      "Animation",
-      "Crime"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Julien Nitzberg, Tom DeLonge",
-    "cast": [
-      "Brendan Fraser",
-      "Sarah Michelle Gellar",
-      "Annie Murphy",
-      "Elizabeth Hurley",
-      "Josh Gad",
-      "Chris Diamantopoulos"
-    ],
-    "keywords": [
-      "Breaking Bear",
-      "Breaking Bear 2026",
-      "Cartoon",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1717526",
-    "title": "Free Wifi (2026)",
-    "slug": "free-wifi-2026",
-    "videoUrl": "https://youtu.be/gdvgVOYNTh8",
-    "downloadUrl": "https://www.themoviedb.org/movie/1717526",
-    "poster": "https://image.tmdb.org/t/p/w780/1shuOk5dwHbECOPk6Mkp4Uhqq6H.jpg",
-    "description": "Davi, an online motorcycle taxi driver, fakes a wealthy image on social media to attract Grace's attention. Their relationship is opposed by Grace's ex-fiancé, who hires a detective to uncover Davi's true identity. The revelation of the truth triggers a series of misunderstandings, conflicts, and chaos involving both families.",
-    "seoDescription": "Free Wifi (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "N/A",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Comedy"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Mamahit Luigi Donie",
-    "cast": [
-      "Mando GW",
-      "Annette Edoarda",
-      "Mongol Stres",
-      "Putra Dinata",
-      "Jilli Lavenia",
-      "Anof Zulfania"
-    ],
-    "keywords": [
-      "Free Wifi",
-      "Free Wifi 2026",
-      "Hollywood",
       "official trailer"
     ]
   }
