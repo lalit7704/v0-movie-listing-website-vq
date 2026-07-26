@@ -640,6 +640,72 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1593354",
+    "title": "Man Chicken (2026)",
+    "slug": "man-chicken-2026",
+    "videoUrl": "https://youtu.be/X3knUAQJW-c",
+    "downloadUrl": "https://www.themoviedb.org/movie/1593354",
+    "poster": "https://image.tmdb.org/t/p/w780/mLxbA95bi62akWX3l9wdeFhBq8A.jpg",
+    "description": "In this found footage comedy, two brothers go on an adventure to find the urban legend known as \"Man Chicken.\" The trip takes a turn for the worst, as the truth begins to reveal itself, the deeper they travel into the forest.",
+    "seoDescription": "Man Chicken (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 16m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Jesse Heisel",
+    "cast": [
+      "Conor Ashe",
+      "Ryan Ashe",
+      "Heather Harlow",
+      "Aaron Heisel",
+      "Jesse Heisel",
+      "Sasha Benton"
+    ],
+    "keywords": [
+      "Man Chicken",
+      "Man Chicken 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1723570",
+    "title": "Mary Beth Barone: Galaxy Brain (2026)",
+    "slug": "mary-beth-barone-galaxy-brain-2026",
+    "videoUrl": "https://youtu.be/LtK3kHAR63E",
+    "downloadUrl": "https://www.themoviedb.org/movie/1723570",
+    "poster": "https://image.tmdb.org/t/p/w780/4xtEvgdpA2tkG9j27WqeO1JsoZ2.jpg",
+    "description": "Is an ex-best friend the worst ex? Can dating apps save democracy? What's with NYPD merch? Mary Beth Barone has all the answers in this witty special.",
+    "seoDescription": "Mary Beth Barone: Galaxy Brain (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Ky Newman",
+    "cast": [
+      "Mary Beth Barone"
+    ],
+    "keywords": [
+      "Mary Beth Barone: Galaxy Brain",
+      "Mary Beth Barone: Galaxy Brain 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1720745",
     "title": "Men Behind Bars (2026)",
     "slug": "men-behind-bars-2026",
@@ -984,6 +1050,43 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-969681",
+    "title": "Spider-Man: Brand New Day (2026)",
+    "slug": "spider-man-brand-new-day-2026",
+    "videoUrl": "https://youtu.be/P3uI5sLosKU",
+    "downloadUrl": "https://www.themoviedb.org/movie/969681",
+    "poster": "https://image.tmdb.org/t/p/w780/6Q21yptoOCUq4ErwVncesLPVplb.jpg",
+    "description": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+    "seoDescription": "Spider-Man: Brand New Day (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "2h 25m",
+    "rating": 9,
+    "genre": [
+      "Science Fiction",
+      "Action",
+      "Adventure"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Destin Daniel Cretton",
+    "cast": [
+      "Tom Holland",
+      "Zendaya",
+      "Sadie Sink",
+      "Jacob Batalon",
+      "Jon Bernthal",
+      "Tramell Tillman"
+    ],
+    "keywords": [
+      "Spider-Man: Brand New Day",
+      "Spider-Man: Brand New Day 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1248230",
     "title": "Splash City (2026)",
     "slug": "splash-city-2026",
@@ -1154,6 +1257,38 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "To my sisters",
       "To my sisters 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1715914",
+    "title": "Wham! 10 Days in China (2026)",
+    "slug": "wham-10-days-in-china-2026",
+    "videoUrl": "https://youtu.be/P7oAaJqqv8w",
+    "downloadUrl": "https://www.themoviedb.org/movie/1715914",
+    "poster": "https://image.tmdb.org/t/p/w780/fx8ErQNNf1YlvYJAOhwKM4NS3NN.jpg",
+    "description": "In 1985, Wham! were the first Western pop group to perform in communist China. George Michael and Andrew Ridgeley’s two concerts in Beijing and Guangzhou introduced live Western pop to Chinese audiences and marked a turning point for the band. For Wham!, the tour was more than music; it was a bold move to capture American attention and launch them into global superstardom, and it worked.",
+    "seoDescription": "Wham! 10 Days in China (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 30m",
+    "rating": 0,
+    "genre": [
+      "Music",
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Mike Christie",
+    "cast": [
+      "George Michael",
+      "Andrew Ridgeley"
+    ],
+    "keywords": [
+      "Wham! 10 Days in China",
+      "Wham! 10 Days in China 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -1582,6 +1717,42 @@ export const tmdbBollywoodVideos: Video[] = [
 ];
 
 export const tmdbSouthIndianVideos: Video[] = [
+  {
+    "id": "tmdb-movie-1737567",
+    "title": "Chalana Chitram (2026)",
+    "slug": "chalana-chitram-2026",
+    "videoUrl": "https://youtu.be/vI38-hESHy0",
+    "downloadUrl": "https://www.themoviedb.org/movie/1737567",
+    "poster": "https://image.tmdb.org/t/p/w780/8i7WJHk0FclrqZwAhZD8bsFqiqg.jpg",
+    "description": "A final-year engineering student, who has dreamed of becoming a filmmaker since his first year, decides to make his debut short film before graduating. After years of setbacks, failed attempts, and missed opportunities, he finally gathers a team to bring his vision to life. As they face countless challenges throughout the filmmaking process, every obstacle tests their passion, friendship, and determination. Ultimately, the journey of making the film becomes the real story, proving that dreams are achieved through perseverance rather than perfection.",
+    "seoDescription": "Chalana Chitram (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "33m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "director": "Tony Theodus Talakala, Durga Prasad",
+    "cast": [
+      "Umesh Chandra",
+      "Karthik Kumar",
+      "Shashank",
+      "Asritha",
+      "Sridevi",
+      "Bhuvan"
+    ],
+    "keywords": [
+      "Chalana Chitram",
+      "Chalana Chitram 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
   {
     "id": "tmdb-movie-1443136",
     "title": "Chennai Love Story (2026)",
@@ -2969,6 +3140,177 @@ export const tmdbCartoonVideos: Video[] = [
 
 export const tmdbRecentlyAddedVideos: Video[] = [
   {
+    "id": "tmdb-movie-1723570",
+    "title": "Mary Beth Barone: Galaxy Brain (2026)",
+    "slug": "mary-beth-barone-galaxy-brain-2026",
+    "videoUrl": "https://youtu.be/LtK3kHAR63E",
+    "downloadUrl": "https://www.themoviedb.org/movie/1723570",
+    "poster": "https://image.tmdb.org/t/p/w780/4xtEvgdpA2tkG9j27WqeO1JsoZ2.jpg",
+    "description": "Is an ex-best friend the worst ex? Can dating apps save democracy? What's with NYPD merch? Mary Beth Barone has all the answers in this witty special.",
+    "seoDescription": "Mary Beth Barone: Galaxy Brain (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Ky Newman",
+    "cast": [
+      "Mary Beth Barone"
+    ],
+    "keywords": [
+      "Mary Beth Barone: Galaxy Brain",
+      "Mary Beth Barone: Galaxy Brain 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1715914",
+    "title": "Wham! 10 Days in China (2026)",
+    "slug": "wham-10-days-in-china-2026",
+    "videoUrl": "https://youtu.be/P7oAaJqqv8w",
+    "downloadUrl": "https://www.themoviedb.org/movie/1715914",
+    "poster": "https://image.tmdb.org/t/p/w780/fx8ErQNNf1YlvYJAOhwKM4NS3NN.jpg",
+    "description": "In 1985, Wham! were the first Western pop group to perform in communist China. George Michael and Andrew Ridgeley’s two concerts in Beijing and Guangzhou introduced live Western pop to Chinese audiences and marked a turning point for the band. For Wham!, the tour was more than music; it was a bold move to capture American attention and launch them into global superstardom, and it worked.",
+    "seoDescription": "Wham! 10 Days in China (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 30m",
+    "rating": 0,
+    "genre": [
+      "Music",
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Mike Christie",
+    "cast": [
+      "George Michael",
+      "Andrew Ridgeley"
+    ],
+    "keywords": [
+      "Wham! 10 Days in China",
+      "Wham! 10 Days in China 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1593354",
+    "title": "Man Chicken (2026)",
+    "slug": "man-chicken-2026",
+    "videoUrl": "https://youtu.be/X3knUAQJW-c",
+    "downloadUrl": "https://www.themoviedb.org/movie/1593354",
+    "poster": "https://image.tmdb.org/t/p/w780/mLxbA95bi62akWX3l9wdeFhBq8A.jpg",
+    "description": "In this found footage comedy, two brothers go on an adventure to find the urban legend known as \"Man Chicken.\" The trip takes a turn for the worst, as the truth begins to reveal itself, the deeper they travel into the forest.",
+    "seoDescription": "Man Chicken (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 16m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Jesse Heisel",
+    "cast": [
+      "Conor Ashe",
+      "Ryan Ashe",
+      "Heather Harlow",
+      "Aaron Heisel",
+      "Jesse Heisel",
+      "Sasha Benton"
+    ],
+    "keywords": [
+      "Man Chicken",
+      "Man Chicken 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-969681",
+    "title": "Spider-Man: Brand New Day (2026)",
+    "slug": "spider-man-brand-new-day-2026",
+    "videoUrl": "https://youtu.be/P3uI5sLosKU",
+    "downloadUrl": "https://www.themoviedb.org/movie/969681",
+    "poster": "https://image.tmdb.org/t/p/w780/6Q21yptoOCUq4ErwVncesLPVplb.jpg",
+    "description": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+    "seoDescription": "Spider-Man: Brand New Day (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "2h 25m",
+    "rating": 9,
+    "genre": [
+      "Science Fiction",
+      "Action",
+      "Adventure"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Destin Daniel Cretton",
+    "cast": [
+      "Tom Holland",
+      "Zendaya",
+      "Sadie Sink",
+      "Jacob Batalon",
+      "Jon Bernthal",
+      "Tramell Tillman"
+    ],
+    "keywords": [
+      "Spider-Man: Brand New Day",
+      "Spider-Man: Brand New Day 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1737567",
+    "title": "Chalana Chitram (2026)",
+    "slug": "chalana-chitram-2026",
+    "videoUrl": "https://youtu.be/vI38-hESHy0",
+    "downloadUrl": "https://www.themoviedb.org/movie/1737567",
+    "poster": "https://image.tmdb.org/t/p/w780/8i7WJHk0FclrqZwAhZD8bsFqiqg.jpg",
+    "description": "A final-year engineering student, who has dreamed of becoming a filmmaker since his first year, decides to make his debut short film before graduating. After years of setbacks, failed attempts, and missed opportunities, he finally gathers a team to bring his vision to life. As they face countless challenges throughout the filmmaking process, every obstacle tests their passion, friendship, and determination. Ultimately, the journey of making the film becomes the real story, proving that dreams are achieved through perseverance rather than perfection.",
+    "seoDescription": "Chalana Chitram (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "33m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "director": "Tony Theodus Talakala, Durga Prasad",
+    "cast": [
+      "Umesh Chandra",
+      "Karthik Kumar",
+      "Shashank",
+      "Asritha",
+      "Sridevi",
+      "Bhuvan"
+    ],
+    "keywords": [
+      "Chalana Chitram",
+      "Chalana Chitram 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1710392",
     "title": "Gun Pilots (2026)",
     "slug": "gun-pilots-2026",
@@ -3817,177 +4159,6 @@ export const tmdbRecentlyAddedVideos: Video[] = [
       "LAKESVILLE MOVIE",
       "LAKESVILLE MOVIE 2026",
       "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1720201",
-    "title": "Dulhaniya Le Aaeegi (2026)",
-    "slug": "dulhaniya-le-aaeegi-2026",
-    "videoUrl": "https://youtu.be/Tw1je1iQs4s",
-    "downloadUrl": "https://www.themoviedb.org/movie/1720201",
-    "poster": "https://image.tmdb.org/t/p/w780/kQBgp1eYyQVs4nKtd8lrLva2JcQ.jpg",
-    "description": "Dulhaniya Le Aaeegi is a newly released bollywood title.",
-    "seoDescription": "Dulhaniya Le Aaeegi (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "N/A",
-    "rating": 0,
-    "genre": [
-      "Comedy"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Akashaditya Lama",
-    "cast": [
-      "Khushali Kumar",
-      "Mahesh Manjrekar",
-      "Piyush Mishra",
-      "Omkar Kapoor",
-      "Snehill Dixit Mehra"
-    ],
-    "keywords": [
-      "Dulhaniya Le Aaeegi",
-      "Dulhaniya Le Aaeegi 2026",
-      "Bollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1713420",
-    "title": "Uttar Da Puttar (2026)",
-    "slug": "uttar-da-puttar-2026",
-    "videoUrl": "https://youtu.be/UmRKqialNf4",
-    "downloadUrl": "https://www.themoviedb.org/movie/1713420",
-    "poster": "https://image.tmdb.org/t/p/w780/ss9hQZuBW6uwkyJaW8DQgV4ku0T.jpg",
-    "description": "Uttar Da Puttar is a newly released bollywood title.",
-    "seoDescription": "Uttar Da Puttar (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "N/A",
-    "rating": 0,
-    "genre": [
-      "Comedy"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Ravinder Siwatch",
-    "cast": [
-      "Annu Kapoor",
-      "Rukhsar Rehman",
-      "Brijendra Kala",
-      "Pavan Malhotra",
-      "Ishtiyak Khan",
-      "Jeeveshu Ahluwalia"
-    ],
-    "keywords": [
-      "Uttar Da Puttar",
-      "Uttar Da Puttar 2026",
-      "Bollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1021634",
-    "title": "Max, Min and Meowzaki (2026)",
-    "slug": "max-min-and-meowzaki-2026",
-    "videoUrl": "https://youtu.be/yr3yFBHQXyY",
-    "downloadUrl": "https://www.themoviedb.org/movie/1021634",
-    "poster": "https://image.tmdb.org/t/p/w780/7ru6YpK7U4QH8cO3OKMKo5ZXgXj.jpg",
-    "description": "Max and Min are about to break up. They argue endlessly about dividing their possessions, including their cat, Meowzaki, whom they have named after their favorite artist Miyazaki Hayao. Max’s father Ramesh, who lost his wife and has since been suffering from insomnia, meets charming therapist Dhaara. Max’s grandfather Sridhar, secretly enjoys drinking with his new friend Jennifer at the nursing home.",
-    "seoDescription": "Max, Min and Meowzaki (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "2h 18m",
-    "rating": 0,
-    "genre": [
-      "Family",
-      "Romance",
-      "Comedy"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Narasimhamurthy Padmakumar",
-    "cast": [
-      "Adil Hussain",
-      "Mandira Bedi",
-      "Nassar",
-      "Nafisa Ali",
-      "Medha Shankr",
-      "Vidhatri Bandi"
-    ],
-    "keywords": [
-      "Max, Min and Meowzaki",
-      "Max, Min and Meowzaki 2026",
-      "Bollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1443136",
-    "title": "Chennai Love Story (2026)",
-    "slug": "chennai-love-story-2026",
-    "videoUrl": "https://youtu.be/nYYjR9diizE",
-    "downloadUrl": "https://www.themoviedb.org/movie/1443136",
-    "poster": "https://image.tmdb.org/t/p/w780/9BjK1Mh8fofyHNYZNMJ8oLhBXDw.jpg",
-    "description": "Two young people navigate their first experience of love, dealing with its powerful emotions and obstacles while discovering the delicate nature of newfound romance.",
-    "seoDescription": "Chennai Love Story (2026) trailer, cast, genres, rating and release information.",
-    "category": "South Indian",
-    "year": 2026,
-    "duration": "3h 4m",
-    "rating": 0,
-    "genre": [
-      "Romance",
-      "Drama"
-    ],
-    "language": "Telugu",
-    "quality": "HD",
-    "featured": false,
-    "director": "Ravi Namburii",
-    "cast": [
-      "Kiran Abbavaram",
-      "Sri Gouri Priya Reddy"
-    ],
-    "keywords": [
-      "Chennai Love Story",
-      "Chennai Love Story 2026",
-      "South Indian",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1215812",
-    "title": "Karavali (2026)",
-    "slug": "karavali-2026",
-    "videoUrl": "https://youtu.be/TGYTlowY0zM",
-    "downloadUrl": "https://www.themoviedb.org/movie/1215812",
-    "poster": "https://image.tmdb.org/t/p/w780/buxVz5LZQY1QLfFIIZnfe6t2F4I.jpg",
-    "description": "Karavali is a film that explores the struggles between man and nature, set against the raw, untamed beauty of coastal Karnataka. The story revolves around the world of Kambala, a traditional annual buffalo race, showcasing the unique culture and challenges of the region.",
-    "seoDescription": "Karavali (2026) trailer, cast, genres, rating and release information.",
-    "category": "South Indian",
-    "year": 2026,
-    "duration": "N/A",
-    "rating": 0,
-    "genre": [],
-    "language": "Kannada",
-    "quality": "HD",
-    "featured": false,
-    "director": "Gurudatha Ganiga",
-    "cast": [
-      "Prajwal Devaraj",
-      "Raj B Shetty",
-      "Sampada Hulivana",
-      "Ramesh Indira",
-      "Mithra",
-      "Sushmitha Bhat"
-    ],
-    "keywords": [
-      "Karavali",
-      "Karavali 2026",
-      "South Indian",
       "official trailer"
     ]
   }
