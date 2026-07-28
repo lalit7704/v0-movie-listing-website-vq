@@ -108,6 +108,43 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1703103",
+    "title": "Addicted to Change (2026)",
+    "slug": "addicted-to-change-2026",
+    "videoUrl": "https://youtu.be/vAL7EM073dM",
+    "downloadUrl": "https://www.themoviedb.org/movie/1703103",
+    "poster": "https://image.tmdb.org/t/p/w780/7Eewbbdv7MRsV87jlRWvwp1EFFE.jpg",
+    "description": "In a near future Britain, at a biotech lab on the brink of collapse, three interns invent a cognitive enhancing drug. They begin full scale manufacture, only to become targets of government forces who view their breakthrough as a threat.",
+    "seoDescription": "Addicted to Change (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 26m",
+    "rating": 0,
+    "genre": [
+      "Action",
+      "Drama",
+      "Science Fiction"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Richard Faria",
+    "cast": [
+      "Arnas Fedaravičius",
+      "Fady Elsayed",
+      "Adrian Paul",
+      "Bobby Lockwood",
+      "Gary Webster",
+      "Vanessa Grasse"
+    ],
+    "keywords": [
+      "Addicted to Change",
+      "Addicted to Change 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1080959",
     "title": "Alien Storm (2026)",
     "slug": "alien-storm-2026",
@@ -985,6 +1022,40 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1689976",
+    "title": "Pentacide (2026)",
+    "slug": "pentacide-2026",
+    "videoUrl": "https://youtu.be/xqq3Wk9u3u4",
+    "downloadUrl": "https://www.themoviedb.org/movie/1689976",
+    "poster": "https://image.tmdb.org/t/p/w780/gtTDxqTntCZ3f94mEyTu44ieYgH.jpg",
+    "description": "In 1999, a series of grisly, religiously inspired killings struck the country repeating every five years, now in the present day (2024) the story follows two detectives who are trying to solve the biggest serial killer case the UK has ever seen!",
+    "seoDescription": "Pentacide (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "11m",
+    "rating": 0,
+    "genre": [
+      "Crime",
+      "Thriller"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Billy Wright",
+    "cast": [
+      "Andrew Lindfield",
+      "Emma Wright",
+      "Penelope Saunders",
+      "Munya Mundove"
+    ],
+    "keywords": [
+      "Pentacide",
+      "Pentacide 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1232569",
     "title": "Pinocchio: Unstrung (2026)",
     "slug": "pinocchio-unstrung-2026",
@@ -1081,6 +1152,42 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "Rising Embers",
       "Rising Embers 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1722016",
+    "title": "Screen of the Dead (2026)",
+    "slug": "screen-of-the-dead-2026",
+    "videoUrl": "https://youtu.be/3RNicZdYmXE",
+    "downloadUrl": "https://www.themoviedb.org/movie/1722016",
+    "poster": "https://image.tmdb.org/t/p/w780/gh3c7MXrB3tfl3RMh53Ycraesth.jpg",
+    "description": "In a quiet backyard, Gaby finds her friends frozen over their phones. When they finally look up, an ordinary afternoon spirals into a bloody, absurd fight for survival.",
+    "seoDescription": "Screen of the Dead (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "9m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Martin Bruyère",
+    "cast": [
+      "Gabrielle Bruyère",
+      "Sofia Lynn Mitzelos",
+      "Éliane Croteau",
+      "Savannah Weagant",
+      "Juliette Cousineau",
+      "Elayna Beaudoin"
+    ],
+    "keywords": [
+      "Screen of the Dead",
+      "Screen of the Dead 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -1512,6 +1619,41 @@ export const tmdbHollywoodVideos: Video[] = [
 
 export const tmdbBollywoodVideos: Video[] = [
   {
+    "id": "tmdb-movie-1642850",
+    "title": "Bhai Tera Star Hai (2026)",
+    "slug": "bhai-tera-star-hai-2026",
+    "videoUrl": "https://youtu.be/Zy8KDEJU3iY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1642850",
+    "poster": "https://image.tmdb.org/t/p/w780/pOvjcDHftVa6SJk2DmAm1cD0YOb.jpg",
+    "description": "Bhai Tera Star Hai is a newly released bollywood title.",
+    "seoDescription": "Bhai Tera Star Hai (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Comedy"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Vivek B Agrawal",
+    "cast": [
+      "Raghav Juyal",
+      "Sanjay Kapoor",
+      "Niharika NM",
+      "Vikalp Mehta",
+      "Barkha Singh",
+      "Vivan Bhatena"
+    ],
+    "keywords": [
+      "Bhai Tera Star Hai",
+      "Bhai Tera Star Hai 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1720201",
     "title": "Dulhaniya Le Aaeegi (2026)",
     "slug": "dulhaniya-le-aaeegi-2026",
@@ -1610,6 +1752,43 @@ export const tmdbBollywoodVideos: Video[] = [
     "keywords": [
       "Ikka",
       "Ikka 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1738850",
+    "title": "Indrajaal (2026)",
+    "slug": "indrajaal-2026",
+    "videoUrl": "https://youtu.be/lfUleFltLtg",
+    "downloadUrl": "https://www.themoviedb.org/movie/1738850",
+    "poster": "https://image.tmdb.org/t/p/w780/wkLjjlBTmAp1u4STWi0IUBqxi9r.jpg",
+    "description": "A legendary treasure hidden during colonial times reappears every 12 years during a solar eclipse. Treasure hunters race to find it but become caught in an ancient prophecy, leading to a gripping tale of ambition and survival.",
+    "seoDescription": "Indrajaal (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "2h 16m",
+    "rating": 0,
+    "genre": [
+      "Comedy",
+      "Fantasy",
+      "Mystery"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Jageshwar Ratnakar Dhoble",
+    "cast": [
+      "Mahesh Nikam",
+      "Shanaya Tripathi",
+      "Yashraj Dimbale",
+      "Namdeo Murkute",
+      "Kira Dane",
+      "Kalpana Sarang"
+    ],
+    "keywords": [
+      "Indrajaal",
+      "Indrajaal 2026",
       "Bollywood",
       "official trailer"
     ]
@@ -2672,6 +2851,42 @@ export const tmdbWebSeriesVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-tv-329597",
+    "title": "Drug War: A Conspiracy of Silence (2026)",
+    "slug": "drug-war-a-conspiracy-of-silence-2026",
+    "videoUrl": "https://youtu.be/VaiNye9Ww00",
+    "downloadUrl": "https://www.themoviedb.org/tv/329597",
+    "poster": "https://image.tmdb.org/t/p/w780/t5T9kYdMYw374FZCWBvl1sTWD7I.jpg",
+    "description": "It follows Fr. Tom Carillo, a once-privileged priest who’s lost everything, as he teams up with a guilt-ridden cop, Yana Macabeo. Together, they fight to expose a deadly conspiracy shrouding the truth behind the mysterious death of Kiko Agustin, a former protege of Tom’s. As they uncover dark secrets from the drug war in the Philippines, Tom must confront his own past apathy to seek redemption and bring justice for a life lost too soon.",
+    "seoDescription": "Drug War: A Conspiracy of Silence (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 6 Episodes",
+    "rating": 0,
+    "genre": [
+      "Mystery",
+      "Crime",
+      "Drama"
+    ],
+    "language": "Filipino",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Ian Veneracion",
+      "Jane Oineza",
+      "Harvey Bautista",
+      "Lotlot De Leon",
+      "Romnick Sarmenta",
+      "Yayo Aguila"
+    ],
+    "keywords": [
+      "Drug War: A Conspiracy of Silence",
+      "Drug War: A Conspiracy of Silence 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-tv-329015",
     "title": "FISSURE (2026)",
     "slug": "fissure-2026",
@@ -2825,6 +3040,40 @@ export const tmdbWebSeriesVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-tv-271016",
+    "title": "Mystic Nine (2026)",
+    "slug": "mystic-nine-2026",
+    "videoUrl": "https://youtu.be/ze6BQOn1zGo",
+    "downloadUrl": "https://www.themoviedb.org/tv/271016",
+    "poster": "https://image.tmdb.org/t/p/w780/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
+    "description": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
+    "seoDescription": "Mystic Nine (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 30 Episodes",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Action & Adventure"
+    ],
+    "language": "Chinese",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "William Chan Wai-Ting",
+      "Joseph Zeng",
+      "Chen Yao",
+      "Ying Haoming",
+      "Wang Yiting"
+    ],
+    "keywords": [
+      "Mystic Nine",
+      "Mystic Nine 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-tv-289139",
     "title": "Overdo (2026)",
     "slug": "overdo-2026",
@@ -2854,6 +3103,42 @@ export const tmdbWebSeriesVideos: Video[] = [
     "keywords": [
       "Overdo",
       "Overdo 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-316657",
+    "title": "Paris is Always a Good Idea (2026)",
+    "slug": "paris-is-always-a-good-idea-2026",
+    "videoUrl": "https://youtu.be/sq13-qkr_dk",
+    "downloadUrl": "https://www.themoviedb.org/tv/316657",
+    "poster": "https://image.tmdb.org/t/p/w780/cEYvbrYFBS2Q9ZA9v8SQI6WS73U.jpg",
+    "description": "Career-driven nonprofit executive Chelsea Martin travels to Paris with her confident rival-turned-ally, Jason Knightly to secure a major donation but a heartfelt message from her late mother – and a loving push from her sister Annabelle – sends her on an unexpected journey to reconnect with the three great loves she once left behind. From the rolling hills of Ireland to the magic of Paris and the sun-kissed vineyards of Spain, Chelsea retraces old footsteps and discovers that sometimes moving forward means first looking back.",
+    "seoDescription": "Paris is Always a Good Idea (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 6 Episodes",
+    "rating": 0,
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Heidi Cole McAdams, Lauren Muir",
+    "cast": [
+      "Lacey Chabert",
+      "Scott Michael Foster",
+      "Rebecca Hanssen",
+      "Henry Czerny",
+      "Barbara Niven",
+      "Stephen Hagan"
+    ],
+    "keywords": [
+      "Paris is Always a Good Idea",
+      "Paris is Always a Good Idea 2026",
       "Web Series",
       "official trailer"
     ]
@@ -3239,6 +3524,35 @@ export const tmdbCartoonVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1722167",
+    "title": "Mickey's Country Farm (2026)",
+    "slug": "mickey-s-country-farm-2026",
+    "videoUrl": "https://youtu.be/4JL505FnnEo",
+    "downloadUrl": "https://www.themoviedb.org/movie/1722167",
+    "poster": "https://image.tmdb.org/t/p/w780/gnRRHjqLB11nHXGbwIfpAKR4F6X.jpg",
+    "description": "Mickey and friends use their new farm vehicles to build the Fairest Farm Fair ever — hoping Daisy’s cowgirl idol, Lasso Lucy, will stop by for a visit.",
+    "seoDescription": "Mickey's Country Farm (2026) trailer, cast, genres, rating and release information.",
+    "category": "Cartoon",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Animation"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Megan Hilty"
+    ],
+    "keywords": [
+      "Mickey's Country Farm",
+      "Mickey's Country Farm 2026",
+      "Cartoon",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-tv-296756",
     "title": "President Curtis (2026)",
     "slug": "president-curtis-2026",
@@ -3302,6 +3616,42 @@ export const tmdbCartoonVideos: Video[] = [
     "keywords": [
       "Smoking Behind the Supermarket with You",
       "Smoking Behind the Supermarket with You 2026",
+      "Cartoon",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1698575",
+    "title": "Snoopy Presents: There's No Place Like Home, Snoopy (2026)",
+    "slug": "snoopy-presents-there-s-no-place-like-home-snoopy-2026",
+    "videoUrl": "https://youtu.be/A-NQmpNsZIc",
+    "downloadUrl": "https://www.themoviedb.org/movie/1698575",
+    "poster": "https://image.tmdb.org/t/p/w780/YbC4SlzE030BgxWdKDdlatMh5W.jpg",
+    "description": "When Snoopy's beloved doghouse goes missing, he tries to track it down, and learns what makes a house feel like home.",
+    "seoDescription": "Snoopy Presents: There's No Place Like Home, Snoopy (2026) trailer, cast, genres, rating and release information.",
+    "category": "Cartoon",
+    "year": 2026,
+    "duration": "31m",
+    "rating": 0,
+    "genre": [
+      "Animation",
+      "Family"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Ridd Sorensen",
+    "cast": [
+      "Riley Kai Vargas",
+      "Terry McGurrin",
+      "Rob Tinkler",
+      "Grace Nicolaou-Wood",
+      "Lexi Perri",
+      "Athan Giazitzidis"
+    ],
+    "keywords": [
+      "Snoopy Presents: There's No Place Like Home, Snoopy",
+      "Snoopy Presents: There's No Place Like Home, Snoopy 2026",
       "Cartoon",
       "official trailer"
     ]
@@ -3446,6 +3796,356 @@ export const tmdbCartoonVideos: Video[] = [
 ];
 
 export const tmdbRecentlyAddedVideos: Video[] = [
+  {
+    "id": "tmdb-movie-1722016",
+    "title": "Screen of the Dead (2026)",
+    "slug": "screen-of-the-dead-2026",
+    "videoUrl": "https://youtu.be/3RNicZdYmXE",
+    "downloadUrl": "https://www.themoviedb.org/movie/1722016",
+    "poster": "https://image.tmdb.org/t/p/w780/gh3c7MXrB3tfl3RMh53Ycraesth.jpg",
+    "description": "In a quiet backyard, Gaby finds her friends frozen over their phones. When they finally look up, an ordinary afternoon spirals into a bloody, absurd fight for survival.",
+    "seoDescription": "Screen of the Dead (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "9m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Martin Bruyère",
+    "cast": [
+      "Gabrielle Bruyère",
+      "Sofia Lynn Mitzelos",
+      "Éliane Croteau",
+      "Savannah Weagant",
+      "Juliette Cousineau",
+      "Elayna Beaudoin"
+    ],
+    "keywords": [
+      "Screen of the Dead",
+      "Screen of the Dead 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1703103",
+    "title": "Addicted to Change (2026)",
+    "slug": "addicted-to-change-2026",
+    "videoUrl": "https://youtu.be/vAL7EM073dM",
+    "downloadUrl": "https://www.themoviedb.org/movie/1703103",
+    "poster": "https://image.tmdb.org/t/p/w780/7Eewbbdv7MRsV87jlRWvwp1EFFE.jpg",
+    "description": "In a near future Britain, at a biotech lab on the brink of collapse, three interns invent a cognitive enhancing drug. They begin full scale manufacture, only to become targets of government forces who view their breakthrough as a threat.",
+    "seoDescription": "Addicted to Change (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 26m",
+    "rating": 0,
+    "genre": [
+      "Action",
+      "Drama",
+      "Science Fiction"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Richard Faria",
+    "cast": [
+      "Arnas Fedaravičius",
+      "Fady Elsayed",
+      "Adrian Paul",
+      "Bobby Lockwood",
+      "Gary Webster",
+      "Vanessa Grasse"
+    ],
+    "keywords": [
+      "Addicted to Change",
+      "Addicted to Change 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1689976",
+    "title": "Pentacide (2026)",
+    "slug": "pentacide-2026",
+    "videoUrl": "https://youtu.be/xqq3Wk9u3u4",
+    "downloadUrl": "https://www.themoviedb.org/movie/1689976",
+    "poster": "https://image.tmdb.org/t/p/w780/gtTDxqTntCZ3f94mEyTu44ieYgH.jpg",
+    "description": "In 1999, a series of grisly, religiously inspired killings struck the country repeating every five years, now in the present day (2024) the story follows two detectives who are trying to solve the biggest serial killer case the UK has ever seen!",
+    "seoDescription": "Pentacide (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "11m",
+    "rating": 0,
+    "genre": [
+      "Crime",
+      "Thriller"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Billy Wright",
+    "cast": [
+      "Andrew Lindfield",
+      "Emma Wright",
+      "Penelope Saunders",
+      "Munya Mundove"
+    ],
+    "keywords": [
+      "Pentacide",
+      "Pentacide 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1642850",
+    "title": "Bhai Tera Star Hai (2026)",
+    "slug": "bhai-tera-star-hai-2026",
+    "videoUrl": "https://youtu.be/Zy8KDEJU3iY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1642850",
+    "poster": "https://image.tmdb.org/t/p/w780/pOvjcDHftVa6SJk2DmAm1cD0YOb.jpg",
+    "description": "Bhai Tera Star Hai is a newly released bollywood title.",
+    "seoDescription": "Bhai Tera Star Hai (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Comedy"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Vivek B Agrawal",
+    "cast": [
+      "Raghav Juyal",
+      "Sanjay Kapoor",
+      "Niharika NM",
+      "Vikalp Mehta",
+      "Barkha Singh",
+      "Vivan Bhatena"
+    ],
+    "keywords": [
+      "Bhai Tera Star Hai",
+      "Bhai Tera Star Hai 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1738850",
+    "title": "Indrajaal (2026)",
+    "slug": "indrajaal-2026",
+    "videoUrl": "https://youtu.be/lfUleFltLtg",
+    "downloadUrl": "https://www.themoviedb.org/movie/1738850",
+    "poster": "https://image.tmdb.org/t/p/w780/wkLjjlBTmAp1u4STWi0IUBqxi9r.jpg",
+    "description": "A legendary treasure hidden during colonial times reappears every 12 years during a solar eclipse. Treasure hunters race to find it but become caught in an ancient prophecy, leading to a gripping tale of ambition and survival.",
+    "seoDescription": "Indrajaal (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "2h 16m",
+    "rating": 0,
+    "genre": [
+      "Comedy",
+      "Fantasy",
+      "Mystery"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Jageshwar Ratnakar Dhoble",
+    "cast": [
+      "Mahesh Nikam",
+      "Shanaya Tripathi",
+      "Yashraj Dimbale",
+      "Namdeo Murkute",
+      "Kira Dane",
+      "Kalpana Sarang"
+    ],
+    "keywords": [
+      "Indrajaal",
+      "Indrajaal 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-329597",
+    "title": "Drug War: A Conspiracy of Silence (2026)",
+    "slug": "drug-war-a-conspiracy-of-silence-2026",
+    "videoUrl": "https://youtu.be/VaiNye9Ww00",
+    "downloadUrl": "https://www.themoviedb.org/tv/329597",
+    "poster": "https://image.tmdb.org/t/p/w780/t5T9kYdMYw374FZCWBvl1sTWD7I.jpg",
+    "description": "It follows Fr. Tom Carillo, a once-privileged priest who’s lost everything, as he teams up with a guilt-ridden cop, Yana Macabeo. Together, they fight to expose a deadly conspiracy shrouding the truth behind the mysterious death of Kiko Agustin, a former protege of Tom’s. As they uncover dark secrets from the drug war in the Philippines, Tom must confront his own past apathy to seek redemption and bring justice for a life lost too soon.",
+    "seoDescription": "Drug War: A Conspiracy of Silence (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 6 Episodes",
+    "rating": 0,
+    "genre": [
+      "Mystery",
+      "Crime",
+      "Drama"
+    ],
+    "language": "Filipino",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Ian Veneracion",
+      "Jane Oineza",
+      "Harvey Bautista",
+      "Lotlot De Leon",
+      "Romnick Sarmenta",
+      "Yayo Aguila"
+    ],
+    "keywords": [
+      "Drug War: A Conspiracy of Silence",
+      "Drug War: A Conspiracy of Silence 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-316657",
+    "title": "Paris is Always a Good Idea (2026)",
+    "slug": "paris-is-always-a-good-idea-2026",
+    "videoUrl": "https://youtu.be/sq13-qkr_dk",
+    "downloadUrl": "https://www.themoviedb.org/tv/316657",
+    "poster": "https://image.tmdb.org/t/p/w780/cEYvbrYFBS2Q9ZA9v8SQI6WS73U.jpg",
+    "description": "Career-driven nonprofit executive Chelsea Martin travels to Paris with her confident rival-turned-ally, Jason Knightly to secure a major donation but a heartfelt message from her late mother – and a loving push from her sister Annabelle – sends her on an unexpected journey to reconnect with the three great loves she once left behind. From the rolling hills of Ireland to the magic of Paris and the sun-kissed vineyards of Spain, Chelsea retraces old footsteps and discovers that sometimes moving forward means first looking back.",
+    "seoDescription": "Paris is Always a Good Idea (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 6 Episodes",
+    "rating": 0,
+    "genre": [
+      "Comedy",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Heidi Cole McAdams, Lauren Muir",
+    "cast": [
+      "Lacey Chabert",
+      "Scott Michael Foster",
+      "Rebecca Hanssen",
+      "Henry Czerny",
+      "Barbara Niven",
+      "Stephen Hagan"
+    ],
+    "keywords": [
+      "Paris is Always a Good Idea",
+      "Paris is Always a Good Idea 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-271016",
+    "title": "Mystic Nine (2026)",
+    "slug": "mystic-nine-2026",
+    "videoUrl": "https://youtu.be/ze6BQOn1zGo",
+    "downloadUrl": "https://www.themoviedb.org/tv/271016",
+    "poster": "https://image.tmdb.org/t/p/w780/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
+    "description": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
+    "seoDescription": "Mystic Nine (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 30 Episodes",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Action & Adventure"
+    ],
+    "language": "Chinese",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "William Chan Wai-Ting",
+      "Joseph Zeng",
+      "Chen Yao",
+      "Ying Haoming",
+      "Wang Yiting"
+    ],
+    "keywords": [
+      "Mystic Nine",
+      "Mystic Nine 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1722167",
+    "title": "Mickey's Country Farm (2026)",
+    "slug": "mickey-s-country-farm-2026",
+    "videoUrl": "https://youtu.be/4JL505FnnEo",
+    "downloadUrl": "https://www.themoviedb.org/movie/1722167",
+    "poster": "https://image.tmdb.org/t/p/w780/gnRRHjqLB11nHXGbwIfpAKR4F6X.jpg",
+    "description": "Mickey and friends use their new farm vehicles to build the Fairest Farm Fair ever — hoping Daisy’s cowgirl idol, Lasso Lucy, will stop by for a visit.",
+    "seoDescription": "Mickey's Country Farm (2026) trailer, cast, genres, rating and release information.",
+    "category": "Cartoon",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Animation"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Megan Hilty"
+    ],
+    "keywords": [
+      "Mickey's Country Farm",
+      "Mickey's Country Farm 2026",
+      "Cartoon",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1698575",
+    "title": "Snoopy Presents: There's No Place Like Home, Snoopy (2026)",
+    "slug": "snoopy-presents-there-s-no-place-like-home-snoopy-2026",
+    "videoUrl": "https://youtu.be/A-NQmpNsZIc",
+    "downloadUrl": "https://www.themoviedb.org/movie/1698575",
+    "poster": "https://image.tmdb.org/t/p/w780/YbC4SlzE030BgxWdKDdlatMh5W.jpg",
+    "description": "When Snoopy's beloved doghouse goes missing, he tries to track it down, and learns what makes a house feel like home.",
+    "seoDescription": "Snoopy Presents: There's No Place Like Home, Snoopy (2026) trailer, cast, genres, rating and release information.",
+    "category": "Cartoon",
+    "year": 2026,
+    "duration": "31m",
+    "rating": 0,
+    "genre": [
+      "Animation",
+      "Family"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Ridd Sorensen",
+    "cast": [
+      "Riley Kai Vargas",
+      "Terry McGurrin",
+      "Rob Tinkler",
+      "Grace Nicolaou-Wood",
+      "Lexi Perri",
+      "Athan Giazitzidis"
+    ],
+    "keywords": [
+      "Snoopy Presents: There's No Place Like Home, Snoopy",
+      "Snoopy Presents: There's No Place Like Home, Snoopy 2026",
+      "Cartoon",
+      "official trailer"
+    ]
+  },
   {
     "id": "tmdb-movie-1733764",
     "title": "God Hunter (2026)",
@@ -4124,349 +4824,6 @@ export const tmdbRecentlyAddedVideos: Video[] = [
     "keywords": [
       "I'm in Love with a Stripper",
       "I'm in Love with a Stripper 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1682494",
-    "title": "Replika (2026)",
-    "slug": "replika-2026",
-    "videoUrl": "https://youtu.be/FSyJifAtFjk",
-    "downloadUrl": "https://www.themoviedb.org/movie/1682494",
-    "poster": "https://image.tmdb.org/t/p/w780/1YxNj41c73ilKfUllbId7mbtJK5.jpg",
-    "description": "After surviving a horrific car crash and losing his arm, an unstable family man develops a bizarre fascination for augmenting his body with bionic prosthetics.",
-    "seoDescription": "Replika (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "11m",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Thriller",
-      "Science Fiction"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Samuel Arocas",
-    "cast": [
-      "Martin Barry",
-      "Rosalind Parker",
-      "Elizabeth Hill",
-      "Zoe Duffy"
-    ],
-    "keywords": [
-      "Replika",
-      "Replika 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1682974",
-    "title": "The India Story (2026)",
-    "slug": "the-india-story-2026",
-    "videoUrl": "https://youtu.be/Pci6yErjwt0",
-    "downloadUrl": "https://www.themoviedb.org/movie/1682974",
-    "poster": "https://image.tmdb.org/t/p/w780/xb3hSeItlYp56KBZVBcwg3TJsBs.jpg",
-    "description": "A community confronts the devastating impact of pesticide contamination as industrial negligence threatens public health. The fight for accountability exposes systemic failures in regulatory oversight and corporate responsibility.",
-    "seoDescription": "The India Story (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "N/A",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Thriller"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Chettan D K",
-    "cast": [
-      "Kajal Aggarwal",
-      "Shreyas Talpade",
-      "Murali Sharma",
-      "Manish Wadhwa",
-      "Sham Mashalkar",
-      "Kamlesh Sawant"
-    ],
-    "keywords": [
-      "The India Story",
-      "The India Story 2026",
-      "Bollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1620357",
-    "title": "Lakshmikanthan Kolai Vazhakku (2026)",
-    "slug": "lakshmikanthan-kolai-vazhakku-2026",
-    "videoUrl": "https://youtu.be/j4oGkaV3JVI",
-    "downloadUrl": "https://www.themoviedb.org/movie/1620357",
-    "poster": "https://image.tmdb.org/t/p/w780/pGS1KRODHNYzR35slcgJp9NzMiP.jpg",
-    "description": "A young man convicted of murder awaits execution, while a conflicted judge, an aging hangman, and a morally torn jailer confront the weight of justice, guilt, and humanity in the final hours before dawn.",
-    "seoDescription": "Lakshmikanthan Kolai Vazhakku (2026) trailer, cast, genres, rating and release information.",
-    "category": "South Indian",
-    "year": 2026,
-    "duration": "1h 47m",
-    "rating": 0,
-    "genre": [
-      "Crime",
-      "Drama"
-    ],
-    "language": "Tamil",
-    "quality": "HD",
-    "featured": false,
-    "director": "Dayal Padmanabhan",
-    "cast": [
-      "Vetri",
-      "Brigida Saga",
-      "Rangaraj Pandey",
-      "Subramaniam Siva",
-      "Saravanan",
-      "Lollu Sabha Maaran"
-    ],
-    "keywords": [
-      "Lakshmikanthan Kolai Vazhakku",
-      "Lakshmikanthan Kolai Vazhakku 2026",
-      "South Indian",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1640189",
-    "title": "Itlu Kanmani (2026)",
-    "slug": "itlu-kanmani-2026",
-    "videoUrl": "https://youtu.be/4Qsyr-m8MH8",
-    "downloadUrl": "https://www.themoviedb.org/movie/1640189",
-    "poster": "https://image.tmdb.org/t/p/w780/2ZjZyi4TMGnqOSqtHz2ozwIHpyq.jpg",
-    "description": "Itlu Kanmani follows Rohith, a young man who once dreamed of becoming a filmmaker but leaves everything behind to take care of his ailing father. After his father’s sudden death, Rohith discovers something unexpected that changes the way he sees his father  and his own life.  Haunted by unanswered questions and fragments of the past, Rohith begins a journey to understand a story that was never told to him. As hidden memories slowly unfold, he realizes that some dreams never truly disappear they only wait for the right person to continue them.  With the support of Chaitra, a compassionate doctor who becomes his emotional anchor, Rohith must decide whether to keep running from his past or face a truth that could change his future forever.  Itlu Kanmani is an emotional story about love, sacrifice, and a mystery hidden inside a father’s silent life.",
-    "seoDescription": "Itlu Kanmani (2026) trailer, cast, genres, rating and release information.",
-    "category": "South Indian",
-    "year": 2026,
-    "duration": "50m",
-    "rating": 0,
-    "genre": [
-      "Family",
-      "Drama",
-      "Music",
-      "Romance"
-    ],
-    "language": "Telugu",
-    "quality": "HD",
-    "featured": false,
-    "director": "Ramachandran Vishwanathan",
-    "cast": [
-      "Paruchuri Venu",
-      "E. RaviShankar Reddy",
-      "Rashmitha Rao Kommaragiri"
-    ],
-    "keywords": [
-      "Itlu Kanmani",
-      "Itlu Kanmani 2026",
-      "South Indian",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-319938",
-    "title": "KakuseiHunter Omegahorn (2026)",
-    "slug": "kakuseihunter-omegahorn-2026",
-    "videoUrl": "https://youtu.be/bWNZ84d2b_o",
-    "downloadUrl": "https://www.themoviedb.org/tv/319938",
-    "poster": "https://image.tmdb.org/t/p/w780/AwAmCvdNBUuu0TriEmBb3ud6K1q.jpg",
-    "description": "In ancient times, gigantic creatures called \"Mega Horn\" ruled the Earth, but they were sealed away in items called \"Egorgear\" and disappeared. In modern times, humans have emerged using megaphone-like items called \"Kakuseiki\" to draw out the power of the Mega Horn sealed in the Egorgear. They've come to be known as \"Hunters\".\n\nShout the Flame, an explorer well-versed in ancient scripts one day discovers a Kakuseiki and an Egorgear on an altar of an ancient ruin. Confused by the \"Omegahorn\", which is different from the standard version, he sets the Egorgear in place and a giant horned beast named Enkaku appears! Seeing the qualities of a \"king\" in Shout's Ego, Enkaku demands to call himself \"Captain Omegahorn\" and fight alongside him, leading to a battle against a diverse cast of hunters wherever they go.",
-    "seoDescription": "KakuseiHunter Omegahorn (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 1 Episodes",
-    "rating": 10,
-    "genre": [],
-    "language": "Japanese",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Sho Narahara",
-      "Masato Kunigami",
-      "Nanaha Itose",
-      "Maika Miura",
-      "Kenshiro Kato",
-      "Shogo Tazuru"
-    ],
-    "keywords": [
-      "KakuseiHunter Omegahorn",
-      "KakuseiHunter Omegahorn 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-296756",
-    "title": "President Curtis (2026)",
-    "slug": "president-curtis-2026",
-    "videoUrl": "https://youtu.be/KuSbjxrKvUc",
-    "downloadUrl": "https://www.themoviedb.org/tv/296756",
-    "poster": "https://image.tmdb.org/t/p/w780/lc9riW73Oee2pBxi1UrDPgyQjEr.jpg",
-    "description": "Follow the Commander-in-Chief and his eccentric staff as they tackle the kind of crises that Rick Sanchez could never be bothered with - from interdimensional diplomacy to paranormal investigations and unexplained phenomena.",
-    "seoDescription": "President Curtis (2026) trailer, cast, genres, rating and release information.",
-    "category": "Cartoon",
-    "year": 2026,
-    "duration": "Season 1 • 10 Episodes",
-    "rating": 0,
-    "genre": [
-      "Animation",
-      "Comedy"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Dan Harmon, James Siciliano",
-    "cast": [
-      "Keith David",
-      "Stephanie Beatriz",
-      "Jim Rash"
-    ],
-    "keywords": [
-      "President Curtis",
-      "President Curtis 2026",
-      "Cartoon",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1734033",
-    "title": "The Journey of a Star (2026)",
-    "slug": "the-journey-of-a-star-2026",
-    "videoUrl": "https://youtu.be/eQYluUzA4ts",
-    "downloadUrl": "https://www.themoviedb.org/movie/1734033",
-    "poster": "https://image.tmdb.org/t/p/w780/476xrd5mc1ONfvUEeuLHx7IyXfY.jpg",
-    "description": "Andy, a young adult, is housed by his mother and friends in a small town. After a traumatic experience with his church, he is forced to undergo one of the hardest years of his life, and uncover his own individuality while unbeknownst to him, he is being followed by a mysterious figure known only as The Phantom.",
-    "seoDescription": "The Journey of a Star (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "N/A",
-    "rating": 0,
-    "genre": [
-      "Drama"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Nicholas Martinez",
-    "cast": [
-      "Brandon Garcia",
-      "Khara Emmitte",
-      "Diva Sharma",
-      "Jacob Repak",
-      "Matthew Martinez",
-      "Charley Vaughn"
-    ],
-    "keywords": [
-      "The Journey of a Star",
-      "The Journey of a Star 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1732191",
-    "title": "Interstice (2026)",
-    "slug": "interstice-2026",
-    "videoUrl": "https://youtu.be/gvPfIQxAEzw",
-    "downloadUrl": "https://www.themoviedb.org/movie/1732191",
-    "poster": "https://image.tmdb.org/t/p/w780/7Xm0a1hq8SwJvHLq8uLH6y55PkD.jpg",
-    "description": "The narrative follows a lonely, broken young man whose ordinary reality collides with his surreal subconscious after he meets a young woman. As he journeys deeper into his dreams, he is forced to confront the uncomforting realities of modern love.",
-    "seoDescription": "Interstice (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "8m",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Romance",
-      "Horror"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Andrew William Jacobsen",
-    "cast": [
-      "Benjamin Young",
-      "Reese Pucciano"
-    ],
-    "keywords": [
-      "Interstice",
-      "Interstice 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1731449",
-    "title": "Captain Canada (2026)",
-    "slug": "captain-canada-2026",
-    "videoUrl": "https://youtu.be/1dYodm1fE5M",
-    "downloadUrl": "https://www.themoviedb.org/movie/1731449",
-    "poster": "https://image.tmdb.org/t/p/w780/abxgsNz9zFfiqa8fzbZVsx5Suqc.jpg",
-    "description": "Captain Canada must face his greatest threat yet to protect the country he loves.",
-    "seoDescription": "Captain Canada (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "15m",
-    "rating": 0,
-    "genre": [
-      "Action",
-      "Science Fiction",
-      "Comedy"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Chad Grow, Christian Larsen",
-    "cast": [
-      "Christian Larsen",
-      "Chad Grow",
-      "Maddox Linn",
-      "Elijah Barillas",
-      "Maddox Linn",
-      "Nathan Weaver"
-    ],
-    "keywords": [
-      "Captain Canada",
-      "Captain Canada 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1720632",
-    "title": "Light Through The Dust (2026)",
-    "slug": "light-through-the-dust-2026",
-    "videoUrl": "https://youtu.be/xYGXxDfbXE4",
-    "downloadUrl": "https://www.themoviedb.org/movie/1720632",
-    "poster": "https://image.tmdb.org/t/p/w780/aHcAbAd24DwFzu52uk2Sy7W47LV.jpg",
-    "description": "When the 2011 Christchurch earthquake struck, tattoo apprentice Bonnie Singh was inside Southern Ink, the studio where she had finally begun chasing her dream. The tattoo studio collapsed and Bonnie, trapped in the rubble, suffered a broken back, a shattered neck, and a brain injury that would affect her for life.  With the help of fellow tattooist Jak Law, Bonnie is determined to push through physical and neurological limitations to master the craft of tattooing that once seemed out of reach. A story of resilience, reinvention, and the invisible scars we carry, this is not just a film about tattoos but instead is about what it means to rebuild a life and the importance of having a dream when everything has fallen away.",
-    "seoDescription": "Light Through The Dust (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 20m",
-    "rating": 0,
-    "genre": [
-      "Documentary"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Amber Beaton",
-    "cast": [
-      "Laylita \"Bonnie\" Singh",
-      "Jak Law"
-    ],
-    "keywords": [
-      "Light Through The Dust",
-      "Light Through The Dust 2026",
       "Hollywood",
       "official trailer"
     ]
