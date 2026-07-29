@@ -291,6 +291,39 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1736336",
+    "title": "CAPTURED (2026)",
+    "slug": "captured-2026",
+    "videoUrl": "https://youtu.be/pruioSUjylI",
+    "downloadUrl": "https://www.themoviedb.org/movie/1736336",
+    "poster": "https://image.tmdb.org/t/p/w780/zDDgKgQCuxQqDPUczAKL2DTzhYb.jpg",
+    "description": "When a Lilly is home alone, she begins to receive messages from an unknown number, but strangers never know this much...",
+    "seoDescription": "CAPTURED (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "4m",
+    "rating": 0,
+    "genre": [
+      "Horror"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Bailey Pendleton",
+    "cast": [
+      "Katarina Bender",
+      "Emma Pearson",
+      "Ava Bender",
+      "Owen Armstead"
+    ],
+    "keywords": [
+      "CAPTURED",
+      "CAPTURED 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1732121",
     "title": "Decomposition (Look At Me) Hyperfixation (2026)",
     "slug": "decomposition-look-at-me-hyperfixation-2026",
@@ -643,6 +676,40 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "I'm in Love with a Stripper",
       "I'm in Love with a Stripper 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1737966",
+    "title": "In Search of My Moehau (2026)",
+    "slug": "in-search-of-my-moehau-2026",
+    "videoUrl": "https://youtu.be/-gMHb1kAQy4",
+    "downloadUrl": "https://www.themoviedb.org/movie/1737966",
+    "poster": "https://image.tmdb.org/t/p/w780/jjIqCfLQq78eJthhuG9s5O7ilrF.jpg",
+    "description": "Morris Fubbins ventures deep into the New Zealand bush in search of his missing father, who he believes was kidnapped by a mythical creature.",
+    "seoDescription": "In Search of My Moehau (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 26m",
+    "rating": 0,
+    "genre": [
+      "Comedy",
+      "Horror",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Kieran Charnock, Jonathan Watt",
+    "cast": [
+      "Rama Buisson",
+      "Paul Paice",
+      "Fenton Lewis"
+    ],
+    "keywords": [
+      "In Search of My Moehau",
+      "In Search of My Moehau 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -2467,6 +2534,36 @@ export const tmdbSouthIndianVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1736042",
+    "title": "Objection My Lord (2026)",
+    "slug": "objection-my-lord-2026",
+    "videoUrl": "https://youtu.be/Fhr9JdlLRwY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1736042",
+    "poster": "https://image.tmdb.org/t/p/w780/cCUov0GoLKmiTbJHniX6l3SRXiC.jpg",
+    "description": "A father burns himself alive outside the Hyderabad High Court, demanding justice for his missing daughter, Sameera. When the system moves on and forgets, one question remains.Did Sameera ever exist? A forgotten lawyer, Parshuram, is forced out of self imposed exile to fight for the answer.",
+    "seoDescription": "Objection My Lord (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Drama"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Srikanth",
+      "Mukesh Rishi"
+    ],
+    "keywords": [
+      "Objection My Lord",
+      "Objection My Lord 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1725471",
     "title": "One Last Game (2026)",
     "slug": "one-last-game-2026",
@@ -2754,6 +2851,44 @@ export const tmdbSouthIndianVideos: Video[] = [
 
 export const tmdbWebSeriesVideos: Video[] = [
   {
+    "id": "tmdb-tv-294095",
+    "title": "A Bona Fide Killer (2026)",
+    "slug": "a-bona-fide-killer-2026",
+    "videoUrl": "https://youtu.be/bqBRG54y3X0",
+    "downloadUrl": "https://www.themoviedb.org/tv/294095",
+    "poster": "https://image.tmdb.org/t/p/w780/w0VgpauAbEWQXJtD6pWWJPuZOKE.jpg",
+    "description": "A seemingly ordinary working mother secretly lives as a legendary sniper who delivers justice where the law fails. After returning from a three-year hiatus, she must balance protecting her family with eliminating dangerous criminals, all while a determined journalist and a relentless detective close in on her hidden identity.",
+    "seoDescription": "A Bona Fide Killer (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 14 Episodes",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Action & Adventure",
+      "Mystery",
+      "Crime"
+    ],
+    "language": "Korean",
+    "quality": "HD",
+    "featured": false,
+    "director": "Kim Eun-hee, YOON",
+    "cast": [
+      "Gong Hyo-jin",
+      "Jung Jun-won",
+      "Lee Sang-yi",
+      "Sung Dong-il",
+      "Moo Jin-sung",
+      "Lee Eun-saem"
+    ],
+    "keywords": [
+      "A Bona Fide Killer",
+      "A Bona Fide Killer 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-tv-328402",
     "title": "Adarsh Baal Vidyalaya (2026)",
     "slug": "adarsh-baal-vidyalaya-2026",
@@ -2814,6 +2949,31 @@ export const tmdbWebSeriesVideos: Video[] = [
     "keywords": [
       "Captain Isfandyar Shaheed",
       "Captain Isfandyar Shaheed 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-328722",
+    "title": "Dar E Nijaat (2026)",
+    "slug": "dar-e-nijaat-2026",
+    "videoUrl": "https://youtu.be/oBu20gLPMZs",
+    "downloadUrl": "https://www.themoviedb.org/tv/328722",
+    "poster": "https://image.tmdb.org/t/p/w780/wyoODxEuzQQtfnPAV2Lb5nfWRrY.jpg",
+    "description": "The moment everyone's been waiting for is finally here! A new chapter. A fresh pairing. A story destined to win hearts.",
+    "seoDescription": "Dar E Nijaat (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 1 Episodes",
+    "rating": 0,
+    "genre": [],
+    "language": "Urdu",
+    "quality": "HD",
+    "featured": false,
+    "cast": [],
+    "keywords": [
+      "Dar E Nijaat",
+      "Dar E Nijaat 2026",
       "Web Series",
       "official trailer"
     ]
@@ -2882,6 +3042,42 @@ export const tmdbWebSeriesVideos: Video[] = [
     "keywords": [
       "Drug War: A Conspiracy of Silence",
       "Drug War: A Conspiracy of Silence 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-8840",
+    "title": "Fightland (2026)",
+    "slug": "fightland-2026",
+    "videoUrl": "https://youtu.be/nWn_r_1-OHM",
+    "downloadUrl": "https://www.themoviedb.org/tv/8840",
+    "poster": "https://image.tmdb.org/t/p/w780/qRlOEIiwkfLy6ERRMbyQNGQQ6Lc.jpg",
+    "description": "A disgraced, formerly incarcerated boxing champion returns to London to seek vengeance against the crime syndicate he thinks betrayed him.",
+    "seoDescription": "Fightland (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 2 Episodes",
+    "rating": 9,
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Daniel Fajemisin-Duncan, Marlon Smith",
+    "cast": [
+      "Howard Charles",
+      "Nicholas Pinnock",
+      "Deborah Ayorinde",
+      "Charles Babalola",
+      "Anita-Joy Uwajeh",
+      "Tahirah Sharif"
+    ],
+    "keywords": [
+      "Fightland",
+      "Fightland 2026",
       "Web Series",
       "official trailer"
     ]
@@ -3797,6 +3993,202 @@ export const tmdbCartoonVideos: Video[] = [
 
 export const tmdbRecentlyAddedVideos: Video[] = [
   {
+    "id": "tmdb-movie-1737966",
+    "title": "In Search of My Moehau (2026)",
+    "slug": "in-search-of-my-moehau-2026",
+    "videoUrl": "https://youtu.be/-gMHb1kAQy4",
+    "downloadUrl": "https://www.themoviedb.org/movie/1737966",
+    "poster": "https://image.tmdb.org/t/p/w780/jjIqCfLQq78eJthhuG9s5O7ilrF.jpg",
+    "description": "Morris Fubbins ventures deep into the New Zealand bush in search of his missing father, who he believes was kidnapped by a mythical creature.",
+    "seoDescription": "In Search of My Moehau (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 26m",
+    "rating": 0,
+    "genre": [
+      "Comedy",
+      "Horror",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Kieran Charnock, Jonathan Watt",
+    "cast": [
+      "Rama Buisson",
+      "Paul Paice",
+      "Fenton Lewis"
+    ],
+    "keywords": [
+      "In Search of My Moehau",
+      "In Search of My Moehau 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1736336",
+    "title": "CAPTURED (2026)",
+    "slug": "captured-2026",
+    "videoUrl": "https://youtu.be/pruioSUjylI",
+    "downloadUrl": "https://www.themoviedb.org/movie/1736336",
+    "poster": "https://image.tmdb.org/t/p/w780/zDDgKgQCuxQqDPUczAKL2DTzhYb.jpg",
+    "description": "When a Lilly is home alone, she begins to receive messages from an unknown number, but strangers never know this much...",
+    "seoDescription": "CAPTURED (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "4m",
+    "rating": 0,
+    "genre": [
+      "Horror"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Bailey Pendleton",
+    "cast": [
+      "Katarina Bender",
+      "Emma Pearson",
+      "Ava Bender",
+      "Owen Armstead"
+    ],
+    "keywords": [
+      "CAPTURED",
+      "CAPTURED 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1736042",
+    "title": "Objection My Lord (2026)",
+    "slug": "objection-my-lord-2026",
+    "videoUrl": "https://youtu.be/Fhr9JdlLRwY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1736042",
+    "poster": "https://image.tmdb.org/t/p/w780/cCUov0GoLKmiTbJHniX6l3SRXiC.jpg",
+    "description": "A father burns himself alive outside the Hyderabad High Court, demanding justice for his missing daughter, Sameera. When the system moves on and forgets, one question remains.Did Sameera ever exist? A forgotten lawyer, Parshuram, is forced out of self imposed exile to fight for the answer.",
+    "seoDescription": "Objection My Lord (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Drama"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Srikanth",
+      "Mukesh Rishi"
+    ],
+    "keywords": [
+      "Objection My Lord",
+      "Objection My Lord 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-328722",
+    "title": "Dar E Nijaat (2026)",
+    "slug": "dar-e-nijaat-2026",
+    "videoUrl": "https://youtu.be/oBu20gLPMZs",
+    "downloadUrl": "https://www.themoviedb.org/tv/328722",
+    "poster": "https://image.tmdb.org/t/p/w780/wyoODxEuzQQtfnPAV2Lb5nfWRrY.jpg",
+    "description": "The moment everyone's been waiting for is finally here! A new chapter. A fresh pairing. A story destined to win hearts.",
+    "seoDescription": "Dar E Nijaat (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 1 Episodes",
+    "rating": 0,
+    "genre": [],
+    "language": "Urdu",
+    "quality": "HD",
+    "featured": false,
+    "cast": [],
+    "keywords": [
+      "Dar E Nijaat",
+      "Dar E Nijaat 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-294095",
+    "title": "A Bona Fide Killer (2026)",
+    "slug": "a-bona-fide-killer-2026",
+    "videoUrl": "https://youtu.be/bqBRG54y3X0",
+    "downloadUrl": "https://www.themoviedb.org/tv/294095",
+    "poster": "https://image.tmdb.org/t/p/w780/w0VgpauAbEWQXJtD6pWWJPuZOKE.jpg",
+    "description": "A seemingly ordinary working mother secretly lives as a legendary sniper who delivers justice where the law fails. After returning from a three-year hiatus, she must balance protecting her family with eliminating dangerous criminals, all while a determined journalist and a relentless detective close in on her hidden identity.",
+    "seoDescription": "A Bona Fide Killer (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 14 Episodes",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Action & Adventure",
+      "Mystery",
+      "Crime"
+    ],
+    "language": "Korean",
+    "quality": "HD",
+    "featured": false,
+    "director": "Kim Eun-hee, YOON",
+    "cast": [
+      "Gong Hyo-jin",
+      "Jung Jun-won",
+      "Lee Sang-yi",
+      "Sung Dong-il",
+      "Moo Jin-sung",
+      "Lee Eun-saem"
+    ],
+    "keywords": [
+      "A Bona Fide Killer",
+      "A Bona Fide Killer 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-8840",
+    "title": "Fightland (2026)",
+    "slug": "fightland-2026",
+    "videoUrl": "https://youtu.be/nWn_r_1-OHM",
+    "downloadUrl": "https://www.themoviedb.org/tv/8840",
+    "poster": "https://image.tmdb.org/t/p/w780/qRlOEIiwkfLy6ERRMbyQNGQQ6Lc.jpg",
+    "description": "A disgraced, formerly incarcerated boxing champion returns to London to seek vengeance against the crime syndicate he thinks betrayed him.",
+    "seoDescription": "Fightland (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 2 Episodes",
+    "rating": 9,
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Daniel Fajemisin-Duncan, Marlon Smith",
+    "cast": [
+      "Howard Charles",
+      "Nicholas Pinnock",
+      "Deborah Ayorinde",
+      "Charles Babalola",
+      "Anita-Joy Uwajeh",
+      "Tahirah Sharif"
+    ],
+    "keywords": [
+      "Fightland",
+      "Fightland 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1722016",
     "title": "Screen of the Dead (2026)",
     "slug": "screen-of-the-dead-2026",
@@ -4621,210 +5013,6 @@ export const tmdbRecentlyAddedVideos: Video[] = [
       "Chalana Chitram",
       "Chalana Chitram 2026",
       "South Indian",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1710392",
-    "title": "Gun Pilots (2026)",
-    "slug": "gun-pilots-2026",
-    "videoUrl": "https://youtu.be/RxhM4Sf1rjk",
-    "downloadUrl": "https://www.themoviedb.org/movie/1710392",
-    "poster": "https://image.tmdb.org/t/p/w780/eTHguP3uR8ZZ1IriDGXneGV967s.jpg",
-    "description": "Gun Pilots takes a compelling insider’s view into the rigorous world of U.S. Army Apache flight training. It follows student aviators as they confront the formidable challenge of mastering the AH-64 Apache—the most lethal attack helicopter ever built!",
-    "seoDescription": "Gun Pilots (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "48m",
-    "rating": 0,
-    "genre": [
-      "Documentary",
-      "War"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Kenn Christenson",
-    "cast": [
-      "Clinton Cody",
-      "Brian Haas",
-      "Drew Barcley",
-      "Chaney Lieberman"
-    ],
-    "keywords": [
-      "Gun Pilots",
-      "Gun Pilots 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1384512",
-    "title": "Tera Yaar Hoon Main (2026)",
-    "slug": "tera-yaar-hoon-main-2026",
-    "videoUrl": "https://youtu.be/VEzeNwKBqMo",
-    "downloadUrl": "https://www.themoviedb.org/movie/1384512",
-    "poster": "https://image.tmdb.org/t/p/w780/cFLVe7dfz7m3AT3egd97As3oC0Y.jpg",
-    "description": "Sanju moves from Nagpur to Mumbai for work and stays with his late mother's friend Viswanath. He falls for Viswanath's daughter Anu, but her marriage is arranged with another man, leaving Viswanath caught between friendship and fatherhood.",
-    "seoDescription": "Tera Yaar Hoon Main (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "2h 24m",
-    "rating": 0,
-    "genre": [
-      "Action",
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Milap Zaveri",
-    "cast": [
-      "Aman Kumar",
-      "Aakansha Sharma",
-      "Paresh Rawal",
-      "Neha Khan",
-      "Johny Lever",
-      "Supriya Pilgaonkar"
-    ],
-    "keywords": [
-      "Tera Yaar Hoon Main",
-      "Tera Yaar Hoon Main 2026",
-      "Bollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-305830",
-    "title": "Someone, Someday (2026)",
-    "slug": "someone-someday-2026",
-    "videoUrl": "https://youtu.be/1kWMebyp2-8",
-    "downloadUrl": "https://www.themoviedb.org/tv/305830",
-    "poster": "https://image.tmdb.org/t/p/w780/a0w1k9cTa3273nhwrFaUhy6YkLR.jpg",
-    "description": "When the CEO of a dating app unknowingly befriends someone out for revenge, old wounds resurface—threatening her company, family, friendships, love life, and even her dream of finding “someone, someday.”",
-    "seoDescription": "Someone, Someday (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 1 Episodes",
-    "rating": 0,
-    "genre": [
-      "Mystery",
-      "Drama"
-    ],
-    "language": "Filipino",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Kathryn Bernardo",
-      "James Reid",
-      "Maja Salvador",
-      "Dimples Romana",
-      "Rowell Santiago",
-      "Rita Avila"
-    ],
-    "keywords": [
-      "Someone, Someday",
-      "Someone, Someday 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-303652",
-    "title": "Modern Marvels: WWII (2026)",
-    "slug": "modern-marvels-wwii-2026",
-    "videoUrl": "https://youtu.be/HVF2surYK1o",
-    "downloadUrl": "https://www.themoviedb.org/tv/303652",
-    "poster": "https://image.tmdb.org/t/p/w780/ktzrFqTYS7rb8EK1MyWo01h2Yt9.jpg",
-    "description": "Explore the greatest machines, most impactful weapons, and groundbreaking innovations of WWII, shining a light on the engineering and technological advances that shaped the course of the conflict and continue to influence our world today.",
-    "seoDescription": "Modern Marvels: WWII (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 3 Episodes",
-    "rating": 0,
-    "genre": [
-      "Documentary"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Moose Warywoda"
-    ],
-    "keywords": [
-      "Modern Marvels: WWII",
-      "Modern Marvels: WWII 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-287238",
-    "title": "Furious (2026)",
-    "slug": "furious-2026",
-    "videoUrl": "https://youtu.be/UBSqPDxmNZs",
-    "downloadUrl": "https://www.themoviedb.org/tv/287238",
-    "poster": "https://image.tmdb.org/t/p/w780/qcTNUGkxpaFycXkItD3Jpn0Mcox.jpg",
-    "description": "FBI agent Alice Black is on the hunt for a mysterious and calculating female serial killer. Both walk their own paths toward justice, and as their lives start to intertwine, the line between right and wrong begins to blur.",
-    "seoDescription": "Furious (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 8 Episodes",
-    "rating": 1,
-    "genre": [
-      "Drama",
-      "Crime"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Elizabeth Meriwether",
-    "cast": [
-      "Emmy Rossum",
-      "Lola Petticrew",
-      "Scoot McNairy",
-      "Quincy Tyler Bernstine"
-    ],
-    "keywords": [
-      "Furious",
-      "Furious 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1725554",
-    "title": "I'm in Love with a Stripper (2026)",
-    "slug": "i-m-in-love-with-a-stripper-2026",
-    "videoUrl": "https://youtu.be/i502QcCtV_E",
-    "downloadUrl": "https://www.themoviedb.org/movie/1725554",
-    "poster": "https://image.tmdb.org/t/p/w780/iECJgxCbXr9wIhfqP4FTZO05F9m.jpg",
-    "description": "Alone on Christmas Eve, Michael makes a last-ditch effort to win back his ex-girlfriend. Although repelled by his sudden reappearance, the promise of $1000 buys ten minutes of Honey’s time as she reluctantly sits through his declaration of love. Michael’s dreams of a heartfelt reunion are shattered when he is promptly rejected by a stripper who refuses to participate in his fantasy, challenging toxic romantic comedy tropes normalized through contemporary media. Based on her semi-autobiographical stage play, Never Walk Alone, Julie Phan offers a desensationalized interpretation of sex work through an intimate representation of the person underneath the projection.",
-    "seoDescription": "I'm in Love with a Stripper (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "14m",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Comedy"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Julie Phan",
-    "cast": [
-      "Justin Eddy",
-      "Julie Phan",
-      "Anthony Parise",
-      "Sierra Haynes"
-    ],
-    "keywords": [
-      "I'm in Love with a Stripper",
-      "I'm in Love with a Stripper 2026",
-      "Hollywood",
       "official trailer"
     ]
   }
