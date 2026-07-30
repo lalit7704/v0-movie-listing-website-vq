@@ -784,6 +784,38 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1729773",
+    "title": "Killer Clown (2026)",
+    "slug": "killer-clown-2026",
+    "videoUrl": "https://youtu.be/Krtz_9ubDo0",
+    "downloadUrl": "https://www.themoviedb.org/movie/1729773",
+    "poster": "https://image.tmdb.org/t/p/w780/dASgi49HhywEKBstb9Fh83EIXpF.jpg",
+    "description": "Decades after witnessing her mother’s brutal murder at the hands of the “Killer Clown,” Elizabeth Helmer (Sara Paxton) remains haunted by the crime that shattered her childhood. When she begins investigating the long-unsolved cold case, Elizabeth becomes the target of a terrifying copycat stalker, forcing her to confront painful memories she has spent a lifetime trying to escape. As she searches for answers alongside her father Reed (David Cubitt) and husband Dan (Hamza Haq), Elizabeth uncovers a tangled web of family betrayal and long-buried secrets.  As she closes in on the truth, Elizabeth must separate fact from manipulation and fight to survive before history repeats itself.",
+    "seoDescription": "Killer Clown (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Thriller"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Annie Bradley",
+    "cast": [
+      "Sara Paxton",
+      "David Cubitt",
+      "Hamza Haq"
+    ],
+    "keywords": [
+      "Killer Clown",
+      "Killer Clown 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1691931",
     "title": "LAKESVILLE MOVIE (2026)",
     "slug": "lakesville-movie-2026",
@@ -1476,6 +1508,42 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1722441",
+    "title": "Summoned (2026)",
+    "slug": "summoned-2026",
+    "videoUrl": "https://youtu.be/z4mNJt4UYLQ",
+    "downloadUrl": "https://www.themoviedb.org/movie/1722441",
+    "poster": "https://image.tmdb.org/t/p/w780/rdkdUeD5Ndkyuh2nHkEiriCawc2.jpg",
+    "description": "Four friends (after a night of partying) decide to summon a demon. Now it's a race against the clock as Demon tries to make it on time.",
+    "seoDescription": "Summoned (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "14m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Joshua Jossey",
+    "cast": [
+      "Gantt Moore",
+      "Kari Bratcher",
+      "Calen Henry",
+      "Art Walthall",
+      "Christian Youngblood",
+      "Joshua Jossey"
+    ],
+    "keywords": [
+      "Summoned",
+      "Summoned 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1481343",
     "title": "The Devil's Mouth (2026)",
     "slug": "the-devil-s-mouth-2026",
@@ -1646,6 +1714,43 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "To my sisters",
       "To my sisters 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1738126",
+    "title": "Under the Western Skies (2026)",
+    "slug": "under-the-western-skies-2026",
+    "videoUrl": "https://youtu.be/HUFxhtRb9tM",
+    "downloadUrl": "https://www.themoviedb.org/movie/1738126",
+    "poster": "https://image.tmdb.org/t/p/w780/d1iSO6kUlTrlJS0yh59pX9DbrGO.jpg",
+    "description": "When a tough female rancher faces losing her family's land, she reluctantly teams up with her new city-boy neighbor, discovering that innovation isn't a betrayal of her roots, and that romance might just come from this wannabe cowboy.",
+    "seoDescription": "Under the Western Skies (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Western",
+      "Music",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Natalie Aramendia",
+    "cast": [
+      "Kristyn Harris",
+      "Dorian Michael O'Brian",
+      "Jan Moore",
+      "Tim Moore",
+      "Travis Layfield",
+      "Hilary Griffin"
+    ],
+    "keywords": [
+      "Under the Western Skies",
+      "Under the Western Skies 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -2100,6 +2205,42 @@ export const tmdbBollywoodVideos: Video[] = [
     "keywords": [
       "Tera Yaar Hoon Main",
       "Tera Yaar Hoon Main 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1733936",
+    "title": "The Abeyance (2026)",
+    "slug": "the-abeyance-2026",
+    "videoUrl": "https://youtu.be/filffYCudz8",
+    "downloadUrl": "https://www.themoviedb.org/movie/1733936",
+    "poster": "https://image.tmdb.org/t/p/w780/ixBf9Y25KsWIEz9EJeBnTajbLxr.jpg",
+    "description": "A grieving young woman struggling to move on after a painful loss finds herself drawn into an unexpected connection that forces both her and the man beside her to confront what it truly means to hold on, let go, and heal.",
+    "seoDescription": "The Abeyance (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "16m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Aadhithya Sankara Mahadevan",
+    "cast": [
+      "Rijuta Sharma",
+      "Rishu Raj",
+      "R Grushnesh",
+      "Manya Sondhi",
+      "Sai Shashank Singu",
+      "Madhusnigdha Dash"
+    ],
+    "keywords": [
+      "The Abeyance",
+      "The Abeyance 2026",
       "Bollywood",
       "official trailer"
     ]
@@ -3609,6 +3750,40 @@ export const tmdbWebSeriesVideos: Video[] = [
       "Web Series",
       "official trailer"
     ]
+  },
+  {
+    "id": "tmdb-tv-325110",
+    "title": "Your Sky: Hare Nochi Koi (2026)",
+    "slug": "your-sky-hare-nochi-koi-2026",
+    "videoUrl": "https://youtu.be/isv2QC1E_3I",
+    "downloadUrl": "https://www.themoviedb.org/tv/325110",
+    "poster": "https://image.tmdb.org/t/p/w780/gIVSQre5F2qJ5Bo3rnDiBgLO8oV.jpg",
+    "description": "To dodge an aggressive upperclassman, Hinata enters a fake relationship with Sora, a cold senior. Can this chaotic lie blossom into something real?",
+    "seoDescription": "Your Sky: Hare Nochi Koi (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 9 Episodes",
+    "rating": 0,
+    "genre": [
+      "Drama"
+    ],
+    "language": "Japanese",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Ayuta Fukuda",
+      "Isshin Aihara",
+      "Totaro",
+      "Toi Nakabayashi",
+      "Keigo Nakayama",
+      "Park Min-seok"
+    ],
+    "keywords": [
+      "Your Sky: Hare Nochi Koi",
+      "Your Sky: Hare Nochi Koi 2026",
+      "Web Series",
+      "official trailer"
+    ]
   }
 ];
 
@@ -3992,6 +4167,181 @@ export const tmdbCartoonVideos: Video[] = [
 ];
 
 export const tmdbRecentlyAddedVideos: Video[] = [
+  {
+    "id": "tmdb-movie-1738126",
+    "title": "Under the Western Skies (2026)",
+    "slug": "under-the-western-skies-2026",
+    "videoUrl": "https://youtu.be/HUFxhtRb9tM",
+    "downloadUrl": "https://www.themoviedb.org/movie/1738126",
+    "poster": "https://image.tmdb.org/t/p/w780/d1iSO6kUlTrlJS0yh59pX9DbrGO.jpg",
+    "description": "When a tough female rancher faces losing her family's land, she reluctantly teams up with her new city-boy neighbor, discovering that innovation isn't a betrayal of her roots, and that romance might just come from this wannabe cowboy.",
+    "seoDescription": "Under the Western Skies (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Western",
+      "Music",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Natalie Aramendia",
+    "cast": [
+      "Kristyn Harris",
+      "Dorian Michael O'Brian",
+      "Jan Moore",
+      "Tim Moore",
+      "Travis Layfield",
+      "Hilary Griffin"
+    ],
+    "keywords": [
+      "Under the Western Skies",
+      "Under the Western Skies 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1729773",
+    "title": "Killer Clown (2026)",
+    "slug": "killer-clown-2026",
+    "videoUrl": "https://youtu.be/Krtz_9ubDo0",
+    "downloadUrl": "https://www.themoviedb.org/movie/1729773",
+    "poster": "https://image.tmdb.org/t/p/w780/dASgi49HhywEKBstb9Fh83EIXpF.jpg",
+    "description": "Decades after witnessing her mother’s brutal murder at the hands of the “Killer Clown,” Elizabeth Helmer (Sara Paxton) remains haunted by the crime that shattered her childhood. When she begins investigating the long-unsolved cold case, Elizabeth becomes the target of a terrifying copycat stalker, forcing her to confront painful memories she has spent a lifetime trying to escape. As she searches for answers alongside her father Reed (David Cubitt) and husband Dan (Hamza Haq), Elizabeth uncovers a tangled web of family betrayal and long-buried secrets.  As she closes in on the truth, Elizabeth must separate fact from manipulation and fight to survive before history repeats itself.",
+    "seoDescription": "Killer Clown (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "N/A",
+    "rating": 0,
+    "genre": [
+      "Thriller"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Annie Bradley",
+    "cast": [
+      "Sara Paxton",
+      "David Cubitt",
+      "Hamza Haq"
+    ],
+    "keywords": [
+      "Killer Clown",
+      "Killer Clown 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1722441",
+    "title": "Summoned (2026)",
+    "slug": "summoned-2026",
+    "videoUrl": "https://youtu.be/z4mNJt4UYLQ",
+    "downloadUrl": "https://www.themoviedb.org/movie/1722441",
+    "poster": "https://image.tmdb.org/t/p/w780/rdkdUeD5Ndkyuh2nHkEiriCawc2.jpg",
+    "description": "Four friends (after a night of partying) decide to summon a demon. Now it's a race against the clock as Demon tries to make it on time.",
+    "seoDescription": "Summoned (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "14m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Joshua Jossey",
+    "cast": [
+      "Gantt Moore",
+      "Kari Bratcher",
+      "Calen Henry",
+      "Art Walthall",
+      "Christian Youngblood",
+      "Joshua Jossey"
+    ],
+    "keywords": [
+      "Summoned",
+      "Summoned 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1733936",
+    "title": "The Abeyance (2026)",
+    "slug": "the-abeyance-2026",
+    "videoUrl": "https://youtu.be/filffYCudz8",
+    "downloadUrl": "https://www.themoviedb.org/movie/1733936",
+    "poster": "https://image.tmdb.org/t/p/w780/ixBf9Y25KsWIEz9EJeBnTajbLxr.jpg",
+    "description": "A grieving young woman struggling to move on after a painful loss finds herself drawn into an unexpected connection that forces both her and the man beside her to confront what it truly means to hold on, let go, and heal.",
+    "seoDescription": "The Abeyance (2026) trailer, cast, genres, rating and release information.",
+    "category": "Bollywood",
+    "year": 2026,
+    "duration": "16m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "language": "Hindi",
+    "quality": "HD",
+    "featured": false,
+    "director": "Aadhithya Sankara Mahadevan",
+    "cast": [
+      "Rijuta Sharma",
+      "Rishu Raj",
+      "R Grushnesh",
+      "Manya Sondhi",
+      "Sai Shashank Singu",
+      "Madhusnigdha Dash"
+    ],
+    "keywords": [
+      "The Abeyance",
+      "The Abeyance 2026",
+      "Bollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-325110",
+    "title": "Your Sky: Hare Nochi Koi (2026)",
+    "slug": "your-sky-hare-nochi-koi-2026",
+    "videoUrl": "https://youtu.be/isv2QC1E_3I",
+    "downloadUrl": "https://www.themoviedb.org/tv/325110",
+    "poster": "https://image.tmdb.org/t/p/w780/gIVSQre5F2qJ5Bo3rnDiBgLO8oV.jpg",
+    "description": "To dodge an aggressive upperclassman, Hinata enters a fake relationship with Sora, a cold senior. Can this chaotic lie blossom into something real?",
+    "seoDescription": "Your Sky: Hare Nochi Koi (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 9 Episodes",
+    "rating": 0,
+    "genre": [
+      "Drama"
+    ],
+    "language": "Japanese",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Ayuta Fukuda",
+      "Isshin Aihara",
+      "Totaro",
+      "Toi Nakabayashi",
+      "Keigo Nakayama",
+      "Park Min-seok"
+    ],
+    "keywords": [
+      "Your Sky: Hare Nochi Koi",
+      "Your Sky: Hare Nochi Koi 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
   {
     "id": "tmdb-movie-1737966",
     "title": "In Search of My Moehau (2026)",
@@ -4842,177 +5192,6 @@ export const tmdbRecentlyAddedVideos: Video[] = [
       "House of Stassi",
       "House of Stassi 2026",
       "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1723570",
-    "title": "Mary Beth Barone: Galaxy Brain (2026)",
-    "slug": "mary-beth-barone-galaxy-brain-2026",
-    "videoUrl": "https://youtu.be/LtK3kHAR63E",
-    "downloadUrl": "https://www.themoviedb.org/movie/1723570",
-    "poster": "https://image.tmdb.org/t/p/w780/4xtEvgdpA2tkG9j27WqeO1JsoZ2.jpg",
-    "description": "Is an ex-best friend the worst ex? Can dating apps save democracy? What's with NYPD merch? Mary Beth Barone has all the answers in this witty special.",
-    "seoDescription": "Mary Beth Barone: Galaxy Brain (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "N/A",
-    "rating": 0,
-    "genre": [
-      "Comedy"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Ky Newman",
-    "cast": [
-      "Mary Beth Barone"
-    ],
-    "keywords": [
-      "Mary Beth Barone: Galaxy Brain",
-      "Mary Beth Barone: Galaxy Brain 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1715914",
-    "title": "Wham! 10 Days in China (2026)",
-    "slug": "wham-10-days-in-china-2026",
-    "videoUrl": "https://youtu.be/P7oAaJqqv8w",
-    "downloadUrl": "https://www.themoviedb.org/movie/1715914",
-    "poster": "https://image.tmdb.org/t/p/w780/fx8ErQNNf1YlvYJAOhwKM4NS3NN.jpg",
-    "description": "In 1985, Wham! were the first Western pop group to perform in communist China. George Michael and Andrew Ridgeley’s two concerts in Beijing and Guangzhou introduced live Western pop to Chinese audiences and marked a turning point for the band. For Wham!, the tour was more than music; it was a bold move to capture American attention and launch them into global superstardom, and it worked.",
-    "seoDescription": "Wham! 10 Days in China (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 30m",
-    "rating": 0,
-    "genre": [
-      "Music",
-      "Documentary"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Mike Christie",
-    "cast": [
-      "George Michael",
-      "Andrew Ridgeley"
-    ],
-    "keywords": [
-      "Wham! 10 Days in China",
-      "Wham! 10 Days in China 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1593354",
-    "title": "Man Chicken (2026)",
-    "slug": "man-chicken-2026",
-    "videoUrl": "https://youtu.be/X3knUAQJW-c",
-    "downloadUrl": "https://www.themoviedb.org/movie/1593354",
-    "poster": "https://image.tmdb.org/t/p/w780/mLxbA95bi62akWX3l9wdeFhBq8A.jpg",
-    "description": "In this found footage comedy, two brothers go on an adventure to find the urban legend known as \"Man Chicken.\" The trip takes a turn for the worst, as the truth begins to reveal itself, the deeper they travel into the forest.",
-    "seoDescription": "Man Chicken (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 16m",
-    "rating": 0,
-    "genre": [
-      "Horror",
-      "Comedy"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Jesse Heisel",
-    "cast": [
-      "Conor Ashe",
-      "Ryan Ashe",
-      "Heather Harlow",
-      "Aaron Heisel",
-      "Jesse Heisel",
-      "Sasha Benton"
-    ],
-    "keywords": [
-      "Man Chicken",
-      "Man Chicken 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-969681",
-    "title": "Spider-Man: Brand New Day (2026)",
-    "slug": "spider-man-brand-new-day-2026",
-    "videoUrl": "https://youtu.be/P3uI5sLosKU",
-    "downloadUrl": "https://www.themoviedb.org/movie/969681",
-    "poster": "https://image.tmdb.org/t/p/w780/6Q21yptoOCUq4ErwVncesLPVplb.jpg",
-    "description": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-    "seoDescription": "Spider-Man: Brand New Day (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "2h 25m",
-    "rating": 9,
-    "genre": [
-      "Science Fiction",
-      "Action",
-      "Adventure"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Destin Daniel Cretton",
-    "cast": [
-      "Tom Holland",
-      "Zendaya",
-      "Sadie Sink",
-      "Jacob Batalon",
-      "Jon Bernthal",
-      "Tramell Tillman"
-    ],
-    "keywords": [
-      "Spider-Man: Brand New Day",
-      "Spider-Man: Brand New Day 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1737567",
-    "title": "Chalana Chitram (2026)",
-    "slug": "chalana-chitram-2026",
-    "videoUrl": "https://youtu.be/vI38-hESHy0",
-    "downloadUrl": "https://www.themoviedb.org/movie/1737567",
-    "poster": "https://image.tmdb.org/t/p/w780/8i7WJHk0FclrqZwAhZD8bsFqiqg.jpg",
-    "description": "A final-year engineering student, who has dreamed of becoming a filmmaker since his first year, decides to make his debut short film before graduating. After years of setbacks, failed attempts, and missed opportunities, he finally gathers a team to bring his vision to life. As they face countless challenges throughout the filmmaking process, every obstacle tests their passion, friendship, and determination. Ultimately, the journey of making the film becomes the real story, proving that dreams are achieved through perseverance rather than perfection.",
-    "seoDescription": "Chalana Chitram (2026) trailer, cast, genres, rating and release information.",
-    "category": "South Indian",
-    "year": 2026,
-    "duration": "33m",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Comedy"
-    ],
-    "language": "Telugu",
-    "quality": "HD",
-    "featured": false,
-    "director": "Tony Theodus Talakala, Durga Prasad",
-    "cast": [
-      "Umesh Chandra",
-      "Karthik Kumar",
-      "Shashank",
-      "Asritha",
-      "Sridevi",
-      "Bhuvan"
-    ],
-    "keywords": [
-      "Chalana Chitram",
-      "Chalana Chitram 2026",
-      "South Indian",
       "official trailer"
     ]
   }
