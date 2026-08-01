@@ -219,6 +219,43 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1652369",
+    "title": "Blood Mandate (2026)",
+    "slug": "blood-mandate-2026",
+    "videoUrl": "https://youtu.be/JXDOdqbO1sA",
+    "downloadUrl": "https://www.themoviedb.org/movie/1652369",
+    "poster": "https://image.tmdb.org/t/p/w780/eRGR7Di5EC70yXkEOkW1WNsBBlC.jpg",
+    "description": "A visceral action-thriller where a lone fighter is forced into a relentless pursuit by a grim ancestral decree. To satisfy a blood mandate that haunts his family's legacy, he must cut through a web of enemies and shifting alliances. As the hunt intensifies, the line between justice and revenge blurs in a raw struggle for survival.",
+    "seoDescription": "Blood Mandate (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 2m",
+    "rating": 0,
+    "genre": [
+      "Action",
+      "Drama",
+      "History"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Nasser Azzeh",
+    "cast": [
+      "Yousef Yasin",
+      "Nasser Azzeh",
+      "Hamzeh Azzeh",
+      "Adam Aburahmeh",
+      "Moayad Alatiyat",
+      "Abdullah Gogazeh"
+    ],
+    "keywords": [
+      "Blood Mandate",
+      "Blood Mandate 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1720375",
     "title": "Breakfast (2026)",
     "slug": "breakfast-2026",
@@ -1287,6 +1324,41 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "Screen of the Dead",
       "Screen of the Dead 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1721650",
+    "title": "Shards (2026)",
+    "slug": "shards-2026",
+    "videoUrl": "https://youtu.be/PgGhpkQUGqc",
+    "downloadUrl": "https://www.themoviedb.org/movie/1721650",
+    "poster": "https://image.tmdb.org/t/p/w780/ovTTbnk6rGJ1vG1qIZpBlv5VKZj.jpg",
+    "description": "A WWII pilots journey flying through treacherous air hoping to evade enemy aircraft and not be captured while struggling with reminders of home.",
+    "seoDescription": "Shards (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "22m",
+    "rating": 0,
+    "genre": [
+      "Action",
+      "Drama",
+      "History"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Conner Nikides",
+    "cast": [
+      "Taylor Nikides",
+      "Lilia Lotfinia",
+      "Conner Nikides",
+      "Nicholas Kokolakis"
+    ],
+    "keywords": [
+      "Shards",
+      "Shards 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -3555,6 +3627,39 @@ export const tmdbWebSeriesVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-tv-329703",
+    "title": "Love Against Time (2026)",
+    "slug": "love-against-time-2026",
+    "videoUrl": "https://youtu.be/rg03a1Msf7E",
+    "downloadUrl": "https://www.themoviedb.org/tv/329703",
+    "poster": "https://image.tmdb.org/t/p/w780/pzHUgSRZ7yPfmluUJqA4K3cBbCO.jpg",
+    "description": "A group of young people who survived life-threatening health struggles moves into a house together to find true love. Having faced life's fragility firsthand, they look past the superficial to build deep, intense, and meaningful connections—without wasting a single second.",
+    "seoDescription": "Love Against Time (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 6 Episodes",
+    "rating": 0,
+    "genre": [
+      "Reality"
+    ],
+    "language": "Korean",
+    "quality": "HD",
+    "featured": false,
+    "director": "송현민",
+    "cast": [
+      "Jung Yong-hwa",
+      "Lee Se-young",
+      "DK",
+      "Choi Ye-na"
+    ],
+    "keywords": [
+      "Love Against Time",
+      "Love Against Time 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-tv-303652",
     "title": "Modern Marvels: WWII (2026)",
     "slug": "modern-marvels-wwii-2026",
@@ -4403,6 +4508,111 @@ export const tmdbCartoonVideos: Video[] = [
 ];
 
 export const tmdbRecentlyAddedVideos: Video[] = [
+  {
+    "id": "tmdb-movie-1721650",
+    "title": "Shards (2026)",
+    "slug": "shards-2026",
+    "videoUrl": "https://youtu.be/PgGhpkQUGqc",
+    "downloadUrl": "https://www.themoviedb.org/movie/1721650",
+    "poster": "https://image.tmdb.org/t/p/w780/ovTTbnk6rGJ1vG1qIZpBlv5VKZj.jpg",
+    "description": "A WWII pilots journey flying through treacherous air hoping to evade enemy aircraft and not be captured while struggling with reminders of home.",
+    "seoDescription": "Shards (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "22m",
+    "rating": 0,
+    "genre": [
+      "Action",
+      "Drama",
+      "History"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Conner Nikides",
+    "cast": [
+      "Taylor Nikides",
+      "Lilia Lotfinia",
+      "Conner Nikides",
+      "Nicholas Kokolakis"
+    ],
+    "keywords": [
+      "Shards",
+      "Shards 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1652369",
+    "title": "Blood Mandate (2026)",
+    "slug": "blood-mandate-2026",
+    "videoUrl": "https://youtu.be/JXDOdqbO1sA",
+    "downloadUrl": "https://www.themoviedb.org/movie/1652369",
+    "poster": "https://image.tmdb.org/t/p/w780/eRGR7Di5EC70yXkEOkW1WNsBBlC.jpg",
+    "description": "A visceral action-thriller where a lone fighter is forced into a relentless pursuit by a grim ancestral decree. To satisfy a blood mandate that haunts his family's legacy, he must cut through a web of enemies and shifting alliances. As the hunt intensifies, the line between justice and revenge blurs in a raw struggle for survival.",
+    "seoDescription": "Blood Mandate (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 2m",
+    "rating": 0,
+    "genre": [
+      "Action",
+      "Drama",
+      "History"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Nasser Azzeh",
+    "cast": [
+      "Yousef Yasin",
+      "Nasser Azzeh",
+      "Hamzeh Azzeh",
+      "Adam Aburahmeh",
+      "Moayad Alatiyat",
+      "Abdullah Gogazeh"
+    ],
+    "keywords": [
+      "Blood Mandate",
+      "Blood Mandate 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-329703",
+    "title": "Love Against Time (2026)",
+    "slug": "love-against-time-2026",
+    "videoUrl": "https://youtu.be/rg03a1Msf7E",
+    "downloadUrl": "https://www.themoviedb.org/tv/329703",
+    "poster": "https://image.tmdb.org/t/p/w780/pzHUgSRZ7yPfmluUJqA4K3cBbCO.jpg",
+    "description": "A group of young people who survived life-threatening health struggles moves into a house together to find true love. Having faced life's fragility firsthand, they look past the superficial to build deep, intense, and meaningful connections—without wasting a single second.",
+    "seoDescription": "Love Against Time (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 6 Episodes",
+    "rating": 0,
+    "genre": [
+      "Reality"
+    ],
+    "language": "Korean",
+    "quality": "HD",
+    "featured": false,
+    "director": "송현민",
+    "cast": [
+      "Jung Yong-hwa",
+      "Lee Se-young",
+      "DK",
+      "Choi Ye-na"
+    ],
+    "keywords": [
+      "Love Against Time",
+      "Love Against Time 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
   {
     "id": "tmdb-movie-1724558",
     "title": "Triesverse: Cataclysm (2026)",
@@ -5321,112 +5531,6 @@ export const tmdbRecentlyAddedVideos: Video[] = [
       "Mickey's Country Farm",
       "Mickey's Country Farm 2026",
       "Cartoon",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1698575",
-    "title": "Snoopy Presents: There's No Place Like Home, Snoopy (2026)",
-    "slug": "snoopy-presents-there-s-no-place-like-home-snoopy-2026",
-    "videoUrl": "https://youtu.be/A-NQmpNsZIc",
-    "downloadUrl": "https://www.themoviedb.org/movie/1698575",
-    "poster": "https://image.tmdb.org/t/p/w780/YbC4SlzE030BgxWdKDdlatMh5W.jpg",
-    "description": "When Snoopy's beloved doghouse goes missing, he tries to track it down, and learns what makes a house feel like home.",
-    "seoDescription": "Snoopy Presents: There's No Place Like Home, Snoopy (2026) trailer, cast, genres, rating and release information.",
-    "category": "Cartoon",
-    "year": 2026,
-    "duration": "31m",
-    "rating": 0,
-    "genre": [
-      "Animation",
-      "Family"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Ridd Sorensen",
-    "cast": [
-      "Riley Kai Vargas",
-      "Terry McGurrin",
-      "Rob Tinkler",
-      "Grace Nicolaou-Wood",
-      "Lexi Perri",
-      "Athan Giazitzidis"
-    ],
-    "keywords": [
-      "Snoopy Presents: There's No Place Like Home, Snoopy",
-      "Snoopy Presents: There's No Place Like Home, Snoopy 2026",
-      "Cartoon",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1733764",
-    "title": "God Hunter (2026)",
-    "slug": "god-hunter-2026",
-    "videoUrl": "https://youtu.be/UquBr4HkLtU",
-    "downloadUrl": "https://www.themoviedb.org/movie/1733764",
-    "poster": "https://image.tmdb.org/t/p/w780/5xYOJMSQatpFAJg5jtRMx7JuUSJ.jpg",
-    "description": "In a world where beings from myth and folklore have entered our realm, an undercover cop infiltrates a trafficking ring that smuggles and sells these beings to find his son.",
-    "seoDescription": "God Hunter (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "12m",
-    "rating": 0,
-    "genre": [
-      "Crime",
-      "Thriller",
-      "Fantasy"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Robert Flowers",
-    "cast": [
-      "Roland Ruiz",
-      "Kelsie Mcdonald",
-      "Alexya Garcia",
-      "Taylor C. Hill"
-    ],
-    "keywords": [
-      "God Hunter",
-      "God Hunter 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1713706",
-    "title": "Love/Bug (2026)",
-    "slug": "love-bug-2026",
-    "videoUrl": "https://youtu.be/7mik17h-Rt4",
-    "downloadUrl": "https://www.themoviedb.org/movie/1713706",
-    "poster": "https://image.tmdb.org/t/p/w780/jS9C9zLCTYC1OAy6JfjMvHhyUdU.jpg",
-    "description": "A couple, affectionately naming each other Love and Bug, test the limits of their love living with each other for fifteen months.",
-    "seoDescription": "Love/Bug (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "12m",
-    "rating": 0,
-    "genre": [
-      "Romance",
-      "Comedy",
-      "Drama"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Barnabus Walsh",
-    "cast": [
-      "Barnabus Walsh",
-      "Laurel Gregory",
-      "Fern Taylor",
-      "Ewan Collins"
-    ],
-    "keywords": [
-      "Love/Bug",
-      "Love/Bug 2026",
-      "Hollywood",
       "official trailer"
     ]
   }
