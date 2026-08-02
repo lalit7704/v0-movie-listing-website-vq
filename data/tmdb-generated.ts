@@ -219,6 +219,42 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1718220",
+    "title": "Before Never (2026)",
+    "slug": "before-never-2026",
+    "videoUrl": "https://youtu.be/4Qz0sNt3Zh8",
+    "downloadUrl": "https://www.themoviedb.org/movie/1718220",
+    "poster": "https://image.tmdb.org/t/p/w780/lz1YWsyMeYPWzyVIdnuddkInJmT.jpg",
+    "description": "When Wendy Darling escapes an attempted abduction, her family employs James and Smee to identify the attacker with the help of the only eyewitness: Peter Pan.",
+    "seoDescription": "Before Never (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 56m",
+    "rating": 0,
+    "genre": [
+      "Thriller",
+      "Mystery"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Derek Wingo, Kipp Tribble",
+    "cast": [
+      "Kenny Yates",
+      "Kipp Tribble",
+      "Derek Wingo",
+      "Joanne Wilson",
+      "Elisa Nixon",
+      "Liam Nelligan"
+    ],
+    "keywords": [
+      "Before Never",
+      "Before Never 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1652369",
     "title": "Blood Mandate (2026)",
     "slug": "blood-mandate-2026",
@@ -1850,6 +1886,41 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "Triesverse: Cataclysm",
       "Triesverse: Cataclysm 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1734125",
+    "title": "Trigger Happy (2026)",
+    "slug": "trigger-happy-2026",
+    "videoUrl": "https://youtu.be/zSz_8Z2XkdY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1734125",
+    "poster": "https://image.tmdb.org/t/p/w780/bCSx2AUOkzmRhM9VsywB95VwcMI.jpg",
+    "description": "A neon action-thriller about influencers fighting to the death at a live-streamed, lethal laser-tag match, exploring competition, revenge, and weaponized performance.",
+    "seoDescription": "Trigger Happy (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "15m",
+    "rating": 0,
+    "genre": [
+      "Thriller"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Brandon Melo, Hannah Fae Wyatt",
+    "cast": [
+      "Emily Yago",
+      "Hannah Fae Wyatt",
+      "Samuel Karpinski",
+      "Andrew Jones",
+      "Chris Freund",
+      "Valeria Peterson"
+    ],
+    "keywords": [
+      "Trigger Happy",
+      "Trigger Happy 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -4509,6 +4580,77 @@ export const tmdbCartoonVideos: Video[] = [
 
 export const tmdbRecentlyAddedVideos: Video[] = [
   {
+    "id": "tmdb-movie-1734125",
+    "title": "Trigger Happy (2026)",
+    "slug": "trigger-happy-2026",
+    "videoUrl": "https://youtu.be/zSz_8Z2XkdY",
+    "downloadUrl": "https://www.themoviedb.org/movie/1734125",
+    "poster": "https://image.tmdb.org/t/p/w780/bCSx2AUOkzmRhM9VsywB95VwcMI.jpg",
+    "description": "A neon action-thriller about influencers fighting to the death at a live-streamed, lethal laser-tag match, exploring competition, revenge, and weaponized performance.",
+    "seoDescription": "Trigger Happy (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "15m",
+    "rating": 0,
+    "genre": [
+      "Thriller"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Brandon Melo, Hannah Fae Wyatt",
+    "cast": [
+      "Emily Yago",
+      "Hannah Fae Wyatt",
+      "Samuel Karpinski",
+      "Andrew Jones",
+      "Chris Freund",
+      "Valeria Peterson"
+    ],
+    "keywords": [
+      "Trigger Happy",
+      "Trigger Happy 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1718220",
+    "title": "Before Never (2026)",
+    "slug": "before-never-2026",
+    "videoUrl": "https://youtu.be/4Qz0sNt3Zh8",
+    "downloadUrl": "https://www.themoviedb.org/movie/1718220",
+    "poster": "https://image.tmdb.org/t/p/w780/lz1YWsyMeYPWzyVIdnuddkInJmT.jpg",
+    "description": "When Wendy Darling escapes an attempted abduction, her family employs James and Smee to identify the attacker with the help of the only eyewitness: Peter Pan.",
+    "seoDescription": "Before Never (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 56m",
+    "rating": 0,
+    "genre": [
+      "Thriller",
+      "Mystery"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Derek Wingo, Kipp Tribble",
+    "cast": [
+      "Kenny Yates",
+      "Kipp Tribble",
+      "Derek Wingo",
+      "Joanne Wilson",
+      "Elisa Nixon",
+      "Liam Nelligan"
+    ],
+    "keywords": [
+      "Before Never",
+      "Before Never 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1721650",
     "title": "Shards (2026)",
     "slug": "shards-2026",
@@ -5468,69 +5610,6 @@ export const tmdbRecentlyAddedVideos: Video[] = [
       "Paris is Always a Good Idea",
       "Paris is Always a Good Idea 2026",
       "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-271016",
-    "title": "Mystic Nine (2026)",
-    "slug": "mystic-nine-2026",
-    "videoUrl": "https://youtu.be/ze6BQOn1zGo",
-    "downloadUrl": "https://www.themoviedb.org/tv/271016",
-    "poster": "https://image.tmdb.org/t/p/w780/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
-    "description": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
-    "seoDescription": "Mystic Nine (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 30 Episodes",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Action & Adventure"
-    ],
-    "language": "Chinese",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "William Chan Wai-Ting",
-      "Joseph Zeng",
-      "Chen Yao",
-      "Ying Haoming",
-      "Wang Yiting"
-    ],
-    "keywords": [
-      "Mystic Nine",
-      "Mystic Nine 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1722167",
-    "title": "Mickey's Country Farm (2026)",
-    "slug": "mickey-s-country-farm-2026",
-    "videoUrl": "https://youtu.be/4JL505FnnEo",
-    "downloadUrl": "https://www.themoviedb.org/movie/1722167",
-    "poster": "https://image.tmdb.org/t/p/w780/gnRRHjqLB11nHXGbwIfpAKR4F6X.jpg",
-    "description": "Mickey and friends use their new farm vehicles to build the Fairest Farm Fair ever — hoping Daisy’s cowgirl idol, Lasso Lucy, will stop by for a visit.",
-    "seoDescription": "Mickey's Country Farm (2026) trailer, cast, genres, rating and release information.",
-    "category": "Cartoon",
-    "year": 2026,
-    "duration": "N/A",
-    "rating": 0,
-    "genre": [
-      "Animation"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Megan Hilty"
-    ],
-    "keywords": [
-      "Mickey's Country Farm",
-      "Mickey's Country Farm 2026",
-      "Cartoon",
       "official trailer"
     ]
   }

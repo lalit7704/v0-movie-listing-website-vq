@@ -1,5 +1,7 @@
 {
   "recentlyAdded": [
+    "tmdb-movie-1734125",
+    "tmdb-movie-1718220",
     "tmdb-movie-1721650",
     "tmdb-movie-1652369",
     "tmdb-tv-329703",
@@ -27,9 +29,7 @@
     "tmdb-movie-1642850",
     "tmdb-movie-1738850",
     "tmdb-tv-329597",
-    "tmdb-tv-316657",
-    "tmdb-tv-271016",
-    "tmdb-movie-1722167"
+    "tmdb-tv-316657"
   ],
   "hollywood": [
     {
@@ -241,6 +241,42 @@
       "keywords": [
         "Asesino Perfecto",
         "Asesino Perfecto 2026",
+        "Hollywood",
+        "official trailer"
+      ]
+    },
+    {
+      "id": "tmdb-movie-1718220",
+      "title": "Before Never (2026)",
+      "slug": "before-never-2026",
+      "videoUrl": "https://youtu.be/4Qz0sNt3Zh8",
+      "downloadUrl": "https://www.themoviedb.org/movie/1718220",
+      "poster": "https://image.tmdb.org/t/p/w780/lz1YWsyMeYPWzyVIdnuddkInJmT.jpg",
+      "description": "When Wendy Darling escapes an attempted abduction, her family employs James and Smee to identify the attacker with the help of the only eyewitness: Peter Pan.",
+      "seoDescription": "Before Never (2026) trailer, cast, genres, rating and release information.",
+      "category": "Hollywood",
+      "year": 2026,
+      "duration": "1h 56m",
+      "rating": 0,
+      "genre": [
+        "Thriller",
+        "Mystery"
+      ],
+      "language": "English",
+      "quality": "HD",
+      "featured": false,
+      "director": "Derek Wingo, Kipp Tribble",
+      "cast": [
+        "Kenny Yates",
+        "Kipp Tribble",
+        "Derek Wingo",
+        "Joanne Wilson",
+        "Elisa Nixon",
+        "Liam Nelligan"
+      ],
+      "keywords": [
+        "Before Never",
+        "Before Never 2026",
         "Hollywood",
         "official trailer"
       ]
@@ -1877,6 +1913,41 @@
       "keywords": [
         "Triesverse: Cataclysm",
         "Triesverse: Cataclysm 2026",
+        "Hollywood",
+        "official trailer"
+      ]
+    },
+    {
+      "id": "tmdb-movie-1734125",
+      "title": "Trigger Happy (2026)",
+      "slug": "trigger-happy-2026",
+      "videoUrl": "https://youtu.be/zSz_8Z2XkdY",
+      "downloadUrl": "https://www.themoviedb.org/movie/1734125",
+      "poster": "https://image.tmdb.org/t/p/w780/bCSx2AUOkzmRhM9VsywB95VwcMI.jpg",
+      "description": "A neon action-thriller about influencers fighting to the death at a live-streamed, lethal laser-tag match, exploring competition, revenge, and weaponized performance.",
+      "seoDescription": "Trigger Happy (2026) trailer, cast, genres, rating and release information.",
+      "category": "Hollywood",
+      "year": 2026,
+      "duration": "15m",
+      "rating": 0,
+      "genre": [
+        "Thriller"
+      ],
+      "language": "English",
+      "quality": "HD",
+      "featured": false,
+      "director": "Brandon Melo, Hannah Fae Wyatt",
+      "cast": [
+        "Emily Yago",
+        "Hannah Fae Wyatt",
+        "Samuel Karpinski",
+        "Andrew Jones",
+        "Chris Freund",
+        "Valeria Peterson"
+      ],
+      "keywords": [
+        "Trigger Happy",
+        "Trigger Happy 2026",
         "Hollywood",
         "official trailer"
       ]
