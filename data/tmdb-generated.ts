@@ -255,6 +255,36 @@ export const tmdbHollywoodVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1728056",
+    "title": "Big Chicken: A Fast Food Conspiracy (2026)",
+    "slug": "big-chicken-a-fast-food-conspiracy-2026",
+    "videoUrl": "https://youtu.be/7sGkQM6TyQU",
+    "downloadUrl": "https://www.themoviedb.org/movie/1728056",
+    "poster": "https://image.tmdb.org/t/p/w780/vNvkzG9HpVbnAPqAgkDJBzYi8be.jpg",
+    "description": "In a bold 28-day experiment, comedian Mo Gilligan tours the UK and US on a fried chicken diet to uncover the impact of the craving — and industry behind it.",
+    "seoDescription": "Big Chicken: A Fast Food Conspiracy (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 36m",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Liana Stewart",
+    "cast": [
+      "Mo Gilligan"
+    ],
+    "keywords": [
+      "Big Chicken: A Fast Food Conspiracy",
+      "Big Chicken: A Fast Food Conspiracy 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1652369",
     "title": "Blood Mandate (2026)",
     "slug": "blood-mandate-2026",
@@ -466,6 +496,43 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "Depths of Fear",
       "Depths of Fear 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1714195",
+    "title": "Devils Lake (2026)",
+    "slug": "devils-lake-2026",
+    "videoUrl": "https://youtu.be/CJTaXjvpILI",
+    "downloadUrl": "https://www.themoviedb.org/movie/1714195",
+    "poster": "https://image.tmdb.org/t/p/w780/t8A132aMxBhflafB6DWLt0bUeUk.jpg",
+    "description": "When a group of kids go to the small town of Devils Lake for a bible camp, they are soon thrust into a cosmic reality of paranoia and terror following the mysterious death of their camp counselor.",
+    "seoDescription": "Devils Lake (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 35m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Fantasy",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Nico Rivera",
+    "cast": [
+      "Zavier Anderson",
+      "Raven Holm",
+      "Will Langason",
+      "Jam Vevang",
+      "Nathan Gebeck",
+      "Bella Maldonado"
+    ],
+    "keywords": [
+      "Devils Lake",
+      "Devils Lake 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -749,6 +816,42 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "I'm in Love with a Stripper",
       "I'm in Love with a Stripper 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1477712",
+    "title": "Ice Cream Man (2026)",
+    "slug": "ice-cream-man-2026",
+    "videoUrl": "https://youtu.be/BjtVXWa3tWI",
+    "downloadUrl": "https://www.themoviedb.org/movie/1477712",
+    "poster": "https://image.tmdb.org/t/p/w780/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
+    "description": "An idyllic summer town descends into madness when an ice cream man serves kids sweet delights with horrifying results.",
+    "seoDescription": "Ice Cream Man (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 26m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Thriller"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Eli Roth",
+    "cast": [
+      "Ari Millen",
+      "Charlie Zeltzer",
+      "Shiloh O’Reilly",
+      "Kiori Mirza Waldman",
+      "Sarah Abbott",
+      "Benjamin Byron Davis"
+    ],
+    "keywords": [
+      "Ice Cream Man",
+      "Ice Cream Man 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -1324,6 +1427,40 @@ export const tmdbHollywoodVideos: Video[] = [
     "keywords": [
       "Rising Embers",
       "Rising Embers 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1642160",
+    "title": "Robound (2026)",
+    "slug": "robound-2026",
+    "videoUrl": "https://youtu.be/VTGkf85sCjc",
+    "downloadUrl": "https://www.themoviedb.org/movie/1642160",
+    "poster": "https://image.tmdb.org/t/p/w780/jDXFhOZBXeCUnvkcN3YNgGxLJ4I.jpg",
+    "description": "Robound is a newly released hollywood title.",
+    "seoDescription": "Robound (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "7m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Science Fiction",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Em Wood, Sacha Waters",
+    "cast": [
+      "Lauren Casey",
+      "Amaya Makhni",
+      "Tony Russo"
+    ],
+    "keywords": [
+      "Robound",
+      "Robound 2026",
       "Hollywood",
       "official trailer"
     ]
@@ -2667,6 +2804,34 @@ export const tmdbSouthIndianVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-movie-1741737",
+    "title": "Kaalam paranja kadha (2026)",
+    "slug": "kaalam-paranja-kadha-2026",
+    "videoUrl": "https://youtu.be/Hox9qawUA-g",
+    "downloadUrl": "https://www.themoviedb.org/movie/1741737",
+    "poster": "https://image.tmdb.org/t/p/w780/296cxuI9qgcwLX7eflAfe9knYXr.jpg",
+    "description": "A protagonist commits six brutal killings in broad daylight. Examines the psychology driving the violence and the disturbing questions that emerge from these acts.",
+    "seoDescription": "Kaalam paranja kadha (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "2h 19m",
+    "rating": 0,
+    "genre": [
+      "Crime",
+      "Thriller"
+    ],
+    "language": "Malayalam",
+    "quality": "HD",
+    "featured": false,
+    "cast": [],
+    "keywords": [
+      "Kaalam paranja kadha",
+      "Kaalam paranja kadha 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-movie-1215812",
     "title": "Karavali (2026)",
     "slug": "karavali-2026",
@@ -2695,6 +2860,43 @@ export const tmdbSouthIndianVideos: Video[] = [
     "keywords": [
       "Karavali",
       "Karavali 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1741770",
+    "title": "Karmakhya (2026)",
+    "slug": "karmakhya-2026",
+    "videoUrl": "https://youtu.be/800-mrhBRyc",
+    "downloadUrl": "https://www.themoviedb.org/movie/1741770",
+    "poster": "https://image.tmdb.org/t/p/w780/w7PQrgP5qhCpa4kbt1jnYBGYnt6.jpg",
+    "description": "A mysterious visit to a grieving family pulls a young woman into a terrifying world of secrets, black magic, and haunting illusions. As disturbing events begin to blur the line between reality and nightmare, Kaamakhya finds herself trapped in a chilling chain of events rooted in a dark past that refuses to stay buried.",
+    "seoDescription": "Karmakhya (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "2h 6m",
+    "rating": 0,
+    "genre": [
+      "Thriller",
+      "Mystery",
+      "Horror"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "director": "Abhinaya Krishna",
+    "cast": [
+      "Samaira Sri",
+      "Samuthirakani",
+      "Abhirami",
+      "Saranya Pradeep",
+      "Madhunandan",
+      "Dhanraj Sukhram"
+    ],
+    "keywords": [
+      "Karmakhya",
+      "Karmakhya 2026",
       "South Indian",
       "official trailer"
     ]
@@ -3698,6 +3900,35 @@ export const tmdbWebSeriesVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-tv-327817",
+    "title": "Let’s Marry Harry (2026)",
+    "slug": "let-s-marry-harry-2026",
+    "videoUrl": "https://youtu.be/nsAuYuhHrYk",
+    "downloadUrl": "https://www.themoviedb.org/tv/327817",
+    "poster": "https://image.tmdb.org/t/p/w780/oV3Kr8qV9ta1RYqtk35ajYmrFax.jpg",
+    "description": "To marry Jowsey, he’s not the only one you’ll need to hit it off with. The prospective brides will also need to make a good impression on his friends, so Jowsey is handing the reins of his love life to his three closest confidants, Amanda Kloots, Georgia Hassarati, and Sonny Henty. The trio will step in to make tough calls and guide him on his journey from player to life partner.",
+    "seoDescription": "Let’s Marry Harry (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 8 Episodes",
+    "rating": 0,
+    "genre": [
+      "Reality"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Harry Jowsey"
+    ],
+    "keywords": [
+      "Let’s Marry Harry",
+      "Let’s Marry Harry 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-tv-329703",
     "title": "Love Against Time (2026)",
     "slug": "love-against-time-2026",
@@ -3935,6 +4166,33 @@ export const tmdbWebSeriesVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-tv-319426",
+    "title": "SPECIAL OPS TRUE (2026)",
+    "slug": "special-ops-true-2026",
+    "videoUrl": "https://youtu.be/-I-D-mnbb7U",
+    "downloadUrl": "https://www.themoviedb.org/tv/319426",
+    "poster": "https://image.tmdb.org/t/p/w780/nxPj5GqkfdDPVXLyGzRRmP9Ydgb.jpg",
+    "description": "The world remembers these missions. The people who lived them remember every second. Through firsthand testimony and never-before-seen footage, this series reveals what it felt like from the inside.",
+    "seoDescription": "SPECIAL OPS TRUE (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 1 Episodes",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "cast": [],
+    "keywords": [
+      "SPECIAL OPS TRUE",
+      "SPECIAL OPS TRUE 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-tv-298610",
     "title": "Spooky in Love (2026)",
     "slug": "spooky-in-love-2026",
@@ -3967,6 +4225,42 @@ export const tmdbWebSeriesVideos: Video[] = [
     "keywords": [
       "Spooky in Love",
       "Spooky in Love 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-283297",
+    "title": "Sterling Point (2026)",
+    "slug": "sterling-point-2026",
+    "videoUrl": "https://youtu.be/bwwF3TuJQME",
+    "downloadUrl": "https://www.themoviedb.org/tv/283297",
+    "poster": "https://image.tmdb.org/t/p/w780/cThLWEGs6BEqY0QZMbU4FAeWwPT.jpg",
+    "description": "Annie along with her twin brother were raised in New York by their single dad before they find out that their estranged grandfather left them an island on a lake in his will.",
+    "seoDescription": "Sterling Point (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 8 Episodes",
+    "rating": 0,
+    "genre": [
+      "Mystery",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Megan Park",
+    "cast": [
+      "Ella Rubin",
+      "Amélie Hoeferle",
+      "Jacob Whiteduck-Lavoie",
+      "Nikko Angelo Hinayo",
+      "Keen Ruffalo",
+      "Daniel Quinn-Toye"
+    ],
+    "keywords": [
+      "Sterling Point",
+      "Sterling Point 2026",
       "Web Series",
       "official trailer"
     ]
@@ -4065,6 +4359,41 @@ export const tmdbWebSeriesVideos: Video[] = [
     "keywords": [
       "The Idaho Murders: College Nightmare",
       "The Idaho Murders: College Nightmare 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-298168",
+    "title": "The Shards (2026)",
+    "slug": "the-shards-2026",
+    "videoUrl": "https://youtu.be/O3S7aKk0ALw",
+    "downloadUrl": "https://www.themoviedb.org/tv/298168",
+    "poster": "https://image.tmdb.org/t/p/w780/876V23IJpddyLcO1wvJUdSft585.jpg",
+    "description": "Set in Los Angeles in 1981, the story follows a 17-year-old version of Bret Easton Ellis during his final year at the elite Buckley prep school. Upending his world is the arrival of a mysterious new student, Robert Mallory, whose unsettling presence coincides with the activities of a serial killer known as The Trawler.",
+    "seoDescription": "The Shards (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 10 Episodes",
+    "rating": 0,
+    "genre": [
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Ryan Murphy, Bret Easton Ellis",
+    "cast": [
+      "Igby Rigney",
+      "Kaia Gerber",
+      "Homer Gere",
+      "Hayes Warner",
+      "Graham Campbell",
+      "Evan Rachel Wood"
+    ],
+    "keywords": [
+      "The Shards",
+      "The Shards 2026",
       "Web Series",
       "official trailer"
     ]
@@ -4440,6 +4769,42 @@ export const tmdbCartoonVideos: Video[] = [
     ]
   },
   {
+    "id": "tmdb-tv-289324",
+    "title": "Star Wars: Visions Presents - The Ninth Jedi (2026)",
+    "slug": "star-wars-visions-presents-the-ninth-jedi-2026",
+    "videoUrl": "https://youtu.be/r70AWJ-zJS4",
+    "downloadUrl": "https://www.themoviedb.org/tv/289324",
+    "poster": "https://image.tmdb.org/t/p/w780/r1AnM76TBeTNB5zRcIk2kRUXTDF.jpg",
+    "description": "Kara and her ragtag Jedi crew seek out to find worthy Jedi to fight against an increasingly powerful warlord.",
+    "seoDescription": "Star Wars: Visions Presents - The Ninth Jedi (2026) trailer, cast, genres, rating and release information.",
+    "category": "Cartoon",
+    "year": 2026,
+    "duration": "Season 1 • 8 Episodes",
+    "rating": 0,
+    "genre": [
+      "Animation",
+      "Sci-Fi & Fantasy",
+      "Action & Adventure"
+    ],
+    "language": "Japanese",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Chinatsu Akasaki",
+      "Tetsuo Kanao",
+      "Hiromu Mineta",
+      "Hinata Tadokoro",
+      "Cho",
+      "Shin-ichiro Miki"
+    ],
+    "keywords": [
+      "Star Wars: Visions Presents - The Ninth Jedi",
+      "Star Wars: Visions Presents - The Ninth Jedi 2026",
+      "Cartoon",
+      "official trailer"
+    ]
+  },
+  {
     "id": "tmdb-tv-286345",
     "title": "Though I Am an Inept Villainess (2026)",
     "slug": "though-i-am-an-inept-villainess-2026",
@@ -4579,6 +4944,371 @@ export const tmdbCartoonVideos: Video[] = [
 ];
 
 export const tmdbRecentlyAddedVideos: Video[] = [
+  {
+    "id": "tmdb-movie-1728056",
+    "title": "Big Chicken: A Fast Food Conspiracy (2026)",
+    "slug": "big-chicken-a-fast-food-conspiracy-2026",
+    "videoUrl": "https://youtu.be/7sGkQM6TyQU",
+    "downloadUrl": "https://www.themoviedb.org/movie/1728056",
+    "poster": "https://image.tmdb.org/t/p/w780/vNvkzG9HpVbnAPqAgkDJBzYi8be.jpg",
+    "description": "In a bold 28-day experiment, comedian Mo Gilligan tours the UK and US on a fried chicken diet to uncover the impact of the craving — and industry behind it.",
+    "seoDescription": "Big Chicken: A Fast Food Conspiracy (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 36m",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Liana Stewart",
+    "cast": [
+      "Mo Gilligan"
+    ],
+    "keywords": [
+      "Big Chicken: A Fast Food Conspiracy",
+      "Big Chicken: A Fast Food Conspiracy 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1714195",
+    "title": "Devils Lake (2026)",
+    "slug": "devils-lake-2026",
+    "videoUrl": "https://youtu.be/CJTaXjvpILI",
+    "downloadUrl": "https://www.themoviedb.org/movie/1714195",
+    "poster": "https://image.tmdb.org/t/p/w780/t8A132aMxBhflafB6DWLt0bUeUk.jpg",
+    "description": "When a group of kids go to the small town of Devils Lake for a bible camp, they are soon thrust into a cosmic reality of paranoia and terror following the mysterious death of their camp counselor.",
+    "seoDescription": "Devils Lake (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 35m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Fantasy",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Nico Rivera",
+    "cast": [
+      "Zavier Anderson",
+      "Raven Holm",
+      "Will Langason",
+      "Jam Vevang",
+      "Nathan Gebeck",
+      "Bella Maldonado"
+    ],
+    "keywords": [
+      "Devils Lake",
+      "Devils Lake 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1642160",
+    "title": "Robound (2026)",
+    "slug": "robound-2026",
+    "videoUrl": "https://youtu.be/VTGkf85sCjc",
+    "downloadUrl": "https://www.themoviedb.org/movie/1642160",
+    "poster": "https://image.tmdb.org/t/p/w780/jDXFhOZBXeCUnvkcN3YNgGxLJ4I.jpg",
+    "description": "Robound is a newly released hollywood title.",
+    "seoDescription": "Robound (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "7m",
+    "rating": 0,
+    "genre": [
+      "Drama",
+      "Science Fiction",
+      "Comedy"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Em Wood, Sacha Waters",
+    "cast": [
+      "Lauren Casey",
+      "Amaya Makhni",
+      "Tony Russo"
+    ],
+    "keywords": [
+      "Robound",
+      "Robound 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1477712",
+    "title": "Ice Cream Man (2026)",
+    "slug": "ice-cream-man-2026",
+    "videoUrl": "https://youtu.be/BjtVXWa3tWI",
+    "downloadUrl": "https://www.themoviedb.org/movie/1477712",
+    "poster": "https://image.tmdb.org/t/p/w780/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
+    "description": "An idyllic summer town descends into madness when an ice cream man serves kids sweet delights with horrifying results.",
+    "seoDescription": "Ice Cream Man (2026) trailer, cast, genres, rating and release information.",
+    "category": "Hollywood",
+    "year": 2026,
+    "duration": "1h 26m",
+    "rating": 0,
+    "genre": [
+      "Horror",
+      "Thriller"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Eli Roth",
+    "cast": [
+      "Ari Millen",
+      "Charlie Zeltzer",
+      "Shiloh O’Reilly",
+      "Kiori Mirza Waldman",
+      "Sarah Abbott",
+      "Benjamin Byron Davis"
+    ],
+    "keywords": [
+      "Ice Cream Man",
+      "Ice Cream Man 2026",
+      "Hollywood",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1741770",
+    "title": "Karmakhya (2026)",
+    "slug": "karmakhya-2026",
+    "videoUrl": "https://youtu.be/800-mrhBRyc",
+    "downloadUrl": "https://www.themoviedb.org/movie/1741770",
+    "poster": "https://image.tmdb.org/t/p/w780/w7PQrgP5qhCpa4kbt1jnYBGYnt6.jpg",
+    "description": "A mysterious visit to a grieving family pulls a young woman into a terrifying world of secrets, black magic, and haunting illusions. As disturbing events begin to blur the line between reality and nightmare, Kaamakhya finds herself trapped in a chilling chain of events rooted in a dark past that refuses to stay buried.",
+    "seoDescription": "Karmakhya (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "2h 6m",
+    "rating": 0,
+    "genre": [
+      "Thriller",
+      "Mystery",
+      "Horror"
+    ],
+    "language": "Telugu",
+    "quality": "HD",
+    "featured": false,
+    "director": "Abhinaya Krishna",
+    "cast": [
+      "Samaira Sri",
+      "Samuthirakani",
+      "Abhirami",
+      "Saranya Pradeep",
+      "Madhunandan",
+      "Dhanraj Sukhram"
+    ],
+    "keywords": [
+      "Karmakhya",
+      "Karmakhya 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-movie-1741737",
+    "title": "Kaalam paranja kadha (2026)",
+    "slug": "kaalam-paranja-kadha-2026",
+    "videoUrl": "https://youtu.be/Hox9qawUA-g",
+    "downloadUrl": "https://www.themoviedb.org/movie/1741737",
+    "poster": "https://image.tmdb.org/t/p/w780/296cxuI9qgcwLX7eflAfe9knYXr.jpg",
+    "description": "A protagonist commits six brutal killings in broad daylight. Examines the psychology driving the violence and the disturbing questions that emerge from these acts.",
+    "seoDescription": "Kaalam paranja kadha (2026) trailer, cast, genres, rating and release information.",
+    "category": "South Indian",
+    "year": 2026,
+    "duration": "2h 19m",
+    "rating": 0,
+    "genre": [
+      "Crime",
+      "Thriller"
+    ],
+    "language": "Malayalam",
+    "quality": "HD",
+    "featured": false,
+    "cast": [],
+    "keywords": [
+      "Kaalam paranja kadha",
+      "Kaalam paranja kadha 2026",
+      "South Indian",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-327817",
+    "title": "Let’s Marry Harry (2026)",
+    "slug": "let-s-marry-harry-2026",
+    "videoUrl": "https://youtu.be/nsAuYuhHrYk",
+    "downloadUrl": "https://www.themoviedb.org/tv/327817",
+    "poster": "https://image.tmdb.org/t/p/w780/oV3Kr8qV9ta1RYqtk35ajYmrFax.jpg",
+    "description": "To marry Jowsey, he’s not the only one you’ll need to hit it off with. The prospective brides will also need to make a good impression on his friends, so Jowsey is handing the reins of his love life to his three closest confidants, Amanda Kloots, Georgia Hassarati, and Sonny Henty. The trio will step in to make tough calls and guide him on his journey from player to life partner.",
+    "seoDescription": "Let’s Marry Harry (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 8 Episodes",
+    "rating": 0,
+    "genre": [
+      "Reality"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Harry Jowsey"
+    ],
+    "keywords": [
+      "Let’s Marry Harry",
+      "Let’s Marry Harry 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-298168",
+    "title": "The Shards (2026)",
+    "slug": "the-shards-2026",
+    "videoUrl": "https://youtu.be/O3S7aKk0ALw",
+    "downloadUrl": "https://www.themoviedb.org/tv/298168",
+    "poster": "https://image.tmdb.org/t/p/w780/876V23IJpddyLcO1wvJUdSft585.jpg",
+    "description": "Set in Los Angeles in 1981, the story follows a 17-year-old version of Bret Easton Ellis during his final year at the elite Buckley prep school. Upending his world is the arrival of a mysterious new student, Robert Mallory, whose unsettling presence coincides with the activities of a serial killer known as The Trawler.",
+    "seoDescription": "The Shards (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 10 Episodes",
+    "rating": 0,
+    "genre": [
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Ryan Murphy, Bret Easton Ellis",
+    "cast": [
+      "Igby Rigney",
+      "Kaia Gerber",
+      "Homer Gere",
+      "Hayes Warner",
+      "Graham Campbell",
+      "Evan Rachel Wood"
+    ],
+    "keywords": [
+      "The Shards",
+      "The Shards 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-283297",
+    "title": "Sterling Point (2026)",
+    "slug": "sterling-point-2026",
+    "videoUrl": "https://youtu.be/bwwF3TuJQME",
+    "downloadUrl": "https://www.themoviedb.org/tv/283297",
+    "poster": "https://image.tmdb.org/t/p/w780/cThLWEGs6BEqY0QZMbU4FAeWwPT.jpg",
+    "description": "Annie along with her twin brother were raised in New York by their single dad before they find out that their estranged grandfather left them an island on a lake in his will.",
+    "seoDescription": "Sterling Point (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 8 Episodes",
+    "rating": 0,
+    "genre": [
+      "Mystery",
+      "Drama"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "director": "Megan Park",
+    "cast": [
+      "Ella Rubin",
+      "Amélie Hoeferle",
+      "Jacob Whiteduck-Lavoie",
+      "Nikko Angelo Hinayo",
+      "Keen Ruffalo",
+      "Daniel Quinn-Toye"
+    ],
+    "keywords": [
+      "Sterling Point",
+      "Sterling Point 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-319426",
+    "title": "SPECIAL OPS TRUE (2026)",
+    "slug": "special-ops-true-2026",
+    "videoUrl": "https://youtu.be/-I-D-mnbb7U",
+    "downloadUrl": "https://www.themoviedb.org/tv/319426",
+    "poster": "https://image.tmdb.org/t/p/w780/nxPj5GqkfdDPVXLyGzRRmP9Ydgb.jpg",
+    "description": "The world remembers these missions. The people who lived them remember every second. Through firsthand testimony and never-before-seen footage, this series reveals what it felt like from the inside.",
+    "seoDescription": "SPECIAL OPS TRUE (2026) trailer, cast, genres, rating and release information.",
+    "category": "Web Series",
+    "year": 2026,
+    "duration": "Season 1 • 1 Episodes",
+    "rating": 0,
+    "genre": [
+      "Documentary"
+    ],
+    "language": "English",
+    "quality": "HD",
+    "featured": false,
+    "cast": [],
+    "keywords": [
+      "SPECIAL OPS TRUE",
+      "SPECIAL OPS TRUE 2026",
+      "Web Series",
+      "official trailer"
+    ]
+  },
+  {
+    "id": "tmdb-tv-289324",
+    "title": "Star Wars: Visions Presents - The Ninth Jedi (2026)",
+    "slug": "star-wars-visions-presents-the-ninth-jedi-2026",
+    "videoUrl": "https://youtu.be/r70AWJ-zJS4",
+    "downloadUrl": "https://www.themoviedb.org/tv/289324",
+    "poster": "https://image.tmdb.org/t/p/w780/r1AnM76TBeTNB5zRcIk2kRUXTDF.jpg",
+    "description": "Kara and her ragtag Jedi crew seek out to find worthy Jedi to fight against an increasingly powerful warlord.",
+    "seoDescription": "Star Wars: Visions Presents - The Ninth Jedi (2026) trailer, cast, genres, rating and release information.",
+    "category": "Cartoon",
+    "year": 2026,
+    "duration": "Season 1 • 8 Episodes",
+    "rating": 0,
+    "genre": [
+      "Animation",
+      "Sci-Fi & Fantasy",
+      "Action & Adventure"
+    ],
+    "language": "Japanese",
+    "quality": "HD",
+    "featured": false,
+    "cast": [
+      "Chinatsu Akasaki",
+      "Tetsuo Kanao",
+      "Hiromu Mineta",
+      "Hinata Tadokoro",
+      "Cho",
+      "Shin-ichiro Miki"
+    ],
+    "keywords": [
+      "Star Wars: Visions Presents - The Ninth Jedi",
+      "Star Wars: Visions Presents - The Ninth Jedi 2026",
+      "Cartoon",
+      "official trailer"
+    ]
+  },
   {
     "id": "tmdb-movie-1734125",
     "title": "Trigger Happy (2026)",
@@ -5230,386 +5960,6 @@ export const tmdbRecentlyAddedVideos: Video[] = [
       "CAPTURED",
       "CAPTURED 2026",
       "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1736042",
-    "title": "Objection My Lord (2026)",
-    "slug": "objection-my-lord-2026",
-    "videoUrl": "https://youtu.be/Fhr9JdlLRwY",
-    "downloadUrl": "https://www.themoviedb.org/movie/1736042",
-    "poster": "https://image.tmdb.org/t/p/w780/cCUov0GoLKmiTbJHniX6l3SRXiC.jpg",
-    "description": "A father burns himself alive outside the Hyderabad High Court, demanding justice for his missing daughter, Sameera. When the system moves on and forgets, one question remains.Did Sameera ever exist? A forgotten lawyer, Parshuram, is forced out of self imposed exile to fight for the answer.",
-    "seoDescription": "Objection My Lord (2026) trailer, cast, genres, rating and release information.",
-    "category": "South Indian",
-    "year": 2026,
-    "duration": "N/A",
-    "rating": 0,
-    "genre": [
-      "Drama"
-    ],
-    "language": "Telugu",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Srikanth",
-      "Mukesh Rishi"
-    ],
-    "keywords": [
-      "Objection My Lord",
-      "Objection My Lord 2026",
-      "South Indian",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-328722",
-    "title": "Dar E Nijaat (2026)",
-    "slug": "dar-e-nijaat-2026",
-    "videoUrl": "https://youtu.be/oBu20gLPMZs",
-    "downloadUrl": "https://www.themoviedb.org/tv/328722",
-    "poster": "https://image.tmdb.org/t/p/w780/wyoODxEuzQQtfnPAV2Lb5nfWRrY.jpg",
-    "description": "The moment everyone's been waiting for is finally here! A new chapter. A fresh pairing. A story destined to win hearts.",
-    "seoDescription": "Dar E Nijaat (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 1 Episodes",
-    "rating": 0,
-    "genre": [],
-    "language": "Urdu",
-    "quality": "HD",
-    "featured": false,
-    "cast": [],
-    "keywords": [
-      "Dar E Nijaat",
-      "Dar E Nijaat 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-294095",
-    "title": "A Bona Fide Killer (2026)",
-    "slug": "a-bona-fide-killer-2026",
-    "videoUrl": "https://youtu.be/bqBRG54y3X0",
-    "downloadUrl": "https://www.themoviedb.org/tv/294095",
-    "poster": "https://image.tmdb.org/t/p/w780/w0VgpauAbEWQXJtD6pWWJPuZOKE.jpg",
-    "description": "A seemingly ordinary working mother secretly lives as a legendary sniper who delivers justice where the law fails. After returning from a three-year hiatus, she must balance protecting her family with eliminating dangerous criminals, all while a determined journalist and a relentless detective close in on her hidden identity.",
-    "seoDescription": "A Bona Fide Killer (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 14 Episodes",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Action & Adventure",
-      "Mystery",
-      "Crime"
-    ],
-    "language": "Korean",
-    "quality": "HD",
-    "featured": false,
-    "director": "Kim Eun-hee, YOON",
-    "cast": [
-      "Gong Hyo-jin",
-      "Jung Jun-won",
-      "Lee Sang-yi",
-      "Sung Dong-il",
-      "Moo Jin-sung",
-      "Lee Eun-saem"
-    ],
-    "keywords": [
-      "A Bona Fide Killer",
-      "A Bona Fide Killer 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-8840",
-    "title": "Fightland (2026)",
-    "slug": "fightland-2026",
-    "videoUrl": "https://youtu.be/nWn_r_1-OHM",
-    "downloadUrl": "https://www.themoviedb.org/tv/8840",
-    "poster": "https://image.tmdb.org/t/p/w780/qRlOEIiwkfLy6ERRMbyQNGQQ6Lc.jpg",
-    "description": "A disgraced, formerly incarcerated boxing champion returns to London to seek vengeance against the crime syndicate he thinks betrayed him.",
-    "seoDescription": "Fightland (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 2 Episodes",
-    "rating": 9,
-    "genre": [
-      "Crime",
-      "Drama"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Daniel Fajemisin-Duncan, Marlon Smith",
-    "cast": [
-      "Howard Charles",
-      "Nicholas Pinnock",
-      "Deborah Ayorinde",
-      "Charles Babalola",
-      "Anita-Joy Uwajeh",
-      "Tahirah Sharif"
-    ],
-    "keywords": [
-      "Fightland",
-      "Fightland 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1722016",
-    "title": "Screen of the Dead (2026)",
-    "slug": "screen-of-the-dead-2026",
-    "videoUrl": "https://youtu.be/3RNicZdYmXE",
-    "downloadUrl": "https://www.themoviedb.org/movie/1722016",
-    "poster": "https://image.tmdb.org/t/p/w780/gh3c7MXrB3tfl3RMh53Ycraesth.jpg",
-    "description": "In a quiet backyard, Gaby finds her friends frozen over their phones. When they finally look up, an ordinary afternoon spirals into a bloody, absurd fight for survival.",
-    "seoDescription": "Screen of the Dead (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "9m",
-    "rating": 0,
-    "genre": [
-      "Horror",
-      "Comedy"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Martin Bruyère",
-    "cast": [
-      "Gabrielle Bruyère",
-      "Sofia Lynn Mitzelos",
-      "Éliane Croteau",
-      "Savannah Weagant",
-      "Juliette Cousineau",
-      "Elayna Beaudoin"
-    ],
-    "keywords": [
-      "Screen of the Dead",
-      "Screen of the Dead 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1703103",
-    "title": "Addicted to Change (2026)",
-    "slug": "addicted-to-change-2026",
-    "videoUrl": "https://youtu.be/vAL7EM073dM",
-    "downloadUrl": "https://www.themoviedb.org/movie/1703103",
-    "poster": "https://image.tmdb.org/t/p/w780/7Eewbbdv7MRsV87jlRWvwp1EFFE.jpg",
-    "description": "In a near future Britain, at a biotech lab on the brink of collapse, three interns invent a cognitive enhancing drug. They begin full scale manufacture, only to become targets of government forces who view their breakthrough as a threat.",
-    "seoDescription": "Addicted to Change (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "1h 26m",
-    "rating": 0,
-    "genre": [
-      "Action",
-      "Drama",
-      "Science Fiction"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Richard Faria",
-    "cast": [
-      "Arnas Fedaravičius",
-      "Fady Elsayed",
-      "Adrian Paul",
-      "Bobby Lockwood",
-      "Gary Webster",
-      "Vanessa Grasse"
-    ],
-    "keywords": [
-      "Addicted to Change",
-      "Addicted to Change 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1689976",
-    "title": "Pentacide (2026)",
-    "slug": "pentacide-2026",
-    "videoUrl": "https://youtu.be/xqq3Wk9u3u4",
-    "downloadUrl": "https://www.themoviedb.org/movie/1689976",
-    "poster": "https://image.tmdb.org/t/p/w780/gtTDxqTntCZ3f94mEyTu44ieYgH.jpg",
-    "description": "In 1999, a series of grisly, religiously inspired killings struck the country repeating every five years, now in the present day (2024) the story follows two detectives who are trying to solve the biggest serial killer case the UK has ever seen!",
-    "seoDescription": "Pentacide (2026) trailer, cast, genres, rating and release information.",
-    "category": "Hollywood",
-    "year": 2026,
-    "duration": "11m",
-    "rating": 0,
-    "genre": [
-      "Crime",
-      "Thriller"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Billy Wright",
-    "cast": [
-      "Andrew Lindfield",
-      "Emma Wright",
-      "Penelope Saunders",
-      "Munya Mundove"
-    ],
-    "keywords": [
-      "Pentacide",
-      "Pentacide 2026",
-      "Hollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1642850",
-    "title": "Bhai Tera Star Hai (2026)",
-    "slug": "bhai-tera-star-hai-2026",
-    "videoUrl": "https://youtu.be/Zy8KDEJU3iY",
-    "downloadUrl": "https://www.themoviedb.org/movie/1642850",
-    "poster": "https://image.tmdb.org/t/p/w780/pOvjcDHftVa6SJk2DmAm1cD0YOb.jpg",
-    "description": "Bhai Tera Star Hai is a newly released bollywood title.",
-    "seoDescription": "Bhai Tera Star Hai (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "N/A",
-    "rating": 0,
-    "genre": [
-      "Comedy"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Vivek B Agrawal",
-    "cast": [
-      "Raghav Juyal",
-      "Sanjay Kapoor",
-      "Niharika NM",
-      "Vikalp Mehta",
-      "Barkha Singh",
-      "Vivan Bhatena"
-    ],
-    "keywords": [
-      "Bhai Tera Star Hai",
-      "Bhai Tera Star Hai 2026",
-      "Bollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-movie-1738850",
-    "title": "Indrajaal (2026)",
-    "slug": "indrajaal-2026",
-    "videoUrl": "https://youtu.be/lfUleFltLtg",
-    "downloadUrl": "https://www.themoviedb.org/movie/1738850",
-    "poster": "https://image.tmdb.org/t/p/w780/wkLjjlBTmAp1u4STWi0IUBqxi9r.jpg",
-    "description": "A legendary treasure hidden during colonial times reappears every 12 years during a solar eclipse. Treasure hunters race to find it but become caught in an ancient prophecy, leading to a gripping tale of ambition and survival.",
-    "seoDescription": "Indrajaal (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "2h 16m",
-    "rating": 0,
-    "genre": [
-      "Comedy",
-      "Fantasy",
-      "Mystery"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Jageshwar Ratnakar Dhoble",
-    "cast": [
-      "Mahesh Nikam",
-      "Shanaya Tripathi",
-      "Yashraj Dimbale",
-      "Namdeo Murkute",
-      "Kira Dane",
-      "Kalpana Sarang"
-    ],
-    "keywords": [
-      "Indrajaal",
-      "Indrajaal 2026",
-      "Bollywood",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-329597",
-    "title": "Drug War: A Conspiracy of Silence (2026)",
-    "slug": "drug-war-a-conspiracy-of-silence-2026",
-    "videoUrl": "https://youtu.be/VaiNye9Ww00",
-    "downloadUrl": "https://www.themoviedb.org/tv/329597",
-    "poster": "https://image.tmdb.org/t/p/w780/t5T9kYdMYw374FZCWBvl1sTWD7I.jpg",
-    "description": "It follows Fr. Tom Carillo, a once-privileged priest who’s lost everything, as he teams up with a guilt-ridden cop, Yana Macabeo. Together, they fight to expose a deadly conspiracy shrouding the truth behind the mysterious death of Kiko Agustin, a former protege of Tom’s. As they uncover dark secrets from the drug war in the Philippines, Tom must confront his own past apathy to seek redemption and bring justice for a life lost too soon.",
-    "seoDescription": "Drug War: A Conspiracy of Silence (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 6 Episodes",
-    "rating": 0,
-    "genre": [
-      "Mystery",
-      "Crime",
-      "Drama"
-    ],
-    "language": "Filipino",
-    "quality": "HD",
-    "featured": false,
-    "cast": [
-      "Ian Veneracion",
-      "Jane Oineza",
-      "Harvey Bautista",
-      "Lotlot De Leon",
-      "Romnick Sarmenta",
-      "Yayo Aguila"
-    ],
-    "keywords": [
-      "Drug War: A Conspiracy of Silence",
-      "Drug War: A Conspiracy of Silence 2026",
-      "Web Series",
-      "official trailer"
-    ]
-  },
-  {
-    "id": "tmdb-tv-316657",
-    "title": "Paris is Always a Good Idea (2026)",
-    "slug": "paris-is-always-a-good-idea-2026",
-    "videoUrl": "https://youtu.be/sq13-qkr_dk",
-    "downloadUrl": "https://www.themoviedb.org/tv/316657",
-    "poster": "https://image.tmdb.org/t/p/w780/cEYvbrYFBS2Q9ZA9v8SQI6WS73U.jpg",
-    "description": "Career-driven nonprofit executive Chelsea Martin travels to Paris with her confident rival-turned-ally, Jason Knightly to secure a major donation but a heartfelt message from her late mother – and a loving push from her sister Annabelle – sends her on an unexpected journey to reconnect with the three great loves she once left behind. From the rolling hills of Ireland to the magic of Paris and the sun-kissed vineyards of Spain, Chelsea retraces old footsteps and discovers that sometimes moving forward means first looking back.",
-    "seoDescription": "Paris is Always a Good Idea (2026) trailer, cast, genres, rating and release information.",
-    "category": "Web Series",
-    "year": 2026,
-    "duration": "Season 1 • 6 Episodes",
-    "rating": 0,
-    "genre": [
-      "Comedy",
-      "Drama"
-    ],
-    "language": "English",
-    "quality": "HD",
-    "featured": false,
-    "director": "Heidi Cole McAdams, Lauren Muir",
-    "cast": [
-      "Lacey Chabert",
-      "Scott Michael Foster",
-      "Rebecca Hanssen",
-      "Henry Czerny",
-      "Barbara Niven",
-      "Stephen Hagan"
-    ],
-    "keywords": [
-      "Paris is Always a Good Idea",
-      "Paris is Always a Good Idea 2026",
-      "Web Series",
       "official trailer"
     ]
   }
