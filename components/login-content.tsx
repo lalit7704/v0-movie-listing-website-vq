@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Check, Cloud, Heart, History, LogIn } from "lucide-react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -15,6 +16,8 @@ const benefits = [
 
 export function LoginContent() {
   const { user, isLoading, isConfigured, signInWithGoogle } = useAuth();
+  const searchParams = useSearchParams();
+  const hasOAuthError = searchParams.get("error") === "oauth";
 
   return (
     <main className="min-h-screen bg-background">
@@ -37,9 +40,20 @@ export function LoginContent() {
             ))}
           </div>
 
+          {hasOAuthError && (
+            <div className="mb-4 rounded-md border border-red-500/40 bg-red-500/10 p-4 text-sm leading-relaxed text-red-200">
+              Google login failed. Check the Supabase Google provider, site URL, and allowed
+              callback URL, then try again.
+            </div>
+          )}
+
           {!isConfigured ? (
-            <div className="rounded-md border border-yellow-500/40 bg-yellow-500/10 p-4 text-sm text-yellow-200">
-              Login code is ready. Add the Supabase project URL and publishable key to enable it.
+            <div className="rounded-md border border-yellow-500/40 bg-yellow-500/10 p-4 text-sm leading-relaxed text-yellow-200">
+              Login code is ready, but Supabase keys are missing. Add
+              <span className="font-mono"> NEXT_PUBLIC_SUPABASE_URL </span>
+              and
+              <span className="font-mono"> NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY </span>
+              to activate Google login.
             </div>
           ) : user ? (
             <div className="space-y-4">
