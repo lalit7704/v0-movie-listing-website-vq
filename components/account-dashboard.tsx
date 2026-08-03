@@ -171,9 +171,14 @@ export function AccountDashboard() {
       .single();
 
     if (error) {
+      console.error("Movie request submission failed", error);
       setRequestMessage(
         error.message.includes("request_limit_reached")
           ? "You can submit up to 3 requests in 24 hours. Please try again later."
+          : error.message.includes("movie_requests") || error.code === "42P01"
+            ? "Movie requests database is not set up yet. Please run the Supabase setup SQL."
+            : error.code === "42501"
+              ? "Movie request permission is not set up yet. Please run the Supabase setup SQL."
           : "Request could not be submitted. Please try again."
       );
     } else {
