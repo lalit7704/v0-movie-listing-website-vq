@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { Check, Cloud, Heart, History, LogIn } from "lucide-react";
+import { useState, type FormEvent } from "react";
+import { Check, Cloud, Heart, History, LogIn, Mail } from "lucide-react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
@@ -15,9 +16,26 @@ const benefits = [
 ];
 
 export function LoginContent() {
-  const { user, isLoading, isConfigured, signInWithGoogle } = useAuth();
+  const { user, isLoading, isConfigured, signInWithGoogle, signInWithEmail, signUpWithEmail } = useAuth();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [emailMode, setEmailMode] = useState<"login" | "signup">("login");
+  const [emailMessage, setEmailMessage] = useState<string | null>(null);
+  const [emailBusy, setEmailBusy] = useState(false);
   const searchParams = useSearchParams();
   const hasOAuthError = searchParams.get("error") === "oauth";
+
+  async function handleEmailSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setEmailMessage(null);
+    setEmailBusy(true);
+    const result = emailMode === "login"
+      ? await signInWithEmail(email.trim(), password)
+      : await signUpWithEmail(email.trim(), password);
+    setEmailBusy(false);
+    if (result.error) setEmailMessage(result.error);
+    else if (emailMode === "signup" && result.confirmationRequired) setEmailMessage("Account created. Check your email to confirm, then log in.");
+  }
 
   return (
     <main className="min-h-screen bg-background">
@@ -66,14 +84,20 @@ export function LoginContent() {
               </Button>
             </div>
           ) : (
-            <Button
-              className="w-full gap-2"
-              disabled={isLoading}
-              onClick={() => void signInWithGoogle()}
-            >
-              <LogIn className="h-4 w-4" aria-hidden="true" />
-              {isLoading ? "Checking session..." : "Continue with Google"}
-            </Button>
+            <div className="space-y-4">
+              <Button className="w-full gap-2" disabled={isLoading} onClick={() => void signInWithGoogle()}>
+                <LogIn className="h-4 w-4" aria-hidden="true" />
+                {isLoading ? "Checking session..." : "Continue with Google"}
+              </Button>
+              <div className="flex items-center gap-3 text-xs text-muted-foreground"><span className="h-px flex-1 bg-border" />or email<span className="h-px flex-1 bg-border" /></div>
+              <form className="space-y-3" onSubmit={handleEmailSubmit}>
+                <input className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm" type="email" required placeholder="Email address" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm" type="password" required minLength={6} placeholder="Password (6+ characters)" value={password} onChange={(e) => setPassword(e.target.value)} />
+                {emailMessage && <p className="text-sm text-yellow-300">{emailMessage}</p>}
+                <Button className="w-full gap-2" type="submit" disabled={emailBusy}><Mail className="h-4 w-4" />{emailBusy ? "Please wait..." : emailMode === "login" ? "Login with Email" : "Create account"}</Button>
+              </form>
+              <button type="button" className="w-full text-center text-xs text-muted-foreground hover:text-foreground" onClick={() => { setEmailMode(emailMode === "login" ? "signup" : "login"); setEmailMessage(null); }}>{emailMode === "login" ? "Create a new email account" : "Already have an account? Log in"}</button>
+            </div>
           )}
 
           <p className="mt-5 text-center text-xs leading-relaxed text-muted-foreground">

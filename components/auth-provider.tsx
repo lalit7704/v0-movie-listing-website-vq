@@ -24,6 +24,8 @@ interface AuthContextValue {
   isConfigured: boolean;
   supabase: SupabaseClient | null;
   signInWithGoogle: () => Promise<void>;
+  signInWithEmail: (email: string, password: string) => Promise<{ error: string | null }>;
+  signUpWithEmail: (email: string, password: string) => Promise<{ error: string | null; confirmationRequired: boolean }>;
   signOut: () => Promise<void>;
   recordActivity: (eventType: string, movieId?: string, metadata?: Record<string, unknown>) => void;
 }
@@ -67,6 +69,22 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     });
   }, [supabase]);
 
+  const signInWithEmail = useCallback(async (email: string, password: string) => {
+    if (!supabase) return { error: "Supabase is not configured." };
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    return { error: error?.message ?? null };
+  }, [supabase]);
+
+  const signUpWithEmail = useCallback(async (email: string, password: string) => {
+    if (!supabase) return { error: "Supabase is not configured.", confirmationRequired: false };
+    const { data, error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: { emailRedirectTo: `${window.location.origin}/auth/callback?next=/account` },
+    });
+    return { error: error?.message ?? null, confirmationRequired: !error && !data.session };
+  }, [supabase]);
+
   const signOut = useCallback(async () => {
     if (!supabase) return;
     await supabase.auth.signOut();
@@ -93,6 +111,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         isConfigured: isSupabaseConfigured,
         supabase,
         signInWithGoogle,
+        signInWithEmail,
+        signUpWithEmail,
         signOut,
         recordActivity,
       }}
