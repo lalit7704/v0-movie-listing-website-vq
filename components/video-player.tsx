@@ -14,6 +14,8 @@ interface VideoPlayerProps {
   poster: string;
   title: string;
 }
+const isNexStream = (url: string) => url.includes("api.codespecters.com/embed");
+
 const isYouTube = (url: string) =>
   url.includes("youtube.com") || url.includes("youtu.be");
 
@@ -200,7 +202,7 @@ export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerPro
       onMouseLeave={() => isPlaying && setShowControls(false)}
     >
       {/* Video Element */}
-      {isYouTube(videoUrl) ? (
+      {isYouTube(videoUrl) || isNexStream(videoUrl) ? (
         <iframe
           src={
             videoUrl.includes("youtu.be")
@@ -240,7 +242,7 @@ export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerPro
 
 
       {/* Play Button Overlay (before playing) */}
-      {!hasStarted && !isYouTube(videoUrl) && (
+      {!hasStarted && !isYouTube(videoUrl) && !isNexStream(videoUrl) && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/40">
           <Image
             src={poster}
