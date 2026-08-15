@@ -208,10 +208,10 @@ export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerPro
             if (isYouTube(videoUrl)) {
               return getYouTubeEmbedUrl(videoUrl);
             }
-            if (isNexStream(videoUrl)) {
+            if (isNexStream(videoUrl) && process.env.NEXT_PUBLIC_NEXTSTREAM_API_KEY) {
               const apiKey = process.env.NEXT_PUBLIC_NEXTSTREAM_API_KEY;
               // Don't render the iframe if the API key is missing
-              if (!apiKey) return "";
+              if (!apiKey || apiKey.startsWith("your_")) return "";
               const url = new URL(videoUrl);
               url.searchParams.set("apikey", apiKey);
               return url.toString();
