@@ -4,21 +4,23 @@ import { Footer } from "@/components/footer";
 import { HeroSlider } from "@/components/hero-slider";
 import { SectionSlider } from "@/components/section-slider";
 import { videos, getFeaturedVideos } from "@/data/videos";
-import Adsense from "@/components/Adsense";
 import { PersonalizedHomeSections } from "@/components/personalized-home-sections";
-import { tmdbRecentlyAddedVideos } from "@/data/tmdb-generated";
-
-const categoryLinks = [
-  { href: "/bollywood", label: "Bollywood" },
-  { href: "/hollywood", label: "Hollywood" },
-  { href: "/south-indian", label: "South Indian" },
-  { href: "/web-series", label: "Web Series" },
-  { href: "/cartoons", label: "Cartoons" },
-];
+import {
+  tmdbRecentlyAddedVideos,
+  tmdbHollywoodVideos,
+  tmdbBollywoodVideos,
+} from "@/data/tmdb-generated";
 
 export default function HomePage() {
   // Get different categories for sliders
-  const heroVideos = getFeaturedVideos();
+  const heroVideos = [
+    ...tmdbHollywoodVideos,
+    ...tmdbBollywoodVideos,
+  ]
+    .filter(v => v.poster && v.rating && v.rating > 1) // Ensure poster and some rating exists
+    .sort((a, b) => b.rating - a.rating) // Sort by highest rating
+    .slice(0, 10); // Take top 10
+
   const trendingVideos = videos.slice(0, 12);
   const newReleases = [...videos].sort((a, b) => b.year - a.year).slice(0, 12);
   const bollywoodVideos = videos.filter(v => v.category === "Bollywood" || v.genre.includes("Bollywood")).slice(0, 12);
