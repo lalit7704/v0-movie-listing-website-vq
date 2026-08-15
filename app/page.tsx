@@ -1,9 +1,8 @@
-import Link from "next/link";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { HeroSlider } from "@/components/hero-slider";
 import { SectionSlider } from "@/components/section-slider";
-import { videos, getFeaturedVideos } from "@/data/videos";
+import { videos } from "@/data/videos";
 import { PersonalizedHomeSections } from "@/components/personalized-home-sections";
 import {
   tmdbRecentlyAddedVideos,
