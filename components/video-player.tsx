@@ -14,8 +14,6 @@ interface VideoPlayerProps {
   poster: string;
   title: string;
 }
-const isNexStream = (url: string) => url.includes("api.codespecters.com/embed");
-
 const isYouTube = (url: string) =>
   url.includes("youtube.com") || url.includes("youtu.be");
 
@@ -202,22 +200,9 @@ export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerPro
       onMouseLeave={() => isPlaying && setShowControls(false)}
     >
       {/* Video Element */}
-      {isYouTube(videoUrl) || isNexStream(videoUrl) ? (
+      {isYouTube(videoUrl) ? (
         <iframe
-          src={(() => {
-            if (isYouTube(videoUrl)) {
-              return getYouTubeEmbedUrl(videoUrl);
-            }
-            if (isNexStream(videoUrl) && process.env.NEXT_PUBLIC_NEXTSTREAM_API_KEY) {
-              const apiKey = process.env.NEXT_PUBLIC_NEXTSTREAM_API_KEY;
-              // Don't render the iframe if the API key is missing
-              if (!apiKey || apiKey.startsWith("your_")) return "";
-              const url = new URL(videoUrl);
-              url.searchParams.set("apikey", apiKey);
-              return url.toString();
-            }
-            return videoUrl;
-          })()}
+          src={getYouTubeEmbedUrl(videoUrl)}
           className="w-full h-full"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -251,7 +236,7 @@ export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerPro
 
 
       {/* Play Button Overlay (before playing) */}
-      {!hasStarted && !isYouTube(videoUrl) && !isNexStream(videoUrl) && (
+      {!hasStarted && !isYouTube(videoUrl) && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/40">
           <Image
             src={poster}
