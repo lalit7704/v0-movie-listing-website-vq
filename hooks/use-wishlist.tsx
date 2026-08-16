@@ -64,33 +64,7 @@ export function WishlistProvider({ children }: { children: ReactNode }) {
   }, [syncWishlist]);
 
   useEffect(() => {
-    if (isAuthLoading || !isLoaded) return;
-    if (!user || !supabase) {
-      syncedUserId.current = null;
-      return;
-    }
-    if (syncedUserId.current === user.id) return;
-    syncedUserId.current = user.id;
-
-    void (async () => {
-      const { data } = await supabase
-        .from("wishlists")
-        .select("movie_id")
-        .eq("user_id", user.id);
-
-      const cloudIds = (data || []).map((item) => item.movie_id as string);
-      const mergedIds = [...new Set([...readWishlist(), ...cloudIds])];
-
-      if (mergedIds.length > cloudIds.length) {
-        await supabase.from("wishlists").upsert(
-          mergedIds.map((movieId) => ({ user_id: user.id, movie_id: movieId })),
-          { onConflict: "user_id,movie_id" }
-        );
-      }
-
-      window.localStorage.setItem(WISHLIST_KEY, JSON.stringify(mergedIds));
-      setWishlistIds(mergedIds);
-    })();
+    // Supabase sync logic removed
   }, [isAuthLoading, isLoaded, supabase, user]);
 
   const toggleWishlist = useCallback((videoId: string) => {
@@ -105,21 +79,7 @@ export function WishlistProvider({ children }: { children: ReactNode }) {
       window.dispatchEvent(new Event(WISHLIST_EVENT));
     } catch {
       // Storage may be blocked by strict browser privacy settings.
-    }
-
-    if (user && supabase) {
-      if (removing) {
-        void supabase
-          .from("wishlists")
-          .delete()
-          .eq("user_id", user.id)
-          .eq("movie_id", videoId);
-      } else {
-        void supabase
-          .from("wishlists")
-          .upsert({ user_id: user.id, movie_id: videoId });
-      }
-    }
+    }    
 
     recordActivity(removing ? "wishlist_remove" : "wishlist_add", videoId);
   }, [recordActivity, supabase, user, wishlistIds]);

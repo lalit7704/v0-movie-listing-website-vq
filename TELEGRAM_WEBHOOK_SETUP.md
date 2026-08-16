@@ -17,15 +17,6 @@ TELEGRAM_OWNER_USER_ID=990444100
 `TELEGRAM_WEBHOOK_SECRET` is optional. If omitted, the application safely derives one from
 the Telegram bot token. Never use a `NEXT_PUBLIC_` prefix for these variables.
 
-For persistent `/stats`, also connect the standard `SUPABASE_URL` and
-`SUPABASE_SECRET_KEY` server variables and run:
-
-```text
-supabase/migrations/202607140002_telegram_bot_events.sql
-```
-
-Movie delivery works even when the optional stats table is not configured.
-
 ## Enable the webhook
 
 1. Redeploy the Production site after adding the variables.

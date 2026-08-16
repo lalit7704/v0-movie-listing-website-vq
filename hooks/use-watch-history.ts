@@ -33,55 +33,7 @@ export function useWatchHistory() {
   }, [loadLocal]);
 
   useEffect(() => {
-    if (isAuthLoading || !user || !supabase) return;
-
-    void (async () => {
-      const { data } = await supabase
-        .from("watch_history")
-        .select("movie_id, progress_seconds, duration_seconds, last_watched_at, completed")
-        .eq("user_id", user.id)
-        .order("last_watched_at", { ascending: false })
-        .limit(100);
-
-      const cloudHistory: WatchHistoryEntry[] = (data || []).map((entry) => ({
-        movieId: entry.movie_id as string,
-        progressSeconds: Number(entry.progress_seconds),
-        durationSeconds: Number(entry.duration_seconds),
-        lastWatchedAt: entry.last_watched_at as string,
-        completed: Boolean(entry.completed),
-      }));
-
-      const merged = new Map<string, WatchHistoryEntry>();
-      [...cloudHistory, ...readLocalWatchHistory()].forEach((entry) => {
-        const existing = merged.get(entry.movieId);
-        if (!existing || new Date(entry.lastWatchedAt) > new Date(existing.lastWatchedAt)) {
-          merged.set(entry.movieId, entry);
-        }
-      });
-
-      const mergedHistory = [...merged.values()].sort(
-        (a, b) =>
-          new Date(b.lastWatchedAt).getTime() - new Date(a.lastWatchedAt).getTime()
-      );
-
-      if (mergedHistory.length > 0) {
-        await supabase.from("watch_history").upsert(
-          mergedHistory.map((entry) => ({
-            user_id: user.id,
-            movie_id: entry.movieId,
-            progress_seconds: entry.progressSeconds,
-            duration_seconds: entry.durationSeconds,
-            last_watched_at: entry.lastWatchedAt,
-            completed: entry.completed,
-          })),
-          { onConflict: "user_id,movie_id" }
-        );
-      }
-
-      window.localStorage.setItem(WATCH_HISTORY_KEY, JSON.stringify(mergedHistory));
-      setHistory(mergedHistory);
-      setIsLoaded(true);
-    })();
+    // Supabase sync logic removed
   }, [isAuthLoading, supabase, user]);
 
   return { history, isLoaded };
