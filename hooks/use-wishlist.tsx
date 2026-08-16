@@ -1,14 +1,5 @@
 "use client";
-
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useRef,
-  useState,
-  type ReactNode,
-} from "react";
+import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
 import { useAuth } from "@/components/auth-provider";
 
 const WISHLIST_KEY = "onemovie:wishlist";
@@ -37,10 +28,9 @@ interface WishlistContextValue {
 const WishlistContext = createContext<WishlistContextValue | null>(null);
 
 export function WishlistProvider({ children }: { children: ReactNode }) {
-  const { user, supabase, isLoading: isAuthLoading, recordActivity } = useAuth();
+  const { recordActivity } = useAuth();
   const [wishlistIds, setWishlistIds] = useState<string[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
-  const syncedUserId = useRef<string | null>(null);
 
   const syncWishlist = useCallback(() => {
     setWishlistIds(readWishlist());
@@ -65,7 +55,7 @@ export function WishlistProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     // Supabase sync logic removed
-  }, [isAuthLoading, isLoaded, supabase, user]);
+  }, []);
 
   const toggleWishlist = useCallback((videoId: string) => {
     const removing = wishlistIds.includes(videoId);
@@ -81,8 +71,8 @@ export function WishlistProvider({ children }: { children: ReactNode }) {
       // Storage may be blocked by strict browser privacy settings.
     }    
 
-    recordActivity(removing ? "wishlist_remove" : "wishlist_add", videoId);
-  }, [recordActivity, supabase, user, wishlistIds]);
+    recordActivity();
+  }, [recordActivity, wishlistIds]);
 
   const isWishlisted = useCallback(
     (videoId: string) => wishlistIds.includes(videoId),

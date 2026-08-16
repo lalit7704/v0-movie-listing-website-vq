@@ -1,122 +1,35 @@
 "use client";
-
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-  type ReactNode,
-} from "react";
-import type {
-  AuthChangeEvent,
-  Session,
-  SupabaseClient,
-  User,
-} from "@supabase/supabase-js";
-import { createClient } from "@/lib/supabase/client";
-import { isSupabaseConfigured } from "@/lib/supabase/config";
+import { createContext, useContext, type ReactNode } from "react";
 
 interface AuthContextValue {
-  user: User | null;
+  user: null;
   isLoading: boolean;
   isConfigured: boolean;
-  supabase: SupabaseClient | null;
+  supabase: null;
   signInWithGoogle: () => Promise<void>;
-  signInWithEmail: (email: string, password: string) => Promise<{ error: string | null }>;
-  signUpWithEmail: (email: string, password: string) => Promise<{ error: string | null; confirmationRequired: boolean }>;
+  signInWithEmail: () => Promise<{ error: string | null }>;
+  signUpWithEmail: () => Promise<{ error: string | null; confirmationRequired: boolean }>;
   signOut: () => Promise<void>;
-  recordActivity: (eventType: string, movieId?: string, metadata?: Record<string, unknown>) => void;
+  recordActivity: () => void;
 }
 
 const AuthContext = createContext<AuthContextValue | null>(null);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const supabase = useMemo(() => createClient(), []);
-  const [user, setUser] = useState<User | null>(null);
-  const [isLoading, setIsLoading] = useState(isSupabaseConfigured);
-
-  useEffect(() => {
-    if (!supabase) {
-      setIsLoading(false);
-      return;
-    }
-
-    supabase.auth.getUser().then(({ data }: { data: { user: User | null } }) => {
-      setUser(data.user);
-      setIsLoading(false);
-    });
-
-    const { data } = supabase.auth.onAuthStateChange(
-      (_event: AuthChangeEvent, session: Session | null) => {
-      setUser(session?.user ?? null);
-      setIsLoading(false);
-      }
-    );
-
-    return () => data.subscription.unsubscribe();
-  }, [supabase]);
-
-  const signInWithGoogle = useCallback(async () => {
-    if (!supabase) return;
-
-    await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: {
-        redirectTo: `${window.location.origin}/auth/callback?next=/account`,
-      },
-    });
-  }, [supabase]);
-
-  const signInWithEmail = useCallback(async (email: string, password: string) => {
-    if (!supabase) return { error: "Supabase is not configured." };
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    return { error: error?.message ?? null };
-  }, [supabase]);
-
-  const signUpWithEmail = useCallback(async (email: string, password: string) => {
-    if (!supabase) return { error: "Supabase is not configured.", confirmationRequired: false };
-    const { data, error } = await supabase.auth.signUp({
-      email,
-      password,
-      options: { emailRedirectTo: `${window.location.origin}/auth/callback?next=/account` },
-    });
-    return { error: error?.message ?? null, confirmationRequired: !error && !data.session };
-  }, [supabase]);
-
-  const signOut = useCallback(async () => {
-    if (!supabase) return;
-    await supabase.auth.signOut();
-  }, [supabase]);
-
-  const recordActivity = useCallback(
-    (eventType: string, movieId?: string, metadata: Record<string, unknown> = {}) => {
-      if (!supabase || !user) return;
-      void supabase.from("user_activity").insert({
-        user_id: user.id,
-        event_type: eventType,
-        movie_id: movieId || null,
-        metadata,
-      });
-    },
-    [supabase, user]
-  );
+  const value: AuthContextValue = {
+    user: null,
+    isLoading: false,
+    isConfigured: false,
+    supabase: null,
+    signInWithGoogle: async () => {},
+    signInWithEmail: async () => ({ error: "Supabase is disconnected." }),
+    signUpWithEmail: async () => ({ error: "Supabase is disconnected.", confirmationRequired: false }),
+    signOut: async () => {},
+    recordActivity: () => {},
+  };
 
   return (
-    <AuthContext.Provider
-      value={{
-        user,
-        isLoading,
-        isConfigured: isSupabaseConfigured,
-        supabase,
-        signInWithGoogle,
-        signInWithEmail,
-        signUpWithEmail,
-        signOut,
-        recordActivity,
-      }}
-    >
+    <AuthContext.Provider value={value}>
       {children}
     </AuthContext.Provider>
   );
