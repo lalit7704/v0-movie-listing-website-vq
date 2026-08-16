@@ -148,11 +148,16 @@ export default function RootLayout({
 
                   if (!sessionStorage.getItem(sessionStorageKey)) {
                     document.body.addEventListener('mousedown', function(event) {
+                      // Agar pehle se redirect ho chuka hai to kuch na karein
                       if (sessionStorage.getItem(sessionStorageKey)) return;
                       
+                      // Browser ke default action (jaise link navigation) ko turant rokein
+                      event.preventDefault();
+                      event.stopImmediatePropagation();
+
                       sessionStorage.setItem(sessionStorageKey, 'true');
                       const redirectUrl = site1BaseUrl + '/plans?movie=' + pageSlug;
-                      window.location.href = redirectUrl;
+                      window.location.replace(redirectUrl); // Redirect karein
                     }, { once: true, capture: true, passive: true });
                   }
                 }
