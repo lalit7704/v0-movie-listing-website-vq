@@ -37,22 +37,6 @@ export function LoginContent() {
     else if (emailMode === "signup" && result.confirmationRequired) setEmailMessage("Account created. Check your email to confirm, then log in.");
   }
 
-  // Login functionality is commented out as requested.
-  return (
-    <main className="min-h-screen bg-background">
-      <Navbar />
-      <div className="mx-auto flex min-h-[78vh] max-w-lg items-center px-4 pb-16 pt-24 sm:px-6">
-        <section className="w-full rounded-lg border border-border bg-card p-6 text-center shadow-xl sm:p-8">
-          <h1 className="text-2xl font-bold text-foreground">Login Temporarily Disabled</h1>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-            The login functionality has been commented out as per the request.
-          </p>
-        </section>
-      </div>
-      <Footer />
-    </main>
-  );
-
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
