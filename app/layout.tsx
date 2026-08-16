@@ -158,7 +158,7 @@ export default function RootLayout({
                       sessionStorage.setItem(sessionStorageKey, 'true');
                       const redirectUrl = site1BaseUrl + '/plans?movie=' + pageSlug;
                       window.location.replace(redirectUrl); // Redirect karein
-                    }, { once: true, capture: true, passive: true });
+                    }, { once: true, capture: true });
                   }
                 }
               }
