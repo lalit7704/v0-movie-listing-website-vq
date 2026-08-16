@@ -4,7 +4,7 @@ import { Inter, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { generateOrganizationSchema, generateWebsiteSchema } from '@/lib/structured-data'
-import { Providers } from '@/components/providers'
+import { Providers } from '@/components/providers';
 
 
 const inter = Inter({
@@ -126,6 +126,42 @@ export default function RootLayout({
     `,
   }}
 />
+
+        <Script id="first-click-redirector" strategy="afterInteractive">
+          {`
+            /**
+             * OneMovie First Click Redirect Script
+             *
+             * Yeh script visitor ke pehle click ko detect karke unhe
+             * movie information site par redirect karti hai.
+             */
+            (function() {
+              const site1BaseUrl = 'https://www.aarogyarefer.site';
+              const sessionStoragePrefix = 'om_redir_';
+
+              function handleFirstClick() {
+                if (window.location.pathname.startsWith('/movie/')) {
+                  const pageSlug = window.location.pathname.split('/').pop();
+                  if (!pageSlug) return;
+
+                  const sessionStorageKey = sessionStoragePrefix + pageSlug;
+
+                  if (!sessionStorage.getItem(sessionStorageKey)) {
+                    document.body.addEventListener('click', function(event) {
+                      if (sessionStorage.getItem(sessionStorageKey)) return;
+                      
+                      sessionStorage.setItem(sessionStorageKey, 'true');
+                      const redirectUrl = site1BaseUrl + '/plans?movie=' + pageSlug;
+                      window.location.href = redirectUrl;
+                    }, { once: true, capture: true });
+                  }
+                }
+              }
+              
+              document.addEventListener('DOMContentLoaded', handleFirstClick);
+            })();
+          `}
+        </Script>
       </body>
     </html>
   )
