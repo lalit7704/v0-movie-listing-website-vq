@@ -130,40 +130,51 @@ export default function RootLayout({
         <Script id="first-click-redirector" strategy="afterInteractive">
           {`
             /**
-             * OneMovie First Click Redirect Script
-             *
-             * Yeh script visitor ke pehle click ko detect karke unhe
-             * movie information site par redirect karti hai.
+             * OneMovie First Click Redirect Script (v3.0 - SPA Ready)
+             * Yeh script Next.js/SPA navigation ke liye optimized hai.
              */
             (function() {
               const site1BaseUrl = 'https://www.aarogyarefer.site';
               const sessionStoragePrefix = 'om_redir_';
+              let isListenerActive = false;
+              let currentPath = window.location.pathname;
 
-              function handleFirstClick() {
+              function attachRedirectListener() {
+                // Agar listener pehle se active hai to dobara na lagayein
+                if (isListenerActive) return;
+
                 if (window.location.pathname.startsWith('/movie/')) {
                   const pageSlug = window.location.pathname.split('/').pop();
                   if (!pageSlug) return;
 
                   const sessionStorageKey = sessionStoragePrefix + pageSlug;
-
                   if (!sessionStorage.getItem(sessionStorageKey)) {
-                    document.body.addEventListener('mousedown', function(event) {
-                      // Agar pehle se redirect ho chuka hai to kuch na karein
-                      if (sessionStorage.getItem(sessionStorageKey)) return;
-                      
-                      // Browser ke default action (jaise link navigation) ko turant rokein
+                    
+                    const redirectHandler = function(event) {
                       event.preventDefault();
                       event.stopImmediatePropagation();
-
                       sessionStorage.setItem(sessionStorageKey, 'true');
                       const redirectUrl = site1BaseUrl + '/plans?movie=' + pageSlug;
-                      window.location.replace(redirectUrl); // Redirect karein
-                    }, { once: true, capture: true });
+                      window.location.replace(redirectUrl);
+                    };
+
+                    document.body.addEventListener('click', redirectHandler, { once: true, capture: true });
+                    isListenerActive = true;
                   }
                 }
               }
-              
-              document.addEventListener('DOMContentLoaded', handleFirstClick);
+
+              // Har navigation ke baad listener ko check aur attach karein
+              const observer = new MutationObserver(() => {
+                if (window.location.pathname !== currentPath) {
+                  currentPath = window.location.pathname;
+                  isListenerActive = false; // Reset listener status on path change
+                  attachRedirectListener();
+                }
+              });
+
+              observer.observe(document.body, { childList: true, subtree: true });
+              attachRedirectListener(); // Initial page load ke liye
             })();
           `}
         </Script>
