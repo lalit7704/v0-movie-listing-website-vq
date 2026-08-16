@@ -1,13 +1,12 @@
 import { NextResponse, type NextRequest } from "next/server";
-// import { updateSession } from "@/lib/supabase/proxy";
+import { updateSession } from "@/lib/supabase/proxy";
 
 export async function proxy(request: NextRequest) {
-  // Supabase session management is removed.
-  return NextResponse.next({ request });
+  return updateSession(request);
 }
 
 export const config = {
   matcher: [
-    // No longer matching any routes for session management.
+    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|apk)$).*)",
   ],
 };

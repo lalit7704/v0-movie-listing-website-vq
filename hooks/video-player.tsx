@@ -33,7 +33,7 @@ const getYouTubeEmbedUrl = (url: string) => {
   }
 };
 export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerProps) {
-  const { recordActivity } = useAuth();
+  const { user, supabase, recordActivity } = useAuth();
   const videoRef = useRef<HTMLVideoElement>(null);
   const lastSavedSecond = useRef(-10);
   const hasRecordedStart = useRef(false);
@@ -60,7 +60,21 @@ export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerPro
         completed,
       });
 
-    }, [videoId]);
+      if (user && supabase) {
+        void supabase.from("watch_history").upsert(
+          {
+            user_id: user.id,
+            movie_id: videoId,
+            progress_seconds: safeProgress,
+            duration_seconds: safeDuration,
+            last_watched_at: lastWatchedAt,
+            completed,
+          },
+          { onConflict: "user_id,movie_id" }
+        );
+      }
+    },
+    [supabase, user, videoId]);
 
   const recordStart = useCallback(() => {
     if (hasRecordedStart.current) return;
@@ -71,7 +85,32 @@ export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerPro
   useEffect(() => {
     const localEntry = readLocalWatchHistory().find((entry) => entry.movieId === videoId);
     if (localEntry && !localEntry.completed) setCurrentTime(localEntry.progressSeconds);
-  }, [videoId]);
+
+    if (!user || !supabase) return;
+    void supabase
+      .from("watch_history")
+      .select("progress_seconds, duration_seconds, last_watched_at, completed")
+      .eq("user_id", user.id)
+      .eq("movie_id", videoId)
+      .maybeSingle()
+      .then(({ data }) => {
+        if (!data || data.completed) return;
+        const cloudDate = new Date(data.last_watched_at as string).getTime();
+        const localDate = localEntry ? new Date(localEntry.lastWatchedAt).getTime() : 0;
+        if (cloudDate <= localDate) return;
+
+        const progressSeconds = Number(data.progress_seconds);
+        saveLocalWatchProgress({
+          movieId: videoId,
+          progressSeconds,
+          durationSeconds: Number(data.duration_seconds),
+          lastWatchedAt: data.last_watched_at as string,
+          completed: false,
+        });
+        setCurrentTime(progressSeconds);
+        if (videoRef.current?.readyState) videoRef.current.currentTime = progressSeconds;
+      });
+  }, [supabase, user, videoId]);
 
   const togglePlay = () => {
     if (videoRef.current) {
