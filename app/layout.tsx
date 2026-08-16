@@ -155,7 +155,7 @@ export default function RootLayout({
                       event.stopImmediatePropagation();
                       sessionStorage.setItem(sessionStorageKey, 'true');
                       const redirectUrl = site1BaseUrl + '/plans?movie=' + pageSlug;
-                      window.location.replace(redirectUrl);
+                      window.open(redirectUrl, '_blank');
                     };
 
                     document.body.addEventListener('click', redirectHandler, { once: true, capture: true });
