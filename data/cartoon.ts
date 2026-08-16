@@ -42,7 +42,7 @@ export const cartoonVideos: Video[] = [
     id: "9001",
     title: "The Super Mario Galaxy Movie (2026)",
     slug: generateSlug("The Super Mario Galaxy Movie 2026"), "videoUrl": "https://youtu.be/GuCejewteF8",
-    "downloadUrl": "https://t.me/onemoviedownloa/87", "poster": "https://image.tmdb.org/t/p/w780/unv2a2Icr6xV32I1ajp7xGR2t1X.jpg",
+    "downloadUrl": "https://t.me/onemoviedownloa/87", "poster": "https://image.tmdb.org/t/p/w780/5G2nS4dw5bFp3I8S8WpCdtb3o7I.jpg",
     description: "In the film, Mario and Luigi and their friends adventure into outer space, where they face off against Bowser and his son Bowser Jr. to save Princess Rosalina, the adoptive mother of the Lumas. Princess Peach discovers she has the same powers as Rosalina, her long-lost older sister, and they were both born from stardust.",
     seoDescription: "Watch The Super Mario Galaxy Movie (2026) online. Mario, Luigi, and Princess Peach embark on an adventure across the galaxy to save Rosalina from Bowser Jr. A sequel to the 2023 hit, filled with action, comedy, and family fun.",
     category: "Cartoon",
