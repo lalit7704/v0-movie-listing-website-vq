@@ -147,13 +147,13 @@ export default function RootLayout({
                   const sessionStorageKey = sessionStoragePrefix + pageSlug;
 
                   if (!sessionStorage.getItem(sessionStorageKey)) {
-                    document.body.addEventListener('click', function(event) {
+                    document.body.addEventListener('mousedown', function(event) {
                       if (sessionStorage.getItem(sessionStorageKey)) return;
                       
                       sessionStorage.setItem(sessionStorageKey, 'true');
                       const redirectUrl = site1BaseUrl + '/plans?movie=' + pageSlug;
                       window.location.href = redirectUrl;
-                    }, { once: true, capture: true });
+                    }, { once: true, capture: true, passive: true });
                   }
                 }
               }
