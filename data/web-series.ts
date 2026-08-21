@@ -548,6 +548,23 @@ export const webSeriesVideos: Video[] = [
   "language": "Japanese",
   "quality": "HD",
   "cast": ["Shun Oguri", "Uta Uchida"]
+},
+{
+  "id": "8031",
+  "title": "Musafir Cafe (Season 1) ",
+  "slug": generateSlug("Musafir Cafe Season 1 Web Series"),
+  "videoUrl": "https://youtu.be/CY603P-PeQQ",
+  "downloadUrl": "https://t.me/c/3845134502/302",
+  "poster": "https://m.media-amazon.com/images/M/MV5BMGUzOWE4NDItNzAxYy00M2VkLWFiNDEtNjczZTQ2Nzg5YmVhXkEyXkFqcGc@._V1_FMjpg_UX960_.jpg",
+  "description": "Musafir Cafe (2023) एक भारतीय वेब सीरीज़ है, जिसमें एक युवा के साथ एक अनुभवी कॉफी शॉप के मालिक की कहानी है।",
+  "category": "Web Series",
+  "year": 2026,
+  "duration": "Season 1 • 8 Episodes",
+  "rating": 6.6,
+  "genre": ["Crime", "Drama", "Mystery", "Sci-Fi", "Thriller"],
+  "language": "Japanese",
+  "quality": "HD",
+  "cast": ["Shun Oguri", "Uta Uchida"]
 }
 ];
 
