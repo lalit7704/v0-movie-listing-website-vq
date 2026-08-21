@@ -560,7 +560,7 @@ export const webSeriesVideos: Video[] = [
   "category": "Web Series",
   "year": 2026,
   "duration": "Season 1 • 8 Episodes",
-  "rating": 6.6,
+  "rating": 7.6,
   "genre": ["Crime", "Drama", "Mystery", "Sci-Fi", "Thriller"],
   "language": "Japanese",
   "quality": "HD",
