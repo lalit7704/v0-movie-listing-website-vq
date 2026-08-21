@@ -2,10 +2,9 @@ import { MetadataRoute } from 'next';
 import { videos } from '@/data/videos';
 import { generateSlug } from '@/lib/seo-utils';
 
-export default function sitemap(): MetadataRoute.Sitemap {
 const baseUrl = 'https://www.onemovie.in';
 
-  // Homepage
+export default function sitemap(): MetadataRoute.Sitemap {
   const pages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
@@ -13,7 +12,7 @@ const baseUrl = 'https://www.onemovie.in';
       changeFrequency: 'weekly',
       priority: 1,
     },
-    // Category pages
+
     {
       url: `${baseUrl}/bollywood`,
       lastModified: new Date(),
@@ -38,6 +37,7 @@ const baseUrl = 'https://www.onemovie.in';
       changeFrequency: 'weekly',
       priority: 0.8,
     },
+
     {
       url: `${baseUrl}/comedy`,
       lastModified: new Date(),
@@ -92,6 +92,7 @@ const baseUrl = 'https://www.onemovie.in';
       changeFrequency: 'weekly',
       priority: 0.7,
     },
+
     {
       url: `${baseUrl}/faq`,
       lastModified: new Date(),
@@ -118,15 +119,14 @@ const baseUrl = 'https://www.onemovie.in';
     },
   ];
 
-
-
-  // Movie/Video pages
-  const moviePages = videos.map((video) => ({
-    url: `${baseUrl}/movie/${generateSlug(video.title)}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.9,
-  }));
+  const moviePages: MetadataRoute.Sitemap = videos
+    .filter((video) => video.title && generateSlug(video.title))
+    .map((video) => ({
+      url: `${baseUrl}/movie/${generateSlug(video.title)}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    }));
 
   return [...pages, ...moviePages];
 }
