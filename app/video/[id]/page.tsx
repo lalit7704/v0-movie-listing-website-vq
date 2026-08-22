@@ -50,6 +50,9 @@ export default async function VideoPage({ params }: VideoPageProps) {
 
   const recommendedVideos = getRecommendedVideos(id);
   const downloadUrl = resolveDownloadUrl(video.downloadUrl);
+  const alternativeDownloadUrl = video.alternateDownloadUrl
+    ? resolveDownloadUrl(video.alternateDownloadUrl)
+    : null;
 
   return (
     <main className="min-h-screen bg-background">
@@ -117,6 +120,18 @@ export default async function VideoPage({ params }: VideoPageProps) {
                       Download
                     </Button>
                   </TrackedDownloadLink>
+                  {alternativeDownloadUrl && (
+                    <TrackedDownloadLink
+                      href={alternativeDownloadUrl}
+                      movieId={video.id}
+                      source="secondary"
+                    >
+                      <Button variant="outline" className="gap-2">
+                        <Download className="w-4 h-4" />
+                        Alternative Link
+                      </Button>
+                    </TrackedDownloadLink>
+                  )}
                 </div>
               </div>
 

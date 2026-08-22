@@ -206,6 +206,9 @@ export default async function MoviePage({
   const downloadUrl = resolveDownloadUrl(
     video.downloadUrl
   );
+  const alternativeDownloadUrl = video.alternateDownloadUrl
+    ? resolveDownloadUrl(video.alternateDownloadUrl)
+    : null;
 
   const breadcrumbs = generateBreadcrumbs(
     video.title,
@@ -356,6 +359,19 @@ export default async function MoviePage({
                         Download
                       </Button>
                     </TrackedDownloadLink>
+
+                    {alternativeDownloadUrl && (
+                      <TrackedDownloadLink
+                        href={alternativeDownloadUrl}
+                        movieId={video.id}
+                        source="secondary"
+                      >
+                        <Button variant="outline" className="gap-2">
+                          <Download className="w-4 h-4" />
+                          Alternative Link
+                        </Button>
+                      </TrackedDownloadLink>
+                    )}
                   </div>
                 </div>
 

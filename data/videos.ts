@@ -15,6 +15,7 @@ export interface Video {
   slug: string;
   videoUrl: string;
   downloadUrl: string;
+  alternateDownloadUrl?: string;
   poster: string;
   description: string;
   seoDescription?: string;
