@@ -171,7 +171,7 @@ export function AccountDashboard() {
       .single();
 
     if (error) {
-      console.error("Movie request submission failed", error);
+      console.log("FULL MOVIE REQUEST ERROR:", error);
       setRequestMessage(
         error.message.includes("request_limit_reached")
           ? "You can submit up to 3 requests in 24 hours. Please try again later."
