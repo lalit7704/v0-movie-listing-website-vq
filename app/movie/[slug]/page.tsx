@@ -3,22 +3,39 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
-import { Download, Star, Clock, Calendar, Globe, Film, ChevronLeft } from "lucide-react";
+import {
+  Download,
+  Star,
+  Clock,
+  Calendar,
+  Globe,
+  Film,
+  ChevronLeft,
+} from "lucide-react";
+
 import { Navbar } from "@/components/navbar";
 import { VideoPlayer } from "@/components/video-player";
 import { SectionSlider } from "@/components/section-slider";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
-import { videos, getVideoBySlug, Video } from "@/data/videos";
-import { getRelatedMovies, generateBreadcrumbs } from "@/lib/internal-links";
+
+import { videos, getVideoBySlug } from "@/data/videos";
+
+import {
+  getRelatedMovies,
+  generateBreadcrumbs,
+} from "@/lib/internal-links";
+
 import {
   generateSlug,
   generateCanonicalUrl,
   generateSEOTitle,
   generateMetaDescription,
 } from "@/lib/seo-utils";
+
 import { generateMoviePageJsonLd } from "@/lib/structured-data";
 import { resolveDownloadUrl } from "@/lib/download-url";
+
 import { MovieComments } from "@/components/movie-comments";
 import { TrackedDownloadLink } from "@/components/tracked-download-link";
 import { ShareActions } from "@/components/share-actions";
@@ -29,55 +46,111 @@ interface MoviePageProps {
   params: Promise<{ slug: string }>;
 }
 
+/**
+ * Generate all movie URLs using the SAME slug logic
+ * used by VideoCard and sitemap.ts.
+ */
 export async function generateStaticParams() {
-  return videos.map((video) => ({
-    slug: generateSlug(video.title),
-  }));
+  return videos
+    .filter((video) => video.title)
+    .map((video) => ({
+      slug: video.slug || generateSlug(video.title),
+    }));
 }
 
-export async function generateMetadata({ params }: MoviePageProps): Promise<Metadata> {
-  const { slug } = await params;
-  
-  // Try to find by slug first
-  let video = getVideoBySlug(slug);
-  
-  // Fallback: search by generated slug from title
-  if (!video) {
-    video = videos.find((v) => generateSlug(v.title) === slug);
+/**
+ * Find movie by the canonical slug.
+ *
+ * Priority:
+ * 1. video.slug
+ * 2. generated slug from title
+ */
+function findVideoBySlug(slug: string) {
+  const videoBySlug = getVideoBySlug(slug);
+
+  if (videoBySlug) {
+    return videoBySlug;
   }
+
+  return videos.find(
+    (video) => (video.slug || generateSlug(video.title)) === slug
+  );
+}
+
+/**
+ * SEO Metadata
+ */
+export async function generateMetadata({
+  params,
+}: MoviePageProps): Promise<Metadata> {
+  const { slug } = await params;
+
+  const video = findVideoBySlug(slug);
 
   if (!video) {
     return {
       title: "Movie Not Found - Onemovie",
-      description: "The movie you&apos;re looking for couldn&apos;t be found.",
+      description: "The movie you're looking for couldn't be found.",
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
   }
 
-  const canonicalUrl = generateCanonicalUrl(slug);
-  const seoTitle = generateSEOTitle(video.title, video.category);
-  const metaDescription = generateMetaDescription(video.description);
+  const canonicalSlug = video.slug || generateSlug(video.title);
+  const canonicalUrl = generateCanonicalUrl(canonicalSlug);
+
+  const seoTitle = generateSEOTitle(
+    video.title,
+    video.category
+  );
+
+  const metaDescription = generateMetaDescription(
+    video.description
+  );
+
   const imageUrl = video.poster;
 
   return {
     title: seoTitle,
+
     description: metaDescription,
+
     keywords: [
       video.title,
       ...video.genre,
       video.category,
+      video.language,
       "watch online",
       "streaming",
       "free movies",
     ].join(", "),
+
     alternates: {
       canonical: canonicalUrl,
     },
-    authors: video.director ? [{ name: video.director }] : undefined,
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
+    },
+
+    authors: video.director
+      ? [{ name: video.director }]
+      : undefined,
+
     openGraph: {
       title: video.title,
       description: metaDescription,
       url: canonicalUrl,
       type: "video.movie",
+      siteName: "Onemovie",
+
       images: [
         {
           url: imageUrl,
@@ -86,8 +159,8 @@ export async function generateMetadata({ params }: MoviePageProps): Promise<Meta
           alt: video.title,
         },
       ],
-      siteName: "Onemovie",
     },
+
     twitter: {
       card: "summary_large_image",
       title: video.title,
@@ -97,24 +170,49 @@ export async function generateMetadata({ params }: MoviePageProps): Promise<Meta
   };
 }
 
-export default async function MoviePage({ params }: MoviePageProps) {
+/**
+ * Movie Page
+ */
+export default async function MoviePage({
+  params,
+}: MoviePageProps) {
   const { slug } = await params;
 
-  // Try to find by slug first
-  let video = getVideoBySlug(slug);
+  const video = findVideoBySlug(slug);
 
-  // Fallback: search by generated slug from title
-  if (!video) {
-    video = videos.find((v) => generateSlug(v.title) === slug);
-  }
-
+  /**
+   * If movie doesn't exist, return proper 404.
+   */
   if (!video) {
     notFound();
   }
 
-  const recommendedVideos = getRelatedMovies(video.id, 12);
-  const downloadUrl = resolveDownloadUrl(video.downloadUrl);
-  const breadcrumbs = generateBreadcrumbs(video.title, video.category, slug);
+  /**
+   * Always use the canonical slug from the movie data.
+   */
+  const canonicalSlug =
+    video.slug || generateSlug(video.title);
+
+  /**
+   * If someone visits an old/generated slug that doesn't
+   * match the canonical slug, we still render the correct
+   * movie page. Canonical metadata points to the correct URL.
+   */
+  const recommendedVideos = getRelatedMovies(
+    video.id,
+    12
+  );
+
+  const downloadUrl = resolveDownloadUrl(
+    video.downloadUrl
+  );
+
+  const breadcrumbs = generateBreadcrumbs(
+    video.title,
+    video.category,
+    canonicalSlug
+  );
+
   const jsonLdScripts = generateMoviePageJsonLd(
     video.title,
     video.description,
@@ -130,6 +228,7 @@ export default async function MoviePage({ params }: MoviePageProps) {
 
   return (
     <>
+      {/* Movie Structured Data */}
       <Script
         id="movie-schema"
         type="application/ld+json"
@@ -137,22 +236,40 @@ export default async function MoviePage({ params }: MoviePageProps) {
           __html: JSON.stringify(jsonLdScripts),
         }}
       />
+
       <main className="min-h-screen bg-background">
         <Navbar />
 
         {/* Main Content */}
         <div className="pt-20 pb-8">
           <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+
             {/* Breadcrumb Navigation */}
-            <nav aria-label="Breadcrumb" className="mb-4">
+            <nav
+              aria-label="Breadcrumb"
+              className="mb-4"
+            >
               <ol className="flex items-center gap-2 text-sm text-muted-foreground">
                 {breadcrumbs.map((item, index) => (
-                  <li key={item.url} className="flex items-center gap-2">
-                    {index > 0 && <span className="text-xs">›</span>}
+                  <li
+                    key={item.url}
+                    className="flex items-center gap-2"
+                  >
+                    {index > 0 && (
+                      <span className="text-xs">
+                        ›
+                      </span>
+                    )}
+
                     {index === breadcrumbs.length - 1 ? (
-                      <span className="text-foreground font-medium">{item.name}</span>
+                      <span className="text-foreground font-medium">
+                        {item.name}
+                      </span>
                     ) : (
-                      <Link href={item.url} className="hover:text-foreground transition-colors">
+                      <Link
+                        href={item.url}
+                        className="hover:text-foreground transition-colors"
+                      >
                         {item.name}
                       </Link>
                     )}
@@ -173,8 +290,10 @@ export default async function MoviePage({ params }: MoviePageProps) {
             </Link>
 
             <div className="grid min-w-0 grid-cols-1 gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
-              {/* Video Player and Details */}
+
+              {/* Main Content */}
               <div className="min-w-0 space-y-6">
+
                 {/* Video Player */}
                 <VideoPlayer
                   videoId={video.id}
@@ -185,25 +304,35 @@ export default async function MoviePage({ params }: MoviePageProps) {
 
                 {/* Title and Actions */}
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+
                   <div>
                     <h1 className="break-words text-2xl md:text-3xl font-bold text-foreground mb-2">
                       {video.title}
                     </h1>
+
                     <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+
                       {video.rating > 0 && (
                         <>
                           <div className="flex items-center gap-1">
                             <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-                            <span className="text-foreground font-medium">{video.rating}</span>
+
+                            <span className="text-foreground font-medium">
+                              {video.rating}
+                            </span>
                           </div>
+
                           <span>&bull;</span>
                         </>
                       )}
+
                       <div className="flex items-center gap-1">
                         <Clock className="w-4 h-4" />
                         <span>{video.duration}</span>
                       </div>
+
                       <span>•</span>
+
                       <div className="flex items-center gap-1">
                         <Calendar className="w-4 h-4" />
                         <span>{video.year}</span>
@@ -212,7 +341,11 @@ export default async function MoviePage({ params }: MoviePageProps) {
                   </div>
 
                   <div className="flex flex-wrap items-center gap-2">
-                    <WishlistButton videoId={video.id} showLabel />
+                    <WishlistButton
+                      videoId={video.id}
+                      showLabel
+                    />
+
                     <TrackedDownloadLink
                       href={downloadUrl}
                       movieId={video.id}
@@ -226,13 +359,17 @@ export default async function MoviePage({ params }: MoviePageProps) {
                   </div>
                 </div>
 
-                {/* Quality Badge */}
+                {/* Quality + Genres */}
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 text-sm font-semibold bg-primary text-primary-foreground rounded">
                     {video.quality}
                   </span>
+
                   {video.genre.map((genre) => (
-                    <span key={genre} className="px-3 py-1 text-sm bg-secondary text-secondary-foreground rounded">
+                    <span
+                      key={genre}
+                      className="px-3 py-1 text-sm bg-secondary text-secondary-foreground rounded"
+                    >
                       {genre}
                     </span>
                   ))}
@@ -240,87 +377,145 @@ export default async function MoviePage({ params }: MoviePageProps) {
 
                 {/* Description */}
                 <div className="bg-card rounded-xl p-6 border border-border">
-                  <h2 className="text-lg font-semibold text-foreground mb-3">Description</h2>
+                  <h2 className="text-lg font-semibold text-foreground mb-3">
+                    Description
+                  </h2>
+
                   <p className="break-words text-muted-foreground leading-relaxed">
                     {video.description}
                   </p>
                 </div>
 
+                {/* Comments */}
+                <MovieComments
+                  slug={canonicalSlug}
+                  title={video.title}
+                />
+
                 {/* Movie Details */}
-
-                <MovieComments slug={slug} title={video.title} />
-
                 <div className="bg-card rounded-xl p-6 border border-border">
-                  <h2 className="text-lg font-semibold text-foreground mb-4">Movie Details</h2>
+
+                  <h2 className="text-lg font-semibold text-foreground mb-4">
+                    Movie Details
+                  </h2>
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                    {/* Language */}
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
                         <Globe className="w-5 h-5 text-muted-foreground" />
                       </div>
+
                       <div>
-                        <p className="text-sm text-muted-foreground">Language</p>
-                        <p className="text-foreground font-medium">{video.language}</p>
+                        <p className="text-sm text-muted-foreground">
+                          Language
+                        </p>
+
+                        <p className="text-foreground font-medium">
+                          {video.language}
+                        </p>
                       </div>
                     </div>
+
+                    {/* Category */}
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
                         <Film className="w-5 h-5 text-muted-foreground" />
                       </div>
+
                       <div>
-                        <p className="text-sm text-muted-foreground">Category</p>
-                        <p className="text-foreground font-medium">{video.category}</p>
+                        <p className="text-sm text-muted-foreground">
+                          Category
+                        </p>
+
+                        <p className="text-foreground font-medium">
+                          {video.category}
+                        </p>
                       </div>
                     </div>
+
+                    {/* Duration */}
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
                         <Clock className="w-5 h-5 text-muted-foreground" />
                       </div>
+
                       <div>
-                        <p className="text-sm text-muted-foreground">Duration</p>
-                        <p className="text-foreground font-medium">{video.duration}</p>
+                        <p className="text-sm text-muted-foreground">
+                          Duration
+                        </p>
+
+                        <p className="text-foreground font-medium">
+                          {video.duration}
+                        </p>
                       </div>
                     </div>
+
+                    {/* Release Year */}
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
                         <Calendar className="w-5 h-5 text-muted-foreground" />
                       </div>
+
                       <div>
-                        <p className="text-sm text-muted-foreground">Release Year</p>
-                        <p className="text-foreground font-medium">{video.year}</p>
+                        <p className="text-sm text-muted-foreground">
+                          Release Year
+                        </p>
+
+                        <p className="text-foreground font-medium">
+                          {video.year}
+                        </p>
                       </div>
                     </div>
+
                   </div>
                 </div>
+
               </div>
 
-              {/* Sidebar - Poster and Quick Info */}
+              {/* Sidebar */}
               <div className="min-w-0 space-y-6">
+
                 {/* Poster */}
                 <div className="relative aspect-[2/3] rounded-xl overflow-hidden shadow-2xl">
+
                   <Image
                     src={video.poster}
-                    alt={video.title}
+                    alt={`${video.title} poster`}
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 33vw"
                     priority
                   />
+
+                  {/* Quality */}
                   <div className="absolute top-3 left-3">
                     <span className="px-3 py-1 text-sm font-semibold bg-primary text-primary-foreground rounded shadow-lg">
                       {video.quality}
                     </span>
                   </div>
+
+                  {/* Rating */}
                   {video.rating > 0 && (
                     <div className="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 bg-black/70 rounded">
                       <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-                      <span className="text-foreground font-medium">{video.rating}</span>
+
+                      <span className="text-foreground font-medium">
+                        {video.rating}
+                      </span>
                     </div>
                   )}
+
                 </div>
 
                 {/* Quick Download */}
                 <div className="bg-card rounded-xl p-6 border border-border">
-                  <h3 className="text-lg font-semibold text-foreground mb-4">Quick Download</h3>
+
+                  <h3 className="text-lg font-semibold text-foreground mb-4">
+                    Quick Download
+                  </h3>
+
                   <TrackedDownloadLink
                     href={downloadUrl}
                     movieId={video.id}
@@ -331,25 +526,45 @@ export default async function MoviePage({ params }: MoviePageProps) {
                       <Download className="w-4 h-4" />
                     </Button>
                   </TrackedDownloadLink>
+
                 </div>
 
+                {/* Help */}
                 <div className="bg-card rounded-xl p-6 border border-border">
-                  <h3 className="text-lg font-semibold text-foreground mb-4">Need Help?</h3>
-                  <MovieSupportActions movieId={video.id} />
+
+                  <h3 className="text-lg font-semibold text-foreground mb-4">
+                    Need Help?
+                  </h3>
+
+                  <MovieSupportActions
+                    movieId={video.id}
+                  />
+
                 </div>
 
                 {/* Share */}
                 <div className="bg-card rounded-xl p-6 border border-border">
-                  <h3 className="text-lg font-semibold text-foreground mb-4">Share This Movie</h3>
-                  <ShareActions title={video.title} />
+
+                  <h3 className="text-lg font-semibold text-foreground mb-4">
+                    Share This Movie
+                  </h3>
+
+                  <ShareActions
+                    title={video.title}
+                  />
+
                 </div>
+
               </div>
             </div>
           </div>
         </div>
 
         {/* Recommended Movies */}
-        <SectionSlider title="You May Also Like" videos={recommendedVideos} />
+        <SectionSlider
+          title="You May Also Like"
+          videos={recommendedVideos}
+        />
 
         <Footer />
       </main>

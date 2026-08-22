@@ -6,6 +6,7 @@ const baseUrl = 'https://www.onemovie.in';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages: MetadataRoute.Sitemap = [
+    // Homepage
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -13,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
 
+    // Category pages
     {
       url: `${baseUrl}/bollywood`,
       lastModified: new Date(),
@@ -37,7 +39,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
-
     {
       url: `${baseUrl}/comedy`,
       lastModified: new Date(),
@@ -93,6 +94,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
 
+    // Important pages
     {
       url: `${baseUrl}/faq`,
       lastModified: new Date(),
@@ -119,14 +121,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // Movie pages
   const moviePages: MetadataRoute.Sitemap = videos
-    .filter((video) => video.title && generateSlug(video.title))
-    .map((video) => ({
-      url: `${baseUrl}/movie/${generateSlug(video.title)}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-    }));
+    .filter((video) => video.title)
+    .map((video) => {
+      // Use the same slug as VideoCard.
+      // If video.slug doesn't exist, generate it from the title.
+      const slug = video.slug || generateSlug(video.title);
+
+      return {
+        url: `${baseUrl}/movie/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.9,
+      };
+    });
 
   return [...pages, ...moviePages];
 }
