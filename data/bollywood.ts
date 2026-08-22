@@ -937,7 +937,7 @@ export const bollywoodVideos: Video[] = [
   "title": "Ikka (2026) - Action Drama",
   "slug": generateSlug("Ikka (2026) - Action Drama"),
   "videoUrl": "https://youtu.be/unf8x_aZg9Y",
-  "downloadUrl": "https://linkmake.in/view/hesIkIYWMV",
+  "downloadUrl": "https://t.me/c/3845134502/248",
   "poster": "https://m.media-amazon.com/images/M/MV5BOWE0ZTYxYTEtZDY5Ni00NDhkLWEyNjItMDc1NzE1MGJjMzhlXkEyXkFqcGc@._V1_FMjpg_UX968_.jpg",
   "description": "Ikka (2026) एक बहुप्रतीक्षित एक्शन-ड्रामा फिल्म है, जो 2014 की सफल तमिल फिल्म 'कथ्थी' का हिंदी रीमेक है। फिल्म में अक्षय कुमार दोहरी भूमिका में हैं। कहानी एक ऐसे व्यक्ति के इर्द-गिर्द घूमती है जो कॉर्पोरेट कंपनियों द्वारा किसानों की जमीन हड़पने और उनके शोषण के खिलाफ लड़ता है। यह फिल्म एक्शन, ड्रामा और एक मजबूत सामाजिक संदेश का मिश्रण है। [32, 62]",
   "category": "Bollywood",
