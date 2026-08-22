@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { CollectionPage } from "@/components/collection-page";
 import { getVideosByCategory } from "@/data/videos";
-import { AmazonProductGrid } from "@/components/amazon-product-grid";
 
 export const metadata: Metadata = {
   title: "Bollywood Movies | Onemovie",

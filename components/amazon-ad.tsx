@@ -5,7 +5,6 @@ interface AmazonAdProps {
   description: string;
   imageUrl: string;
   productUrl: string;
-  price?: string;
   buttonText?: string;
 }
 
@@ -14,7 +13,6 @@ export function AmazonAd({
   description,
   imageUrl,
   productUrl,
-  price,
   buttonText = "Buy on Amazon",
 }: AmazonAdProps) {
   return (

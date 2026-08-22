@@ -40,7 +40,7 @@ export default function FAQPage() {
           <section>
             <h2 className="text-xl font-semibold mb-2">3. How do I download a movie?</h2>
             <p className="text-muted-foreground">
-              On the movie details page, click the "Download Now" button. This will safely redirect you to our Telegram channel or a secure link where you can download the requested file.
+              On the movie details page, click the &quot;Download Now&quot; button. This will safely redirect you to our Telegram channel or a secure link where you can download the requested file.
             </p>
           </section>
 
