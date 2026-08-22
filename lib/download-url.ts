@@ -6,9 +6,21 @@ export function getBotDeepLink(parameter: string) {
 }
 
 export function resolveDownloadUrl(downloadUrl: string) {
-  const match = downloadUrl.match(CHANNEL_POST_PATTERN);
+  const normalizedUrl = downloadUrl?.trim();
 
-  return match
-    ? getBotDeepLink(`m_${match[1]}`)
-    : getBotDeepLink("unavailable");
+  if (!normalizedUrl) {
+    return getBotDeepLink("unavailable");
+  }
+
+  const match = normalizedUrl.match(CHANNEL_POST_PATTERN);
+
+  if (match) {
+    return getBotDeepLink(`m_${match[1]}`);
+  }
+
+  if (normalizedUrl.startsWith("http://") || normalizedUrl.startsWith("https://")) {
+    return normalizedUrl;
+  }
+
+  return getBotDeepLink("unavailable");
 }
