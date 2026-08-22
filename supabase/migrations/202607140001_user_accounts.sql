@@ -3,10 +3,18 @@ create extension if not exists pgcrypto;
 create table if not exists public.profiles (
   id uuid primary key references auth.users(id) on delete cascade,
   display_name text,
+  full_name text,
+  username text,
   avatar_url text,
+  phone text,
+  favorite_genres text[] not null default '{}'::text[],
+  save_history boolean not null default true,
+  continue_watching boolean not null default true,
+  recommendations_enabled boolean not null default true,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
+create unique index if not exists profiles_username_idx on public.profiles (username);
 
 create table if not exists public.wishlists (
   user_id uuid not null references auth.users(id) on delete cascade,
@@ -91,13 +99,22 @@ language plpgsql
 security definer set search_path = ''
 as $$
 begin
-  insert into public.profiles (id, display_name, avatar_url)
+  insert into public.profiles (id, display_name, full_name, avatar_url, favorite_genres, save_history, continue_watching, recommendations_enabled)
   values (
     new.id,
     coalesce(new.raw_user_meta_data ->> 'full_name', new.email),
-    new.raw_user_meta_data ->> 'avatar_url'
+    new.raw_user_meta_data ->> 'full_name',
+    new.raw_user_meta_data ->> 'avatar_url',
+    '{}'::text[],
+    true,
+    true,
+    true
   )
-  on conflict (id) do nothing;
+  on conflict (id) do update set
+    display_name = coalesce(new.raw_user_meta_data ->> 'full_name', new.email),
+    full_name = coalesce(new.raw_user_meta_data ->> 'full_name', public.profiles.full_name),
+    avatar_url = coalesce(new.raw_user_meta_data ->> 'avatar_url', public.profiles.avatar_url),
+    updated_at = now();
 
   insert into public.notification_preferences (user_id)
   values (new.id)
