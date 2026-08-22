@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { CollectionPage } from "@/components/collection-page";
 import { getVideosByCategory } from "@/data/videos";
-import { AmazonAd } from "@/components/amazon-ad";
 
 export const metadata: Metadata = {
   title: "Hollywood Movies | Onemovie",

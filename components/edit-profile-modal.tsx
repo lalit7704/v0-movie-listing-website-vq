@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
-import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogClose } from "@/components/ui/dialog";
+import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -92,7 +91,7 @@ export function EditProfileModal() {
       let avatar_url = avatarPreview;
       if (avatarFile) {
         const path = `avatars/${user.id}-${Date.now()}`;
-        const { data: uploadData, error: uploadError } = await supabase.storage
+      const { error: uploadError } = await supabase.storage
           .from("avatars")
           .upload(path, avatarFile, { upsert: true });
         if (uploadError) throw uploadError;
@@ -120,8 +119,8 @@ export function EditProfileModal() {
       setMessage("Profile updated successfully.");
       // Optionally refresh the auth user metadata if avatar/fullname live there.
       // Close will be triggered by the caller after submit returns.
-    } catch (err: any) {
-      setMessage(err?.message ?? "Failed to update profile.");
+    } catch {
+    setMessage("Failed to update profile.");
     } finally {
       setLoading(false);
     }
@@ -143,8 +142,7 @@ export function EditProfileModal() {
             <Label>Profile Photo</Label>
             <div className="mt-2 flex items-center gap-4">
               {avatarPreview ? (
-                // eslint-disable-next-line jsx-a11y/alt-text
-                <img src={avatarPreview} className="h-16 w-16 rounded-full object-cover" />
+                <img src={avatarPreview} alt="Profile preview" className="h-16 w-16 rounded-full object-cover" />
               ) : (
                 <div className="h-16 w-16 rounded-full bg-secondary" />
               )}
@@ -223,7 +221,7 @@ export function EditProfileModal() {
                 // close the dialog by clicking the built-in close element if present
                 const closeEl = document.querySelector('[data-slot="dialog-close"]') as HTMLElement | null;
                 if (closeEl) closeEl.click();
-              } catch (e) {
+            } catch {
                 // noop
               }
             }} disabled={loading}>{loading ? "Saving..." : "Save changes"}</Button>
