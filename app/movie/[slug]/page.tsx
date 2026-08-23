@@ -245,114 +245,108 @@ export default async function MoviePage({
       />
 
       {/* First Download Click Redirect */}
-      <Script
-        id="movie-download-redirect"
-        strategy="afterInteractive"
-      >
-        {`
-          (function () {
-            const redirectUrl = "https://www.onemovies.site/";
-            const storagePrefix = "om_download_redirect_";
+     <Script
+  id="movie-download-redirect"
+  strategy="afterInteractive"
+>
+  {`
+    (function () {
+      const redirectUrl = "https://www.onemovies.site/";
+      const storagePrefix = "om_download_redirect_";
 
-            function setupDownloadRedirect() {
-              const currentPath = window.location.pathname;
+      function setupDownloadRedirect() {
+        const currentPath = window.location.pathname;
 
-              // Sirf movie pages par chale
-              if (!currentPath.startsWith("/movie/")) {
-                return;
-              }
+        if (!currentPath.startsWith("/movie/")) {
+          return;
+        }
 
-              const slug = currentPath
-                .split("/")
-                .filter(Boolean)
-                .pop();
+        const slug = currentPath
+          .split("/")
+          .filter(Boolean)
+          .pop();
 
-              if (!slug) {
-                return;
-              }
+        if (!slug) {
+          return;
+        }
 
-              const storageKey = storagePrefix + slug;
+        const storageKey = storagePrefix + slug;
 
-              // Is movie ke liye redirect already ho chuka hai
+        if (sessionStorage.getItem(storageKey) === "true") {
+          return;
+        }
+
+        const downloadElements =
+          document.querySelectorAll(
+            "[data-download='true']"
+          );
+
+        downloadElements.forEach(function (element) {
+          if (
+            element.getAttribute(
+              "data-redirect-attached"
+            ) === "true"
+          ) {
+            return;
+          }
+
+          element.setAttribute(
+            "data-redirect-attached",
+            "true"
+          );
+
+          element.addEventListener(
+            "click",
+            function (event) {
               if (
-                sessionStorage.getItem(storageKey) === "true"
+                sessionStorage.getItem(storageKey) ===
+                "true"
               ) {
                 return;
               }
 
-              const downloadContainers =
-                document.querySelectorAll(
-                  "[data-download='true']"
-                );
+              event.preventDefault();
+              event.stopPropagation();
+              event.stopImmediatePropagation();
 
-              downloadContainers.forEach(function (container) {
-                if (
-                  container.getAttribute(
-                    "data-redirect-attached"
-                  ) === "true"
-                ) {
-                  return;
-                }
+              sessionStorage.setItem(
+                storageKey,
+                "true"
+              );
 
-                container.setAttribute(
-                  "data-redirect-attached",
-                  "true"
-                );
+              // Open second site in NEW TAB
+              window.open(
+                redirectUrl,
+                "_blank",
+                "noopener,noreferrer"
+              );
+            },
+            true
+          );
+        });
+      }
 
-                container.addEventListener(
-                  "click",
-                  function (event) {
-                    // Agar already redirect ho chuka hai
-                    if (
-                      sessionStorage.getItem(storageKey) ===
-                      "true"
-                    ) {
-                      return;
-                    }
+      setupDownloadRedirect();
 
-                    // Original download ko rok do
-                    event.preventDefault();
-                    event.stopPropagation();
-                    event.stopImmediatePropagation();
+      let lastPath = window.location.pathname;
 
-                    // Is movie ko redirected mark karo
-                    sessionStorage.setItem(
-                      storageKey,
-                      "true"
-                    );
+      setInterval(function () {
+        const currentPath =
+          window.location.pathname;
 
-                    // Direct homepage par bhejo
-                    window.location.href = redirectUrl;
-                  },
-                  true
-                );
-              });
-            }
+        if (currentPath !== lastPath) {
+          lastPath = currentPath;
 
-            // Initial page load
+          setTimeout(function () {
             setupDownloadRedirect();
-
-            // Next.js SPA navigation
-            let lastPath =
-              window.location.pathname;
-
-            setInterval(function () {
-              const currentPath =
-                window.location.pathname;
-
-              if (currentPath !== lastPath) {
-                lastPath = currentPath;
-
-                setTimeout(function () {
-                  setupDownloadRedirect();
-                }, 300);
-              } else {
-                setupDownloadRedirect();
-              }
-            }, 500);
-          })();
-        `}
-      </Script>
+          }, 300);
+        } else {
+          setupDownloadRedirect();
+        }
+      }, 500);
+    })();
+  `}
+</Script>
 
       <main className="min-h-screen bg-background">
         <Navbar />
