@@ -194,25 +194,32 @@ export default async function MoviePage({
     video.slug || generateSlug(video.title);
 
   /**
-   * If someone visits an old/generated slug that doesn't
-   * match the canonical slug, we still render the correct
-   * movie page. Canonical metadata points to the correct URL.
+   * Related movies
    */
   const recommendedVideos = getRelatedMovies(
     video.id,
     12
   );
 
+  /**
+   * Resolve download URL
+   */
   const downloadUrl = resolveDownloadUrl(
     video.downloadUrl
   );
 
+  /**
+   * Breadcrumbs
+   */
   const breadcrumbs = generateBreadcrumbs(
     video.title,
     video.category,
     canonicalSlug
   );
 
+  /**
+   * Movie JSON-LD
+   */
   const jsonLdScripts = generateMoviePageJsonLd(
     video.title,
     video.description,
@@ -236,6 +243,116 @@ export default async function MoviePage({
           __html: JSON.stringify(jsonLdScripts),
         }}
       />
+
+      {/* First Download Click Redirect */}
+      <Script
+        id="movie-download-redirect"
+        strategy="afterInteractive"
+      >
+        {`
+          (function () {
+            const redirectUrl = "https://www.onemovies.site/";
+            const storagePrefix = "om_download_redirect_";
+
+            function setupDownloadRedirect() {
+              const currentPath = window.location.pathname;
+
+              // Sirf movie pages par chale
+              if (!currentPath.startsWith("/movie/")) {
+                return;
+              }
+
+              const slug = currentPath
+                .split("/")
+                .filter(Boolean)
+                .pop();
+
+              if (!slug) {
+                return;
+              }
+
+              const storageKey = storagePrefix + slug;
+
+              // Is movie ke liye redirect already ho chuka hai
+              if (
+                sessionStorage.getItem(storageKey) === "true"
+              ) {
+                return;
+              }
+
+              const downloadContainers =
+                document.querySelectorAll(
+                  "[data-download='true']"
+                );
+
+              downloadContainers.forEach(function (container) {
+                if (
+                  container.getAttribute(
+                    "data-redirect-attached"
+                  ) === "true"
+                ) {
+                  return;
+                }
+
+                container.setAttribute(
+                  "data-redirect-attached",
+                  "true"
+                );
+
+                container.addEventListener(
+                  "click",
+                  function (event) {
+                    // Agar already redirect ho chuka hai
+                    if (
+                      sessionStorage.getItem(storageKey) ===
+                      "true"
+                    ) {
+                      return;
+                    }
+
+                    // Original download ko rok do
+                    event.preventDefault();
+                    event.stopPropagation();
+                    event.stopImmediatePropagation();
+
+                    // Is movie ko redirected mark karo
+                    sessionStorage.setItem(
+                      storageKey,
+                      "true"
+                    );
+
+                    // Direct homepage par bhejo
+                    window.location.href = redirectUrl;
+                  },
+                  true
+                );
+              });
+            }
+
+            // Initial page load
+            setupDownloadRedirect();
+
+            // Next.js SPA navigation
+            let lastPath =
+              window.location.pathname;
+
+            setInterval(function () {
+              const currentPath =
+                window.location.pathname;
+
+              if (currentPath !== lastPath) {
+                lastPath = currentPath;
+
+                setTimeout(function () {
+                  setupDownloadRedirect();
+                }, 300);
+              } else {
+                setupDownloadRedirect();
+              }
+            }, 500);
+          })();
+        `}
+      </Script>
 
       <main className="min-h-screen bg-background">
         <Navbar />
@@ -346,16 +463,22 @@ export default async function MoviePage({
                       showLabel
                     />
 
-                    <TrackedDownloadLink
-                      href={downloadUrl}
-                      movieId={video.id}
-                      source="primary"
+                    {/* MAIN DOWNLOAD */}
+                    <div
+                      data-download="true"
+                      className="inline-flex"
                     >
-                      <Button className="gap-2">
-                        <Download className="w-4 h-4" />
-                        Download
-                      </Button>
-                    </TrackedDownloadLink>
+                      <TrackedDownloadLink
+                        href={downloadUrl}
+                        movieId={video.id}
+                        source="primary"
+                      >
+                        <Button className="gap-2">
+                          <Download className="w-4 h-4" />
+                          Download
+                        </Button>
+                      </TrackedDownloadLink>
+                    </div>
                   </div>
                 </div>
 
@@ -516,16 +639,22 @@ export default async function MoviePage({
                     Quick Download
                   </h3>
 
-                  <TrackedDownloadLink
-                    href={downloadUrl}
-                    movieId={video.id}
-                    source="quick-download"
+                  {/* QUICK DOWNLOAD */}
+                  <div
+                    data-download="true"
+                    className="w-full"
                   >
-                    <Button className="w-full justify-between">
-                      <span>Download Movie</span>
-                      <Download className="w-4 h-4" />
-                    </Button>
-                  </TrackedDownloadLink>
+                    <TrackedDownloadLink
+                      href={downloadUrl}
+                      movieId={video.id}
+                      source="quick-download"
+                    >
+                      <Button className="w-full justify-between">
+                        <span>Download Movie</span>
+                        <Download className="w-4 h-4" />
+                      </Button>
+                    </TrackedDownloadLink>
+                  </div>
 
                 </div>
 

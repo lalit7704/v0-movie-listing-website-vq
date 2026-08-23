@@ -1,27 +1,37 @@
 import type { Metadata, Viewport } from 'next'
-import Script from "next/script"
+import Script from 'next/script'
 import { Inter, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
-import { generateOrganizationSchema, generateWebsiteSchema } from '@/lib/structured-data'
-import { Providers } from '@/components/providers';
 
+import {
+  generateOrganizationSchema,
+  generateWebsiteSchema,
+} from '@/lib/structured-data'
+
+import { Providers } from '@/components/providers'
 
 const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter"
-});
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
 
 const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-geist-mono"
-});
+  subsets: ['latin'],
+  variable: '--font-geist-mono',
+})
 
 export const metadata: Metadata = {
   title: 'Onemovie - Watch Movies & Web Series Online Free',
-  description: 'Onemovie is your ultimate destination for streaming Bollywood, Hollywood, and South Indian movies online. Watch the latest movies and web series in HD quality for free.',
-  keywords: 'movies, streaming, Bollywood, Hollywood, South Indian, web series, watch online, free movies, HD movies',
+
+  description:
+    'Onemovie is your ultimate destination for streaming Bollywood, Hollywood, and South Indian movies online. Watch the latest movies and web series in HD quality for free.',
+
+  keywords:
+    'movies, streaming, Bollywood, Hollywood, South Indian, web series, watch online, free movies, HD movies',
+
   generator: 'v0.app',
+
   icons: {
     icon: [
       {
@@ -39,25 +49,33 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-icon.png',
   },
+
   openGraph: {
     title: 'Onemovie - Watch Movies & Web Series Online Free',
-    description: 'Your ultimate destination for streaming movies and web series online.',
+    description:
+      'Your ultimate destination for streaming movies and web series online.',
     type: 'website',
     siteName: 'Onemovie',
     locale: 'en_US',
   },
+
   twitter: {
     card: 'summary_large_image',
     title: 'Onemovie - Watch Movies & Web Series Online Free',
-    description: 'Stream Bollywood, Hollywood, and South Indian movies online for free.',
+    description:
+      'Stream Bollywood, Hollywood, and South Indian movies online for free.',
   },
+
   other: {
-    "google-adsense-account": "ca-pub-5319727568049071"
+    'google-adsense-account': 'ca-pub-5319727568049071',
   },
+
   metadataBase: new URL('https://www.onemovie.in'),
+
   robots: {
     index: true,
     follow: true,
+
     googleBot: {
       index: true,
       follow: true,
@@ -66,6 +84,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+
   alternates: {
     canonical: 'https://www.onemovie.in',
   },
@@ -83,19 +102,47 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const organizationSchema = generateOrganizationSchema();
-  const websiteSchema = generateWebsiteSchema();
+  const organizationSchema = generateOrganizationSchema()
+  const websiteSchema = generateWebsiteSchema()
 
   return (
-    <html lang="en" className="dark" data-scroll-behavior="smooth">
+    <html
+      lang="en"
+      className="dark"
+      data-scroll-behavior="smooth"
+    >
       <head>
-        {/* Preconnect to external resources for performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <meta name="google-adsense-account" content="ca-pub-5319727568049071"></meta>
-        {/* JSON-LD Structured Data */}
-        <link rel="manifest" href="/manifest.json" />
-<meta name="theme-color" content="#000000" />
+        {/* Preconnect to external resources */}
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+        />
+
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+
+        {/* Google AdSense */}
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-5319727568049071"
+        />
+
+        {/* Web App Manifest */}
+        <link
+          rel="manifest"
+          href="/manifest.json"
+        />
+
+        {/* Theme Color */}
+        <meta
+          name="theme-color"
+          content="#000000"
+        />
+
+        {/* Organization Structured Data */}
         <Script
           id="organization-schema"
           type="application/ld+json"
@@ -103,6 +150,8 @@ export default function RootLayout({
             __html: JSON.stringify(organizationSchema),
           }}
         />
+
+        {/* Website Structured Data */}
         <Script
           id="website-schema"
           type="application/ld+json"
@@ -111,89 +160,48 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}>
-        <Providers>{children}</Providers>
+
+      <body
+        className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}
+      >
+        <Providers>
+          {children}
+        </Providers>
+
+        {/* Vercel Analytics */}
         <Analytics />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319727568049071" crossOrigin="anonymous"></script>
-      <script
-  dangerouslySetInnerHTML={{
-    __html: `
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function () {
-          navigator.serviceWorker.register('/sw.js');
-        });
-      }
-    `,
-  }}
-/>
 
-    <Script id="first-click-redirector" strategy="afterInteractive">
-  {`
-    (function () {
-      const redirectUrl = 'https://www.onemovies.site/';
-      const storagePrefix = 'om_download_redirect_';
+        {/* Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319727568049071"
+          crossOrigin="anonymous"
+        />
 
-      function setupDownloadRedirect() {
-        if (!window.location.pathname.startsWith('/movie/')) return;
-
-        const slug = window.location.pathname
-          .split('/')
-          .filter(Boolean)
-          .pop();
-
-        if (!slug) return;
-
-        const storageKey = storagePrefix + slug;
-
-        // Is movie par pehle click ho chuka hai
-        if (sessionStorage.getItem(storageKey) === 'true') return;
-
-        const downloadElements = document.querySelectorAll(
-          'a[data-download], button[data-download]'
-        );
-
-        downloadElements.forEach(function (element) {
-          if (element.dataset.redirectAttached === 'true') return;
-
-          element.dataset.redirectAttached = 'true';
-
-          element.addEventListener(
-            'click',
-            function (event) {
-              if (sessionStorage.getItem(storageKey) === 'true') return;
-
-              event.preventDefault();
-              event.stopPropagation();
-              event.stopImmediatePropagation();
-
-              sessionStorage.setItem(storageKey, 'true');
-
-              // First click -> onemovies.site homepage
-              window.location.href = redirectUrl;
-            },
-            true
-          );
-        });
-      }
-
-      setupDownloadRedirect();
-
-      let lastPath = window.location.pathname;
-
-      setInterval(function () {
-        if (window.location.pathname !== lastPath) {
-          lastPath = window.location.pathname;
-
-          setTimeout(function () {
-            setupDownloadRedirect();
-          }, 300);
-        } else {
-          setupDownloadRedirect();
-        }
-      }, 500);
-    })();
-  `}
-</Script>
+        {/* Service Worker */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function () {
+                  navigator.serviceWorker.register('/sw.js')
+                    .then(function (registration) {
+                      console.log(
+                        'OneMovie Service Worker registered:',
+                        registration.scope
+                      );
+                    })
+                    .catch(function (error) {
+                      console.error(
+                        'OneMovie Service Worker registration failed:',
+                        error
+                      );
+                    });
+                });
+              }
+            `,
+          }}
+        />
       </body>
     </html>
   )
