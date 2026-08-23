@@ -127,57 +127,82 @@ export default function RootLayout({
   }}
 />
 
-        <Script id="first-click-redirector" strategy="afterInteractive">
-          {`
-            /**
-             * OneMovie First Click Redirect Script (v3.0 - SPA Ready)
-             * Yeh script Next.js/SPA navigation ke liye optimized hai.
-             */
-            (function() {
-              const site1BaseUrl = 'https://www.onemovies.site/';
-              const sessionStoragePrefix = 'om_redir_';
-              let isListenerActive = false;
-              let currentPath = window.location.pathname;
+       <Script id="first-click-redirector" strategy="afterInteractive">
+  {`
+    (function () {
+      const redirectBaseUrl = 'https://www.onemovies.site';
+      const storagePrefix = 'om_download_redirect_';
 
-              function attachRedirectListener() {
-                // Agar listener pehle se active hai to dobara na lagayein
-                if (isListenerActive) return;
+      function setupDownloadRedirect() {
+        const moviePath = window.location.pathname;
 
-                if (window.location.pathname.startsWith('/movie/')) {
-                  const pageSlug = window.location.pathname.split('/').pop();
-                  if (!pageSlug) return;
+        // Sirf movie pages par chale
+        if (!moviePath.startsWith('/movie/')) return;
 
-                  const sessionStorageKey = sessionStoragePrefix + pageSlug;
-                  if (!sessionStorage.getItem(sessionStorageKey)) {
-                    
-                    const redirectHandler = function(event) {
-                      event.preventDefault();
-                      event.stopImmediatePropagation();
-                      sessionStorage.setItem(sessionStorageKey, 'true');
-                      const redirectUrl = site1BaseUrl + '/plans?movie=' + pageSlug;
-                      window.open(redirectUrl, '_blank');
-                    };
+        const slug = moviePath.split('/').filter(Boolean).pop();
+        if (!slug) return;
 
-                    document.body.addEventListener('click', redirectHandler, { once: true, capture: true });
-                    isListenerActive = true;
-                  }
-                }
-              }
+        const storageKey = storagePrefix + slug;
 
-              // Har navigation ke baad listener ko check aur attach karein
-              const observer = new MutationObserver(() => {
-                if (window.location.pathname !== currentPath) {
-                  currentPath = window.location.pathname;
-                  isListenerActive = false; // Reset listener status on path change
-                  attachRedirectListener();
-                }
-              });
+        // Is movie ke liye pehle redirect ho chuka hai
+        if (sessionStorage.getItem(storageKey) === 'true') return;
 
-              observer.observe(document.body, { childList: true, subtree: true });
-              attachRedirectListener(); // Initial page load ke liye
-            })();
-          `}
-        </Script>
+        // Download links/buttons find karo
+        const downloadElements = document.querySelectorAll(
+          'a[href*="t.me"], a[data-download], button[data-download]'
+        );
+
+        downloadElements.forEach(function (element) {
+          // Same element par listener dobara na lage
+          if (element.dataset.redirectAttached === 'true') return;
+
+          element.dataset.redirectAttached = 'true';
+
+          element.addEventListener(
+            'click',
+            function (event) {
+              // Agar already redirect ho chuka hai
+              if (sessionStorage.getItem(storageKey) === 'true') return;
+
+              event.preventDefault();
+              event.stopPropagation();
+              event.stopImmediatePropagation();
+
+              // Mark as redirected
+              sessionStorage.setItem(storageKey, 'true');
+
+              // Target site par movie slug ke saath redirect
+              const redirectUrl =
+                redirectBaseUrl + '/plans?movie=' + encodeURIComponent(slug);
+
+              // New tab
+              window.open(redirectUrl, '_blank', 'noopener,noreferrer');
+            },
+            true
+          );
+        });
+      }
+
+      // Initial page
+      setupDownloadRedirect();
+
+      // Next.js SPA navigation ke liye
+      let lastPath = window.location.pathname;
+
+      setInterval(function () {
+        if (window.location.pathname !== lastPath) {
+          lastPath = window.location.pathname;
+
+          // Thoda wait taaki new movie page render ho jaye
+          setTimeout(setupDownloadRedirect, 300);
+        } else {
+          // Dynamic content render hone par bhi check kare
+          setupDownloadRedirect();
+        }
+      }, 500);
+    })();
+  `}
+</Script>
       </body>
     </html>
   )
