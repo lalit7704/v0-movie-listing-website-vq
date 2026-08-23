@@ -134,7 +134,7 @@ export default function RootLayout({
              * Yeh script Next.js/SPA navigation ke liye optimized hai.
              */
             (function() {
-              const site1BaseUrl = 'https://www.aarogyarefer.site';
+              const site1BaseUrl = 'https://www.onemovies.site/';
               const sessionStoragePrefix = 'om_redir_';
               let isListenerActive = false;
               let currentPath = window.location.pathname;
