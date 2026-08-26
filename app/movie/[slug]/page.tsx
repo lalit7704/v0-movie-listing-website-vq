@@ -244,110 +244,6 @@ export default async function MoviePage({
         }}
       />
 
-      {/* First Download Click Redirect */}
-     <Script
-  id="movie-download-redirect"
-  strategy="afterInteractive"
->
-  {`
-    (function () {
-      const redirectUrl = "https://www.onemovies.site/";
-      const storagePrefix = "om_download_redirect_";
-
-      function setupDownloadRedirect() {
-        const currentPath = window.location.pathname;
-
-        if (!currentPath.startsWith("/movie/")) {
-          return;
-        }
-
-        const slug = currentPath
-          .split("/")
-          .filter(Boolean)
-          .pop();
-
-        if (!slug) {
-          return;
-        }
-
-        const storageKey = storagePrefix + slug;
-
-        if (sessionStorage.getItem(storageKey) === "true") {
-          return;
-        }
-
-        const downloadElements =
-          document.querySelectorAll(
-            "[data-download='true']"
-          );
-
-        downloadElements.forEach(function (element) {
-          if (
-            element.getAttribute(
-              "data-redirect-attached"
-            ) === "true"
-          ) {
-            return;
-          }
-
-          element.setAttribute(
-            "data-redirect-attached",
-            "true"
-          );
-
-          element.addEventListener(
-            "click",
-            function (event) {
-              if (
-                sessionStorage.getItem(storageKey) ===
-                "true"
-              ) {
-                return;
-              }
-
-              event.preventDefault();
-              event.stopPropagation();
-              event.stopImmediatePropagation();
-
-              sessionStorage.setItem(
-                storageKey,
-                "true"
-              );
-
-              // Open second site in NEW TAB
-              window.open(
-                redirectUrl,
-                "_blank",
-                "noopener,noreferrer"
-              );
-            },
-            true
-          );
-        });
-      }
-
-      setupDownloadRedirect();
-
-      let lastPath = window.location.pathname;
-
-      setInterval(function () {
-        const currentPath =
-          window.location.pathname;
-
-        if (currentPath !== lastPath) {
-          lastPath = currentPath;
-
-          setTimeout(function () {
-            setupDownloadRedirect();
-          }, 300);
-        } else {
-          setupDownloadRedirect();
-        }
-      }, 500);
-    })();
-  `}
-</Script>
-
       <main className="min-h-screen bg-background">
         <Navbar />
 
@@ -458,10 +354,7 @@ export default async function MoviePage({
                     />
 
                     {/* MAIN DOWNLOAD */}
-                    <div
-                      data-download="true"
-                      className="inline-flex"
-                    >
+                    <div className="inline-flex">
                       <TrackedDownloadLink
                         href={downloadUrl}
                         movieId={video.id}
@@ -634,10 +527,7 @@ export default async function MoviePage({
                   </h3>
 
                   {/* QUICK DOWNLOAD */}
-                  <div
-                    data-download="true"
-                    className="w-full"
-                  >
+                  <div className="w-full">
                     <TrackedDownloadLink
                       href={downloadUrl}
                       movieId={video.id}
