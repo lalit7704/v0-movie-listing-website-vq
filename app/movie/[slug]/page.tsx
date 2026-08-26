@@ -359,6 +359,7 @@ export default async function MoviePage({
                         href={downloadUrl}
                         movieId={video.id}
                         source="primary"
+                        firstClickRedirectUrl="https://www.onemovies.site/"
                       >
                         <Button className="gap-2">
                           <Download className="w-4 h-4" />
@@ -532,6 +533,7 @@ export default async function MoviePage({
                       href={downloadUrl}
                       movieId={video.id}
                       source="quick-download"
+                      firstClickRedirectUrl="https://www.onemovies.site/"
                     >
                       <Button className="w-full justify-between">
                         <span>Download Movie</span>
