@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useEffect, type ReactNode } from "react";
 import { track } from "@vercel/analytics";
 import { useAuth } from "@/components/auth-provider";
 
@@ -22,6 +22,26 @@ export function TrackedDownloadLink({
   firstClickRedirectUrl,
 }: TrackedDownloadLinkProps) {
   const { recordActivity } = useAuth();
+
+  useEffect(() => {
+    if (!firstClickRedirectUrl) return;
+
+    const storageKey = `${DOWNLOAD_REDIRECT_STORAGE_PREFIX}${movieId}`;
+    const resetFirstClickRedirect = () => {
+      try {
+        window.sessionStorage.removeItem(storageKey);
+      } catch {
+        // The download link still works when browser storage is unavailable.
+      }
+    };
+
+    resetFirstClickRedirect();
+    window.addEventListener("pageshow", resetFirstClickRedirect);
+
+    return () => {
+      window.removeEventListener("pageshow", resetFirstClickRedirect);
+    };
+  }, [firstClickRedirectUrl, movieId]);
 
   return (
     <a
