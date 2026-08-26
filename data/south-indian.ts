@@ -598,14 +598,10 @@ export const southindianVideos: Video[] = [
 {
   "id": "5037",
   "title": "Toxic: A Fairytale for Grown-Ups",
-  "originalTitle": "Toxic: A Fairytale for Grown-Ups",
   "slug": "toxic-a-fairytale-for-grown-ups-2026-action-gangster-crime-drama-movie-full-movie-hd",
   "year": 2026,
   "duration": "3h 12m",
   "rating": 7,
-  "popularity": 31,
-  "videoCount": 4,
-  "photoCount": 78,
   "poster": "https://m.media-amazon.com/images/M/MV5BYWJhYjI3MjktMDRhZS00ZjU1LThiN2UtYjc2ZGQzZDNmMjQ4XkEyXkFqcGc@._V1_FMjpg_UY6299_.jpg",
   "videoUrl": "https://youtu.be/cemylavtDs0",
   "downloadUrl": "https://t.me/c/3845134502/303",
@@ -621,7 +617,7 @@ export const southindianVideos: Video[] = [
   ],
   "language": "Kannada",
   "quality": "HD",
-   "featured": false
+  "featured": false
 }
 ];
 
