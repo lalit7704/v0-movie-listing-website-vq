@@ -1061,7 +1061,8 @@ export const bollywoodVideos: Video[] = [
   "rating": 8.4,
   "genre": ["Crime", "Drama", "Thriller"],
   "language": "Hindi",
-  "quality": "HD"
+  "quality": "HD",
+  "featured": false
 }
 ];
 
