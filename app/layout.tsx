@@ -165,11 +165,11 @@ export default function RootLayout({
 
       <body
         className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}
-      >
+      ><a href="https://beta.publishers.adsterra.com/referral/Gub813udiq" rel="nofollow">Referral link</a>
         <Providers>
           {children}
         </Providers>
-<a href="https://beta.publishers.adsterra.com/referral/Gub813udiq" rel="nofollow">Referral link</a>
+
         {/* Vercel Analytics */}
         <Analytics />
 
