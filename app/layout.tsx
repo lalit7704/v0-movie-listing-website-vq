@@ -178,7 +178,8 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319727568049071"
           crossOrigin="anonymous"
         />
-
+<script async="async" data-cfasync="false" src="https://pl31350043.profitableratecpmnetwork.com/3a306c8c6706d3ba2b33e82328472b63/invoke.js"></script>
+<div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
         {/* Service Worker */}
         <script
           dangerouslySetInnerHTML={{
