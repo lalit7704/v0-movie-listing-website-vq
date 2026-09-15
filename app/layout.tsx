@@ -169,7 +169,7 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
-
+<a href="https://beta.publishers.adsterra.com/referral/Gub813udiq" rel="nofollow">Referral link</a>
         {/* Vercel Analytics */}
         <Analytics />
 
@@ -179,7 +179,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319727568049071"
           crossOrigin="anonymous"
         />
-        <a href="https://beta.publishers.adsterra.com/referral/Gub813udiq" rel="nofollow">Referral link</a>
+        
 <script async="async" data-cfasync="false" src="https://pl31350043.profitableratecpmnetwork.com/3a306c8c6706d3ba2b33e82328472b63/invoke.js"></script>
 <div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
         {/* Service Worker */}
