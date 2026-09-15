@@ -159,6 +159,7 @@ export default function RootLayout({
             __html: JSON.stringify(websiteSchema),
           }}
         />
+        
         <script src="https://pl31350042.profitableratecpmnetwork.com/18/46/3f/18463ffdaa60c080a57b392fd5e13f51.js"></script>
       </head>
 
@@ -178,6 +179,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319727568049071"
           crossOrigin="anonymous"
         />
+        <a href="https://beta.publishers.adsterra.com/referral/Gub813udiq" rel="nofollow">Referral link</a>
 <script async="async" data-cfasync="false" src="https://pl31350043.profitableratecpmnetwork.com/3a306c8c6706d3ba2b33e82328472b63/invoke.js"></script>
 <div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
         {/* Service Worker */}
