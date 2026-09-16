@@ -21,6 +21,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { useAuth } from "@/components/auth-provider";
+import { EditProfileModal } from "@/components/edit-profile-modal";
 import { useWishlist } from "@/hooks/use-wishlist";
 import { useWatchHistory } from "@/hooks/use-watch-history";
 import { videos } from "@/data/videos";
@@ -264,17 +265,20 @@ export function AccountDashboard() {
               <p className="truncate text-sm text-muted-foreground">{user.email}</p>
             </div>
           </div>
-          <Button
-            variant="outline"
-            className="gap-2 self-start"
-            onClick={async () => {
-              await signOut();
-              router.push("/");
-            }}
-          >
-            <LogOut className="h-4 w-4" aria-hidden="true" />
-            Logout
-          </Button>
+          <div className="flex items-center gap-2">
+            <EditProfileModal />
+            <Button
+              variant="outline"
+              className="gap-2 self-start"
+              onClick={async () => {
+                await signOut();
+                router.push("/");
+              }}
+            >
+              <LogOut className="h-4 w-4" aria-hidden="true" />
+              Logout
+            </Button>
+          </div>
         </header>
 
         <section className="grid grid-cols-2 gap-3 py-8 sm:grid-cols-4">

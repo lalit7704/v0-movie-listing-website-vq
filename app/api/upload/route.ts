@@ -75,7 +75,7 @@ export async function POST(request: NextRequest) {
       telegramLink,
     });
 
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { success: false, error: "Server error" },
       { status: 500 }
