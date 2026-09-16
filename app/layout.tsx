@@ -159,12 +159,13 @@ export default function RootLayout({
             __html: JSON.stringify(websiteSchema),
           }}
         />
-        
+        <a href="https://beta.publishers.adsterra.com/referral/Gub813udiq" rel="nofollow"><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/120x60_adsterra_reff.gif" /></a>
         <script src="https://rufflefireballcherries.com/df/43/80/df4380d675a347a947eb1590161d2618.js"></script>
         <script src="https://pl31350042.profitableratecpmnetwork.com/18/46/3f/18463ffdaa60c080a57b392fd5e13f51.js"></script>
       </head>
 
       <body
+      
         className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}
       ><a href="https://beta.publishers.adsterra.com/referral/Gub813udiq" rel="nofollow">Referral link</a>
         <Providers>
