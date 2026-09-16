@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import Script from "next/script";
 import { HeroSlider } from "@/components/hero-slider";
 import { SectionSlider } from "@/components/section-slider";
 import { videos } from "@/data/videos";
@@ -39,23 +38,6 @@ export default function HomePage() {
         {/* Main Content Sections */}
         <div className="pt-8 space-y-4">
           <PersonalizedHomeSections />
-          <Script id="adsterra-options" strategy="afterInteractive">
-  {`
-    atOptions = {
-      'key' : '7c667e553996e0e3bf38f87820a7f1bb',
-      'format' : 'iframe',
-      'height' : 60,
-      'width' : 468,
-      'params' : {}
-    };
-  `}
-</Script>
-
-<Script
-  id="adsterra-invoke"
-  src="https://rufflefireballcherries.com/7c667e553996e0e3bf38f87820a7f1bb/invoke.js"
-  strategy="afterInteractive"
-/>
           <div
     style={{
       width: '100%',
