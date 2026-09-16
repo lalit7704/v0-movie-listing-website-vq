@@ -2943,7 +2943,7 @@ export const tmdbSouthIndianVideos: Video[] = [
     "title": "Lenin (2026)",
     "slug": "lenin-2026",
     "videoUrl": "https://youtu.be/_d8Gw4ZkEqs",
-    "downloadUrl": "https://www.themoviedb.org/movie/1408170",
+    "downloadUrl": "https://t.me/onemoviedownloa/308",
     "poster": "https://image.tmdb.org/t/p/w780/rAHQviBq8Fxi20hNtHPGLnr4L0f.jpg",
     "description": "Young, urban-raised Lenin's peaceful romance with Bharathi inadvertently sparks a violent, large-scale village conflict.",
     "seoDescription": "Lenin (2026) trailer, cast, genres, rating and release information.",
