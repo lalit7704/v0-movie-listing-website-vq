@@ -71,6 +71,7 @@ export default function HomePage() {
   </div>
           <SectionSlider title="Newly Added Automatically" videos={tmdbRecentlyAddedVideos.slice(0, 20)} />
           <SectionSlider title="Trending Now" videos={trendingVideos} />
+          <div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
           <SectionSlider title="New Releases" videos={newReleases} />
           <SectionSlider title="Bollywood Hits" videos={bollywoodVideos} />
           <SectionSlider title="Hollywood Blockbusters" videos={hollywoodVideos} />
