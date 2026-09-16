@@ -627,7 +627,7 @@ export const southindianVideos: Video[] = [
   downloadUrl: "https://t.me/onemoviedownloa/307",
   poster: "https://m.media-amazon.com/images/M/MV5BNzI3NzAyZmMtNWU2MS00ZGJiLTk4M2QtOTg3MzU3MDA1Mzk5XkEyXkFqcGc@._V1_FMjpg_UX1200_.jpg",
   description: "Vishwanath & Sons (2026) is a Tamil-language drama centered around Sanjay Vishwanath, an accomplished international shooter whose ambitions, family responsibilities and unexpected romance force him to reconsider what truly matters in life.",
-  category: "south-indian",
+  category: "South Indian",
   year: 2026,
   duration: "2h 41m",
   rating: 7.5,
