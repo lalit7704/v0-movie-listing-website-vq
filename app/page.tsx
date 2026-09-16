@@ -38,6 +38,28 @@ export default function HomePage() {
         {/* Main Content Sections */}
         <div className="pt-8 space-y-4">
           <PersonalizedHomeSections />
+          <div
+    style={{
+      width: '100%',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: '10px 0',
+    }}
+  >
+    <a
+      href="https://beta.publishers.adsterra.com/referral/Gub813udiq"
+      rel="nofollow"
+      target="_blank"
+    >
+      <img
+        src="https://landings-cdn.adsterratech.com/referralBanners/gif/120x60_adsterra_reff.gif"
+        alt="Adsterra"
+        width="120"
+        height="60"
+      />
+    </a>
+  </div>
           <SectionSlider title="Newly Added Automatically" videos={tmdbRecentlyAddedVideos.slice(0, 20)} />
           <SectionSlider title="Trending Now" videos={trendingVideos} />
           <SectionSlider title="New Releases" videos={newReleases} />

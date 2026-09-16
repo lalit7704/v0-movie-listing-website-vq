@@ -166,28 +166,7 @@ export default function RootLayout({
       <body
       
         className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}
-      ><div
-    style={{
-      width: '100%',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      padding: '10px 0',
-    }}
-  >
-    <a
-      href="https://beta.publishers.adsterra.com/referral/Gub813udiq"
-      rel="nofollow"
-      target="_blank"
-    >
-      <img
-        src="https://landings-cdn.adsterratech.com/referralBanners/gif/120x60_adsterra_reff.gif"
-        alt="Adsterra"
-        width="120"
-        height="60"
-      />
-    </a>
-  </div>
+      ><a href="https://beta.publishers.adsterra.com/referral/Gub813udiq" rel="nofollow">Referral link</a>
         <Providers>
           {children}
         </Providers>
