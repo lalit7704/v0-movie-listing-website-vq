@@ -180,46 +180,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319727568049071"
           crossOrigin="anonymous"
         />
-        <script>
-  atOptions = {
-    'key' : '9ce816fb144ef06010edef125dadcc05',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
-</script>
-<script src="https://rufflefireballcherries.com/9ce816fb144ef06010edef125dadcc05/invoke.js"></script>
-        <script>
-  atOptions = {
-    'key' : '44331b171148aa7c70dcac9610ad7ab9',
-    'format' : 'iframe',
-    'height' : 600,
-    'width' : 160,
-    'params' : {}
-  };
-</script>
-<script src="https://rufflefireballcherries.com/44331b171148aa7c70dcac9610ad7ab9/invoke.js"></script>
-        <script>
-  atOptions = {
-    'key' : '6231dfc46d1c0ab675dd42b3bf8fb11c',
-    'format' : 'iframe',
-    'height' : 250,
-    'width' : 300,
-    'params' : {}
-  };
-</script>
-<script>
-  atOptions = {
-    'key' : '62067c974be23ed5b794617634592224',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-  };
-</script>
-<script src="https://rufflefireballcherries.com/62067c974be23ed5b794617634592224/invoke.js"></script>
-<script src="https://rufflefireballcherries.com/6231dfc46d1c0ab675dd42b3bf8fb11c/invoke.js"></script>
+      
 <script async="async" data-cfasync="false" src="https://pl31350043.profitableratecpmnetwork.com/3a306c8c6706d3ba2b33e82328472b63/invoke.js"></script>
 <div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
         {/* Service Worker */}
@@ -246,6 +207,7 @@ export default function RootLayout({
             `,
           }}
         />
+        
       </body>
     </html>
   )
