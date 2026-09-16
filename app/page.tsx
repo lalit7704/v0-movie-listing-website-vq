@@ -33,7 +33,16 @@ export default function HomePage() {
         {/* Hero Section */}
         <HeroSlider videos={heroVideos} />
 
-      
+      <script>
+  atOptions = {
+    'key' : '7c667e553996e0e3bf38f87820a7f1bb',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://rufflefireballcherries.com/7c667e553996e0e3bf38f87820a7f1bb/invoke.js"></script>
 
         {/* Main Content Sections */}
         <div className="pt-8 space-y-4">
