@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
 import { CollectionPage } from "@/components/collection-page";
 import { getVideosByCategory } from "@/data/videos";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Shree Krishna Episodes | Onemovie",
-  description:
-    "Watch Shree Krishna episodes in Hindi and explore the complete mythological series.",
-  alternates: { canonical: "/shree-krishna" },
-};
+export const metadata: Metadata = createPageMetadata("/shree-krishna", "Shree Krishna Episodes", "Browse the Shree Krishna collection in Hindi.");
 
 export default function ShreeKrishnaPage() {
   return (

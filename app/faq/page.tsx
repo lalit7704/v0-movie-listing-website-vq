@@ -1,12 +1,9 @@
 import { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "FAQ | Onemovie",
-  description:
-    "Frequently Asked Questions (FAQ) for Onemovie. Find answers about streaming, downloading, and using our platform.",
-};
+export const metadata: Metadata = createPageMetadata("/faq", "Frequently Asked Questions", "Answers to common questions about using Onemovie.");
 
 export default function FAQPage() {
   return (

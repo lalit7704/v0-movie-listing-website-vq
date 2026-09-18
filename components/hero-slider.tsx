@@ -1,12 +1,12 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight, Info, Play, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Video } from "@/data/videos";
 import { generateSlug } from "@/lib/seo-utils";
+import { PosterImage } from "@/components/poster-image";
 
 interface HeroSliderProps {
   videos: Video[];
@@ -66,7 +66,7 @@ export function HeroSlider({ videos }: HeroSliderProps) {
       onTouchEnd={handleTouchEnd}
     >
       <div className="absolute inset-0">
-        <Image
+        <PosterImage
           key={activeVideo.id}
           src={activeVideo.poster}
           alt={activeVideo.title}

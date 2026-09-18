@@ -1,12 +1,9 @@
 import { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Terms of Service | Onemovie",
-  description:
-    "Read the Terms of Service for Onemovie. Learn about the rules and guidelines for using our platform.",
-};
+export const metadata: Metadata = createPageMetadata("/terms-of-service", "Terms of Service", "Read the rules and guidelines for using Onemovie.");
 
 export default function TermsOfServicePage() {
   return (

@@ -156,6 +156,9 @@ export function SearchBar({ className, onClose, autoFocus }: SearchBarProps) {
                       src={video.poster}
                       alt={video.title}
                       className="w-full h-full object-cover"
+                      onError={(event) => {
+                        event.currentTarget.src = "/placeholder.jpg";
+                      }}
                     />
                   </div>
                   <div className="flex-1 min-w-0">

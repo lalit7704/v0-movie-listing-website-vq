@@ -2,11 +2,9 @@ import { Metadata } from "next";
 import { CollectionPage } from "@/components/collection-page";
 import { getVideosByCategory } from "@/data/videos";
 import { AmazonProductGrid } from "@/components/amazon-product-grid";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Bollywood Movies | Onemovie",
-  description: "Watch the latest Bollywood movies, Hindi films, and Indian cinema. Stream blockbuster hits and classic favorites.",
-};
+export const metadata: Metadata = createPageMetadata("/bollywood", "Bollywood Movies", "Browse Bollywood movies, Hindi films, and Indian cinema.");
 
 export default function BollywoodPage() {
   const videos = getVideosByCategory("Bollywood");

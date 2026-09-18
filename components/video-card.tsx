@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Play, Star, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Video } from "@/data/videos";
 import { generateSlug } from "@/lib/seo-utils";
 import { WishlistButton } from "@/components/wishlist-button";
+import { PosterImage } from "@/components/poster-image";
 
 interface VideoCardProps {
   video: Video;
@@ -24,9 +24,9 @@ export function VideoCard({ video }: VideoCardProps) {
           <span className="sr-only">Watch {video.title}</span>
         </Link>
 
-          <Image
+          <PosterImage
             src={video.poster}
-            alt={`${video.title} - ${video.category} movie streaming online`}
+            alt={`${video.title} poster`}
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-110"
             sizes="(max-width: 640px) 160px, (max-width: 768px) 180px, 200px"

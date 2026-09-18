@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next';
 import { videos } from '@/data/videos';
 import { generateSlug } from '@/lib/seo-utils';
+import { SITE_URL } from '@/lib/site';
 
-const baseUrl = 'https://www.onemovie.in';
+const baseUrl = SITE_URL;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages: MetadataRoute.Sitemap = [
@@ -122,19 +123,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // Movie pages
+  const seenSlugs = new Set<string>();
   const moviePages: MetadataRoute.Sitemap = videos
     .filter((video) => video.title)
-    .map((video) => {
+    .flatMap((video) => {
       // Use the same slug as VideoCard.
       // If video.slug doesn't exist, generate it from the title.
       const slug = video.slug || generateSlug(video.title);
 
-      return {
+      if (seenSlugs.has(slug)) return [];
+      seenSlugs.add(slug);
+      return [{
         url: `${baseUrl}/movie/${slug}`,
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
         priority: 0.9,
-      };
+      }];
     });
 
   return [...pages, ...moviePages];

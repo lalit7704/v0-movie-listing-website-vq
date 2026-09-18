@@ -4,23 +4,12 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
-        userAgent: 'Googlebot',
-        allow: '/',
-        crawlDelay: 1,
-      },
-      {
-        userAgent: 'Bingbot',
-        allow: '/',
-        crawlDelay: 2,
-      },
-      {
         userAgent: '*',
         allow: '/',
-        disallow: ['/admin', '/api', '/private'],
-        crawlDelay: 2,
+        disallow: ['/admin', '/api/', '/private/', '/account', '/login', '/wishlist', '/upload', '/search'],
       },
     ],
-    sitemap: 'https://www.onemovie.in/sitemap.xml',
-    host: 'https://www.onemovie.in',
+    sitemap: 'https://onemovie.in/sitemap.xml',
+    host: 'https://onemovie.in',
   };
 }

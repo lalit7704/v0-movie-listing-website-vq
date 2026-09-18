@@ -1,12 +1,9 @@
 import { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy | Onemovie",
-  description:
-    "Read the Privacy Policy for Onemovie. Learn how we handle user information and content access.",
-};
+export const metadata: Metadata = createPageMetadata("/privacy-policy", "Privacy Policy", "Learn how Onemovie handles user information and content access.");
 
 export default function PrivacyPolicyPage() {
   return (

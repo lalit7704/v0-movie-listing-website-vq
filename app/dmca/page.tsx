@@ -1,12 +1,9 @@
 import { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "DMCA | Onemovie",
-  description:
-    "DMCA Policy for Onemovie. Learn how to report copyright infringement.",
-};
+export const metadata: Metadata = createPageMetadata("/dmca", "DMCA Policy", "Learn how to submit a copyright-infringement notice to Onemovie.");
 
 export default function DMCAPage() {
   return (

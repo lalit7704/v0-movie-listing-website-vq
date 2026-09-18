@@ -4,11 +4,9 @@ import { Button } from '@/components/ui/button';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { Home, Search } from 'lucide-react';
+import { createPageMetadata } from '@/lib/site';
 
-export const metadata: Metadata = {
-  title: 'Page Not Found - Onemovie',
-  description: 'The page you&apos;re looking for doesn&apos;t exist. Return to home or search for movies.',
-};
+export const metadata: Metadata = createPageMetadata('/404', 'Page Not Found', 'The requested Onemovie page could not be found.', false);
 
 export default function NotFound() {
   return (

@@ -10,6 +10,7 @@ import {
 } from '@/lib/structured-data'
 
 import { Providers } from '@/components/providers'
+import { SITE_URL } from '@/lib/site'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -22,15 +23,10 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Onemovie - Watch Movies & Web Series Online Free',
+  title: 'Onemovie | Movies and Web Series',
 
   description:
-    'Onemovie is your ultimate destination for streaming Bollywood, Hollywood, and South Indian movies online. Watch the latest movies and web series in HD quality for free.',
-
-  keywords:
-    'movies, streaming, Bollywood, Hollywood, South Indian, web series, watch online, free movies, HD movies',
-
-  generator: 'v0.app',
+    'Browse movies and web series, including Bollywood, Hollywood, and South Indian titles, on Onemovie.',
 
   icons: {
     icon: [
@@ -51,9 +47,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Onemovie - Watch Movies & Web Series Online Free',
+    title: 'Onemovie | Movies and Web Series',
     description:
-      'Your ultimate destination for streaming movies and web series online.',
+      'Browse movies and web series on Onemovie.',
     type: 'website',
     siteName: 'Onemovie',
     locale: 'en_US',
@@ -61,16 +57,16 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Onemovie - Watch Movies & Web Series Online Free',
+    title: 'Onemovie | Movies and Web Series',
     description:
-      'Stream Bollywood, Hollywood, and South Indian movies online for free.',
+      'Browse Bollywood, Hollywood, and South Indian movies and web series.',
   },
 
   other: {
     'google-adsense-account': 'ca-pub-5319727568049071',
   },
 
-  metadataBase: new URL('https://www.onemovie.in'),
+  metadataBase: new URL(SITE_URL),
 
   robots: {
     index: true,
@@ -86,7 +82,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: 'https://www.onemovie.in',
+    canonical: '/',
   },
 }
 
@@ -181,7 +177,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       
-<script async="async" data-cfasync="false" src="https://pl31350043.profitableratecpmnetwork.com/3a306c8c6706d3ba2b33e82328472b63/invoke.js"></script>
+<script async={true} data-cfasync="false" src="https://pl31350043.profitableratecpmnetwork.com/3a306c8c6706d3ba2b33e82328472b63/invoke.js"></script>
 <div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
         {/* Service Worker */}
         <script

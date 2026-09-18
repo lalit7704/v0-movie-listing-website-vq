@@ -1,11 +1,9 @@
 import { Metadata } from "next";
 import { CollectionPage } from "@/components/collection-page";
 import { getVideosByCategory } from "@/data/videos";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Web Series | Onemovie",
-  description: "Binge-watch the best web series, original shows, and episodic content. Stream crime thrillers, dramas, and more.",
-};
+export const metadata: Metadata = createPageMetadata("/web-series", "Web Series", "Browse web series, original shows, and episodic content.");
 
 export default function WebSeriesPage() {
   const videos = getVideosByCategory("Web Series");

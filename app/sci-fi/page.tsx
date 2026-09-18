@@ -1,11 +1,9 @@
 import { Metadata } from "next";
 import { CollectionPage } from "@/components/collection-page";
 import { getVideosByGenre } from "@/data/videos";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Sci-Fi Movies | Onemovie",
-  description: "Explore futuristic worlds with sci-fi movies, space adventures, and mind-bending stories.",
-};
+export const metadata: Metadata = createPageMetadata("/sci-fi", "Sci-Fi Movies", "Browse science-fiction movies, space adventures, and futuristic stories.");
 
 export default function SciFiPage() {
   const videos = getVideosByGenre("Sci-Fi");

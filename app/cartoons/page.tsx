@@ -1,11 +1,9 @@
 import { Metadata } from "next";
 import { CollectionPage } from "@/components/collection-page";
 import { getCartoonVideos } from "@/data/videos";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Cartoon Shows & Movies | Onemovie",
-  description: "Watch your favorite cartoon shows and animated movies. Stream popular cartoons like Shinchan, Doraemon, Dragon Ball, and more.",
-};
+export const metadata: Metadata = createPageMetadata("/cartoons", "Cartoon Shows and Movies", "Browse animated movies and cartoon shows.");
 
 export default function CartoonsPage() {
   const videos = getCartoonVideos();

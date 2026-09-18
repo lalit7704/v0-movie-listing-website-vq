@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import {
@@ -41,6 +40,7 @@ import { TrackedDownloadLink } from "@/components/tracked-download-link";
 import { ShareActions } from "@/components/share-actions";
 import { MovieSupportActions } from "@/components/movie-support-actions";
 import { WishlistButton } from "@/components/wishlist-button";
+import { PosterImage } from "@/components/poster-image";
 
 interface MoviePageProps {
   params: Promise<{ slug: string }>;
@@ -116,16 +116,6 @@ export async function generateMetadata({
     title: seoTitle,
 
     description: metaDescription,
-
-    keywords: [
-      video.title,
-      ...video.genre,
-      video.category,
-      video.language,
-      "watch online",
-      "streaming",
-      "free movies",
-    ].join(", "),
 
     alternates: {
       canonical: canonicalUrl,
@@ -220,17 +210,19 @@ export default async function MoviePage({
   /**
    * Movie JSON-LD
    */
+  const categoryPaths: Record<string, string> = {
+    Bollywood: "/bollywood",
+    Hollywood: "/hollywood",
+    "South Indian": "/south-indian",
+    "Web Series": "/web-series",
+    Cartoon: "/cartoons",
+    Ramayan: "/ramayan",
+    Mahabharat: "/mahabharat",
+    "Shree Krishna": "/shree-krishna",
+  };
   const jsonLdScripts = generateMoviePageJsonLd(
-    video.title,
-    video.description,
-    video.poster,
-    video.year,
-    video.rating,
-    video.genre,
-    video.language,
-    video.duration,
-    video.director,
-    video.cast
+    { ...video, slug: canonicalSlug },
+    categoryPaths[video.category] ?? "/"
   );
 
   return (
@@ -491,7 +483,7 @@ export default async function MoviePage({
                 {/* Poster */}
                 <div className="relative aspect-[2/3] rounded-xl overflow-hidden shadow-2xl">
 
-                  <Image
+                  <PosterImage
                     src={video.poster}
                     alt={`${video.title} poster`}
                     fill

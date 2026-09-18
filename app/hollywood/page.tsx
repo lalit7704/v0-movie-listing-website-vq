@@ -2,11 +2,9 @@ import { Metadata } from "next";
 import { CollectionPage } from "@/components/collection-page";
 import { getVideosByCategory } from "@/data/videos";
 import { AmazonAd } from "@/components/amazon-ad";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Hollywood Movies | Onemovie",
-  description: "Watch the latest Hollywood blockbusters, action movies, sci-fi thrillers, and more. Stream the best of American cinema.",
-};
+export const metadata: Metadata = createPageMetadata("/hollywood", "Hollywood Movies", "Browse Hollywood movies, action films, sci-fi titles, and more.");
 
 export default function HollywoodPage() {
   const videos = getVideosByCategory("Hollywood");

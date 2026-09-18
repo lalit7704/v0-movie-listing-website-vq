@@ -1,9 +1,9 @@
 "use client";
 
 import { useCallback, useEffect, useState, useRef } from "react";
-import Image from "next/image";
 import { Play, Pause, Volume2, VolumeX, Maximize, SkipBack, SkipForward } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PosterImage } from "@/components/poster-image";
 import { Slider } from "@/components/ui/slider";
 import { useAuth } from "@/components/auth-provider";
 import { readLocalWatchHistory, saveLocalWatchProgress } from "@/lib/watch-history";
@@ -238,7 +238,7 @@ export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerPro
       {/* Play Button Overlay (before playing) */}
       {!hasStarted && !isYouTube(videoUrl) && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-          <Image
+          <PosterImage
             src={poster}
             alt={title}
             fill

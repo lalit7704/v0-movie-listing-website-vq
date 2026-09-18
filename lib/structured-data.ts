@@ -1,178 +1,56 @@
-/**
- * Structured Data (JSON-LD) generation for SEO
- */
+import type { Video } from "@/data/videos";
+import { SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/site";
 
-export interface MovieSchemaData {
-  '@context': string;
-  '@type': string;
-  name: string;
-  description: string;
-  image: string;
-  datePublished: string;
-  director?: {
-    '@type': string;
-    name: string;
-  };
-  actor?: Array<{
-    '@type': string;
-    name: string;
-  }>;
-  aggregateRating?: {
-    '@type': string;
-    ratingValue: number;
-    ratingCount: number;
-  };
-  duration?: string;
-  genre?: string[];
-  inLanguage?: string;
-}
-
-/**
- * Generates Movie Schema JSON-LD
- */
-export function generateMovieSchema(
-  title: string,
-  description: string,
-  posterImage: string,
-  year: number,
-  rating: number,
-  genres: string[],
-  language: string,
-  director?: string,
-  cast?: string[]
-): MovieSchemaData {
-  const schema: MovieSchemaData = {
-    '@context': 'https://schema.org',
-    '@type': 'Movie',
-    name: title,
-    description,
-    image: posterImage,
-    datePublished: `${year}-01-01`,
-    genre: genres,
-    inLanguage: language,
-  };
-
-  if (director) {
-    schema.director = {
-      '@type': 'Person',
-      name: director,
-    };
-  }
-
-  if (cast && cast.length > 0) {
-    schema.actor = cast.slice(0, 5).map((name) => ({
-      '@type': 'Person',
-      name,
-    }));
-  }
-
-  if (rating > 0) {
-    schema.aggregateRating = {
-      '@type': 'AggregateRating',
-      ratingValue: rating,
-      ratingCount: Math.floor(Math.random() * 10000) + 100, // Placeholder count
-    };
-  }
-
-  return schema;
-}
-
-/**
- * Generates VideoObject Schema JSON-LD
- */
-export function generateVideoObjectSchema(
-  title: string,
-  description: string,
-  thumbnailUrl: string,
-  uploadDate: string,
-  duration: string
-) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'VideoObject',
-    name: title,
-    description,
-    thumbnailUrl,
-    uploadDate,
-    duration: convertDurationToISO8601(duration),
-  };
-}
-
-/**
- * Generates Organization Schema JSON-LD
- */
-export function generateOrganizationSchema() {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Onemovie',
-    url: 'https://www.onemovie.in',
-    logo: 'https://www.onemovie.in/icons/icon-512.png',
-    sameAs: [
-      'https://www.facebook.com/onemovie',
-      'https://www.twitter.com/onemovie',
-      'https://www.instagram.com/onemovie',
-    ],
-    contactPoint: {
-      '@type': 'ContactPoint',
-      contactType: 'Customer Support',
-      email: 'support@onemovie.in',
-    },
-  };
-}
-
-/**
- * Generates WebSite Schema JSON-LD
- */
 export function generateWebsiteSchema() {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: 'Onemovie',
-    url: 'https://www.onemovie.in',
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: SITE_URL,
     potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: 'https://www.onemovie.in/search?q={search_term_string}',
-      },
-      'query-input': 'required name=search_term_string',
+      "@type": "SearchAction",
+      target: `${SITE_URL}/search?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
     },
   };
 }
 
-/**
- * Converts duration format (e.g., "2h 35m") to ISO 8601
- */
-function convertDurationToISO8601(durationString: string): string {
-  const match = durationString.match(/(\d+)h\s+(\d+)m/);
-  if (!match) return 'PT1H30M';
-
-  const hours = match[1];
-  const minutes = match[2];
-  return `PT${hours}H${minutes}M`;
+export function generateOrganizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: absoluteUrl("/icons/icon-512.png"),
+  };
 }
 
-/**
- * Generates a complete JSON-LD script for a movie page
- */
-export function generateMoviePageJsonLd(
-  title: string,
-  description: string,
-  posterImage: string,
-  year: number,
-  rating: number,
-  genres: string[],
-  language: string,
-  duration: string,
-  director?: string,
-  cast?: string[]
-) {
-  const scripts = [
-    generateMovieSchema(title, description, posterImage, year, rating, genres, language, director, cast),
-    generateVideoObjectSchema(title, description, posterImage, new Date().toISOString(), duration),
-    generateOrganizationSchema(),
-  ];
+export function generateMoviePageJsonLd(video: Video, categoryPath: string) {
+  const movie: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Movie",
+    name: video.title,
+    description: video.description,
+    url: absoluteUrl(`/movie/${video.slug}`),
+    image: video.poster,
+    datePublished: `${video.year}-01-01`,
+    genre: video.genre,
+    inLanguage: video.language,
+  };
 
-  return scripts;
+  if (video.director) movie.director = { "@type": "Person", name: video.director };
+  if (video.cast?.length) movie.actor = video.cast.map((name) => ({ "@type": "Person", name }));
+
+  return [
+    movie,
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: video.category, item: absoluteUrl(categoryPath) },
+        { "@type": "ListItem", position: 3, name: video.title, item: absoluteUrl(`/movie/${video.slug}`) },
+      ],
+    },
+  ];
 }

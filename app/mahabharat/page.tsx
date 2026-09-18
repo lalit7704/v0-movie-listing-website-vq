@@ -1,11 +1,9 @@
 import { Metadata } from "next";
 import { CollectionPage } from "@/components/collection-page";
 import { getVideosByCategory } from "@/data/videos";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Mahabharat | Onemovie",
-  description: "A mythological series based on Mahabharat, showing the epic saga of the Kauravas and Pandavas.",
-};
+export const metadata: Metadata = createPageMetadata("/mahabharat", "Mahabharat", "Browse the Mahabharat collection on Onemovie.");
 
 export default function mahabharatPage() {
   const videos = getVideosByCategory("mahabharat");

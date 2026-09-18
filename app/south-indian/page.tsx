@@ -1,11 +1,9 @@
 import { Metadata } from "next";
 import { CollectionPage } from "@/components/collection-page";
 import { getVideosByCategory } from "@/data/videos";
+import { createPageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "South Indian Movies | Onemovie",
-  description: "Watch Telugu, Tamil, Kannada, and Malayalam movies. Stream the best of South Indian cinema.",
-};
+export const metadata: Metadata = createPageMetadata("/south-indian", "South Indian Movies", "Browse Telugu, Tamil, Kannada, and Malayalam movies.");
 
 export default function SouthIndianPage() {
   const videos = getVideosByCategory("South Indian");

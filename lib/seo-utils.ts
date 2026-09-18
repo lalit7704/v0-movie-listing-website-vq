@@ -23,7 +23,7 @@ export function generateSlug(title: string): string {
  * @param baseUrl - The base URL of the site
  * @returns The canonical URL
  */
-export function generateCanonicalUrl(slug: string, baseUrl: string = 'https://www.onemovie.in'): string {
+export function generateCanonicalUrl(slug: string, baseUrl: string = 'https://onemovie.in'): string {
   return `${baseUrl}/movie/${slug}`;
 }
 
@@ -46,93 +46,8 @@ export function generateMetaDescription(description: string, maxLength: number =
  * @param maxLength - Maximum length (default 60 characters)
  * @returns SEO-optimized title
  */
-export function generateSEOTitle(title: string, category: string, maxLength: number = 60): string {
-  const baseTitle = `${title} - Watch on Onemovie`;
+export function generateSEOTitle(title: string, _category: string, maxLength: number = 60): string {
+  const baseTitle = `${title} | Onemovie`;
   if (baseTitle.length <= maxLength) return baseTitle;
   return `${title.substring(0, maxLength - 20)} - Onemovie`;
-}
-
-/**
- * Generates Open Graph metadata object
- */
-export function generateOpenGraphMeta(
-  title: string,
-  description: string,
-  image: string,
-  url: string,
-  type: string = 'video.movie'
-) {
-  return {
-    title,
-    description,
-    image,
-    url,
-    type,
-    siteName: 'Onemovie',
-  };
-}
-
-/**
- * Generates Twitter Card metadata
- */
-export function generateTwitterCardMeta(
-  title: string,
-  description: string,
-  image: string
-) {
-  return {
-    card: 'summary_large_image',
-    title,
-    description,
-    image,
-  };
-}
-
-/**
- * Extracts keywords from a genre array and title
- */
-export function extractKeywords(title: string, genres: string[], category: string): string[] {
-  const keywords: string[] = [title, ...genres, category, 'watch online', 'streaming'];
-  return [...new Set(keywords)].slice(0, 10);
-}
-
-/**
- * Generates breadcrumb schema data
- */
-export function generateBreadcrumbSchema(
-  movieTitle: string,
-  movieSlug: string,
-  category: string
-) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: 'https://www.onemovie.in',
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: category,
-        item: `https://www.onemovie.in/${category.toLowerCase()}`,
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: movieTitle,
-        item: `https://www.onemovie.in/movie/${movieSlug}`,
-      },
-    ],
-  };
-}
-
-/**
- * Formats a date to ISO 8601 format
- */
-export function formatDateISO(date: Date): string {
-  return date.toISOString().split('T')[0];
 }
