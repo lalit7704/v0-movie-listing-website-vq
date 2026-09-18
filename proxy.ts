@@ -1,13 +1,7 @@
-import { NextResponse, type NextRequest } from "next/server";
+import { type NextRequest } from "next/server";
 import { updateSession } from "@/lib/supabase/proxy";
 
 export async function proxy(request: NextRequest) {
-  if (request.nextUrl.hostname === "www.onemovie.in") {
-    const url = request.nextUrl.clone();
-    url.protocol = "https:";
-    url.host = "onemovie.in";
-    return NextResponse.redirect(url, 308);
-  }
   return updateSession(request);
 }
 
