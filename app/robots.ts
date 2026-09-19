@@ -6,7 +6,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/admin', '/api/', '/private/', '/account', '/login', '/wishlist', '/upload', '/search'],
+        // Keep non-HTML endpoints out of crawling. HTML pages that emit a
+        // noindex tag must remain crawlable so search engines can see it.
+        disallow: ['/api/', '/private/'],
       },
     ],
     sitemap: 'https://onemovie.in/sitemap.xml',
