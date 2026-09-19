@@ -1684,7 +1684,7 @@ export const tmdbHollywoodVideos: Video[] = [
     "title": "Spider-Man: Brand New Day (2026)",
     "slug": "spider-man-brand-new-day-2026",
     "videoUrl": "https://youtu.be/P3uI5sLosKU",
-    "downloadUrl": "https://www.themoviedb.org/movie/969681",
+    "downloadUrl": "https://t.me/onemoviedownloa/300",
     "poster": "https://image.tmdb.org/t/p/w780/6Q21yptoOCUq4ErwVncesLPVplb.jpg",
     "description": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
     "seoDescription": "Spider-Man: Brand New Day (2026) trailer, cast, genres, rating and release information.",
@@ -2310,43 +2310,7 @@ export const tmdbBollywoodVideos: Video[] = [
       "official trailer"
     ]
   },
-  {
-    "id": "tmdb-movie-1728951",
-    "title": "Mukhbir: The Story of a Spy - The Movie (2026)",
-    "slug": "mukhbir-the-story-of-a-spy-the-movie-2026",
-    "videoUrl": "https://youtu.be/Ust_xF_DntU",
-    "downloadUrl": "https://t.me/c/3845134502/246",
-    "poster": "https://image.tmdb.org/t/p/w780/xFLk1LmfnZdWxjAb35KU32l5Ikj.jpg",
-    "description": "An Indian spy embarks on a perilous mission in Pakistan to save India. Will he succeed?",
-    "seoDescription": "Mukhbir: The Story of a Spy - The Movie (2026) trailer, cast, genres, rating and release information.",
-    "category": "Bollywood",
-    "year": 2026,
-    "duration": "2h 30m",
-    "rating": 0,
-    "genre": [
-      "Drama",
-      "Mystery",
-      "Thriller"
-    ],
-    "language": "Hindi",
-    "quality": "HD",
-    "featured": false,
-    "director": "Shivam Nair, Jayprad Desai",
-    "cast": [
-      "Prakash Raj",
-      "Zain Khan Durrani",
-      "Harsh Chhaya",
-      "Dilip Shankar",
-      "Satyadeep Misra",
-      "Adil Hussain"
-    ],
-    "keywords": [
-      "Mukhbir: The Story of a Spy - The Movie",
-      "Mukhbir: The Story of a Spy - The Movie 2026",
-      "Bollywood",
-      "official trailer"
-    ]
-  },
+
   {
     "id": "tmdb-movie-1728731",
     "title": "Munawar Faruqui: Dhandho (2026)",
