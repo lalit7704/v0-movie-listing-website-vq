@@ -1,145 +1,164 @@
-import { MetadataRoute } from 'next';
-import { videos } from '@/data/videos';
-import { generateSlug } from '@/lib/seo-utils';
-import { SITE_URL } from '@/lib/site';
+import type { MetadataRoute } from "next";
+import { videos } from "@/data/videos";
+import { generateSlug } from "@/lib/seo-utils";
+import { SITE_URL } from "@/lib/site";
 
-const baseUrl = SITE_URL;
+const baseUrl = SITE_URL.replace(/\/$/, "");
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
+
+  // Static pages
   const pages: MetadataRoute.Sitemap = [
-    // Homepage
     {
       url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 1,
     },
 
-    // Category pages
+    // Main categories
     {
       url: `${baseUrl}/bollywood`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/hollywood`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/south-indian`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/web-series`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.8,
     },
+
+    // Genre pages
     {
       url: `${baseUrl}/comedy`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/drama`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/cartoons`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/thriller`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/sci-fi`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/action`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/ramayan`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/mahabharat`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/shree-krishna`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: now,
+      changeFrequency: "weekly",
       priority: 0.7,
     },
 
     // Important pages
     {
       url: `${baseUrl}/faq`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
+      lastModified: now,
+      changeFrequency: "yearly",
       priority: 0.4,
     },
     {
       url: `${baseUrl}/privacy-policy`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
+      lastModified: now,
+      changeFrequency: "yearly",
       priority: 0.3,
     },
     {
       url: `${baseUrl}/terms-of-service`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
+      lastModified: now,
+      changeFrequency: "yearly",
       priority: 0.3,
     },
     {
       url: `${baseUrl}/dmca`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
+      lastModified: now,
+      changeFrequency: "yearly",
       priority: 0.2,
     },
   ];
 
   // Movie pages
   const seenSlugs = new Set<string>();
-  const moviePages: MetadataRoute.Sitemap = videos
-    .filter((video) => video.title)
-    .flatMap((video) => {
-      // Use the same slug as VideoCard.
-      // If video.slug doesn't exist, generate it from the title.
-      const slug = video.slug || generateSlug(video.title);
 
-      if (seenSlugs.has(slug)) return [];
-      seenSlugs.add(slug);
-      return [{
+  const moviePages: MetadataRoute.Sitemap = videos.flatMap((video) => {
+    if (!video?.title?.trim()) {
+      return [];
+    }
+
+    // Existing slug use karo, warna title se slug generate karo
+    const slug =
+      video.slug?.trim() ||
+      generateSlug(video.title);
+
+    if (!slug) {
+      return [];
+    }
+
+    // Duplicate URLs ko remove karo
+    if (seenSlugs.has(slug)) {
+      return [];
+    }
+
+    seenSlugs.add(slug);
+
+    return [
+      {
         url: `${baseUrl}/movie/${slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
+        lastModified: now,
+        changeFrequency: "monthly" as const,
         priority: 0.9,
-      }];
-    });
+      },
+    ];
+  });
 
   return [...pages, ...moviePages];
 }
