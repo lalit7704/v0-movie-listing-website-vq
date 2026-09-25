@@ -1,6 +1,24 @@
 import type { Video } from "@/data/videos";
 import { SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/site";
 
+function toIsoDuration(duration: string) {
+  const match = duration.match(/(?:(\d+)\s*h(?:ours?)?)?\s*(?:(\d+)\s*m(?:in(?:utes?)?)?)?/i);
+
+  if (!match || (!match[1] && !match[2])) return undefined;
+
+  const hours = Number(match[1] ?? 0);
+  const minutes = Number(match[2] ?? 0);
+  return `PT${hours ? `${hours}H` : ""}${minutes ? `${minutes}M` : ""}`;
+}
+
+function people(names: string) {
+  return names
+    .split(",")
+    .map((name) => name.trim())
+    .filter(Boolean)
+    .map((name) => ({ "@type": "Person", name }));
+}
+
 export function generateWebsiteSchema() {
   return {
     "@context": "https://schema.org",
@@ -25,20 +43,31 @@ export function generateOrganizationSchema() {
   };
 }
 
+/** Prevent text from closing a JSON-LD script tag when movie data contains HTML. */
+export function serializeJsonLd(data: unknown) {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
 export function generateMoviePageJsonLd(video: Video, categoryPath: string) {
+  const movieUrl = absoluteUrl(`/movie/${video.slug}`);
   const movie: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Movie",
+    "@id": `${movieUrl}#movie`,
     name: video.title,
     description: video.description,
-    url: absoluteUrl(`/movie/${video.slug}`),
+    url: movieUrl,
     image: video.poster,
     datePublished: `${video.year}-01-01`,
     genre: video.genre,
     inLanguage: video.language,
   };
 
-  if (video.director) movie.director = { "@type": "Person", name: video.director };
+  const duration = toIsoDuration(video.duration);
+  if (duration) movie.duration = duration;
+
+  const directors = video.director ? people(video.director) : [];
+  if (directors.length) movie.director = directors.length === 1 ? directors[0] : directors;
   if (video.cast?.length) movie.actor = video.cast.map((name) => ({ "@type": "Person", name }));
 
   return [
@@ -49,7 +78,7 @@ export function generateMoviePageJsonLd(video: Video, categoryPath: string) {
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
         { "@type": "ListItem", position: 2, name: video.category, item: absoluteUrl(categoryPath) },
-        { "@type": "ListItem", position: 3, name: video.title, item: absoluteUrl(`/movie/${video.slug}`) },
+        { "@type": "ListItem", position: 3, name: video.title, item: movieUrl },
       ],
     },
   ];

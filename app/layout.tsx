@@ -7,6 +7,7 @@ import './globals.css'
 import {
   generateOrganizationSchema,
   generateWebsiteSchema,
+  serializeJsonLd,
 } from '@/lib/structured-data'
 
 import { Providers } from '@/components/providers'
@@ -143,7 +144,7 @@ export default function RootLayout({
           id="organization-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
+            __html: serializeJsonLd(organizationSchema),
           }}
         />
 
@@ -152,7 +153,7 @@ export default function RootLayout({
           id="website-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(websiteSchema),
+            __html: serializeJsonLd(websiteSchema),
           }}
         />
         <script src="https://rufflefireballcherries.com/df/43/80/df4380d675a347a947eb1590161d2618.js"></script>

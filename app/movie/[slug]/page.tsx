@@ -32,7 +32,7 @@ import {
   generateMetaDescription,
 } from "@/lib/seo-utils";
 
-import { generateMoviePageJsonLd } from "@/lib/structured-data";
+import { generateMoviePageJsonLd, serializeJsonLd } from "@/lib/structured-data";
 import { resolveDownloadUrl } from "@/lib/download-url";
 
 import { MovieComments } from "@/components/movie-comments";
@@ -232,7 +232,7 @@ export default async function MoviePage({
         id="movie-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(jsonLdScripts),
+          __html: serializeJsonLd(jsonLdScripts),
         }}
       />
 
