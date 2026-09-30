@@ -1316,7 +1316,58 @@ export const bollywoodVideos: Video[] = [
 "genre": ["Comedy","Drama","Family"],
 "language": "Hindi",
 "quality": "HD"
+},
+{
+"id": "2046",
+"title": "Mayday (2025) - Bollywood Thriller Drama Movie | Full Movie HD",
+"slug": "mayday-2025-bollywood-thriller-drama-movie",
+"videoUrl": "https://youtu.be/om5Un9X720M",
+"downloadUrl": "https://t.me/c/3845134502/351",
+"poster": "",
+"description": "Mayday is a Bollywood thriller drama movie based on aviation, investigation, and human emotions. The film explores a high-pressure situation where characters face unexpected challenges and life-changing decisions. With suspenseful storytelling, emotional moments, and intense dramatic sequences, Mayday focuses on courage, responsibility, and survival during difficult circumstances. The movie presents the challenges faced by professionals while dealing with critical situations and highlights teamwork, determination, and human strength. Featuring engaging performances, realistic storytelling, and thrilling moments, Mayday delivers an exciting cinematic experience for audiences who enjoy suspense, drama, and action-oriented films. The movie combines emotional depth with a gripping narrative that keeps viewers connected throughout the story.",
+"category": "bollywood",
+"year": 2025,
+"duration": "2h 10m",
+"rating": 7.2,
+"genre": ["Thriller","Drama","Action"],
+"language": "Hindi",
+"quality": "HD"
+},
+
+{
+"id": "2047",
+"title": "Shaque Trust No One Season 1 (2025) - Hindi Crime Thriller Series | Full HD",
+"slug": "shaque-trust-no-one-season-1-hindi-crime-series",
+"videoUrl": "https://youtu.be/WPPcfRd-JzE",
+"downloadUrl": "https://t.me/c/3845134502/350",
+"poster": "",
+"description": "Shaque Trust No One Season 1 is a Hindi crime thriller web series based on mystery, suspicion, and hidden secrets. The series explores situations where trust becomes difficult and characters must uncover the truth behind complicated events. With suspenseful storytelling, investigation elements, and emotional conflicts, the show takes viewers through a journey filled with unexpected twists and revelations. The series focuses on human relationships, doubts, and the consequences of betrayal. Featuring dramatic performances and an engaging storyline, Shaque Trust No One creates an intense atmosphere for audiences who enjoy crime mysteries and psychological thrillers. The show combines suspense, drama, and investigation to deliver an entertaining experience.",
+"category": "web-series",
+"year": 2025,
+"duration": "Season 1",
+"rating": 7.6,
+"genre": ["Crime","Thriller","Mystery"],
+"language": "Hindi",
+"quality": "HD"
+},
+
+{
+"id": "2048",
+"title": "Love Lottery (2025) - Hindi Romantic Comedy Movie | Full Movie HD",
+"slug": "love-lottery-2025-hindi-romantic-comedy-movie",
+"videoUrl": "https://youtu.be/dW8Hrfv_Cuk",
+"downloadUrl": "https://t.me/c/3845134502/352",
+"poster": "",
+"description": "Love Lottery is a Hindi romantic comedy movie that explores love, relationships, and unexpected situations with a fun and entertaining approach. The story revolves around characters who experience surprising twists while searching for happiness, companionship, and true emotions. Filled with comedy, romance, and emotional moments, the movie presents the lighter side of relationships and modern love stories. Through humorous situations and relatable characters, Love Lottery delivers an enjoyable experience for audiences who appreciate romantic entertainment. The film combines laughter, friendship, misunderstandings, and heartfelt moments to create a refreshing romantic comedy journey. With its entertaining storyline and emotional connection, Love Lottery offers a fun watch for viewers.",
+"category": "bollywood",
+"year": 2025,
+"duration": "2h 00m",
+"rating": 7.0,
+"genre": ["Romance","Comedy","Drama"],
+"language": "Hindi",
+"quality": "HD"
 }
+
 
 ];
 
