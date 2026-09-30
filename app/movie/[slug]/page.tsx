@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
 import {
   Download,
   Star,
@@ -228,7 +227,7 @@ export default async function MoviePage({
   return (
     <>
       {/* Movie Structured Data */}
-      <Script
+      <script
         id="movie-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
