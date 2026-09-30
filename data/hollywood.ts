@@ -687,8 +687,39 @@ export const hollywoodVideos: Video[] = [
 "genre": ["Crime","Thriller","Documentary"],
 "language": "English",
 "quality": "HD"
-}
-
+},
+{
+"id": "2072",
+"title": "Salmokji: Whispering Water (2025) - South Indian Drama Movie | Full Movie HD",
+"slug": "salmokji-whispering-water-2025-drama-movie",
+"videoUrl": "https://youtu.be/s0QWAgDke1I",
+"downloadUrl": "https://t.me/c/3845134502/324",
+"poster": "",
+"description": "Salmokji: Whispering Water is an emotional drama movie that explores the deep connection between nature, memories, relationships, and human emotions. The film presents a meaningful journey filled with personal struggles, hidden stories, and moments of self-discovery. Set around the beauty and mystery of water and nature, the movie focuses on how past experiences influence people's lives and relationships. Through emotional storytelling, realistic characters, and a calm cinematic approach, Salmokji: Whispering Water creates an immersive experience for audiences who enjoy thought-provoking dramas. The film highlights themes of healing, hope, connection, and the importance of understanding human feelings while delivering a visually beautiful and emotionally engaging story.",
+"category": "south-indian",
+"year": 2025,
+"duration": "1h 50m",
+"rating": 7.4,
+"genre": ["Drama","Mystery","Emotional"],
+"language": "Malayalam",
+"quality": "HD"
+},
+{
+"id": "2074",
+"title": "Last Days (2025) - Thriller Drama Movie | Full Movie HD",
+"slug": "last-days-2025-thriller-drama-movie",
+"videoUrl": "https://youtu.be/18m3rC2mgE8",
+"downloadUrl": "https://t.me/c/3845134502/326",
+"poster": "",
+"description": "Last Days is a thriller drama movie that explores survival, emotions, and the difficult choices people make during challenging situations. The film follows characters facing unexpected events that test their courage, relationships, and determination. With a suspenseful storyline, emotional moments, and dramatic conflicts, the movie creates an intense experience for viewers. Last Days focuses on themes of hope, fear, human strength, and the value of time while showing how people react when faced with uncertainty. Through engaging performances and a powerful narrative, the film delivers a meaningful story that combines thriller elements with emotional depth and character-driven storytelling.",
+"category": "hollywood",
+"year": 2025,
+"duration": "1h 55m",
+"rating": 7.1,
+"genre": ["Thriller","Drama","Mystery"],
+"language": "English",
+"quality": "HD"
+},
 
 ];
 

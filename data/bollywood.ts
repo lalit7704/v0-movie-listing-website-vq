@@ -1366,6 +1366,22 @@ export const bollywoodVideos: Video[] = [
 "genre": ["Romance","Comedy","Drama"],
 "language": "Hindi",
 "quality": "HD"
+},
+{
+"id": "2073",
+"title": "Love Seasons (2025) - Romantic Drama Movie | Full Movie HD",
+"slug": "love-seasons-2025-romantic-drama-movie",
+"videoUrl": "https://youtu.be/5U_IKLXQR3Y",
+"downloadUrl": "https://t.me/c/3845134502/325",
+"poster": "",
+"description": "Love Seasons is a romantic drama movie that explores love, relationships, emotions, and the different phases of human connections. The story follows characters who experience happiness, challenges, misunderstandings, and personal growth while navigating their romantic journeys. The film focuses on how love changes with time and how relationships are shaped by trust, communication, and emotional understanding. With heartfelt moments, relatable characters, and a meaningful storyline, Love Seasons presents a beautiful exploration of romance and life experiences. The movie combines emotional drama with realistic situations, making it an engaging watch for audiences who enjoy relationship-based stories filled with feelings, memories, and heartfelt moments.",
+"category": "bollywood",
+"year": 2025,
+"duration": "2h 00m",
+"rating": 7.2,
+"genre": ["Romance","Drama"],
+"language": "Hindi",
+"quality": "HD"
 }
 
 
