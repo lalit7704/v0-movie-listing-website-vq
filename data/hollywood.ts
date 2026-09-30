@@ -587,7 +587,109 @@ export const hollywoodVideos: Video[] = [
   "director": "Kenji Katagiri",
   "cast": ["Kento Yamazaki", "Anna Yamada", "Gordon Maeda"],
   "keywords": ["Golden Kamuy", "Abashiri Prison", "Japanese action", "Netflix"]
+},
+{
+"id": "6101",
+"title": "Avengers: Endgame (2019) - Hollywood Superhero Action Movie | Full Movie HD",
+"slug": "avengers-endgame-2019-hollywood-superhero-action-movie",
+"videoUrl": "https://youtu.be/TcMBFSGVi1c",
+"downloadUrl": "https://t.me/c/3845134502/312",
+"poster": "",
+"description": "Avengers: Endgame is an epic Hollywood superhero action movie that brings together Earth's greatest heroes for their final battle against a powerful enemy. The story continues after the devastating events that changed the universe and follows the Avengers as they attempt to restore balance and bring back those who were lost. Filled with emotional moments, incredible action sequences, and unforgettable character journeys, the movie delivers a powerful conclusion to a massive superhero saga. Featuring advanced visual effects, outstanding performances, and a deeply emotional storyline, Avengers: Endgame became one of the most memorable films in modern cinema. The movie combines action, adventure, science fiction, and human emotions to create an extraordinary cinematic experience.",
+"category": "hollywood",
+"year": 2019,
+"duration": "3h 1m",
+"rating": 8.4,
+"genre": ["Action","Adventure","Sci-Fi"],
+"language": "English",
+"quality": "HD"
+},
+
+{
+"id": "6102",
+"title": "Get Out (2017) - Hollywood Horror Thriller Movie | Full Movie HD",
+"slug": "get-out-2017-hollywood-horror-thriller-movie",
+"videoUrl": "https://youtu.be/DzfpyUB60YY",
+"downloadUrl": "https://t.me/c/3845134502/335",
+"poster": "",
+"description": "Get Out is a Hollywood psychological horror thriller movie that combines mystery, suspense, and social commentary through a unique and engaging storyline. The film follows a young man who visits his girlfriend's family home and discovers disturbing secrets that slowly reveal a much darker reality. With an intense atmosphere, unexpected twists, and powerful storytelling, the movie explores fear, manipulation, and hidden truths. Featuring strong performances, creative direction, and a gripping narrative, Get Out delivers a thrilling cinematic experience that keeps audiences engaged from beginning to end. The film blends horror elements with psychological drama, creating a memorable and thought-provoking experience for viewers.",
+"category": "hollywood",
+"year": 2017,
+"duration": "1h 44m",
+"rating": 7.7,
+"genre": ["Horror","Thriller","Mystery"],
+"language": "English",
+"quality": "HD"
+},
+
+{
+"id": "6103",
+"title": "Dark (2017) - Netflix Sci-Fi Mystery Series | Full HD",
+"slug": "dark-2017-netflix-sci-fi-mystery-series",
+"videoUrl": "https://youtu.be/ESEUoa-mz2c",
+"downloadUrl": "https://t.me/c/3845134502/331",
+"poster": "",
+"description": "Dark is a critically acclaimed science fiction mystery series that explores time travel, family secrets, and the connection between different generations. Set in a small German town, the story begins with mysterious events that reveal a complex network of relationships and hidden truths. The series combines science fiction, thriller, and emotional drama while exploring concepts of time, destiny, and human choices. With a detailed storyline, atmospheric visuals, and deep character development, Dark creates an immersive experience for viewers who enjoy intelligent mystery content. The show is known for its complex narrative, suspenseful storytelling, and exploration of how past, present, and future events are connected.",
+"category": "web-series",
+"year": 2017,
+"duration": "3 Seasons",
+"rating": 8.7,
+"genre": ["Sci-Fi","Mystery","Thriller"],
+"language": "English",
+"quality": "HD"
+},
+
+{
+"id": "6104",
+"title": "Resident Evil (2002) - Hollywood Horror Action Movie | Full Movie HD",
+"slug": "resident-evil-2002-hollywood-horror-action-movie",
+"videoUrl": "https://youtu.be/HhBAIDHvRTc",
+"downloadUrl": "https://t.me/c/3845134502/339",
+"poster": "",
+"description": "Resident Evil is a Hollywood horror action movie based on the popular video game franchise. The film follows a group of characters who enter a secret underground facility where a dangerous experiment has created deadly consequences. As they fight for survival against mysterious threats, they uncover hidden secrets behind a powerful organization. With intense action sequences, horror elements, and science fiction themes, Resident Evil delivers an exciting survival adventure. The movie combines suspense, monsters, technology, and thrilling combat scenes to create an engaging experience for fans of action horror cinema. Its dark atmosphere, fast-paced storytelling, and memorable moments make it a popular entry in the horror action genre.",
+"category": "hollywood",
+"year": 2002,
+"duration": "1h 40m",
+"rating": 6.6,
+"genre": ["Action","Horror","Sci-Fi"],
+"language": "English",
+"quality": "HD"
+},
+
+{
+"id": "6105",
+"title": "Apollo Has Fallen Season 1 Episode 1 (2025) - Hollywood Action Series | Full HD",
+"slug": "apollo-has-fallen-season-1-episode-1-action-series",
+"videoUrl": "https://youtu.be/FEOI20fL0i4",
+"downloadUrl": "https://t.me/c/3845134502/337",
+"poster": "",
+"description": "Apollo Has Fallen Season 1 Episode 1 is an action thriller series featuring intense situations, global conflicts, and high-stakes missions. The story follows characters who face dangerous challenges while dealing with powerful enemies and unexpected threats. With action-packed sequences, suspenseful moments, and dramatic storytelling, the series explores themes of courage, strategy, and survival. The first episode introduces the main characters, the central conflict, and the challenges that shape the journey ahead. Combining elements of military action, political thriller, and adventure, Apollo Has Fallen delivers an exciting experience for viewers who enjoy fast-paced international action stories.",
+"category": "web-series",
+"year": 2025,
+"duration": "Episode 1",
+"rating": 7.0,
+"genre": ["Action","Thriller","Drama"],
+"language": "English",
+"quality": "HD"
+},
+{
+"id": "6106",
+"title": "Unabomber (2025) - Hollywood Crime Thriller Documentary Series | Full HD",
+"slug": "unabomber-hollywood-crime-thriller-documentary-series",
+"videoUrl": "https://youtu.be/B3tR6qQjbgI",
+"downloadUrl": "https://t.me/c/3845134502/348",
+"poster": "",
+"description": "Unabomber is a Hollywood crime thriller documentary series based on one of the most complex criminal investigations in modern history. The series explores the investigation process, the search for clues, and the efforts made by authorities to identify the person behind a series of mysterious attacks. Through detailed storytelling, interviews, and investigative elements, the show presents the challenges faced by law enforcement while solving a difficult case. The series focuses on psychology, criminal investigation, and the impact of fear on society. With suspenseful narration, real-world events, and dramatic presentation, Unabomber provides an engaging experience for audiences interested in true crime, mystery, and investigative stories.",
+"category": "hollywood",
+"year": 2025,
+"duration": "Season 1",
+"rating": 7.8,
+"genre": ["Crime","Thriller","Documentary"],
+"language": "English",
+"quality": "HD"
 }
+
+
 ];
 
 /* ---------------- HELPERS ---------------- */
