@@ -22,36 +22,61 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 🔥 TOKEN (isko .env me rakhna better hai)
-    const TOKEN = "8564702752:AAGQWoG0-2cDc49AzhvFb-lQvl5KlEK9Iq0";
-    const CHANNEL = "@onemoviedownloa";
+    const token = process.env.TELEGRAM_BOT_TOKEN;
+    const channel = process.env.TELEGRAM_CHANNEL_ID;
+
+    if (!token || !channel) {
+      return NextResponse.json(
+        { success: false, error: "Telegram is not configured on the server" },
+        { status: 500 }
+      );
+    }
 
     const response = await fetch(
-      `https://api.telegram.org/bot${TOKEN}/sendVideo`,
+      `https://api.telegram.org/bot${token}/sendVideo`,
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          chat_id: CHANNEL,
+          chat_id: channel,
           video: videoUrl,
           caption: title,
         }),
+        cache: "no-store",
       }
     );
 
     const data = await response.json();
 
-    if (!data.ok) {
+    if (!response.ok || !data.ok || !data.result?.message_id) {
       return NextResponse.json(
-        { success: false, error: data.description },
-        { status: 500 }
+        {
+          success: false,
+          error: data.description || "Telegram could not send this video",
+        },
+        { status: response.status >= 400 ? response.status : 502 }
       );
     }
 
     const messageId = data.result.message_id;
-    const telegramLink = `https://t.me/onemoviedownloa/${messageId}`;
+    const configuredChannel = channel.trim();
+    const telegramLink = configuredChannel.startsWith("@")
+      ? `https://t.me/${configuredChannel.slice(1)}/${messageId}`
+      : configuredChannel.startsWith("-100")
+        ? `https://t.me/c/${configuredChannel.slice(4)}/${messageId}`
+        : null;
+
+    if (!telegramLink) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "Telegram upload succeeded, but TELEGRAM_CHANNEL_ID must be a public @username or -100... channel ID to build the download link",
+        },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json({
       success: true,
