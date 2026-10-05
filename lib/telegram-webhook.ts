@@ -1,6 +1,14 @@
 import { createHash, timingSafeEqual } from "node:crypto";
 
-export const TELEGRAM_CHANNEL_ID = process.env.TELEGRAM_CHANNEL_ID || "-1003845134502";
+const DEFAULT_TELEGRAM_CHANNEL_ID = "-1003845134502";
+
+// Invite-link codes like "+AbC123" are not chat IDs and make copyMessage fail with "chat not found".
+function resolveChannelId(value: string | undefined) {
+  const channelId = value?.trim();
+  return channelId && /^(-100\d+|@\w+)$/.test(channelId) ? channelId : DEFAULT_TELEGRAM_CHANNEL_ID;
+}
+
+export const TELEGRAM_CHANNEL_ID = resolveChannelId(process.env.TELEGRAM_CHANNEL_ID);
 export const TELEGRAM_OWNER_USER_ID = Number(process.env.TELEGRAM_OWNER_USER_ID || "990444100");
 
 export function getTelegramToken() {

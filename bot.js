@@ -22,7 +22,8 @@ const STATS_FILE = path.join(__dirname, "bot-stats.json");
 const SUPPORT_COOLDOWN_MS = 60 * 1000;
 const supportCooldowns = new Map();
 
-const bot = new TelegramBot(token, { polling: true });
+// Polling starts only after the webhook check below, because polling deletes an active webhook.
+const bot = new TelegramBot(token, { polling: false });
 
 function emptyStats() {
   return {
@@ -200,4 +201,14 @@ bot.on("polling_error", (error) => {
   console.error("Telegram polling error:", error.message);
 });
 
-console.log("OneMovie delivery bot is running.");
+bot.getWebHookInfo().then((info) => {
+  if (info.url) {
+    console.error(
+      `Webhook is active (${info.url}). Starting bot.js would remove it, so it was not started.`,
+    );
+    process.exit(1);
+  }
+
+  bot.startPolling();
+  console.log("OneMovie delivery bot is running.");
+});
