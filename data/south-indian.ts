@@ -838,6 +838,26 @@ export const southindianVideos: Video[] = [
 "genre": ["Action","Thriller","Drama"],
 "language": "Tamil",
 "quality": "HD"
+},
+{
+"id": "5051",
+"title": "Vadam (2026) - Tamil Action Comedy Drama | Vimal",
+"slug": "vadam-2026",
+"videoUrl": "https://youtu.be/Ro4xvpksYeE",
+"downloadUrl": "https://t.me/c/3845134502/356",
+"poster": "https://m.media-amazon.com/images/M/MV5BNmNkOGI1NzAtMWI1Ni00MTliLTk5OGUtMjlkNDYzNWM3N2Y2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "Vadam (2026) केंथिरन वी. द्वारा लिखी और डायरेक्ट की गई एक तमिल एक्शन-कॉमेडी ड्रामा फिल्म है। 'वडम' का मतलब है मोटी रस्सी, और यही रस्सी तमिलनाडु के पारंपरिक खेल 'वड मंजू विरट्टु' की पहचान है, जिसमें बैल को एक लंबी रस्सी से बांधकर काबू किया जाता है। फिल्म में विमल (वेट्रिवेल), नट्टी सुब्रमण्यम (रत्नवेल) और सनश्का श्री (देवकी) मुख्य भूमिकाओं में हैं, जबकि बाला सरवनन, मुनीशकांत और आडुकलम नरेन सपोर्टिंग रोल में नजर आते हैं।\n\nगांव की पृष्ठभूमि पर बनी यह कहानी एक सीधे-सादे ग्रामीण की है, जिसका अपने बैल के साथ गहरा भावनात्मक रिश्ता है और जो वड मंजू विरट्टु में हिस्सा लेता है। त्योहार के दौरान कई अनपेक्षित घटनाएं और छिपी साजिशें सामने आती हैं, जिनमें एक खतरनाक हत्या की साजिश भी शामिल है। हालात बिगड़ने पर उसे अपने गांव, अपनी परंपराओं और अपने अपनों को बचाने के लिए खड़ा होना पड़ता है।\n\nफिल्म का संगीत डी. इमान ने दिया है और इसे मासानी पिक्चर्स के बैनर तले राजशेखर आर. ने प्रोड्यूस किया है। Vadam 6 मार्च 2026 को सिनेमाघरों में रिलीज हुई। क्रिटिक्स ने विमल की परफॉर्मेंस, सिनेमैटोग्राफी और इमान के म्यूजिक की तारीफ की, हालांकि कुछ ने कहानी को पुराने ढर्रे का बताया।",
+"seoDescription": "Vadam (2026) Vimal की Tamil action comedy drama की कहानी, official trailer, cast, rating और release details देखें।",
+"category": "South Indian",
+"year": 2026,
+"duration": "2h 13m",
+"rating": 6.2,
+"genre": ["Action", "Comedy", "Drama"],
+"language": "Tamil",
+"quality": "HD",
+"director": "Kenthiran V",
+"cast": ["Vimal", "Natty Subramaniam", "Sanashka Sri", "Bala Saravanan", "Munishkanth", "Aadukalam Naren"],
+"keywords": ["Vadam 2026", "Vadam Tamil movie", "Vimal new movie", "Vada Manju Virattu", "D Imman", "Kenthiran V"]
 }
 
 

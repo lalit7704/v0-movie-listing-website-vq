@@ -1382,6 +1382,46 @@ export const bollywoodVideos: Video[] = [
 "genre": ["Romance","Drama"],
 "language": "Hindi",
 "quality": "HD"
+},
+{
+"id": "2089",
+"title": "Drishyam: The Conclusion (2026) - Crime Thriller Movie | Ajay Devgn",
+"slug": "drishyam-the-conclusion-2026",
+"videoUrl": "https://youtu.be/fneuVQ7uO_w",
+"downloadUrl": "https://t.me/c/3845134502/355",
+"poster": "https://m.media-amazon.com/images/M/MV5BMzJlNzY1MTQtM2VmMy00OWQ4LTk0ZDQtODZiODUwMWZkZWYyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "Drishyam: The Conclusion (2026) अभिषेक पाठक द्वारा लिखी, प्रोड्यूस और डायरेक्ट की गई एक हिंदी क्राइम-थ्रिलर फिल्म है और 'Drishyam 2' (2022) का सीक्वल है। अजय देवगन एक बार फिर विजय सालगांवकर के किरदार में लौटे हैं। उनके साथ तब्बू (मीरा देशमुख), श्रिया सरन (नंदिनी), जयदीप अहलावत (SP राजवीर सिंह तोमर), रजत कपूर (महेश देशमुख), प्रकाश राज (पब्लिक प्रॉसिक्यूटर इंद्रजीत शेट्टी), इशिता दत्ता और मृणाल जाधव अहम भूमिकाओं में हैं। इस बार फिल्म की कहानी पूरी तरह ओरिजिनल है और यह मलयालम 'Drishyam 3' से जुड़ी नहीं है।\n\nकहानी पिछली फिल्म के छह महीने बाद शुरू होती है। सबूतों की कमी के कारण सालगांवकर परिवार के खिलाफ केस बंद हो चुका है, लेकिन अपने बेटे समीर की मौत का सच साबित न कर पाने का दर्द मीरा देशमुख को अंदर से तोड़ रहा है। आखिरकार उनके पति महेश, क्राइम ब्रांच के SP राजवीर सिंह तोमर से केस दोबारा खोलने को कहते हैं। DNA टेस्ट पहले ही साबित कर चुका है कि बरामद कंकाल समीर का नहीं था, और तोमर को शक है कि कोर्ट की सुनवाई से ठीक पहले विजय ने ही कंकाल बदल दिया था।\n\nतोमर और सब-इंस्पेक्टर लक्ष्मीकांत गायतोंडे चुपचाप विजय की हर हरकत पर नजर रखते हैं और उस रात की कड़ियां जोड़ने लगते हैं, जब सबूत एक मेडिकल कॉलेज में रखा था। जांच उन्हें एक अनजान कब्र और उसके गायब हो चुके केयरटेकर तक ले जाती है। क्या इस बार पुलिस विजय को बेनकाब कर पाएगी, या विजय सालगांवकर अपने परिवार को बचाने के लिए फिर एक कदम आगे निकल जाएगा?\n\nमुंबई और गोवा में शूट हुई यह फिल्म 2 अक्टूबर 2026 (गांधी जयंती) को सिनेमाघरों में रिलीज हुई। क्रिटिक्स से इसे पॉजिटिव रिव्यू मिले और यह 2026 की सबसे ज्यादा कमाई करने वाली हिंदी फिल्मों में शामिल है।",
+"seoDescription": "Drishyam: The Conclusion (2026) Ajay Devgn, Tabu और Jaideep Ahlawat की crime thriller की कहानी, official trailer, cast, rating और release details देखें।",
+"category": "Bollywood",
+"year": 2026,
+"duration": "2h 30m",
+"rating": 8.2,
+"genre": ["Crime", "Thriller", "Drama", "Mystery"],
+"language": "Hindi",
+"quality": "HD",
+"director": "Abhishek Pathak",
+"cast": ["Ajay Devgn", "Tabu", "Shriya Saran", "Jaideep Ahlawat", "Rajat Kapoor", "Prakash Raj", "Ishita Dutta", "Mrunal Jadhav"],
+"keywords": ["Drishyam The Conclusion", "Drishyam 3 Hindi", "Drishyam 2026", "Ajay Devgn new movie", "Vijay Salgaonkar", "Abhishek Pathak"]
+},
+{
+"id": "2090",
+"title": "Bombay Stories (2026) - Manto Anthology Drama | Mouni Roy",
+"slug": "bombay-stories-2026",
+"videoUrl": "https://youtu.be/RNGPcA-pbJQ",
+"downloadUrl": "https://t.me/c/3845134502/354",
+"poster": "https://m.media-amazon.com/images/M/MV5BNmViYjA1ODAtZmZiYy00NzJlLTk2MzQtOWE2NDE0YTc2ZTBlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "Bombay Stories (2026) मशहूर लेखक सआदत हसन मंटो की कहानियों पर आधारित एक हिंदी एंथोलॉजी ड्रामा फिल्म है, जिसे राहत शाह काज़मी ने डायरेक्ट किया है। यह फिल्म मंटो की सबसे चर्चित कहानियों 'हतक', 'खुशिया' और 'बू' समेत कई कहानियों को पर्दे पर लाती है। मौनी रॉय, अनुप्रिया गोयनका, सुष्मिता सिंह और तनी देओल फिल्म में अहम किरदारों में हैं।\n\nकहानी 1930 के दशक की बॉम्बे में सेट है और शहर को व्यंग्य और फैंटेसी के अंदाज में दिखाती है। इसके केंद्र में सेक्स वर्कर्स और समाज के हाशिये पर जी रहीं महिलाओं की जिंदगी है: उनका संघर्ष, उनकी गरिमा और वह दोहरा चेहरा जो समाज उनके साथ दिखाता है। फिल्म के पोस्टर पर लिखी मंटो की लाइन 'If you cannot bear these stories, then society is unbearable' इसके मिज़ाज को बयान करती है।\n\nभारत, अमेरिका और यूके के को-प्रोडक्शन में बनी इस फिल्म को 2026 में कान फिल्म फेस्टिवल के मार्शे दु फिल्म (Marché du Film) में पेश किया गया था। Bombay Stories 28 सितंबर 2026 को JioHotstar पर रिलीज हुई।",
+"seoDescription": "Bombay Stories (2026) Mouni Roy की Saadat Hasan Manto पर आधारित anthology drama की कहानी, trailer, cast, rating और JioHotstar streaming details देखें।",
+"category": "Bollywood",
+"year": 2026,
+"duration": "2h 11m",
+"rating": 6.5,
+"genre": ["Drama", "Period", "Anthology"],
+"language": "Hindi",
+"quality": "HD",
+"director": "Rahhat Shah Kazmi",
+"cast": ["Mouni Roy", "Anupriya Goenka", "Sushmita Singh", "Tani Deol", "Shoib Nikash Shah", "Rrahul Sudhir", "Gargi Duggal"],
+"keywords": ["Bombay Stories 2026", "Bombay Stories Mouni Roy", "Saadat Hasan Manto", "Manto stories film", "JioHotstar new movie", "Rahhat Shah Kazmi"]
 }
 
 

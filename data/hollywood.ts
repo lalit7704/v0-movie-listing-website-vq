@@ -720,6 +720,26 @@ export const hollywoodVideos: Video[] = [
 "language": "English",
 "quality": "HD"
 },
+{
+"id": "6107",
+"title": "Runner (2026) - Action Comedy Movie | Alan Ritchson, Owen Wilson",
+"slug": "runner-2026",
+"videoUrl": "https://youtu.be/n55hPCQH5xI",
+"downloadUrl": "https://t.me/c/3845134502/353",
+"poster": "https://m.media-amazon.com/images/M/MV5BOThmN2YyMzMtN2Y2Zi00MjViLTg2NzQtNGM0ZDU3ZDAyYThhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "Runner (2026) स्कॉट वॉ द्वारा डायरेक्ट की गई एक अमेरिकन एक्शन-कॉमेडी फिल्म है, जिसमें एलन रिचसन और ओवेन विल्सन मुख्य भूमिकाओं में हैं। रोड्रिगो सैंटोरो फिल्म में कार्टेल लीडर डेमियन ज़ालदीवार बने हैं।\n\nकहानी ऑस्ट्रेलिया के ब्रिस्बेन में सेट है। हैंक मेलोन (एलन रिचसन) आर्मी स्पेशल फोर्सेज का पूर्व ऑपरेटिव है, जो अब एक 'रनर' का काम करता है, यानी क्लाइंट्स का सामान, कानूनी हो या गैरकानूनी, एक जगह से दूसरी जगह पहुंचाता है। एक दिन उसे एयरपोर्ट से एक पैकेज उठाने का काम मिलता है, जहां उसकी मुलाकात मेडिकल कूरियर बेन बिशप (ओवेन विल्सन) से होती है। पैकेज में ट्रांसप्लांट के लिए एक लिवर है, जिसका ब्लड ग्रुप Rh Null है, जो दुनिया के सबसे दुर्लभ ब्लड ग्रुप्स में से एक है। यह लिवर एली नाम की एक बीमार बच्ची की जान बचा सकता है, लेकिन एक खतरनाक कार्टेल भी इसे किसी भी कीमत पर हासिल करना चाहता है।\n\nइसके बाद शुरू होता है शहर भर में गाड़ियों का पीछा, गोलीबारी और जानलेवा भागदौड़, जहां हैंक और बेन को वक्त रहते लिवर अस्पताल पहुंचाना है। यह फिल्म 11 सितंबर 2026 को एंजल स्टूडियोज ने थिएटर्स में रिलीज की। क्रिटिक्स ने इसके एक्शन सीक्वेंस और रिचसन-विल्सन की जोड़ी की तारीफ की।",
+"seoDescription": "Runner (2026) Alan Ritchson और Owen Wilson की action comedy की कहानी, official trailer, cast, rating और release details देखें।",
+"category": "Hollywood",
+"year": 2026,
+"duration": "1h 38m",
+"rating": 6.8,
+"genre": ["Action", "Comedy", "Thriller"],
+"language": "English",
+"quality": "HD",
+"director": "Scott Waugh",
+"cast": ["Alan Ritchson", "Owen Wilson", "Rodrigo Santoro", "Leila George", "Geraldine Hakewill"],
+"keywords": ["Runner 2026", "Runner movie Alan Ritchson", "Owen Wilson new movie", "Scott Waugh", "Angel Studios", "Hollywood action comedy 2026"]
+},
 
 ];
 
