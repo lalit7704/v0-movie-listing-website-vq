@@ -1422,6 +1422,26 @@ export const bollywoodVideos: Video[] = [
 "director": "Rahhat Shah Kazmi",
 "cast": ["Mouni Roy", "Anupriya Goenka", "Sushmita Singh", "Tani Deol", "Shoib Nikash Shah", "Rrahul Sudhir", "Gargi Duggal"],
 "keywords": ["Bombay Stories 2026", "Bombay Stories Mouni Roy", "Saadat Hasan Manto", "Manto stories film", "JioHotstar new movie", "Rahhat Shah Kazmi"]
+},
+{
+"id": "2091",
+"title": "Pooja Meri Jaan (2026) - Crime Thriller Movie | Mrunal Thakur, Huma Qureshi",
+"slug": "pooja-meri-jaan-2026",
+"videoUrl": "https://youtu.be/urDzsrt17IQ",
+"downloadUrl": "https://t.me/c/3845134502/357",
+"poster": "https://m.media-amazon.com/images/M/MV5BYWExY2JhYWItM2NlZS00ZjBkLWFkOTEtN2NiMTc5YjU0NzI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "Pooja Meri Jaan (2026) नवजोत गुलाटी द्वारा डायरेक्ट की गई एक हिंदी क्राइम-थ्रिलर फिल्म है, जिसे मैडॉक फिल्म्स के बैनर तले दिनेश विजान और अमर कौशिक ने प्रोड्यूस किया है। फिल्म में मृणाल ठाकुर (पूजा डोगरा), हुमा कुरैशी (सना महफूज़), विक्रम सिंह चौहान (अनिकेत श्रीवास्तव) और विजय राज़ (जतिन त्रिवेदी) मुख्य भूमिकाओं में हैं।\n\nकहानी पूजा नाम की एक आज़ाद ख्यालों वाली युवती की है। जब वह अनिकेत का शादी का प्रपोज़ल ठुकरा देती है, तो अनिकेत आत्महत्या कर लेता है। इसके बाद पूजा पर आत्महत्या के लिए उकसाने (abetment of suicide) का केस दर्ज होता है और सोशल मीडिया पर उसके खिलाफ नफरत भरी मुहिम छिड़ जाती है। पूजा की दोस्त और वकील सना उसका केस लड़ती है, जबकि जतिन त्रिवेदी अनिकेत के परिवार की तरफ से केस लड़ते हैं। अदालत में सच के अलग-अलग रूप सामने आते हैं, और फिल्म रिजेक्शन, जुनून, सहमति (consent), ज़िम्मेदारी और समाज के फैसले सुनाने के रवैये पर सवाल उठाती है।\n\nफिल्म की शूटिंग 2022 में पूरी हो गई थी, लेकिन यह करीब चार साल तक रिलीज़ नहीं हो पाई। आखिरकार 2 अक्टूबर 2026 को यह ZEE5 पर रिलीज हुई। फिल्म का संगीत विशाल मिश्रा ने दिया है।",
+"seoDescription": "Pooja Meri Jaan (2026) Mrunal Thakur और Huma Qureshi की ZEE5 crime thriller की कहानी, official trailer, cast, rating और streaming details देखें।",
+"category": "Bollywood",
+"year": 2026,
+"duration": "1h 57m",
+"rating": 6.0,
+"genre": ["Crime", "Thriller", "Drama"],
+"language": "Hindi",
+"quality": "HD",
+"director": "Navjot Gulati",
+"cast": ["Mrunal Thakur", "Huma Qureshi", "Vikram Singh Chauhan", "Vijay Raaz", "Rajesh Jais", "Rituraj Singh"],
+"keywords": ["Pooja Meri Jaan 2026", "Pooja Meri Jaan ZEE5", "Mrunal Thakur new movie", "Huma Qureshi", "Maddock Films", "Navjot Gulati"]
 }
 
 
