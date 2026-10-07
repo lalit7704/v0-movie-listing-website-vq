@@ -858,6 +858,46 @@ export const southindianVideos: Video[] = [
 "director": "Kenthiran V",
 "cast": ["Vimal", "Natty Subramaniam", "Sanashka Sri", "Bala Saravanan", "Munishkanth", "Aadukalam Naren"],
 "keywords": ["Vadam 2026", "Vadam Tamil movie", "Vimal new movie", "Vada Manju Virattu", "D Imman", "Kenthiran V"]
+},
+{
+"id": "5052",
+"title": "Sardar 2 (2026) - Tamil Spy Action Thriller | Karthi",
+"slug": "sardar-2-2026",
+"videoUrl": "https://youtu.be/jpvb4l2RIXU",
+"downloadUrl": "https://t.me/c/3845134502/358",
+"poster": "https://m.media-amazon.com/images/M/MV5BNTMzNjZkODEtNjRiMS00MjFiLWE0YWYtOGQ5ZGVlODQ1NDVmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "Sardar 2 (2026) पी. एस. मित्रन द्वारा डायरेक्ट की गई एक तमिल साइंस-फिक्शन स्पाई एक्शन थ्रिलर है, जो 2022 की 'Sardar' का प्रीक्वल और सीक्वल दोनों है। कार्थी डबल रोल में हैं: RAW के अनुभवी एजेंट चंद्र बोस 'सरदार' और उनके बेटे विजय प्रकाश के रूप में। एस. जे. सूर्या विलेन योगी उर्फ 'ब्लैक डैगर' बने हैं, जबकि मालविका मोहनन, आशिका रंगनाथ, रजिशा विजयन और नासर अहम भूमिकाओं में हैं।\n\nपहली फिल्म के बाद भी जनता की नज़र में सरदार एक आतंकवादी है। उनका बेटा विजय RAW में शामिल तो हो गया है, लेकिन उसे एक नकली यूनिट में मामूली केस थमा दिए जाते हैं। तभी सरदार के अतीत का एक खतरा लौट आता है: 'डोकू' नाम का एक बायो-केमिकल हथियार, जो सेकंडों में लाखों लोगों को खत्म कर सकता है। सालों पहले इसी हथियार ने 3,000 गांववालों की जान ली थी, और उन्हें न बचा पाने का बोझ आज भी सरदार के दिल पर है। इस हथियार तक पहुंचने की तीन चाबियां तीन RAW एजेंट्स के पास छिपी हैं, और अब ब्लैक डैगर की खूंखार फौज उन्हें हासिल करना चाहती है।\n\nदेश के 140 करोड़ लोगों की जान खतरे में देखकर सरदार गुमनामी से बाहर आते हैं और बेटे विजय के साथ एक इंटरनेशनल मिशन पर निकलते हैं। सैम सी. एस. के संगीत (उनकी 100वीं फिल्म) वाली यह फिल्म 10 सितंबर 2026 को विनायक चतुर्थी वीकेंड पर सिनेमाघरों में रिलीज़ हुई।",
+"seoDescription": "Sardar 2 (2026) Karthi और S. J. Suryah की Tamil spy action thriller की कहानी, official trailer, cast, rating और release details देखें।",
+"category": "South Indian",
+"year": 2026,
+"duration": "2h 59m",
+"rating": 6.0,
+"genre": ["Action", "Thriller", "Spy", "Sci-Fi"],
+"language": "Tamil",
+"quality": "HD",
+"director": "P. S. Mithran",
+"cast": ["Karthi", "S. J. Suryah", "Malavika Mohanan", "Ashika Ranganath", "Rajisha Vijayan", "Nassar"],
+"keywords": ["Sardar 2", "Sardar 2 Karthi", "Sardar 2 2026", "Karthi new movie", "S J Suryah", "P S Mithran"]
+},
+{
+"id": "5053",
+"title": "Paradha (2025) - Telugu Drama Movie | Anupama Parameswaran",
+"slug": "paradha-2025",
+"videoUrl": "https://youtu.be/CfOVSlagCg8",
+"downloadUrl": "https://t.me/c/3845134502/366",
+"poster": "https://m.media-amazon.com/images/M/MV5BN2U5YjVlYTUtMzA5Yy00OGQ3LWEwODEtNTdjYTcxNDQ2ZDdlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "Paradha (2025) प्रवीण कंद्रेगुला द्वारा डायरेक्ट की गई एक तेलुगु ड्रामा फिल्म है, जिसमें अनुपमा परमेश्वरन, दर्शना राजेंद्रन और संगीता कृष मुख्य भूमिकाओं में हैं। 'परदा' का मतलब है घूंघट, और फिल्म इसी परंपरा के इर्द-गिर्द घूमती है।\n\nकहानी एक दूर-दराज़ के गांव की है, जहां मान्यता है कि एक श्राप से बचने के लिए औरतों को हमेशा घूंघट में रहना होगा। सुब्बू (अनुपमा परमेश्वरन) इस परंपरा को पूरी श्रद्धा से मानती है, लेकिन एक रहस्यमयी घटना के बाद उसी पर सवाल उठने लगते हैं। अपना नाम साफ करने के लिए सुब्बू, जो शायद ही कभी अपने गांव से बाहर निकली हो, अपनी आंटी रत्नम्मा और आज की दुनिया में अपनी लड़ाई लड़ रही आर्किटेक्ट अमी के साथ हिमालय तक के एक साहसी सफर पर निकल पड़ती है।\n\nफिल्म का संगीत गोपी सुंदर ने दिया है और इसे आनंद मीडिया ने प्रोड्यूस किया है। Paradha 22 अगस्त 2025 को सिनेमाघरों में रिलीज़ हुई।",
+"seoDescription": "Paradha (2025) Anupama Parameswaran की Telugu drama फिल्म की कहानी, official trailer, cast, rating और release details देखें।",
+"category": "South Indian",
+"year": 2025,
+"duration": "2h 23m",
+"rating": 6.0,
+"genre": ["Drama", "Social"],
+"language": "Telugu",
+"quality": "HD",
+"director": "Praveen Kandregula",
+"cast": ["Anupama Parameswaran", "Darshana Rajendran", "Sangeetha Krish", "Rag Mayur"],
+"keywords": ["Paradha", "Paradha 2025", "Paradha Telugu movie", "Anupama Parameswaran", "Darshana Rajendran", "Praveen Kandregula"]
 }
 
 

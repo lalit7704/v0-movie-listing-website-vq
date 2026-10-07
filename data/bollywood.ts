@@ -1442,6 +1442,26 @@ export const bollywoodVideos: Video[] = [
 "director": "Navjot Gulati",
 "cast": ["Mrunal Thakur", "Huma Qureshi", "Vikram Singh Chauhan", "Vijay Raaz", "Rajesh Jais", "Rituraj Singh"],
 "keywords": ["Pooja Meri Jaan 2026", "Pooja Meri Jaan ZEE5", "Mrunal Thakur new movie", "Huma Qureshi", "Maddock Films", "Navjot Gulati"]
+},
+{
+"id": "2092",
+"title": "Main Ladega (2024) - Sports Drama Movie | Akash Pratap Singh",
+"slug": "main-ladega-2024",
+"videoUrl": "https://youtu.be/1FmLRrApI7Y",
+"downloadUrl": "https://t.me/c/3845134502/365",
+"poster": "https://m.media-amazon.com/images/M/MV5BOGU3NDM5NDctM2YzNy00YjhjLWEwZDQtYTllOTU0ZTBiYzk4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "Main Ladega (2024) गौरव राणा द्वारा डायरेक्ट की गई एक हिंदी स्पोर्ट्स ड्रामा फिल्म है, जिसकी कहानी आकाश प्रताप सिंह ने लिखी है और वही मुख्य भूमिका में भी हैं। कथाकार फिल्म्स के बैनर तले बनी इस फिल्म में वल्लरी विराज, गंधर्व दीवान, अश्वथ भट्ट और ज्योति गौबा अहम किरदारों में हैं।\n\nयह एक छोटे शहर की कहानी है। आकाश बचपन से अपने पिता को अपनी मां पर हाथ उठाते और उन्हें तकलीफ देते देखता हुआ बड़ा होता है। इस माहौल से बचने के लिए वह अपनी मां और भाई के साथ ननिहाल चला जाता है। घर की इसी हिंसा के ज़ख्म और गुस्से को सही दिशा देने के लिए आकाश बॉक्सिंग को अपना रास्ता बनाता है, और रिंग के अंदर और बाहर, दोनों जगह अपनी लड़ाई लड़ने के लिए तैयार होता है।\n\nपोस्टर की टैगलाइन 'A small town story with a big heart' की तरह यह फिल्म परिवार, हिम्मत और खुद पर भरोसे की कहानी है। Main Ladega 26 अप्रैल 2024 को सिनेमाघरों में रिलीज़ हुई थी।",
+"seoDescription": "Main Ladega (2024) Akash Pratap Singh की boxing sports drama फिल्म की कहानी, official trailer, cast, rating और details देखें।",
+"category": "Bollywood",
+"year": 2024,
+"duration": "2h 27m",
+"rating": 6.8,
+"genre": ["Drama", "Sports"],
+"language": "Hindi",
+"quality": "HD",
+"director": "Gaurav Rana",
+"cast": ["Akash Pratap Singh", "Vallari Viraj", "Gandharv Dewan", "Ashwath Bhatt", "Jyoti Gauba"],
+"keywords": ["Main Ladega", "Main Ladega 2024", "Main Ladega boxing movie", "Akash Pratap Singh", "Hindi sports drama", "Kathakaar Films"]
 }
 
 
