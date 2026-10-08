@@ -1462,6 +1462,26 @@ export const bollywoodVideos: Video[] = [
 "director": "Gaurav Rana",
 "cast": ["Akash Pratap Singh", "Vallari Viraj", "Gandharv Dewan", "Ashwath Bhatt", "Jyoti Gauba"],
 "keywords": ["Main Ladega", "Main Ladega 2024", "Main Ladega boxing movie", "Akash Pratap Singh", "Hindi sports drama", "Kathakaar Films"]
+},
+{
+"id": "2093",
+"title": "Saale Aashiq (2025) - Romantic Drama Movie | Tahir Raj Bhasin, Mithila Palkar",
+"slug": "saale-aashiq-2025",
+"videoUrl": "https://youtu.be/SNbQPZ8jWX4",
+"downloadUrl": "https://t.me/c/3845134502/372",
+"poster": "https://m.media-amazon.com/images/M/MV5BMzNiMGU2NDItZThkOS00ZjQ0LTkzNzQtOGMxZTgwM2EyYzY2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "Saale Aashiq (2025) सिद्धार्थ-गरिमा की जोड़ी द्वारा लिखी और डायरेक्ट की गई एक हिंदी रोमांटिक ड्रामा टेलीविज़न फिल्म है। ताहिर राज भसीन और मिथिला पालकर मुख्य भूमिकाओं में हैं, जबकि चंकी पांडे, दर्शन जरीवाला, तन्वी आज़मी, व्रजेश हिरजी, नीलिमा अज़ीम और राजेश जैस सपोर्टिंग रोल में हैं।\n\nफिल्म एक अंतरजातीय (inter-caste) प्रेमी जोड़े की कहानी है, जिसे दोनों परिवारों और समाज के कड़े विरोध का सामना करना पड़ता है। 'इज़्ज़त' के नाम पर चलने वाली पुरानी परंपराएं, नफरत की राजनीति और जान से मारने की धमकियां इस जोड़े के प्यार की सबसे बड़ी परीक्षा बन जाती हैं।\n\nडायरेक्टर्स के मुताबिक इस फिल्म को कागज़ से पर्दे तक लाने में 10 साल लगे। सोनी पिक्चर्स फिल्म्स इंडिया की यह फिल्म सीधे टीवी पर रिलीज़ हुई और 1 फरवरी 2025 को सोनी मैक्स पर इसका प्रीमियर हुआ।",
+"seoDescription": "Saale Aashiq (2025) Tahir Raj Bhasin और Mithila Palkar की romantic drama की कहानी, trailer, cast, rating और Sony Max premiere details देखें।",
+"category": "Bollywood",
+"year": 2025,
+"duration": "2h 00m",
+"rating": 6.2,
+"genre": ["Romance", "Drama"],
+"language": "Hindi",
+"quality": "HD",
+"director": "Siddharth Singh, Garima Wahal",
+"cast": ["Tahir Raj Bhasin", "Mithila Palkar", "Chunky Pandey", "Darshan Jariwala", "Tanvi Azmi", "Vrajesh Hirjee"],
+"keywords": ["Saale Aashiq", "Saale Aashiq 2025", "Tahir Raj Bhasin", "Mithila Palkar", "Sony Max movie", "Siddharth Garima"]
 }
 
 
