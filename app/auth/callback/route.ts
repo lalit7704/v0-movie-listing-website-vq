@@ -4,8 +4,8 @@ import { createClient } from "@/lib/supabase/server";
 export async function GET(request: NextRequest) {
   const requestUrl = new URL(request.url);
   const code = requestUrl.searchParams.get("code");
-  const requestedPath = requestUrl.searchParams.get("next") || "/account";
-  const nextPath = requestedPath.startsWith("/") ? requestedPath : "/account";
+  const requestedPath = requestUrl.searchParams.get("next") || "/admin";
+  const nextPath = requestedPath.startsWith("/") && !requestedPath.startsWith("//") ? requestedPath : "/admin";
 
   if (code) {
     const supabase = await createClient();
@@ -15,5 +15,5 @@ export async function GET(request: NextRequest) {
 
     if (!error) return NextResponse.redirect(new URL(nextPath, requestUrl.origin));
   }
-  return NextResponse.redirect(new URL("/login?error=oauth", requestUrl.origin));
+  return NextResponse.redirect(new URL("/admin?error=oauth", requestUrl.origin));
 }

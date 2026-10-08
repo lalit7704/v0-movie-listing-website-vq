@@ -24,8 +24,11 @@ interface AuthContextValue {
   isConfigured: boolean;
   supabase: SupabaseClient | null;
   signInWithGoogle: () => Promise<void>;
-  signInWithEmail: () => Promise<{ error: string | null }>;
-  signUpWithEmail: () => Promise<{ error: string | null; confirmationRequired: boolean }>;
+  signInWithEmail: (email: string, password: string) => Promise<{ error: string | null }>;
+  signUpWithEmail: (
+    email: string,
+    password: string
+  ) => Promise<{ error: string | null; confirmationRequired: boolean }>;
   signOut: () => Promise<void>;
   recordActivity: (eventType: string, movieId?: string, metadata?: Record<string, unknown>) => void;
 }
@@ -64,7 +67,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${window.location.origin}/auth/callback?next=/account`,
+        redirectTo: `${window.location.origin}/auth/callback?next=/admin`,
       },
     });
   }, [supabase]);
@@ -80,7 +83,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
-      options: { emailRedirectTo: `${window.location.origin}/auth/callback?next=/account` },
+      options: { emailRedirectTo: `${window.location.origin}/auth/callback?next=/admin` },
     });
     return { error: error?.message ?? null, confirmationRequired: !error && !data.session };
   }, [supabase]);

@@ -1,11 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
+import { isAdminRequest } from "@/lib/admin-auth";
 
 export async function POST(request: NextRequest) {
   try {
-    const adminToken = process.env.ADMIN_UPLOAD_TOKEN;
-    const providedToken = request.headers.get("x-admin-token");
-
-    if (!adminToken || providedToken !== adminToken) {
+    if (!(await isAdminRequest(request))) {
       return NextResponse.json(
         { success: false, error: "Unauthorized" },
         { status: 401 }

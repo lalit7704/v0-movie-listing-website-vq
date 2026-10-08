@@ -1,17 +1,13 @@
 import { NextResponse, type NextRequest } from "next/server";
+import { isAdminRequest } from "@/lib/admin-auth";
 import {
   callTelegram,
   getTelegramToken,
   getTelegramWebhookSecret,
 } from "@/lib/telegram-webhook";
 
-function isAuthorized(request: NextRequest) {
-  const adminToken = process.env.ADMIN_UPLOAD_TOKEN;
-  return Boolean(adminToken && request.headers.get("x-admin-token") === adminToken);
-}
-
 export async function GET(request: NextRequest) {
-  if (!isAuthorized(request)) {
+  if (!(await isAdminRequest(request))) {
     return NextResponse.json({ success: false, error: "Unauthorized" }, { status: 401 });
   }
 
@@ -27,7 +23,7 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
-  if (!isAuthorized(request)) {
+  if (!(await isAdminRequest(request))) {
     return NextResponse.json({ success: false, error: "Unauthorized" }, { status: 401 });
   }
 

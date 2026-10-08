@@ -2,10 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Download, Heart, Menu, X } from "lucide-react";
+import { Download, Heart, Menu, ShieldCheck, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SearchBar } from "@/components/search-bar";
-import { AuthMenu } from "@/components/auth-menu";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -28,6 +27,17 @@ const moreLinks = [
   { href: "/shree-krishna", label: "Shree Krishna" },
 
 ];
+
+function AdminLink() {
+  return (
+    <Button asChild variant="outline" size="sm" className="gap-2 px-2 sm:px-3">
+      <Link href="/admin" aria-label="Admin" title="Admin">
+        <ShieldCheck className="h-4 w-4" aria-hidden="true" />
+        <span className="hidden sm:inline">Admin</span>
+      </Link>
+    </Button>
+  );
+}
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -98,7 +108,7 @@ export function Navbar() {
           </Button>
 
           <div className="hidden md:block">
-            <AuthMenu />
+            <AdminLink />
           </div>
 
           {/* Mobile Controls */}
@@ -109,7 +119,7 @@ export function Navbar() {
               </Link>
             </Button>
 
-            <AuthMenu />
+            <AdminLink />
             <Button
               variant="ghost"
               size="icon"
