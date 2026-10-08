@@ -181,5 +181,25 @@ export const cartoonVideos: Video[] = [
     "language": "English",
     "quality": "HD",
     "cast": ["Auliʻi Cravalho", "Dwayne Johnson", "Rachel House"]
-  }
+  },
+{
+  "id": "9076",
+  "title": "Doraemon: Nobita and the New Castle of the Undersea Devil",
+  "slug": "doraemon-nobita-and-the-new-castle-of-the-undersea-devil",
+  "videoUrl": "https://youtu.be/tKdIRLkFs2E",
+  "downloadUrl": "#",
+  "poster": "https://m.media-amazon.com/images/M/MV5BNTZlMzRjZTUtZDVjNi00ODFiLWFmMzEtMzQ1ODIwOWQ3YjIwXkEyXkFqcGc@._V1_FMjpg_UY3042_.jpg",
+  "description": "Doraemon: Nobita and the New Castle of the Undersea Devil follows Nobita and his friends as they embark on an exciting underwater adventure during their summer vacation. Using Doraemon's futuristic gadgets, the group explores the ocean, discovers a mysterious sunken treasure ship, and meets a mysterious boy named Eru from the underwater Mu Federation. When the terrifying Castle of the Undersea Devil begins to move, Doraemon, Nobita, Shizuka, Gian and Suneo must overcome their differences and work together to protect both the underwater world and the Earth.",
+  "seoDescription": "Watch Doraemon: Nobita and the New Castle of the Undersea Devil (2026), an exciting animated adventure featuring Doraemon, Nobita and friends as they explore a mysterious underwater world and face the terrifying Castle of the Undersea Devil.",
+  "category": "Cartoon",
+  "year": 2026,
+  "duration": "1h 42m",
+  "rating": 6.2,
+  "genre": ["Animation", "Adventure", "Comedy", "Drama", "Fantasy", "Family", "Sci-Fi"],
+  "language": "Hindi",
+  "quality": "HD",
+  "director": "Tetsuo Yajima",
+  "cast": ["Wasabi Mizuta", "Megumi Ohara", "Yumi Kakazu", "Subaru Kimura", "Tomokazu Seki", "Shoya Chiba", "Ryo Hirohashi"],
+  "keywords": ["Doraemon", "Nobita", "Doraemon 2026", "New Castle of the Undersea Devil", "Undersea Adventure", "Anime", "Japanese Anime", "Eru", "Mu Federation"]
+}
 ];
