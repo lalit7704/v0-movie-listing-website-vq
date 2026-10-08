@@ -52,9 +52,7 @@ export function AdminUsers() {
       }
       setMessage({
         tone: "success",
-        text: data.created
-          ? `Account created for ${email}. They can log in at /admin with this email and password.`
-          : `${email} already had an account and can now open the admin panel with their usual login.`,
+        text: `${email} can now log in at /admin with this email and password.`,
       });
       setEmail("");
       setPassword("");
@@ -108,18 +106,19 @@ export function AdminUsers() {
             />
           </div>
           <div className="space-y-1.5">
-            <Label htmlFor="admin-user-password">Password</Label>
+            <Label htmlFor="admin-user-password">Password *</Label>
             <Input
               id="admin-user-password"
               type="password"
               autoComplete="new-password"
+              required
               minLength={6}
               value={password}
               disabled={busy}
               onChange={(event) => setPassword(event.target.value)}
             />
             <p className="text-xs text-muted-foreground">
-              Needed only if this email has no account yet. They can also use Google with the same email.
+              At least 6 characters. They log in with this email and password.
             </p>
           </div>
         </div>

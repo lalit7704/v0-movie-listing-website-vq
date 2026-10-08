@@ -1,20 +1,17 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { useSearchParams } from "next/navigation";
-import { LogIn, Mail, ShieldCheck } from "lucide-react";
+import { LogIn, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useAuth } from "@/components/auth-provider";
-import { Notice } from "@/components/admin/notice";
 
 export function AdminLogin() {
-  const { signInWithGoogle, signInWithEmail } = useAuth();
+  const { signInWithEmail } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
-  const hasOAuthError = useSearchParams().get("error") === "oauth";
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -35,44 +32,29 @@ export function AdminLogin() {
         </p>
       </div>
 
-      {hasOAuthError && (
-        <Notice tone="error">Google login failed. Please try again.</Notice>
-      )}
-
-      <div className="space-y-4">
-        <Button className="w-full gap-2" onClick={() => void signInWithGoogle()}>
+      <form className="space-y-3" onSubmit={handleSubmit}>
+        <Input
+          type="email"
+          required
+          autoComplete="email"
+          placeholder="Email address"
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+        />
+        <Input
+          type="password"
+          required
+          autoComplete="current-password"
+          placeholder="Password"
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+        />
+        {message && <p className="text-sm text-yellow-300">{message}</p>}
+        <Button className="w-full gap-2" type="submit" disabled={busy}>
           <LogIn className="h-4 w-4" aria-hidden="true" />
-          Continue with Google
+          {busy ? "Please wait..." : "Login"}
         </Button>
-        <div className="flex items-center gap-3 text-xs text-muted-foreground">
-          <span className="h-px flex-1 bg-border" />
-          or email
-          <span className="h-px flex-1 bg-border" />
-        </div>
-        <form className="space-y-3" onSubmit={handleSubmit}>
-          <Input
-            type="email"
-            required
-            autoComplete="email"
-            placeholder="Email address"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-          />
-          <Input
-            type="password"
-            required
-            autoComplete="current-password"
-            placeholder="Password"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-          />
-          {message && <p className="text-sm text-yellow-300">{message}</p>}
-          <Button className="w-full gap-2" type="submit" variant="outline" disabled={busy}>
-            <Mail className="h-4 w-4" aria-hidden="true" />
-            {busy ? "Please wait..." : "Login with Email"}
-          </Button>
-        </form>
-      </div>
+      </form>
     </section>
   );
 }

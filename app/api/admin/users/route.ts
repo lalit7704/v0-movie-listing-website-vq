@@ -60,7 +60,7 @@ export async function GET() {
 
 const addSchema = z.object({
   email: z.string().trim().toLowerCase().email("Enter a valid email"),
-  password: z.string().default(""),
+  password: z.string().min(6, "Password must be at least 6 characters"),
 });
 
 export async function POST(request: NextRequest) {
@@ -80,19 +80,14 @@ export async function POST(request: NextRequest) {
     const [existing] = await findUsers(client, (user) => user.email?.toLowerCase() === email);
 
     if (existing) {
-      // Existing accounts keep their own password or Google login.
+      // Admin login is email + password only, so the owner's password replaces any old one.
       const { error: updateError } = await client.auth.admin.updateUserById(existing.id, {
+        password,
+        email_confirm: true,
         app_metadata: { ...existing.app_metadata, [ADMIN_FLAG]: true },
       });
       if (updateError) throw updateError;
       return NextResponse.json({ success: true, created: false });
-    }
-
-    if (password.length < 6) {
-      return NextResponse.json(
-        { success: false, error: "No account exists for this email yet. Set a password (6+ characters) to create one." },
-        { status: 400 }
-      );
     }
 
     const { error: createError } = await client.auth.admin.createUser({
