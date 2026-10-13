@@ -187,7 +187,7 @@ export const cartoonVideos: Video[] = [
   "title": "Doraemon: Nobita and the New Castle of the Undersea Devil",
   "slug": "doraemon-nobita-and-the-new-castle-of-the-undersea-devil",
   "videoUrl": "https://youtu.be/tKdIRLkFs2E",
-  "downloadUrl": "#",
+  "downloadUrl": "https://t.me/c/3845134502/380",
   "poster": "https://m.media-amazon.com/images/M/MV5BNTZlMzRjZTUtZDVjNi00ODFiLWFmMzEtMzQ1ODIwOWQ3YjIwXkEyXkFqcGc@._V1_FMjpg_UY3042_.jpg",
   "description": "Doraemon: Nobita and the New Castle of the Undersea Devil follows Nobita and his friends as they embark on an exciting underwater adventure during their summer vacation. Using Doraemon's futuristic gadgets, the group explores the ocean, discovers a mysterious sunken treasure ship, and meets a mysterious boy named Eru from the underwater Mu Federation. When the terrifying Castle of the Undersea Devil begins to move, Doraemon, Nobita, Shizuka, Gian and Suneo must overcome their differences and work together to protect both the underwater world and the Earth.",
   "seoDescription": "Watch Doraemon: Nobita and the New Castle of the Undersea Devil (2026), an exciting animated adventure featuring Doraemon, Nobita and friends as they explore a mysterious underwater world and face the terrifying Castle of the Undersea Devil.",
