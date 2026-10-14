@@ -898,6 +898,46 @@ export const southindianVideos: Video[] = [
 "director": "Praveen Kandregula",
 "cast": ["Anupama Parameswaran", "Darshana Rajendran", "Sangeetha Krish", "Rag Mayur"],
 "keywords": ["Paradha", "Paradha 2025", "Paradha Telugu movie", "Anupama Parameswaran", "Darshana Rajendran", "Praveen Kandregula"]
+},
+{
+"id": "5054",
+"title": "Khalifa: The Ruler (2026) Hindi Dubbed - Action Thriller | Prithviraj Sukumaran",
+"slug": "khalifa-the-ruler-2026-hindi-dubbed",
+"videoUrl": "https://youtu.be/7HYvFq3mbGg",
+"downloadUrl": "",
+"poster": "https://m.media-amazon.com/images/M/MV5BMWM2ZDY1MjQtN2RkZS00MWVmLWEzOWItZDIyZGNkNTQ3OWIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "Khalifa: The Ruler (2026) वैशाख द्वारा डायरेक्ट और जिनु वी. अब्राहम द्वारा लिखी गई एक मलयालम एक्शन-थ्रिलर फिल्म है, जो दो भागों वाली सीरीज़ की पहली फिल्म है। पृथ्वीराज सुकुमारन (मंबरक्कल आमिर अली) टाइटल रोल में हैं, और उनके साथ नील नितिन मुकेश (हैरिस बशीर, उनका मलयालम डेब्यू), मालविका शर्मा (फ़िज़ा), शम्मी तिलकन, इंद्रांस और रेंजी पणिक्कर हैं। मोहनलाल, टोविनो थॉमस और सौबिन शाहिर कैमियो में नज़र आते हैं।\n\nकोझिकोड के कोडुवल्ली का आमिर अली एक बेफिक्र नौजवान है, जो कपड़ों की दुकान चलाता है और अपने माता-पिता के साथ रहता है। लेकिन हालात उसे अपने दादा 'बाबा' की तरह सोने की तस्करी की दुनिया में ले आते हैं। यह फैसला न सिर्फ उसकी ज़िंदगी बदल देता है, बल्कि उसके परिवार को भी खतरे में डाल देता है। अपने पिता की मौत का बदला लेने निकला आमिर धीरे-धीरे गोल्ड स्मगलिंग सिंडिकेट का सबसे बड़ा नाम बन जाता है। जेक्स बिजॉय के संगीत वाली यह फिल्म अगस्त 2026 में रिलीज़ हुई, और यह इसका हिंदी डब्ड वर्ज़न है।",
+"seoDescription": "Khalifa: The Ruler (2026) Prithviraj Sukumaran और Neil Nitin Mukesh की मलयालम एक्शन थ्रिलर (हिंदी डब्ड) फिल्म की कहानी, trailer, cast, rating और details देखें।",
+"category": "South Indian",
+"year": 2026,
+"duration": "2h 39m",
+"rating": 6.5,
+"genre": ["Action", "Thriller", "Crime"],
+"language": "Hindi",
+"quality": "HD",
+"director": "Vysakh",
+"cast": ["Prithviraj Sukumaran", "Neil Nitin Mukesh", "Malvika Sharma", "Shammi Thilakan", "Indrans", "Renji Panicker"],
+"keywords": ["Khalifa: The Ruler", "Khalifa: The Ruler 2026", "Khalifa: The Ruler Hindi dubbed", "Vysakh", "Prithviraj Sukumaran", "Neil Nitin Mukesh", "Action movie 2026"]
+},
+{
+"id": "5055",
+"title": "Mension House Mallesh (2026) Hindi Dubbed - Telugu Comedy Drama",
+"slug": "mension-house-mallesh-2026-hindi-dubbed",
+"videoUrl": "https://youtu.be/H-YLqvds4ZU",
+"downloadUrl": "",
+"poster": "https://m.media-amazon.com/images/M/MV5BYWFkNjNhNjktNjM4YS00YTUxLWI0ZDEtYTkyZWJhOWU0OTU0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "Mension House Mallesh (2026) बाला सतीश द्वारा डायरेक्ट की गई एक तेलुगु कॉमेडी-ड्रामा फिल्म है, जिसमें श्रीनाथ मागंती, गायत्री रमना और साई कामाक्षी भास्करला मुख्य भूमिकाओं में हैं, जबकि मुरलीधर गौड़ और राजकुमार कासिरेड्डी सपोर्टिंग रोल में हैं।\n\nएक शांत गांव, जहां अफवाहें हवा से भी तेज़ फैलती हैं, वहां एक अकड़ू नौजवान अपनी शादी की पहली रात के बाद उड़ी अजीब अफवाहों की वजह से पूरे गांव में चर्चा का विषय बन जाता है। इसके बाद शुरू होता है गलतफहमियों, अहंकार की टक्कर और छोटे शहर के हंगामे का एक मज़ेदार सिलसिला। सुरेश बोब्बिली के संगीत वाली यह फिल्म 6 मार्च 2026 को सिनेमाघरों में रिलीज़ हुई, और यह इसका हिंदी डब्ड वर्ज़न है।",
+"seoDescription": "Mension House Mallesh (2026) Srinath Maganti और Gayathri Ramana की तेलुगु कॉमेडी ड्रामा (हिंदी डब्ड) फिल्म की कहानी, trailer, cast, rating और details देखें।",
+"category": "South Indian",
+"year": 2026,
+"duration": "N/A",
+"rating": 6.0,
+"genre": ["Comedy", "Drama"],
+"language": "Hindi",
+"quality": "HD",
+"director": "Bala Satish",
+"cast": ["Srinath Maganti", "Gayathri Ramana", "Sai Kamakshi Bhaskarla", "Muralidhar Goud", "Rajkumar Kasireddy"],
+"keywords": ["Mension House Mallesh", "Mension House Mallesh 2026", "Mension House Mallesh Hindi dubbed", "Bala Satish", "Srinath Maganti", "Gayathri Ramana", "Comedy movie 2026"]
 }
 
 

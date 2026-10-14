@@ -914,7 +914,7 @@ export const hollywoodVideos: Video[] = [
 "duration": "1h 44m",
 "rating": 6.0,
 "genre": ["Action", "Crime", "Thriller"],
-"language": "English",
+"language": "Hindi",
 "quality": "HD",
 "director": "Justin Lin",
 "cast": ["Lucas Black", "Bow Wow", "Sung Kang", "Nathalie Kelley", "Brian Tee"],
@@ -1079,6 +1079,26 @@ export const hollywoodVideos: Video[] = [
 "director": "Liu Wenpu",
 "cast": ["Liu Fengchao", "Yuan Fufu", "Chunyu Shanshan", "Liu Chao", "Gao Weiman"],
 "keywords": ["The Butcher's Blade", "The Butcher's Blade 2026", "Chinese wuxia movie", "Liu Wenpu", "Well Go USA", "Chinese action movie"]
+},
+{
+"id": "6125",
+"title": "The Fix (2026) Hindi Dubbed - Action Thriller | Liam Neeson, Zachary Levi",
+"slug": "the-fix-2026-hindi-dubbed",
+"videoUrl": "https://youtu.be/NYC0v8xqQdM",
+"downloadUrl": "",
+"poster": "https://m.media-amazon.com/images/M/MV5BYjhiYzQ5YjQtZTlhZS00YTQ0LTk5YzMtNmRjY2EwYmFhYmIzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "The Fix (2026) गाय मोशे द्वारा डायरेक्ट की गई एक अमेरिकन एक्शन-थ्रिलर फिल्म है, जिसकी कहानी पूर्व CIA अफसर बैज़ेल बाज़ के आइडिया पर आधारित है। लियाम नीसन (लैरी), ज़ैकरी लेवी (टकर), क्विंसी इसाया, एलनाज़ नोरौज़ी, टाइटस वेलिवर और एनेट महेंद्रू मुख्य भूमिकाओं में हैं। फिल्म का नाम पहले 'Hotel Tehran' रखा गया था।\n\nअफगानिस्तान में एक मिशन के दर्दनाक अंजाम के बाद पूर्व CIA ऑपरेटिव्स की एक टीम बिखर चुकी है। उनका फील्ड लीडर टकर उस नाकामी के ज़ख्म लिए जी रहा है, और उनका पुराना हैंडलर लैरी उन्हें खुद को साबित करने का एक आखिरी मौका देता है: ईरान के तेहरान में एक बेहद खतरनाक रेस्क्यू ऑपरेशन। अपनी गलतियों का प्रायश्चित करने के लिए यह टीम दुश्मन के इलाके में उतरती है, जहां जासूसी और हाइस्ट का खेल एक साथ चलता है। यह फिल्म 11 सितंबर 2026 को अमेरिका में थिएटर्स में रिलीज़ हुई।",
+"seoDescription": "The Fix (2026) Liam Neeson और Zachary Levi की एक्शन थ्रिलर (हिंदी डब्ड) फिल्म की कहानी, trailer, cast, rating और details देखें।",
+"category": "Hollywood",
+"year": 2026,
+"duration": "2h 07m",
+"rating": 6.0,
+"genre": ["Action", "Thriller"],
+"language": "Hindi",
+"quality": "HD",
+"director": "Guy Moshe",
+"cast": ["Liam Neeson", "Zachary Levi", "Quincy Isaiah", "Elnaaz Norouzi", "Titus Welliver", "Annet Mahendru"],
+"keywords": ["The Fix", "The Fix 2026", "The Fix Hindi dubbed", "Guy Moshe", "Liam Neeson", "Zachary Levi", "Action movie 2026"]
 }
 
 ];
