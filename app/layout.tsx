@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Geist_Mono } from 'next/font/google'
+import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -21,6 +22,9 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
   variable: '--font-geist-mono',
 })
+
+// Public GA4 measurement ID (not a secret)
+const GA_MEASUREMENT_ID = 'G-KJ3NX7H5P2'
 
 export const metadata: Metadata = {
   title: 'Onemovie | Movies and Web Series',
@@ -169,6 +173,21 @@ export default function RootLayout({
 
         {/* Vercel Analytics */}
         <Analytics />
+
+        {/* Google Analytics 4. The root layout mounts once, so the tag loads once per visit.
+            Page views on client-side navigation come from GA4 enhanced measurement (browser history events). */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
 
         {/* Google AdSense */}
         <script
