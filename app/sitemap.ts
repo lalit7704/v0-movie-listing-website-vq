@@ -4,6 +4,7 @@ import { generateSlug } from "@/lib/seo-utils";
 import { SITE_URL } from "@/lib/site";
 
 const baseUrl = SITE_URL.replace(/\/$/, "");
+const EXCLUDED_CATEGORIES = new Set(["ramayan", "mahabharat"]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -81,18 +82,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/ramayan`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/mahabharat`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
-    {
       url: `${baseUrl}/shree-krishna`,
       lastModified: now,
       changeFrequency: "weekly",
@@ -134,6 +123,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       return [];
     }
 
+    // Ramayan and Mahabharat episodes are left out on purpose, so crawlers spend their visits on movie pages
+    if (EXCLUDED_CATEGORIES.has(video.category.toLowerCase().trim())) {
+      return [];
+    }
+
     // Existing slug use karo, warna title se slug generate karo
     const slug =
       video.slug?.trim() ||
@@ -152,8 +146,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     return [
       {
+        // No lastModified: movies have no edit date, and a date that is always "now" teaches Google to ignore it
         url: `${baseUrl}/movie/${slug}`,
-        lastModified: now,
         changeFrequency: "monthly" as const,
         priority: 0.9,
       },

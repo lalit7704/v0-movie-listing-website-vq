@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "sync:tmdb": "node scripts/sync-tmdb.mjs",
-    "import:movies": "tsx scripts/import-movies.ts"
+    "import:movies": "tsx scripts/import-movies.ts",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
