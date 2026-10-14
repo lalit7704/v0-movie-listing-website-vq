@@ -1,9 +1,8 @@
 name: Sync new TMDB releases
 
 on:
+  # The nightly schedule is off: TMDB imports have no download links. Run it by hand if needed.
   workflow_dispatch:
-  schedule:
-    - cron: "30 2 * * *"
 
 permissions:
   contents: write

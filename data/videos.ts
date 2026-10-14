@@ -53,7 +53,7 @@ export function generateSlug(title: string): string {
 
 /* ---------------- MAIN DATA ---------------- */
 
-export const videos: Video[] = [
+const allVideos: Video[] = [
   ...bollywoodVideos,
   ...hollywoodVideos,
   ...webSeriesVideos,
@@ -63,6 +63,16 @@ export const videos: Video[] = [
   ...mahabharatVideos,
   ...shreekrishnaVideos,
 ];
+
+// TMDB auto-imports are placeholders: when a hand-written entry uses the same
+// slug, keep the hand-written one so the film isn't listed twice.
+const handWrittenSlugs = new Set(
+  allVideos.filter((v) => !v.id.startsWith("tmdb-")).map((v) => v.slug)
+);
+
+export const videos: Video[] = allVideos.filter(
+  (v) => !v.id.startsWith("tmdb-") || !handWrittenSlugs.has(v.slug)
+);
 
 /* ---------------- HELPERS ---------------- */
 

@@ -4,20 +4,14 @@ import { HeroSlider } from "@/components/hero-slider";
 import { SectionSlider } from "@/components/section-slider";
 import { videos } from "@/data/videos";
 import { PersonalizedHomeSections } from "@/components/personalized-home-sections";
-import {
-  tmdbRecentlyAddedVideos,
-  tmdbHollywoodVideos,
-  tmdbBollywoodVideos,
-} from "@/data/tmdb-generated";
+
+const HERO_CATEGORIES = /^(bollywood|hollywood|south[\s-]?indian)$/i;
 
 export default function HomePage() {
   // Get different categories for sliders
-  const heroVideos = [
-    ...tmdbHollywoodVideos,
-    ...tmdbBollywoodVideos,
-  ]
-    .filter(v => v.poster && v.rating && v.rating > 1) // Ensure poster and some rating exists
-    .sort((a, b) => b.rating - a.rating) // Sort by highest rating
+  const heroVideos = videos
+    .filter(v => HERO_CATEGORIES.test(v.category) && v.poster && v.downloadUrl && v.rating > 1) // Movies that can be downloaded
+    .sort((a, b) => b.year - a.year || b.rating - a.rating) // Newest first, then highest rated
     .slice(0, 10); // Take top 10
 
   const trendingVideos = videos.slice(0, 12);
@@ -60,7 +54,6 @@ export default function HomePage() {
       />
     </a>
   </div>
-          <SectionSlider title="Newly Added Automatically" videos={tmdbRecentlyAddedVideos.slice(0, 20)} />
           <SectionSlider title="Trending Now" videos={trendingVideos} />
           <div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
           <SectionSlider title="New Releases" videos={newReleases} />

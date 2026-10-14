@@ -565,6 +565,26 @@ export const webSeriesVideos: Video[] = [
   "language": "Japanese",
   "quality": "HD",
   "cast": ["Shun Oguri", "Uta Uchida"]
+},
+{
+"id": "8032",
+"title": "Family Full House with Rohit Sharma (2026) Season 1 - Game Show | Sony LIV",
+"slug": "family-full-house-with-rohit-sharma-2026",
+"videoUrl": "https://youtu.be/i9efNpdltks",
+"downloadUrl": "https://t.me/c/3845134502/400",
+"poster": "https://m.media-amazon.com/images/M/MV5BMTQzN2ViNTQtYTQzMC00NGZjLTk5YTEtNGZkMWMyYTZiNDkxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "Family Full House with Rohit Sharma (2026) एक हिंदी टॉक और गेम शो है, जिसे भारत के पूर्व कप्तान और क्रिकेटर रोहित शर्मा होस्ट करते हैं। यह रोहित शर्मा का टेलीविज़न डेब्यू है। यह शो मशहूर अमेरिकन गेम शो 'Family Feud' का भारतीय वर्ज़न है, जिसे फ्रीमैंटल इंडिया ने प्रोड्यूस और अरुण शेषकुमार ने डायरेक्ट किया है।\n\nहर हफ्ते फिल्मी सितारे, खिलाड़ी और उनके परिवार सर्वे पर आधारित मज़ेदार ट्रिविया गेम्स और चैलेंजेस में एक-दूसरे से मुकाबला करते हैं। अब तक के मेहमानों में कुणाल खेमू, श्रेयस अय्यर, सिद्धार्थ मल्होत्रा, तमन्ना भाटिया, शिखर धवन, मनीष पॉल, सुनील शेट्टी, नेहा धूपिया, अर्चना पूरन सिंह और भारती सिंह जैसे नाम शामिल हैं। हंसी-मज़ाक, रोहित के मज़ेदार अंदाज़ और परिवारों की नोकझोंक से भरा यह शो 19 सितंबर 2026 से हर शनिवार-रविवार रात 9:30 बजे सोनी एंटरटेनमेंट टेलीविज़न और सोनी LIV पर आता है।",
+"seoDescription": "Family Full House with Rohit Sharma (2026) Rohit Sharma की गेम शो शो की कहानी, trailer, cast, rating और details देखें।",
+"category": "Web Series",
+"year": 2026,
+"duration": "Season 1",
+"rating": 7.7,
+"genre": ["Game Show", "Talk Show", "Reality"],
+"language": "Hindi",
+"quality": "HD",
+"director": "Arun Seshkumar",
+"cast": ["Rohit Sharma"],
+"keywords": ["Family Full House with Rohit Sharma", "Family Full House", "Rohit Sharma show", "Sony LIV game show", "Family Feud India", "Rohit Sharma TV debut"]
 }
 ];
 
