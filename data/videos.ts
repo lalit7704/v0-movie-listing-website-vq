@@ -1,6 +1,7 @@
 import { bollywoodVideos } from "./bollywood";
 import { hollywoodVideos } from "./hollywood";
 import { webSeriesVideos } from "./web-series";
+import { hotSeriesVideos } from "./hot-series";
 import { cartoonVideos } from "./cartoon";
 import { ramayanaVideos } from "./ramayana";
 import { southindianVideos } from "./south-indian";
@@ -60,6 +61,7 @@ const allVideos: Video[] = [
   ...bollywoodVideos,
   ...hollywoodVideos,
   ...webSeriesVideos,
+  ...hotSeriesVideos,
   ...cartoonVideos,
   ...ramayanaVideos,
   ...southindianVideos,
@@ -93,7 +95,7 @@ export const getLatestVideos = (): Video[] => {
   return [...videos].sort((a, b) => b.year - a.year).slice(0, 10);
 };
 
-const ADDABLE_CATEGORIES = new Set(["bollywood", "hollywood", "southindian", "webseries", "cartoon"]);
+const ADDABLE_CATEGORIES = new Set(["bollywood", "hollywood", "southindian", "webseries", "hotseries", "cartoon"]);
 
 // Every existing entry in these categories carries addedAt, so one without it was
 // hand-written after the backfill and counts as the newest. Series episodes

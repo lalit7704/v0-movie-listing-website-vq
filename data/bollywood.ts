@@ -2957,7 +2957,7 @@ export const bollywoodVideos: Video[] = [
 {
 "id": "2160",
 "addedAt": "2026-10-16T06:08:16.000Z",
-"title": "https://t.me/onemoviebylalit_bott/184(2026) - Psychological Thriller | Jitendra Bohara, Tushar Kawale",
+"title": "Navya Chakra - Psycon World (2026) - Psychological Thriller | Jitendra Bohara, Tushar Kawale",
 "slug": "navya-chakra-psycon-world-2026",
 "videoUrl": "https://youtu.be/jibSrThNKOw",
 "downloadUrl": "https://t.me/onemoviebylalit_bott/184",

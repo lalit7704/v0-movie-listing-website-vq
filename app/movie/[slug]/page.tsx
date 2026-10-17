@@ -214,6 +214,7 @@ export default async function MoviePage({
     Hollywood: "/hollywood",
     "South Indian": "/south-indian",
     "Web Series": "/web-series",
+    "Hot Series": "/hot-series",
     Cartoon: "/cartoons",
     Ramayan: "/ramayan",
     Mahabharat: "/mahabharat",

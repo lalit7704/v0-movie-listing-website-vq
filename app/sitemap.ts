@@ -43,6 +43,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/hot-series`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
 
     // Genre pages
     {

@@ -20,6 +20,7 @@ const navLinks = [
 
 const moreLinks = [
   { href: "/drama", label: "Drama" },
+  { href: "/hot-series", label: "Hot Series" },
   { href: "/thriller", label: "Thriller" },
   { href: "/sci-fi", label: "Sci-Fi" },
   { href: "/ramayan", label: "Ramayan" },

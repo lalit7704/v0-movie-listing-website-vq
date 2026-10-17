@@ -2,7 +2,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { HeroSlider } from "@/components/hero-slider";
 import { SectionSlider } from "@/components/section-slider";
-import { getRecentlyAddedVideos, videos } from "@/data/videos";
+import { getRecentlyAddedVideos } from "@/data/videos";
 import { PersonalizedHomeSections } from "@/components/personalized-home-sections";
 
 export default function HomePage() {
@@ -15,9 +15,7 @@ export default function HomePage() {
   const hollywoodVideos = getRecentlyAddedVideos(15, "Hollywood");
   const southIndianVideos = getRecentlyAddedVideos(15, "South Indian");
   const webSeriesVideos = getRecentlyAddedVideos(15, "Web Series");
-
-  const trendingVideos = videos.slice(0, 12);
-  const newReleases = [...videos].sort((a, b) => b.year - a.year).slice(0, 12);
+  const hotSeriesVideos = getRecentlyAddedVideos(15, "Hot Series");
 
   return (
     <div className="min-h-screen bg-background">
@@ -59,6 +57,7 @@ export default function HomePage() {
           <div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
           <SectionSlider title="South Indian" videos={southIndianVideos} />
           <SectionSlider title="Web Series" videos={webSeriesVideos} />
+          <SectionSlider title="Hot Series" videos={hotSeriesVideos} />
           <PersonalizedHomeSections />
        
         </div>
