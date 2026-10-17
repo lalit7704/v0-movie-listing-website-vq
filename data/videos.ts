@@ -35,11 +35,12 @@ export interface Video {
 
 /* ---------------- NORMALIZE ---------------- */
 
+// "South Indian" and "south-indian" are both used in the data files.
 const normalize = (str: string) =>
   str
     .toLowerCase()
     .trim()
-    .replace(/\s+/g, "");
+    .replace(/[\s-]+/g, "");
 
 /* ---------------- SLUG HELPER ---------------- */
 
@@ -99,14 +100,19 @@ const ADDABLE_CATEGORIES = new Set(["bollywood", "hollywood", "southindian", "we
 // (Ramayan, Mahabharat, Shree Krishna) never compete for "latest".
 function addedTime(video: Video) {
   if (video.addedAt) return Date.parse(video.addedAt) || 0;
-  return ADDABLE_CATEGORIES.has(video.category.toLowerCase().replace(/[\s-]+/g, "")) ? Infinity : 0;
+  return ADDABLE_CATEGORIES.has(normalize(video.category)) ? Infinity : 0;
 }
 
-/** Most recently added first; ties keep file order, where later entries are newer. */
-export const getRecentlyAddedVideos = (limit: number): Video[] => {
+/** Most recently added first, optionally within one category; ties keep file order, where later entries are newer. */
+export const getRecentlyAddedVideos = (limit: number, category?: string): Video[] => {
   return videos
     .map((video, index) => ({ video, index }))
-    .filter(({ video }) => video.poster && addedTime(video) > 0)
+    .filter(
+      ({ video }) =>
+        video.poster &&
+        addedTime(video) > 0 &&
+        (!category || normalize(video.category) === normalize(category))
+    )
     .sort((a, b) => addedTime(b.video) - addedTime(a.video) || b.index - a.index)
     .slice(0, limit)
     .map(({ video }) => video);

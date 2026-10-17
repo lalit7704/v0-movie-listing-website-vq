@@ -10,10 +10,14 @@ export default function HomePage() {
   const latestAdded = getRecentlyAddedVideos(15);
   const heroVideos = latestAdded.slice(0, 5);
 
+  // Category rows, each newest-added first
+  const bollywoodVideos = getRecentlyAddedVideos(15, "Bollywood");
+  const hollywoodVideos = getRecentlyAddedVideos(15, "Hollywood");
+  const southIndianVideos = getRecentlyAddedVideos(15, "South Indian");
+  const webSeriesVideos = getRecentlyAddedVideos(15, "Web Series");
+
   const trendingVideos = videos.slice(0, 12);
   const newReleases = [...videos].sort((a, b) => b.year - a.year).slice(0, 12);
-  const bollywoodVideos = videos.filter(v => v.category === "Bollywood" || v.genre.includes("Bollywood")).slice(0, 12);
-  const hollywoodVideos = videos.filter(v => v.category === "Hollywood" || v.genre.includes("Hollywood")).slice(0, 12);
 
   return (
     <div className="min-h-screen bg-background">
@@ -28,7 +32,7 @@ export default function HomePage() {
         {/* Main Content Sections */}
         <div className="pt-8 space-y-4">
           <SectionSlider title="Latest Added" videos={latestAdded} />
-          <PersonalizedHomeSections />
+          <SectionSlider title="Bollywood" videos={bollywoodVideos} />
           <div
     style={{
       width: '100%',
@@ -51,11 +55,13 @@ export default function HomePage() {
       />
     </a>
   </div>
-          <SectionSlider title="Trending Now" videos={trendingVideos} />
+          <SectionSlider title="Hollywood" videos={hollywoodVideos} />
           <div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
+          <SectionSlider title="South Indian" videos={southIndianVideos} />
+          <SectionSlider title="Web Series" videos={webSeriesVideos} />
+          <PersonalizedHomeSections />
+          <SectionSlider title="Trending Now" videos={trendingVideos} />
           <SectionSlider title="New Releases" videos={newReleases} />
-          <SectionSlider title="Bollywood Hits" videos={bollywoodVideos} />
-          <SectionSlider title="Hollywood Blockbusters" videos={hollywoodVideos} />
         </div>
       </main>
 
