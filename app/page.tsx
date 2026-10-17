@@ -60,8 +60,7 @@ export default function HomePage() {
           <SectionSlider title="South Indian" videos={southIndianVideos} />
           <SectionSlider title="Web Series" videos={webSeriesVideos} />
           <PersonalizedHomeSections />
-          <SectionSlider title="Trending Now" videos={trendingVideos} />
-          <SectionSlider title="New Releases" videos={newReleases} />
+       
         </div>
       </main>
 
