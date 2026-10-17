@@ -1478,6 +1478,46 @@ export const southindianVideos: Video[] = [
 "director": "K. Venkatesh",
 "cast": ["Kaada Natraj", "Niriksha Shetty", "Yash Shetty", "Bala Rajwadi", "Vijay Chendoor", "Kriti Verma"],
 "keywords": ["Karikaada", "Karikaada 2026", "Karikaada Hindi dubbed", "K. Venkatesh", "Kaada Natraj", "Niriksha Shetty", "Karikaada Kannada movie", "Kaada Natraj movie", "Kannada movie Hindi dubbed"]
+},
+{
+  "id": "5083",
+  "title": "Ronny: The Ruler (2024) - Kannada Action Drama | Kiran Raj, Samiksha",
+  "slug": "ronny-the-ruler-2024",
+  "videoUrl": "https://youtu.be/pgbX44ijPJc",
+  "downloadUrl": "https://t.me/onemoviebylalit_bott/441",
+  "poster": "https://m.media-amazon.com/images/M/MV5BNDVkYjYxZDQtZmZhOC00YTJhLWI0MWYtZjg1YzA0NjI1NzkzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  "description": "Ronny: The Ruler (2024) गुरुतेज शेट्टी द्वारा डायरेक्ट की गई एक कन्नड़ एक्शन ड्रामा फिल्म है। किरण राज (राघव उर्फ रॉनी) मुख्य भूमिका में हैं, जबकि समीक्षा, अपूर्वा, राध्या और पी. रविशंकर (काली) अहम किरदारों में हैं।\n\nफिल्म राघव उर्फ रॉनी की कहानी है, जो अपराध की दुनिया में ताकत और रुतबा हासिल करने की राह पर निकल पड़ता है। महत्वाकांक्षा, गैंगवॉर और बदले के बीच फंसी यह कहानी दिखाती है कि अपराध की दुनिया में ऊपर चढ़ने की क्या कीमत चुकानी पड़ती है।\n\nफिल्म 12 सितंबर 2024 को सिनेमाघरों में रिलीज़ हुई। इसके गाने मणिकांत कदरी ने और बैकग्राउंड स्कोर सचिन बसरूर ने दिया है। बाद में यह ZEE5 पर स्ट्रीम हुई।",
+  "seoDescription": "Ronny: The Ruler (2024) Kiran Raj की Kannada action drama फिल्म की कहानी, trailer, cast, rating और details देखें।",
+  "category": "South Indian",
+  "year": 2024,
+  "duration": "TBA",
+  "rating": 6,
+  "genre": ["Action", "Crime", "Drama"],
+  "language": "Hindi",
+  "quality": "HD",
+  "director": "Gurutej Shetty",
+  "cast": ["Kiran Raj", "Samiksha", "Apurva", "Raadhya", "P. Ravishankar"],
+  "keywords": ["Ronny The Ruler", "Ronny 2024", "Kiran Raj", "Gurutej Shetty", "Kannada action movie", "Ronny Kannada movie"]
+},
+{
+  "id": "5084",
+  "title": "Jailer 2 (2026) - Tamil Action Thriller | Rajinikanth, S. J. Suryah",
+  "slug": "jailer-2-2026",
+  "videoUrl": "https://youtu.be/FW_PPcr1sPE",
+  "downloadUrl": "https://t.me/onemoviebylalit_bott/443",
+  "poster": "https://m.media-amazon.com/images/M/MV5BZjUwNzM2MmMtYjZmNS00N2QwLWJhYWUtODFkOTgzM2M2ZTc3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  "description": "Jailer 2 (2026) नेल्सन दिलीपकुमार द्वारा डायरेक्ट की गई एक तमिल एक्शन थ्रिलर फिल्म है और 2023 की ब्लॉकबस्टर 'Jailer' का सीक्वल है। रजनीकांत ('टाइगर' मुथुवेल पांडियन) मुख्य भूमिका में लौटे हैं, जबकि एस. जे. सूर्या, मिथुन चक्रवर्ती, सुराज वेंजरामूडु, राम्या कृष्णन और विद्या बालन अहम किरदारों में हैं। संगीत अनिरुद्ध का है और फिल्म सन पिक्चर्स ने बनाई है।\n\nवर्मन के स्मगलिंग नेटवर्क को खत्म करने के तीन महीने बाद रिटायर्ड जेलर मुथुवेल पांडियन अपने परिवार के साथ केरल-तमिलनाडु बॉर्डर के पास एक शांत ज़िंदगी जी रहा है। लेकिन वर्मन का करीबी साथी दिलीप, जो मूर्तियों की स्मगलिंग करता है, वर्मन के कातिल का पता लगाने के लिए एक जासूस को लगा देता है। मुथुवेल एक आम ड्राइवर बनकर दिलीप के गिरोह तक पहुंचने की योजना बनाता है, और यहीं से एक नई और खतरनाक जंग शुरू होती है।\n\nफिल्म 15 अक्टूबर 2026 को दशहरा के मौके पर सिनेमाघरों में रिलीज़ हुई।",
+  "seoDescription": "Jailer 2 (2026) Rajinikanth की Tamil action thriller फिल्म की कहानी, trailer, cast, rating और details देखें।",
+  "category": "South Indian",
+  "year": 2026,
+  "duration": "2h 45m",
+  "rating": 6,
+  "genre": ["Action", "Crime", "Thriller"],
+  "language": "Hindi",
+  "quality": "HD",
+  "director": "Nelson Dilipkumar",
+  "cast": ["Rajinikanth", "S. J. Suryah", "Mithun Chakraborty", "Suraj Venjaramoodu", "Ramya Krishnan", "Vidya Balan"],
+  "keywords": ["Jailer 2", "Jailer 2 2026", "Rajinikanth", "Nelson Dilipkumar", "Jailer sequel", "Tamil action movie 2026"]
 }
 
 

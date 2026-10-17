@@ -1459,6 +1459,46 @@ export const hollywoodVideos: Video[] = [
 "director": "Teresa Simone",
 "cast": ["Ludwika Paleta", "Óscar Casas", "José María Yazpik", "Pilar Pascual"],
 "keywords": ["Desire", "Desire 2026", "Desire Hindi dubbed", "Teresa Simone", "Ludwika Paleta", "Óscar Casas", "Desire Netflix", "Deseo 2026", "Mexican thriller Hindi dubbed"]
+},
+{
+  "id": "6144",
+  "title": "Lucy (2014) - Sci-Fi Action Movie | Scarlett Johansson, Morgan Freeman",
+  "slug": "lucy-2014",
+  "videoUrl": "https://youtu.be/4NpzYe_tiS0",
+  "downloadUrl": "https://t.me/onemoviebylalit_bott/439",
+  "poster": "https://m.media-amazon.com/images/M/MV5BODcxMzY3ODY1NF5BMl5BanBnXkFtZTgwNzg1NDY4MTE@._V1_FMjpg_UX1000_.jpg",
+  "description": "Lucy (2014) लूक बेसों (Luc Besson) द्वारा लिखी और डायरेक्ट की गई एक साइंस-फिक्शन एक्शन फिल्म है। स्कारलेट जोहानसन (लूसी) और मॉर्गन फ्रीमैन (प्रोफेसर नॉर्मन) मुख्य भूमिकाओं में हैं, जबकि चोई मिन-सिक (मिस्टर जांग) और अम्र वाकेद सपोर्टिंग रोल में हैं।\n\nताइपे में पढ़ रही अमेरिकी लड़की लूसी को उसका नया बॉयफ्रेंड एक ब्रीफकेस पहुंचाने के लिए मजबूर करता है, जिसमें CPH4 नाम का खतरनाक सिंथेटिक ड्रग होता है। ड्रग लॉर्ड मिस्टर जांग के लोग लूसी को पकड़कर ड्रग का एक पैकेट उसके पेट में सिल देते हैं, ताकि वह उसे यूरोप तक ले जाए। पैकेट फटने पर ड्रग उसके शरीर में फैल जाता है और लूसी के दिमाग की क्षमता लगातार बढ़ने लगती है। उसे टेलीपैथी और टेलीकाइनेसिस जैसी ताकतें मिल जाती हैं और दर्द महसूस होना बंद हो जाता है।\n\nलूसी इन ताकतों के सहारे गैंग से बदला लेती है और प्रोफेसर नॉर्मन की मदद से समझने की कोशिश करती है कि उसके साथ क्या हो रहा है। करीब 4 करोड़ डॉलर के बजट में बनी यह फिल्म दुनिया भर में 45 करोड़ डॉलर से ज़्यादा कमाकर बड़ी हिट रही।",
+  "seoDescription": "Lucy (2014) Scarlett Johansson और Morgan Freeman की sci-fi action फिल्म की कहानी, trailer, cast, rating और details देखें।",
+  "category": "Hollywood",
+  "year": 2014,
+  "duration": "1h 30m",
+  "rating": 6.4,
+  "genre": ["Action", "Sci-Fi", "Thriller"],
+  "language": "Hindi",
+  "quality": "HD",
+  "director": "Luc Besson",
+  "cast": ["Scarlett Johansson", "Morgan Freeman", "Choi Min-sik", "Amr Waked"],
+  "keywords": ["Lucy", "Lucy 2014", "Luc Besson", "Scarlett Johansson", "Morgan Freeman", "Sci-fi action movie 2014"]
+},
+{
+  "id": "6145",
+  "title": "The Prestige (2006) - Mystery Thriller Movie | Hugh Jackman, Christian Bale",
+  "slug": "the-prestige-2006",
+  "videoUrl": "https://youtu.be/ELq7V8vkekI",
+  "downloadUrl": "https://t.me/onemoviebylalit_bott/440",
+  "poster": "https://m.media-amazon.com/images/M/MV5BM2Y0YmM5MWYtZTYzNi00ZjU5LTlmOGYtZDQ4ODQyMjAzNjQ2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  "description": "The Prestige (2006) क्रिस्टोफर नोलन द्वारा डायरेक्ट की गई एक मिस्ट्री थ्रिलर फिल्म है, जो क्रिस्टोफर प्रीस्ट के 1995 के उपन्यास पर आधारित है। ह्यू जैकमैन (रॉबर्ट एंजियर) और क्रिश्चियन बेल (अल्फ्रेड बोर्डन) मुख्य भूमिकाओं में हैं, जबकि माइकल केन, स्कारलेट जोहानसन, रेबेका हॉल और डेविड बोवी (निकोला टेस्ला) अहम किरदारों में हैं।\n\n1890 के दशक के लंदन में रॉबर्ट एंजियर और अल्फ्रेड बोर्डन एक जादूगर के असिस्टेंट के तौर पर साथ काम करते हैं। पानी की टंकी वाली एक ट्रिक के दौरान एंजियर की पत्नी जूलिया डूबकर मर जाती है और एंजियर इसका ज़िम्मेदार बोर्डन को मानता है। इसके बाद दोनों अलग-अलग जादूगर बन जाते हैं और उनकी दुश्मनी जुनून में बदल जाती है। वे एक-दूसरे के शो बिगाड़ते हैं और 'द ट्रांसपोर्टेड मैन' नाम की सबसे बड़ी ट्रिक का राज़ जानने के लिए किसी भी हद तक चले जाते हैं।\n\nयह फिल्म 20 अक्टूबर 2006 को अमेरिका में रिलीज़ हुई और बेस्ट आर्ट डायरेक्शन व बेस्ट सिनेमैटोग्राफी के लिए ऑस्कर में नॉमिनेट हुई।",
+  "seoDescription": "The Prestige (2006) Hugh Jackman और Christian Bale की Christopher Nolan mystery thriller की कहानी, trailer, cast, rating और details देखें।",
+  "category": "Hollywood",
+  "year": 2006,
+  "duration": "2h 10m",
+  "rating": 8.5,
+  "genre": ["Drama", "Mystery", "Sci-Fi", "Thriller"],
+  "language": "Hindi",
+  "quality": "HD",
+  "director": "Christopher Nolan",
+  "cast": ["Hugh Jackman", "Christian Bale", "Michael Caine", "Scarlett Johansson", "Rebecca Hall", "David Bowie"],
+  "keywords": ["The Prestige", "The Prestige 2006", "Christopher Nolan", "Hugh Jackman", "Christian Bale", "Mystery thriller movie"]
 }
 
 ];

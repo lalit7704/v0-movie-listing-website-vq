@@ -281,5 +281,24 @@ export const cartoonVideos: Video[] = [
 "director": "Pierre Coffin, Kyle Balda",
 "cast": ["Sandra Bullock", "Jon Hamm", "Michael Keaton", "Allison Janney", "Pierre Coffin", "Geoffrey Rush"],
 "keywords": ["Minions", "Minions 2015", "Minions Hindi dubbed", "Pierre Coffin", "Sandra Bullock", "Jon Hamm", "Minions movie", "Despicable Me prequel", "Illumination"]
+},
+{
+  "id": "9081",
+  "title": "The Royal Cat (2024) - Animated Adventure Movie",
+  "slug": "the-royal-cat-2024",
+  "videoUrl": "https://youtu.be/FWqM3IBJyTw",
+  "downloadUrl": "https://t.me/onemoviebylalit_bott/442",
+  "poster": "https://m.media-amazon.com/images/M/MV5BOGZjZGE1N2MtMWM4My00YmI4LWI0Y2MtMjk0MTg2NmRhNmQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  "description": "The Royal Cat (2024), जिसका असली चीनी नाम '金陵御猫' है, काओ ल्यांग (Cao Liang) द्वारा डायरेक्ट की गई एक चीनी एनिमेटेड एडवेंचर फिल्म है। यह पूरे परिवार के साथ देखने लायक फिल्म है, जिसमें मिस्ट्री और एडवेंचर का मज़ा है।\n\nकहानी एक जिज्ञासु नौजवान अप्रेंटिस और एक चालाक, बिना पूंछ वाली बोलने वाली बिल्ली की है, जो मिलकर दो अजीबोगरीब रहस्यमयी केसों को सुलझाने निकलते हैं। रास्ते में दोनों की दोस्ती गहरी होती जाती है और उन्हें अपनी हिम्मत और समझदारी का इम्तिहान देना पड़ता है।\n\nयह फिल्म 24 अगस्त 2024 को चीन में रिलीज़ हुई थी। बाद में Well Go USA ने इसे इंग्लिश डबिंग के साथ डिजिटल पर रिलीज़ किया।",
+  "seoDescription": "The Royal Cat (2024) Chinese animated adventure फिल्म की कहानी, trailer, rating और details देखें।",
+  "category": "Cartoon",
+  "year": 2024,
+  "duration": "1h 37m",
+  "rating": 6,
+  "genre": ["Animation", "Adventure", "Family", "Mystery"],
+  "language": "Hindi",
+  "quality": "HD",
+  "director": "Cao Liang",
+  "keywords": ["The Royal Cat", "The Royal Cat 2024", "Chinese animated movie", "Cao Liang", "Animated adventure movie", "Cartoon movie 2024"]
 }
 ];
