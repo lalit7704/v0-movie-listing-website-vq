@@ -1517,7 +1517,8 @@ export const southindianVideos: Video[] = [
   "quality": "HD",
   "director": "Nelson Dilipkumar",
   "cast": ["Rajinikanth", "S. J. Suryah", "Mithun Chakraborty", "Suraj Venjaramoodu", "Ramya Krishnan", "Vidya Balan"],
-  "keywords": ["Jailer 2", "Jailer 2 2026", "Rajinikanth", "Nelson Dilipkumar", "Jailer sequel", "Tamil action movie 2026"]
+  "keywords": ["Jailer 2", "Jailer 2 2026", "Rajinikanth", "Nelson Dilipkumar", "Jailer sequel", "Tamil action movie 2026"],
+   "featured": true
 }
 
 
