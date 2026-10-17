@@ -66,10 +66,6 @@ export const metadata: Metadata = {
       'Browse Bollywood, Hollywood, and South Indian movies and web series.',
   },
 
-  other: {
-    'google-adsense-account': 'ca-pub-5319727568049071',
-  },
-
   metadataBase: new URL(SITE_URL),
 
   robots: {
@@ -122,12 +118,6 @@ export default function RootLayout({
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
-        />
-
-        {/* Google AdSense */}
-        <meta
-          name="google-adsense-account"
-          content="ca-pub-5319727568049071"
         />
 
         {/* Web App Manifest */}
@@ -189,12 +179,6 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google AdSense */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5319727568049071"
-          crossOrigin="anonymous"
-        />
       
 <script async={true} data-cfasync="false" src="https://pl31350043.profitableratecpmnetwork.com/3a306c8c6706d3ba2b33e82328472b63/invoke.js"></script>
 <div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
