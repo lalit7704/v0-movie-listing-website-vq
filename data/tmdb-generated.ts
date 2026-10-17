@@ -7,6 +7,7 @@ import type { Video } from "./videos";
 export const tmdbHollywoodVideos: Video[] = [
   {
     "id": "tmdb-movie-969681",
+    "addedAt": "2026-10-14T18:10:18.000Z",
     "title": "Spider-Man: Brand New Day (2026)",
     "slug": "spider-man-brand-new-day-2026",
     "videoUrl": "https://youtu.be/P3uI5sLosKU",
@@ -47,6 +48,7 @@ export const tmdbHollywoodVideos: Video[] = [
 export const tmdbBollywoodVideos: Video[] = [
   {
     "id": "tmdb-movie-1642850",
+    "addedAt": "2026-10-14T18:10:18.000Z",
     "title": "Bhai Tera Star Hai (2026)",
     "slug": "bhai-tera-star-hai-2026",
     "videoUrl": "https://youtu.be/Zy8KDEJU3iY",
@@ -82,6 +84,7 @@ export const tmdbBollywoodVideos: Video[] = [
   },
   {
     "id": "tmdb-movie-1720201",
+    "addedAt": "2026-10-14T18:10:18.000Z",
     "title": "Dulhaniya Le Aaeegi (2026)",
     "slug": "dulhaniya-le-aaeegi-2026",
     "videoUrl": "https://youtu.be/Tw1je1iQs4s",
@@ -116,6 +119,7 @@ export const tmdbBollywoodVideos: Video[] = [
   },
   {
     "id": "tmdb-movie-1384512",
+    "addedAt": "2026-10-14T18:10:18.000Z",
     "title": "Tera Yaar Hoon Main (2026)",
     "slug": "tera-yaar-hoon-main-2026",
     "videoUrl": "https://youtu.be/VEzeNwKBqMo",
@@ -154,6 +158,7 @@ export const tmdbBollywoodVideos: Video[] = [
   },
   {
     "id": "tmdb-movie-1682974",
+    "addedAt": "2026-10-14T18:10:18.000Z",
     "title": "The India Story (2026)",
     "slug": "the-india-story-2026",
     "videoUrl": "https://youtu.be/Pci6yErjwt0",
@@ -193,6 +198,7 @@ export const tmdbBollywoodVideos: Video[] = [
 export const tmdbSouthIndianVideos: Video[] = [
   {
     "id": "tmdb-movie-1443136",
+    "addedAt": "2026-10-14T18:10:18.000Z",
     "title": "Chennai Love Story (2026)",
     "slug": "chennai-love-story-2026",
     "videoUrl": "https://youtu.be/nYYjR9diizE",
@@ -225,6 +231,7 @@ export const tmdbSouthIndianVideos: Video[] = [
   },
   {
     "id": "tmdb-movie-1432631",
+    "addedAt": "2026-10-14T18:10:18.000Z",
     "title": "Idhayam Murali (2026)",
     "slug": "idhayam-murali-2026",
     "videoUrl": "https://youtu.be/kdvlqnNqUVU",
@@ -262,6 +269,7 @@ export const tmdbSouthIndianVideos: Video[] = [
   },
   {
     "id": "tmdb-movie-1408170",
+    "addedAt": "2026-10-14T18:10:18.000Z",
     "title": "Lenin (2026)",
     "slug": "lenin-2026",
     "videoUrl": "https://youtu.be/_d8Gw4ZkEqs",

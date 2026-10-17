@@ -20,6 +20,7 @@ export interface Video {
   director?: string;
   cast?: string[];
   keywords?: string[];
+  addedAt?: string;
 }
 
 /* ---------------- SLUG HELPER ---------------- */
@@ -39,6 +40,7 @@ function generateSlug(title: string): string {
 export const webSeriesVideos: Video[] = [
   ...tmdbWebSeriesVideos,
   {    "id": "8001",
+    "addedAt": "2026-05-11T18:22:59.000Z",
     "title": "Game of Thrones Season 1 - Fantasy Drama Series | Full Episodes HD",
     "slug": generateSlug(
       "Game of Thrones Season 1 - Fantasy Drama Series | Full Episodes HD"
@@ -59,6 +61,7 @@ export const webSeriesVideos: Video[] = [
 
   {
     "id": "8002",
+    "addedAt": "2026-05-11T18:22:59.000Z",
     "title": "Game of Thrones Season 2 - War of the Five Kings | Full Episodes HD",
     "slug": generateSlug(
       "Game of Thrones Season 2 - War of the Five Kings | Full Episodes HD"
@@ -79,6 +82,7 @@ export const webSeriesVideos: Video[] = [
 
   {
     "id": "8003",
+    "addedAt": "2026-05-11T18:22:59.000Z",
     "title": "Game of Thrones Season 3 - Rise of Power & Betrayal | Full Episodes HD",
     "slug": generateSlug(
       "Game of Thrones Season 3 - Rise of Power & Betrayal | Full Episodes HD"
@@ -98,6 +102,7 @@ export const webSeriesVideos: Video[] = [
 
   {
     "id": "8004",
+    "addedAt": "2026-05-11T18:22:59.000Z",
     "title": "Game of Thrones Season 4 - Power, Revenge & War | Full Episodes HD",
     "slug": generateSlug(
       "Game of Thrones Season 4 - Power, Revenge & War | Full Episodes HD"
@@ -117,6 +122,7 @@ export const webSeriesVideos: Video[] = [
 
   {
     "id": "8005",
+    "addedAt": "2026-05-11T18:22:59.000Z",
     "title": "Paatal Lok Season 1 - Crime Thriller Web Series | Full Episodes HD",
     "slug": generateSlug(
       "Paatal Lok Season 1 - Crime Thriller Web Series | Full Episodes HD"
@@ -137,6 +143,7 @@ export const webSeriesVideos: Video[] = [
 
   {
     "id": "8006",
+    "addedAt": "2026-05-11T18:22:59.000Z",
     "title": "Sapne Vs Everyone Season 1 - Drama Web Series | Full Episodes HD",
     "slug": generateSlug(
       "Sapne Vs Everyone Season 1 - Drama Web Series | Full Episodes HD"
@@ -155,6 +162,7 @@ export const webSeriesVideos: Video[] = [
   },
   {
   "id": "8007",
+  "addedAt": "2026-05-20T13:05:35.000Z",
   "title": "Lukkhe (2026) - Season 1 | Crime Comedy Drama Series HD",
   "slug": "lukkhe-2026-season-1-crime-comedy-drama-series-hd",
   "videoUrl": "https://youtu.be/yv9rOjSBAjc",
@@ -172,6 +180,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
   "id": "8008",
+  "addedAt": "2026-05-20T12:22:56.000Z",
   "title": "Vimal Khanna Season 1 - Crime Thriller Series | Full Episodes HD",
   "slug": "vimal-khanna-season-1-crime-thriller-series-full-episodes-hd",
   "videoUrl": "https://youtu.be/dD2hVmpvtpE",
@@ -189,6 +198,7 @@ export const webSeriesVideos: Video[] = [
 
 {
   "id": "8009",
+  "addedAt": "2026-05-20T16:39:18.000Z",
   "title": "Matka King (2026)",
   "slug": "matka-king-2025-crime-drama-movie-full-movie-hindi-hd",
   "videoUrl": "https://youtu.be/xLSdbndJGF0",
@@ -206,6 +216,7 @@ export const webSeriesVideos: Video[] = [
 ,
 {
   "id": "8010",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   "title": "Sacred Games Season 2",
   "slug": generateSlug("Sacred Games Season 2"),
   "videoUrl": "https://youtu.be/w-Xe8gLBc5I",
@@ -222,6 +233,7 @@ export const webSeriesVideos: Video[] = [
 ,
 {
   "id": "8011",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   "title": "Gram Chikitsalay S2",
   "slug": generateSlug("Gram Chikitsalay S2"),
   "videoUrl": "https://youtu.be/6YkxIy5QkwA",
@@ -238,6 +250,7 @@ export const webSeriesVideos: Video[] = [
 ,
 {
     "id": "8012",
+    "addedAt": "2026-07-06T02:08:26.000Z",
     "title": "Game of Thrones Season 8 - The Final Season | Full Episodes HD",
     "slug": generateSlug("Game of Thrones Season 8 - The Final Season | Full Episodes HD"),
     "videoUrl": "https://youtu.be/rlR4PJn8b8I",
@@ -254,6 +267,7 @@ export const webSeriesVideos: Video[] = [
   },
   {
     "id": "8013",
+    "addedAt": "2026-07-06T02:08:26.000Z",
     "title": "Avatar: The Last Airbender Season 2",
     "slug": generateSlug("Avatar: The Last Airbender Season 2"),
     "videoUrl": "https://youtu.be/M_Las484swM",
@@ -270,6 +284,7 @@ export const webSeriesVideos: Video[] = [
   },
   {
     "id": "8014",
+    "addedAt": "2026-07-06T02:08:26.000Z",
     "title": "Obsession (2025)",
     "slug": generateSlug("Obsession (2025)"),
     "videoUrl": "https://youtu.be/LjOXvZPoir8",
@@ -287,6 +302,7 @@ export const webSeriesVideos: Video[] = [
 ,
 {
     "id": "8015",
+    "addedAt": "2026-07-06T07:44:40.000Z",
     "title": "Paatal Lok Season 2",
     "slug": generateSlug("Paatal Lok Season 2"),
     "videoUrl": "https://youtu.be/RyzVgy8JteA",
@@ -303,6 +319,7 @@ export const webSeriesVideos: Video[] = [
   },
   {
     "id": "8016",
+    "addedAt": "2026-07-06T07:44:40.000Z",
     "title": "The Family Man Season 1",
     "slug": generateSlug("The Family Man Season 1"),
     "videoUrl": "https://youtu.be/0-SOXtdDG2w",
@@ -319,6 +336,7 @@ export const webSeriesVideos: Video[] = [
   },
   {
     "id": "8017",
+    "addedAt": "2026-07-06T07:44:40.000Z",
     "title": "The Family Man Season 2",
     "slug": generateSlug("The Family Man Season 2"),
     "videoUrl": "https://youtu.be/NGf_B81Hc2M",
@@ -335,6 +353,7 @@ export const webSeriesVideos: Video[] = [
   },
   {
     "id": "8018",
+    "addedAt": "2026-07-06T07:44:40.000Z",
     "title": "The Family Man Season 3",
     "slug": generateSlug("The Family Man Season 3"),
     "videoUrl": "https://youtu.be/jsauQx_Fwrg",
@@ -352,6 +371,7 @@ export const webSeriesVideos: Video[] = [
 ,
 {
   "id": "8019",
+  "addedAt": "2026-07-06T08:27:42.000Z",
   "title": "Gram Chikitsalay Season 1",
   "slug": generateSlug("Gram Chikitsalay Season 1"),
   "videoUrl": "https://youtu.be/pTs7Ei8bJsQ",
@@ -369,6 +389,7 @@ export const webSeriesVideos: Video[] = [
 ,
 {
   "id": "8020",
+  "addedAt": "2026-07-08T09:58:46.000Z",
   "title": "Pritam and Pedro (Season 1)",
   "slug": generateSlug("Pritam and Pedro Season 1"),
   "videoUrl": "https://youtu.be/uCjkRVV0-qU",
@@ -386,6 +407,7 @@ export const webSeriesVideos: Video[] = [
 }
 ,{
   "id": "8021",
+  "addedAt": "2026-07-08T10:17:47.000Z",
   "title": "Super Subbu (2026) Season 1 Hindi Dubbed",
   "slug": generateSlug("Super Subbu (2026) Season 1 Hindi Dubbed"),
   "videoUrl": "https://youtu.be/pQ1rZBoLHKY",
@@ -402,6 +424,7 @@ export const webSeriesVideos: Video[] = [
 ,
 {
   "id": "8022",
+  "addedAt": "2026-07-10T00:48:22.000Z",
   "title": "Raakh (Season 1) - Crime Thriller Series",
   "slug": generateSlug("Raakh Season 1 - Crime Thriller Series"),
   "videoUrl": "https://youtu.be/RdB_TgwLPqs",
@@ -417,6 +440,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
   "id": "8023",
+  "addedAt": "2026-07-10T00:48:22.000Z",
   "title": "Ab Hoga Hisab (Season 2) - Erotic Thriller",
   "slug": generateSlug("Ab Hoga Hisab Season 2 - Erotic Thriller"),
   "videoUrl": "https://youtu.be/iBUdP1aZulo",
@@ -433,6 +457,7 @@ export const webSeriesVideos: Video[] = [
 ,
 {
   "id": "8024",
+  "addedAt": "2026-07-10T01:05:48.000Z",
   "title": "Ab Hoga Hisab (Season 1) - Erotic Thriller",
   "slug": generateSlug("Ab Hoga Hisab Season 1 - Erotic Thriller"),
   "videoUrl": "https://youtu.be/smLuNFpnMfU",
@@ -449,6 +474,7 @@ export const webSeriesVideos: Video[] = [
 ,
 {
   "id": "8025",
+  "addedAt": "2026-07-10T01:25:08.000Z",
   "title": "Kota Factory (Season 1) - TVF Original",
   "slug": generateSlug("Kota Factory (Season 1) - TVF Original"),
   "videoUrl": "https://youtu.be/6kX7-X0H3sY",
@@ -465,6 +491,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
   "id": "8026",
+  "addedAt": "2026-07-10T01:25:08.000Z",
   "title": "Satrangi Badle Ka Khel (Season 1) - Erotic Thriller",
   "slug": generateSlug("Satrangi Badle Ka Khel Season 1 - Erotic Thriller"),
   "videoUrl": "https://youtu.be/placeholder_satrangi",
@@ -481,6 +508,7 @@ export const webSeriesVideos: Video[] = [
 ,
 {
   "id": "8027",
+  "addedAt": "2026-07-15T12:25:37.000Z",
   "title": "Mukhbir – The Story of a Spy (Season 1)",
   "slug": generateSlug("Mukhbir The Story of a Spy Season 1"),
   "videoUrl": "https://youtu.be/DHz6kJOdf90",
@@ -497,6 +525,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
   "id": "8028",
+  "addedAt": "2026-07-15T12:25:37.000Z",
   "title": "S Line (Season 1) - Korean Fantasy Thriller Series",
   "slug": generateSlug("S Line Season 1 - Korean Fantasy Thriller Series"),
   "videoUrl": "https://youtu.be/SKg4dviRqzY",
@@ -516,6 +545,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
   "id": "8029",
+  "addedAt": "2026-07-17T10:17:10.000Z",
   "title": "Raktanchal (Season 3) - Crime Drama Series",
   "slug": generateSlug("Raktanchal Season 3 Crime Drama Series"),
   "videoUrl": "https://youtu.be/D1J2zKsOL2o",
@@ -534,6 +564,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
   "id": "8030",
+  "addedAt": "2026-07-17T10:17:10.000Z",
   "title": "Human Vapor (Season 1) - Netflix Series",
   "slug": generateSlug("Human Vapor Season 1 Netflix Series"),
   "videoUrl": "https://youtu.be/7xe6dRKVAb8",
@@ -551,6 +582,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
   "id": "8031",
+  "addedAt": "2026-08-21T11:51:43.000Z",
   "title": "Musafir Cafe (Season 1) ",
   "slug": generateSlug("Musafir Cafe Season 1 Web Series"),
   "videoUrl": "https://youtu.be/CY603P-PeQQ",
@@ -568,6 +600,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8032",
+"addedAt": "2026-10-14T18:10:18.000Z",
 "title": "Family Full House with Rohit Sharma (2026) Season 1 - Game Show | Sony LIV",
 "slug": "family-full-house-with-rohit-sharma-2026",
 "videoUrl": "https://youtu.be/i9efNpdltks",
@@ -588,6 +621,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8033",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "The Boys (2019) Season 1 Hindi Dubbed - Superhero Action Series | Prime Video",
 "slug": "the-boys-season-1-2019-hindi-dubbed",
 "videoUrl": "https://youtu.be/M1bhOaLV4FU",
@@ -608,6 +642,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8034",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "The Last of Us (2023) Season 1 Hindi Dubbed - Post-Apocalyptic Drama Series | HBO",
 "slug": "the-last-of-us-season-1-2023-hindi-dubbed",
 "videoUrl": "https://youtu.be/uLtkt8BonwM",
@@ -628,6 +663,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8035",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "The Boys (2026) Season 5 Hindi Dubbed - Superhero Action Series | Prime Video",
 "slug": "the-boys-season-5-2026-hindi-dubbed",
 "videoUrl": "https://youtu.be/XNQbH1SDPRk",
@@ -648,6 +684,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8036",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Undekhi (2026) Season 4 - Crime Thriller Series | Sony LIV",
 "slug": "undekhi-season-4-2026",
 "videoUrl": "https://youtu.be/VNugYU3C71E",
@@ -668,6 +705,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8037",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Spider-Noir (2026) Season 1 Hindi Dubbed - Superhero Noir Series | Prime Video",
 "slug": "spider-noir-season-1-2026-hindi-dubbed",
 "videoUrl": "https://youtu.be/DfowFyDxUXo",
@@ -688,6 +726,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8038",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Gullak (2026) Season 5 - Family Comedy Drama Series | Sony LIV",
 "slug": "gullak-season-5-2026",
 "videoUrl": "https://youtu.be/yhxf4SYE1gg",
@@ -708,6 +747,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8039",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "India's Got Latent (2026) Season 2 - Comedy Talent Show | YouTube & Netflix",
 "slug": "indias-got-latent-season-2-2026",
 "videoUrl": "https://youtu.be/eHTXQW58WhA",
@@ -728,6 +768,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8040",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Thukra Ke Mera Pyaar (2026) Season 2 - Romantic Drama Series | JioHotstar",
 "slug": "thukra-ke-mera-pyaar-season-2-2026",
 "videoUrl": "https://youtu.be/3nElVHkpuKo",
@@ -748,6 +789,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8041",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Heroes (2007) Season 2 Hindi Dubbed - Superhero Sci-Fi Drama Series | NBC",
 "slug": "heroes-season-2-2007-hindi-dubbed",
 "videoUrl": "https://youtu.be/OjbvXN5QRVA",
@@ -768,6 +810,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8042",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "The East Palace (2026) Season 1 Hindi Dubbed - Korean Dark Fantasy Series | Netflix",
 "slug": "the-east-palace-season-1-2026-hindi-dubbed",
 "videoUrl": "https://youtu.be/wBUkNE1l9DU",
@@ -788,6 +831,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8043",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Hathras – 16 Days (2026) Season 1 - Docu-Series | ZEE5",
 "slug": "hathras-16-days-season-1-2026",
 "videoUrl": "https://youtu.be/QQQ1mLi6M3M",
@@ -808,6 +852,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8044",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Looteri Dulhan (2026) Season 1 - Crime Thriller Series | Hungama OTT",
 "slug": "looteri-dulhan-season-1-2026",
 "videoUrl": "https://youtu.be/sEEhb5-JfAc",
@@ -828,6 +873,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8045",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Isakapatnam (2026) Season 1 Hindi Dubbed - Telugu Crime Drama Series | Prime Video",
 "slug": "isakapatnam-season-1-2026-hindi-dubbed",
 "videoUrl": "https://youtu.be/nxbQEYBGb_4",
@@ -848,6 +894,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8046",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Perfect Family (2026) Season 2 - Family Comedy Drama Series | Sony LIV",
 "slug": "perfect-family-season-2-2026",
 "videoUrl": "https://youtu.be/P5JxL3-Om3k",
@@ -868,6 +915,7 @@ export const webSeriesVideos: Video[] = [
 },
 {
 "id": "8047",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "The Map of Longing (2026) Season 1 Hindi Dubbed - Spanish Romantic Drama Series | Netflix",
 "slug": "the-map-of-longing-season-1-2026-hindi-dubbed",
 "videoUrl": "https://youtu.be/qpXDZA7f3N4",

@@ -20,6 +20,7 @@ export interface Video {
   director?: string;
   cast?: string[];
   keywords?: string[];
+  addedAt?: string;
 }
 
 /* ---------------- SLUG HELPER ---------------- */
@@ -41,6 +42,7 @@ export const bollywoodVideos: Video[] = [
 
  {
   "id": "2001",
+  "addedAt": "2026-05-10T08:21:04.000Z",
   "title": "Bhooth Bangla Horror Comedy Movie",
   "slug": "bhooth-bangla-1965-horror-comedy-movie-mehmood-full-movie-hd",
   "videoUrl": "https://youtu.be/WgAOa4bvOB4",
@@ -56,6 +58,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2002",
+  "addedAt": "2026-05-11T17:28:53.000Z",
   "title": "Dhurandhar: The Revenge",
   "slug": "dhurandhar-the-revenge",
   "videoUrl": "https://youtu.be/NHk7scrb_9I",
@@ -73,6 +76,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
     "id": "2004",
+    "addedAt": "2026-05-10T08:21:04.000Z",
     "title": "Sister Midnight - Mystery Thriller | Full Movie HD",
     "slug": "sister-midnight-mystery-thriller-full-movie-hd",
     "videoUrl": "https://youtu.be/g2hiY3SNplw",
@@ -88,6 +92,7 @@ export const bollywoodVideos: Video[] = [
   },
    {
     "id": "2005",
+    "addedAt": "2026-05-10T08:21:04.000Z",
     "title": "120 Bahadur - Action Drama Movie | Full Movie HD",
     "slug": "120-bahadur-action-drama-movie-full-movie-hd",
     "videoUrl": "https://youtu.be/52eEa2nrs4E", "downloadUrl": "https://t.me/onemoviedownloa/44",
@@ -103,6 +108,7 @@ export const bollywoodVideos: Video[] = [
   },
     {
       "id": "2006",
+      "addedAt": "2026-05-10T08:21:04.000Z",
       "title": "Border 2 (2026) - Indian War Drama Movie | Sunny Deol | Full Movie HD",
       "slug": "border-2-2026-indian-war-drama-movie-sunny-deol-full-movie-hd", "videoUrl": "https://youtu.be/XXWFhs84tkQ",
       "downloadUrl": "https://t.me/onemoviedownloa/38", "poster": "https://m.media-amazon.com/images/M/MV5BYjdhNmE4MTItYjZlYi00MjQ2LTliOGMtN2ViMzU0M2M3ODMyXkEyXkFqcGc@._V1_FMjpg_UY1973_.jpg",
@@ -117,6 +123,7 @@ export const bollywoodVideos: Video[] = [
     },
     {
       "id": "2007",
+      "addedAt": "2026-05-10T08:21:04.000Z",
       "title": "Mardaani 2 (2019) - Crime Thriller Movie | Rani Mukerji | Full Movie HD",
       "slug": "mardaani-2-2019-crime-thriller-movie-rani-mukerji-full-movie-hd", "videoUrl": "https://youtu.be/dKeRIOA28Jk",
       "downloadUrl": "https://t.me/HINDIHDNEWMOVIES12/269",
@@ -132,6 +139,7 @@ export const bollywoodVideos: Video[] = [
     },
     {
       "id": "2008",
+      "addedAt": "2026-05-10T08:21:04.000Z",
       "title": "Gully Boy (2019) - Rap & Street Life Drama | Ranveer Singh | Full Movie HD",
       "slug": "gully-boy-2019-rap-street-life-drama-ranveer-singh-full-movie-hd",
       "videoUrl": "https://youtu.be/JfbxcD6biOk", "downloadUrl": "https://t.me/HINDIHDNEWMOVIES12/292", "poster": "https://m.media-amazon.com/images/M/MV5BOWFkY2M3NDctZGEzMS00M2VmLTgzMTAtZWFiNjVmZDc5NWFjXkEyXkFqcGc@._V1_FMjpg_UX731_.jpg",
@@ -146,6 +154,7 @@ export const bollywoodVideos: Video[] = [
     },
     {
       "id": "2009",
+      "addedAt": "2026-05-10T08:21:04.000Z",
       "title": "Gulabo Sitabo (2020) - Comedy Drama Movie | Amitabh Bachchan | Ayushmann Khurrana | Full Movie HD", "slug": "gulabo-sitabo-2020-comedy-drama-movie-amitabh-bachchan-ayushmann-khurrana-full-movie-hd",
       "videoUrl": "https://youtu.be/o0qeQ_yHqtA", "downloadUrl": "https://t.me/onemoviedownloa/29", "poster": "https://m.media-amazon.com/images/M/MV5BYmQ1OGYyN2QtYzUwMS00ODRlLTk2YTQtNDFkYjZhMDExZTQyXkEyXkFqcGc@._V1_FMjpg_UX800_.jpg",
       "description": "Gulabo Sitabo (2020) एक बेहद ही अनोखी, व्यंग्यात्मक (satirical) और स्लाइस-ऑफ-लाइफ कॉमेडी-ड्रामा फिल्म है, जो लखनऊ शहर की संकरी गलियों और नवाबी संस्कृति के बीच पनपते इंसानी लालच, स्वार्थ और रिश्तों की एक बहुत ही यथार्थवादी कहानी पेश करती है। इस फिल्म का निर्देशन शूजीत सरकार ने किया है और इसकी कहानी जूही चतुर्वेदी ने लिखी है। फिल्म का नाम कठपुतलियों के एक पारंपरिक खेल 'गुलाबो-सिताबो' से लिया गया है, जिसमें दो औरतें हमेशा आपस में लड़ती रहती हैं। बिल्कुल इसी तरह, इस फिल्म में भी दो मुख्य किरदार हैं जो एक-दूसरे के जानी दुश्मन हैं और दिन-रात एक पुरानी, जर्जर हवेली को लेकर झगड़ते रहते हैं।\n\nकहानी के केंद्र में है 'फातिमा महल' नाम की एक 100 साल पुरानी, विशाल लेकिन बेहद खस्ताहाल हवेली, जो लखनऊ के बीचों-बीच स्थित है। इस हवेली की असली मालकिन हैं 95 वर्षीय फातिमा बेगम (फर्रुख जफर), जो हवेली से भी ज्यादा पुरानी और रहस्यमयी लगती हैं। फातिमा बेगम का पति है 78 साल का चुन्नन 'मिर्ज़ा' नवाब (अमिताभ बच्चन), जो उम्र में अपनी पत्नी से 17 साल छोटा है। मिर्ज़ा एक बेहद लालची, कंजूस, चिड़चिड़ा और हमेशा झुका हुआ चलने वाला बूढ़ा आदमी है, जिसने फातिमा बेगम से शादी ही सिर्फ इस लालच में की थी कि एक दिन उसके मरने के बाद यह करोड़ों की हवेली उसके नाम हो जाएगी। लेकिन बेगम हैं कि मरने का नाम ही नहीं ले रही हैं। मिर्ज़ा का दिनभर का एक ही काम है—हवेली की रखवाली करना, उसमें से चोरी-छिपे छोटे-मोटे बल्ब या कबाड़ बेचकर पैसे कमाना, और अपने किरायेदारों से लड़ना।\n\nहवेली में कई पीढ़ियों से कुछ किरायेदार रहते आ रहे हैं, जो किराया मात्र 30 रुपये महीना देते हैं। इनमें से सबसे अड़ियल और मुंहफट किरायेदार है बांके रस्तोगी (आयुष्मान खुराना)। बांके एक गरीब चक्की वाला है, जिसके ऊपर अपनी तीन बहनों और माँ की जिम्मेदारी है। वह मिर्ज़ा से सख्त नफरत करता है और उसे महीनों तक वह 30 रुपये किराया भी नहीं देता। मिर्ज़ा और बांके के बीच हर दिन एक युद्ध होता है। मिर्ज़ा चाहता है कि बांके हवेली खाली कर दे, और बांके हवेली पर अपना पुश्तैनी हक जताता है। दोनों एक-दूसरे को नीचा दिखाने और परेशान करने का कोई भी मौका नहीं छोड़ते—कभी बांके हवेली की दीवार तोड़ देता है, तो कभी मिर्ज़ा बांके के कमरे की बिजली और पानी काट देता है।\n\nकहानी में एक बड़ा और मजेदार ट्विस्ट तब आता है जब इस लड़ाई में दो नए किरदारों की एंट्री होती है। पहला है पुरातत्व विभाग (Archaeological Survey of India) का एक चालाक अफसर, ज्ञानेश शुक्ला (विजय राज)। ज्ञानेश बांके को भड़काता है कि यह हवेली एक ऐतिहासिक धरोहर है और अगर बांके सरकार की मदद से इसे हेरिटेज साइट घोषित करवा दे, तो सरकार मिर्ज़ा को बेदखल कर देगी और बांके को एक पक्का फ्लैट मिल जाएगा। बांके इस लालच में आ जाता है और ज्ञानेश के साथ मिलकर हवेली को सरकारी कब्जे में देने की साजिश रचने लगता है।\n\nदूसरी तरफ, जब मिर्ज़ा को इस बात की भनक लगती है, तो वह हवेली को बचाने के लिए एक लालची और शातिर स्थानीय वकील, क्रिस्टोफर क्लार्क (बृजेंद्र काला) के पास पहुंच जाता है। क्रिस्टोफर मिर्ज़ा को सलाह देता है कि इससे पहले कि सरकार हवेली पर कब्जा करे, वह इसे किसी बड़े बिल्डर को बेच दे। लेकिन समस्या यह है कि हवेली बेचने के लिए फातिमा बेगम के अंगूठे के निशान या उनके मरने का सर्टिफिकेट चाहिए। मिर्ज़ा बेगम के अंगूठे का निशान लेने की कई बेवकूफाना कोशिशें करता है, लेकिन बेगम अपनी उम्र के बावजूद मिर्ज़ा से ज्यादा चालाक हैं। अब हवेली को लेकर एक तरफ बांके और पुरातत्व विभाग हैं, तो दूसरी तरफ मिर्ज़ा और बिल्डर। हर कोई दूसरे को धोखा देने और करोड़ों की संपत्ति हड़पने के सपने देख रहा है।\n\nजैसे-जैसे फिल्म आगे बढ़ती है, लालच का यह खेल और भी उलझता जाता है। मिर्ज़ा और बांके अपने-अपने दांव खेलते हैं, और ऐसा लगने लगता है कि अंत में जो भी जीतेगा, उसे फातिमा महल मिल जाएगा। लेकिन फिल्म का क्लाइमैक्स पूरी तरह से अप्रत्याशित (unpredictable) और एक शानदार मास्टरस्ट्रोक है।\n\nक्लाइमैक्स में, जिस दिन हवेली की डील होने वाली होती है और पुरातत्व विभाग वाले हवेली पर कब्जा करने आते हैं, तभी पता चलता है कि फातिमा बेगम घर पर नहीं हैं। बेगम ने चुपचाप अपने एक पुराने प्रेमी (अब्दुल रहमान) के साथ भागने की योजना बना ली थी। सिर्फ इतना ही नहीं, बेगम ने हवेली को सिर्फ एक रुपये में अपने उसी पुराने प्रेमी के नाम कर दिया है और जाते-जाते हवेली के सारे कीमती सामान और कागजात अपने साथ ले गई हैं।\n\nअंत में मिर्ज़ा, बांके, वकील और पुरातत्व अफसर—सब के सब मुंह ताकते रह जाते हैं। फातिमा महल किसी का नहीं होता। मिर्ज़ा, जिसने हवेली के लालच में अपनी पूरी जवानी और जिंदगी एक बूढ़ी औरत की गुलामी में निकाल दी, अंत में सड़क पर आ जाता है। वहीं बांके और बाकी किरायेदारों को भी हवेली छोड़कर जाना पड़ता है। फिल्म का अंत एक बहुत ही गहरा दार्शनिक संदेश छोड़ता है कि इंसान भौतिक चीजों (materialistic things) के लालच में अपनी पूरी जिंदगी बर्बाद कर देता है, लेकिन अंत में ये चीजें किसी की सगी नहीं होतीं। 'Gulabo Sitabo' एक शानदार, हास्यपूर्ण और दिल को छू लेने वाली फिल्म है, जो अमिताभ बच्चन और आयुष्मान खुराना के बेहतरीन अभिनय और लखनऊ की देसी महक के लिए हमेशा याद की जाएगी।",
@@ -159,6 +168,7 @@ export const bollywoodVideos: Video[] = [
     },
     {
       "id": "2011",
+      "addedAt": "2026-05-10T08:21:04.000Z",
       "title": "Chhalaang (2020) - Sports Comedy Drama Movie | Rajkummar Rao | Full Movie HD", "slug": "chhalaang-2020-sports-comedy-drama-movie-rajkummar-rao-full-movie-hd",
       "videoUrl": "https://youtu.be/BY-0SbSF2dE", "downloadUrl": "https://t.me/onemoviedownloa/28", "poster": "https://m.media-amazon.com/images/M/MV5BYjhhNjk3OTUtNjcxMS00YWIyLWJjZmMtMWZmNjU2MDcxNjc5XkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg",
       "description": "Chhalaang (2020) एक बेहद ही प्रेरणादायक, हल्की-फुल्की और दिल को छू लेने वाली स्पोर्ट्स कॉमेडी-ड्रामा फिल्म है, जो हरियाणा के एक छोटे से शहर की पृष्ठभूमि पर आधारित है। फिल्म की कहानी सिर्फ खेलों के बारे में नहीं है, बल्कि यह एक इंसान के आत्म-सम्मान, अपनी कमियों को पहचानने और जीवन में एक 'छलांग' लगाने की कहानी है। फिल्म के मुख्य किरदार का नाम मोंटू (राजकुमार राव) है, जो एक सरकारी स्कूल में पीटी (Physical Training) टीचर है। मोंटू स्वभाव से बेहद आलसी, लापरवाह और अपने काम के प्रति पूरी तरह से गैर-जिम्मेदार है। उसके लिए पीटी क्लास का मतलब सिर्फ बच्चों को मैदान में खेलने के लिए छोड़ देना है। उसे अपने भविष्य की कोई चिंता नहीं है और वह अपने पिता के प्रभाव के कारण नौकरी में बिना कोई मेहनत किए बना हुआ है।\n\nमोंटू की जिंदगी में तब एक नया मोड़ आता है जब स्कूल में एक नई और बेहद खूबसूरत कंप्यूटर टीचर, नीलिमा ऊर्फ नीलू (नुसरत भरूचा) की एंट्री होती है। नीलू एक स्वतंत्र, समझदार और बेबाक विचारों वाली लड़की है। मोंटू को पहली नजर में ही नीलू से प्यार हो जाता है। वह नीलू को इम्प्रेस करने की पूरी कोशिश करता है और धीरे-धीरे दोनों के बीच एक अच्छी दोस्ती भी हो जाती है। मोंटू को लगने लगता है कि उसकी जिंदगी अब पूरी तरह से सेट है और उसे बस ऐसे ही दिन गुजारने हैं।\n\nलेकिन कहानी में असली ट्विस्ट तब आता है जब स्कूल में एक नए, बेहद अनुशासित और कड़क सीनियर पीटी टीचर, इंदर मोहन सिंह (मोहम्मद जीशान अय्यूब) की नियुक्ति होती है। मिस्टर सिंह न सिर्फ खेल के मामलों में मोंटू से कहीं ज्यादा योग्य और पेशेवर हैं, बल्कि उनका व्यक्तित्व भी बहुत प्रभावशाली है। सिंह के आते ही स्कूल में मोंटू की बची-खुची अहमियत भी खत्म होने लगती है। इतना ही नहीं, मोंटू को अपना पीटी टीचर का मुख्य पद छोड़कर मिस्टर सिंह का असिस्टेंट बनना पड़ता है, जो मोंटू के अहंकार (ego) को गहरी चोट पहुंचाता है। हालात तब और बिगड़ जाते हैं जब मोंटू को लगता है कि मिस्टर सिंह नीलू के भी करीब आ रहे हैं और नीलू भी उनकी काबिलियत से प्रभावित है।\n\nमोंटू अपनी नौकरी, अपना आत्म-सम्मान और अपना प्यार सब कुछ खोता हुआ महसूस करता है। इसी हताशा और गुस्से में, मोंटू मिस्टर सिंह को एक खुली चुनौती दे डालता है। वह शर्त रखता है कि दोनों टीचर्स अपनी-अपनी एक स्पोर्ट्स टीम बनाएंगे और दोनों टीमों के बीच तीन खेलों (बास्केटबॉल, 400 मीटर रिले रेस और कबड्डी) की एक प्रतियोगिता होगी। जो भी यह मुकाबला जीतेगा, वह स्कूल का मुख्य पीटी टीचर रहेगा और हारने वाले को स्कूल छोड़ना पड़ेगा। मिस्टर सिंह इस चुनौती को स्वीकार कर लेते हैं और स्कूल के सबसे बेहतरीन, मजबूत और एथलेटिक बच्चों को अपनी टीम में चुन लेते हैं।\n\nअब मोंटू के पास सिर्फ वे बच्चे बचते हैं जो शारीरिक रूप से कमजोर हैं, जिन्हें खेलों में कोई दिलचस्पी नहीं है, या जिन्हें कभी खेलने का मौका ही नहीं मिला। यहीं से मोंटू के अंदर का सोया हुआ असली शिक्षक जागता है। वह पहली बार अपनी जिंदगी में किसी चीज को गंभीरता से लेता है। नीलू और अपने दोस्त शुक्ला जी (सौरभ शुक्ला) की मदद से मोंटू इन कमजोर और आत्मविश्वास खो चुके बच्चों को ट्रेनिंग देना शुरू करता है। मोंटू की ट्रेनिंग के तरीके बिल्कुल देसी और अनोखे होते हैं। वह बच्चों को कुत्तों और गायों के पीछे दौड़ाकर उनकी स्पीड बढ़ाता है, खेतों में काम करवाकर उनकी ताकत बढ़ाता है और उन्हें शारीरिक के साथ-साथ मानसिक रूप से भी मजबूत बनाता है। इस दौरान फिल्म यह भी बहुत ही सुंदर संदेश देती है कि लड़कियों को भी खेलों में लड़कों के बराबर मौका मिलना चाहिए।\n\nफिल्म का क्लाइमैक्स बेहद रोमांचक और भावनाओं से भरा हुआ है। दोनों टीमों के बीच होने वाला मुकाबला कांटे की टक्कर का होता है। मिस्टर सिंह की टीम तकनीकी रूप से बहुत मजबूत है, लेकिन मोंटू की टीम के पास जुनून और कुछ कर गुजरने की आग है। बास्केटबॉल और रिले रेस के बाद मुकाबला आखिरी खेल, कबड्डी पर आ टिकता है। कबड्डी के मैच में मोंटू की टीम अपने जज्बे और शानदार टीम वर्क से मिस्टर सिंह की मजबूत टीम को धूल चटा देती है।\n\nअंत में मोंटू न सिर्फ मुकाबला जीतता है, बल्कि वह मिस्टर सिंह, स्कूल और अपने माता-पिता का सम्मान भी जीत लेता है। नीलू भी मोंटू की इस मेहनत और लगन को देखकर उसे अपना जीवनसाथी चुन लेती है। 'Chhalaang' सिर्फ एक हार-जीत की कहानी नहीं है, बल्कि यह सिखाती है कि जब कोई इंसान अपनी पूरी क्षमता को पहचान लेता है और ठान लेता है, तो वह जीवन में कोई भी बड़ी 'छलांग' लगा सकता है।",
@@ -172,6 +182,7 @@ export const bollywoodVideos: Video[] = [
     },
     {
       "id": "2012",
+      "addedAt": "2026-05-10T08:21:04.000Z",
       "title": "Bhoot Part One: The Haunted Ship (2020) - Horror Thriller Movie | Vicky Kaushal | Full Movie HD", "slug": "bhoot-part-one-the-haunted-ship-2020-horror-thriller-movie-vicky-kaushal-full-movie-hd",
       "videoUrl": "https://youtu.be/ELcRnZ3kP08", "downloadUrl": "https://t.me/onemoviedownloa/27", "poster": "https://m.media-amazon.com/images/M/MV5BMGI0ZDNlYmItNTdlOS00ZWUxLTliNzUtZTdjMTkzOTYwODYwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "description": "Bhoot Part One: The Haunted Ship (2020) बॉलीवुड की एक बेहतरीन और रोंगटे खड़े कर देने वाली हॉरर-थ्रिलर फिल्म है, जो एक सच्ची घटना से प्रेरित बताई जाती है। फिल्म की कहानी डरावने भूत-प्रेत और इंसानी जज्बातों के बीच के मानसिक द्वंद्व को बहुत ही गहराई से पेश करती है। कहानी की शुरुआत मुंबई के जुहू बीच से होती है, जहां एक रात अचानक 'सी बर्ड' (Sea Bird) नाम का एक विशालकाय और वर्षों से लापता पानी का कमर्शियल जहाज आकर फंस जाता है। इस जहाज पर कोई भी क्रू मेंबर या इंसान मौजूद नहीं होता। यह एक पूरी तरह से वीरान और खौफनाक जहाज है, जिसे देखकर ही लोगों के मन में खौफ पैदा हो जाता है और मीडिया में इसके भूतिया होने की खबरें फैलने लगती हैं।\n\nइस जहाज के मलबे की जांच और इसे जल्द से जल्द वहां से हटाने की जिम्मेदारी एक शिपिंग ऑफिसर पृथ्वी प्रकाशान (विक्की कौशल) को सौंपी जाती है। पृथ्वी एक बेहद बहादुर लेकिन मानसिक रूप से टूटा हुआ इंसान है। उसकी जिंदगी में एक बहुत बड़ा दर्द छिपा है। कुछ समय पहले एक रिवर-राफ्टिंग दुर्घटना में उसने अपनी प्यारी पत्नी (भूमि पेडनेकर) और अपनी छोटी बच्ची को खो दिया था। वह खुद को उनकी मौत का जिम्मेदार मानता है और इसी अपराधबोध (guilt) के कारण उसे अक्सर मतिभ्रम (hallucinations) होते हैं। उसे हर जगह अपनी पत्नी और बच्ची दिखाई देती हैं। अपनी मानसिक शांति खो चुका पृथ्वी जब 'सी बर्ड' जहाज के अंदर कदम रखता है, तो उसे पहली ही नजर में अहसास हो जाता है कि यह सिर्फ एक खाली जहाज नहीं है, बल्कि इसके अंदर कुछ बेहद डरावना और अलौकिक (supernatural) छिपा हुआ है।\n\nजैसे-जैसे पृथ्वी जहाज की अंधेरी, जंग लगी और खौफनाक गैलरियों में गहराई तक जाता है, उसे वहां अजीबोगरीब आवाजें सुनाई देती हैं और भयानक परछाइयां दिखाई देती हैं। उसे एक दीवार के पीछे से एक छोटी लड़की की आवाज भी सुनाई देती है। जांच-पड़ताल करते हुए पृथ्वी को जहाज की एक लॉगबुक और कुछ पुराने कैसेट्स मिलते हैं, जिनसे जहाज के उस भयानक अतीत का पर्दा उठता है। पता चलता है कि कई साल पहले, इस जहाज का कप्तान एक पागल और अंधविश्वासी इंसान था जो काले जादू (black magic) पर विश्वास करता था। उसने किसी तांत्रिक क्रिया को पूरा करने के लिए अपनी ही पत्नी और पूरे क्रू को बेरहमी से मार डाला था, और बाद में खुद भी उसी जहाज पर मर गया था। लेकिन उस कप्तान की एक छोटी बेटी, मीरा, किसी तरह बच गई थी और वह सालों से उसी जहाज में कहीं फंसी हुई है, और कप्तान की क्रूर आत्मा आज भी उस जहाज पर राज करती है जो किसी को भी वहां से जिंदा वापस नहीं जाने देती।\n\nपृथ्वी, जो अपनी खुद की बेटी को डूबने से नहीं बचा पाया था, अब उस अनजान बच्ची मीरा को बचाने को अपने जीवन का एकमात्र मकसद बना लेता है। उसे लगता है कि अगर वह इस बच्ची को बचा लेगा, तो शायद उसे अपने जीवन के अपराधबोध से मुक्ति मिल जाएगी। वह जहाज के अंदर कई बार जाता है, लेकिन हर बार बुरी आत्माएं उस पर जानलेवा हमला करती हैं। पुलिस और पृथ्वी के दोस्त उसे उस मनहूस जहाज से दूर रहने की सलाह देते हैं, लेकिन पृथ्वी किसी की नहीं सुनता। वह एक पैरानॉर्मल एक्सपर्ट (आशुतोष राणा) की मदद लेता है ताकि वह उस प्रेत से लड़ सके और बच्ची को बाहर निकाल सके।\n\nफिल्म का क्लाइमैक्स रोंगटे खड़े कर देने वाला है। पृथ्वी जहाज के सबसे अंधेरे और निचले हिस्से (Engine Room) में पहुंचता है, जहां कप्तान का भूत पूरी ताकत के साथ मौजूद होता है। वहां एक बेहद खौफनाक और हिंसक संघर्ष होता है। हवा में उड़ती चीजें, पानी से भरता हुआ जहाज और हर तरफ गूंजती डरावनी आवाजें दर्शकों को डरा देती हैं। अपनी जान पर खेलकर और अपनी आखिरी सांस तक लड़कर, पृथ्वी आखिरकार उस बच्ची मीरा को उस भूतिया जहाज से सुरक्षित बाहर निकालने में कामयाब हो जाता है।\n\nयह फिल्म सिर्फ डराने का काम नहीं करती, बल्कि यह एक इंसान के दुःख, उसके डर और उसके प्रायश्चित (redemption) की एक बहुत ही भावुक कहानी भी है। विक्की कौशल का शानदार अभिनय, डरावना बैकग्राउंड म्यूजिक और जहाज की रहस्यमयी सिनेमैटोग्राफी 'Bhoot Part One' को एक परफेक्ट हॉरर फिल्म बनाती है। अगर आपको रहस्य, डर और सस्पेंस से भरी फिल्में पसंद हैं, तो यह फिल्म आपको अपनी सीट से हिलने नहीं देगी।",
@@ -185,6 +196,7 @@ export const bollywoodVideos: Video[] = [
     },
     {
       "id": "2013",
+      "addedAt": "2026-05-10T08:21:04.000Z",
       "title": "Arjun Patiala (2019) - Comedy Crime Movie | Diljit Dosanjh | Full Movie HD", "slug": "arjun-patiala-2019-comedy-crime-movie-diljit-dosanjh-full-movie-hd",
       "videoUrl": "https://youtu.be/nR7ETMS7Eo0", "downloadUrl": "https://t.me/onemoviedownloa/26", "poster": "https://m.media-amazon.com/images/M/MV5BOWJhYWIxOGMtOTJkZS00YjdjLThiMjAtNTI4ZmRhYjM3NGJjXkEyXkFqcGc@._V1_FMjpg_UX830_.jpg",
       "description": "Arjun Patiala (2019) बॉलीवुड की एक बिल्कुल ही अलग तरह की 'स्पूफ कॉमेडी' (Spoof Comedy) और क्राइम-ड्रामा फिल्म है, जो खुद बॉलीवुड फिल्मों की घिसी-पिटी कहानियों, फॉर्मूलों (cliches) और पुलिस ड्रामा फिल्मों का जमकर मजाक उड़ाती है। यह फिल्म दर्शकों को एक मजेदार और बेतुकी दुनिया में ले जाती है, जहां कोई भी चीज सीरियस नहीं है और हर डायलॉग में एक व्यंग्यात्मक पंचलाइन छिपी है। फिल्म की शुरुआत एक मेटा-नैरेटिव (meta-narrative) से होती है, जहां एक संघर्षरत फिल्म निर्देशक एक प्रोड्यूसर (पंकज त्रिपाठी) के पास अपनी एक स्क्रिप्ट की कहानी सुनाने आता है। वह बड़े ही नाटकीय अंदाज में बताता है कि कैसे उसकी फिल्म में एक दबंग हीरो होगा, एक खूंखार विलेन होगा, एक आइटम नंबर होगा और ढेर सारा बेसिरपैर का ड्रामा होगा। और यहीं से शुरू होती है हमारी मुख्य कहानी।\n\nकहानी के केंद्र में है हमारा हीरो, अर्जुन पटियाला (दिलजीत दोसांझ), जो दिखने में बेहद हैंडसम और फिट है लेकिन अपनी हरकतों से बिल्कुल अनाड़ी और मजाकिया है। अर्जुन एक पुलिस ऑफिसर है, जिसे पंजाब के फरीदकोट का नया एसएचओ (SHO) बनाकर भेजा जाता है। अर्जुन कोई आम पुलिसवाला नहीं है, जिसे कानून की किताबों की परवाह हो। उसका काम करने का तरीका बिल्कुल अनोखा और जुगाड़ से भरा है। उसे गुंडों के पीछे दौड़कर उन्हें पकड़ना या जेल में डालना पसंद नहीं है; इसके बजाय, वह चाहता है कि शहर के सारे गुंडे आपस में ही लड़कर मर जाएं ताकि पुलिस को कोई मेहनत न करनी पड़े। फरीदकोट पहुंचते ही अर्जुन की मुलाकात अपने जूनियर और साइडकिक, ओंकार (वरुण शर्मा) से होती है। ओंकार फिल्म का मुख्य कॉमेडी एलिमेंट है, जो अर्जुन की हर बेवकूफी भरी योजना में उसका अंधा भक्त बनकर साथ देता है।\n\nफरीदकोट शहर में अलग-अलग तरह के तीन खूंखार गुंडों के गैंग सक्रिय हैं, जो शहर में आतंक फैलाते हैं। अर्जुन अपनी चालाकी और ओंकार की मदद से एक 'मास्टरप्लान' बनाता है। वह तीनों गैंग्स के बीच जानबूझकर गलतफहमियां पैदा करता है, कभी एक को दूसरे के खिलाफ भड़काता है तो कभी झूठी खबरें फैलाता है, ताकि वे एक-दूसरे के जानी दुश्मन बन जाएं। अर्जुन की यह बेतुकी योजना काम भी करने लगती है, गुंडे आपस में लड़ने लगते हैं और शहर का क्राइम ग्राफ तेजी से नीचे गिरने लगता है।\n\nइसी बीच कहानी में रोमांस का तड़का लगता है जब अर्जुन की मुलाकात एक खूबसूरत और तेजतर्रार क्राइम जर्नलिस्ट, रितु रंधावा (कृति सेनन) से होती है। रितु एक ईमानदार पत्रकार है, जो शहर में चल रही गैंगवार की सच्चाई दुनिया के सामने लाना चाहती है। अर्जुन को पहली नजर में ही रितु से प्यार हो जाता है। वह रितु को इम्प्रेस करने के लिए उसे अपनी बहादुरी की झूठी कहानियां सुनाता है और खुद को शहर का सबसे बड़ा 'सुपरकॉप' साबित करने की कोशिश करता है। फिल्म में दोनों के बीच की लव केमिस्ट्री बहुत ही मजेदार और हास्यपूर्ण है। बॉलीवुड के टिपिकल रोमांस का मजाक उड़ाते हुए फिल्म में रोमांटिक गानों और हवा में उड़ते दुपट्टों को बहुत ही व्यंग्यात्मक तरीके से पेश किया गया है।\n\nजैसे-जैसे कहानी आगे बढ़ती है, गुंडों को अर्जुन पटियाला के असली खेल के बारे में पता चल जाता है। उन्हें समझ आ जाता है कि यह पुलिसवाला उन्हें बेवकूफ बनाकर आपस में लड़वा रहा है। इसके बाद सभी गुंडे अपने आपसी झगड़े भूलकर एक हो जाते हैं और अर्जुन पटियाला की जान के पीछे पड़ जाते हैं। रितु को भी जब अर्जुन की इस धोखाधड़ी की सच्चाई पता चलती है, तो वह उससे नाराज हो जाती है। अब अर्जुन के सामने दोहरी चुनौती है—एक तरफ उसे अपनी जान बचानी है और शहर को गुंडों से हमेशा के लिए मुक्त करना है, और दूसरी तरफ उसे रितु का प्यार और भरोसा वापस पाना है।\n\nफिल्म का क्लाइमैक्स बहुत ही लाउड, ओवर-द-टॉप और मजेदार है, जहां अर्जुन और ओंकार गुंडों का सामना करते हैं। गोलियों की बारिश, हवा में बेमतलब उड़ती गाड़ियां और अजीबोगरीब फाइट सीन्स दर्शकों को खूब हंसाते हैं, क्योंकि यह सब हॉलीवुड और बॉलीवुड एक्शन सीन्स की सीधी पैरोडी है। अंत में अर्जुन सभी गुंडों का खात्मा कर देता है, रितु को मना लेता है और एक असली पुलिसवाला बन जाता है। 'Arjun Patiala' उन लोगों के लिए एक परफेक्ट फिल्म है जो दिमाग को घर पर रखकर सिर्फ हंसने और मनोरंजन के लिए सिनेमा देखना पसंद करते हैं। इसके मजेदार डायलॉग्स, दिलजीत और वरुण शर्मा की शानदार कॉमिक टाइमिंग इसे एक फुल-ऑन मसाला एंटरटेनर बनाती है।",
@@ -198,6 +210,7 @@ export const bollywoodVideos: Video[] = [
     },
     {
       "id": "2014",
+      "addedAt": "2026-05-10T08:21:04.000Z",
       "title": "Motichoor Chaknachoor (2019) - Romantic Comedy Movie | Nawazuddin Siddiqui | Full Movie HD",
       "slug": "motichoor-chaknachoor-2019-romantic-comedy-movie-nawazuddin-siddiqui-full-movie-hd", "videoUrl": "https://youtu.be/U6J_Pkqk5Fs",
       "downloadUrl": "https://t.me/onemoviedownloa/25", "poster": "https://m.media-amazon.com/images/M/MV5BOGE4MjQwZWYtYjkzMC00YzE0LWFkMGYtMmVhZWQ0ODI2MmU4XkEyXkFqcGc@._V1_FMjpg_UX709_.jpg",
@@ -212,6 +225,7 @@ export const bollywoodVideos: Video[] = [
     },
       {
     "id": "2015",
+    "addedAt": "2026-05-10T08:21:04.000Z",
     "title": "Jolly LLB 3 (2025) -  Drama Movie | Akshay Kumar & Arshad Warsi",
     "slug": generateSlug("Jolly LLB 3 (2025) -  Drama Movie | Akshay Kumar & Arshad Warsi"),
     "videoUrl": "https://youtu.be/eSgJ8PfSUSk", "downloadUrl": "https://t.me/onemoviedownloa/32",
@@ -227,6 +241,7 @@ export const bollywoodVideos: Video[] = [
   },
   {
     "id": "2016",
+    "addedAt": "2026-05-10T08:21:04.000Z",
     "title": "Jolly LLB 2 (2017) - Courtroom Drama | Akshay Kumar | Full Movie HD",
     "slug": generateSlug("Jolly LLB 2 (2017) - Courtroom Drama | Akshay Kumar | Full Movie HD"), "videoUrl": "https://youtu.be/q07SQFmL4rM",
     "downloadUrl": "https://t.me/onemoviedownloa/31", "poster": "https://m.media-amazon.com/images/M/MV5BYjcwODQ4ZDgtODQyZS00MmE1LWE4ZjQtZjQ5MWQzYTMyNDIwXkEyXkFqcGc@._V1_FMjpg_UX720_.jpg",
@@ -241,6 +256,7 @@ export const bollywoodVideos: Video[] = [
   },
   {
     "id": "2017",
+    "addedAt": "2026-05-10T08:21:04.000Z",
     "title": "Ramaiya Vastavaiya (2013) - Romantic Drama Movie | Full Movie HD",
     "slug": generateSlug("Ramaiya Vastavaiya (2013) - Romantic Drama Movie | Full Movie HD"), "videoUrl": "https://youtu.be/fVAaYZQ31TE",
     "downloadUrl": "https://t.me/onemoviedownloa/30", "poster": "https://m.media-amazon.com/images/M/MV5BMjI0MTI1ODYyNl5BMl5BanBnXkFtZTcwMTM2NzM4OQ@@._V1_FMjpg_UX1050_.jpg",
@@ -255,6 +271,7 @@ export const bollywoodVideos: Video[] = [
   },
   {
     id: "2018",
+    "addedAt": "2026-05-10T08:21:04.000Z",
     title: "Masti 4 (2025) - Comedy Movie | Full Movie HD",
     slug: generateSlug("Masti 4 (Mastiii 4) (2025) - Comedy Movie | Full Movie HD"), "videoUrl": "https://youtu.be/m43HC9T9YM8",
     "downloadUrl": "https://t.me/onemoviedownloa/36", "poster": "https://m.media-amazon.com/images/M/MV5BY2UwYWZkNjgtYjZkMC00NjQ5LThjN2EtMzljYjI1ZTNkNDU1XkEyXkFqcGc@._V1_FMjpg_UX600_.jpg",
@@ -269,6 +286,7 @@ export const bollywoodVideos: Video[] = [
   },
   {
   "id": "2019",
+  "addedAt": "2026-05-10T08:21:04.000Z",
   "title": "Bhool Bhulaiyaa (2007) - Horror Comedy Movie | Akshay Kumar | Full Movie HD",
   "slug": "bhool-bhulaiyaa-2007-horror-comedy-movie-akshay-kumar-full-movie-hd", "videoUrl": "https://youtu.be/ss-7iGf1xE8",
   "downloadUrl": "https://t.me/onemoviedownloa/66", "poster": "https://m.media-amazon.com/images/M/MV5BMDE3YjEwODUtNzNjNy00ZTNhLTk3NjctMWIxOGE4N2Y1NGQzXkEyXkFqcGc@._V1_.jpg",
@@ -283,6 +301,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2022",
+  "addedAt": "2026-05-10T08:21:04.000Z",
   "title": "Toonpur Ka Superrhero (2010) - Action Adventure Comedy Movie | Ajay Devgn | Full Movie HD",
   "slug": "toonpur-ka-superrhero-2010-action-adventure-comedy-movie-ajay-devgn-full-movie-hd", "videoUrl": "https://youtu.be/EvQBVhQTiTU  ",
   "downloadUrl": "https://t.me/onemoviedownloa/63", "poster": "https://m.media-amazon.com/images/M/MV5BYTUxODcwOTQtNDcwNi00YjJhLTk5MjctMjM0ZTA5OTVhY2ViXkEyXkFqcGc@._V1_FMjpg_UX1038_.jpg",
@@ -297,6 +316,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2023",
+  "addedAt": "2026-05-10T08:21:04.000Z",
   "title": "Raja Shivaji (2026)",
   "slug": "raja-shivaji-historical-action-drama-movie-full-movie-hd", "videoUrl": "https://youtu.be/Bgy00eaFyhE",
   "downloadUrl": "https://t.me/onemoviedownloa/62", "poster": "https://m.media-amazon.com/images/M/MV5BMTk5MDI1OWQtZTFlNS00ODA4LWE2OWQtMDk2MzFkMTgzMzg3XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
@@ -312,6 +332,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2024",
+  "addedAt": "2026-05-10T08:21:04.000Z",
   "title": "God Tussi Great Ho (2008) - Fantasy Comedy Drama Movie | Salman Khan | Full Movie HD",
   "slug": "god-tussi-great-ho-2008-fantasy-comedy-drama-movie-salman-khan-full-movie-hd", "videoUrl": "https://youtu.be/REVa2yT8AQk",
   "downloadUrl": "https://t.me/onemoviedownloa/59", "poster": "https://m.media-amazon.com/images/M/MV5BMTU5NDcxNjc4MF5BMl5BanBnXkFtZTgwNzc2MDA2MDE@._V1_FMjpg_UX800_.jpg",
@@ -326,6 +347,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2025",
+  "addedAt": "2026-05-10T08:21:04.000Z",
   "title": "Sitaare Zameen Par - Bollywood Drama Movie | Aamir Khan | Full Movie HD",
   "slug": "sitaare-zameen-par-bollywood-drama-movie-aamir-khan-full-movie-hd", "videoUrl": "https://youtu.be/YH6k5weqwy8",
   "downloadUrl": "https://t.me/onemoviedownloa/70", "poster": "https://m.media-amazon.com/images/M/MV5BZjdjODdiMTQtYWIwZi00NTQyLWE0YWItMzk3MTBhOGUyNDY3XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
@@ -340,6 +362,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2027",
+  "addedAt": "2026-05-14T17:42:38.000Z",
   "title": "Daadi Ki Shaadi (2025) - Family Comedy Drama Movie | Full Movie HD",
   "slug": "daadi-ki-shaadi-2025-family-comedy-drama-movie-full-movie-hd", "videoUrl": "https://youtu.be/XsPA86VLNTw",
   "downloadUrl": "https://t.me/onemoviedownloa/72", "poster": "https://m.media-amazon.com/images/M/MV5BZGEyMDRmYTMtZjNhYy00Mjc0LTg4NDItYWE5NzE1ZDE3NjM2XkEyXkFqcGc@._V1_FMjpg_UX720_.jpg",
@@ -355,6 +378,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2028",
+  "addedAt": "2026-05-14T17:42:38.000Z",
   "title": "Ek Din (2026) - Emotional Drama Thriller Movie | Full Movie HD",
   "slug": "ek-din-2025-emotional-drama-thriller-movie-full-movie-hd", "videoUrl": "https://youtu.be/USAiVPCPvPw",
   "downloadUrl": "https://t.me/onemoviedownloa/73", "poster": "https://m.media-amazon.com/images/M/MV5BYzVhNmVhYzUtYjhhYy00ZGY0LTlmMTQtNjA2ZDk2OGFiNzllXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
@@ -370,6 +394,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2029",
+  "addedAt": "2026-05-14T17:42:38.000Z",
   "title": "Krishnavataram Part 1: The Heart (Hridayam) (2025) - Mythological Fantasy Drama | Full Movie HD",
   "slug": "krishnavataram-part-1-the-heart-hridayam-2025-mythological-fantasy-drama-full-movie-hd", "videoUrl": "https://youtu.be/KIwC1m7etLE",
   "downloadUrl": "https://t.me/onemoviedownloa/74", "poster": "https://m.media-amazon.com/images/M/MV5BMzVmYTMzZmQtYjJmMy00OTI3LWE5MGEtZTY3ZWZkMmFmOTBkXkEyXkFqcGc@._V1_FMjpg_UY3468_.jpg",
@@ -385,6 +410,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2030",
+  "addedAt": "2026-05-20T13:50:14.000Z",
   "title": "Aakhri Sawal (2026) - Action Drama Blockbuster | Full Movie HD",
   "slug": "aakhri-sawal-2026-action-drama-blockbuster", "videoUrl": "https://youtu.be/8jbOt2bOUtM",
   "downloadUrl": "https://t.me/onemoviedownloa/85", "poster": "https://m.media-amazon.com/images/M/MV5BOTJkODZiOWItOTY2YS00N2VkLTlkZjEtYzMyZTQzZGQ1ZDcxXkEyXkFqcGc@._V1_FMjpg_UY1920_.jpg",
@@ -400,6 +426,7 @@ export const bollywoodVideos: Video[] = [
 
 {
   "id": "2032",
+  "addedAt": "2026-05-20T16:24:28.000Z",
   "title": "Pati Patni Aur Woh Do (2026) - Comedy Romantic Movie",
   "slug": "pati-patni-aur-woh-do-2026-comedy-romantic-movie", "videoUrl": "https://youtu.be/ceooxuS-sww",
   "downloadUrl": "https://t.me/onemoviedownloa/81", "poster": "https://m.media-amazon.com/images/M/MV5BZmE0ZTA5MTgtNTE4NC00NThmLWFiM2EtZTI2MTc2Y2FmZjkwXkEyXkFqcGc@._V1_FMjpg_UX675_.jpg",
@@ -414,6 +441,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2033",
+  "addedAt": "2026-05-20T16:24:28.000Z",
   "title": "Kartavya (2026) - Crime Drama Movie | Saif Ali Khan",
   "slug": "kartavya-2026-crime-drama-movie", "videoUrl": "https://youtu.be/WnoY3M1eaeE",
   "downloadUrl": "https://t.me/onemoviedownloa/80", "poster": "https://m.media-amazon.com/images/M/MV5BZDg2MzhlN2YtYzU5ZC00OTZlLTgwNzctMjJmMzQ1ODQ1NDY2XkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
@@ -429,6 +457,7 @@ export const bollywoodVideos: Video[] = [
 ,
 {
   "id": "2035",
+  "addedAt": "2026-07-06T02:08:26.000Z",
   "title": "Tees Maar Khan (2010) - Action Comedy Movie | Akshay Kumar | Katrina Kaif",
   "slug": generateSlug("Tees Maar Khan (2010) - Action Comedy Movie | Akshay Kumar | Katrina Kaif"),
   "videoUrl": "https://youtu.be/IObdatSjQSM",
@@ -445,6 +474,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2036",
+  "addedAt": "2026-07-06T02:08:26.000Z",
   "title": "Jersey (2022) - Sports Drama Movie | Shahid Kapoor",
   "slug": generateSlug("Jersey (2022) - Sports Drama Movie | Shahid Kapoor"),
   "videoUrl": "https://youtu.be/BT0zd0kmTxM",
@@ -462,6 +492,7 @@ export const bollywoodVideos: Video[] = [
 ,
 {
   "id": "2038",
+  "addedAt": "2026-07-06T07:44:40.000Z",
   "title": "Shubh Mangal Zyada Saavdhan (2020) - Social Comedy Movie | Ayushmann Khurrana",
   "slug": generateSlug("Shubh Mangal Zyada Saavdhan (2020) - Social Comedy Movie | Ayushmann Khurrana"),
   "videoUrl": "https://youtu.be/r6r8UYU7Zcs",
@@ -479,6 +510,7 @@ export const bollywoodVideos: Video[] = [
 ,
 {
   "id": "2034",
+  "addedAt": "2026-05-20T17:00:27.000Z",
   "title": "O' Romeo (2026) - Action Romantic Thriller | Shahid Kapoor | Triptii Dimri",
   "slug": "o-romeo-2026-action-romantic-thriller", "videoUrl": "https://youtu.be/X-sN4z90X4o",
   "downloadUrl": "https://t.me/onemoviedownloa/13", "poster": "https://m.media-amazon.com/images/M/MV5BZTQzZTgyODItYzg5My00YzhhLWFlYzctYTljM2E5NWI5NDcyXkEyXkFqcGc@._V1_FMjpg_UX960_.jpg",
@@ -493,6 +525,7 @@ export const bollywoodVideos: Video[] = [
 },
  {
   id: "2035",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   title: "Welcome to the Jungle (2026)",
   slug: "welcome-to-the-jungle-2026",
   videoUrl: "https://youtu.be/R704yP3dlXw",
@@ -509,6 +542,7 @@ export const bollywoodVideos: Video[] = [
  },
  {
   id: "2036",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   title: "Carry On Jatta 4 (2026) Punjabi",
   slug: "carry-on-jatta-4-2026-punjabi",
   videoUrl: "https://youtu.be/fsDBAr42UUg",
@@ -525,6 +559,7 @@ export const bollywoodVideos: Video[] = [
  },
  {
   id: "2037",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   title: "Cocktail 2 (2026)",
   slug: "cocktail-2-2026",
   videoUrl: "https://youtu.be/XXxUqLHq1xg",
@@ -542,6 +577,7 @@ export const bollywoodVideos: Video[] = [
 ,
 {
   "id": "6012",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   "title": "The Great Grand Superhero (2026) - Action Comedy Family Movie | Hindi Dubbed | Full Movie HD",
   "slug": generateSlug("The Great Grand Superhero (2026) - Action Comedy Family Movie | Hindi Dubbed | Full Movie HD"),
   "videoUrl": "https://youtu.be/placeholder_greatgrand",
@@ -558,6 +594,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2039",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   "title": "Main Vaapas Aaunga",
   "slug": generateSlug("Main Vaapas Aaunga"),
   "videoUrl": "https://youtu.be/PRUTWluKRW8",
@@ -575,6 +612,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2040",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   "title": "Ugly Story",
   "slug": generateSlug("Ugly Story"),
   "videoUrl": "https://youtu.be/7hLQtxlhmeM",
@@ -591,6 +629,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2041",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   "title": "Maa Behen",
   "slug": generateSlug("Maa Behen"),
   "videoUrl": "https://youtu.be/xYbLpsEhcfA",
@@ -607,6 +646,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2042",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   "title": "Dacoit - Ek Prem Katha",
   "slug": generateSlug("Dacoit - Ek Prem Katha"),
   "videoUrl": "https://youtu.be/y0eE5efgRV8",
@@ -623,6 +663,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2043",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   "title": "Haunted 3D: Echoes of the Past",
   "slug": generateSlug("Haunted 3D: Echoes of the Past"),
   "videoUrl": "https://youtu.be/0lMGLjj6CeE",
@@ -639,6 +680,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2044",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   "title": "Bandar (2025)",
   "slug": generateSlug("Bandar (2025)"),
   "videoUrl": "https://youtu.be/zu5T3vIfbzA",
@@ -655,6 +697,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2045",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   "title": "Ginny Weds Sunny 2",
   "slug": generateSlug("Ginny Weds Sunny 2"),
   "videoUrl": "https://youtu.be/NO7OOWCWmM0",
@@ -671,6 +714,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2046",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   "title": "Hai Jawani Toh Ishq Hona Hai",
   "slug": generateSlug("Hai Jawani Toh Ishq Hona Hai"),
   "videoUrl": "https://youtu.be/rFOdIv1jwhc",
@@ -687,6 +731,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2047",
+  "addedAt": "2026-06-30T10:39:44.000Z",
   "title": "Governor: The Silent Saviour",
   "slug": generateSlug("Governor: The Silent Saviour"),
   "videoUrl": "https://youtu.be/Mvm0bRY0Qyg",
@@ -705,6 +750,7 @@ export const bollywoodVideos: Video[] = [
 ,
 {
   "id": "2048",
+  "addedAt": "2026-07-06T08:27:42.000Z",
   "title": "Toaster (2026) - Black Comedy Thriller",
   "slug": generateSlug("Toaster (2026) - Black Comedy Thriller"),
   "videoUrl": "https://youtu.be/h1Q_Oykycns",
@@ -723,6 +769,7 @@ export const bollywoodVideos: Video[] = [
 ,
 {
   "id": "2049",
+  "addedAt": "2026-07-06T08:27:42.000Z",
   "title": "Alpha (2026) - Action Thriller | Alia Bhatt",
   "slug": generateSlug("Alpha (2026) - Action Thriller Alia Bhatt"),
   "videoUrl": "https://youtu.be/QRqGwGwo1Y0",
@@ -742,6 +789,7 @@ export const bollywoodVideos: Video[] = [
 ,
 {
   "id": "2050",
+  "addedAt": "2026-07-06T08:59:52.000Z",
   "title": "Baby Do Die Do (2026) - Bollywood Horror Comedy",
   "slug": generateSlug("Baby Do Die Do (2026) - Bollywood Horror Comedy"),
   "videoUrl": "https://youtu.be/2rQCZKoaEhc",
@@ -759,6 +807,7 @@ export const bollywoodVideos: Video[] = [
 ,
 {
   "id": "2051",
+  "addedAt": "2026-07-08T09:58:46.000Z",
   "title": "Kesari Chapter 2 (2025) - Historical Courtroom Drama",
   "slug": generateSlug("Kesari Chapter 2 (2025) - Historical Courtroom Drama"),
   "videoUrl": "https://youtu.be/r-7g08INMSI",
@@ -776,6 +825,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2052",
+  "addedAt": "2026-07-08T09:58:46.000Z",
   "title": "Satluj (2026) - Biographical Drama",
   "slug": generateSlug("Satluj (2026) - Biographical Drama"),
   "videoUrl": "https://youtu.be/eO-Dr_TF1Co",
@@ -795,6 +845,7 @@ export const bollywoodVideos: Video[] = [
 ,
 {
   "id": "2055",
+  "addedAt": "2026-07-10T01:25:08.000Z",
   "title": "Main Atal Hoon (2024) - Biographical Drama",
   "slug": generateSlug("Main Atal Hoon (2024) - Biographical Drama"),
   "videoUrl": "https://youtu.be/VhXP6RDqb1k",
@@ -812,6 +863,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2056",
+  "addedAt": "2026-07-10T01:25:08.000Z",
   "title": "14 Phere (2021) - Social Comedy Drama",
   "slug": generateSlug("14 Phere (2021) - Social Comedy Drama"),
   "videoUrl": "https://youtu.be/NLqFisEakyw",
@@ -829,6 +881,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2057",
+  "addedAt": "2026-07-10T01:25:08.000Z",
   "title": "Mast Mein Rehne Ka (2023) - Drama",
   "slug": generateSlug("Mast Mein Rehne Ka (2023) - Drama"),
   "videoUrl": "https://youtu.be/S-oHvbDfU4U",
@@ -846,6 +899,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2058",
+  "addedAt": "2026-07-10T01:25:08.000Z",
   "title": "Dasvi (2022) - Social Comedy",
   "slug": generateSlug("Dasvi (2022) - Social Comedy"),
   "videoUrl": "https://youtu.be/-FrqlHlUgz4",
@@ -863,6 +917,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2059",
+  "addedAt": "2026-07-10T01:25:08.000Z",
   "title": "Dil Bechara (2020) - Romantic Drama",
   "slug": generateSlug("Dil Bechara (2020) - Romantic Drama"),
   "videoUrl": "https://youtu.be/GODAlxW5Pes",
@@ -880,6 +935,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2060",
+  "addedAt": "2026-07-10T01:25:08.000Z",
   "title": "Pagglait (2021) - Comedy Drama",
   "slug": generateSlug("Pagglait (2021) - Comedy Drama"),
   "videoUrl": "https://youtu.be/0y0v0r23_4o",
@@ -898,6 +954,7 @@ export const bollywoodVideos: Video[] = [
 ,
 {
   "id": "2053",
+  "addedAt": "2026-07-08T10:17:47.000Z",
   "title": "Tavvai (2026) - Mythological Horror",
   "slug": generateSlug("Tavvai (2026) - Mythological Horror"),
   "videoUrl": "hhttps://youtu.be/GMvNHc_kJ9Q",
@@ -916,6 +973,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2054",
+  "addedAt": "2026-07-10T01:25:08.000Z",
   "title": "Tumbbad (2018) - Mythological Horror",
   "slug": generateSlug("Tumbbad (2018) - Mythological Horror"),
   "videoUrl": "https://youtu.be/YGIcZrUBY0k",
@@ -934,6 +992,7 @@ export const bollywoodVideos: Video[] = [
 ,
 {
   "id": "2061",
+  "addedAt": "2026-07-15T12:25:37.000Z",
   "title": "Ikka (2026) - Action Drama",
   "slug": generateSlug("Ikka (2026) - Action Drama"),
   "videoUrl": "https://youtu.be/unf8x_aZg9Y",
@@ -951,6 +1010,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2062",
+  "addedAt": "2026-07-15T12:25:37.000Z",
   "title": "Dhamaal 4 (2026) - Comedy",
   "slug": generateSlug("Dhamaal 4 (2026) - Comedy"),
   "videoUrl": "https://youtu.be/IG-eByZdz6Y",
@@ -967,7 +1027,7 @@ export const bollywoodVideos: Video[] = [
   "featured": true
 },
 {
-  "id": "2063", "title": "Mardini (2026) Marathi Thriller", "slug": generateSlug("Mardini 2026 Marathi Thriller"),
+  "id": "2063", "addedAt": "2026-07-17T10:17:10.000Z", "title": "Mardini (2026) Marathi Thriller", "slug": generateSlug("Mardini 2026 Marathi Thriller"),
   "videoUrl": "https://youtu.be/Dvjo11elPRM", "downloadUrl": "https://t.me/onemoviedownloa/265",
   "poster": "https://m.media-amazon.com/images/M/MV5BZWI0Yzk5MTItMzllYy00ZWRlLWI4ZmEtNTEwYzg1MWI3MjFlXkEyXkFqcGc@._V1_.jpg",
   "description": "Mardini (2026) एक मराठी ड्रामा-थ्रिलर है जिसमें महिला-केंद्रित अपराध जाँच कई छिपे सच और सामाजिक दबावों को सामने लाती है। एक कठिन मामले के बीच साहस, न्याय और अस्तित्व की लड़ाई कहानी का केंद्र बनती है।",
@@ -975,7 +1035,7 @@ export const bollywoodVideos: Video[] = [
   "language": "Marathi", "quality": "HD", "cast": ["Jitendra Joshi", "Prarthana Behere"]
 },
 {
-  "id": "2064", "title": "Hera Pheri (2000) Hindi Comedy", "slug": generateSlug("Hera Pheri 2000 Hindi Comedy"),
+  "id": "2064", "addedAt": "2026-07-17T10:17:10.000Z", "title": "Hera Pheri (2000) Hindi Comedy", "slug": generateSlug("Hera Pheri 2000 Hindi Comedy"),
   "videoUrl": "https://youtu.be/m1zMmVwWr-M", "downloadUrl": "https://t.me/onemoviedownloa/261",
   "poster": "https://m.media-amazon.com/images/M/MV5BNDZmMGEwMjQtNjFlNi00ZGIxLTlkZjItNmU3Mzg4Y2E0ZjUzXkEyXkFqcGc@._V1_.jpg",
   "description": "Hera Pheri (2000) हिंदी सिनेमा की लोकप्रिय कॉमेडी है। आर्थिक तंगी से जूझ रहे राजू, श्याम और बाबूराव को गलती से आए फिरौती के फोन में अमीर बनने का मौका दिखाई देता है, लेकिन उनकी योजना मजेदार मुसीबतों में बदल जाती है।",
@@ -983,7 +1043,7 @@ export const bollywoodVideos: Video[] = [
   "language": "Hindi", "quality": "HD", "director": "Priyadarshan", "cast": ["Akshay Kumar", "Suniel Shetty", "Paresh Rawal", "Tabu"]
 },
 {
-  "id": "2065", "title": "Phir Hera Pheri (2006) Hindi Comedy", "slug": generateSlug("Phir Hera Pheri 2006 Hindi Comedy"),
+  "id": "2065", "addedAt": "2026-07-17T10:17:10.000Z", "title": "Phir Hera Pheri (2006) Hindi Comedy", "slug": generateSlug("Phir Hera Pheri 2006 Hindi Comedy"),
   "videoUrl": "https://youtu.be/Im_lCAsA27Q", "downloadUrl": "https://t.me/onemoviedownloa/260",
   "poster": "https://m.media-amazon.com/images/M/MV5BMTNkZTExMWYtMGZjMy00NGUwLWJmMWEtOThjYmZjY2Q0N2M5XkEyXkFqcGc@._V1_.jpg",
   "description": "Phir Hera Pheri (2006) में राजू, श्याम और बाबूराव एक धोखाधड़ी वाली निवेश योजना में अपनी दौलत गँवा देते हैं। कर्ज चुकाने की उनकी कोशिश गैंगस्टरों, गलतफहमियों और बेहिसाब हास्य से भरी भाग-दौड़ बन जाती है।",
@@ -991,7 +1051,7 @@ export const bollywoodVideos: Video[] = [
   "language": "Hindi", "quality": "HD", "director": "Neeraj Vora", "cast": ["Akshay Kumar", "Suniel Shetty", "Paresh Rawal", "Bipasha Basu"]
 },
 {
-  "id": "2066", "title": "Main Tera Hero (2014) Hindi Movie", "slug": generateSlug("Main Tera Hero 2014 Hindi Movie"),
+  "id": "2066", "addedAt": "2026-07-17T10:17:10.000Z", "title": "Main Tera Hero (2014) Hindi Movie", "slug": generateSlug("Main Tera Hero 2014 Hindi Movie"),
   "videoUrl": "https://youtu.be/zmREXcBo_fs", "downloadUrl": "https://t.me/onemoviedownloa/259",
   "poster": "https://m.media-amazon.com/images/M/MV5BODQ4MzQ3YzAtZTBhMS00Mzg3LWFhMDAtOTMzNGYxMjUzNmZiXkEyXkFqcGc@._V1_.jpg",
   "description": "Main Tera Hero (2014) एक मसाला रोमांटिक कॉमेडी है। शरारती सीनू कॉलेज में सुनैना से प्यार करता है, मगर एकतरफा प्रेम, अपहरण और दूसरी प्रेमिका की एंट्री उसके जीवन को हास्यास्पद उलझनों में डाल देती है।",
@@ -999,7 +1059,7 @@ export const bollywoodVideos: Video[] = [
   "language": "Hindi", "quality": "HD", "director": "David Dhawan", "cast": ["Varun Dhawan", "Ileana D'Cruz", "Nargis Fakhri"]
 },
 {
-  "id": "2067", "title": "Baaghi 3 (2020) Hindi Action Movie", "slug": generateSlug("Baaghi 3 2020 Hindi Action Movie"),
+  "id": "2067", "addedAt": "2026-07-17T10:17:10.000Z", "title": "Baaghi 3 (2020) Hindi Action Movie", "slug": generateSlug("Baaghi 3 2020 Hindi Action Movie"),
   "videoUrl": "https://youtu.be/jQzDujMzfoU", "downloadUrl": "https://t.me/onemoviedownloa/258",
   "poster": "https://m.media-amazon.com/images/M/MV5BNjY1OWY0NTctOGMwZC00YWIzLWE1NzQtYzM3MzM3YTg1ZTY2XkEyXkFqcGc@._V1_.jpg",
   "description": "Baaghi 3 (2020) में रॉनी अपने भाई विक्रम को बचाने के लिए सीरिया पहुँचता है। आतंकवादी संगठन के खिलाफ उसकी अकेली लड़ाई बड़े पैमाने के एक्शन और पारिवारिक भावनाओं से भरा मिशन बन जाती है।",
@@ -1007,7 +1067,7 @@ export const bollywoodVideos: Video[] = [
   "language": "Hindi", "quality": "HD", "director": "Ahmed Khan", "cast": ["Tiger Shroff", "Riteish Deshmukh", "Shraddha Kapoor"]
 },
 {
-  "id": "2068", "title": "Baaghi (2016) Hindi Action Movie", "slug": generateSlug("Baaghi 2016 Hindi Action Movie"),
+  "id": "2068", "addedAt": "2026-07-17T10:17:10.000Z", "title": "Baaghi (2016) Hindi Action Movie", "slug": generateSlug("Baaghi 2016 Hindi Action Movie"),
   "videoUrl": "https://youtu.be/FV-3avN3Oxc", "downloadUrl": "https://t.me/onemoviedownloa/253",
   "poster": "https://m.media-amazon.com/images/M/MV5BMzczODY2ZmMtYjU4MS00MzFjLTk2YTAtYTMyMmFlNTk3OTIyXkEyXkFqcGc@._V1_.jpg",
   "description": "Baaghi (2016) में बागी रॉनी एक मार्शल आर्ट अकादमी में अनुशासन सीखता है और सिया से प्यार करता है। जब सिया का अपहरण होता है, रॉनी उसे बचाने के लिए घातक लड़ाकों से भिड़ता है।",
@@ -1015,7 +1075,7 @@ export const bollywoodVideos: Video[] = [
   "language": "Hindi", "quality": "HD", "director": "Sabbir Khan", "cast": ["Tiger Shroff", "Shraddha Kapoor", "Sudheer Babu"]
 },
 {
-  "id": "2069", "title": "Total Dhamaal (2019) Hindi Comedy", "slug": generateSlug("Total Dhamaal 2019 Hindi Comedy"),
+  "id": "2069", "addedAt": "2026-07-17T10:17:10.000Z", "title": "Total Dhamaal (2019) Hindi Comedy", "slug": generateSlug("Total Dhamaal 2019 Hindi Comedy"),
   "videoUrl": "https://youtu.be/fo9EhcwQXcM", "downloadUrl": "https://t.me/onemoviedownloa/256",
   "poster": "https://m.media-amazon.com/images/M/MV5BNjhkY2ViNTYtYjc3MC00OWU3LWFhYWMtMjU5ZDhjZTNkYTc3XkEyXkFqcGc@._V1_.jpg",
   "description": "Total Dhamaal (2019) में कई लालची लोग छिपे खजाने तक पहले पहुँचने की दौड़ में निकलते हैं। रास्ते की दुर्घटनाएँ, जंगली जानवर और एक-दूसरे को मात देने की कोशिशें इस सफर को অরাজক कॉमेडी বনা দেতি हুন।"
@@ -1024,7 +1084,7 @@ export const bollywoodVideos: Video[] = [
   "language": "Hindi", "quality": "HD", "director": "Indra Kumar", "cast": ["Ajay Devgn", "Anil Kapoor", "Madhuri Dixit", "Arshad Warsi"]
 },
 {
-  "id": "2070", "title": "Dhadak (2018) Hindi Romantic Drama", "slug": generateSlug("Dhadak 2018 Hindi Romantic Drama"),
+  "id": "2070", "addedAt": "2026-07-17T10:17:10.000Z", "title": "Dhadak (2018) Hindi Romantic Drama", "slug": generateSlug("Dhadak 2018 Hindi Romantic Drama"),
   "videoUrl": "https://youtu.be/TIE92mUvSsw", "downloadUrl": "https://t.me/onemoviedownloa/255",
   "poster": "https://m.media-amazon.com/images/M/MV5BNzdlMGJhNWEtZmI3Zi00NmM4LTllZTYtYjcyMDI0MzhiYzhhXkEyXkFqcGc@._V1_.jpg",
   "description": "Dhadak (2018) जाति और सामाजिक प्रतिष्ठा के विरोध के बीच मधुकर और पार्थवी की प्रेम कहानी है। परिवार से भागकर नई जिंदगी शुरू करने वाला यह जोड़ा अपने अतीत और समाज की हिंसा से बचने की कोशिश करता है।",
@@ -1032,7 +1092,7 @@ export const bollywoodVideos: Video[] = [
   "language": "Hindi", "quality": "HD", "director": "Shashank Khaitan", "cast": ["Janhvi Kapoor", "Ishaan Khatter", "Ashutosh Rana"]
 },
 {
-  "id": "2071", "title": "Nawabzaade (2018) Hindi Movie", "slug": generateSlug("Nawabzaade 2018 Hindi Movie"),
+  "id": "2071", "addedAt": "2026-07-17T10:17:10.000Z", "title": "Nawabzaade (2018) Hindi Movie", "slug": generateSlug("Nawabzaade 2018 Hindi Movie"),
   "videoUrl": "https://youtu.be/7G77hHNBO8w", "downloadUrl": "https://t.me/onemoviedownloa/254",
   "poster": "https://m.media-amazon.com/images/M/MV5BMTUzNDM2Njc0N15BMl5BanBnXkFtZTgwNDg3MTE5NTM@._V1_.jpg",
   "description": "Nawabzaade (2018) तीन दोस्तों की कॉमेडी-रोमांस कहानी है जो एक ही लड़की से प्यार कर बैठते हैं। दोस्ती, गलतफहमियाँ और दिल जीतने की प्रतिस्पर्धा उनके जीवन में मजेदार अराजकता ले आती है।",
@@ -1040,7 +1100,7 @@ export const bollywoodVideos: Video[] = [
   "language": "Hindi", "quality": "HD", "director": "Jayesh Pradhan", "cast": ["Dharmesh Yelande", "Punit Pathak", "Raghav Juyal", "Isha Rikhi"]
 },
 {
-  "id": "2072", "title": "Baaghi 2 (2018) Hindi Action Movie", "slug": generateSlug("Baaghi 2 2018 Hindi Action Movie"),
+  "id": "2072", "addedAt": "2026-07-17T10:17:10.000Z", "title": "Baaghi 2 (2018) Hindi Action Movie", "slug": generateSlug("Baaghi 2 2018 Hindi Action Movie"),
   "videoUrl": "https://youtu.be/-4jEGBLSI1g", "downloadUrl": "https://t.me/onemoviedownloa/253",
   "poster": "https://m.media-amazon.com/images/M/MV5BZGMyNmVhMzctNWNjMS00OGMxLTkwODUtMDM5YWNmYzFmMWI5XkEyXkFqcGc@._V1_.jpg",
   "description": "Baaghi 2 (2018) में सेना अधिकारी रॉनी अपनी पूर्व प्रेमिका की लापता बेटी को खोजने निकलता है। जाँच उसे ड्रग माफिया, भ्रष्ट अधिकारियों और एक गहरी साजिश के बीच ले जाती है।",
@@ -1049,6 +1109,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2073",
+  "addedAt": "2026-09-14T09:28:17.000Z",
   "title": "Mirzapur (2018) - Crime Drama Series | Pankaj Tripathi | Ali Fazal | Vikrant Massey",
   "slug": "mirzapur-2018-crime-drama-series-pankaj-tripathi-ali-fazal-vikrant-massey",
   "videoUrl": "https://youtu.be/5vMWZhHPlaw",
@@ -1067,6 +1128,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2074",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Hanuman Ansh (2026) - Spiritual Drama Movie | Full Movie HD",
 "slug": "hanuman-ansh-2026-spiritual-drama-movie",
 "videoUrl": "https://youtu.be/YpGhCA2X3gU",
@@ -1084,6 +1146,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2075",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Brothers (2015) - Action Sports Drama Movie | Full Movie HD",
 "slug": "brothers-2015-action-sports-drama-movie",
 "videoUrl": "https://youtu.be/QuRSCU0tOKs",
@@ -1101,6 +1164,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2076",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Dream Girl (2019) - Bollywood Comedy Drama Movie | Full Movie HD",
 "slug": "dream-girl-2019-bollywood-comedy-drama",
 "videoUrl": "https://youtu.be/nf39Jpi3ZQ4",
@@ -1118,6 +1182,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2077",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Double Occupancy (2025) - Hindi Comedy Drama Movie | Full Movie HD",
 "slug": "double-occupancy-hindi-comedy-drama-movie",
 "videoUrl": "https://youtu.be/6QNUFgR2HLk",
@@ -1135,6 +1200,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2078",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Awarapan 2 (2025) - Bollywood Action Drama Movie | Full Movie HD",
 "slug": "awarapan-2-2025-bollywood-action-drama",
 "videoUrl": "https://youtu.be/qkaSXCqdecM",
@@ -1151,6 +1217,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2079",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Ali Baba Aur 40 Bhoot Season 1 (2026) - Hindi Fantasy Comedy Web Series | Full HD",
 "slug": "ali-baba-aur-40-bhoot-season-1-hindi-web-series",
 "videoUrl": "https://youtu.be/JgAzXJo-q6g",
@@ -1168,6 +1235,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2080",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Haiwaan (2025) - Hindi Crime Thriller Drama Series | Full HD",
 "slug": "haiwaan-hindi-crime-thriller-series",
 "videoUrl": "https://youtu.be/Bm5S7ZKk6K8",
@@ -1185,6 +1253,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2081",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Maharaja Hostel (2025) - Hindi Comedy Drama Movie | Full Movie HD",
 "slug": "maharaja-hostel-hindi-comedy-drama-movie",
 "videoUrl": "https://youtu.be/-sTZBuwn7lA",
@@ -1202,6 +1271,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2082",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Hope (2025) - Hindi Inspirational Drama Movie | Full Movie HD",
 "slug": "hope-2025-hindi-inspirational-drama-movie",
 "videoUrl": "https://youtu.be/5zlfPKPmAjM",
@@ -1219,6 +1289,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2083",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Aroopi (2025) - Hindi Mystery Thriller Movie | Full Movie HD",
 "slug": "aroorpi-hindi-mystery-thriller-movie",
 "videoUrl": "https://youtu.be/8CsDfDLqCDA",
@@ -1235,6 +1306,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2084",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Daayra (2025) - Hindi Thriller Drama Movie | Full Movie HD",
 "slug": "daayra-2025-hindi-thriller-drama-movie",
 "videoUrl": "https://youtu.be/khru4exyahg",
@@ -1252,6 +1324,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2085",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Lust Stories 3 (2025) - Hindi Drama Anthology Series | Full HD",
 "slug": "lust-stories-3-hindi-drama-anthology-series",
 "videoUrl": "https://youtu.be/PhNJ34l5NFo",
@@ -1269,6 +1342,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2086",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "The Vvaan Force of the Forrest (2025) - Hindi Action Fantasy Movie | Full HD",
 "slug": "the-vvaan-force-of-the-forrest-hindi-action-fantasy",
 "videoUrl": "https://youtu.be/FRHLZMIWxJo",
@@ -1286,6 +1360,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2087",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Mahakavya (2025) - Hindi Mythological Drama Series | Full HD",
 "slug": "mahakavya-2025-hindi-mythological-drama-series",
 "videoUrl": "https://youtu.be/lUhw32rt_dE",
@@ -1303,6 +1378,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2088",
+"addedAt": "2026-09-30T18:29:38.000Z",
 "title": "Bakaiti Season 2 (2025) - Hindi Comedy Drama Web Series | Full HD",
 "slug": "bakaiti-season-2-hindi-comedy-web-series",
 "videoUrl": "https://youtu.be/_hK_2sO5yYI",
@@ -1319,6 +1395,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2046",
+"addedAt": "2026-09-30T18:33:13.000Z",
 "title": "Mayday (2025) - Bollywood Thriller Drama Movie | Full Movie HD",
 "slug": "mayday-2025-bollywood-thriller-drama-movie",
 "videoUrl": "https://youtu.be/om5Un9X720M",
@@ -1336,6 +1413,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2047",
+"addedAt": "2026-09-30T18:33:13.000Z",
 "title": "Shaque Trust No One Season 1 (2025) - Hindi Crime Thriller Series | Full HD",
 "slug": "shaque-trust-no-one-season-1-hindi-crime-series",
 "videoUrl": "https://youtu.be/WPPcfRd-JzE",
@@ -1353,6 +1431,7 @@ export const bollywoodVideos: Video[] = [
 
 {
 "id": "2048",
+"addedAt": "2026-09-30T18:33:13.000Z",
 "title": "Love Lottery (2025) - Hindi Romantic Comedy Movie | Full Movie HD",
 "slug": "love-lottery-2025-hindi-romantic-comedy-movie",
 "videoUrl": "https://youtu.be/dW8Hrfv_Cuk",
@@ -1369,6 +1448,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2073",
+"addedAt": "2026-09-30T18:52:56.000Z",
 "title": "Love Seasons (2025) - Romantic Drama Movie | Full Movie HD",
 "slug": "love-seasons-2025-romantic-drama-movie",
 "videoUrl": "https://youtu.be/5U_IKLXQR3Y",
@@ -1385,6 +1465,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2089",
+"addedAt": "2026-10-06T07:38:38.000Z",
 "title": "Drishyam: The Conclusion (2026) - Crime Thriller Movie | Ajay Devgn",
 "slug": "drishyam-the-conclusion-2026",
 "videoUrl": "https://youtu.be/fneuVQ7uO_w",
@@ -1405,6 +1486,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2090",
+"addedAt": "2026-10-06T07:38:38.000Z",
 "title": "Bombay Stories (2026) - Manto Anthology Drama | Mouni Roy",
 "slug": "bombay-stories-2026",
 "videoUrl": "https://youtu.be/RNGPcA-pbJQ",
@@ -1425,6 +1507,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2091",
+"addedAt": "2026-10-06T07:59:17.000Z",
 "title": "Pooja Meri Jaan (2026) - Crime Thriller Movie | Mrunal Thakur, Huma Qureshi",
 "slug": "pooja-meri-jaan-2026",
 "videoUrl": "https://youtu.be/urDzsrt17IQ",
@@ -1445,6 +1528,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2092",
+"addedAt": "2026-10-07T04:50:54.000Z",
 "title": "Main Ladega (2024) - Sports Drama Movie | Akash Pratap Singh",
 "slug": "main-ladega-2024",
 "videoUrl": "https://youtu.be/1FmLRrApI7Y",
@@ -1465,6 +1549,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2093",
+"addedAt": "2026-10-08T17:44:52.000Z",
 "title": "Saale Aashiq (2025) - Romantic Drama Movie | Tahir Raj Bhasin, Mithila Palkar",
 "slug": "saale-aashiq-2025",
 "videoUrl": "https://youtu.be/SNbQPZ8jWX4",
@@ -1485,6 +1570,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2094",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Aashiqui 2 (2013) - Musical Romantic Drama | Aditya Roy Kapur, Shraddha Kapoor",
 "slug": "aashiqui-2-2013",
 "videoUrl": "https://youtu.be/FyXXgpPqe6w",
@@ -1505,6 +1591,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2095",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Aatma (2013) - Psychological Horror Movie | Bipasha Basu, Nawazuddin Siddiqui",
 "slug": "aatma-2013",
 "videoUrl": "https://youtu.be/b4sACvxFHK4",
@@ -1525,6 +1612,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2096",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Adipurush (2023) - Mythological Action Movie | Prabhas, Kriti Sanon, Saif Ali Khan",
 "slug": "adipurush-2023",
 "videoUrl": "https://youtu.be/scNmYjoR-qM",
@@ -1545,6 +1633,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2097",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Baankey Ki Crazy Baraat (2015) - Comedy Movie | Rajpal Yadav, Sanjay Mishra",
 "slug": "baankey-ki-crazy-baraat-2015",
 "videoUrl": "https://youtu.be/iG6Db4aASOQ",
@@ -1565,6 +1654,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2098",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Besharam (2013) - Action Comedy Movie | Ranbir Kapoor, Pallavi Sharda",
 "slug": "besharam-2013",
 "videoUrl": "https://youtu.be/9BAd2zeAN78",
@@ -1585,6 +1675,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2099",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Bhediya (2022) - Comedy Horror Movie | Varun Dhawan, Kriti Sanon",
 "slug": "bhediya-2022",
 "videoUrl": "https://youtu.be/d_BPlvbw_ok",
@@ -1605,6 +1696,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2100",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Bhoot Police (2021) - Horror Comedy Movie | Saif Ali Khan, Arjun Kapoor",
 "slug": "bhoot-police-2021",
 "videoUrl": "https://youtu.be/-j7mGq3s3eA",
@@ -1625,6 +1717,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2101",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Bol Bhavein Na Bol (2026) - Punjabi Romantic Drama | Sidak Gill, Jaanya Joshi",
 "slug": "bol-bhavein-na-bol-2026",
 "videoUrl": "https://youtu.be/DKGA6_370ZY",
@@ -1645,6 +1738,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2102",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Break Ke Baad (2010) - Romantic Comedy Movie | Imran Khan, Deepika Padukone",
 "slug": "break-ke-baad-2010",
 "videoUrl": "https://youtu.be/zPqcvpgIVIU",
@@ -1665,6 +1759,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2103",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Bulbbul (2020) - Period Horror Movie | Tripti Dimri, Avinash Tiwary",
 "slug": "bulbbul-2020",
 "videoUrl": "https://youtu.be/4MGReT9-cAg",
@@ -1685,6 +1780,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2104",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Chaarfutiya Chhokare (2014) - Crime Thriller Movie | Soha Ali Khan",
 "slug": "chaarfutiya-chhokare-2014",
 "videoUrl": "https://youtu.be/h59ISGJcxH8",
@@ -1705,6 +1801,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2105",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Crook (2010) - Action Thriller Movie | Emraan Hashmi, Neha Sharma",
 "slug": "crook-2010",
 "videoUrl": "https://youtu.be/R3Ih5czlmSg",
@@ -1725,6 +1822,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2106",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Dhadkan (2000) - Musical Romantic Drama | Akshay Kumar, Shilpa Shetty, Suniel Shetty",
 "slug": "dhadkan-2000",
 "videoUrl": "https://youtu.be/EahZS08q2kA",
@@ -1745,6 +1843,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2107",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Dhamaka (2021) - Thriller Movie | Kartik Aaryan, Mrunal Thakur",
 "slug": "dhamaka-2021",
 "videoUrl": "https://youtu.be/qRESnWFYYho",
@@ -1765,6 +1864,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2108",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Fugly (2014) - Comedy Drama Thriller | Kiara Advani, Mohit Marwah, Jimmy Sheirgill",
 "slug": "fugly-2014",
 "videoUrl": "https://youtu.be/C0fgkvQLBXI",
@@ -1785,6 +1885,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2109",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Govinda Naam Mera (2022) - Comedy Thriller Movie | Vicky Kaushal, Bhumi Pednekar, Kiara Advani",
 "slug": "govinda-naam-mera-2022",
 "videoUrl": "https://youtu.be/VArgIuiwxig",
@@ -1805,6 +1906,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2110",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Jagga Jasoos (2017) - Musical Adventure Comedy | Ranbir Kapoor, Katrina Kaif",
 "slug": "jagga-jasoos-2017",
 "videoUrl": "https://youtu.be/YheC-4Qgoro",
@@ -1825,6 +1927,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2111",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Jombieland (2025) - Punjabi Zombie Comedy | Binnu Dhillon, Kanika Mann",
 "slug": "jombieland-2025",
 "videoUrl": "https://youtu.be/pczPPLQFxBk",
@@ -1845,6 +1948,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2112",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Kahan Shuru Kahan Khatam (2024) - Romantic Comedy Movie | Dhvani Bhanushali, Aashim Gulati",
 "slug": "kahan-shuru-kahan-khatam-2024",
 "videoUrl": "https://youtu.be/nJnNG0oy098",
@@ -1865,6 +1969,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2113",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Krishna Cottage (2004) - Supernatural Horror Movie | Sohail Khan, Isha Koppikar",
 "slug": "krishna-cottage-2004",
 "videoUrl": "https://youtu.be/_XhM8DIs0CI",
@@ -1885,6 +1990,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2114",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Kuttey (2023) - Action Thriller Movie | Arjun Kapoor, Tabu",
 "slug": "kuttey-2023",
 "videoUrl": "https://youtu.be/76BhvV8ihRM",
@@ -1905,6 +2011,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2115",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Love You Family (2017) - Family Drama Movie | Salman Yusuff Khan, Aksha Pardasany",
 "slug": "love-you-family-2017",
 "videoUrl": "https://youtu.be/D6OYtIRi8WY",
@@ -1925,6 +2032,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2116",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Lupt (2018) - Supernatural Horror Movie | Javed Jaffrey, Vijay Raaz",
 "slug": "lupt-2018",
 "videoUrl": "https://youtu.be/FxhUuHzULcM",
@@ -1945,6 +2053,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2117",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Lutt Mubarak (2026) - Punjabi Crime Drama | Harish Verma, Kanika Mann",
 "slug": "lutt-mubarak-2026",
 "videoUrl": "https://youtu.be/UZtUf7Fqw7A",
@@ -1965,6 +2074,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2118",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Maalik (2025) - Action Thriller Movie | Rajkummar Rao",
 "slug": "maalik-2025",
 "videoUrl": "https://youtu.be/4tUkrRrXl2Q",
@@ -1985,6 +2095,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2119",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Mee Raqsam (2020) - Drama Movie | Naseeruddin Shah, Aditi Subedi",
 "slug": "mee-raqsam-2020",
 "videoUrl": "https://youtu.be/qyISRTaRgoY",
@@ -2005,6 +2116,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2120",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Meenakshi Sundareshwar (2021) - Romantic Comedy Movie | Sanya Malhotra, Abhimanyu Dassani",
 "slug": "meenakshi-sundareshwar-2021",
 "videoUrl": "https://youtu.be/f7AHllmuLyg",
@@ -2025,6 +2137,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2121",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Mister Mummy (2022) - Comedy Drama Movie | Riteish Deshmukh, Genelia D'Souza",
 "slug": "mister-mummy-2022",
 "videoUrl": "https://youtu.be/ZVo8CdWIWnk",
@@ -2045,6 +2158,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2122",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Mitti De Putt (2026) - Punjabi Action Drama | Dev Kharoud",
 "slug": "mitti-de-putt-2026",
 "videoUrl": "https://youtu.be/GppbACrTCyw",
@@ -2065,6 +2179,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2123",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Murder Mubarak (2024) - Mystery Thriller Movie | Pankaj Tripathi, Sara Ali Khan, Karisma Kapoor",
 "slug": "murder-mubarak-2024",
 "videoUrl": "https://youtu.be/vBQcU00U9O0",
@@ -2085,6 +2200,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2124",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Namastey London (2007) - Romantic Comedy Movie | Akshay Kumar, Katrina Kaif",
 "slug": "namastey-london-2007",
 "videoUrl": "https://youtu.be/1Bp5LjIb3Lw",
@@ -2105,6 +2221,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2125",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "NH-8: Road to Nidhivan (2015) - Psychological Horror Thriller | Auroshikha Dey",
 "slug": "nh-8-road-to-nidhivan-2015",
 "videoUrl": "https://youtu.be/hlaIg4kcIaQ",
@@ -2125,6 +2242,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2126",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Nude (2018) - Marathi Drama | Kalyanee Mulay, Chhaya Kadam",
 "slug": "nude-2018",
 "videoUrl": "https://youtu.be/tDUZe55N1UU",
@@ -2145,6 +2263,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2127",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Parched (2015) - Drama Movie | Radhika Apte, Tannishtha Chatterjee",
 "slug": "parched-2015",
 "videoUrl": "https://youtu.be/m69d-KNi2Q0",
@@ -2165,6 +2284,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2128",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Ribbon (2017) - Drama Movie | Kalki Koechlin, Sumeet Vyas",
 "slug": "ribbon-2017",
 "videoUrl": "https://youtu.be/ARIgHEhk1wo",
@@ -2185,6 +2305,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2129",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Sandeep Aur Pinky Faraar (2021) - Black Comedy Drama | Arjun Kapoor, Parineeti Chopra",
 "slug": "sandeep-aur-pinky-faraar-2021",
 "videoUrl": "https://youtu.be/vHiLZkR6rSg",
@@ -2205,6 +2326,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2130",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Serious Men (2020) - Satirical Comedy Drama | Nawazuddin Siddiqui",
 "slug": "serious-men-2020",
 "videoUrl": "https://youtu.be/naXf8R1aOik",
@@ -2225,6 +2347,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2131",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Singham Returns (2014) - Action Movie | Ajay Devgn, Kareena Kapoor",
 "slug": "singham-returns-2014",
 "videoUrl": "https://youtu.be/3CwQjsdE-1Q",
@@ -2245,6 +2368,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2132",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Tiku Weds Sheru (2023) - Satirical Romantic Comedy | Nawazuddin Siddiqui, Avneet Kaur",
 "slug": "tiku-weds-sheru-2023",
 "videoUrl": "https://youtu.be/0mvglHtAGC8",
@@ -2265,6 +2389,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2133",
+"addedAt": "2026-10-14T17:13:27.000Z",
 "title": "Tu Meri Poori Kahani (2025) - Musical Romantic Drama | Hirranya Ojha, Arhaan Patel",
 "slug": "tu-meri-poori-kahani-2025",
 "videoUrl": "https://youtu.be/7RNMPvBvcXc",
@@ -2285,6 +2410,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2134",
+"addedAt": "2026-10-14T18:10:18.000Z",
 "title": "Goodbye (2022) - Family Comedy Drama | Amitabh Bachchan, Rashmika Mandanna",
 "slug": "goodbye-2022",
 "videoUrl": "https://youtu.be/QKJkxHPrDew",
@@ -2305,6 +2431,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2135",
+"addedAt": "2026-10-14T18:10:18.000Z",
 "title": "Vadh 2 (2026) - Crime Thriller Movie | Sanjay Mishra, Neena Gupta",
 "slug": "vadh-2-2026",
 "videoUrl": "https://youtu.be/AnOCvitPlsc",
@@ -2325,6 +2452,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2136",
+"addedAt": "2026-10-14T18:10:18.000Z",
 "title": "Heyy Babyy (2007) - Comedy Drama Movie | Akshay Kumar, Riteish Deshmukh, Fardeen Khan",
 "slug": "heyy-babyy-2007",
 "videoUrl": "https://youtu.be/b_rV7pj49JE",
@@ -2345,6 +2473,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2137",
+"addedAt": "2026-10-14T18:10:18.000Z",
 "title": "Vishwaguru (2025) - Drama Mystery Movie | Mukesh Khanna, Gaurav Paswala",
 "slug": "vishwaguru-2025",
 "videoUrl": "https://youtu.be/dzVTvlIgyOA",
@@ -2365,6 +2494,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2138",
+"addedAt": "2026-10-14T18:10:18.000Z",
 "title": "Yeh Lamhe Judaai Ke (2004) - Romantic Mystery | Shah Rukh Khan, Raveena Tandon",
 "slug": "yeh-lamhe-judaai-ke-2004",
 "videoUrl": "https://youtu.be/ef0UZ1ez6i0",
@@ -2385,6 +2515,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2139",
+"addedAt": "2026-10-14T18:10:18.000Z",
 "title": "Galti (2021) - Hindi Thriller Movie",
 "slug": "galti-2021",
 "videoUrl": "https://t.me/c/3845134502/410",
@@ -2405,6 +2536,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2140",
+"addedAt": "2026-10-14T18:10:18.000Z",
 "title": "Shehri Gabru (2020) - Comedy Crime Movie | Naman Bhati",
 "slug": "shehri-gabru-2020",
 "videoUrl": "https://youtu.be/YA0ZGET-Y68",
@@ -2425,6 +2557,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2141",
+"addedAt": "2026-10-14T18:10:18.000Z",
 "title": "Yaar Jigree Kasooti Degree: The Film (2026) - Punjabi Comedy Drama",
 "slug": "yaar-jigree-kasooti-degree-the-film-2026",
 "videoUrl": "https://youtu.be/m8mz40-kzR0",
@@ -2445,6 +2578,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2142",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Dhurandhar (2025) - Spy Action Thriller | Ranveer Singh, Akshaye Khanna",
 "slug": "dhurandhar-2025",
 "videoUrl": "https://youtu.be/BKOVzHcjEIo",
@@ -2465,6 +2599,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2143",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "The Kerala Story 2: Goes Beyond (2026) - Social Drama Movie | Ulka Gupta, Aditi Bhatia, Aishwarya Ojha",
 "slug": "the-kerala-story-2-goes-beyond-2026",
 "videoUrl": "https://youtu.be/j0_038C5RRk",
@@ -2485,6 +2620,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2144",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Gandhi Talks (2026) - Silent Drama Movie | Vijay Sethupathi, Arvind Swamy",
 "slug": "gandhi-talks-2026",
 "videoUrl": "https://youtu.be/rph2F0uX-A0",
@@ -2505,6 +2641,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2145",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Rahu Ketu (2026) - Fantasy Comedy Movie | Pulkit Samrat, Varun Sharma",
 "slug": "rahu-ketu-2026",
 "videoUrl": "https://youtu.be/bQYMF8QtnPw",
@@ -2525,6 +2662,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2146",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Assi (2026) - Courtroom Drama Movie | Taapsee Pannu, Kani Kusruti",
 "slug": "assi-2026",
 "videoUrl": "https://youtu.be/_fTMb1olDQY",
@@ -2545,6 +2683,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2147",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Sam Bahadur (2023) - Biographical War Drama | Vicky Kaushal, Sanya Malhotra, Fatima Sana Shaikh",
 "slug": "sam-bahadur-2023",
 "videoUrl": "https://youtu.be/6xJptj7AVSA",
@@ -2565,6 +2704,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2148",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "3 Idiots (2009) - Comedy Drama Movie | Aamir Khan, R. Madhavan, Sharman Joshi",
 "slug": "3-idiots-2009",
 "videoUrl": "https://youtu.be/zIKu9k50SDo",
@@ -2585,6 +2725,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2149",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "System (2026) - Legal Drama Movie | Sonakshi Sinha, Jyotika",
 "slug": "system-2026",
 "videoUrl": "https://youtu.be/7dB5ne639ls",
@@ -2605,6 +2746,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2150",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Chand Mera Dil (2026) - Romantic Drama Movie | Ananya Panday, Lakshya",
 "slug": "chand-mera-dil-2026",
 "videoUrl": "https://youtu.be/rRQ8oKCoYrQ",
@@ -2625,6 +2767,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2151",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Munna Bhai M.B.B.S. (2003) - Comedy Drama Movie | Sanjay Dutt, Arshad Warsi",
 "slug": "munna-bhai-m-b-b-s-2003",
 "videoUrl": "https://youtu.be/6lCGvu-hwX4",
@@ -2645,6 +2788,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2152",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Genius (2018) - Romantic Action Thriller | Utkarsh Sharma, Ishita Chauhan, Nawazuddin Siddiqui",
 "slug": "genius-2018",
 "videoUrl": "https://youtu.be/Yf2CzzkWYms",
@@ -2665,6 +2809,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2153",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Fukrey Returns (2017) - Comedy Movie | Pulkit Samrat, Varun Sharma, Richa Chadha",
 "slug": "fukrey-returns-2017",
 "videoUrl": "https://youtu.be/f-UzOpuKOVY",
@@ -2685,6 +2830,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2154",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "12th Fail (2023) - Biographical Drama | Vikrant Massey, Medha Shankr",
 "slug": "12th-fail-2023",
 "videoUrl": "https://youtu.be/KjbtuqENvVE",
@@ -2705,6 +2851,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2155",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Padmaavat (2018) - Epic Historical Drama | Deepika Padukone, Ranveer Singh, Shahid Kapoor",
 "slug": "padmaavat-2018",
 "videoUrl": "https://youtu.be/X_5_BLt76c0",
@@ -2725,6 +2872,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2156",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Ready (2011) - Action Romantic Comedy | Salman Khan, Asin, Paresh Rawal",
 "slug": "ready-2011",
 "videoUrl": "https://youtu.be/ACvDgKuTxnA",
@@ -2745,6 +2893,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2157",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Dial 1975 (2026) - Action Thriller | Kay Kay Menon, Kirti Kulhari",
 "slug": "dial-1975-2026",
 "videoUrl": "https://youtu.be/nOx_nO2VUC0",
@@ -2765,6 +2914,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2158",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Aseq (2023) - Horror Thriller | Vardhan Puri, Sonnalli Seygall",
 "slug": "aseq-2023",
 "videoUrl": "https://youtu.be/0TyPk8MSggU",
@@ -2785,6 +2935,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2159",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Dukan (2026) Hindi Dubbed - Marathi Social Drama | Seema Biswas, Govind Namdev, Parth Bhalerao",
 "slug": "dukan-2026-hindi-dubbed",
 "videoUrl": "https://youtu.be/-rfaPl4i2XE",
@@ -2805,6 +2956,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2160",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "https://t.me/onemoviebylalit_bott/184(2026) - Psychological Thriller | Jitendra Bohara, Tushar Kawale",
 "slug": "navya-chakra-psycon-world-2026",
 "videoUrl": "https://youtu.be/jibSrThNKOw",
@@ -2825,6 +2977,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2161",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Dastaar (2026) - Punjabi Drama | Tarsem Jassar, Yograj Singh",
 "slug": "dastaar-2026",
 "videoUrl": "https://youtu.be/V5LAS0FdEhc",
@@ -2845,6 +2998,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
 "id": "2162",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Ishqnama (2026) - Punjabi Romantic Drama | Jayy Randhawa, Shehnaaz Gill",
 "slug": "ishqnama-2026",
 "videoUrl": "https://youtu.be/b8jZdpIzG4k",
@@ -2865,6 +3019,7 @@ export const bollywoodVideos: Video[] = [
 },
 {
   "id": "2163",
+  "addedAt": "2026-10-17T21:37:43.000Z",
   "title": "Singham (2011) - Action Movie | Ajay Devgn, Kajal Aggarwal",
   "slug": "singham-2011",
   "videoUrl": "https://youtu.be/mp-XqCrCi6I",

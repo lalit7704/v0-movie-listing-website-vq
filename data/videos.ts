@@ -29,6 +29,8 @@ export interface Video {
   director?: string;
   cast?: string[];
   keywords?: string[];
+  /** ISO date the entry was added to the site; drives "Latest Added". */
+  addedAt?: string;
 }
 
 /* ---------------- NORMALIZE ---------------- */
@@ -88,6 +90,26 @@ export const getFeaturedVideos = (): Video[] => {
 
 export const getLatestVideos = (): Video[] => {
   return [...videos].sort((a, b) => b.year - a.year).slice(0, 10);
+};
+
+const ADDABLE_CATEGORIES = new Set(["bollywood", "hollywood", "southindian", "webseries", "cartoon"]);
+
+// Every existing entry in these categories carries addedAt, so one without it was
+// hand-written after the backfill and counts as the newest. Series episodes
+// (Ramayan, Mahabharat, Shree Krishna) never compete for "latest".
+function addedTime(video: Video) {
+  if (video.addedAt) return Date.parse(video.addedAt) || 0;
+  return ADDABLE_CATEGORIES.has(video.category.toLowerCase().replace(/[\s-]+/g, "")) ? Infinity : 0;
+}
+
+/** Most recently added first; ties keep file order, where later entries are newer. */
+export const getRecentlyAddedVideos = (limit: number): Video[] => {
+  return videos
+    .map((video, index) => ({ video, index }))
+    .filter(({ video }) => video.poster && addedTime(video) > 0)
+    .sort((a, b) => addedTime(b.video) - addedTime(a.video) || b.index - a.index)
+    .slice(0, limit)
+    .map(({ video }) => video);
 };
 
 export const getTrendingVideos = (): Video[] => {

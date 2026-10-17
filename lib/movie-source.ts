@@ -31,6 +31,7 @@ export function normalizeDownloadUrl(value: string) {
 
 const FIELD_ORDER: (keyof Video)[] = [
   "id",
+  "addedAt",
   "title",
   "slug",
   "videoUrl",

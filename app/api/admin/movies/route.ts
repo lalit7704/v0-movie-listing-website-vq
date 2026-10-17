@@ -88,6 +88,7 @@ export async function POST(request: NextRequest) {
 
       movie = {
         id: input.id || nextMovieId(current, takenIds),
+        addedAt: new Date().toISOString(),
         title: input.title,
         slug,
         videoUrl: input.videoUrl,

@@ -20,6 +20,7 @@ export interface Video {
   director?: string;
   cast?: string[];
   keywords?: string[];
+  addedAt?: string;
 }
 
 /* ---------------- SLUG HELPER ---------------- */
@@ -40,6 +41,7 @@ export const cartoonVideos: Video[] = [
   ...tmdbCartoonVideos,
   {
     id: "9001",
+    "addedAt": "2026-05-20T13:17:24.000Z",
     title: "The Super Mario Galaxy Movie (2026)",
     slug: generateSlug("The Super Mario Galaxy Movie 2026"), "videoUrl": "https://youtu.be/GuCejewteF8",
     "downloadUrl": "https://t.me/onemoviedownloa/87", "poster": "https://m.media-amazon.com/images/M/MV5BMGIzMGI4OWYtNzdkMy00MjJlLWJiMDMtZjY1Y2UwMzQ0YzY3XkEyXkFqcGc@._V1_FMjpg_UX800_.jpg",
@@ -59,6 +61,7 @@ export const cartoonVideos: Video[] = [
 ,
   {
     id: "9002",
+    "addedAt": "2026-05-20T16:24:28.000Z",
     title: "Captain Underpants: The First Epic Movie (2026) - Animated Comedy",
     slug: generateSlug("Captain Underpants The First Epic Movie 2026"), "videoUrl": "https://youtu.be/placeholder_captain",
     "downloadUrl": "https://t.me/onemoviedownloa/94", "poster": "https://m.media-amazon.com/images/M/MV5BN2FlOTgyOTctMTE1Ny00MzFhLWE5NjctNTMxNzM5N2I2Yzk1XkEyXkFqcGc@._V1_FMjpg_UX800_.jpg",
@@ -73,6 +76,7 @@ export const cartoonVideos: Video[] = [
   },
   {
     id: "9003",
+    "addedAt": "2026-05-20T16:24:28.000Z",
     title: "Robinson Crusoe (2016) - Animated Adventure Comedy",
     slug: generateSlug("Robinson Crusoe 2016 Animated Adventure Comedy"), "videoUrl": "https://youtu.be/placeholder_robinson",
     "downloadUrl": "https://t.me/onemoviedownloa/95", "poster": "https://m.media-amazon.com/images/M/MV5BMjA4OTE0MjAwNl5BMl5BanBnXkFtZTgwMjY4Mzg2OTE@._V1_FMjpg_UX800_.jpg",
@@ -87,6 +91,7 @@ export const cartoonVideos: Video[] = [
   },
   {
     id: "9004",
+    "addedAt": "2026-05-20T16:24:28.000Z",
     title: "Migration (2023) - Animated Adventure Comedy",
     slug: generateSlug("Migration 2023 Animated Adventure Comedy"), "videoUrl": "https://youtu.be/placeholder_migration",
     "downloadUrl": "https://t.me/onemoviedownloa/96", "poster": "https://m.media-amazon.com/images/M/MV5BYjdlYWJjZTctODViZS00ODVlLTljOTEtOTZhYWZhZTRkZDM1XkEyXkFqcGc@._V1_FMjpg_UX800_.jpg",
@@ -101,6 +106,7 @@ export const cartoonVideos: Video[] = [
   },
   {
     id: "9005",
+    "addedAt": "2026-05-20T16:24:28.000Z",
     title: "Shin Jigen! Crayon Shin-chan The Movie (2023) - Anime Comedy",
     slug: generateSlug("Shin Jigen Crayon Shin chan The Movie 2023"), "videoUrl": "https://youtu.be/placeholder_shinchan",
     "downloadUrl": "https://t.me/onemoviedownloa/97", "poster": "https://m.media-amazon.com/images/M/MV5BNGQ5YjA2N2YtMTkwMi00YmI1LWI4MjUtNTM5ZTVhMmY0NjUzXkEyXkFqcGc@._V1_FMjpg_UX800_.jpg",
@@ -116,6 +122,7 @@ export const cartoonVideos: Video[] = [
   ,
   {
     id: "9007",
+    "addedAt": "2026-07-06T07:44:40.000Z",
     title: "Minions & Monsters (2026) - Animated Short Film",
     slug: generateSlug("Minions & Monsters (2026) - Animated Short Film"),
     "videoUrl": "https://youtu.be/V-O-uBaHk3c",
@@ -133,6 +140,7 @@ export const cartoonVideos: Video[] = [
 ,
   {
     id: "9009",
+    "addedAt": "2026-07-06T07:44:40.000Z",
     title: "The Super Mario Bros. Movie 2 (2026)",
     slug: generateSlug("The Super Mario Bros. Movie 2 (2026)"),
     videoUrl: "https://youtu.be/GuCejewteF8",
@@ -150,6 +158,7 @@ export const cartoonVideos: Video[] = [
 ,
   {
     "id": "9010",
+    "addedAt": "2026-07-06T08:50:00.000Z",
     "title": "Toy Story 5 (2026) - Animated Family Adventure",
     "slug": generateSlug("Toy Story 5 (2026) - Animated Family Adventure"),
     "videoUrl": "https://youtu.be/c51ND9Hdbw0",
@@ -167,6 +176,7 @@ export const cartoonVideos: Video[] = [
   },
   {
     "id": "9011",
+    "addedAt": "2026-07-15T12:25:37.000Z",
     "title": "Moana (2016) - Animated Adventure",
     "slug": generateSlug("Moana (2016) - Animated Adventure"),
     "videoUrl": "https://youtu.be/EEz5xbzYPKI",
@@ -184,6 +194,7 @@ export const cartoonVideos: Video[] = [
   },
 {
   "id": "9076",
+  "addedAt": "2026-10-08T18:53:04.000Z",
   "title": "Doraemon: Nobita and the New Castle of the Undersea Devil",
   "slug": "doraemon-nobita-and-the-new-castle-of-the-undersea-devil",
   "videoUrl": "https://youtu.be/tKdIRLkFs2E",
@@ -204,6 +215,7 @@ export const cartoonVideos: Video[] = [
 },
 {
 "id": "9077",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Tom & Jerry (2021) Hindi Dubbed - Live-Action Animated Comedy | Chloë Grace Moretz, Michael Peña",
 "slug": "tom-and-jerry-2021-hindi-dubbed",
 "videoUrl": "https://youtu.be/kP9TfCWaQT4",
@@ -224,6 +236,7 @@ export const cartoonVideos: Video[] = [
 },
 {
 "id": "9078",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Tom and Jerry Meet Sherlock Holmes (2010) Hindi Dubbed - Animated Mystery Comedy | Michael York, Malcolm McDowell",
 "slug": "tom-and-jerry-meet-sherlock-holmes-2010-hindi-dubbed",
 "videoUrl": "https://youtu.be/hQpCiXZofWE",
@@ -244,6 +257,7 @@ export const cartoonVideos: Video[] = [
 },
 {
 "id": "9079",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Frozen (2013) Hindi Dubbed - Animated Musical Fantasy | Kristen Bell, Idina Menzel",
 "slug": "frozen-2013-hindi-dubbed",
 "videoUrl": "https://youtu.be/TbQm5doF_Uc",
@@ -264,6 +278,7 @@ export const cartoonVideos: Video[] = [
 },
 {
 "id": "9080",
+"addedAt": "2026-10-16T06:08:16.000Z",
 "title": "Minions (2015) Hindi Dubbed - Animated Comedy | Sandra Bullock, Jon Hamm",
 "slug": "minions-2015-hindi-dubbed",
 "videoUrl": "https://youtu.be/P9-FCC6I7u0",
@@ -284,6 +299,7 @@ export const cartoonVideos: Video[] = [
 },
 {
   "id": "9081",
+  "addedAt": "2026-10-17T21:37:43.000Z",
   "title": "The Royal Cat (2024) - Animated Adventure Movie",
   "slug": "the-royal-cat-2024",
   "videoUrl": "https://youtu.be/FWqM3IBJyTw",

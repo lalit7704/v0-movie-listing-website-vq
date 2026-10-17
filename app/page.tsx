@@ -2,17 +2,13 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { HeroSlider } from "@/components/hero-slider";
 import { SectionSlider } from "@/components/section-slider";
-import { videos } from "@/data/videos";
+import { getRecentlyAddedVideos, videos } from "@/data/videos";
 import { PersonalizedHomeSections } from "@/components/personalized-home-sections";
 
-const HERO_CATEGORIES = /^(bollywood|hollywood|south[\s-]?indian)$/i;
-
 export default function HomePage() {
-  // Get different categories for sliders
-  const heroVideos = videos
-    .filter(v => HERO_CATEGORIES.test(v.category) && v.poster && v.downloadUrl && v.rating > 1) // Movies that can be downloaded
-    .sort((a, b) => b.year - a.year || b.rating - a.rating) // Newest first, then highest rated
-    .slice(0, 10); // Take top 10
+  // Newest additions to the site lead the page: 5 in the hero, more in the row below it
+  const latestAdded = getRecentlyAddedVideos(15);
+  const heroVideos = latestAdded.slice(0, 5);
 
   const trendingVideos = videos.slice(0, 12);
   const newReleases = [...videos].sort((a, b) => b.year - a.year).slice(0, 12);
@@ -31,6 +27,7 @@ export default function HomePage() {
 
         {/* Main Content Sections */}
         <div className="pt-8 space-y-4">
+          <SectionSlider title="Latest Added" videos={latestAdded} />
           <PersonalizedHomeSections />
           <div
     style={{
