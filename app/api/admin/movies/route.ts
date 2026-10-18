@@ -57,7 +57,7 @@ const movieSchema = z.object({
       if (broken !== -1) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
-          message: `Episode ${broken + 1} needs a t.me/c/3845134502/… or t.me/onemoviedownloa/… link, or just the post number`,
+          message: `Episode ${broken + 1} needs a t.me/onemoviebylalit_bott/… or t.me/c/3845134502/… link, or just the post number`,
         });
       }
     }),

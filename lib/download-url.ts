@@ -1,6 +1,8 @@
 export const TELEGRAM_BOT_USERNAME = "onemoviebylalit_bot";
+// The channel's public username was "onemoviedownloa" and is now "onemoviebylalit_bott";
+// both point at the same channel, so post numbers in either kind of link are valid.
 const PUBLIC_CHANNEL_POST_PATTERN =
-  /^https?:\/\/t\.me\/onemoviedownloa\/(\d+)\/?(?:[?#].*)?$/i;
+  /^https?:\/\/t\.me\/(?:onemoviedownloa|onemoviebylalit_bott)\/(\d+)\/?(?:[?#].*)?$/i;
 const PRIVATE_CHANNEL_POST_PATTERN =
   /^https?:\/\/t\.me\/c\/3845134502\/(\d+)\/?(?:[?#].*)?$/i;
 
