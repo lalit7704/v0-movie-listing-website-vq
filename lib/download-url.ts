@@ -8,7 +8,7 @@ export function getBotDeepLink(parameter: string) {
   return `https://t.me/${TELEGRAM_BOT_USERNAME}?start=${encodeURIComponent(parameter)}`;
 }
 
-function getTelegramMessageId(downloadUrl: string) {
+export function getTelegramMessageId(downloadUrl: string) {
   return (
     downloadUrl.match(PUBLIC_CHANNEL_POST_PATTERN)?.[1] ||
     downloadUrl.match(PRIVATE_CHANNEL_POST_PATTERN)?.[1]
@@ -21,4 +21,17 @@ export function resolveDownloadUrl(downloadUrl: string) {
   return messageId
     ? getBotDeepLink(`m_${messageId}`)
     : getBotDeepLink("unavailable");
+}
+
+/** Channel posts of a series' episodes, ascending and without repeats, as copyMessages needs them. */
+export function getEpisodeMessageIds(episodes: { downloadUrl: string }[] = []) {
+  const ids = episodes
+    .map((episode) => Number(getTelegramMessageId(episode.downloadUrl)))
+    .filter((id) => id > 0);
+  return [...new Set(ids)].sort((a, b) => a - b);
+}
+
+/** The bot sends every episode of the series with this id in one go. */
+export function getSeriesDownloadUrl(videoId: string) {
+  return getBotDeepLink(`s_${videoId}`);
 }

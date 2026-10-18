@@ -32,7 +32,11 @@ import {
 } from "@/lib/seo-utils";
 
 import { generateMoviePageJsonLd, serializeJsonLd } from "@/lib/structured-data";
-import { resolveDownloadUrl } from "@/lib/download-url";
+import {
+  getEpisodeMessageIds,
+  getSeriesDownloadUrl,
+  resolveDownloadUrl,
+} from "@/lib/download-url";
 
 import { MovieComments } from "@/components/movie-comments";
 import { TrackedDownloadLink } from "@/components/tracked-download-link";
@@ -40,6 +44,9 @@ import { ShareActions } from "@/components/share-actions";
 import { MovieSupportActions } from "@/components/movie-support-actions";
 import { WishlistButton } from "@/components/wishlist-button";
 import { PosterImage } from "@/components/poster-image";
+import { EpisodeDownloads } from "@/components/episode-downloads";
+
+const FIRST_CLICK_REDIRECT_URL = "https://www.onemovies.site/";
 
 interface MoviePageProps {
   params: Promise<{ slug: string }>;
@@ -191,11 +198,20 @@ export default async function MoviePage({
   );
 
   /**
+   * Web series with episodes: the main buttons send the whole season.
+   */
+  const episodes =
+    video.category === "Web Series" ? video.episodes ?? [] : [];
+  const episodeDownloadCount =
+    getEpisodeMessageIds(episodes).length;
+  const hasEpisodeDownloads = episodeDownloadCount > 0;
+
+  /**
    * Resolve download URL
    */
-  const downloadUrl = resolveDownloadUrl(
-    video.downloadUrl
-  );
+  const downloadUrl = hasEpisodeDownloads
+    ? getSeriesDownloadUrl(video.id)
+    : resolveDownloadUrl(video.downloadUrl);
 
   /**
    * Breadcrumbs
@@ -351,11 +367,11 @@ export default async function MoviePage({
                         href={downloadUrl}
                         movieId={video.id}
                         source="primary"
-                        firstClickRedirectUrl="https://www.onemovies.site/"
+                        firstClickRedirectUrl={FIRST_CLICK_REDIRECT_URL}
                       >
                         <Button className="gap-2">
                           <Download className="w-4 h-4" />
-                          Download
+                          {hasEpisodeDownloads ? "Download All" : "Download"}
                         </Button>
                       </TrackedDownloadLink>
                     </div>
@@ -377,6 +393,15 @@ export default async function MoviePage({
                     </span>
                   ))}
                 </div>
+
+                {/* Web Series Episodes */}
+                {episodes.length > 0 && (
+                  <EpisodeDownloads
+                    videoId={video.id}
+                    episodes={episodes}
+                    firstClickRedirectUrl={FIRST_CLICK_REDIRECT_URL}
+                  />
+                )}
 
                 {/* Description */}
                 <div className="bg-card rounded-xl p-6 border border-border">
@@ -525,10 +550,14 @@ export default async function MoviePage({
                       href={downloadUrl}
                       movieId={video.id}
                       source="quick-download"
-                      firstClickRedirectUrl="https://www.onemovies.site/"
+                      firstClickRedirectUrl={FIRST_CLICK_REDIRECT_URL}
                     >
                       <Button className="w-full justify-between">
-                        <span>Download Movie</span>
+                        <span>
+                          {hasEpisodeDownloads
+                            ? `Download All ${episodeDownloadCount} Episodes`
+                            : "Download Movie"}
+                        </span>
                         <Download className="w-4 h-4" />
                       </Button>
                     </TrackedDownloadLink>

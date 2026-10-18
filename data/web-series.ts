@@ -21,6 +21,15 @@ export interface Video {
   cast?: string[];
   keywords?: string[];
   addedAt?: string;
+  /** Episodes in order (Episode 1 first); each one gets its own download button. */
+  episodes?: Episode[];
+}
+
+export interface Episode {
+  /** Optional name shown after "Episode N". */
+  title?: string;
+  /** Telegram post of this episode, in the same formats as a movie's downloadUrl. */
+  downloadUrl: string;
 }
 
 /* ---------------- SLUG HELPER ---------------- */
@@ -881,6 +890,39 @@ export const webSeriesVideos: Video[] = [
 "quality": "HD",
 "cast": ["Alícia Falcó", "Pablo Álvarez", "Georgina Amorós"],
 "keywords": ["The Map of Longing", "The Map of Longing 2026", "The Map of Longing Hindi dubbed", "The Map of Longing Season 1", "Alícia Falcó", "Pablo Álvarez", "El mapa de los anhelos", "Alice Kellen", "Spanish series Hindi dubbed"]
+},
+{
+"id": "8048",
+"addedAt": "2026-10-18T18:46:56.000Z",
+"title": "Band of Brothers (2001) - WWII War Drama Mini Series | HBO",
+"slug": "band-of-brothers-2001",
+"videoUrl": "https://youtu.be/aH06LWZs-Ys",
+"downloadUrl": "",
+"poster": "https://m.media-amazon.com/images/M/MV5BYjdlNGJlYjQtMDU2Mi00ZjA1LWEwYzgtYzlmNDM5MmE1ZGUwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+"description": "Band of Brothers (2001) HBO की 10 एपिसोड वाली अमेरिकी वॉर ड्रामा मिनी-सीरीज़ है, जिसे स्टीवन स्पीलबर्ग और टॉम हैंक्स ने प्रोड्यूस किया है। यह इतिहासकार स्टीफ़न ई. एम्ब्रोज़ की किताब 'Band of Brothers' पर आधारित है और 9 सितंबर 2001 को HBO पर रिलीज़ हुई थी। डेमियन लुईस (रिचर्ड विंटर्स), रॉन लिविंगस्टन (लुईस निक्सन), डेविड श्विमर (हर्बर्ट सोबेल), डॉनी वॉलबर्ग, नील मैकडोनो और स्कॉट ग्राइम्स अहम भूमिकाओं में हैं।\n\nसीरीज़ दूसरे विश्व युद्ध में अमेरिकी सेना की 101st एयरबोर्न डिवीज़न की 'ईज़ी कंपनी' (Easy Company) के पैराट्रूपर्स की सच्ची कहानी है। जॉर्जिया के कैंप टोकोआ की कड़ी ट्रेनिंग से शुरू होकर यह कहानी डी-डे पर नॉर्मंडी में पैराशूट लैंडिंग, हॉलैंड के ऑपरेशन मार्केट गार्डन, बर्फ़ीले बास्तोन्य की घेराबंदी और जर्मनी में हिटलर के 'ईगल्स नेस्ट' तक पहुंचती है। हर एपिसोड की शुरुआत ईज़ी कंपनी के असली सैनिकों के इंटरव्यू से होती है।\n\nदोस्ती, बलिदान और युद्ध की भयावहता को दिखाने वाली इस सीरीज़ ने बेस्ट मिनी-सीरीज़ का एमी और गोल्डन ग्लोब अवॉर्ड जीता और इसे अब तक की सबसे बेहतरीन वॉर सीरीज़ में गिना जाता है।",
+"seoDescription": "Band of Brothers (2001) Damian Lewis और Ron Livingston की HBO वॉर ड्रामा मिनी-सीरीज़ की कहानी, trailer, cast, rating और सभी 10 एपिसोड की details देखें।",
+"category": "Web Series",
+"year": 2001,
+"duration": "Mini Series • 10 Episodes",
+"rating": 9.4,
+"genre": ["War", "Drama", "Action", "History"],
+"language": "English",
+"quality": "HD",
+"director": "Tom Hanks, David Frankel, Phil Alden Robinson",
+"cast": ["Damian Lewis", "Ron Livingston", "David Schwimmer", "Donnie Wahlberg", "Neal McDonough", "Scott Grimes", "Michael Fassbender", "Tom Hardy"],
+"keywords": ["Band of Brothers", "Band of Brothers 2001", "Band of Brothers HBO", "Band of Brothers all episodes", "Easy Company", "Steven Spielberg", "Tom Hanks", "Damian Lewis", "World War 2 series", "WWII mini series"],
+"episodes": [
+  { "title": "Currahee", "downloadUrl": "" },
+  { "title": "Day of Days", "downloadUrl": "" },
+  { "title": "Carentan", "downloadUrl": "" },
+  { "title": "Replacements", "downloadUrl": "" },
+  { "title": "Crossroads", "downloadUrl": "" },
+  { "title": "Bastogne", "downloadUrl": "" },
+  { "title": "The Breaking Point", "downloadUrl": "" },
+  { "title": "The Last Patrol", "downloadUrl": "" },
+  { "title": "Why We Fight", "downloadUrl": "" },
+  { "title": "Points", "downloadUrl": "" }
+]
 }
 ];
 

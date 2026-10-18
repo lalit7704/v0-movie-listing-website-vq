@@ -1,4 +1,4 @@
-import type { Video } from "@/data/videos";
+import type { Episode, Video } from "@/data/videos";
 
 /** Categories the admin form can add to, with the data file and array each one lives in. */
 export const MOVIE_CATEGORIES = ["Bollywood", "Hollywood", "South Indian", "Web Series", "Hot Series", "Cartoon"] as const;
@@ -30,6 +30,26 @@ export function normalizeDownloadUrl(value: string) {
   return /^\d+$/.test(trimmed) ? `https://t.me/c/3845134502/${trimmed}` : trimmed;
 }
 
+/** One episode per line: a Telegram link or post number, optionally followed by "| Episode name". */
+export function parseEpisodeLines(text: string): Episode[] {
+  return text
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => {
+      const [link, ...name] = line.split("|");
+      const title = name.join("|").trim();
+      return { ...(title ? { title } : {}), downloadUrl: normalizeDownloadUrl(link) };
+    });
+}
+
+/** The reverse of parseEpisodeLines, for filling the admin form from pasted JSON. */
+export function formatEpisodeLines(episodes: Episode[]) {
+  return episodes
+    .map((episode) => (episode.title ? `${episode.downloadUrl} | ${episode.title}` : episode.downloadUrl))
+    .join("\n");
+}
+
 const FIELD_ORDER: (keyof Video)[] = [
   "id",
   "addedAt",
@@ -51,15 +71,19 @@ const FIELD_ORDER: (keyof Video)[] = [
   "director",
   "cast",
   "keywords",
+  "episodes",
 ];
 
 /** Formats a movie the way entries are hand-written in the data files. */
 export function serializeMovie(movie: Video, eol = "\n") {
   const lines = FIELD_ORDER.filter((key) => movie[key] !== undefined).map((key) => {
     const value = movie[key];
-    const json = Array.isArray(value)
-      ? `[${value.map((item) => JSON.stringify(item)).join(", ")}]`
-      : JSON.stringify(value);
+    const json =
+      key === "episodes" && Array.isArray(value)
+        ? `[${eol}${value.map((item) => `    ${JSON.stringify(item)}`).join(`,${eol}`)}${eol}  ]`
+        : Array.isArray(value)
+          ? `[${value.map((item) => JSON.stringify(item)).join(", ")}]`
+          : JSON.stringify(value);
     return `  ${JSON.stringify(key)}: ${json}`;
   });
   return `{${eol}${lines.join(`,${eol}`)}${eol}}`;

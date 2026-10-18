@@ -7,7 +7,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Notice } from "@/components/admin/notice";
-import { MOVIE_CATEGORIES, slugify } from "@/lib/movie-source";
+import { MOVIE_CATEGORIES, formatEpisodeLines, parseEpisodeLines, slugify } from "@/lib/movie-source";
+import type { Episode } from "@/data/videos";
 
 const EMPTY_FIELDS = {
   category: "Bollywood" as string,
@@ -28,6 +29,7 @@ const EMPTY_FIELDS = {
   director: "",
   cast: "",
   keywords: "",
+  episodes: "",
   featured: false,
 };
 
@@ -59,6 +61,7 @@ function fieldsFromJson(text: string, current: MovieFields): MovieFields {
     // A pasted id usually belongs to an existing movie, so new ones always get a fresh id.
     if (key === "id" || key === "category" || value === undefined || value === null) continue;
     if (key === "featured") next.featured = Boolean(value);
+    else if (key === "episodes" && Array.isArray(value)) next.episodes = formatEpisodeLines(value as Episode[]);
     else next[key] = Array.isArray(value) ? value.join(", ") : String(value);
   }
 
@@ -112,6 +115,8 @@ export function MovieForm() {
   const [result, setResult] = useState<AddResult | null>(null);
 
   const slugPreview = slugify(fields.slug || fields.title);
+  const isWebSeries = fields.category === "Web Series";
+  const episodeCount = parseEpisodeLines(fields.episodes).length;
 
   const text = (name: TextField) => ({
     id: `movie-${name}`,
@@ -142,7 +147,8 @@ export function MovieForm() {
       const response = await fetch("/api/admin/movies", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(fields),
+        // Episodes are only kept for web series, even if typed before switching category.
+        body: JSON.stringify({ ...fields, episodes: isWebSeries ? fields.episodes : "" }),
       });
       const data = await response.json();
       if (!data.success) {
@@ -245,6 +251,21 @@ export function MovieForm() {
           >
             <Input {...text("downloadUrl")} placeholder="https://t.me/c/3845134502/372" />
           </Field>
+          {isWebSeries && (
+            <Field
+              id="movie-episodes"
+              label={episodeCount ? `Episodes (${episodeCount})` : "Episodes"}
+              hint="One episode per line, in order: full t.me link or just the post number. Add | and a name if you like. Each episode gets its own download button, plus Download All for the full season."
+              className="sm:col-span-2"
+            >
+              <Textarea
+                {...text("episodes")}
+                rows={6}
+                placeholder={"https://t.me/c/3845134502/501\n502 | Episode name\n503"}
+                className="font-mono text-xs"
+              />
+            </Field>
+          )}
           <Field id="movie-poster" label="Poster URL *" className="sm:col-span-2">
             <div className="flex gap-3">
               <Input {...text("poster")} type="url" required placeholder="https://m.media-amazon.com/images/M/..." />

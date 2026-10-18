@@ -7,6 +7,8 @@ import {
   callTelegram,
   isValidWebhookSecret,
 } from "@/lib/telegram-webhook";
+import { getEpisodeMessageIds } from "@/lib/download-url";
+import { videos } from "@/data/videos";
 
 export const runtime = "nodejs";
 export const maxDuration = 30;
@@ -89,6 +91,31 @@ async function deliverMovie(chatId: number, userId: number, messageId: string) {
   }
 }
 
+async function deliverSeries(chatId: number, userId: number, videoId: string) {
+  const series = videos.find((video) => video.id === videoId);
+  const messageIds = getEpisodeMessageIds(series?.episodes);
+  if (!series || !messageIds.length) {
+    await sendMessage(chatId, "This series is not available for download yet.");
+    return;
+  }
+
+  try {
+    await sendMessage(chatId, `${series.title}\nSending ${messageIds.length} episodes...`);
+    // copyMessages takes at most 100 posts per call, in increasing order.
+    for (let start = 0; start < messageIds.length; start += 100) {
+      await callTelegram("copyMessages", {
+        chat_id: chatId,
+        from_chat_id: TELEGRAM_CHANNEL_ID,
+        message_ids: messageIds.slice(start, start + 100),
+      });
+    }
+    await recordEvent(userId, "delivery", { videoId, episodes: messageIds.length });
+  } catch (error) {
+    console.error("Telegram series delivery failed", error);
+    await sendMessage(chatId, "Episodes could not be sent. Please try again later.");
+  }
+}
+
 function userLabel(user: TelegramUser) {
   return user.username ? `@${user.username}` : `${user.first_name || "User"} (${user.id})`;
 }
@@ -134,6 +161,13 @@ async function handleMessage(message: TelegramMessage) {
   if (movieMatch) {
     await recordEvent(user.id, "movie_request", { messageId: movieMatch[1] });
     await deliverMovie(chatId, user.id, movieMatch[1]);
+    return;
+  }
+
+  const seriesMatch = text.match(/^\/start(?:@\w+)?\s+s_([A-Za-z0-9_-]+)$/i);
+  if (seriesMatch) {
+    await recordEvent(user.id, "movie_request", { videoId: seriesMatch[1] });
+    await deliverSeries(chatId, user.id, seriesMatch[1]);
     return;
   }
 

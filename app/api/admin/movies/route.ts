@@ -3,6 +3,7 @@ import { z } from "zod";
 import { videos, type Video } from "@/data/videos";
 import { getAdminSession } from "@/lib/admin-auth";
 import { isGitHubConfigured, updateRepoFile } from "@/lib/github";
+import { getTelegramMessageId } from "@/lib/download-url";
 import {
   CATEGORY_SOURCES,
   MOVIE_CATEGORIES,
@@ -10,6 +11,7 @@ import {
   insertMovie,
   nextMovieId,
   normalizeDownloadUrl,
+  parseEpisodeLines,
   slugify,
 } from "@/lib/movie-source";
 
@@ -45,6 +47,20 @@ const movieSchema = z.object({
   director: z.string().trim().default(""),
   cast: list,
   keywords: list,
+  episodes: z
+    .string()
+    .default("")
+    .transform(parseEpisodeLines)
+    .superRefine((episodes, ctx) => {
+      // "Download All" only works for posts the bot can copy from the channel.
+      const broken = episodes.findIndex((episode) => !getTelegramMessageId(episode.downloadUrl));
+      if (broken !== -1) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: `Episode ${broken + 1} needs a t.me/c/3845134502/… or t.me/onemoviedownloa/… link, or just the post number`,
+        });
+      }
+    }),
 });
 
 export async function POST(request: NextRequest) {
@@ -107,6 +123,8 @@ export async function POST(request: NextRequest) {
         director: input.director || undefined,
         cast: input.cast.length ? input.cast : undefined,
         keywords: input.keywords.length ? input.keywords : undefined,
+        episodes:
+          input.category === "Web Series" && input.episodes.length ? input.episodes : undefined,
       };
       return insertMovie(current, exportName, movie);
     });

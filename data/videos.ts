@@ -1,6 +1,6 @@
 import { bollywoodVideos } from "./bollywood";
 import { hollywoodVideos } from "./hollywood";
-import { webSeriesVideos } from "./web-series";
+import { webSeriesVideos, type Episode } from "./web-series";
 import { hotSeriesVideos } from "./hot-series";
 import { cartoonVideos } from "./cartoon";
 import { ramayanaVideos } from "./ramayana";
@@ -32,7 +32,11 @@ export interface Video {
   keywords?: string[];
   /** ISO date the entry was added to the site; drives "Latest Added". */
   addedAt?: string;
+  /** Web series only: per-episode downloads, plus a "Download All" through the bot. */
+  episodes?: Episode[];
 }
+
+export type { Episode };
 
 /* ---------------- NORMALIZE ---------------- */
 
