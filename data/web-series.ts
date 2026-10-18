@@ -915,13 +915,13 @@ export const webSeriesVideos: Video[] = [
   { "title": "Currahee", "downloadUrl": "https://t.me/onemoviebylalit_bott/436" },
   { "title": "Day of Days", "downloadUrl": "https://t.me/onemoviebylalit_bott/436" },
   { "title": "Carentan", "downloadUrl": "https://t.me/onemoviebylalit_bott/436" },
-  { "title": "Replacements", "downloadUrl": "#" },
-  { "title": "Crossroads", "downloadUrl": "" },
-  { "title": "Bastogne", "downloadUrl": "" },
-  { "title": "The Breaking Point", "downloadUrl": "" },
-  { "title": "The Last Patrol", "downloadUrl": "" },
-  { "title": "Why We Fight", "downloadUrl": "" },
-  { "title": "Points", "downloadUrl": "" }
+  { "title": "Replacements", "downloadUrl": "https://t.me/onemoviebylalit_bott/436" },
+  { "title": "Crossroads", "downloadUrl": "https://t.me/onemoviebylalit_bott/436" },
+  { "title": "Bastogne", "downloadUrl": "https://t.me/onemoviebylalit_bott/436" },
+  { "title": "The Breaking Point", "downloadUrl": "https://t.me/onemoviebylalit_bott/436" },
+  { "title": "The Last Patrol", "downloadUrl": "https://t.me/onemoviebylalit_bott/436" },
+  { "title": "Why We Fight", "downloadUrl": "https://t.me/onemoviebylalit_bott/436" },
+  { "title": "Points", "downloadUrl": "https://t.me/onemoviebylalit_bott/436" }
 ]
 },
 {

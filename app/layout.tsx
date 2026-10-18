@@ -32,22 +32,23 @@ export const metadata: Metadata = {
   description:
     'Browse movies and web series, including Bollywood, Hollywood, and South Indian titles, on Onemovie.',
 
+  // Film reel from the OneMovie logo, on a dark red tile.
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
+        url: '/favicon.ico',
+        sizes: '16x16 32x32 48x48',
       },
       {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/favicon-192x192.png',
+        type: 'image/png',
+        sizes: '192x192',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: {
+      url: '/apple-icon.png',
+      sizes: '180x180',
+    },
   },
 
   openGraph: {
