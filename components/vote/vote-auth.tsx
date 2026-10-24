@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, type FormEvent } from "react";
-import { ArrowLeft, KeyRound, Loader2, Vote } from "lucide-react";
+import { ArrowLeft, KeyRound, Loader2, Send, Vote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -17,12 +17,21 @@ interface Challenge {
   challengeId: string;
   sentTo: string;
   resendAfter: number;
+  /** See OtpDelivery in lib/vote/otp.ts. */
+  delivery: "telegram" | "link" | "dev";
+  telegramLink: string | null;
   devCode?: string;
 }
 
+const challengeText: Record<Challenge["delivery"], (sentTo: string) => string> = {
+  telegram: (sentTo) => `We sent the OTP to your Telegram account (${sentTo}). Enter it below.`,
+  link: (sentTo) => `Get your OTP for ${sentTo} from our Telegram bot.`,
+  dev: (sentTo) => `Enter the 6 digit OTP for ${sentTo}.`,
+};
+
 /**
- * Signup: name + phone + password, then the OTP creates the account.
- * Login: phone + password, then the OTP signs in.
+ * Signup: name + phone + password, then the Telegram OTP creates the account.
+ * Login: phone + password, then the Telegram OTP signs in.
  */
 export function VoteAuth({ heading, onSignedIn }: { heading: string; onSignedIn: (user: VoteUser) => void }) {
   const [mode, setMode] = useState<Mode>("login");
@@ -98,10 +107,10 @@ export function VoteAuth({ heading, onSignedIn }: { heading: string; onSignedIn:
         <h1 className="text-2xl font-bold text-foreground">{heading}</h1>
         <p className="mt-2 text-sm text-muted-foreground">
           {challenge
-            ? `Enter the 6 digit OTP sent to ${challenge.sentTo}.`
+            ? challengeText[challenge.delivery](challenge.sentTo)
             : mode === "signup"
-              ? "Create your account with your mobile number and a password."
-              : "Login with your mobile number and password. We will send an OTP to confirm."}
+              ? "Create your account with your mobile number and a password. You need Telegram on this number for the OTP."
+              : "Login with your mobile number and password. We will send an OTP on Telegram to confirm."}
         </p>
       </div>
 
@@ -115,8 +124,30 @@ export function VoteAuth({ heading, onSignedIn }: { heading: string; onSignedIn:
         >
           {challenge.devCode && (
             <Notice tone="warning">
-              Test mode: no SMS provider is set up, so the OTP is <strong>{challenge.devCode}</strong>.
+              Test mode: the voting Telegram bot is not set up, so the OTP is <strong>{challenge.devCode}</strong>.
             </Notice>
+          )}
+          {challenge.delivery === "link" && (
+            <ol className="list-decimal space-y-1 rounded-md border border-border bg-muted/40 py-3 pl-8 pr-4 text-sm text-muted-foreground">
+              <li>Tap Open Telegram below.</li>
+              <li>
+                Press <strong className="text-foreground">Start</strong>, then{" "}
+                <strong className="text-foreground">Share my phone number</strong>.
+              </li>
+              <li>The bot sends you a 6 digit OTP. Enter it here.</li>
+            </ol>
+          )}
+          {challenge.telegramLink && (
+            <Button
+              asChild
+              variant={challenge.delivery === "link" ? "default" : "outline"}
+              className="w-full gap-2"
+            >
+              <a href={challenge.telegramLink} target="_blank" rel="noopener noreferrer">
+                <Send className="h-4 w-4" aria-hidden="true" />
+                Open Telegram
+              </a>
+            </Button>
           )}
           <div className="flex justify-center">
             <InputOTP
@@ -164,7 +195,7 @@ export function VoteAuth({ heading, onSignedIn }: { heading: string; onSignedIn:
               disabled={busy || resendIn > 0}
               onClick={() => void requestOtp()}
             >
-              {resendIn > 0 ? `Resend OTP in ${resendIn}s` : "Resend OTP"}
+              {resendIn > 0 ? `New OTP in ${resendIn}s` : "Get a new OTP"}
             </button>
           </div>
         </form>
@@ -240,8 +271,12 @@ export function VoteAuth({ heading, onSignedIn }: { heading: string; onSignedIn:
             )}
             {message && <p className="text-sm text-yellow-300">{message}</p>}
             <Button className="w-full gap-2" type="submit" disabled={busy}>
-              {busy && <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />}
-              Send OTP
+              {busy ? (
+                <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+              ) : (
+                <Send className="h-4 w-4" aria-hidden="true" />
+              )}
+              Get OTP on Telegram
             </Button>
           </form>
         </>

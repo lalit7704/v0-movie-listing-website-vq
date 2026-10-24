@@ -32,6 +32,7 @@ export async function POST(request: NextRequest) {
           phone: challenge.phone,
           name: challenge.payload.name,
           password_hash: challenge.payload.passwordHash,
+          telegram_chat_id: challenge.telegramChatId,
         })
         .select("id, phone, name, role")
         .single();
@@ -47,7 +48,16 @@ export async function POST(request: NextRequest) {
     }
 
     const { token, expiresAt } = await startSession(db, user.id);
-    must(await db.from("vote_users").update({ last_login_at: new Date().toISOString() }).eq("id", user.id));
+    // Remembering the chat lets the next login send its code straight to Telegram.
+    must(
+      await db
+        .from("vote_users")
+        .update({
+          last_login_at: new Date().toISOString(),
+          ...(challenge.telegramChatId ? { telegram_chat_id: challenge.telegramChatId } : {}),
+        })
+        .eq("id", user.id)
+    );
 
     const response = NextResponse.json({ success: true, user: toVoteUser(user) });
     setSessionCookie(response, token, expiresAt);

@@ -33,6 +33,7 @@ export async function POST(request: NextRequest) {
       purpose: "signup",
       payload: { name, passwordHash: await hashPassword(password) },
       ipHash: clientIpHash(request),
+      origin: request.nextUrl.origin,
     });
     return otpSentResponse(phone, otp);
   } catch (caught) {

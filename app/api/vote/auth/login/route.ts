@@ -20,7 +20,7 @@ const loginSchema = z.object({
   password: z.string().min(1, "Enter your password").max(72, "Password is too long"),
 });
 
-/** Step 1 of login: a correct password sends the OTP, and only the OTP starts a session. */
+/** Step 1 of login: a correct password asks for the Telegram OTP, and only the OTP starts a session. */
 export async function POST(request: NextRequest) {
   try {
     const { phone, password } = await parseBody(request, loginSchema);
@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     const user = must(
       await db
         .from("vote_users")
-        .select("id, password_hash, failed_logins, locked_until")
+        .select("id, password_hash, failed_logins, locked_until, telegram_chat_id")
         .eq("phone", phone)
         .maybeSingle()
     );
@@ -66,6 +66,8 @@ export async function POST(request: NextRequest) {
       purpose: "login",
       payload: { userId: user.id },
       ipHash: clientIpHash(request),
+      origin: request.nextUrl.origin,
+      telegramChatId: user.telegram_chat_id,
     });
     return otpSentResponse(phone, otp);
   } catch (caught) {

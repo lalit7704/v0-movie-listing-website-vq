@@ -1,12 +1,12 @@
 -- Voting page (/vote). Accounts here are separate from Supabase auth users:
--- voters sign up with phone + password and log in with password + SMS OTP.
+-- voters sign up with phone + password and log in with password + an OTP sent on Telegram.
 -- Only the server (service role) reads or writes these tables.
 --
 -- Server env vars: VOTE_OWNER_PHONE (owner's mobile, comma separated for more than one),
--- SUPABASE_SERVICE_ROLE_KEY, and an SMS provider:
---   VOTE_SMS_PROVIDER=fast2sms + FAST2SMS_API_KEY, or
---   VOTE_SMS_PROVIDER=twilio + TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_FROM.
--- Without a provider, local dev shows the OTP on screen; production refuses to send.
+-- SUPABASE_SERVICE_ROLE_KEY, and VOTE_TELEGRAM_BOT_TOKEN (a bot made only for voting,
+-- not the download bot). Without the token, local dev shows the OTP on screen.
+--
+-- Safe to run again; the alter statements at the end upgrade a copy made by an older version.
 
 create extension if not exists pgcrypto;
 
@@ -16,6 +16,7 @@ create table if not exists public.vote_users (
   name text not null check (char_length(name) between 2 and 60),
   password_hash text not null,
   role text not null default 'voter' check (role in ('voter', 'manager')),
+  telegram_chat_id bigint,
   failed_logins integer not null default 0,
   locked_until timestamptz,
   last_login_at timestamptz,
@@ -26,7 +27,9 @@ create table if not exists public.vote_otp_challenges (
   id uuid primary key default gen_random_uuid(),
   phone text not null,
   purpose text not null check (purpose in ('signup', 'login')),
-  code_hash text not null,
+  -- Empty until the bot has sent a code, which needs the voter to share their number with it.
+  code_hash text,
+  telegram_chat_id bigint,
   payload jsonb not null default '{}'::jsonb,
   attempts integer not null default 0,
   ip_hash text,
@@ -113,3 +116,8 @@ alter table public.vote_votes enable row level security;
 revoke all on public.vote_users, public.vote_otp_challenges, public.vote_sessions,
   public.vote_polls, public.vote_options, public.vote_votes from anon, authenticated;
 revoke all on function public.vote_count_change() from public, anon, authenticated;
+
+-- Upgrades tables created by the first (SMS) version of this file.
+alter table public.vote_users add column if not exists telegram_chat_id bigint;
+alter table public.vote_otp_challenges add column if not exists telegram_chat_id bigint;
+alter table public.vote_otp_challenges alter column code_hash drop not null;

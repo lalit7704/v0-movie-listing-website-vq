@@ -2,91 +2,82 @@ import { randomInt, randomUUID, timingSafeEqual } from "node:crypto";
 import { NextResponse } from "next/server";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { VoteError, must, sha256 } from "@/lib/vote/auth";
-import { maskPhone } from "@/lib/vote/phone";
+import { maskPhone, normalizePhone } from "@/lib/vote/phone";
+import {
+  TelegramError,
+  ensureVoteBotWebhook,
+  getVoteBotLink,
+  isVoteBotReady,
+  sendVoteBotMessage,
+} from "@/lib/vote/telegram";
 
-const OTP_TTL_MS = 5 * 60_000;
-export const RESEND_AFTER_SECONDS = 60;
-const MAX_PER_PHONE_PER_HOUR = 5;
+const OTP_TTL_MS = 10 * 60_000;
+export const RESEND_AFTER_SECONDS = 30;
+const MAX_PER_PHONE_PER_HOUR = 10;
 const MAX_PER_IP_PER_HOUR = 20;
 const MAX_ATTEMPTS = 5;
 
 export type OtpPurpose = "signup" | "login";
+
+/**
+ * telegram: the code went straight to the voter's known Telegram chat.
+ * link: the voter must open the bot and share their number; the bot then sends the code.
+ * dev: no bot token outside production, so the code is shown on screen.
+ */
+export type OtpDelivery = "telegram" | "link" | "dev";
 
 export interface OtpChallenge {
   id: string;
   phone: string;
   purpose: OtpPurpose;
   payload: Record<string, string>;
+  telegramChatId: number | null;
+}
+
+function newCode() {
+  return randomInt(0, 1_000_000).toString().padStart(6, "0");
 }
 
 function codeHash(challengeId: string, code: string) {
   return sha256(`vote-otp:${challengeId}:${code}`);
 }
 
-const smsText = (code: string) =>
-  `${code} is your Onemovie voting OTP. It is valid for 5 minutes. Do not share it with anyone.`;
+const otpMessage = (code: string) =>
+  `Your Onemovie voting OTP is <code>${code}</code>\n\nIt is valid for 10 minutes. Do not share it with anyone.`;
+
+const shareNumberKeyboard = {
+  keyboard: [[{ text: "📱 Share my phone number", request_contact: true }]],
+  resize_keyboard: true,
+  one_time_keyboard: true,
+};
 
 /**
- * Sends the code with the provider named in VOTE_SMS_PROVIDER (fast2sms or twilio).
- * Outside production with no provider set, the code is only logged and handed back for testing.
+ * Rate limits and stores a new challenge. A login with a known Telegram chat gets its code at once;
+ * otherwise the bot sends it after the voter shares this number. The payload comes back from verifyOtp().
  */
-async function sendOtpSms(phone: string, code: string): Promise<{ devCode?: string }> {
-  const provider = (process.env.VOTE_SMS_PROVIDER || "fast2sms").trim().toLowerCase();
-  const fast2smsKey = process.env.FAST2SMS_API_KEY;
-  const twilioSid = process.env.TWILIO_ACCOUNT_SID;
-  const twilioToken = process.env.TWILIO_AUTH_TOKEN;
-  const twilioFrom = process.env.TWILIO_FROM;
-
-  if (provider === "fast2sms" && fast2smsKey) {
-    // Fast2SMS OTP route: Indian 10 digit numbers, message "Your OTP: <code>".
-    const response = await fetch("https://www.fast2sms.com/dev/bulkV2", {
-      method: "POST",
-      headers: { authorization: fast2smsKey, "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams({ route: "otp", variables_values: code, numbers: phone.replace(/^\+91/, "") }),
-      cache: "no-store",
-    });
-    const data = await response.json().catch(() => null);
-    if (!response.ok || data?.return !== true) {
-      console.error("[vote] Fast2SMS failed", response.status, data);
-      throw new VoteError("Could not send the OTP SMS. Please try again.", 502);
-    }
-    return {};
-  }
-
-  if (provider === "twilio" && twilioSid && twilioToken && twilioFrom) {
-    const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${twilioSid}/Messages.json`, {
-      method: "POST",
-      headers: {
-        Authorization: `Basic ${Buffer.from(`${twilioSid}:${twilioToken}`).toString("base64")}`,
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: new URLSearchParams({
-        To: phone,
-        Body: smsText(code),
-        // A Messaging Service SID starts with MG; anything else is a sender number.
-        [twilioFrom.startsWith("MG") ? "MessagingServiceSid" : "From"]: twilioFrom,
-      }),
-      cache: "no-store",
-    });
-    if (!response.ok) {
-      console.error("[vote] Twilio failed", response.status, await response.text().catch(() => ""));
-      throw new VoteError("Could not send the OTP SMS. Please try again.", 502);
-    }
-    return {};
-  }
-
-  if (process.env.NODE_ENV !== "production") {
-    console.info(`[vote] No SMS provider set up. OTP for ${phone}: ${code}`);
-    return { devCode: code };
-  }
-  throw new VoteError("OTP SMS is not set up on the server yet. Ask the site owner.", 503);
-}
-
-/** Rate limits, stores and sends a new 6 digit code. The payload comes back from verifyOtp(). */
 export async function issueOtp(
   db: SupabaseClient,
-  { phone, purpose, payload, ipHash }: { phone: string; purpose: OtpPurpose; payload: Record<string, string>; ipHash: string }
+  {
+    phone,
+    purpose,
+    payload,
+    ipHash,
+    origin,
+    telegramChatId = null,
+  }: {
+    phone: string;
+    purpose: OtpPurpose;
+    payload: Record<string, string>;
+    ipHash: string;
+    origin: string;
+    telegramChatId?: number | null;
+  }
 ) {
+  const botReady = isVoteBotReady();
+  if (!botReady && process.env.NODE_ENV === "production") {
+    throw new VoteError("Telegram OTP is not set up on the server yet. Ask the site owner.", 503);
+  }
+
   const hourAgo = new Date(Date.now() - 3_600_000).toISOString();
   const recent = must(
     await db
@@ -114,8 +105,21 @@ export async function issueOtp(
     throw new VoteError("Too many OTP requests from your network. Please try again later.", 429);
   }
 
+  let telegramLink: string | null = null;
+  if (botReady) {
+    try {
+      telegramLink = await getVoteBotLink();
+    } catch (caught) {
+      console.error("[vote] Voting bot is not reachable", caught);
+      throw new VoteError("Telegram OTP is not working right now. Please try again later.", 503);
+    }
+    await ensureVoteBotWebhook(origin);
+  }
+
   const id = randomUUID();
-  const code = randomInt(0, 1_000_000).toString().padStart(6, "0");
+  // A code exists up front only when it can be delivered now: on screen in dev, or to a known chat.
+  const directChat = botReady ? telegramChatId : null;
+  const code = !botReady || directChat ? newCode() : null;
   must(
     await db.from("vote_otp_challenges").insert({
       id,
@@ -123,38 +127,111 @@ export async function issueOtp(
       purpose,
       payload,
       ip_hash: ipHash,
-      code_hash: codeHash(id, code),
+      code_hash: code ? codeHash(id, code) : null,
+      telegram_chat_id: directChat,
       expires_at: new Date(Date.now() + OTP_TTL_MS).toISOString(),
     })
   );
 
-  let sent: { devCode?: string };
-  try {
-    sent = await sendOtpSms(phone, code);
-  } catch (caught) {
-    // A code that never reached the phone should not count against the limits.
-    await db.from("vote_otp_challenges").delete().eq("id", id);
-    throw caught;
+  let delivery: OtpDelivery = botReady ? "link" : "dev";
+  if (directChat && code) {
+    try {
+      await sendVoteBotMessage(directChat, otpMessage(code));
+      delivery = "telegram";
+    } catch (caught) {
+      if (!(caught instanceof TelegramError)) throw caught;
+      // Blocked bot or deleted chat: fall back to sharing the number again.
+      console.warn("[vote] Direct Telegram OTP failed", caught.message);
+      must(await db.from("vote_otp_challenges").update({ code_hash: null, telegram_chat_id: null }).eq("id", id));
+    }
   }
+  if (delivery === "dev") console.info(`[vote] No voting bot token. OTP for ${phone}: ${code}`);
 
-  // Codes older than a day no longer matter for anything, including the hourly limits.
+  // Rows older than a day no longer matter for anything, including the hourly limits.
   await db
     .from("vote_otp_challenges")
     .delete()
     .lt("created_at", new Date(Date.now() - 86_400_000).toISOString());
 
-  return { challengeId: id, devCode: sent.devCode };
+  return { challengeId: id, delivery, telegramLink, devCode: delivery === "dev" ? (code ?? undefined) : undefined };
 }
 
-/** What the signup and login routes answer once a code is on its way. */
-export function otpSentResponse(phone: string, { challengeId, devCode }: { challengeId: string; devCode?: string }) {
+/** What the signup and login routes answer once a challenge exists. */
+export function otpSentResponse(phone: string, otp: Awaited<ReturnType<typeof issueOtp>>) {
   return NextResponse.json({
     success: true,
-    challengeId,
+    challengeId: otp.challengeId,
     sentTo: maskPhone(phone),
     resendAfter: RESEND_AFTER_SECONDS,
-    ...(devCode ? { devCode } : {}),
+    delivery: otp.delivery,
+    telegramLink: otp.telegramLink,
+    ...(otp.devCode ? { devCode: otp.devCode } : {}),
   });
+}
+
+interface TelegramMessage {
+  chat: { id: number; type: string };
+  from?: { id: number };
+  contact?: { phone_number: string; user_id?: number };
+}
+
+/**
+ * Handles a private message to the voting bot. Sharing a contact proves the Telegram account owns
+ * that number, so the bot sends the code for the newest pending challenge of that number.
+ */
+export async function handleVoteBotMessage(db: SupabaseClient, message: TelegramMessage) {
+  const chatId = message.chat.id;
+  const { contact } = message;
+
+  if (!contact) {
+    await sendVoteBotMessage(
+      chatId,
+      "Welcome to <b>Onemovie voting</b>.\n\nTap the button below to share your phone number. If it matches the number you entered on the website, I will send your OTP here.",
+      shareNumberKeyboard
+    );
+    return;
+  }
+
+  // A forwarded or picked contact belongs to someone else; only the button shares your own.
+  if (!message.from || contact.user_id !== message.from.id) {
+    await sendVoteBotMessage(chatId, "Please share <b>your own</b> number with the button below.", shareNumberKeyboard);
+    return;
+  }
+
+  const phone = normalizePhone(contact.phone_number);
+  if (!phone) {
+    await sendVoteBotMessage(chatId, "Only Indian (+91) mobile numbers can be used for voting.", { remove_keyboard: true });
+    return;
+  }
+
+  const challenge = must(
+    await db
+      .from("vote_otp_challenges")
+      .select("id")
+      .eq("phone", phone)
+      .is("consumed_at", null)
+      .gt("expires_at", new Date().toISOString())
+      .order("created_at", { ascending: false })
+      .limit(1)
+      .maybeSingle()
+  );
+  if (!challenge) {
+    await sendVoteBotMessage(
+      chatId,
+      `No OTP request found for ${maskPhone(phone)}.\n\nOn the website, enter this same number and press <b>Get OTP on Telegram</b>, then share your number here again.`,
+      { remove_keyboard: true }
+    );
+    return;
+  }
+
+  const code = newCode();
+  must(
+    await db
+      .from("vote_otp_challenges")
+      .update({ code_hash: codeHash(challenge.id, code), telegram_chat_id: chatId, attempts: 0 })
+      .eq("id", challenge.id)
+  );
+  await sendVoteBotMessage(chatId, otpMessage(code), { remove_keyboard: true });
 }
 
 /** Checks the code and marks the challenge used, so each code logs in at most once. */
@@ -162,12 +239,15 @@ export async function verifyOtp(db: SupabaseClient, challengeId: string, code: s
   const row = must(
     await db
       .from("vote_otp_challenges")
-      .select("id, phone, purpose, payload, code_hash, attempts, expires_at, consumed_at")
+      .select("id, phone, purpose, payload, code_hash, telegram_chat_id, attempts, expires_at, consumed_at")
       .eq("id", challengeId)
       .maybeSingle()
   );
   if (!row || row.consumed_at) throw new VoteError("This OTP is no longer valid. Ask for a new one.");
   if (new Date(row.expires_at) <= new Date()) throw new VoteError("OTP expired. Ask for a new one.");
+  if (!row.code_hash) {
+    throw new VoteError("Open Telegram and share your number with the bot first. It will send your OTP.");
+  }
   if (row.attempts >= MAX_ATTEMPTS) throw new VoteError("Too many wrong tries. Ask for a new OTP.", 429);
 
   const matches = timingSafeEqual(Buffer.from(row.code_hash, "hex"), Buffer.from(codeHash(row.id, code), "hex"));
@@ -189,5 +269,11 @@ export async function verifyOtp(db: SupabaseClient, challengeId: string, code: s
   );
   if (!used.length) throw new VoteError("This OTP is no longer valid. Ask for a new one.");
 
-  return { id: row.id, phone: row.phone, purpose: row.purpose, payload: row.payload };
+  return {
+    id: row.id,
+    phone: row.phone,
+    purpose: row.purpose,
+    payload: row.payload,
+    telegramChatId: row.telegram_chat_id ?? null,
+  };
 }

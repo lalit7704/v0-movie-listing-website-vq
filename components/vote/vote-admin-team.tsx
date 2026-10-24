@@ -40,7 +40,7 @@ export function VoteAdminTeam() {
       setMessage({
         tone: "success",
         text: data.created
-          ? "Manager added. They can log in at /vote/admin with this number and password, then the OTP."
+          ? "Manager added. They can log in at /vote/admin with this number and password, then the OTP from our Telegram bot."
           : "This number already had an account. It is now a manager.",
       });
       setPhone("");
@@ -76,8 +76,9 @@ export function VoteAdminTeam() {
       <form onSubmit={handleAdd} className="rounded-lg border border-border bg-card p-4 sm:p-5">
         <h2 className="mb-1 text-base font-semibold text-foreground">Add a manager</h2>
         <p className="mb-4 text-sm text-muted-foreground">
-          Managers can create, close and delete polls and see all results. Only you can add or remove managers. If the
-          number already has a voting account, name and password are optional; leave the password empty to keep theirs.
+          Managers can create, close and delete polls and see all results. Only you can add or remove managers. They
+          need Telegram on this number for the login OTP. If the number already has a voting account, name and password
+          are optional; leave the password empty to keep theirs.
         </p>
         <div className="grid gap-4 sm:grid-cols-3">
           <div className="space-y-1.5">
