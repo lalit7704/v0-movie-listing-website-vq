@@ -89,7 +89,7 @@ export function VoteAdmin() {
             )}
           </TabsList>
           <TabsContent value="polls">
-            <VoteAdminPolls />
+            <VoteAdminPolls isOwner={user.role === "owner"} />
           </TabsContent>
           {user.role === "owner" && (
             <TabsContent value="team">

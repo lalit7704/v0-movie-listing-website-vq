@@ -31,6 +31,14 @@ export interface PollView {
   myOptionId: string | null;
 }
 
+/** One row of a poll's voter list, which only the owner can see. */
+export interface PollVoter {
+  name: string;
+  phone: string;
+  option: string;
+  votedAt: string;
+}
+
 export interface VoteManager {
   id: string;
   name: string;

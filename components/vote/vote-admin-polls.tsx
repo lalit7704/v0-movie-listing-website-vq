@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Notice } from "@/components/admin/notice";
 import { PollResults, PollStatus } from "@/components/vote/poll-results";
+import { PollVoters } from "@/components/vote/poll-voters";
 import { errorText, formatDateTime, voteRequest } from "@/components/vote/vote-api";
 import type { PollView } from "@/lib/vote/types";
 
@@ -15,7 +16,8 @@ const MAX_OPTIONS = 10;
 
 type Message = { tone: "success" | "error"; text: string } | null;
 
-export function VoteAdminPolls() {
+/** isOwner adds each poll's voter list, which shows phone numbers. */
+export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
   const [polls, setPolls] = useState<PollView[] | null>(null);
   const [totalUsers, setTotalUsers] = useState(0);
   const [question, setQuestion] = useState("");
@@ -245,6 +247,7 @@ export function VoteAdminPolls() {
               <div className="mt-4">
                 <PollResults poll={poll} />
               </div>
+              {isOwner && <PollVoters poll={poll} />}
             </article>
           ))
         )}
