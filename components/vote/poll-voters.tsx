@@ -1,39 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, ChevronUp, Download, Loader2, Users } from "lucide-react";
+import { ChevronDown, ChevronUp, Download, FileText, Loader2, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { errorText, formatDateTime, voteRequest } from "@/components/vote/vote-api";
+import { downloadCsv, openVoterPdf } from "@/components/vote/voter-export";
 import { formatPhone } from "@/lib/vote/phone";
 import type { PollView, PollVoter } from "@/lib/vote/types";
-
-/** Spreadsheet apps run cells that start with these as formulas, and names are typed by voters. */
-function csvCell(value: string) {
-  const safe = /^[=+\-@\t\r]/.test(value) ? `'${value}` : value;
-  return `"${safe.replace(/"/g, '""')}"`;
-}
-
-function downloadCsv(poll: PollView, voters: PollVoter[]) {
-  const lines = [
-    ["Name", "Mobile", "Voted for", "Voted at"],
-    // 10 digits without +91, so Excel shows the number as it is.
-    ...voters.map((voter) => [voter.name, voter.phone.replace(/^\+91/, ""), voter.option, formatDateTime(voter.votedAt)]),
-  ];
-  // The BOM makes Excel read Hindi names as UTF-8.
-  const csv = "﻿" + lines.map((line) => line.map(csvCell).join(",")).join("\r\n");
-  const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = `votes-${poll.question.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) || "poll"}.csv`;
-  link.click();
-  URL.revokeObjectURL(url);
-}
 
 /** Owner-only list of who voted for what. It loads fresh every time it is opened. */
 export function PollVoters({ poll }: { poll: PollView }) {
   const [open, setOpen] = useState(false);
   const [voters, setVoters] = useState<PollVoter[] | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [popupBlocked, setPopupBlocked] = useState(false);
 
   async function toggle() {
     if (open) {
@@ -62,12 +42,30 @@ export function PollVoters({ poll }: { poll: PollView }) {
           {open ? <ChevronUp className="h-4 w-4" aria-hidden="true" /> : <ChevronDown className="h-4 w-4" aria-hidden="true" />}
         </Button>
         {open && voters && voters.length > 0 && (
-          <Button variant="outline" size="sm" className="gap-2" onClick={() => downloadCsv(poll, voters)}>
-            <Download className="h-4 w-4" aria-hidden="true" />
-            Download CSV
-          </Button>
+          <div className="flex flex-wrap gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              className="gap-2"
+              title="Opens the print box. Choose Save as PDF there."
+              onClick={() => setPopupBlocked(!openVoterPdf(poll, voters))}
+            >
+              <FileText className="h-4 w-4" aria-hidden="true" />
+              Download PDF
+            </Button>
+            <Button variant="outline" size="sm" className="gap-2" onClick={() => downloadCsv(poll, voters)}>
+              <Download className="h-4 w-4" aria-hidden="true" />
+              Download CSV
+            </Button>
+          </div>
         )}
       </div>
+
+      {open && popupBlocked && (
+        <p className="mt-2 text-sm text-yellow-300">
+          Your browser blocked the new tab. Allow pop-ups for this site, then press Download PDF again.
+        </p>
+      )}
 
       {open && (
         <div className="mt-3">
