@@ -66,6 +66,8 @@ export const phoneSchema = z.string().transform((value, context) => {
   return phone;
 });
 
+export const nameSchema = z.string().trim().min(2, "Enter your name").max(60, "Name is too long");
+
 export const passwordSchema = z
   .string()
   .min(6, "Password must be at least 6 characters")

@@ -6,6 +6,7 @@ import {
   getVoteDb,
   hashPassword,
   must,
+  nameSchema,
   parseBody,
   passwordSchema,
   phoneSchema,
@@ -14,7 +15,7 @@ import {
 import { issueOtp, otpSentResponse } from "@/lib/vote/otp";
 
 const signupSchema = z.object({
-  name: z.string().trim().min(2, "Enter your name").max(60, "Name is too long"),
+  name: nameSchema,
   phone: phoneSchema,
   password: passwordSchema,
 });

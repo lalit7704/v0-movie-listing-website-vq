@@ -1,15 +1,97 @@
 "use client";
 
+import { useState, type FormEvent } from "react";
 import Link from "next/link";
-import { Loader2, LogOut, Settings } from "lucide-react";
+import { Check, Loader2, LogOut, Pencil, Settings } from "lucide-react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { Notice } from "@/components/admin/notice";
 import { VoteAuth } from "@/components/vote/vote-auth";
 import { VotePolls } from "@/components/vote/vote-polls";
-import { useVoteSession } from "@/components/vote/vote-api";
+import { errorText, useVoteSession, voteRequest } from "@/components/vote/vote-api";
 import { formatPhone } from "@/lib/vote/phone";
+import type { VoteUser } from "@/lib/vote/types";
+
+/** "Hi name · phone" with a pencil to change the name. The phone is the login, so it stays. */
+function VoterGreeting({ user, onSaved }: { user: VoteUser; onSaved: (user: VoteUser) => void }) {
+  const [editing, setEditing] = useState(false);
+  const [name, setName] = useState(user.name);
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState<string | null>(null);
+
+  async function handleSave(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setBusy(true);
+    setMessage(null);
+    try {
+      const data = await voteRequest<{ user: VoteUser }>("/api/vote/session", "PATCH", { name });
+      onSaved(data.user);
+      setEditing(false);
+    } catch (caught) {
+      setMessage(errorText(caught));
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  if (!editing) {
+    return (
+      <p className="mt-1 flex items-center gap-1 text-sm text-muted-foreground">
+        Hi {user.name} · {formatPhone(user.phone)}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="h-7 w-7"
+          aria-label="Edit name"
+          title="Edit name"
+          onClick={() => {
+            setName(user.name);
+            setMessage(null);
+            setEditing(true);
+          }}
+        >
+          <Pencil className="h-3.5 w-3.5" aria-hidden="true" />
+        </Button>
+      </p>
+    );
+  }
+
+  return (
+    <form onSubmit={handleSave} className="mt-2 space-y-1.5">
+      <div className="flex flex-wrap items-center gap-2">
+        <Input
+          aria-label="Your name"
+          autoFocus
+          required
+          minLength={2}
+          maxLength={60}
+          value={name}
+          disabled={busy}
+          onChange={(event) => setName(event.target.value)}
+          onKeyDown={(event) => event.key === "Escape" && setEditing(false)}
+          className="h-8 w-56"
+        />
+        <Button type="submit" size="sm" className="gap-1.5" disabled={busy}>
+          {busy ? (
+            <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+          ) : (
+            <Check className="h-4 w-4" aria-hidden="true" />
+          )}
+          Save
+        </Button>
+        <Button type="button" variant="ghost" size="sm" disabled={busy} onClick={() => setEditing(false)}>
+          Cancel
+        </Button>
+      </div>
+      <p className="text-xs text-muted-foreground">
+        {formatPhone(user.phone)} · The mobile number is your login, so it cannot be changed.
+      </p>
+      {message && <p className="text-sm text-yellow-300">{message}</p>}
+    </form>
+  );
+}
 
 export function VotePage() {
   const { state, setUser, signOut } = useVoteSession();
@@ -32,9 +114,7 @@ export function VotePage() {
         <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
           <div>
             <h1 className="text-2xl font-bold text-foreground sm:text-3xl">Vote</h1>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Hi {user.name} · {formatPhone(user.phone)}
-            </p>
+            <VoterGreeting user={user} onSaved={setUser} />
           </div>
           <div className="flex flex-wrap gap-2">
             {user.role !== "voter" && (

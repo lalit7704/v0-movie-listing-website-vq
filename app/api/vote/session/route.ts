@@ -1,6 +1,19 @@
-import { NextResponse } from "next/server";
+import { NextResponse, type NextRequest } from "next/server";
 import { cookies } from "next/headers";
-import { VOTE_COOKIE, clearSessionCookie, getVoteDb, getVoteSession, sha256, voteFailure } from "@/lib/vote/auth";
+import { z } from "zod";
+import {
+  VOTE_COOKIE,
+  clearSessionCookie,
+  getVoteDb,
+  getVoteSession,
+  must,
+  nameSchema,
+  parseBody,
+  requireVoteSession,
+  sha256,
+  toVoteUser,
+  voteFailure,
+} from "@/lib/vote/auth";
 
 /** The signed-in voter, or null. */
 export async function GET() {
@@ -10,6 +23,29 @@ export async function GET() {
       { success: true, user: session?.user ?? null },
       { headers: { "Cache-Control": "no-store" } }
     );
+  } catch (caught) {
+    return voteFailure(caught);
+  }
+}
+
+const profileSchema = z.object({ name: nameSchema });
+
+/** Changes the signed-in voter's name. The phone number is the login, so it stays. */
+export async function PATCH(request: NextRequest) {
+  const session = await requireVoteSession("voter");
+  if (session instanceof NextResponse) return session;
+
+  try {
+    const { name } = await parseBody(request, profileSchema);
+    const row = must(
+      await session.db
+        .from("vote_users")
+        .update({ name })
+        .eq("id", session.user.id)
+        .select("id, phone, name, role")
+        .single()
+    );
+    return NextResponse.json({ success: true, user: toVoteUser(row) });
   } catch (caught) {
     return voteFailure(caught);
   }
