@@ -1,17 +1,23 @@
 import { CircleCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { PollCountdown } from "@/components/vote/poll-countdown";
 import { formatDateTime } from "@/components/vote/vote-api";
 import type { PollView } from "@/lib/vote/types";
 
-export function PollStatus({ poll }: { poll: PollView }) {
+/** Open/Closed badge, plus a live countdown while a poll with an end time is open. onEnd fires when it runs out. */
+export function PollStatus({ poll, onEnd }: { poll: PollView; onEnd?: () => void }) {
   return (
     <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
       <Badge variant={poll.isOpen ? "default" : "secondary"}>{poll.isOpen ? "Open" : "Closed"}</Badge>
-      {poll.endsAt && (
-        <span>
-          {poll.isOpen ? "Ends" : "Ended"} {formatDateTime(poll.endsAt)}
-        </span>
-      )}
+      {poll.endsAt &&
+        (poll.isOpen ? (
+          <>
+            <PollCountdown endsAt={poll.endsAt} onEnd={onEnd} />
+            <span>{formatDateTime(poll.endsAt)}</span>
+          </>
+        ) : (
+          <span>Ended {formatDateTime(poll.endsAt)}</span>
+        ))}
     </div>
   );
 }

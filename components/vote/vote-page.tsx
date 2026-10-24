@@ -11,10 +11,9 @@ import { Notice } from "@/components/admin/notice";
 import { VoteAuth } from "@/components/vote/vote-auth";
 import { VotePolls } from "@/components/vote/vote-polls";
 import { errorText, useVoteSession, voteRequest } from "@/components/vote/vote-api";
-import { formatPhone } from "@/lib/vote/phone";
 import type { VoteUser } from "@/lib/vote/types";
 
-/** "Hi name · phone" with a pencil to change the name. The phone is the login, so it stays. */
+/** "Hi name" with a pencil to change the name. The phone stays hidden here so it does not show on screen. */
 function VoterGreeting({ user, onSaved }: { user: VoteUser; onSaved: (user: VoteUser) => void }) {
   const [editing, setEditing] = useState(false);
   const [name, setName] = useState(user.name);
@@ -39,7 +38,7 @@ function VoterGreeting({ user, onSaved }: { user: VoteUser; onSaved: (user: Vote
   if (!editing) {
     return (
       <p className="mt-1 flex items-center gap-1 text-sm text-muted-foreground">
-        Hi {user.name} · {formatPhone(user.phone)}
+        Hi {user.name}
         <Button
           variant="ghost"
           size="icon"
@@ -85,10 +84,7 @@ function VoterGreeting({ user, onSaved }: { user: VoteUser; onSaved: (user: Vote
           Cancel
         </Button>
       </div>
-      <p className="text-xs text-muted-foreground">
-        {formatPhone(user.phone)} · The mobile number is your login, so it cannot be changed.
-      </p>
-      {message && <p className="text-sm text-yellow-300">{message}</p>}
+      {message &&<p className="text-sm text-yellow-300">{message}</p>}
     </form>
   );
 }

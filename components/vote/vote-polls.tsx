@@ -30,7 +30,7 @@ function PollCard({ poll, onVoted }: { poll: PollView; onVoted: () => Promise<vo
 
   return (
     <article className="rounded-lg border border-border bg-card p-4 sm:p-5">
-      <PollStatus poll={poll} />
+      <PollStatus poll={poll} onEnd={() => void onVoted()} />
       <h2 className="mt-2 text-lg font-semibold text-foreground">{poll.question}</h2>
       {poll.description && <p className="mt-1 whitespace-pre-line text-sm text-muted-foreground">{poll.description}</p>}
 

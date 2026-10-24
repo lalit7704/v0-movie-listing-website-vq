@@ -210,7 +210,7 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
             <article key={poll.id} className="rounded-lg border border-border bg-card p-4 sm:p-5">
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div className="min-w-0">
-                  <PollStatus poll={poll} />
+                  <PollStatus poll={poll} onEnd={() => void loadPolls()} />
                   <h3 className="mt-2 text-base font-semibold text-foreground">{poll.question}</h3>
                   <p className="mt-0.5 text-xs text-muted-foreground">
                     Created {formatDateTime(poll.createdAt)}
