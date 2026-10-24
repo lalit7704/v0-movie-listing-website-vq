@@ -15,6 +15,7 @@ const navLinks = [
   { href: "/cartoons", label: "Cartoons" },
   { href: "/action", label: "Action" },
   { href: "/comedy", label: "Comedy" },
+  { href: "/vote", label: "Vote" },
 ];
 
 
