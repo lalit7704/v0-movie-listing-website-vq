@@ -1067,7 +1067,7 @@ export const webSeriesVideos: Video[] = [
 "title": "Breaking Bad (2008) Season 1 - Crime Drama Thriller Series | AMC",
 "slug": "breaking-bad-season-1-2008",
 "videoUrl": "https://youtu.be/HhesaQXLuRY",
-"downloadUrl": "",
+"downloadUrl": "https://t.me/c/3845134502/479",
 "poster": "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
 "description": "Breaking Bad (Season 1) विंस गिलिगन की बनाई अमेरिकी क्राइम ड्रामा वेब सीरीज़ का पहला सीज़न है, जो 20 जनवरी 2008 को AMC पर रिलीज़ हुआ। ब्रायन क्रैंस्टन इसमें वॉल्टर व्हाइट और आरोन पॉल जेसी पिंकमैन के किरदार में हैं। एना गन, डीन नॉरिस, बेट्सी ब्रांट और आरजे मिट भी अहम भूमिकाओं में हैं। हॉलीवुड राइटर्स की हड़ताल की वजह से इस सीज़न में सिर्फ़ 7 एपिसोड हैं।\n\nन्यू मैक्सिको के अल्बुकर्क में रहने वाला वॉल्टर व्हाइट एक साधारण हाई स्कूल केमिस्ट्री टीचर है, जिसे अपने 50वें जन्मदिन के आसपास पता चलता है कि उसे लाइलाज लंग कैंसर है। अपने परिवार का भविष्य सुरक्षित करने के लिए वह अपने पुराने स्टूडेंट जेसी पिंकमैन के साथ मिलकर एक पुराने RV में मेथ बनाने का धंधा शुरू कर देता है, जबकि उसका साढ़ू हैंक DEA एजेंट है।\n\nएक सीधे-सादे टीचर के खतरनाक अपराधी बनने की यह शुरुआत है। ब्रायन क्रैंस्टन को वॉल्टर व्हाइट के किरदार के लिए चार बार बेस्ट एक्टर का एमी अवॉर्ड मिला।",
 "seoDescription": "Breaking Bad Season 1 (2008) Bryan Cranston और Aaron Paul की क्राइम ड्रामा वेब सीरीज़ की कहानी, trailer, cast, rating और सभी 7 एपिसोड की details देखें।",
