@@ -1,12 +1,22 @@
 import {
   Baby,
   BatteryCharging,
+  Candy,
   Car,
+  Coins,
   CupSoda,
   Dumbbell,
+  Flame,
+  Flower,
+  Flower2,
   Gem,
+  Gift,
   Headphones,
   HeartPulse,
+  LampCeiling,
+  Lightbulb,
+  Nut,
+  Palette,
   PawPrint,
   PlugZap,
   ScanFace,
@@ -23,14 +33,17 @@ import {
 } from "lucide-react";
 
 /*
- * Homepage "Trending Products" section.
+ * Homepage product rows ("Diwali Specials" and "Trending Products").
  *
  * To change a product, edit its `title`, `url` and `image`. The icon is only
  * shown when there is no image or the image fails to load. Remove a product by
- * deleting its block; the section follows the order of this list.
+ * deleting its block; each row follows the order of its list.
+ *
+ * To hide a whole row (e.g. Diwali Specials after the festival), delete it from
+ * `productSections` at the bottom of this file.
  *
  * Amazon Associates: put your tracking id (e.g. "onemovie-21") in
- * `productSection.affiliateTag` and it is added to every amazon.in link.
+ * `productSettings.affiliateTag` and it is added to every amazon.in link.
  */
 
 export interface Product {
@@ -45,13 +58,128 @@ export interface Product {
   buttonText?: string;
 }
 
-export const productSection = {
-  title: "Trending Products",
-  subtitle: "Best-selling picks on Amazon India",
-  buttonText: "Amazon par dekhein",
+export interface ProductSection {
+  /** Also the row's HTML id, so /#diwali-specials jumps to it. */
+  id: string;
+  title: string;
+  subtitle: string;
+  /** Show "#1", "#2"… badges, for lists that are a ranking. */
+  ranked?: boolean;
+  products: Product[];
+}
+
+export const productSettings = {
+  buttonText: "View on Amazon",
   affiliateTag: "",
   disclosure: "Some of these links may be affiliate links; we may earn a commission at no extra cost to you.",
 };
+
+export const diwaliProducts: Product[] = [
+  {
+    id: "d01",
+    title: "Desidiya 80 LED Diya Curtain Lights (10 x 3 ft)",
+    category: "Lights",
+    icon: Lightbulb,
+    url: "https://www.amazon.in/dp/B0HBPZK81B",
+    image: "https://m.media-amazon.com/images/I/715mHyWnsjL._SL400_.jpg",
+  },
+  {
+    id: "d02",
+    title: "One94Store Water Sensor LED Diyas (Pack of 12)",
+    category: "Lights",
+    icon: Flame,
+    url: "https://www.amazon.in/dp/B09DDHXJN6",
+    image: "https://m.media-amazon.com/images/I/71pTNvcF3QL._SL400_.jpg",
+  },
+  {
+    id: "d03",
+    title: "Collectible India Hand-Painted Clay Diyas",
+    category: "Diyas",
+    icon: Flame,
+    url: "https://www.amazon.in/dp/B07Z2LGN1F",
+    image: "https://m.media-amazon.com/images/I/71J2zPI6UNL._SL400_.jpg",
+  },
+  {
+    id: "d04",
+    title: "CraftVatika Rangoli Colour Kit (24 Tubes)",
+    category: "Rangoli",
+    icon: Palette,
+    url: "https://www.amazon.in/dp/B08MD3GV6K",
+    image: "https://m.media-amazon.com/images/I/719c9oJFUyL._SL400_.jpg",
+  },
+  {
+    id: "d05",
+    title: "Ascension Door Hanging Toran (36 inch)",
+    category: "Decor",
+    icon: Flower2,
+    url: "https://www.amazon.in/dp/B07Y8K3JCZ",
+    image: "https://m.media-amazon.com/images/I/71byjP3haRL._SL400_.jpg",
+  },
+  {
+    id: "d06",
+    title: "Printed Paper Lanterns (Pack of 10)",
+    category: "Decor",
+    icon: LampCeiling,
+    url: "https://www.amazon.in/dp/B0FQ5BWXGW",
+    image: "https://m.media-amazon.com/images/I/71a0NDyTjSL._SL400_.jpg",
+  },
+  {
+    id: "d07",
+    title: "Webelkart Diya-Shape Decorative Urli Bowl",
+    category: "Decor",
+    icon: Flower,
+    url: "https://www.amazon.in/dp/B0BCKVS2GL",
+    image: "https://m.media-amazon.com/images/I/81YmTQjv90L._SL400_.jpg",
+  },
+  {
+    id: "d08",
+    title: "Silver-Plated Lakshmi Ganesh Idol Set",
+    category: "Puja",
+    icon: Sparkles,
+    url: "https://www.amazon.in/dp/B0HM38FT8X",
+    image: "https://m.media-amazon.com/images/I/71XfPjw4UHL._SL400_.jpg",
+  },
+  {
+    id: "d09",
+    title: "Silver-Plated Pooja Thali Set (12 inch)",
+    category: "Puja",
+    icon: Sparkles,
+    url: "https://www.amazon.in/dp/B01GX5513Q",
+    image: "https://m.media-amazon.com/images/I/81rmFeGS2EL._SL400_.jpg",
+  },
+  {
+    id: "d10",
+    title: "Lakshmi Ganesh 999 Silver Coin (BIS Hallmarked)",
+    category: "Dhanteras",
+    icon: Coins,
+    url: "https://www.amazon.in/dp/B0B8ZF5F8L",
+    image: "https://m.media-amazon.com/images/I/71K+QX5kMGL._SL400_.jpg",
+  },
+  {
+    id: "d11",
+    title: "AuraDecor Aroma Diffuser & Tealight Gift Set",
+    category: "Gifts",
+    icon: Gift,
+    url: "https://www.amazon.in/dp/B0C2J1BT96",
+    image: "https://m.media-amazon.com/images/I/71QIUzqI5wL._SL400_.jpg",
+  },
+  {
+    id: "d12",
+    title: "Cadbury Celebrations Rich Dry Fruit Gift Pack",
+    category: "Gifts",
+    icon: Candy,
+    url: "https://www.amazon.in/dp/B07F457TXN",
+    image: "https://m.media-amazon.com/images/I/61opUoM+OwL._SL400_.jpg",
+  },
+  {
+    id: "d13",
+    title: "Haldiram's Dry Fruits Gift Box",
+    category: "Gifts",
+    icon: Nut,
+    url: "https://www.amazon.in/dp/B09J3QYKD8",
+    image: "https://m.media-amazon.com/images/I/715eBziKiiL._SL400_.jpg",
+  },
+];
 
 export const trendingProducts: Product[] = [
   {
@@ -213,5 +341,22 @@ export const trendingProducts: Product[] = [
     icon: Baby,
     url: "https://www.amazon.in/dp/B0829RL6Z5",
     image: "https://m.media-amazon.com/images/I/515VoKEat8L._SL400_.jpg",
+  },
+];
+
+/** Rows the homepage can show; app/page.tsx places each one by its id. */
+export const productSections: ProductSection[] = [
+  {
+    id: "diwali-specials",
+    title: "Diwali Specials",
+    subtitle: "Lights, decor, puja essentials and gifts for Diwali",
+    products: diwaliProducts,
+  },
+  {
+    id: "trending-products",
+    title: "Trending Products",
+    subtitle: "Best-selling picks on Amazon India",
+    ranked: true,
+    products: trendingProducts,
   },
 ];

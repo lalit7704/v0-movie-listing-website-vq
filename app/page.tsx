@@ -31,8 +31,9 @@ export default function HomePage() {
         {/* Main Content Sections */}
         <div className="pt-8 space-y-4">
           <SectionSlider title="Latest Added" videos={latestAdded} />
+          <ProductSlider sectionId="diwali-specials" />
           <SectionSlider title="Bollywood" videos={bollywoodVideos} />
-          <ProductSlider />
+          <ProductSlider sectionId="trending-products" />
           <div
     style={{
       width: '100%',
