@@ -1082,13 +1082,13 @@ export const webSeriesVideos: Video[] = [
 "cast": ["Bryan Cranston", "Aaron Paul", "Anna Gunn", "Dean Norris", "Betsy Brandt", "RJ Mitte", "Raymond Cruz", "Max Arciniega"],
 "keywords": ["Breaking Bad", "Breaking Bad Season 1", "Breaking Bad 2008", "Vince Gilligan", "Bryan Cranston", "Aaron Paul", "Walter White", "Jesse Pinkman", "Heisenberg", "AMC series"],
 "episodes": [
-  { "title": "Pilot", "downloadUrl": "" },
-  { "title": "Cat's in the Bag...", "downloadUrl": "" },
-  { "title": "...And the Bag's in the River", "downloadUrl": "" },
-  { "title": "Cancer Man", "downloadUrl": "" },
-  { "title": "Gray Matter", "downloadUrl": "" },
-  { "title": "Crazy Handful of Nothin'", "downloadUrl": "" },
-  { "title": "A No-Rough-Stuff-Type Deal", "downloadUrl": "" }
+  { "title": "Pilot", "downloadUrl": "https://t.me/c/3845134502/479" },
+  { "title": "Cat's in the Bag...", "downloadUrl": "https://t.me/c/3845134502/480" },
+  { "title": "...And the Bag's in the River", "downloadUrl": "https://t.me/c/3845134502/481" },
+  { "title": "Cancer Man", "downloadUrl": "https://t.me/c/3845134502/482" },
+  { "title": "Gray Matter", "downloadUrl": "https://t.me/c/3845134502/484" },
+  { "title": "Crazy Handful of Nothin'", "downloadUrl": "https://t.me/c/3845134502/485" },
+  { "title": "A No-Rough-Stuff-Type Deal", "downloadUrl": "https://t.me/c/3845134502/483" }
 ]
 },
 {
