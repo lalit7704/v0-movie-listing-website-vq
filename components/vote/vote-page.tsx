@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import Link from "next/link";
-import { Check, Loader2, LogOut, Pencil, Settings } from "lucide-react";
+import { BadgeCheck, Check, Loader2, LogOut, Pencil, Settings, X } from "lucide-react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
@@ -10,11 +10,25 @@ import { Input } from "@/components/ui/input";
 import { Notice } from "@/components/admin/notice";
 import { VoteAuth } from "@/components/vote/vote-auth";
 import { VotePolls } from "@/components/vote/vote-polls";
+import { Eyebrow, PersonAvatar } from "@/components/vote/vote-ui";
 import { errorText, useVoteSession, voteRequest } from "@/components/vote/vote-api";
 import type { VoteUser } from "@/lib/vote/types";
 
-/** "Hi name" with a pencil to change the name. The phone stays hidden here so it does not show on screen. */
-function VoterGreeting({ user, onSaved }: { user: VoteUser; onSaved: (user: VoteUser) => void }) {
+const roleLabels = { owner: "Owner", manager: "Manager", voter: "Verified voter" };
+
+/**
+ * The signed-in voter: name with a pencil to change it, role, admin link and logout.
+ * The phone stays hidden here so it does not show on screen.
+ */
+function AccountCard({
+  user,
+  onSaved,
+  onSignOut,
+}: {
+  user: VoteUser;
+  onSaved: (user: VoteUser) => void;
+  onSignOut: () => void;
+}) {
   const [editing, setEditing] = useState(false);
   const [name, setName] = useState(user.name);
   const [busy, setBusy] = useState(false);
@@ -35,57 +49,79 @@ function VoterGreeting({ user, onSaved }: { user: VoteUser; onSaved: (user: Vote
     }
   }
 
-  if (!editing) {
-    return (
-      <p className="mt-1 flex items-center gap-1 text-sm text-muted-foreground">
-        Hi {user.name}
-        <Button
-          variant="ghost"
-          size="icon"
-          className="h-7 w-7"
-          aria-label="Edit name"
-          title="Edit name"
-          onClick={() => {
-            setName(user.name);
-            setMessage(null);
-            setEditing(true);
-          }}
-        >
-          <Pencil className="h-3.5 w-3.5" aria-hidden="true" />
-        </Button>
-      </p>
-    );
-  }
-
   return (
-    <form onSubmit={handleSave} className="mt-2 space-y-1.5">
-      <div className="flex flex-wrap items-center gap-2">
-        <Input
-          aria-label="Your name"
-          autoFocus
-          required
-          minLength={2}
-          maxLength={60}
-          value={name}
-          disabled={busy}
-          onChange={(event) => setName(event.target.value)}
-          onKeyDown={(event) => event.key === "Escape" && setEditing(false)}
-          className="h-8 w-56"
-        />
-        <Button type="submit" size="sm" className="gap-1.5" disabled={busy}>
-          {busy ? (
-            <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+    <div className="w-full sm:w-auto">
+      <div className="flex items-center gap-3 rounded-xl border border-border bg-card py-2.5 pl-3 pr-2">
+        <PersonAvatar name={user.name} size="lg" />
+        <div className="min-w-0 flex-1">
+          {editing ? (
+            <form onSubmit={handleSave} className="flex items-center gap-1">
+              <Input
+                aria-label="Your name"
+                autoFocus
+                required
+                minLength={2}
+                maxLength={60}
+                value={name}
+                disabled={busy}
+                onChange={(event) => setName(event.target.value)}
+                onKeyDown={(event) => event.key === "Escape" && setEditing(false)}
+                className="h-8 w-40"
+              />
+              <Button type="submit" size="icon" className="h-8 w-8" disabled={busy} aria-label="Save name">
+                {busy ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : <Check className="h-4 w-4" aria-hidden="true" />}
+              </Button>
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                className="h-8 w-8"
+                disabled={busy}
+                aria-label="Cancel"
+                onClick={() => setEditing(false)}
+              >
+                <X className="h-4 w-4" aria-hidden="true" />
+              </Button>
+            </form>
           ) : (
-            <Check className="h-4 w-4" aria-hidden="true" />
+            <p className="flex items-center gap-1 text-sm font-semibold text-foreground">
+              <span className="truncate">{user.name}</span>
+              <button
+                type="button"
+                className="rounded p-1 text-muted-foreground transition-colors hover:bg-white/5 hover:text-foreground"
+                aria-label="Edit name"
+                title="Edit name"
+                onClick={() => {
+                  setName(user.name);
+                  setMessage(null);
+                  setEditing(true);
+                }}
+              >
+                <Pencil className="h-3.5 w-3.5" aria-hidden="true" />
+              </button>
+            </p>
           )}
-          Save
-        </Button>
-        <Button type="button" variant="ghost" size="sm" disabled={busy} onClick={() => setEditing(false)}>
-          Cancel
-        </Button>
+          <p className="mt-0.5 flex items-center gap-1 text-xs text-emerald-300/90">
+            <BadgeCheck className="h-3.5 w-3.5" aria-hidden="true" />
+            {roleLabels[user.role]}
+          </p>
+        </div>
+        <div className="flex items-center gap-1 pl-2">
+          {user.role !== "voter" && (
+            <Button asChild variant="secondary" size="sm" className="gap-1.5">
+              <Link href="/vote/admin">
+                <Settings className="h-4 w-4" aria-hidden="true" />
+                Manage
+              </Link>
+            </Button>
+          )}
+          <Button variant="ghost" size="icon" aria-label="Log out" title="Log out" onClick={onSignOut}>
+            <LogOut className="h-4 w-4" aria-hidden="true" />
+          </Button>
+        </div>
       </div>
-      {message &&<p className="text-sm text-yellow-300">{message}</p>}
-    </form>
+      {message && <p className="mt-2 text-sm text-yellow-300">{message}</p>}
+    </div>
   );
 }
 
@@ -102,31 +138,18 @@ export function VotePage() {
   } else if (state.status === "error") {
     content = <Notice tone="error">{state.message}</Notice>;
   } else if (!state.user) {
-    content = <VoteAuth heading="Vote" onSignedIn={setUser} />;
+    content = <VoteAuth audience="voter" onSignedIn={setUser} />;
   } else {
-    const { user } = state;
     content = (
       <>
-        <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
+        <header className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <h1 className="text-2xl font-bold text-foreground sm:text-3xl">Vote</h1>
-            <VoterGreeting user={user} onSaved={setUser} />
+            <Eyebrow>Onemovie Polls</Eyebrow>
+            <h1 className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Cast your vote</h1>
+            <p className="mt-2 text-sm text-muted-foreground">One person, one vote. Results update live.</p>
           </div>
-          <div className="flex flex-wrap gap-2">
-            {user.role !== "voter" && (
-              <Button asChild variant="secondary" size="sm" className="gap-2">
-                <Link href="/vote/admin">
-                  <Settings className="h-4 w-4" aria-hidden="true" />
-                  Manage voting
-                </Link>
-              </Button>
-            )}
-            <Button variant="outline" size="sm" className="gap-2" onClick={() => void signOut()}>
-              <LogOut className="h-4 w-4" aria-hidden="true" />
-              Logout
-            </Button>
-          </div>
-        </div>
+          <AccountCard user={state.user} onSaved={setUser} onSignOut={() => void signOut()} />
+        </header>
         <VotePolls />
       </>
     );
@@ -135,7 +158,7 @@ export function VotePage() {
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
-      <div className="mx-auto min-h-[78vh] max-w-3xl px-4 pb-16 pt-24 sm:px-6">{content}</div>
+      <div className="mx-auto min-h-[78vh] max-w-3xl px-4 pb-20 pt-24 sm:px-6 sm:pt-28">{content}</div>
       <Footer />
     </main>
   );

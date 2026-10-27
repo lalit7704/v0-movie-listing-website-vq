@@ -54,22 +54,20 @@ export function PollCountdown({ endsAt, onEnd }: { endsAt: string; onEnd?: () =>
     <span
       role="timer"
       title={`Voting ends ${formatDateTime(endsAt)}`}
-      className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-sm font-semibold tabular-nums ${
-        urgent
-          ? "border-red-500 bg-red-500/20 text-red-200"
-          : "border-yellow-500/40 bg-yellow-500/10 text-yellow-300"
+      className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold tabular-nums ring-1 ring-inset ${
+        urgent ? "bg-red-500/15 text-red-200 ring-red-500/50" : "bg-amber-500/10 text-amber-300 ring-amber-500/30"
       }`}
     >
       {urgent && !ended ? (
         // Only the dot blinks, so the time itself stays easy to read.
-        <span className="relative flex h-2.5 w-2.5" aria-hidden="true">
+        <span className="relative flex h-2 w-2" aria-hidden="true">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" />
-          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-red-500" />
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-red-500" />
         </span>
       ) : (
-        <Timer className="h-4 w-4" aria-hidden="true" />
+        <Timer className="h-3.5 w-3.5" aria-hidden="true" />
       )}
-      {ended ? "Voting has ended" : `Ends in ${formatTimeLeft(left)}`}
+      {ended ? "Voting has ended" : `Closes in ${formatTimeLeft(left)}`}
     </span>
   );
 }
