@@ -151,7 +151,6 @@ export default function RootLayout({
           }}
         />
         <script src="https://rufflefireballcherries.com/df/43/80/df4380d675a347a947eb1590161d2618.js"></script>
-        <script src="https://pl31350042.profitableratecpmnetwork.com/18/46/3f/18463ffdaa60c080a57b392fd5e13f51.js"></script>
       </head>
 
       <body
@@ -181,7 +180,7 @@ export default function RootLayout({
         </Script>
 
       
-{/* <script async={true} data-cfasync="false" src="https://pl31350043.profitableratecpmnetwork.com/3a306c8c6706d3ba2b33e82328472b63/invoke.js"></script> */}
+<script async={true} data-cfasync="false" src="https://pl31350043.profitableratecpmnetwork.com/3a306c8c6706d3ba2b33e82328472b63/invoke.js"></script>
 <div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
         {/* Service Worker */}
         <script
