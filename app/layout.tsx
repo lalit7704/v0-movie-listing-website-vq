@@ -181,7 +181,7 @@ export default function RootLayout({
         </Script>
 
       
-<script async={true} data-cfasync="false" src="https://pl31350043.profitableratecpmnetwork.com/3a306c8c6706d3ba2b33e82328472b63/invoke.js"></script>
+{/* <script async={true} data-cfasync="false" src="https://pl31350043.profitableratecpmnetwork.com/3a306c8c6706d3ba2b33e82328472b63/invoke.js"></script> */}
 <div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
         {/* Service Worker */}
         <script
