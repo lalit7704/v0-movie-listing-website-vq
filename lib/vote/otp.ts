@@ -43,10 +43,10 @@ function codeHash(challengeId: string, code: string) {
 }
 
 const otpMessage = (code: string) =>
-  `Your Onemovie voting OTP is <code>${code}</code>\n\nIt is valid for 10 minutes. Do not share it with anyone.`;
+  `आपका Onemovie वोटिंग OTP है: <code>${code}</code>\n\nयह 10 मिनट तक मान्य है। इसे किसी के साथ शेयर न करें।`;
 
 const shareNumberKeyboard = {
-  keyboard: [[{ text: "📱 Share my phone number", request_contact: true }]],
+  keyboard: [[{ text: "📱 अपना फ़ोन नंबर शेयर करें", request_contact: true }]],
   resize_keyboard: true,
   one_time_keyboard: true,
 };
@@ -75,7 +75,7 @@ export async function issueOtp(
 ) {
   const botReady = isVoteBotReady();
   if (!botReady && process.env.NODE_ENV === "production") {
-    throw new VoteError("Telegram OTP is not set up on the server yet. Ask the site owner.", 503);
+    throw new VoteError("Telegram OTP अभी सर्वर पर सेट नहीं है। साइट के मालिक से संपर्क करें।", 503);
   }
 
   const hourAgo = new Date(Date.now() - 3_600_000).toISOString();
@@ -89,10 +89,10 @@ export async function issueOtp(
   );
   if (recent.length) {
     const wait = Math.ceil((new Date(recent[0].created_at).getTime() + RESEND_AFTER_SECONDS * 1000 - Date.now()) / 1000);
-    if (wait > 0) throw new VoteError(`Please wait ${wait} seconds before asking for a new OTP`, 429);
+    if (wait > 0) throw new VoteError(`नया OTP माँगने से पहले ${wait} सेकंड रुकें`, 429);
   }
   if (recent.length >= MAX_PER_PHONE_PER_HOUR) {
-    throw new VoteError("Too many OTPs for this number. Please try again after an hour.", 429);
+    throw new VoteError("इस नंबर पर बहुत ज़्यादा OTP माँगे गए। एक घंटे बाद कोशिश करें।", 429);
   }
 
   const fromIp = await db
@@ -102,7 +102,7 @@ export async function issueOtp(
     .gte("created_at", hourAgo);
   must(fromIp);
   if ((fromIp.count ?? 0) >= MAX_PER_IP_PER_HOUR) {
-    throw new VoteError("Too many OTP requests from your network. Please try again later.", 429);
+    throw new VoteError("आपके नेटवर्क से बहुत ज़्यादा OTP माँगे गए। थोड़ी देर बाद कोशिश करें।", 429);
   }
 
   let telegramLink: string | null = null;
@@ -111,7 +111,7 @@ export async function issueOtp(
       telegramLink = await getVoteBotLink();
     } catch (caught) {
       console.error("[vote] Voting bot is not reachable", caught);
-      throw new VoteError("Telegram OTP is not working right now. Please try again later.", 503);
+      throw new VoteError("Telegram OTP अभी काम नहीं कर रहा। थोड़ी देर बाद कोशिश करें।", 503);
     }
     await ensureVoteBotWebhook(origin);
   }
@@ -186,7 +186,7 @@ export async function handleVoteBotMessage(db: SupabaseClient, message: Telegram
   if (!contact) {
     await sendVoteBotMessage(
       chatId,
-      "Welcome to <b>Onemovie voting</b>.\n\nTap the button below to share your phone number. If it matches the number you entered on the website, I will send your OTP here.",
+      "<b>Onemovie वोटिंग</b> में आपका स्वागत है।\n\nनीचे दिए बटन से अपना फ़ोन नंबर शेयर करें। अगर यह वही नंबर है जो आपने वेबसाइट पर डाला है, तो आपका OTP यहीं आ जाएगा।",
       shareNumberKeyboard
     );
     return;
@@ -194,13 +194,13 @@ export async function handleVoteBotMessage(db: SupabaseClient, message: Telegram
 
   // A forwarded or picked contact belongs to someone else; only the button shares your own.
   if (!message.from || contact.user_id !== message.from.id) {
-    await sendVoteBotMessage(chatId, "Please share <b>your own</b> number with the button below.", shareNumberKeyboard);
+    await sendVoteBotMessage(chatId, "कृपया नीचे दिए बटन से <b>अपना ही</b> नंबर शेयर करें।", shareNumberKeyboard);
     return;
   }
 
   const phone = normalizePhone(contact.phone_number);
   if (!phone) {
-    await sendVoteBotMessage(chatId, "Only Indian (+91) mobile numbers can be used for voting.", { remove_keyboard: true });
+    await sendVoteBotMessage(chatId, "वोटिंग के लिए सिर्फ़ भारतीय (+91) मोबाइल नंबर चलते हैं।", { remove_keyboard: true });
     return;
   }
 
@@ -218,7 +218,7 @@ export async function handleVoteBotMessage(db: SupabaseClient, message: Telegram
   if (!challenge) {
     await sendVoteBotMessage(
       chatId,
-      `No OTP request found for ${maskPhone(phone)}.\n\nOn the website, enter this same number and press <b>Get OTP on Telegram</b>, then share your number here again.`,
+      `${maskPhone(phone)} के लिए कोई OTP अनुरोध नहीं मिला।\n\nवेबसाइट पर यही नंबर डालकर <b>Telegram पर OTP पाएँ</b> दबाएँ, फिर यहाँ दोबारा अपना नंबर शेयर करें।`,
       { remove_keyboard: true }
     );
     return;
@@ -243,18 +243,18 @@ export async function verifyOtp(db: SupabaseClient, challengeId: string, code: s
       .eq("id", challengeId)
       .maybeSingle()
   );
-  if (!row || row.consumed_at) throw new VoteError("This OTP is no longer valid. Ask for a new one.");
-  if (new Date(row.expires_at) <= new Date()) throw new VoteError("OTP expired. Ask for a new one.");
+  if (!row || row.consumed_at) throw new VoteError("यह OTP अब मान्य नहीं है। नया OTP माँगें।");
+  if (new Date(row.expires_at) <= new Date()) throw new VoteError("OTP की समय सीमा खत्म हो गई। नया OTP माँगें।");
   if (!row.code_hash) {
-    throw new VoteError("Open Telegram and share your number with the bot first. It will send your OTP.");
+    throw new VoteError("पहले Telegram खोलकर बॉट को अपना नंबर शेयर करें। वह आपको OTP भेजेगा।");
   }
-  if (row.attempts >= MAX_ATTEMPTS) throw new VoteError("Too many wrong tries. Ask for a new OTP.", 429);
+  if (row.attempts >= MAX_ATTEMPTS) throw new VoteError("बहुत बार गलत कोड डाला गया। नया OTP माँगें।", 429);
 
   const matches = timingSafeEqual(Buffer.from(row.code_hash, "hex"), Buffer.from(codeHash(row.id, code), "hex"));
   if (!matches) {
     must(await db.from("vote_otp_challenges").update({ attempts: row.attempts + 1 }).eq("id", row.id));
     const left = MAX_ATTEMPTS - row.attempts - 1;
-    throw new VoteError(left > 0 ? `Wrong OTP. ${left} ${left === 1 ? "try" : "tries"} left.` : "Wrong OTP. Ask for a new one.");
+    throw new VoteError(left > 0 ? `गलत OTP। ${left} ${left === 1 ? "कोशिश" : "कोशिशें"} बाकी हैं।` : "गलत OTP। नया OTP माँगें।");
   }
 
   // Filtering on consumed_at means two requests racing with the same code cannot both win.
@@ -267,7 +267,7 @@ export async function verifyOtp(db: SupabaseClient, challengeId: string, code: s
       .is("consumed_at", null)
       .select("id")
   );
-  if (!used.length) throw new VoteError("This OTP is no longer valid. Ask for a new one.");
+  if (!used.length) throw new VoteError("यह OTP अब मान्य नहीं है। नया OTP माँगें।");
 
   return {
     id: row.id,

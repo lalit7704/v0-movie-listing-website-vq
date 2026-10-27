@@ -41,8 +41,8 @@ export function VoteAdminTeam() {
       setMessage({
         tone: "success",
         text: data.created
-          ? "Manager added. They can log in at /vote/admin with this number and password, then the OTP from our Telegram bot."
-          : "This number already had an account. It is now a manager.",
+          ? "मैनेजर जुड़ गया। वह /vote/admin पर इसी नंबर और पासवर्ड से लॉग इन करके Telegram बॉट से OTP ले सकता है।"
+          : "इस नंबर का अकाउंट पहले से था। अब यह मैनेजर है।",
       });
       setPhone("");
       setName("");
@@ -56,12 +56,12 @@ export function VoteAdminTeam() {
   }
 
   async function handleRemove(manager: VoteManager) {
-    if (!window.confirm(`Remove manager access for ${manager.name}? Their voting account stays.`)) return;
+    if (!window.confirm(`${manager.name} को मैनेजर से हटाएँ? उनका वोटिंग अकाउंट बना रहेगा।`)) return;
     setBusy(true);
     setMessage(null);
     try {
       await voteRequest(`/api/vote/admin/users?id=${encodeURIComponent(manager.id)}`, "DELETE");
-      setMessage({ tone: "success", text: `${manager.name} can no longer manage voting.` });
+      setMessage({ tone: "success", text: `${manager.name} अब वोटिंग मैनेज नहीं कर सकते।` });
       await loadManagers();
     } catch (caught) {
       setMessage({ tone: "error", text: errorText(caught) });
@@ -76,29 +76,29 @@ export function VoteAdminTeam() {
 
       <form onSubmit={handleAdd} className="overflow-hidden rounded-xl border border-border bg-card">
         <div className="border-b border-border px-5 py-4 sm:px-6">
-          <h2 className="text-base font-semibold text-foreground">Add a manager</h2>
+          <h2 className="text-base font-semibold text-foreground">मैनेजर जोड़ें</h2>
           <p className="mt-0.5 text-sm text-muted-foreground">
-            Managers can create, close and delete polls and see all results. Only you can add or remove managers. They
-            need Telegram on this number for the login OTP. If the number already has a voting account, name and
-            password are optional; leave the password empty to keep theirs.
+            मैनेजर पोल बना, बंद और हटा सकते हैं और सारे नतीजे देख सकते हैं। मैनेजर सिर्फ़ आप जोड़ या हटा सकते हैं।
+            लॉग इन OTP के लिए इस नंबर पर Telegram होना चाहिए। अगर इस नंबर का वोटिंग अकाउंट पहले से है, तो नाम और
+            पासवर्ड डालना ज़रूरी नहीं; पासवर्ड खाली छोड़ेंगे तो उनका पुराना पासवर्ड ही रहेगा।
           </p>
         </div>
         <div className="grid gap-4 p-5 sm:grid-cols-3 sm:p-6">
           <div className="space-y-1.5">
-            <Label htmlFor="manager-phone">Mobile number *</Label>
+            <Label htmlFor="manager-phone">मोबाइल नंबर *</Label>
             <Input
               id="manager-phone"
               type="tel"
               inputMode="numeric"
               required
-              placeholder="10 digit number"
+              placeholder="10 अंकों का नंबर"
               value={phone}
               disabled={busy}
               onChange={(event) => setPhone(event.target.value)}
             />
           </div>
           <div className="space-y-1.5">
-            <Label htmlFor="manager-name">Name</Label>
+            <Label htmlFor="manager-name">नाम</Label>
             <Input
               id="manager-name"
               maxLength={60}
@@ -108,7 +108,7 @@ export function VoteAdminTeam() {
             />
           </div>
           <div className="space-y-1.5">
-            <Label htmlFor="manager-password">Password</Label>
+            <Label htmlFor="manager-password">पासवर्ड</Label>
             <Input
               id="manager-password"
               type="password"
@@ -124,17 +124,17 @@ export function VoteAdminTeam() {
         <div className="flex justify-end border-t border-border bg-white/[0.015] px-5 py-3 sm:px-6">
           <Button type="submit" className="gap-2" disabled={busy}>
             {busy ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : <UserPlus className="h-4 w-4" aria-hidden="true" />}
-            Add manager
+            मैनेजर जोड़ें
           </Button>
         </div>
       </form>
 
       <section className="overflow-hidden rounded-xl border border-border bg-card">
-        <h2 className="border-b border-border px-5 py-4 text-base font-semibold text-foreground sm:px-6">Managers</h2>
+        <h2 className="border-b border-border px-5 py-4 text-base font-semibold text-foreground sm:px-6">मैनेजर</h2>
         {managers === null ? (
-          <Loader2 className="m-5 h-5 w-5 animate-spin text-muted-foreground" aria-label="Loading managers" />
+          <Loader2 className="m-5 h-5 w-5 animate-spin text-muted-foreground" aria-label="मैनेजर लोड हो रहे हैं" />
         ) : managers.length === 0 ? (
-          <p className="px-5 py-6 text-sm text-muted-foreground sm:px-6">Only you can manage voting right now.</p>
+          <p className="px-5 py-6 text-sm text-muted-foreground sm:px-6">अभी सिर्फ़ आप वोटिंग मैनेज कर सकते हैं।</p>
         ) : (
           <ul className="divide-y divide-border">
             {managers.map((manager) => (
@@ -144,7 +144,7 @@ export function VoteAdminTeam() {
                   <p className="truncate text-sm font-medium text-foreground">{manager.name}</p>
                   <p className="text-xs text-muted-foreground">
                     {formatPhone(manager.phone)} ·{" "}
-                    {manager.lastLoginAt ? `Last login ${formatDateTime(manager.lastLoginAt)}` : "Has not logged in yet"}
+                    {manager.lastLoginAt ? `आख़िरी लॉग इन: ${formatDateTime(manager.lastLoginAt)}` : "अभी तक लॉग इन नहीं किया"}
                   </p>
                 </div>
                 <Button
@@ -152,8 +152,8 @@ export function VoteAdminTeam() {
                   size="icon"
                   disabled={busy}
                   onClick={() => void handleRemove(manager)}
-                  aria-label={`Remove ${manager.name}`}
-                  title="Remove manager"
+                  aria-label={`${manager.name} को हटाएँ`}
+                  title="मैनेजर से हटाएँ"
                 >
                   <Trash2 className="h-4 w-4 text-red-400" aria-hidden="true" />
                 </Button>

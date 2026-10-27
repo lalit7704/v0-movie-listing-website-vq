@@ -47,7 +47,7 @@ function PollCard({ poll, onChanged }: { poll: PollView; onChanged: () => Promis
       <div className="border-t border-border p-5 sm:p-6">
         {canVote ? (
           <fieldset disabled={busy}>
-            <legend className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Choose one</legend>
+            <legend className="mb-3 text-sm font-semibold text-muted-foreground">किसी एक को चुनें</legend>
             <div className="space-y-2">
               {poll.options.map((option, index) => {
                 const selected = choice === option.id;
@@ -86,17 +86,17 @@ function PollCard({ poll, onChanged }: { poll: PollView; onChanged: () => Promis
 
             {confirming && chosen ? (
               <div className="mt-4 rounded-lg border border-primary/40 bg-primary/[0.06] p-4">
-                <p className="text-sm font-semibold text-foreground">Cast your vote for {chosen.label}?</p>
+                <p className="text-sm font-semibold text-foreground">{chosen.label} को वोट दें?</p>
                 <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-                  You can vote only once in this poll, and your vote cannot be changed later.
+                  इस पोल में आप सिर्फ़ एक बार वोट कर सकते हैं, और वोट बाद में बदला नहीं जा सकता।
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <Button className="gap-2" onClick={() => void castVote()}>
                     {busy ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : <Check className="h-4 w-4" aria-hidden="true" />}
-                    Confirm vote
+                    हाँ, वोट पक्का करें
                   </Button>
                   <Button variant="ghost" onClick={() => setConfirming(false)}>
-                    Change choice
+                    चुनाव बदलें
                   </Button>
                 </div>
               </div>
@@ -108,7 +108,7 @@ function PollCard({ poll, onChanged }: { poll: PollView; onChanged: () => Promis
                 disabled={!chosen}
                 onClick={() => setConfirming(true)}
               >
-                {chosen ? `Vote for ${chosen.label}` : "Select an option to vote"}
+                {chosen ? `${chosen.label} को वोट दें` : "वोट देने के लिए किसी एक को चुनें"}
               </Button>
             )}
           </fieldset>
@@ -118,8 +118,8 @@ function PollCard({ poll, onChanged }: { poll: PollView; onChanged: () => Promis
               <div className="mb-5 flex items-center gap-3 rounded-lg bg-emerald-500/10 px-4 py-3 ring-1 ring-inset ring-emerald-500/25">
                 <CircleCheck className="h-5 w-5 shrink-0 text-emerald-400" aria-hidden="true" />
                 <div className="min-w-0">
-                  <p className="text-sm font-semibold text-emerald-200">Your vote is recorded</p>
-                  <p className="truncate text-xs text-emerald-200/70">You voted for {myOption.label}</p>
+                  <p className="text-sm font-semibold text-emerald-200">आपका वोट दर्ज हो गया है</p>
+                  <p className="truncate text-xs text-emerald-200/70">आपने {myOption.label} को वोट दिया</p>
                 </div>
               </div>
             )}
@@ -179,7 +179,7 @@ export function VotePolls() {
     return error ? (
       <Notice tone="error">{error}</Notice>
     ) : (
-      <div className="space-y-4" role="status" aria-label="Loading polls">
+      <div className="space-y-4" role="status" aria-label="पोल लोड हो रहे हैं">
         <PollSkeleton />
         <PollSkeleton />
       </div>
@@ -194,7 +194,7 @@ export function VotePolls() {
       {error && <Notice tone="error">{error}</Notice>}
 
       <section>
-        <SectionHeading title="Live polls" count={live.length} />
+        <SectionHeading title="चालू पोल" count={live.length} />
         {live.length ? (
           <div className="space-y-4">
             {live.map((poll) => (
@@ -204,15 +204,15 @@ export function VotePolls() {
         ) : (
           <div className="flex flex-col items-center rounded-xl border border-dashed border-border px-6 py-12 text-center">
             <Inbox className="h-8 w-8 text-muted-foreground/60" aria-hidden="true" />
-            <p className="mt-3 text-sm font-medium text-foreground">No live polls right now</p>
-            <p className="mt-1 text-sm text-muted-foreground">When a new poll opens, it will show up here.</p>
+            <p className="mt-3 text-sm font-medium text-foreground">अभी कोई चालू पोल नहीं है</p>
+            <p className="mt-1 text-sm text-muted-foreground">नया पोल शुरू होते ही यहाँ दिखेगा।</p>
           </div>
         )}
       </section>
 
       {past.length > 0 && (
         <section>
-          <SectionHeading title="Past polls" count={past.length} />
+          <SectionHeading title="पुराने पोल" count={past.length} />
           <div className="space-y-4">
             {past.map((poll) => (
               <PollCard key={poll.id} poll={poll} onChanged={loadPolls} />

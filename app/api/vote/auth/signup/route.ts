@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
     const db = getVoteDb();
 
     const existing = must(await db.from("vote_users").select("id").eq("phone", phone).maybeSingle());
-    if (existing) throw new VoteError("This number is already registered. Please login.", 409);
+    if (existing) throw new VoteError("यह नंबर पहले से रजिस्टर है। कृपया लॉग इन करें।", 409);
 
     const otp = await issueOtp(db, {
       phone,

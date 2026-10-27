@@ -13,8 +13,8 @@ import {
 import { verifyOtp } from "@/lib/vote/otp";
 
 const verifySchema = z.object({
-  challengeId: z.string().uuid("Please ask for a new OTP"),
-  code: z.string().trim().regex(/^\d{6}$/, "Enter the 6 digit OTP"),
+  challengeId: z.string().uuid("नया OTP माँगें"),
+  code: z.string().trim().regex(/^\d{6}$/, "6 अंकों का OTP डालें"),
 });
 
 /** Step 2 of signup and login: a correct OTP creates the account (signup) and starts a session. */
@@ -37,14 +37,14 @@ export async function POST(request: NextRequest) {
         .select("id, phone, name, role")
         .single();
       if (created.error?.code === "23505") {
-        throw new VoteError("This number is already registered. Please login.", 409);
+        throw new VoteError("यह नंबर पहले से रजिस्टर है। कृपया लॉग इन करें।", 409);
       }
       user = must(created);
     } else {
       user = must(
         await db.from("vote_users").select("id, phone, name, role").eq("id", challenge.payload.userId).maybeSingle()
       );
-      if (!user) throw new VoteError("This account no longer exists", 404);
+      if (!user) throw new VoteError("यह अकाउंट अब मौजूद नहीं है", 404);
     }
 
     const { token, expiresAt } = await startSession(db, user.id);

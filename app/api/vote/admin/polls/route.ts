@@ -21,13 +21,13 @@ export async function GET() {
 }
 
 const pollSchema = z.object({
-  question: z.string().trim().min(3, "Question is too short").max(200, "Question is too long"),
-  description: z.string().trim().max(500, "Description is too long").default(""),
+  question: z.string().trim().min(3, "सवाल बहुत छोटा है").max(200, "सवाल बहुत लंबा है"),
+  description: z.string().trim().max(500, "जानकारी बहुत लंबी है").default(""),
   options: z
-    .array(z.string().trim().max(120, "An option is too long"))
+    .array(z.string().trim().max(120, "कोई विकल्प बहुत लंबा है"))
     .transform((options) => options.filter(Boolean))
-    .pipe(z.array(z.string()).min(2, "Add at least 2 options").max(10, "At most 10 options")),
-  endsAt: z.union([z.literal(""), z.string().datetime("End time is not valid")]).default(""),
+    .pipe(z.array(z.string()).min(2, "कम से कम 2 विकल्प जोड़ें").max(10, "ज़्यादा से ज़्यादा 10 विकल्प जोड़ सकते हैं")),
+  endsAt: z.union([z.literal(""), z.string().datetime("बंद होने का समय सही नहीं है")]).default(""),
 });
 
 export async function POST(request: NextRequest) {
@@ -37,9 +37,9 @@ export async function POST(request: NextRequest) {
   try {
     const { question, description, options, endsAt } = await parseBody(request, pollSchema);
     if (new Set(options.map((option) => option.toLowerCase())).size !== options.length) {
-      throw new VoteError("Each option must be different");
+      throw new VoteError("हर विकल्प अलग होना चाहिए");
     }
-    if (endsAt && new Date(endsAt) <= new Date()) throw new VoteError("End time must be in the future");
+    if (endsAt && new Date(endsAt) <= new Date()) throw new VoteError("बंद होने का समय आगे का होना चाहिए");
 
     const { db, user } = session;
     const poll = must(
@@ -74,12 +74,12 @@ export async function PATCH(request: NextRequest) {
 
   try {
     const id = request.nextUrl.searchParams.get("id");
-    if (!id || !z.string().uuid().safeParse(id).success) throw new VoteError("Missing poll id");
+    if (!id || !z.string().uuid().safeParse(id).success) throw new VoteError("पोल की पहचान नहीं मिली");
     const { status } = await parseBody(request, updateSchema);
     const { db } = session;
 
     const poll = must(await db.from("vote_polls").select("ends_at").eq("id", id).maybeSingle());
-    if (!poll) throw new VoteError("This poll no longer exists", 404);
+    if (!poll) throw new VoteError("यह पोल अब मौजूद नहीं है", 404);
 
     const endedAlready = poll.ends_at && new Date(poll.ends_at) <= new Date();
     must(
@@ -101,7 +101,7 @@ export async function DELETE(request: NextRequest) {
 
   try {
     const id = request.nextUrl.searchParams.get("id");
-    if (!id || !z.string().uuid().safeParse(id).success) throw new VoteError("Missing poll id");
+    if (!id || !z.string().uuid().safeParse(id).success) throw new VoteError("पोल की पहचान नहीं मिली");
     must(await session.db.from("vote_polls").delete().eq("id", id));
     return NextResponse.json({ success: true });
   } catch (caught) {

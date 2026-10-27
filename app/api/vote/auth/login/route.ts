@@ -17,7 +17,7 @@ const LOCK_MINUTES = 15;
 
 const loginSchema = z.object({
   phone: phoneSchema,
-  password: z.string().min(1, "Enter your password").max(72, "Password is too long"),
+  password: z.string().min(1, "अपना पासवर्ड डालें").max(72, "पासवर्ड बहुत लंबा है"),
 });
 
 /** Step 1 of login: a correct password asks for the Telegram OTP, and only the OTP starts a session. */
@@ -33,11 +33,11 @@ export async function POST(request: NextRequest) {
         .eq("phone", phone)
         .maybeSingle()
     );
-    if (!user) throw new VoteError("No account with this number. Please create an account first.", 404);
+    if (!user) throw new VoteError("इस नंबर से कोई अकाउंट नहीं है। पहले अकाउंट बनाएँ।", 404);
 
     if (user.locked_until && new Date(user.locked_until) > new Date()) {
       const minutes = Math.ceil((new Date(user.locked_until).getTime() - Date.now()) / 60_000);
-      throw new VoteError(`Too many wrong passwords. Try again in ${minutes} min.`, 429);
+      throw new VoteError(`बहुत बार गलत पासवर्ड डाला गया। ${minutes} मिनट बाद कोशिश करें।`, 429);
     }
 
     if (!(await verifyPassword(password, user.password_hash))) {
@@ -53,8 +53,8 @@ export async function POST(request: NextRequest) {
           .eq("id", user.id)
       );
       throw lock
-        ? new VoteError(`Too many wrong passwords. Try again in ${LOCK_MINUTES} min.`, 429)
-        : new VoteError("Wrong password", 401);
+        ? new VoteError(`बहुत बार गलत पासवर्ड डाला गया। ${LOCK_MINUTES} मिनट बाद कोशिश करें।`, 429)
+        : new VoteError("गलत पासवर्ड", 401);
     }
 
     if (user.failed_logins) {

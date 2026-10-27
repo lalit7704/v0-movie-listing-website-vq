@@ -4,8 +4,8 @@ import { createPageMetadata } from "@/lib/site";
 
 export const metadata: Metadata = createPageMetadata(
   "/vote",
-  "Vote",
-  "Create an account with your mobile number and vote in Onemovie polls."
+  "चौखा सरपंच चुनाव – वोट करें",
+  "अपने मोबाइल नंबर से अकाउंट बनाएँ और अपने चौखा सरपंच के लिए वोट करें।"
 );
 
 export default function Page() {

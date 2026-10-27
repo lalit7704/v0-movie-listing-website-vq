@@ -1,5 +1,11 @@
 /** Small visual pieces shared by the voting pages. */
 
+/** The election these pages are for. Change these two lines for another election. */
+export const CAMPAIGN = {
+  eyebrow: "चौखा सरपंच चुनाव",
+  title: "अपने चौखा सरपंच के लिए वोट करें",
+};
+
 const avatarTones = [
   "bg-rose-500/15 text-rose-200 ring-rose-400/25",
   "bg-amber-500/15 text-amber-200 ring-amber-400/25",
@@ -61,6 +67,7 @@ export function PersonAvatar({ name, size }: { name: string; size?: keyof typeof
   return <Avatar label={name} tone={avatarTones[hash % avatarTones.length]} size={size} />;
 }
 
+// No letter-spacing: it breaks the headline bar that joins Hindi letters.
 export function Eyebrow({ children }: { children: React.ReactNode }) {
-  return <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">{children}</p>;
+  return <p className="text-sm font-semibold text-primary">{children}</p>;
 }

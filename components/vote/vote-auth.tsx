@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { InputOTP, InputOTPGroup, InputOTPSlot } from "@/components/ui/input-otp";
 import { Notice } from "@/components/admin/notice";
-import { Eyebrow } from "@/components/vote/vote-ui";
+import { CAMPAIGN, Eyebrow } from "@/components/vote/vote-ui";
 import { errorText, voteRequest } from "@/components/vote/vote-api";
 import type { VoteUser } from "@/lib/vote/types";
 
@@ -24,28 +24,29 @@ interface Challenge {
 }
 
 const challengeText: Record<Challenge["delivery"], (sentTo: string) => string> = {
-  telegram: (sentTo) => `We sent a 6 digit code to your Telegram account (${sentTo}).`,
-  link: (sentTo) => `Get your 6 digit code for ${sentTo} from our Telegram bot.`,
-  dev: (sentTo) => `Enter the 6 digit code for ${sentTo}.`,
+  telegram: (sentTo) => `हमने आपके Telegram (${sentTo}) पर 6 अंकों का कोड भेजा है।`,
+  link: (sentTo) => `${sentTo} के लिए 6 अंकों का कोड हमारे Telegram बॉट से लें।`,
+  dev: (sentTo) => `${sentTo} के लिए 6 अंकों का कोड डालें।`,
 };
 
 const panels = {
   voter: {
-    eyebrow: "Onemovie Polls",
-    title: "Vote in three simple steps",
+    ...CAMPAIGN,
+    intro: "सिर्फ़ तीन आसान स्टेप में:",
     steps: [
-      ["Create your account", "Use your mobile number and a password."],
-      ["Verify on Telegram", "Our bot sends you a 6 digit code."],
-      ["Cast your vote", "One vote per poll. Results update live."],
+      ["अपना अकाउंट बनाएँ", "मोबाइल नंबर और पासवर्ड से।"],
+      ["Telegram पर वेरिफ़ाई करें", "हमारा बॉट आपको 6 अंकों का कोड भेजेगा।"],
+      ["अपना वोट डालें", "हर पोल में एक व्यक्ति, एक वोट।"],
     ],
   },
   admin: {
-    eyebrow: "Voting admin",
-    title: "Run polls for your community",
+    eyebrow: "वोटिंग एडमिन",
+    title: "चुनाव के पोल संभालें",
+    intro: "सिर्फ़ मुख्य एडमिन और उनके जोड़े गए मैनेजर के लिए।",
     steps: [
-      ["Log in", "Use the mobile number the owner added."],
-      ["Verify on Telegram", "Our bot sends you a 6 digit code."],
-      ["Manage polls", "Create polls, close them and see the results."],
+      ["लॉग इन करें", "वही मोबाइल नंबर जो मुख्य एडमिन ने जोड़ा है।"],
+      ["Telegram पर वेरिफ़ाई करें", "हमारा बॉट आपको 6 अंकों का कोड भेजेगा।"],
+      ["पोल संभालें", "पोल बनाएँ, बंद करें और नतीजे देखें।"],
     ],
   },
 };
@@ -100,7 +101,7 @@ export function VoteAuth({
   function handleDetails(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (mode === "signup" && password !== confirmPassword) {
-      setMessage("Both passwords must match");
+      setMessage("दोनों पासवर्ड एक जैसे होने चाहिए");
       return;
     }
     void requestOtp();
@@ -130,20 +131,21 @@ export function VoteAuth({
     setConfirmPassword("");
   }
 
-  const title = challenge ? "Verify your number" : mode === "signup" ? "Create your account" : "Welcome back";
+  const title = challenge ? "अपना नंबर वेरिफ़ाई करें" : mode === "signup" ? "नया अकाउंट बनाएँ" : "लॉग इन करें";
   const subtitle = challenge
     ? challengeText[challenge.delivery](challenge.sentTo)
     : mode === "signup"
-      ? "It takes a minute. You will verify your number on Telegram."
-      : "Log in with your mobile number and password.";
+      ? "बस एक मिनट लगेगा। आपका नंबर Telegram पर वेरिफ़ाई होगा।"
+      : "अपने मोबाइल नंबर और पासवर्ड से लॉग इन करें।";
 
   return (
-    <section className="mx-auto grid max-w-4xl overflow-hidden rounded-2xl border border-border bg-card shadow-2xl shadow-black/40 md:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
+    <section lang="hi" className="mx-auto grid max-w-4xl overflow-hidden rounded-2xl border border-border bg-card shadow-2xl shadow-black/40 md:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
       <aside className="relative hidden flex-col justify-between gap-10 overflow-hidden border-r border-border p-8 md:flex lg:p-10">
         <div aria-hidden="true" className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-primary/20 blur-3xl" />
         <div className="relative">
           <Eyebrow>{panel.eyebrow}</Eyebrow>
-          <h2 className="mt-3 text-2xl font-bold leading-tight tracking-tight text-foreground">{panel.title}</h2>
+          <h2 className="mt-2 text-2xl font-bold leading-snug text-foreground">{panel.title}</h2>
+          <p className="mt-2 text-sm text-muted-foreground">{panel.intro}</p>
           <ol className="mt-8 space-y-6">
             {panel.steps.map(([stepTitle, stepText], index) => (
               <li key={stepTitle} className="flex gap-4">
@@ -170,15 +172,16 @@ export function VoteAuth({
         </div>
         <p className="relative flex items-start gap-2 text-xs leading-relaxed text-muted-foreground">
           <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" aria-hidden="true" />
-          Your mobile number is never shown to other voters.
+          आपका मोबाइल नंबर किसी दूसरे वोटर को नहीं दिखाया जाता।
         </p>
       </aside>
 
       <div className="p-6 sm:p-10">
-        <div className="mb-2 md:hidden">
+        <div className="mb-6 border-b border-border pb-5 md:hidden">
           <Eyebrow>{panel.eyebrow}</Eyebrow>
+          <p className="mt-1 text-lg font-bold leading-snug text-foreground">{panel.title}</p>
         </div>
-        <h1 className="text-2xl font-bold tracking-tight text-foreground">{title}</h1>
+        <h1 className="text-2xl font-bold text-foreground">{title}</h1>
         <p className="mt-1.5 text-sm text-muted-foreground">{subtitle}</p>
 
         {challenge ? (
@@ -191,12 +194,12 @@ export function VoteAuth({
           >
             {challenge.devCode && (
               <Notice tone="warning">
-                Test mode: the voting Telegram bot is not set up, so the code is <strong>{challenge.devCode}</strong>.
+                टेस्ट मोड: Telegram बॉट सेट नहीं है, इसलिए कोड है <strong>{challenge.devCode}</strong>।
               </Notice>
             )}
             {challenge.delivery === "link" && (
               <ol className="space-y-2 rounded-lg border border-border bg-white/[0.02] p-4 text-sm text-muted-foreground">
-                {["Tap Open Telegram below.", "Press Start, then Share my phone number.", "Enter the 6 digit code here."].map(
+                {["नीचे “Telegram खोलें” दबाएँ।", "Start दबाएँ, फिर “अपना फ़ोन नंबर शेयर करें” दबाएँ।", "बॉट से मिला 6 अंकों का कोड यहाँ डालें।"].map(
                   (step, index) => (
                     <li key={step} className="flex gap-3">
                       <span className="font-semibold tabular-nums text-foreground">{index + 1}.</span>
@@ -214,12 +217,12 @@ export function VoteAuth({
               >
                 <a href={challenge.telegramLink} target="_blank" rel="noopener noreferrer">
                   <Send className="h-4 w-4" aria-hidden="true" />
-                  Open Telegram
+                  Telegram खोलें
                 </a>
               </Button>
             )}
             <div>
-              <Label className="mb-2 block">6 digit code</Label>
+              <Label className="mb-2 block">6 अंकों का कोड</Label>
               <InputOTP
                 maxLength={6}
                 value={code}
@@ -241,7 +244,7 @@ export function VoteAuth({
             {message && <p className="text-sm text-yellow-300">{message}</p>}
             <Button size="lg" className="w-full gap-2" type="submit" disabled={busy || code.length !== 6}>
               {busy && <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />}
-              {mode === "signup" ? "Verify and create account" : "Verify and log in"}
+              {mode === "signup" ? "वेरिफ़ाई करके अकाउंट बनाएँ" : "वेरिफ़ाई करके लॉग इन करें"}
             </Button>
             <div className="flex items-center justify-between text-sm">
               <button
@@ -253,7 +256,7 @@ export function VoteAuth({
                 }}
               >
                 <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-                Change number
+                नंबर बदलें
               </button>
               <button
                 type="button"
@@ -261,7 +264,7 @@ export function VoteAuth({
                 disabled={busy || resendIn > 0}
                 onClick={() => void requestOtp()}
               >
-                {resendIn > 0 ? `Resend in ${resendIn}s` : "Resend code"}
+                {resendIn > 0 ? `${resendIn} सेकंड में दोबारा भेजें` : "कोड दोबारा भेजें"}
               </button>
             </div>
           </form>
@@ -269,14 +272,14 @@ export function VoteAuth({
           <form className="mt-6 space-y-4" onSubmit={handleDetails}>
             {mode === "signup" && (
               <div className="space-y-1.5">
-                <Label htmlFor="vote-name">Full name</Label>
+                <Label htmlFor="vote-name">पूरा नाम</Label>
                 <Input
                   id="vote-name"
                   required
                   minLength={2}
                   maxLength={60}
                   autoComplete="name"
-                  placeholder="As you want it shown"
+                  placeholder="जैसा आप दिखाना चाहें"
                   className="h-11"
                   value={name}
                   onChange={(event) => setName(event.target.value)}
@@ -284,7 +287,7 @@ export function VoteAuth({
               </div>
             )}
             <div className="space-y-1.5">
-              <Label htmlFor="vote-phone">Mobile number</Label>
+              <Label htmlFor="vote-phone">मोबाइल नंबर</Label>
               <div className="flex">
                 <span className="inline-flex items-center rounded-l-md border border-r-0 border-input bg-muted px-3 text-sm text-muted-foreground">
                   +91
@@ -303,7 +306,7 @@ export function VoteAuth({
               </div>
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="vote-password">Password</Label>
+              <Label htmlFor="vote-password">पासवर्ड</Label>
               <div className="relative">
                 <Input
                   id="vote-password"
@@ -312,7 +315,7 @@ export function VoteAuth({
                   minLength={mode === "signup" ? 6 : 1}
                   maxLength={72}
                   autoComplete={mode === "signup" ? "new-password" : "current-password"}
-                  placeholder={mode === "signup" ? "At least 6 characters" : undefined}
+                  placeholder={mode === "signup" ? "कम से कम 6 अक्षर" : undefined}
                   className="h-11 pr-11"
                   value={password}
                   onChange={(event) => setPassword(event.target.value)}
@@ -320,7 +323,7 @@ export function VoteAuth({
                 <button
                   type="button"
                   className="absolute inset-y-0 right-0 flex w-11 items-center justify-center text-muted-foreground hover:text-foreground"
-                  aria-label={showPassword ? "Hide password" : "Show password"}
+                  aria-label={showPassword ? "पासवर्ड छुपाएँ" : "पासवर्ड दिखाएँ"}
                   onClick={() => setShowPassword((shown) => !shown)}
                 >
                   {showPassword ? <EyeOff className="h-4 w-4" aria-hidden="true" /> : <Eye className="h-4 w-4" aria-hidden="true" />}
@@ -329,7 +332,7 @@ export function VoteAuth({
             </div>
             {mode === "signup" && (
               <div className="space-y-1.5">
-                <Label htmlFor="vote-password-confirm">Confirm password</Label>
+                <Label htmlFor="vote-password-confirm">पासवर्ड दोबारा डालें</Label>
                 <Input
                   id="vote-password-confirm"
                   type={showPassword ? "text" : "password"}
@@ -344,16 +347,16 @@ export function VoteAuth({
             {message && <p className="text-sm text-yellow-300">{message}</p>}
             <Button size="lg" className="w-full gap-2" type="submit" disabled={busy}>
               {busy ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : <Send className="h-4 w-4" aria-hidden="true" />}
-              Get OTP on Telegram
+              Telegram पर OTP पाएँ
             </Button>
             <p className="pt-2 text-center text-sm text-muted-foreground">
-              {mode === "login" ? "New here? " : "Already have an account? "}
+              {mode === "login" ? "नए हैं? " : "पहले से अकाउंट है? "}
               <button
                 type="button"
                 className="font-medium text-foreground underline-offset-4 hover:underline"
                 onClick={() => switchMode(mode === "login" ? "signup" : "login")}
               >
-                {mode === "login" ? "Create an account" : "Log in"}
+                {mode === "login" ? "अकाउंट बनाएँ" : "लॉग इन करें"}
               </button>
             </p>
           </form>

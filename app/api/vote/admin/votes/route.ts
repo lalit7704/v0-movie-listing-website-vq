@@ -18,7 +18,7 @@ export async function GET(request: NextRequest) {
 
   try {
     const pollId = request.nextUrl.searchParams.get("pollId");
-    if (!pollId || !z.string().uuid().safeParse(pollId).success) throw new VoteError("Missing poll id");
+    if (!pollId || !z.string().uuid().safeParse(pollId).success) throw new VoteError("पोल की पहचान नहीं मिली");
     const { db } = session;
 
     const options: { id: string; label: string }[] = must(

@@ -38,7 +38,7 @@ export function PollVoters({ poll }: { poll: PollView }) {
       <div className="flex flex-wrap items-center justify-between gap-2">
         <Button variant="ghost" size="sm" className="gap-2 px-2" onClick={() => void toggle()}>
           <Users className="h-4 w-4" aria-hidden="true" />
-          {open ? "Hide voters" : `Show voters (${poll.totalVotes ?? 0})`}
+          {open ? "वोटर छुपाएँ" : `वोटर देखें (${poll.totalVotes ?? 0})`}
           {open ? <ChevronUp className="h-4 w-4" aria-hidden="true" /> : <ChevronDown className="h-4 w-4" aria-hidden="true" />}
         </Button>
         {open && voters && voters.length > 0 && (
@@ -47,15 +47,15 @@ export function PollVoters({ poll }: { poll: PollView }) {
               variant="outline"
               size="sm"
               className="gap-2"
-              title="Opens the print box. Choose Save as PDF there."
+              title="प्रिंट का बॉक्स खुलेगा। वहाँ Save as PDF चुनें।"
               onClick={() => setPopupBlocked(!openVoterPdf(poll, voters))}
             >
               <FileText className="h-4 w-4" aria-hidden="true" />
-              Download PDF
+              PDF डाउनलोड करें
             </Button>
             <Button variant="outline" size="sm" className="gap-2" onClick={() => downloadCsv(poll, voters)}>
               <Download className="h-4 w-4" aria-hidden="true" />
-              Download CSV
+              CSV डाउनलोड करें
             </Button>
           </div>
         )}
@@ -63,7 +63,7 @@ export function PollVoters({ poll }: { poll: PollView }) {
 
       {open && popupBlocked && (
         <p className="mt-2 text-sm text-yellow-300">
-          Your browser blocked the new tab. Allow pop-ups for this site, then press Download PDF again.
+          आपके ब्राउज़र ने नया टैब रोक दिया। इस साइट के लिए pop-ups चालू करें, फिर दोबारा PDF डाउनलोड करें दबाएँ।
         </p>
       )}
 
@@ -72,18 +72,18 @@ export function PollVoters({ poll }: { poll: PollView }) {
           {error ? (
             <p className="text-sm text-yellow-300">{error}</p>
           ) : voters === null ? (
-            <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" aria-label="Loading voters" />
+            <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" aria-label="वोटर लोड हो रहे हैं" />
           ) : voters.length === 0 ? (
-            <p className="text-sm text-muted-foreground">Nobody has voted yet.</p>
+            <p className="text-sm text-muted-foreground">अभी तक किसी ने वोट नहीं दिया।</p>
           ) : (
             <div className="max-h-96 overflow-auto rounded-md border border-border">
               <table className="w-full min-w-[520px] text-left text-sm">
                 <thead className="sticky top-0 bg-card text-xs text-muted-foreground">
                   <tr className="border-b border-border">
-                    <th className="px-3 py-2 font-medium">Name</th>
-                    <th className="px-3 py-2 font-medium">Mobile</th>
-                    <th className="px-3 py-2 font-medium">Voted for</th>
-                    <th className="px-3 py-2 font-medium">Voted at</th>
+                    <th className="px-3 py-2 font-medium">नाम</th>
+                    <th className="px-3 py-2 font-medium">मोबाइल</th>
+                    <th className="px-3 py-2 font-medium">किसे वोट दिया</th>
+                    <th className="px-3 py-2 font-medium">कब</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">

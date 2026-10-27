@@ -16,7 +16,7 @@ function csvCell(value: string) {
 
 export function downloadCsv(poll: PollView, voters: PollVoter[]) {
   const lines = [
-    ["Name", "Mobile", "Voted for", "Voted at"],
+    ["नाम", "मोबाइल", "किसे वोट दिया", "कब"],
     // 10 digits without +91, so Excel shows the number as it is.
     ...voters.map((voter) => [voter.name, voter.phone.replace(/^\+91/, ""), voter.option, formatDateTime(voter.votedAt)]),
   ];
@@ -41,7 +41,7 @@ const reportStyles = `
   @page { size: A4; margin: 14mm; }
   * { box-sizing: border-box; }
   body { margin: 0; padding: 24px; color: #111; background: #fff;
-    font: 12px/1.45 "Segoe UI", "Nirmala UI", "Noto Sans", "Noto Sans Devanagari", Arial, sans-serif; }
+    font: 12px/1.45 "Segoe UI", "Nirmala UI", "Noto Sans Devanagari", "Noto Sans", Arial, sans-serif; }
   h1 { margin: 0 0 4px; font-size: 20px; }
   h2 { margin: 22px 0 8px; font-size: 14px; }
   .meta { margin: 0; color: #555; }
@@ -76,7 +76,7 @@ export function buildVoterReport(poll: PollView, voters: PollVoter[], printedAt 
     .join("");
 
   return `<!doctype html>
-<html lang="en">
+<html lang="hi">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -85,15 +85,15 @@ export function buildVoterReport(poll: PollView, voters: PollVoter[], printedAt 
 </head>
 <body>
 <h1>${escapeHtml(poll.question)}</h1>
-<p class="meta">Onemovie voting · ${poll.isOpen ? "Open" : "Closed"} · ${total} ${total === 1 ? "vote" : "votes"} · Downloaded ${escapeHtml(formatDateTime(printedAt.toISOString()))}</p>
-<h2>Results</h2>
+<p class="meta">Onemovie वोटिंग · ${poll.isOpen ? "चालू" : "बंद"} · ${total} वोट · डाउनलोड: ${escapeHtml(formatDateTime(printedAt.toISOString()))}</p>
+<h2>नतीजे</h2>
 <table class="results">
-<thead><tr><th>Option</th><th class="num">Votes</th><th class="num">%</th></tr></thead>
+<thead><tr><th>विकल्प</th><th class="num">वोट</th><th class="num">%</th></tr></thead>
 <tbody>${results}</tbody>
 </table>
-<h2>Voters</h2>
+<h2>वोटर</h2>
 <table>
-<thead><tr><th class="num">#</th><th>Name</th><th>Mobile</th><th>Voted for</th><th>Voted at</th></tr></thead>
+<thead><tr><th class="num">#</th><th>नाम</th><th>मोबाइल</th><th>किसे वोट दिया</th><th>कब</th></tr></thead>
 <tbody>${rows}</tbody>
 </table>
 </body>

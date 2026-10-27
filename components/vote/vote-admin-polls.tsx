@@ -70,7 +70,7 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
           // datetime-local has no time zone; the browser reads it as local time.
           endsAt: endsAt ? new Date(endsAt).toISOString() : "",
         }),
-      "Poll created. Voters can see it now."
+      "पोल बन गया। वोटर अब इसे देख सकते हैं।"
     );
     if (created) {
       setQuestion("");
@@ -83,20 +83,20 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
   function setStatus(poll: PollView, status: "open" | "closed") {
     void run(
       () => voteRequest(`/api/vote/admin/polls?id=${encodeURIComponent(poll.id)}`, "PATCH", { status }),
-      status === "open" ? "Poll reopened." : "Poll closed. Voters now see the final result."
+      status === "open" ? "पोल दोबारा खोल दिया गया।" : "पोल बंद हो गया। वोटर अब अंतिम नतीजा देखेंगे।"
     );
   }
 
   function remove(poll: PollView) {
-    if (!window.confirm(`Delete "${poll.question}" and all its votes?`)) return;
-    void run(() => voteRequest(`/api/vote/admin/polls?id=${encodeURIComponent(poll.id)}`, "DELETE"), "Poll deleted.");
+    if (!window.confirm(`"${poll.question}" और इसके सारे वोट हटाएँ?`)) return;
+    void run(() => voteRequest(`/api/vote/admin/polls?id=${encodeURIComponent(poll.id)}`, "DELETE"), "पोल हटा दिया गया।");
   }
 
   const stats = [
-    { label: "Polls", value: polls?.length ?? 0, icon: BarChart3 },
-    { label: "Live now", value: polls?.filter((poll) => poll.isOpen).length ?? 0, icon: Radio },
-    { label: "Votes cast", value: polls?.reduce((sum, poll) => sum + (poll.totalVotes ?? 0), 0) ?? 0, icon: Vote },
-    { label: "Voters", value: totalUsers, icon: Users },
+    { label: "कुल पोल", value: polls?.length ?? 0, icon: BarChart3 },
+    { label: "अभी चालू", value: polls?.filter((poll) => poll.isOpen).length ?? 0, icon: Radio },
+    { label: "कुल वोट", value: polls?.reduce((sum, poll) => sum + (poll.totalVotes ?? 0), 0) ?? 0, icon: Vote },
+    { label: "कुल वोटर", value: totalUsers, icon: Users },
   ];
 
   return (
@@ -109,7 +109,7 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
               <Icon className="h-4 w-4" aria-hidden="true" />
             </div>
             <p className="mt-3 text-3xl font-semibold tabular-nums tracking-tight text-foreground">
-              {value.toLocaleString("en-IN")}
+              {value.toLocaleString("hi-IN")}
             </p>
           </div>
         ))}
@@ -119,18 +119,18 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
 
       <form onSubmit={handleCreate} className="overflow-hidden rounded-xl border border-border bg-card">
         <div className="border-b border-border px-5 py-4 sm:px-6">
-          <h2 className="text-base font-semibold text-foreground">New poll</h2>
-          <p className="mt-0.5 text-sm text-muted-foreground">Voters see it as soon as you publish.</p>
+          <h2 className="text-base font-semibold text-foreground">नया पोल</h2>
+          <p className="mt-0.5 text-sm text-muted-foreground">पब्लिश करते ही वोटरों को दिखेगा।</p>
         </div>
         <div className="space-y-5 p-5 sm:p-6">
           <div className="space-y-1.5">
-            <Label htmlFor="poll-question">Question</Label>
+            <Label htmlFor="poll-question">सवाल</Label>
             <Input
               id="poll-question"
               required
               minLength={3}
               maxLength={200}
-              placeholder="Who should be the next sarpanch?"
+              placeholder="अगला सरपंच कौन होना चाहिए?"
               className="h-11"
               value={question}
               disabled={busy}
@@ -139,13 +139,13 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
           </div>
           <div className="space-y-1.5">
             <Label htmlFor="poll-description">
-              Details <span className="font-normal text-muted-foreground">(optional)</span>
+              जानकारी <span className="font-normal text-muted-foreground">(वैकल्पिक)</span>
             </Label>
             <Textarea
               id="poll-description"
               maxLength={500}
               rows={2}
-              placeholder="Rules or anything voters should know"
+              placeholder="नियम या वोटरों के लिए ज़रूरी बात"
               value={description}
               disabled={busy}
               onChange={(event) => setDescription(event.target.value)}
@@ -153,7 +153,7 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
           </div>
           <div className="space-y-2">
             <Label>
-              Options <span className="font-normal text-muted-foreground">(2 to {MAX_OPTIONS})</span>
+              विकल्प <span className="font-normal text-muted-foreground">(2 से {MAX_OPTIONS})</span>
             </Label>
             {options.map((option, index) => (
               <div key={index} className="flex items-center gap-2">
@@ -161,8 +161,8 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
                 <Input
                   required={index < 2}
                   maxLength={120}
-                  placeholder={`Option ${index + 1}`}
-                  aria-label={`Option ${index + 1}`}
+                  placeholder={`विकल्प ${index + 1}`}
+                  aria-label={`विकल्प ${index + 1}`}
                   className="h-10"
                   value={option}
                   disabled={busy}
@@ -176,7 +176,7 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
                     variant="ghost"
                     size="icon"
                     disabled={busy}
-                    aria-label={`Remove option ${index + 1}`}
+                    aria-label={`विकल्प ${index + 1} हटाएँ`}
                     onClick={() => setOptions((current) => current.filter((_, i) => i !== index))}
                   >
                     <X className="h-4 w-4" aria-hidden="true" />
@@ -192,13 +192,13 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
                 className="flex w-full items-center justify-center gap-2 rounded-lg border border-dashed border-border py-2.5 text-sm text-muted-foreground transition-colors hover:border-white/25 hover:text-foreground disabled:opacity-50"
               >
                 <Plus className="h-4 w-4" aria-hidden="true" />
-                Add option
+                विकल्प जोड़ें
               </button>
             )}
           </div>
           <div className="space-y-1.5 sm:max-w-xs">
             <Label htmlFor="poll-ends">
-              Closing time <span className="font-normal text-muted-foreground">(optional)</span>
+              बंद होने का समय <span className="font-normal text-muted-foreground">(वैकल्पिक)</span>
             </Label>
             <Input
               id="poll-ends"
@@ -208,29 +208,29 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
               disabled={busy}
               onChange={(event) => setEndsAt(event.target.value)}
             />
-            <p className="text-xs text-muted-foreground">Leave empty to keep it open until you close it.</p>
+            <p className="text-xs text-muted-foreground">खाली छोड़ें तो पोल तब तक खुला रहेगा जब तक आप इसे बंद न करें।</p>
           </div>
         </div>
         <div className="flex justify-end border-t border-border bg-white/[0.015] px-5 py-3 sm:px-6">
           <Button type="submit" className="gap-2" disabled={busy}>
             {busy ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : <Plus className="h-4 w-4" aria-hidden="true" />}
-            Publish poll
+            पोल पब्लिश करें
           </Button>
         </div>
       </form>
 
       <section>
         <h2 className="mb-4 flex items-center gap-2 text-sm font-semibold text-foreground">
-          All polls
+          सभी पोल
           <span className="rounded-full bg-white/5 px-2 py-0.5 text-xs font-medium tabular-nums text-muted-foreground">
             {polls?.length ?? 0}
           </span>
         </h2>
         {polls === null ? (
-          <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" aria-label="Loading polls" />
+          <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" aria-label="पोल लोड हो रहे हैं" />
         ) : polls.length === 0 ? (
           <p className="rounded-xl border border-dashed border-border px-6 py-10 text-center text-sm text-muted-foreground">
-            No polls yet. Publish the first one above.
+            अभी कोई पोल नहीं है। ऊपर से पहला पोल पब्लिश करें।
           </p>
         ) : (
           <div className="space-y-4">
@@ -239,10 +239,10 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
                 <div className="flex flex-wrap items-start justify-between gap-3 p-5 sm:p-6">
                   <div className="min-w-0 flex-1">
                     <PollStatus poll={poll} onEnd={() => void loadPolls()} />
-                    <h3 className="mt-3 text-lg font-semibold tracking-tight text-foreground">{poll.question}</h3>
+                    <h3 className="mt-3 text-lg font-semibold text-foreground">{poll.question}</h3>
                     <p className="mt-1 text-xs text-muted-foreground">
-                      Created {formatDateTime(poll.createdAt)}
-                      {poll.createdBy ? ` by ${poll.createdBy}` : ""}
+                      बनाया: {formatDateTime(poll.createdAt)}
+                      {poll.createdBy ? ` · ${poll.createdBy}` : ""}
                     </p>
                     {poll.description && (
                       <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">{poll.description}</p>
@@ -252,12 +252,12 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
                     {poll.isOpen ? (
                       <Button variant="outline" size="sm" className="gap-1.5" disabled={busy} onClick={() => setStatus(poll, "closed")}>
                         <Lock className="h-4 w-4" aria-hidden="true" />
-                        Close voting
+                        वोटिंग बंद करें
                       </Button>
                     ) : (
                       <Button variant="outline" size="sm" className="gap-1.5" disabled={busy} onClick={() => setStatus(poll, "open")}>
                         <LockOpen className="h-4 w-4" aria-hidden="true" />
-                        Reopen
+                        दोबारा खोलें
                       </Button>
                     )}
                     <Button
@@ -265,8 +265,8 @@ export function VoteAdminPolls({ isOwner }: { isOwner: boolean }) {
                       size="icon"
                       disabled={busy}
                       onClick={() => remove(poll)}
-                      aria-label={`Delete ${poll.question}`}
-                      title="Delete poll"
+                      aria-label={`${poll.question} हटाएँ`}
+                      title="पोल हटाएँ"
                     >
                       <Trash2 className="h-4 w-4 text-red-400" aria-hidden="true" />
                     </Button>

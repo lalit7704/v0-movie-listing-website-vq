@@ -26,7 +26,7 @@ export function voteFailure(error: unknown) {
     return NextResponse.json({ success: false, error: error.message }, { status: error.status });
   }
   console.error("[vote]", error);
-  return NextResponse.json({ success: false, error: "Something went wrong, please try again" }, { status: 500 });
+  return NextResponse.json({ success: false, error: "कुछ गड़बड़ हो गई, कृपया दोबारा कोशिश करें" }, { status: 500 });
 }
 
 interface DbError {
@@ -43,7 +43,7 @@ export function must<R extends { data: unknown; error: DbError | null }>(result:
   if (!error) return result.data as DbData<R>;
   if (error.code === "42P01" || error.code === "PGRST205") {
     throw new VoteError(
-      "Voting tables are missing. Run supabase/migrations/202610240001_voting.sql in the Supabase SQL editor.",
+      "वोटिंग की टेबल नहीं मिलीं। Supabase SQL Editor में supabase/migrations/202610240001_voting.sql चलाएँ।",
       503
     );
   }
@@ -60,22 +60,22 @@ export async function parseBody<T extends z.ZodTypeAny>(request: NextRequest, sc
 export const phoneSchema = z.string().transform((value, context) => {
   const phone = normalizePhone(value);
   if (!phone) {
-    context.addIssue({ code: z.ZodIssueCode.custom, message: "Enter a valid 10 digit mobile number" });
+    context.addIssue({ code: z.ZodIssueCode.custom, message: "सही 10 अंकों का मोबाइल नंबर डालें" });
     return z.NEVER;
   }
   return phone;
 });
 
-export const nameSchema = z.string().trim().min(2, "Enter your name").max(60, "Name is too long");
+export const nameSchema = z.string().trim().min(2, "अपना नाम डालें").max(60, "नाम बहुत लंबा है");
 
 export const passwordSchema = z
   .string()
-  .min(6, "Password must be at least 6 characters")
-  .max(72, "Password is too long");
+  .min(6, "पासवर्ड कम से कम 6 अक्षर का होना चाहिए")
+  .max(72, "पासवर्ड बहुत लंबा है");
 
 export function getVoteDb() {
   const db = createAdminClient();
-  if (!db) throw new VoteError("SUPABASE_SERVICE_ROLE_KEY is not set on the server", 503);
+  if (!db) throw new VoteError("सर्वर पर SUPABASE_SERVICE_ROLE_KEY सेट नहीं है", 503);
   return db;
 }
 
@@ -186,9 +186,9 @@ export async function getVoteSession(): Promise<VoteSession | null> {
 }
 
 const accessErrors = {
-  voter: "Please login first",
-  manager: "Only voting managers can do this",
-  owner: "Only the owner can manage the team",
+  voter: "पहले लॉग इन करें",
+  manager: "यह काम सिर्फ़ वोटिंग मैनेजर कर सकते हैं",
+  owner: "मैनेजर सिर्फ़ मुख्य एडमिन जोड़ या हटा सकते हैं",
 };
 
 /** The session when the caller has at least this access, otherwise the error response. */

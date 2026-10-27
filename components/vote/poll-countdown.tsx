@@ -6,20 +6,19 @@ import { formatDateTime } from "@/components/vote/vote-api";
 
 const URGENT_MS = 60 * 60_000;
 
-/** 2d 04h 13m 22s, dropping leading units that are zero. */
+/** "2 दिन 04:13:22" or "00:37:47": a clock reads the same in Hindi and English. */
 function formatTimeLeft(ms: number) {
   const totalSeconds = Math.max(0, Math.floor(ms / 1000));
-  const units = [
-    [Math.floor(totalSeconds / 86_400), "d"],
-    [Math.floor((totalSeconds % 86_400) / 3600), "h"],
-    [Math.floor((totalSeconds % 3600) / 60), "m"],
-    [totalSeconds % 60, "s"],
-  ] as const;
-  const first = units.findIndex(([value]) => value > 0);
-  return units
-    .slice(first === -1 ? 3 : first)
-    .map(([value, unit], index) => `${index === 0 ? value : String(value).padStart(2, "0")}${unit}`)
-    .join(" ");
+  const days = Math.floor(totalSeconds / 86_400);
+  const pad = (value: number) => String(value).padStart(2, "0");
+  const clock = [
+    Math.floor((totalSeconds % 86_400) / 3600),
+    Math.floor((totalSeconds % 3600) / 60),
+    totalSeconds % 60,
+  ]
+    .map(pad)
+    .join(":");
+  return days ? `${days} दिन ${clock}` : clock;
 }
 
 /**
@@ -53,7 +52,7 @@ export function PollCountdown({ endsAt, onEnd }: { endsAt: string; onEnd?: () =>
   return (
     <span
       role="timer"
-      title={`Voting ends ${formatDateTime(endsAt)}`}
+      title={`वोटिंग ${formatDateTime(endsAt)} को बंद होगी`}
       className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold tabular-nums ring-1 ring-inset ${
         urgent ? "bg-red-500/15 text-red-200 ring-red-500/50" : "bg-amber-500/10 text-amber-300 ring-amber-500/30"
       }`}
@@ -67,7 +66,7 @@ export function PollCountdown({ endsAt, onEnd }: { endsAt: string; onEnd?: () =>
       ) : (
         <Timer className="h-3.5 w-3.5" aria-hidden="true" />
       )}
-      {ended ? "Voting has ended" : `Closes in ${formatTimeLeft(left)}`}
+      {ended ? "वोटिंग खत्म हो गई" : `बंद होने में ${formatTimeLeft(left)}`}
     </span>
   );
 }

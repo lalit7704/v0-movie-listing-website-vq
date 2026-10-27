@@ -10,11 +10,11 @@ import { Input } from "@/components/ui/input";
 import { Notice } from "@/components/admin/notice";
 import { VoteAuth } from "@/components/vote/vote-auth";
 import { VotePolls } from "@/components/vote/vote-polls";
-import { Eyebrow, PersonAvatar } from "@/components/vote/vote-ui";
+import { CAMPAIGN, Eyebrow, PersonAvatar } from "@/components/vote/vote-ui";
 import { errorText, useVoteSession, voteRequest } from "@/components/vote/vote-api";
 import type { VoteUser } from "@/lib/vote/types";
 
-const roleLabels = { owner: "Owner", manager: "Manager", voter: "Verified voter" };
+const roleLabels = { owner: "मुख्य एडमिन", manager: "मैनेजर", voter: "वेरिफ़ाइड वोटर" };
 
 /**
  * The signed-in voter: name with a pencil to change it, role, admin link and logout.
@@ -57,7 +57,7 @@ function AccountCard({
           {editing ? (
             <form onSubmit={handleSave} className="flex items-center gap-1">
               <Input
-                aria-label="Your name"
+                aria-label="आपका नाम"
                 autoFocus
                 required
                 minLength={2}
@@ -68,7 +68,7 @@ function AccountCard({
                 onKeyDown={(event) => event.key === "Escape" && setEditing(false)}
                 className="h-8 w-40"
               />
-              <Button type="submit" size="icon" className="h-8 w-8" disabled={busy} aria-label="Save name">
+              <Button type="submit" size="icon" className="h-8 w-8" disabled={busy} aria-label="नाम सेव करें">
                 {busy ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : <Check className="h-4 w-4" aria-hidden="true" />}
               </Button>
               <Button
@@ -77,7 +77,7 @@ function AccountCard({
                 size="icon"
                 className="h-8 w-8"
                 disabled={busy}
-                aria-label="Cancel"
+                aria-label="रद्द करें"
                 onClick={() => setEditing(false)}
               >
                 <X className="h-4 w-4" aria-hidden="true" />
@@ -89,8 +89,8 @@ function AccountCard({
               <button
                 type="button"
                 className="rounded p-1 text-muted-foreground transition-colors hover:bg-white/5 hover:text-foreground"
-                aria-label="Edit name"
-                title="Edit name"
+                aria-label="नाम बदलें"
+                title="नाम बदलें"
                 onClick={() => {
                   setName(user.name);
                   setMessage(null);
@@ -111,11 +111,11 @@ function AccountCard({
             <Button asChild variant="secondary" size="sm" className="gap-1.5">
               <Link href="/vote/admin">
                 <Settings className="h-4 w-4" aria-hidden="true" />
-                Manage
+                मैनेज करें
               </Link>
             </Button>
           )}
-          <Button variant="ghost" size="icon" aria-label="Log out" title="Log out" onClick={onSignOut}>
+          <Button variant="ghost" size="icon" aria-label="लॉग आउट" title="लॉग आउट" onClick={onSignOut}>
             <LogOut className="h-4 w-4" aria-hidden="true" />
           </Button>
         </div>
@@ -132,7 +132,7 @@ export function VotePage() {
   if (state.status === "loading") {
     content = (
       <div className="flex justify-center py-24 text-muted-foreground">
-        <Loader2 className="h-6 w-6 animate-spin" aria-label="Loading" />
+        <Loader2 className="h-6 w-6 animate-spin" aria-label="लोड हो रहा है" />
       </div>
     );
   } else if (state.status === "error") {
@@ -144,9 +144,9 @@ export function VotePage() {
       <>
         <header className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <Eyebrow>Onemovie Polls</Eyebrow>
-            <h1 className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Cast your vote</h1>
-            <p className="mt-2 text-sm text-muted-foreground">One person, one vote. Results update live.</p>
+            <Eyebrow>{CAMPAIGN.eyebrow}</Eyebrow>
+            <h1 className="mt-2 text-3xl font-bold leading-tight text-foreground sm:text-4xl">{CAMPAIGN.title}</h1>
+            <p className="mt-2 text-sm text-muted-foreground">एक व्यक्ति, एक वोट। नतीजे तुरंत अपडेट होते हैं।</p>
           </div>
           <AccountCard user={state.user} onSaved={setUser} onSignOut={() => void signOut()} />
         </header>
@@ -158,7 +158,7 @@ export function VotePage() {
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
-      <div className="mx-auto min-h-[78vh] max-w-3xl px-4 pb-20 pt-24 sm:px-6 sm:pt-28">{content}</div>
+      <div lang="hi" className="mx-auto min-h-[78vh] max-w-3xl px-4 pb-20 pt-24 sm:px-6 sm:pt-28">{content}</div>
       <Footer />
     </main>
   );

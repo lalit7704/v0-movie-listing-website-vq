@@ -42,7 +42,7 @@ export async function GET() {
 
 const addSchema = z.object({
   phone: phoneSchema,
-  name: z.string().trim().max(60, "Name is too long").default(""),
+  name: z.string().trim().max(60, "नाम बहुत लंबा है").default(""),
   password: z.union([z.literal(""), passwordSchema]).default(""),
 });
 
@@ -53,8 +53,8 @@ export async function POST(request: NextRequest) {
 
   try {
     const { phone, name, password } = await parseBody(request, addSchema);
-    if (isOwnerPhone(phone)) throw new VoteError("That is the owner number");
-    if (name && name.length < 2) throw new VoteError("Name is too short");
+    if (isOwnerPhone(phone)) throw new VoteError("यह मुख्य एडमिन का नंबर है");
+    if (name && name.length < 2) throw new VoteError("नाम बहुत छोटा है");
 
     const { db } = session;
     const existing = must(await db.from("vote_users").select("id").eq("phone", phone).maybeSingle());
@@ -74,8 +74,8 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: true, created: false });
     }
 
-    if (!name) throw new VoteError("This number has no account yet, so enter a name");
-    if (!password) throw new VoteError("This number has no account yet, so set a password");
+    if (!name) throw new VoteError("इस नंबर का अभी कोई अकाउंट नहीं है, इसलिए नाम डालें");
+    if (!password) throw new VoteError("इस नंबर का अभी कोई अकाउंट नहीं है, इसलिए पासवर्ड रखें");
     must(
       await db
         .from("vote_users")
@@ -94,7 +94,7 @@ export async function DELETE(request: NextRequest) {
 
   try {
     const id = request.nextUrl.searchParams.get("id");
-    if (!id || !z.string().uuid().safeParse(id).success) throw new VoteError("Missing user id");
+    if (!id || !z.string().uuid().safeParse(id).success) throw new VoteError("यूज़र की पहचान नहीं मिली");
     must(await session.db.from("vote_users").update({ role: "voter" }).eq("id", id).eq("role", "manager"));
     return NextResponse.json({ success: true });
   } catch (caught) {

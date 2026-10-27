@@ -12,16 +12,16 @@ export async function voteRequest<T = Record<string, unknown>>(url: string, meth
     body: body === undefined ? undefined : JSON.stringify(body),
   });
   const data = await response.json().catch(() => null);
-  if (!data?.success) throw new Error(data?.error || `Request failed (${response.status})`);
+  if (!data?.success) throw new Error(data?.error || `अनुरोध पूरा नहीं हुआ (${response.status})`);
   return data as T;
 }
 
 export function errorText(caught: unknown) {
-  return caught instanceof Error ? caught.message : "Network error";
+  return caught instanceof Error ? caught.message : "नेटवर्क में दिक्कत है, दोबारा कोशिश करें";
 }
 
 export function formatDateTime(iso: string) {
-  return new Date(iso).toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" });
+  return new Date(iso).toLocaleString("hi-IN", { dateStyle: "medium", timeStyle: "short" });
 }
 
 type SessionState =

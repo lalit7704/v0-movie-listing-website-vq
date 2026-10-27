@@ -14,12 +14,12 @@ export function PollStatus({ poll, onEnd }: { poll: PollView; onEnd?: () => void
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
             <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400" />
           </span>
-          Live
+          लाइव
         </span>
       ) : (
         <span className="inline-flex items-center gap-1.5 rounded-full bg-white/5 px-2.5 py-1 text-xs font-semibold text-muted-foreground ring-1 ring-inset ring-white/10">
           <Lock className="h-3 w-3" aria-hidden="true" />
-          Closed
+          बंद
         </span>
       )}
       {poll.isOpen && poll.endsAt && <PollCountdown endsAt={poll.endsAt} onEnd={onEnd} />}
@@ -33,14 +33,14 @@ export function PollFooter({ poll }: { poll: PollView }) {
   return (
     <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 border-t border-border bg-white/[0.015] px-5 py-3 text-xs text-muted-foreground sm:px-6">
       <span className="tabular-nums">
-        {total === null ? "Results appear after you vote" : `${total.toLocaleString("en-IN")} ${total === 1 ? "vote" : "votes"}`}
+        {total === null ? "वोट देने के बाद नतीजे दिखेंगे" : `${total.toLocaleString("hi-IN")} वोट`}
       </span>
       <span>
         {poll.endsAt
-          ? `${poll.isOpen ? "Closes" : "Closed"} ${formatDateTime(poll.endsAt)}`
+          ? `${poll.isOpen ? "बंद होगा:" : "बंद हुआ:"} ${formatDateTime(poll.endsAt)}`
           : poll.isOpen
-            ? "No closing time"
-            : "Final result"}
+            ? "कोई समय सीमा नहीं"
+            : "अंतिम नतीजा"}
       </span>
     </div>
   );
@@ -51,7 +51,8 @@ export function PollResults({ poll }: { poll: PollView }) {
   const total = poll.totalVotes ?? 0;
   const top = Math.max(0, ...poll.options.map((option) => option.votes ?? 0));
   const leaders = poll.options.filter((option) => top > 0 && option.votes === top).length;
-  const leaderLabel = leaders > 1 ? "Tied" : poll.isOpen ? "Leading" : "Winner";
+  const isWinner = leaders === 1 && !poll.isOpen;
+  const leaderLabel = leaders > 1 ? "बराबरी" : isWinner ? "विजेता" : "आगे";
 
   return (
     <ul className="space-y-4">
@@ -70,21 +71,21 @@ export function PollResults({ poll }: { poll: PollView }) {
                   <span className="truncate text-sm font-medium text-foreground">{option.label}</span>
                   {isLeader && (
                     <span className="inline-flex items-center gap-1 rounded-full bg-primary/15 px-2 py-0.5 text-[11px] font-semibold text-red-300 ring-1 ring-inset ring-primary/30">
-                      {leaderLabel === "Winner" && <Trophy className="h-3 w-3" aria-hidden="true" />}
+                      {isWinner && <Trophy className="h-3 w-3" aria-hidden="true" />}
                       {leaderLabel}
                     </span>
                   )}
                   {mine && (
                     <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-300">
                       <Check className="h-3 w-3" aria-hidden="true" />
-                      Your vote
+                      आपका वोट
                     </span>
                   )}
                 </p>
                 <p className="shrink-0 tabular-nums">
                   <span className="text-sm font-semibold text-foreground">{percent}%</span>
                   <span className="ml-1.5 text-xs text-muted-foreground">
-                    {votes.toLocaleString("en-IN")} {votes === 1 ? "vote" : "votes"}
+                    {votes.toLocaleString("hi-IN")} वोट
                   </span>
                 </p>
               </div>
