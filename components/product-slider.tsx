@@ -1,28 +1,45 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { track } from "@vercel/analytics";
 import { Button } from "@/components/ui/button";
 import { productSection, trendingProducts, type Product } from "@/data/products";
 
+/** Adds the Amazon Associates tag from data/products.ts to amazon.in links. */
+function withAffiliateTag(url: string) {
+  const tag = productSection.affiliateTag.trim();
+  if (!tag) return url;
+  try {
+    const link = new URL(url);
+    if (!/(^|\.)amazon\.in$/.test(link.hostname)) return url;
+    link.searchParams.set("tag", tag);
+    return link.toString();
+  } catch {
+    return url;
+  }
+}
+
 function ProductCard({ product, rank }: { product: Product; rank: number }) {
   const Icon = product.icon;
+  const [imageFailed, setImageFailed] = useState(false);
 
   return (
     <a
-      href={product.url}
+      href={withAffiliateTag(product.url)}
       target="_blank"
       rel="sponsored noopener noreferrer"
       onClick={() => track("Product Click", { productId: product.id, title: product.title })}
       className="group flex w-[160px] flex-shrink-0 flex-col sm:w-[180px] md:w-[200px]"
     >
       <div className="relative flex aspect-square items-center justify-center overflow-hidden rounded-lg border border-border bg-gradient-to-br from-primary/25 via-secondary to-secondary">
-        {product.image ? (
+        {product.image && !imageFailed ? (
           <img
             src={product.image}
             alt={product.title}
             loading="lazy"
+            referrerPolicy="no-referrer"
+            onError={() => setImageFailed(true)}
             className="h-full w-full bg-white object-contain p-3 transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
