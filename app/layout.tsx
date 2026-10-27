@@ -150,13 +150,11 @@ export default function RootLayout({
             __html: serializeJsonLd(websiteSchema),
           }}
         />
-        <script src="https://rufflefireballcherries.com/df/43/80/df4380d675a347a947eb1590161d2618.js"></script>
       </head>
 
       <body
-      
         className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}
-      ><a href="https://beta.publishers.adsterra.com/referral/Gub813udiq" rel="nofollow">Referral link</a>
+      >
         <Providers>
           {children}
         </Providers>
@@ -179,9 +177,6 @@ export default function RootLayout({
           `}
         </Script>
 
-      
-<script async={true} data-cfasync="false" src="https://pl31350043.profitableratecpmnetwork.com/3a306c8c6706d3ba2b33e82328472b63/invoke.js"></script>
-<div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
         {/* Service Worker */}
         <script
           dangerouslySetInnerHTML={{
