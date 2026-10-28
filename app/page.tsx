@@ -34,7 +34,30 @@ export default function HomePage() {
           <ProductSlider sectionId="diwali-specials" />
           <SectionSlider title="Bollywood" videos={bollywoodVideos} />
           <ProductSlider sectionId="trending-products" />
+          <div
+    style={{
+      width: '100%',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: '10px 0',
+    }}
+  >
+    <a
+      href="https://beta.publishers.adsterra.com/referral/Gub813udiq"
+      rel="nofollow"
+      target="_blank"
+    >
+      <img
+        src="https://landings-cdn.adsterratech.com/referralBanners/gif/120x60_adsterra_reff.gif"
+        alt="Adsterra"
+        width="120"
+        height="60"
+      />
+    </a>
+  </div>
           <SectionSlider title="Hollywood" videos={hollywoodVideos} />
+          <div id="container-3a306c8c6706d3ba2b33e82328472b63"></div>
           <SectionSlider title="South Indian" videos={southIndianVideos} />
           <SectionSlider title="Web Series" videos={webSeriesVideos} />
           <SectionSlider title="Hot Series" videos={hotSeriesVideos} />
