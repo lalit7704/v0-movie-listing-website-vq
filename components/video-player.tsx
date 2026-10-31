@@ -17,6 +17,27 @@ interface VideoPlayerProps {
 const isYouTube = (url: string) =>
   url.includes("youtube.com") || url.includes("youtu.be");
 
+const getTelegramEmbedUrl = (url: string) => {
+  try {
+    const telegramUrl = new URL(url);
+    const isTelegramHost = /(^|\.)telegram\.me$|(^|\.)t\.me$/i.test(telegramUrl.hostname);
+    if (!isTelegramHost) return null;
+
+    const parts = telegramUrl.pathname.split("/").filter(Boolean);
+    // Telegram can only embed public channel posts. Private /c/ links require
+    // the viewer to be signed in to Telegram and cannot be played in an iframe.
+    if (parts.length !== 2 || parts[0] === "c" || !/^\d+$/.test(parts[1])) return null;
+
+    telegramUrl.hostname = "t.me";
+    telegramUrl.protocol = "https:";
+    telegramUrl.searchParams.set("embed", "1");
+    telegramUrl.searchParams.set("mode", "tme");
+    return telegramUrl.toString();
+  } catch {
+    return null;
+  }
+};
+
 const getYouTubeEmbedUrl = (url: string) => {
   try {
     if (url.includes("youtu.be")) {
@@ -44,6 +65,8 @@ export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerPro
   const [duration, setDuration] = useState(0);
   const [showControls, setShowControls] = useState(true);
   const [hasStarted, setHasStarted] = useState(false);
+  const telegramEmbedUrl = getTelegramEmbedUrl(videoUrl);
+  const isEmbeddedVideo = isYouTube(videoUrl) || Boolean(telegramEmbedUrl);
 
   const saveProgress = useCallback(
     (progressSeconds: number, durationSeconds: number) => {
@@ -211,6 +234,14 @@ export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerPro
             saveProgress(0, 0);
           }}
         />
+      ) : telegramEmbedUrl ? (
+        <iframe
+          src={telegramEmbedUrl}
+          title={`${title} on Telegram`}
+          className="h-full w-full border-0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowFullScreen
+        />
       ) : (
         <video
           ref={videoRef}
@@ -236,7 +267,7 @@ export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerPro
 
 
       {/* Play Button Overlay (before playing) */}
-      {!hasStarted && !isYouTube(videoUrl) && (
+      {!hasStarted && !isEmbeddedVideo && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/40">
           <PosterImage
             src={poster}
@@ -256,7 +287,7 @@ export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerPro
       )}
 
       {/* Controls Overlay */}
-      <div
+      {!isEmbeddedVideo && <div
         className={`absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 transition-opacity duration-300 ${showControls && hasStarted ? "opacity-100" : "opacity-0"
           }`}
       >
@@ -365,7 +396,7 @@ export function VideoPlayer({ videoId, videoUrl, poster, title }: VideoPlayerPro
             </Button>
           </div>
         </div>
-      </div>
+      </div>}
     </div>
   );
 }

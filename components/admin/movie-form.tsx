@@ -241,8 +241,12 @@ export function MovieForm() {
         </Section>
 
         <Section title="Links">
-          <Field id="movie-videoUrl" label="Video URL *">
-            <Input {...text("videoUrl")} type="url" required placeholder="https://youtu.be/..." />
+          <Field
+            id="movie-videoUrl"
+            label="Video URL *"
+            hint="For in-page playback, use a public Telegram post link: https://t.me/channel_name/123"
+          >
+            <Input {...text("videoUrl")} type="url" required placeholder="https://t.me/channel_name/123" />
           </Field>
           <Field
             id="movie-downloadUrl"

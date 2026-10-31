@@ -11,9 +11,11 @@ export function getBotDeepLink(parameter: string) {
 }
 
 export function getTelegramMessageId(downloadUrl: string) {
+  // Pasted links often carry a stray space at either end.
+  const url = downloadUrl.trim();
   return (
-    downloadUrl.match(PUBLIC_CHANNEL_POST_PATTERN)?.[1] ||
-    downloadUrl.match(PRIVATE_CHANNEL_POST_PATTERN)?.[1]
+    url.match(PUBLIC_CHANNEL_POST_PATTERN)?.[1] ||
+    url.match(PRIVATE_CHANNEL_POST_PATTERN)?.[1]
   );
 }
 
