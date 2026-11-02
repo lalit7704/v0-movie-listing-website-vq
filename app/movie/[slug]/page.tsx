@@ -17,7 +17,7 @@ import { SectionSlider } from "@/components/section-slider";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 
-import { videos, getVideoBySlug } from "@/data/videos";
+import { adultVideos, catalogVideos, getVideoBySlug } from "@/data/videos";
 
 import {
   getRelatedMovies,
@@ -45,6 +45,7 @@ import { MovieSupportActions } from "@/components/movie-support-actions";
 import { WishlistButton } from "@/components/wishlist-button";
 import { PosterImage } from "@/components/poster-image";
 import { EpisodeDownloads } from "@/components/episode-downloads";
+import { AdultAgeGate } from "@/components/adult-age-gate";
 
 const FIRST_CLICK_REDIRECT_URL = "https://www.onemovies.site/";
 
@@ -57,7 +58,7 @@ interface MoviePageProps {
  * used by VideoCard and sitemap.ts.
  */
 export async function generateStaticParams() {
-  return videos
+  return catalogVideos
     .filter((video) => video.title)
     .map((video) => ({
       slug: video.slug || generateSlug(video.title),
@@ -78,7 +79,7 @@ function findVideoBySlug(slug: string) {
     return videoBySlug;
   }
 
-  return videos.find(
+  return catalogVideos.find(
     (video) => (video.slug || generateSlug(video.title)) === slug
   );
 }
@@ -163,6 +164,9 @@ export async function generateMetadata({
       description: metaDescription,
       images: [imageUrl],
     },
+
+    // Marks 18+ pages as adult for Google SafeSearch, so the rest of the site isn't filtered.
+    ...(video.category === "Adult" && { other: { rating: "adult" } }),
   };
 }
 
@@ -189,13 +193,14 @@ export default async function MoviePage({
   const canonicalSlug =
     video.slug || generateSlug(video.title);
 
+  const isAdult = video.category === "Adult";
+
   /**
-   * Related movies
+   * Related movies. 18+ videos only suggest each other, and never appear under other movies.
    */
-  const recommendedVideos = getRelatedMovies(
-    video.id,
-    12
-  );
+  const recommendedVideos = isAdult
+    ? adultVideos.filter((item) => item.id !== video.id).slice(0, 12)
+    : getRelatedMovies(video.id, 12);
 
   /**
    * Web series with episodes: the main buttons send the whole season.
@@ -235,6 +240,7 @@ export default async function MoviePage({
     Ramayan: "/ramayan",
     Mahabharat: "/mahabharat",
     "Shree Krishna": "/shree-krishna",
+    Adult: "/adult",
   };
   const jsonLdScripts = generateMoviePageJsonLd(
     { ...video, slug: canonicalSlug },
@@ -253,6 +259,7 @@ export default async function MoviePage({
       />
 
       <main className="min-h-screen bg-background">
+        {isAdult && <AdultAgeGate />}
         <Navbar />
 
         {/* Main Content */}

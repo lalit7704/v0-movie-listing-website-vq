@@ -1,7 +1,7 @@
 import type { Episode, Video } from "@/data/videos";
 
 /** Categories the admin form can add to, with the data file and array each one lives in. */
-export const MOVIE_CATEGORIES = ["Bollywood", "Hollywood", "South Indian", "Web Series", "Hot Series", "Cartoon"] as const;
+export const MOVIE_CATEGORIES = ["Bollywood", "Hollywood", "South Indian", "Web Series", "Hot Series", "Cartoon", "Adult"] as const;
 export type MovieCategory = (typeof MOVIE_CATEGORIES)[number];
 
 export const CATEGORY_SOURCES: Record<MovieCategory, { file: string; exportName: string }> = {
@@ -11,6 +11,7 @@ export const CATEGORY_SOURCES: Record<MovieCategory, { file: string; exportName:
   "Web Series": { file: "data/web-series.ts", exportName: "webSeriesVideos" },
   "Hot Series": { file: "data/hot-series.ts", exportName: "hotSeriesVideos" },
   Cartoon: { file: "data/cartoon.ts", exportName: "cartoonVideos" },
+  Adult: { file: "data/adult.ts", exportName: "adultVideos" },
 };
 
 /** Same rules as generateSlug in data/videos.ts, without pulling the movie data into the browser. */

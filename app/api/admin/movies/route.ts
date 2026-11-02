@@ -1,6 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { z } from "zod";
-import { videos, type Video } from "@/data/videos";
+import { catalogVideos, type Video } from "@/data/videos";
 import { getAdminSession } from "@/lib/admin-auth";
 import { isGitHubConfigured, updateRepoFile } from "@/lib/github";
 import { getTelegramMessageId } from "@/lib/download-url";
@@ -96,8 +96,8 @@ export async function POST(request: NextRequest) {
   try {
     const { commitUrl } = await updateRepoFile(file, `Add movie: ${input.title}`, (current) => {
       // The deployed bundle can lag behind the branch, so check the fresh file too.
-      const takenIds = new Set([...videos.map((v) => v.id), ...getUsedValues(current, "id")]);
-      const takenSlugs = new Set([...videos.map((v) => v.slug), ...getUsedValues(current, "slug")]);
+      const takenIds = new Set([...catalogVideos.map((v) => v.id), ...getUsedValues(current, "id")]);
+      const takenSlugs = new Set([...catalogVideos.map((v) => v.slug), ...getUsedValues(current, "slug")]);
 
       if (takenSlugs.has(slug)) throw new MovieInputError(`slug: "${slug}" is already used by another movie`);
       if (input.id && takenIds.has(input.id)) throw new MovieInputError(`id: ${input.id} is already used`);

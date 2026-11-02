@@ -6,12 +6,12 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { VideoGrid } from "@/components/video-grid";
 import { Button } from "@/components/ui/button";
-import { videos } from "@/data/videos";
+import { catalogVideos } from "@/data/videos";
 import { useWishlist } from "@/hooks/use-wishlist";
 
 export function WishlistPageContent() {
   const { wishlistIds, isLoaded } = useWishlist();
-  const wishlistVideos = videos.filter((video) => wishlistIds.includes(video.id));
+  const wishlistVideos = catalogVideos.filter((video) => wishlistIds.includes(video.id));
 
   return (
     <main className="min-h-screen bg-background">

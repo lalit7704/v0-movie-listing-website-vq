@@ -8,6 +8,7 @@ const footerLinks = {
     { href: "/south-indian", label: "South Indian" },
     { href: "/web-series", label: "Web Series" },
     { href: "/cartoons", label: "Cartoons" },
+    { href: "/adult", label: "18+ Adult" },
   ],
   genres: [
     { href: "/action", label: "Action" },

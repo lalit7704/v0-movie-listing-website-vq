@@ -7,6 +7,7 @@ import { ramayanaVideos } from "./ramayana";
 import { southindianVideos } from "./south-indian";
 import { mahabharatVideos } from "./mahabharat";
 import { shreekrishnaVideos } from "./shree-krishna";
+import { adultVideos } from "./adult";
 
 /* ---------------- INTERFACE ---------------- */
 
@@ -83,6 +84,11 @@ export const videos: Video[] = allVideos.filter(
   (v) => !v.id.startsWith("tmdb-") || !handWrittenSlugs.has(v.slug)
 );
 
+// 18+ entries stay out of `videos`, which feeds the homepage, search, genre pages and
+// the sitemap. They are listed on /adult and still open on their own movie pages.
+export { adultVideos };
+export const catalogVideos: Video[] = [...videos, ...adultVideos];
+
 /* ---------------- HELPERS ---------------- */
 
 export const getVideosByCategory = (category: string): Video[] => {
@@ -145,7 +151,7 @@ export const getVideoById = (id: string): Video | undefined => {
 };
 
 export const getVideoBySlug = (slug: string): Video | undefined => {
-  return videos.find((v) => v.slug === slug);
+  return catalogVideos.find((v) => v.slug === slug);
 };
 
 export const getAllVideoSlugs = (): string[] => {
