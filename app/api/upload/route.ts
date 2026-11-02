@@ -66,7 +66,8 @@ export async function POST(request: NextRequest) {
     }
 
     const messageId = data.result.message_id;
-    const telegramLink = `https://t.me/onemoviedownloa/${messageId}`;
+    // The channel-id form keeps working when the channel's public username is renamed.
+    const telegramLink = `https://t.me/c/3845134502/${messageId}`;
 
     return NextResponse.json({
       success: true,

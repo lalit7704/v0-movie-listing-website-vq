@@ -1169,7 +1169,7 @@ export const webSeriesVideos: Video[] = [
 "title": "Breaking Bad (2011) Season 4 - Crime Drama Thriller Series | AMC",
 "slug": "breaking-bad-season-4-2011",
 "videoUrl": "https://youtu.be/aNQE9jrOLrA",
-"downloadUrl": "",
+"downloadUrl": "https://t.me/onemoviedownloadd/517",
 "poster": "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
 "description": "Breaking Bad (Season 4) विंस गिलिगन की क्राइम ड्रामा वेब सीरीज़ का चौथा सीज़न है, जो 17 जुलाई 2011 को AMC पर रिलीज़ हुआ। ब्रायन क्रैंस्टन, आरोन पॉल, एना गन, डीन नॉरिस, बॉब ओडेनकर्क, जोनाथन बैंक्स और जियानकार्लो एस्पोसिटो अहम भूमिकाओं में हैं।\n\nअब वॉल्ट और गस फ्रिंग के बीच एक ख़ामोश लेकिन जानलेवा जंग छिड़ चुकी है। गस की नज़र हर पल वॉल्ट पर है, और जेसी दोनों के बीच फंस जाता है। उधर हैंक एक पुराने सुराग के सहारे 'हाइज़ेनबर्ग' के राज़ के करीब पहुंचने लगता है, और गस का मैक्सिकन कार्टेल के साथ पुराना हिसाब भी सामने आता है।\n\nवॉल्ट और गस के बीच की यह शतरंज जैसी चालों वाली लड़ाई एक धमाकेदार अंजाम तक पहुंचती है, जिसे टीवी इतिहास के सबसे यादगार सीज़न फ़िनाले में गिना जाता है।",
 "seoDescription": "Breaking Bad Season 4 (2011) Bryan Cranston और Giancarlo Esposito की क्राइम ड्रामा वेब सीरीज़ की कहानी, trailer, cast, rating और सभी 13 एपिसोड की details देखें।",
@@ -1184,19 +1184,19 @@ export const webSeriesVideos: Video[] = [
 "cast": ["Bryan Cranston", "Aaron Paul", "Anna Gunn", "Dean Norris", "Bob Odenkirk", "Giancarlo Esposito", "Jonathan Banks", "Mark Margolis"],
 "keywords": ["Breaking Bad", "Breaking Bad Season 4", "Breaking Bad 2011", "Vince Gilligan", "Bryan Cranston", "Aaron Paul", "Walter White", "Gus Fring", "Face Off", "AMC series"],
 "episodes": [
-  { "title": "Box Cutter", "downloadUrl": "" },
-  { "title": "Thirty-Eight Snub", "downloadUrl": "" },
-  { "title": "Open House", "downloadUrl": "" },
-  { "title": "Bullet Points", "downloadUrl": "" },
-  { "title": "Shotgun", "downloadUrl": "" },
-  { "title": "Cornered", "downloadUrl": "" },
-  { "title": "Problem Dog", "downloadUrl": "" },
-  { "title": "Hermanos", "downloadUrl": "" },
-  { "title": "Bug", "downloadUrl": "" },
-  { "title": "Salud", "downloadUrl": "" },
-  { "title": "Crawl Space", "downloadUrl": "" },
-  { "title": "End Times", "downloadUrl": "" },
-  { "title": "Face Off", "downloadUrl": "" }
+  { "title": "Box Cutter", "downloadUrl": "https://t.me/onemoviedownloadd/517" },
+  { "title": "Thirty-Eight Snub", "downloadUrl": "https://t.me/onemoviedownloadd/515" },
+  { "title": "Open House", "downloadUrl": "https://t.me/onemoviedownloadd/516" },
+  { "title": "Bullet Points", "downloadUrl": "https://t.me/onemoviedownloadd/514" },
+  { "title": "Shotgun", "downloadUrl": "https://t.me/onemoviedownloadd/518" },
+  { "title": "Cornered", "downloadUrl": "https://t.me/onemoviedownloadd/524" },
+  { "title": "Problem Dog", "downloadUrl": "https://t.me/onemoviedownloadd/522" },
+  { "title": "Hermanos", "downloadUrl": "https://t.me/onemoviedownloadd/523" },
+  { "title": "Bug", "downloadUrl": "https://t.me/onemoviedownloadd/525" },
+  { "title": "Salud", "downloadUrl": "https://t.me/onemoviedownloadd/521" },
+  { "title": "Crawl Space", "downloadUrl": "https://t.me/onemoviedownloadd/526" },
+  { "title": "End Times", "downloadUrl": "https://t.me/onemoviedownloadd/520" },
+  { "title": "Face Off", "downloadUrl": "https://t.me/onemoviedownloadd/527" }
 ]
 },
 {
@@ -1205,7 +1205,7 @@ export const webSeriesVideos: Video[] = [
 "title": "Breaking Bad (2012) Season 5 - Crime Drama Thriller Series | AMC",
 "slug": "breaking-bad-season-5-2012",
 "videoUrl": "https://youtu.be/2gTC4uWP3_Y",
-"downloadUrl": "",
+"downloadUrl": "https://t.me/onemoviedownloadd/528",
 "poster": "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
 "description": "Breaking Bad (Season 5) विंस गिलिगन की क्राइम ड्रामा वेब सीरीज़ का पांचवां और आख़िरी सीज़न है। इसके 16 एपिसोड दो हिस्सों में आए — पहला हिस्सा 15 जुलाई 2012 को और दूसरा 11 अगस्त 2013 को AMC पर शुरू हुआ, और सीरीज़ 29 सितंबर 2013 को ख़त्म हुई। ब्रायन क्रैंस्टन, आरोन पॉल, एना गन, डीन नॉरिस, बॉब ओडेनकर्क और जोनाथन बैंक्स के साथ जेसी प्लेमन्स और लॉरा फ़्रेज़र भी इस सीज़न में हैं।\n\nअब वॉल्टर व्हाइट पूरी तरह 'हाइज़ेनबर्ग' बन चुका है। जेसी और माइक के साथ मिलकर वह अपना खुद का ड्रग साम्राज्य खड़ा करता है और ताकत के नशे में हर हद पार कर देता है — \"Say my name.\" लेकिन जितना ऊपर वह चढ़ता है, उसके झूठ और अपराधों का बोझ उतना ही भारी होता जाता है, और DEA एजेंट हैंक सच के बेहद करीब पहुंच जाता है।\n\nटीवी इतिहास के सबसे बेहतरीन अंत में गिने जाने वाले इस सीज़न ने लगातार दो साल (2013 और 2014) बेस्ट ड्रामा सीरीज़ का एमी अवॉर्ड जीता।",
 "seoDescription": "Breaking Bad Season 5 (2012) Bryan Cranston और Aaron Paul की क्राइम ड्रामा वेब सीरीज़ के आख़िरी सीज़न की कहानी, trailer, cast, rating और सभी 16 एपिसोड की details देखें।",
@@ -1220,22 +1220,22 @@ export const webSeriesVideos: Video[] = [
 "cast": ["Bryan Cranston", "Aaron Paul", "Anna Gunn", "Dean Norris", "Bob Odenkirk", "Jonathan Banks", "Jesse Plemons", "Laura Fraser"],
 "keywords": ["Breaking Bad", "Breaking Bad Season 5", "Breaking Bad final season", "Breaking Bad 2012", "Vince Gilligan", "Bryan Cranston", "Aaron Paul", "Walter White", "Say My Name", "Heisenberg"],
 "episodes": [
-  { "title": "Live Free or Die", "downloadUrl": "" },
-  { "title": "Madrigal", "downloadUrl": "" },
-  { "title": "Hazard Pay", "downloadUrl": "" },
-  { "title": "Fifty-One", "downloadUrl": "" },
-  { "title": "Dead Freight", "downloadUrl": "" },
-  { "title": "Buyout", "downloadUrl": "" },
-  { "title": "Say My Name", "downloadUrl": "" },
-  { "title": "Gliding Over All", "downloadUrl": "" },
-  { "title": "Blood Money", "downloadUrl": "" },
-  { "title": "Buried", "downloadUrl": "" },
-  { "title": "Confessions", "downloadUrl": "" },
-  { "title": "Rabid Dog", "downloadUrl": "" },
-  { "title": "To'hajiilee", "downloadUrl": "" },
-  { "title": "Ozymandias", "downloadUrl": "" },
-  { "title": "Granite State", "downloadUrl": "" },
-  { "title": "Felina", "downloadUrl": "" }
+  { "title": "Live Free or Die", "downloadUrl": "https://t.me/onemoviedownloadd/528" },
+  { "title": "Madrigal", "downloadUrl": "https://t.me/onemoviedownloadd/529" },
+  { "title": "Hazard Pay", "downloadUrl": "https://t.me/onemoviedownloadd/530" },
+  { "title": "Fifty-One", "downloadUrl": "https://t.me/onemoviedownloadd/531" },
+  { "title": "Dead Freight", "downloadUrl": "https://t.me/onemoviedownloadd/532" },
+  { "title": "Buyout", "downloadUrl": "https://t.me/onemoviedownloadd/533" },
+  { "title": "Say My Name", "downloadUrl": "https://t.me/onemoviedownloadd/534" },
+  { "title": "Gliding Over All", "downloadUrl": "https://t.me/onemoviedownloadd/535" },
+  { "title": "Blood Money", "downloadUrl": "https://t.me/onemoviedownloadd/536" },
+  { "title": "Buried", "downloadUrl": "https://t.me/onemoviedownloadd/537" },
+  { "title": "Confessions", "downloadUrl": "https://t.me/onemoviedownloadd/538" },
+  { "title": "Rabid Dog", "downloadUrl": "https://t.me/onemoviedownloadd/539" },
+  { "title": "To'hajiilee", "downloadUrl": "https://t.me/onemoviedownloadd/540" },
+  { "title": "Ozymandias", "downloadUrl": "https://t.me/onemoviedownloadd/541" },
+  { "title": "Granite State", "downloadUrl": "https://t.me/onemoviedownloadd/542" },
+  { "title": "Felina", "downloadUrl": "https://t.me/onemoviedownloadd/543" }
 ]
 },
 {
@@ -1244,7 +1244,7 @@ export const webSeriesVideos: Video[] = [
   "title": "Friends Sex and Games (2026) Season 1 - German Drama Series | Prime Video",
   "slug": "friends-sex-and-games-season-1-2026",
   "videoUrl": "https://youtu.be/i_czSqLSB8Q",
-  "downloadUrl": "",
+  "downloadUrl": "https://t.me/onemoviedownloadd/460",
   "poster": "https://m.media-amazon.com/images/M/MV5BYjI2OTc1MWMtMzhjYi00ZTI4LTgzOTQtZDQ1OGQ1Yjc5Y2RjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   "description": "Friends Sex and Games is a 2026 German dramedy series produced by UFA Fiction for Prime Video and directed by Barbara Kronenberg and Sinje Köhler. Adapted from the Mexican series El juego de las llaves, the eight-episode first season stars Paula Kalenberg, Fridolin Sandmeyer, Salka Weber, Martin Bruchmann, Mona Pirzad, Pascal Houdus, Lilja van der Zwaag and Eric Cordes.\n\nFour couples who have been friends for years believe their lives and relationships are running smoothly. That changes when their old friend Samu returns with his new girlfriend Siena and suggests a daring game: the men drop their keys into a bowl, and each woman picks one out. What starts as a playful experiment slowly exposes hidden desires, jealousy and the cracks in every relationship.\n\nThe series premiered worldwide on Prime Video on 16 October 2026 and is meant for adult audiences.",
   "seoDescription": "Friends Sex and Games Season 1 (2026) German Prime Video drama series starring Paula Kalenberg and Fridolin Sandmeyer. Read the story, cast, trailer and all 8 episodes.",
@@ -1257,17 +1257,7 @@ export const webSeriesVideos: Video[] = [
   "quality": "HD",
   "director": "Barbara Kronenberg, Sinje Köhler",
   "cast": ["Paula Kalenberg", "Fridolin Sandmeyer", "Salka Weber", "Martin Bruchmann", "Mona Pirzad", "Pascal Houdus", "Lilja van der Zwaag", "Eric Cordes"],
-  "keywords": ["Friends Sex and Games", "Friends Sex and Games Season 1", "Friends Sex and Games 2026", "German series", "Prime Video series", "Paula Kalenberg", "Key Game", "El juego de las llaves"],
-  "episodes": [
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""}
-  ]
+  "keywords": ["Friends Sex and Games", "Friends Sex and Games Season 1", "Friends Sex and Games 2026", "German series", "Prime Video series", "Paula Kalenberg", "Key Game", "El juego de las llaves"]
 },
 {
   "id": "8059",
@@ -1275,7 +1265,7 @@ export const webSeriesVideos: Video[] = [
   "title": "Dil Padosi (2026) Season 1 - Hindi Relationship Drama | ShemarooMe",
   "slug": "dil-padosi-season-1-2026",
   "videoUrl": "https://youtu.be/CYPPhnTE-58",
-  "downloadUrl": "",
+  "downloadUrl": "https://t.me/onemoviedownloadd/461",
   "poster": "https://m.media-amazon.com/images/M/MV5BMDk0ZDk3ZTEtOTk4OC00YzU3LWIyOTctYTkyODM5YmMzMzBkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   "description": "Dil Padosi is a 2026 Hindi relationship drama series and ShemarooMe original, released under the Shemaroo Premiere banner. The six-episode first season stars Nyrraa M Banerji, Jai Talwar, Shivaani M Singh and Pranav Kumaarr.\n\nSet in a housing colony in a small town, the story follows two married couples living next door to each other whose settled lives are turned upside down as attractions shift between them. Old loyalties are tested as the neighbours' lives become dangerously entangled.\n\nDil Padosi premiered on ShemarooMe on 15 October 2026.",
   "seoDescription": "Dil Padosi Season 1 (2026) ShemarooMe Hindi drama series starring Nyrraa M Banerji and Shivaani Singh. Read the story, cast, trailer and all 6 episodes.",
@@ -1287,15 +1277,7 @@ export const webSeriesVideos: Video[] = [
   "language": "Hindi",
   "quality": "HD",
   "cast": ["Nyrraa M Banerji", "Jai Talwar", "Shivaani M Singh", "Pranav Kumaarr"],
-  "keywords": ["Dil Padosi", "Dil Padosi Season 1", "Dil Padosi 2026", "ShemarooMe series", "Nyrraa M Banerji", "Shivaani Singh", "Hindi web series", "relationship drama"],
-  "episodes": [
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""}
-  ]
+  "keywords": ["Dil Padosi", "Dil Padosi Season 1", "Dil Padosi 2026", "ShemarooMe series", "Nyrraa M Banerji", "Shivaani Singh", "Hindi web series", "relationship drama"]
 },
 {
   "id": "8060",
@@ -1303,7 +1285,7 @@ export const webSeriesVideos: Video[] = [
   "title": "Jeet Ki Zid (2021) Season 1 - Army Drama Series | Amit Sadh | ZEE5",
   "slug": "jeet-ki-zid-season-1-2021",
   "videoUrl": "https://youtu.be/NJrVTX9snsQ",
-  "downloadUrl": "",
+  "downloadUrl": "https://t.me/onemoviedownloadd/464",
   "poster": "https://m.media-amazon.com/images/M/MV5BN2M3ODFlZjMtNTgzZi00YzUyLThjMGYtOTEwZTk2YzE4NmJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   "description": "Jeet Ki Zid is a 2021 Hindi drama series and ZEE5 original directed by Vishal Mangalorkar. The seven-episode series is based on the life of Major Deependra Singh Sengar, a retired officer of the Indian Army's special forces, and stars Amit Sadh, Amrita Puri, Sushant Singh, Aly Goni, Gagan Randhawa and Mrinal Kulkarni.\n\nAmit Sadh plays a fearless special forces officer whose life changes after he is badly injured in combat. Left fighting paralysis, he refuses to give up and, with the support of his wife (Amrita Puri), battles to walk again and find a new purpose.\n\nJeet Ki Zid premiered on ZEE5 on 22 January 2021.",
   "seoDescription": "Jeet Ki Zid (2021) ZEE5 army drama series starring Amit Sadh, based on the life of Major Deependra Singh Sengar. Read the story, cast, trailer and all 7 episodes.",
@@ -1316,16 +1298,7 @@ export const webSeriesVideos: Video[] = [
   "quality": "HD",
   "director": "Vishal Mangalorkar",
   "cast": ["Amit Sadh", "Amrita Puri", "Sushant Singh", "Aly Goni", "Gagan Randhawa", "Mrinal Kulkarni"],
-  "keywords": ["Jeet Ki Zid", "Jeet Ki Zid Season 1", "Jeet Ki Zid ZEE5", "Amit Sadh", "Major Deependra Singh Sengar", "army web series", "Indian Army drama", "ZEE5 original"],
-  "episodes": [
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""}
-  ]
+  "keywords": ["Jeet Ki Zid", "Jeet Ki Zid Season 1", "Jeet Ki Zid ZEE5", "Amit Sadh", "Major Deependra Singh Sengar", "army web series", "Indian Army drama", "ZEE5 original"]
 },
 {
   "id": "8061",
@@ -1333,7 +1306,7 @@ export const webSeriesVideos: Video[] = [
   "title": "The Trap (2026) Season 1 - German Psychological Thriller | Netflix",
   "slug": "the-trap-season-1-2026",
   "videoUrl": "https://youtu.be/SmaC-w7x63c",
-  "downloadUrl": "",
+  "downloadUrl": "https://t.me/onemoviedownloadd/479",
   "poster": "https://m.media-amazon.com/images/M/MV5BNzYzYzEzMTYtNTgwOC00ODg3LWE0NzItMWVjMTVmMmY4OTdlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   "description": "The Trap (German: Die Falle) is a 2026 German psychological thriller miniseries written and directed by Isabel Kleefeld and produced by Constantin Film for Netflix. Based on Melanie Raabe's 2015 debut novel, it reunites the team behind the International Emmy-winning series Dear Child and stars Friederike Becht, Hans Löw and Matthias Brandt.\n\nBestselling novelist Lisa Konrad has lived in seclusion for nearly ten years since witnessing the murder of her sister, Anna. When she recognises star reporter Robert Lenzen on television as the man she believes is the killer, and the police dismiss her, she decides to use herself as bait. She writes a novel based on Anna's case and invites Lenzen for her first-ever interview, hoping to get his DNA and prove his guilt.\n\nAll six episodes of The Trap premiered on Netflix on 13 October 2026.",
   "seoDescription": "The Trap (Die Falle) 2026 German Netflix thriller series starring Friederike Becht and Hans Löw. Read the story, cast, trailer and all 6 episodes.",
@@ -1346,15 +1319,28 @@ export const webSeriesVideos: Video[] = [
   "quality": "HD",
   "director": "Isabel Kleefeld",
   "cast": ["Friederike Becht", "Hans Löw", "Matthias Brandt", "Anna Schudt", "Ursula Strauss"],
-  "keywords": ["The Trap", "The Trap Netflix", "The Trap Season 1", "Die Falle", "Melanie Raabe", "Friederike Becht", "German thriller series", "Netflix limited series"],
-  "episodes": [
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""},
-    {"downloadUrl":""}
-  ]
+  "keywords": ["The Trap", "The Trap Netflix", "The Trap Season 1", "Die Falle", "Melanie Raabe", "Friederike Becht", "German thriller series", "Netflix limited series"]
+},
+{
+  "id": "8062",
+  "addedAt": "2026-11-02T18:27:02.000Z",
+  "title": "Inspector Rishi (2024) Season 1 - Tamil Horror Crime Series | Naveen Chandra | Prime Video",
+  "slug": "inspector-rishi-season-1-2024",
+  "videoUrl": "https://youtu.be/4CKU89MI0_0",
+  "downloadUrl": "https://t.me/onemoviedownloadd/571",
+  "poster": "https://m.media-amazon.com/images/M/MV5BYWEyMDk3OWQtYmU3Zi00NWUwLTgzMzItMWEyMDVmZWM3ZDkyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  "description": "Inspector Rishi is a 2024 Tamil horror crime drama series created, written and directed by J. S. Nandhini for Prime Video and produced by Make Believe Productions. It stars Naveen Chandra, Sunaina, Kanna Ravi, Srikrishna Dayal, Malini Jeevarathnam and Kumaravel.\n\nInspector Rishi (Naveen Chandra) loses the sight in one eye in a shootout in which he also fails to save his girlfriend. Transferred to a remote forest area, he is put on a string of eerie deaths that the locals blame on supernatural forces, and he has to separate myth from murder to find out what is really behind them.\n\nAll 10 episodes of Inspector Rishi premiered on Prime Video on 29 March 2024.",
+  "seoDescription": "Inspector Rishi Season 1 (2024) Tamil horror crime series on Prime Video starring Naveen Chandra, by J. S. Nandhini. Read the story, cast, trailer and all 10 episodes.",
+  "category": "Web Series",
+  "year": 2024,
+  "duration": "Season 1 • 10 Episodes",
+  "rating": 0,
+  "genre": ["Crime", "Horror", "Thriller"],
+  "language": "Tamil",
+  "quality": "HD",
+  "director": "J. S. Nandhini",
+  "cast": ["Naveen Chandra", "Sunaina", "Kanna Ravi", "Srikrishna Dayal", "Malini Jeevarathnam", "Kumaravel"],
+  "keywords": ["Inspector Rishi", "Inspector Rishi Season 1", "Inspector Rishi Prime Video", "Naveen Chandra", "J. S. Nandhini", "Tamil web series", "horror crime series"]
 }
 ];
 
