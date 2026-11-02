@@ -4,7 +4,6 @@ import { HeroSlider } from "@/components/hero-slider";
 import { SectionSlider } from "@/components/section-slider";
 import { getRecentlyAddedVideos } from "@/data/videos";
 import { PersonalizedHomeSections } from "@/components/personalized-home-sections";
-import { ProductSlider } from "@/components/product-slider";
 
 export default function HomePage() {
   // Newest additions to the site lead the page: 5 in the hero, more in the row below it
@@ -31,9 +30,7 @@ export default function HomePage() {
         {/* Main Content Sections */}
         <div className="pt-8 space-y-4">
           <SectionSlider title="Latest Added" videos={latestAdded} />
-          <ProductSlider sectionId="diwali-specials" />
           <SectionSlider title="Bollywood" videos={bollywoodVideos} />
-          <ProductSlider sectionId="trending-products" />
           <div
     style={{
       width: '100%',
