@@ -1915,6 +1915,60 @@ export const southindianVideos: Video[] = [
   "director": "Harish Reddy Uppula",
   "cast": ["Krishna Burugula", "Ram Nitin", "Mani Vaka", "Dheeraj Athreya"],
   "keywords": ["Jigris", "Jigris 2025", "Jigris Telugu movie", "Telugu buddy comedy", "road trip movie", "Krishna Burugula", "Ram Nitin", "Harish Reddy Uppula"]
+},
+
+{
+  "id": "5100",
+  "addedAt": "2026-11-06T04:53:00.000Z",
+  "title": "Ramayana: Rise of a Legend (2026) - Hindi Epic Fantasy | Ranbir Kapoor, Yash, Sai Pallavi",
+  "slug": "ramayana-rise-of-a-legend-2026",
+  "videoUrl": "https://youtu.be/llLHwxkZ02k",
+  "downloadUrl": "https://t.me/onemoviedownloadd/582",
+  "poster": "https://m.media-amazon.com/images/M/MV5BYWE4NWVmZjItN2Y0ZC00YmMzLThhNWEtM2VkZjA3MmFlNjdmXkEyXkFqcGc@._V1_FMjpg_UX1080_.jpg",
+  "description": "Ramayana: Rise of a Legend is a 2026 Indian Hindi-language mythological epic action-adventure fantasy film directed by Nitesh Tiwari and produced by Namit Malhotra under Prime Focus Studios in association with Monster Mind Creations. The film stars Ranbir Kapoor as Lord Rama, Yash as Ravana, Sai Pallavi as Sita, Ravie Dubey as Lakshman and Sunny Deol as Lord Hanuman.\n\nInspired by the ancient Indian epic Ramayana, the film follows Prince Rama, whose life is shaped by duty, love, sacrifice and destiny. After his marriage to Sita, Rama faces exile from his kingdom, setting him on an extraordinary journey filled with challenges, courage and devotion. Meanwhile, the powerful king Ravana is driven by ambition and vengeance, leading their destinies toward an epic confrontation between good and evil.\n\nThe film features spectacular visual effects by DNEG and music composed by Hans Zimmer and A. R. Rahman. Produced as the first instalment of a two-part cinematic adaptation, Ramayana: Rise of a Legend began its worldwide theatrical release on 5 November 2026, with screenings in IMAX and premium formats.",
+  "seoDescription": "Ramayana: Rise of a Legend (2026) Hindi mythological epic starring Ranbir Kapoor, Yash and Sai Pallavi. Explore the story, cast, trailer and movie details.",
+  "category": "South Indian",
+  "year": 2026,
+  "duration": "3h 15m",
+  "rating": 8.7,
+  "genre": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Mythology"
+  ],
+  "language": "Hindi",
+  "quality": "HD",
+  "director": "Nitesh Tiwari",
+  "cast": [
+    "Ranbir Kapoor",
+    "Yash",
+    "Sai Pallavi",
+    "Ravie Dubey",
+    "Sunny Deol",
+    "Arun Govil",
+    "Lara Dutta",
+    "Rakul Preet Singh"
+  ],
+  "keywords": [
+    "Ramayana",
+    "Ramayana Rise of a Legend",
+    "Ramayana 2026",
+    "Ramayana movie",
+    "Ranbir Kapoor Ramayana",
+    "Yash Ravana",
+    "Sai Pallavi Sita",
+    "Nitesh Tiwari",
+    "Ramayana Part 1",
+    "Hindi mythological movie",
+    "Indian epic fantasy",
+    "Ramayana official trailer",
+    "Namit Malhotra",
+    "DNEG",
+    "Hans Zimmer",
+    "AR Rahman"
+  ]
 }
 
 
